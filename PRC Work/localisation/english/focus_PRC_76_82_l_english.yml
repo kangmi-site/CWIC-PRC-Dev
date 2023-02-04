@@ -1,0 +1,22 @@
+﻿l_english:
+
+ PRC_76_82_qlxt_hgf_1:0 "Will §Rslightly enhance§! the power of the §OHuaguofeng§! Group"
+ PRC_76_82_qlxt_hgf_2:0 "Will §Rmoderately enhance§! the power of the §OHuaguofeng§! Group"
+ PRC_76_82_qlxt_hgf_3:0 "Will §Rgreatly enhance§! the power of the §OHuaguofeng§! Group"
+ PRC_76_82_qlxt_hgf_4:0 "Will §Rslightly reduce§! the power of the §OHuaguofeng§! Group"
+ PRC_76_82_qlxt_hgf_5:0 "Will §Rmoderately reduce§! the power of the §OHuaguofeng§! Group"
+ PRC_76_82_qlxt_hgf_6:0 "Will §Rgreatly reduce§! the power of the §OHuaguofeng§! Group"
+
+ PRC_76_82_qlxt_dxp_1:0 "Will §Rslightly enhance§! the power of the §TDengxiaoping§! Group"
+ PRC_76_82_qlxt_dxp_2:0 "Will §Rmoderately enhance§! the power of the §TDengxiaoping§! Group"
+ PRC_76_82_qlxt_dxp_3:0 "Will §Rgreatly enhance§! the power of the §TDengxiaoping§! Group"
+ PRC_76_82_qlxt_dxp_4:0 "Will §Rslightly reduce§! the power of the §TDengxiaoping§! Group"
+ PRC_76_82_qlxt_dxp_5:0 "Will §Rmoderately reduce§! the power of the §TDengxiaoping§! Group"
+ PRC_76_82_qlxt_dxp_6:0 "Will §Rgreatly reduce§! the power of the §TDengxiaoping§! Group"
+
+ PRC_76_82_qlxt_gof_1:0 "Will §Rgreatly reduce§! the power of the §RGang of Four§! Group"
+ PRC_76_82_qlxt_gof_2:0 "Will §Rslightly enhance§! the power of the §RGang of Four§! Group"
+ PRC_76_82_qlxt_gof_3:0 "Will §Rmoderately enhance§! the power of the §RGang of Four§! Group"
+ PRC_76_82_qlxt_gof_4:0 "Will §Rgreatly enhance§! the power of the §RGang of Four§! Group"
+
+ PRC_GOF_has_been_destroyed_flag:0 "§RYou must first destroy the Gang of Four§!"

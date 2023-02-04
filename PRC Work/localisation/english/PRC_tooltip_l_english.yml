@@ -1,0 +1,64 @@
+﻿l_english:
+###############################################
+  SGP_UN:0 "United Nations Forward Base in the Western Pacific"
+  United_Nations_General_Command:0 "United Nations General Command"
+  Douglas_MacArthur_UN_desc:0 "§RFuck all the communists!/n/nYou communist bastards will be crushed by the United Nations!/n/nLong live General MacArthur!§!"
+
+################################################
+  CPC_pie_1_tt:0 "current strength of the reformist is [?pie_full_temp]"    
+  CPC_pie_2_tt:0 "current strength of the revolutionaries is [?pie_popularity_2]"
+  CPC_pie_3_tt:0 "current strength of the conservatives is [?pie_popularity_1]"
+################################################
+  prc_focus_greeting_70s_tt:0 "§YI think we're in the 1970s.§!\n"
+  symposium_of_the_Adminstrative_group_of_the_CMC_tt:0 "There will be a new face in the PLA.\n"
+  Retention_of_the_chairmanship_tt:0 "Lin Biao§! will be the §Rchairman of the People's Republic of China§! in the future\n"
+  The_criticize_of_yao_and_focus_on_intraparty_discipline_campaign_tt:0 "Zhang Chunqiao will be blamed.Lin Biao's power will be greatly increased.\n"
+  The_Central_Working_Conference_a_tt:0 "§RIf you don't want Lin Biao to come to power, then please don't choose those options that make Lin Biao's power grow!§!\n"
+
+  LeftRadical_influence_tt:0 "The Political Power of §RLeft Radical§! $RIGHT|+=0$."
+  Conservatives_influence_tt:0 "The Political Power of §OConservatives§! $RIGHT|+=0$."
+  Moderate_influence_tt:0 "The Political Power of §0Moderate§! $RIGHT|+=0$."  
+  Reformists_influence_tt:0 "The Political Power of §CReformists§! $RIGHT|+=0$."
+  Liberal_influence_tt:0 "The Political Power of §BLiberal§! $RIGHT|+=0$."
+  linbiao_dead:0 "Marshal Lin Biao is dead.\n"
+
+  CPC_discipline_up:0 "§RCPC§! will become more §Gdisciplined§!\n"
+  CPC_discipline_down:0 "§RCPC§! will become §Rcorrupt§!\n"
+  CPC_organize_up:0 "§RCPC§! will become more §Gunited§!\n"
+  CPC_organize_down:0 "§RCPC§! will become more §Rdivided§!\n"
+  PRC_soc_dev_up:0 "§OChinese society§!	will become more §Gprogressive§!\n"
+  PRC_soc_dev_down:0 "§OChinese society§!	will become more §Rconservative§!\n"
+  PRC_soc_ideo_left:0 "Social ideology will move further to §Rthe left.§!\n"
+  PRC_soc_ideo_right:0 "Social ideology will move further to §Bthe right§!.\n"
+
+  PRC_gov_eff_1tt:0 "At the cost of efficiency, our overstaffing and corruption problems will be effectively improved! "
+  PRC_gov_red_1tt:0 "Our government will become more efficient, but our government will become more redundant and corrupt! "
+
+  TIB_PRC_liberation:0 "Tibet Province"
+
+  PRC_50s_Pass_a_new_constitution_tt:0 "§OChina will advance towards a socialist country ruled by law.§O"
+  PRC_law_up_tt:0 "China's legal system will become more sound."
+  PRC_50s-Check_Kuomintang_assets_tt:0 "We will have access to hundreds of millions of KMT assets!"
+  PRC_50s-Establish_contact_with_foreign_countries_tt:0 "A new China will emerge on the world stage."
+  PRC_50s_Anti-Rightist_Expansion_tt:0 "The popularity of the right will be decimated, but so will the popularity of our government."
+  PRC_50s_Delegate_cardres_to_work_tt:0 "Our government will be more efficient and less bloated, but officials will demand more allowances.  "
+  PRC_50s-Fake_data_tt:0 "Some nice numbers will please the president, but they will exacerbate the famine and make the government less effective."
+  PRC_50s-land_reform_tt:0 "We will put an end to the feudal land ownership that has persecuted Chinese peasants for thousands of years."
+
+  PRC_Dictatorship_of_the_proletariat_tt:0 "Long live the dictatorship of the proletariat"
+  
+###money
+  PRC_income_1_tt:0 "Our Icome £dollar3: $RIGHT|+=0$B.\n"
+  PRC_budget_money_tt:0 "Our Total Budget £dollar3: $RIGHT|+=0$B.\n"
+  PRC_research_budget_money_tt:0 "Our research budget will increase by $RIGHT|+=0$% as a percentage of our total budget.\n"
+  PRC_construcrtion_budget_money_tt:0 "Our construction budget will increase by $RIGHT|+=0$% as a percentage of our total budget.\n"
+  PRC_administation_budget_money_tt:0 "Our administation budget will increase by $RIGHT|+=0$% as a percentage of our total budget.\n"
+  PRC_agri_machine_tt:0 "Agricultural Mechanization points £food: $RIGHT|+=0$B.\n"
+  PRC_expense_1_tt:0 "Our spending will grow."
+  PRC_expense_2_tt:0 "Our expenses will increase。"
+  PRC_WIP_tt:0 "§RWIP§!"
+
+  PRC_center_local_tt:0 "The central government increased its control over local areas by $RIGHT|+=0$%"
+  PRC_party_local_tt:0 "The Party's overall control increased by $RIGHT|+=0$%"
+  PRC_toal_government_tt:0 "Government efficiency increased by $RIGHT|+=0$%"
+  Bomb_Quemoy_TT:0 "Bomb_Quemoy_TT"

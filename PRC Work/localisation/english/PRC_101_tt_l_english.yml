@@ -1,0 +1,7 @@
+﻿l_english:
+ PRC_LinBiao_spend_money_tt:0 "Spend [?temp_x|-] Billion"
+ PRC_LinBiao_gain_money_tt:0 "Gain [?temp_x|+] Billion"
+
+ PRC_101_Chen_Boda_s_e_centrism_var_gain_weekly:0 "每周电子化进度增长"
+
+ PRC_101_Chen_Boda_s_e_centrism_modifiers_tt:0 "电子化进度提高"
