@@ -1,0 +1,27 @@
+leader_traits = {
+
+    PRC_76_82_The_beginning_of_a_wise_leader = {
+        random = no
+        
+        political_power_gain = -0.2
+        stability_factor = 0.05
+        custom_modifier_tooltip = PRC_76_82_The_beginning_of_a_wise_leader_tt
+
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+    PRC_76_82_Top_leaders_of_the_Party_government_and_army = {
+        random = no
+        
+        political_power_gain = 0.15
+        conscription = 0.015
+		industrial_capacity_factory = 0.04
+        army_morale_factor = 0.05
+
+        ai_will_do = {
+            factor = 0
+        }
+    }
+}
