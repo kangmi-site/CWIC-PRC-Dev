@@ -1,0 +1,561 @@
+guiTypes = {
+	containerWindowType = {
+		name = "PRC_GPCR_gui_open_windows"
+		position = { x = 555 y = 316 }
+		size = { width = 300 height = 70 }
+		moveable = no
+		clipping = no
+
+		buttonType ={
+			name = "PRC_GPCR_gui_open_button"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_UN_Tab_Button"
+			buttonFont = "hoi_16mbs"
+			Orientation = "LOWER_LEFT"
+			buttonText = "Great Proletarian Cul-Rev"
+			#pdx_tooltip = "DIPLOMACY_SEND"
+			#clicksound = click_send
+			#shortcut = "RETURN"
+		}
+	}
+	containerWindowType = {
+		name = "PRC_GPCR_gui_windows"
+		position = { x = -480 y = -325 }
+		size = { width = 100%% height = 100%% }
+		moveable = no
+		clipping = no
+        orientation = CENTER
+
+		background = {
+			name = "background"
+			spriteType = "GFX_GPCR_map_bg"  
+		}
+
+		buttonType = {
+			name = "PRC_GPCR_gui_close_button"
+			position = { x = 644 y = 52 }
+			spriteType = "GFX_button_94x31"
+			buttonFont = "hoi_16mbs"
+			buttonText = "CLOSE"
+			shortcut = "ESCAPE"
+		}
+	    
+		buttonType={
+			name = "GPCR_map_Heilongjiang"
+			position = { x = 525 y = 104 }
+			quadTextureSprite = "GFX_GPCR_map_provinces_1"
+			pdx_tooltip = "Heilongjiang_loc"
+		}
+		buttonType={
+			name = "GPCR_map_Jilin"
+			position = { x = 568 y = 201 }
+			quadTextureSprite = "GFX_GPCR_map_provinces_1"
+			pdx_tooltip = "Jilin_loc"
+		}
+		buttonType={
+			name = "GPCR_map_Liaoning"
+			position = { x = 540 y = 239 }
+			quadTextureSprite = "GFX_GPCR_map_provinces_1"
+			pdx_tooltip = "Liaoning_loc"
+		}
+		buttonType={
+			name = "GPCR_map_Inner_Mongolia"
+			position = { x = 320 y = 110 }
+			quadTextureSprite = "GFX_GPCR_map_provinces_1"
+			pdx_tooltip = "Neimenggu_loc"
+		}
+		iconType={
+		    name = "GPCR_map_Inner_Mongolia_lost"
+			position = { x = 320 y = 110 }
+			spriteType = "GFX_GPCR_map_provinces_1"
+			pdx_tooltip = "Neimenggu_lost_loc"
+		}
+		buttonType = {
+			name = "GPCR_map_Ningxia"
+			position = { x = 374 y = 291 }
+			quadTextureSprite = "GFX_GPCR_map_provinces_1"
+			pdx_tooltip = "Ningxia_loc"
+		}
+		buttonType = {
+			name = "GPCR_map_Gansu"
+			position = { x = 254 y = 273 }
+			quadTextureSprite = "GFX_GPCR_map_provinces_1"
+			pdx_tooltip = "Gansu_loc"
+		}
+
+		buttonType={
+			name = "GPCR_map_Beijing"
+			position = { x = 530 y = 306 }
+			quadTextureSprite = "GFX_GPCR_map_provinces_2"
+			pdx_tooltip = "Beijing_loc"
+		}
+		buttonType={
+			name = "GPCR_map_Tianjin"
+			position = { x = 547 y = 317 }
+			quadTextureSprite = "GFX_GPCR_map_provinces_2"
+			pdx_tooltip = "Tianjin_loc"
+		}
+		buttonType={
+			name = "GPCR_map_Hebei"
+			position = { x = 509 y = 281 }
+			quadTextureSprite = "GFX_GPCR_map_provinces_2"
+			pdx_tooltip = "Hebei_loc"
+		}
+		buttonType={
+			name = "GPCR_map_Shanxi"
+			position = { x = 469 y = 312 }
+			quadTextureSprite = "GFX_GPCR_map_provinces_2"
+			pdx_tooltip = "Shanxi_loc"
+		}
+		buttonType = {
+			name = "GPCR_map_Shannxi"
+			position = { x = 407 y = 332 }
+			quadTextureSprite = "GFX_GPCR_map_provinces_2"
+			pdx_tooltip = "Shannxi_loc"
+		}
+		buttonType = {
+			name = "GPCR_map_Qinghai"
+			position = { x = 207 y = 322 }
+			quadTextureSprite = "GFX_GPCR_map_provinces_2"
+			pdx_tooltip = "Qinghai_loc"
+		}
+		buttonType = {
+			name = "GPCR_map_Henan"
+			position = { x = 471 y = 381 }
+			quadTextureSprite = "GFX_GPCR_map_provinces_2"
+			pdx_tooltip = "Henan_loc"
+		}
+		buttonType = {
+			name = "GPCR_map_Hubei"
+			position = { x = 444 y = 430 }
+			quadTextureSprite = "GFX_GPCR_map_provinces_2"
+			pdx_tooltip = "Hubei_loc"
+		}
+		buttonType = {
+			name = "GPCR_map_Hunan"
+			position = { x = 449 y = 478 }
+			quadTextureSprite = "GFX_GPCR_map_provinces_2"
+			pdx_tooltip = "Hunan_loc"
+		}
+		buttonType = {
+			name = "GPCR_map_Jiangxi"
+			position = { x = 516 y = 476 }
+			quadTextureSprite = "GFX_GPCR_map_provinces_2"
+			pdx_tooltip = "Jiangxi_loc"
+		}
+		buttonType = {
+			name = "GPCR_map_Shandong"
+			position = { x = 528 y = 342 }
+			quadTextureSprite = "GFX_GPCR_map_provinces_2"
+			pdx_tooltip = "Shandong_loc"
+		}
+		buttonType = {
+			name = "GPCR_map_Anhui"
+			position = { x = 530 y = 406 }
+			quadTextureSprite = "GFX_GPCR_map_provinces_2"
+			pdx_tooltip = "Anhui_loc"
+		}
+
+		buttonType = {
+			name = "GPCR_map_Jiangsu"
+			position = { x = 548 y = 395 }
+			quadTextureSprite = "GFX_GPCR_map_provinces_3"
+			pdx_tooltip = "Jiangsu_loc"
+		}
+		buttonType = {
+			name = "GPCR_map_Shanghai"
+			position = { x = 612 y = 448 }
+			quadTextureSprite = "GFX_GPCR_map_provinces_3"
+			pdx_tooltip = "Shanghai_loc"
+		}
+		buttonType = {
+			name = "GPCR_map_Zhejiang"
+			position = { x = 576 y = 455 }
+			quadTextureSprite = "GFX_GPCR_map_provinces_3"
+			pdx_tooltip = "Zhejiang_loc"
+		}
+		buttonType = {
+			name = "GPCR_map_Fujian"
+			position = { x = 550 y = 502 }
+			quadTextureSprite = "GFX_GPCR_map_provinces_3"
+			pdx_tooltip = "Fujian_loc"
+		}
+		buttonType = {
+			name = "GPCR_map_Sichuan"
+			position = { x = 303 y = 409 }
+			quadTextureSprite = "GFX_GPCR_map_provinces_3"
+			pdx_tooltip = "Sichuan_loc"
+		}
+		buttonType = {
+			name = "GPCR_map_Guizhou"
+			position = { x = 377 y = 493 }
+			quadTextureSprite = "GFX_GPCR_map_provinces_3"
+			pdx_tooltip = "Guizhou_loc"
+		}
+		buttonType = {
+			name = "GPCR_map_Yunnan"
+			position = { x = 287 y = 485 }
+			quadTextureSprite = "GFX_GPCR_map_provinces_3"
+			pdx_tooltip = "Yunan_loc"
+		}
+		buttonType = {
+			name = "GPCR_map_Guangxi"
+			position = { x = 386 y = 537 }
+			quadTextureSprite = "GFX_GPCR_map_provinces_3"
+			pdx_tooltip = "Guangxi_loc"
+		}
+		buttonType = {
+			name = "GPCR_map_Guangdong"
+			position = { x = 445 y = 551 }
+			quadTextureSprite = "GFX_GPCR_map_provinces_3"
+			pdx_tooltip = "Guangdong_loc"
+		}
+
+		buttonType = {
+			name = "GPCR_map_Sinkiang_0"
+			position = { x = 36 y = 155 }
+			quadTextureSprite = "GFX_GPCR_map_Sinkiang_0"
+			pdx_tooltip = "Sinkiang_loc"
+		}
+		buttonType = {
+			name = "GPCR_map_Sinkiang_1"
+			position = { x = 36 y = 155 }
+			quadTextureSprite = "GFX_GPCR_map_Sinkiang_1"
+			pdx_tooltip = "Sinkiang_loc"
+		}
+		buttonType = {
+			name = "GPCR_map_Sinkiang_2"
+			position = { x = 36 y = 155 }
+			quadTextureSprite = "GFX_GPCR_map_Sinkiang_2"
+			pdx_tooltip = "Sinkiang_loc"
+		}
+		buttonType = {
+			name = "GPCR_map_Sinkiang"
+			position = { x = 36 y = 155 }
+			quadTextureSprite = "GFX_GPCR_map_Sinkiang"
+			pdx_tooltip = "Sinkiang_loc"
+		}
+		buttonType = {
+			name = "GPCR_map_Tibet_0"
+			position = { x = 35 y = 327 }
+			quadTextureSprite = "GFX_GPCR_map_Tibet_0"
+			pdx_tooltip = "Tibet_loc"
+		}
+		buttonType = {
+			name = "GPCR_map_Tibet"
+			position = { x = 35 y = 327 }
+			quadTextureSprite = "GFX_GPCR_map_Tibet"
+			pdx_tooltip = "Tibet_loc"
+		}
+		buttonType = {
+			name = "GPCR_map_Tibet_1"
+			position = { x = 35 y = 327 }
+			quadTextureSprite = "GFX_GPCR_map_Tibet_1"
+			pdx_tooltip = "Tibet_loc"
+		}
+		buttonType = {
+			name = "GPCR_map_Tibet_2"
+			position = { x = 35 y = 327 }
+			quadTextureSprite = "GFX_GPCR_map_Tibet_2"
+			pdx_tooltip = "Tibet_loc"
+		}
+		buttonType = {
+			name = "GPCR_map_Tibet_3"
+			position = { x = 35 y = 327 }
+			quadTextureSprite = "GFX_GPCR_map_Tibet_3"
+			pdx_tooltip = "Tibet_loc"
+		}
+		buttonType = {
+			name = "GPCR_map_Tibet_4"
+			position = { x = 35 y = 327 }
+			quadTextureSprite = "GFX_GPCR_map_Tibet_4"
+			pdx_tooltip = "Tibet_loc"
+		}	
+		iconType = {
+			name = "GPCR_map_Trans_Karakoram"
+			position = { x = 48 y = 307 }
+			spriteType = "GFX_GPCR_map_Trans_Karakoram"
+			pdx_tooltip = "Trans_Karakoram_loc"
+		}
+		iconType = {
+			name = "GPCR_map_Aksai_Chin"
+			position = { x = 65 y = 327 }
+			spriteType = "GFX_GPCR_map_Aksai_Chin"
+			pdx_tooltip = "Aksai_Chin_loc"
+		}
+		iconType = {
+			name = "GPCR_map_Demchok"
+			position = { x = 68 y = 365 }
+			spriteType = "GFX_GPCR_map_Demchok"
+			pdx_tooltip = "Demchok_loc"
+		}
+		iconType = {
+			name = "GPCR_map_Southern_Tibet"
+			position = { x = 212 y = 474 }
+			spriteType = "GFX_GPCR_map_Southern_Tibet"
+			pdx_tooltip = "Southern_Tibet_loc0"
+		}
+
+		iconType ={
+			name = "GPCR_map_Inner_Mongolia_0"
+			position = { x = 373 y = 201 }
+			quadTextureSprite = "GFX_GPCR_map_Inner_Mongolia_0"
+		}
+		iconType = {
+			name = "GPCR_map_Inner_Mongolia_1"
+			position = { x = 319 y = 111 }
+			quadTextureSprite = "GFX_GPCR_map_Inner_Mongolia_1"
+		}
+		iconType = {
+			name = "GPCR_map_bg_1"
+			position = { x = 38 y = 106 }
+			spriteType = "GFX_GPCR_map_bg_1"
+		}
+		iconType ={
+			name = "GPCR_map_bg_0"
+			position = { x = 36 y = 104 }
+			spriteType = "GFX_GPCR_map_bg_0"
+		}
+		iconType ={
+			name = "GPCR_map_bg_3"
+			position = { x = 69 y = 339 }
+			spriteType = "GFX_GPCR_map_bg_3"
+		}
+		iconType ={
+			name = "GPCR_map_bg_4"
+			position = { x = 59 y = 350 }
+			spriteType = "GFX_GPCR_map_bg_4"
+		}
+		iconType ={
+			name = "GPCR_map_bg_5"
+			position = { x = 34 y = 326 }
+			spriteType = "GFX_GPCR_map_bg_5"
+		}
+		iconType ={
+			name = "GPCR_map_bg_6"
+			position = { x = 163 y = 476 }
+			spriteType = "GFX_GPCR_map_bg_6"
+		}
+		iconType ={
+			name = "GPCR_map_bg_7"
+			position = { x = 158 y = 478 }
+			spriteType = "GFX_GPCR_map_bg_7"
+		}
+		iconType = {
+			name = "GPCR_map_Taiwan_blue"
+			position = { x = 552 y = 524 }
+			spriteType = "GFX_GPCR_map_Taiwan_blue"
+			pdx_tooltip = "Taiwan_blue_loc"
+		}
+		iconType = {
+			name = "GPCR_map_Taiwan_red"
+			position = { x = 552 y = 524 }
+			spriteType = "GFX_GPCR_map_Taiwan_red"
+			pdx_tooltip = "Taiwan_red_loc"
+		}
+		iconType = {
+			name = "GPCR_map_bg_2"
+			position = { x = 26 y = 93 }
+			spriteType = "GFX_GPCR_map_bg_2"
+		}
+		containerWindowType = {
+			name = "PRC_GPCR_provinces_situation_0"
+			position = { x = 22 y = 484 }
+			size = { width = 100%% height = 100%% }
+			moveable = no
+			clipping = no
+	
+			background = {
+				name = "GPCR_provinces_bg_0"
+				spriteType = "GFX_GPCR_provinces_bg_0"  
+			}
+			instantTextBoxType = {
+				name = "GPCR_provinces_title_0"
+				position = { x = 4 y = 4 }
+				text = GPCR_provinces_title_0
+				font = garamond_24
+				format = centre
+				maxWidth = 115
+                maxHeight = 44
+			}
+			iconType = {
+				name = "GPCR_province_unrest_progress_bar"
+				position = { x = 20 y = 61 }
+				spriteType = "GFX_GPCR_province_unrest_progress_bar"
+				pdx_tooltip = "GPCR_province_unrest_progress_bar_loc"
+			}
+			instantTextBoxType = {
+				name = "GPCR_province_unrest_vary"
+				position = { x = 80 y = 76 }
+				text = province_unrest_vary
+				font = vic_22
+				maxWidth = 140
+                maxHeight = 22
+				pdx_tooltip = "GPCR_province_unrest_vary_loc"
+			}
+			instantTextBoxType = {
+				name = "GPCR_Military_administered_text"
+				position = { x = 80 y = 128 }
+				text = GPCR_Military_administered_text
+				font = vic_22
+				maxWidth = 88
+                maxHeight = 44
+			}
+			buttonType = {
+				name = "GPCR_Military_administered_provinces"
+				position = { x = 164 y = 116 }
+				quadTextureSprite = "GFX_GPCR_Military_administered_provinces"
+				alwaystransparent = yes
+			}
+			buttonType = {
+				name = "GPCR_Military_administered_button"
+				position = { x = 160 y = 120 }
+				spriteType = "GFX_GPCR_Military_administered_button"
+				pdx_tooltip = "PRC_GPCR_state_Military_administered_tt"
+			}
+		}
+		containerWindowType = {
+			name = "PRC_GPCR_provinces_situation_1"
+			position = { x = 593 y = 292 }
+			size = { width = 100%% height = 100%% }
+			moveable = no
+			clipping = no
+	
+			background = {
+				name = "GPCR_provinces_bg_1"
+				spriteType = "GFX_GPCR_provinces_bg_1"  
+			}
+			instantTextBoxType = {
+				name ="GPCR_provinces_title_1"
+				position = { x = 160 y = 23 }
+				text = GPCR_provinces_title_1
+				font = garamond_24
+				format = centre
+				maxWidth = 120
+                maxHeight = 48
+			}
+			iconType = {
+				name = "GPCR_province_zaozao_VS_laobao_pie"
+				position = { x = 178 y = 90 }
+				quadTextureSprite = "GFX_GPCR_province_zaozao_VS_laobao_pie"
+			}
+			iconType = {
+				name = "GPCR_province_piechart_overlay"
+				position = { x = 98 y = 82 }
+				spriteType = "GFX_GPCR_province_piechart_overlay"
+				scale = 2.25
+				pdx_tooltip = "GPCR_province_zaozao_VS_laobao_pie_loc"
+			}
+			iconType = {
+				name = "GPCR_province_zaozao_mark"
+				position = { x = 254 y = 90 }
+				spriteType = "GFX_GPCR_province_zaozao_mark"
+			}
+			iconType = {
+				name = "GPCR_province_laobao_mark"
+				position = { x = 254 y = 134 }
+				spriteType = "GFX_GPCR_province_laobao_mark"
+			}
+			instantTextBoxType = {
+				name = "GPCR_province_zaozao_text"
+				position = { x = 268 y = 86 }
+				text = GPCR_province_zaozao_text
+				font = vic_22
+				maxWidth = 68
+                maxHeight = 44
+			}
+			instantTextBoxType = {
+				name = "GPCR_province_laobao_text"
+				position = { x = 268 y = 130 }
+				text = GPCR_province_laobao_text
+				font = vic_22
+				maxWidth = 68
+                maxHeight = 44
+			}
+			instantTextBoxType = {
+				name = "GPCR_province_PLA_status_text"
+				position = { x = 230 y = 222 }
+				text = GPCR_province_PLA_status
+				font = garamond_24
+				format = centre
+				maxWidth = 110
+                maxHeight = 22
+			}
+			iconType = {
+				name = "GPCR_province_PLA_tendency"
+				position = { x = 130 y = 254 }
+				spriteType = "GFX_GPCR_province_PLA_tendency"
+				pdx_tooltip = "GPCR_province_PLA_tendency_loc"
+			}
+			iconType = {
+				name = "GPCR_province_PLA_tendency_pointer"
+				position = { x = 157 y = 278 }
+				spriteType = "GFX_GPCR_province_PLA_tendency_pointer"
+				pdx_tooltip = "GPCR_province_PLA_tendency_loc"
+			}
+			buttonType = {
+				name = "GPCR_province_support_zaozao"
+				position = { x = 251 y = 170 }
+				spriteType = "GFX_GPCR_button"
+				buttonFont = "hoi_16mbs"
+			    buttonText = "Support_Revolutionary_loc"
+				pdx_tooltip = "GPCR_province_support_zaozao_loc"
+			}
+			buttonType = {
+				name = "GPCR_province_support_laobao"
+				position = { x = 251 y = 195 }
+				spriteType = "GFX_GPCR_button"
+				buttonFont = "hoi_16mbs"
+			    buttonText = "Support_Consertives_loc"
+				pdx_tooltip = "GPCR_province_support_laobao_loc"
+			}
+			instantTextBoxType = {
+				name = "GPCR_province_PLA_power_text"
+				position = { x = 120 y = 350 }
+				text = GPCR_province_PLA_power_text
+				font = vic_22
+				format = centre
+				maxWidth = 198
+                maxHeight = 22
+			}
+			instantTextBoxType = {
+				name = "GPCR_province_PLA_rev_tendency_text"
+				position = { x = 98 y = 248 }
+				text = GPCR_province_PLA_rev_tendency_text
+				font = hoi_16mbs
+				maxWidth = 88
+                maxHeight = 54
+			}
+			instantTextBoxType = {
+				name = "GPCR_province_PLA_con_tendency_text"
+				position = { x = 267 y = 248 }
+				text = GPCR_province_PLA_con_tendency_text
+				font = hoi_16mbs
+				format = centre
+				maxWidth = 88
+                maxHeight = 54
+			}
+		}
+		containerWindowType = {
+			name = "GPCR_provinces_yijian"
+			position = { x = 23 y = 92 }
+			size = { width = 100%% height = 100%% }
+			moveable = no
+			clipping = no
+	
+			background = {
+				name = "GPCR_provinces_bg_2"
+				spriteType = "GFX_GPCR_provinces_bg_2"  
+			}
+
+			instantTextBoxType = {
+				name = "GPCR_province_yijian_text1"
+				position = { x = 13 y = 14 }
+				text = GPCR_province_yijian_text1
+				font = vic_22
+				maxWidth = 150
+                maxHeight = 24
+			}
+		}
+	}
+}

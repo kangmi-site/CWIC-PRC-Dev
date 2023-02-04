@@ -1,0 +1,134 @@
+spriteTypes = {
+	SpriteType = {#Political GUI
+		name = "GFX_PRC_Economic_gui_bg"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/Economic_GUI_bg.png"
+		transparencecheck = yes
+	}
+    SpriteType = {
+		name = "GFX_PRC_Economic_gui_civ_industry"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/Economic_GUI_civ_industry_button.png"
+	}
+    SpriteType = {
+		name = "GFX_PRC_Economic_gui_mil_industry"
+		texturefile = "gfx/Scripted_GUI_Special/CPC/Economic_GUI_mili_industry_button.png"
+		transparencecheck = yes
+	}
+    SpriteType = {
+		name = "GFX_PRC_Economic_gui_ship_industry"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/Economic_GUI_ship_industry_button.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_PRC_Economic_gui_agri_industry"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/Economic_GUI_agri_industry_button.png"
+		transparencecheck = yes
+	}
+    SpriteType = {
+		name = "GFX_PRC_Economic_GUI_money_icon"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/Economic_GUI_money_icon.png"
+		transparencecheck = yes
+	}
+    SpriteType = {
+		name = "GFX_PRC_Economic_GUI_constrcution_icon"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/Economic_GUI_ship_constrcution_icon.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_PRC_Economic_GUI_China_icon"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/Economic_GUI_china_map_icon.png"
+		transparencecheck = yes
+	}
+    SpriteType = {
+		name = "GFX_PRC_Economic_GUI_PRC_icon"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/Economic_GUI_PRC_icon.png"
+		transparencecheck = yes
+	}
+    SpriteType = {
+		name = "GFX_Economic_GUI_civ_government_bond_icon"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/Economic_GUI_civ_government_bond_icon.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_Economic_GUI_mili_government_bond_icon"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/Economic_GUI_mili_government_bond_icon.png"
+		transparencecheck = yes
+	}
+    SpriteType = {
+		name = "GFX_PRC_Economic_GUI_cos_factory_icon"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/Economic_GUI_cos_factory_icon.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_PRC_Economic_GUI_USSR_flag"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/Economic_GUI_ship_USSR_flag.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_PRC_Economic_GUI_USA_flag"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/Economic_GUI_ship_USA_flag.png"
+		transparencecheck = yes
+	}
+	progressbartype = {
+		name = "GFX_cpc_progress_bar1"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		textureFile1 = "gfx/Scripted_GUI_Special/CPC/Politic_GUI_progress_bar_small2.png"
+		textureFile2 = "gfx/Scripted_GUI_Special/CPC/Politic_GUI_progress_bar_small1.png"
+		size = { x = 252 y = 28 }
+		effectFile = "gfx/FX/progress.lua"	
+		steps = 100   
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_cpc_progress_bar2"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		textureFile1 = "gfx/Scripted_GUI_Special/CPC/Politic_GUI_progress_bar2.png"
+		textureFile2 = "gfx/Scripted_GUI_Special/CPC/Politic_GUI_progress_bar.png"
+		size = { x = 185 y = 15 }
+		effectFile = "gfx/FX/progress.lua"	
+		steps = 100   
+		horizontal = yes
+	}
+
+	SpriteType = {
+		name = "GFX_PRC_Political_GUI_bg"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/Politic_GUI_bg.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_PRC_Political_GUI_china_map_icon"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/Politic_GUI_china_map_icon.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_PRC_Political_GUI_Politic_GUI_CPC_icon"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/Politic_GUI_CPC_icon.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_PRC_Political_GUI_PRC_icon"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/Politic_GUI_PRC_icon.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_PRC_Politic_GUI_poster_frame"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/Politic_GUI_poster_frame.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_PRC_Politic_GUI_poster_liberation_war"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/Politic_GUI_poster_liberation_war.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_PRC_Politic_GUI_poster_liberal_taiwan"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/Politic_GUI_poster_liberal_taiwan.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_PRC_Politic_GUI_poster_korean_war"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/Politic_GUI_poster_korean_war.png"
+		transparencecheck = yes
+	}
+}

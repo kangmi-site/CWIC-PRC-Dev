@@ -1,0 +1,938 @@
+spriteTypes = {	
+	SpriteType = {
+		name = "GFX_PRC_criticize_deng_counterattack_the_right_deviationist_reversal_of_verdicts_trend"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_PRC_criticize_deng_counterattack_the_right_deviationist_reversal_of_verdicts_trend.png"
+	}
+	SpriteType = {
+		name = "GFX_luzonggang_published"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_luzonggang_published.png"
+	}
+	SpriteType = {
+		name = "GFX_luzonggang_unpublished"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_luzonggang_unpublished.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_70s_establishing_huaguofeng_s_leadership"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_PRC_70s_establishing_huaguofeng_s_leadership.png"
+	}
+	SpriteType = {
+		name = "GFX_Remove_Deng_Xiaoping_from_all_posts_inside_and_outside_the_party"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Remove_Deng_Xiaoping_from_all_posts_inside_and_outside_the_party.png"
+	}
+	SpriteType = {
+		name = "GFX_Retain_Deng_Xiaoping_as_Vice_Premier"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Retain_Deng_Xiaoping_as_Vice_Premier.png"
+	}
+	SpriteType = {
+		name = "GFX_Follow_the_established_policy"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Follow_the_established_policy.png"
+	}
+	SpriteType = {
+		name = "GFX_Follow_the_previous_policy"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Follow_the_previous_policy.png"
+	}
+	SpriteType = {
+		name = "GFX_rual_economic_mangement_reform_rejected"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_rual_economic_mangement_reform_rejected.png"
+	}
+	SpriteType = {
+		name = "GFX_rual_economic_mangement_reform_adopted"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_rual_economic_mangement_reform_adopted.png"
+	}
+	SpriteType = {
+		name = "GFX_20-article_regulations_for_industry_rejected"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_20-article_regulations_for_industry_rejected.png"
+	}
+	SpriteType = {
+		name = "GFX_20-article_regulations_for_industry_adopted"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_20-article_regulations_for_industry_adopted.png"
+	}
+	SpriteType = {
+		name = "GFX_national_symposium_on_steel_industry"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_national_symposium_on_steel_industry.png"
+	}
+	SpriteType = {
+		name = "GFX_restructuring_the_national_railway_system"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_restructuring_the_national_railway_system.png"
+	}
+	SpriteType = {
+		name = "GFX_continue_four_modernizations"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_continue_four_modernizations.png"
+	}
+	SpriteType = {
+		name = "GFX_First_try_to_form_a_cabinet"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_First_try_to_form_a_cabinet.png"
+	}
+	SpriteType = {
+		name = "GFX_block_the_conspiracy_of_GOF"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_block_the_conspiracy_of_GOF.png"
+	}
+	SpriteType = {
+		name = "GFX_Promote_rebel_generals"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Promote_rebel_generals.png"
+	}
+	SpriteType = {
+		name = "GFX_Promote_civil_servants_in_Shanghai"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Promote_civil_servants_in_Shanghai.png"
+	}
+	SpriteType = {
+		name = "GFX_keeping_PLA_members_out_of_politics"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_keeping_PLA_members_out_of_politics.png"
+	}
+	SpriteType = {
+		name = "GFX_Strictly_prevent_the_capitalist_roaders_from_fighting_back"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Strictly_prevent_the_capitalist_roaders_from_fighting_back.png"
+	}
+	SpriteType = {
+		name = "GFX_against_sectarianism_within_party"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_against_sectarianism_within_party.png"
+	}
+	SpriteType = {
+		name = "GFX_The_backbone_of_the_party"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_The_backbone_of_the_party.png"
+	}
+	SpriteType = {
+		name = "GFX_promote_new_faces_to_central_committee"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_promote_new_faces_to_central_committee.png"
+	}
+	SpriteType = {
+		name = "GFX_promote_veteran_cadres_to_central_committee"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_promote_veteran_cadres_to_central_committee.png"
+	}
+	SpriteType = {
+		name = "GFX_Continue_to_brutally_suppress_the_masses_in_Inner_Mongolia"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Continue_to_brutally_suppress_the_masses_in_Inner_Mongolia.png"
+	}
+	SpriteType = {
+		name = "GFX_Send_the_15th_airborne_army_to_Inner_Mongolia"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Send_the_15th_airborne_army_to_Inner_Mongolia.png"
+	}
+	SpriteType = {
+		name = "GFX_Successful_rebellion_in_Inner_Mongolia"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Successful_rebellion_in_Inner_Mongolia.png"
+	}
+	SpriteType = {
+		name = "GFX_Successfully_suppressed_the_rebellion_in_Inner_Mongolia"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Successfully_suppressed_the_rebellion_in_Inner_Mongolia.png"
+	}
+	SpriteType = {
+		name = "GFX_Change_the_administrative_division_of_Inner_Mongolia"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Change_the_administrative_division_of_Inner_Mongolia.png"
+	}
+	SpriteType = {
+		name = "GFX_Implement_comprehensive_military_control_over_Inner_Mongolia"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Implement_comprehensive_military_control_over_Inner_Mongolia.png"
+	}
+	SpriteType = {
+		name = "GFX_Remove_the_military_control_of_Inner_Mongolia"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Remove_the_military_control_of_Inner_Mongolia.png"
+	}
+	SpriteType = { 
+		name = "GFX_Issue_may_22_instructions"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Issue_may_22_instructions.png"
+	}
+	SpriteType = {
+		name = "GFX_Let_the_four_field_gang_control_the_army"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Let_the_four_field_gang_control_the_army.png"
+	}
+	SpriteType = {
+		name = "GFX_Win_over_civilian_factions"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Win_over_civilian_factions.png"
+	}
+	SpriteType = {
+		name = "GFX_Building_a_modern_Corps_in_Northeast_China"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Building_a_modern_Corps_in_Northeast_China.png"
+	}
+	SpriteType = {
+		name = "GFX_Three_loyal_to_four_infinite"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Three_loyal_to_four_infinite.png"
+	}
+	SpriteType = {
+		name = "GFX_One_strike_three_anti"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_One_strike_three_anti.png"
+	}
+	SpriteType = {
+		name = "GFX_The_formation_of_the_university_of_worker_peasant_soldier"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_The_formation_of_the_university_of_worker_peasant_soldier.png"
+	}
+	SpriteType = {
+		name = "GFX_abolition_of_the_chairmanship"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_abolition_of_the_chairmanship.png"
+	}
+	SpriteType = {
+		name = "GFX_Retention_of_the_chairmanship"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Retention_of_the_chairmanship.png"
+	}
+	SpriteType = {
+		name = "GFX_purge_the_may_sixteenth_anti_revolution_elements_ccc"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_purge_the_may_sixteenth_anti_revolution_elements_ccc.png"
+	}
+	SpriteType = {
+		name = "GFX_The_criticize_of_Chen_and_focus_on_intra_party_discipline_campaign_ccc"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_The_criticize_of_Chen_and_focus_on_intra_party_discipline_campaign_ccc.png"
+	}
+	SpriteType = {
+		name = "GFX_The_criticize_of_yao_and_focus_on_intraparty_discipline_campaign_ccc"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_The_criticize_of_yao_and_focus_on_intraparty_discipline_campaign_ccc.png"
+	}
+	SpriteType = {
+		name = "GFX_northern_china_conference"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_northern_china_conference.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_70s_chairman_maos_trip_to_southern_china"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_PRC_70s_chairman_maos_trip_to_southern_china.png"
+	}
+	SpriteType = {
+		name = "GFX_Identify_LinBiao_group_as_far_right"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Identify_LinBiao_group_as_far_right.png"
+	}
+	SpriteType = {
+		name = "GFX_Promote_Deng_xiaoping_as_a_senior_advisor_ccc"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Promote_Deng_xiaoping_as_a_senior_advisor_ccc.png"
+	}
+	SpriteType = {
+		name = "GFX_Let_the_Conservatives_of_the_people_s_Liberation_Army_retire"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Let_the_Conservatives_of_the_people_s_Liberation_Army_retire.png"
+	}
+	SpriteType = {
+		name = "GFX_criticize_the_intrapartys_far_left_ideology"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_criticize_the_intrapartys_far_left_ideology.png"
+	}
+	SpriteType = {
+		name = "GFX_set_up_working_conference_of_the_CMC"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_set_up_working_conference_of_the_CMC.png"
+	}
+	SpriteType = {
+		name = "GFX_zhou_en_lai_preside_over_the_daily_work"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_zhou_en_lai_preside_over_the_daily_work.png"
+	}
+	SpriteType = {
+		name = "GFX_developing_multiple_busness_model"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_developing_multiple_busness_model.png"
+	}
+	SpriteType = {
+		name = "GFX_Stable_joint_fleet"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Stable_joint_fleet.png"
+	}
+	SpriteType = {
+		name = "GFX_Consolidate_naval_and_air_force_support"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Consolidate_naval_and_air_force_support.png"
+	}
+	SpriteType = {
+		name = "GFX_Win_over_local_military_regions"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Win_over_local_military_regions.png"
+	}
+	SpriteType = {
+		name = "GFX_Seek_recognition_and_assistance_from_the_United_States_and_the_Soviet_Union"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Seek_recognition_and_assistance_from_the_United_States_and_the_Soviet_Union.png"
+	}
+	SpriteType = {
+		name = "GFX_Seek_the_support_of_oppressed_cadres_and_the_masses"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Seek_the_support_of_oppressed_cadres_and_the_masses.png"
+	}
+	SpriteType = {
+		name = "GFX_Promise_the_army_greater_autonomy"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Promise_the_army_greater_autonomy.png"
+	}
+	SpriteType = {
+		name = "GFX_Relax_the_control_of_intellectuals_speech"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Relax_the_control_of_intellectuals_speech.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Prevent_border_areas_from_secession"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Prevent_border_areas_from_secession.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Feudal_tyrants_who_opposed_respecting_Confucius_and_restoring_the_ancients"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Feudal_tyrants_who_opposed_respecting_Confucius_and_restoring_the_ancients.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Fire_on_Trotskyites_and_social_fascists"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Fire_on_Trotskyites_and_social_fascists.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Great_victory"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Great_victory.png"
+	}
+	SpriteType = {
+		name = "GFX_a_great_new_victory"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_a_great_new_victory.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Improve_residents_lives"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Improve_residents_lives.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Several_provisions_on_protecting_and_improving_the_environment"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Several_provisions_on_protecting_and_improving_the_environment.png"
+	}
+	SpriteType = {
+		name = "GFX_Northern_China_agricultural_conference"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Northern_China_agricultural_conference.png"
+	}
+	SpriteType = {
+		name = "GFX_build_hydropower_plants_in_rual_areas"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_build_hydropower_plants_in_rual_areas.png"
+	}
+	SpriteType = {
+		name = "GFX_import_power_station_equipment"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_import_power_station_equipment.png"
+	}
+	SpriteType = {
+		name = "GFX_imported_chemical_fiber_and_fertilizer_equipment"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_imported_chemical_fiber_and_fertilizer_equipment.png"
+	}
+	SpriteType = {
+		name = "GFX_import_advance_industrial"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_import_advance_industrial.png"
+	}
+	SpriteType = {
+		name = "GFX_ipoet_chemical_equipment"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_ipoet_chemical_equipment.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Buy_an_off-road_vehicle"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Buy_an_off-road_vehicle.png"
+	}
+	SpriteType = {
+		name = "GFX_purchase_of_military_helicopters"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_purchase_of_military_helicopters.png"
+	}
+	SpriteType = {
+		name = "GFX_purchase_of_airners"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_purchase_of_airners.png"
+	}
+	SpriteType = {
+		name = "GFX_expansion_of_ocean_going_fleet"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_expansion_of_ocean_going_fleet.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Four_three_plan"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Four_three_plan.png"
+	}
+	SpriteType = {
+		name = "GFX_standardized_railroad_construction_system"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_standardized_railroad_construction_system.png"
+	}
+	SpriteType = {
+		name = "GFX_standarized_railroad_management_sysytem"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_standarized_railroad_management_sysytem.png"
+	}
+	SpriteType = {
+		name = "GFX_the_electrification_of_Baocheng_Railway"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_the_electrification_of_Baocheng_Railway.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Grain_saving_campaign"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Grain_saving_campaign.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Reduce_the_price_of_drugs"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Reduce_the_price_of_drugs.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Implement_the_May_7th_instruction"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Implement_the_May_7th_instruction.png"
+	}
+	SpriteType = {
+		name = "GFX_second_north_south_main_line"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_second_north_south_main_line.png"
+	}
+	SpriteType = {
+		name = "GFX_withraw_decision_on_concentraiting_on_the_tasks_of_supporting_the_peasants_military_control_and_military_training"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_withraw_decision_on_concentraiting_on_the_tasks_of_supporting_the_peasants_military_control_and_military_training.png"
+	}
+	SpriteType = {
+		name = "GFX_relocation_of_university_clooeges_and_enterprises_to_the_india"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_relocation_of_university_clooeges_and_enterprises_to_the_india.png"
+	}
+	SpriteType = {
+		name = "GFX_developing_military_enterprise_in_the_southwest_china"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_developing_military_enterprise_in_the_southwest_china.png"
+	}
+	SpriteType = {
+		name = "GFX_continue_eight_sixteen_nuclear_military_project"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_continue_eight_sixteen_nuclear_military_project.png"
+	}
+	SpriteType = {
+		name = "GFX_prc_70s_imporove_farmers_and_workers_lives"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc_70s_imporove_farmers_and_workers_lives.png"
+	}
+	SpriteType = {
+		name = "GFX_third_line_area_exploration_campaigns"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_third_line_area_exploration_campaigns.png"
+	}
+	SpriteType = {
+		name = "GFX_neconnectivity_to_the_southwest"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_neconnectivity_to_the_southwest.png"
+	}
+	SpriteType = {
+		name = "GFX_Dig_more_shelters_chaign_ccc"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Dig_more_shelters_chaign_ccc.png"
+	}
+	SpriteType = {
+		name = "GFX_Evacuation_of_party_and_state_leaders_ccc"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Evacuation_of_party_and_state_leaders_ccc.png"
+	}
+	SpriteType = {
+		name = "GFX_strengthening_the_family_planning"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_strengthening_the_family_planning.png"
+	}
+	SpriteType = {
+		name = "GFX_continue_the_constraction_of_the_third_tier_city_ccc"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_continue_the_constraction_of_the_third_tier_city_ccc.png"
+	}
+	SpriteType = {
+		name = "GFX_power_of_our_people"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_power_of_our_people.png"
+	}
+	SpriteType = {
+		name = "GFX_symposium_of_the_Adminstrative_group_of_the_CMC_ccc"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_symposium_of_the_Adminstrative_group_of_the_CMC_ccc.png"
+	}
+	SpriteType = {
+		name = "GFX_preparing_for_war_against_the_soviet_union_ccc"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_preparing_for_war_against_the_soviet_union_ccc.png"
+	}
+	SpriteType = {
+		name = "GFX_Vice_chairman_lins_order_ccc"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Vice_chairman_lins_order_ccc.png"
+	}
+	SpriteType = {
+		name = "GFX_discussion_on_the_reletion_or_abolition_of_the_chairmanship_ccc"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_discussion_on_the_reletion_or_abolition_of_the_chairmanship_ccc.png"
+	}
+	SpriteType = {
+		name = "GFX_supressing_jiang_qings_bloc_ccc"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_supressing_jiang_qings_bloc_ccc.png"
+	}
+	SpriteType = {
+		name = "GFX_the_criticize_of_lin_and_focus_on_intraparty_discipine_campaign_ccc"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_the_criticize_of_lin_and_focus_on_intraparty_discipine_campaign_ccc.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_718_project"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_718_project.png"
+	}
+	SpriteType = {
+		name = "GFX_continuation_of_project_six_four_zero_ccc"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_continuation_of_project_six_four_zero_ccc.png"
+	}
+	SpriteType = {
+		name = "GFX_prc_70s_10th_national_congress_of_cpc"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc_70s_10th_national_congress_of_cpc.png"
+	}
+	SpriteType = {
+		name = "GFX_the_fourth_five_year_plan"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_the_fourth_five_year_plan.png"
+	}
+	SpriteType = {
+		name = "GFX_type_zero_five_five_Large_Artillery_Missile_Destroyer"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_type_zero_five_five_Large_Artillery_Missile_Destroyer.png"
+	}
+	SpriteType = {
+		name = "GFX_construction_of_dalian_xingang_port"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_construction_of_dalian_xingang_port.png"
+	}
+	SpriteType = {
+		name = "GFX_daqing_qinhuangdao_oil_pipeline"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_daqing_qinhuangdao_oil_pipeline.png"
+	}
+	SpriteType = {
+		name = "GFX_construction_of_geothermal_power_plants"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_construction_of_geothermal_power_plants.png"
+	}
+	SpriteType = {
+		name = "GFX_development_for_fax_technology"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_development_for_fax_technology.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Develop_textile_industry"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Develop_textile_industry.png"
+	}
+	SpriteType = {
+		name = "GFX_development_of_large_scale_general_purpose_integrated_electronic_computer"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_development_of_large_scale_general_purpose_integrated_electronic_computer.png"
+	}
+	SpriteType = {
+		name = "GFX_development_of_CNC_machine_tools"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_development_of_CNC_machine_tools.png"
+	}
+	SpriteType = {
+		name = "GFX_development_of_high_energy_accelerator"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_development_of_high_energy_accelerator.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Continue_the_research_and_development_of_H-8"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Continue_the_research_and_development_of_H-8.png"
+	}
+	SpriteType = {
+		name = "GFX_building_more_generating_units_across_the_country"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_building_more_generating_units_across_the_country.png"
+	}
+	SpriteType = {
+		name = "GFX_lower_prices_for_consumer_electronics"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_lower_prices_for_consumer_electronics.png"
+	}
+	SpriteType = {
+		name = "GFX_started_gezhoubadam_construction_project"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_started_gezhoubadam_construction_project.png"
+	}
+	SpriteType = {
+		name = "GFX_construction_of_sanmenxia_dam"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_construction_of_sanmenxia_dam.png"
+	}
+	SpriteType = {
+		name = "GFX_new_fertilizer_plant"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_new_fertilizer_plant.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Use_the_rivers_in_Southwest_China"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Use_the_rivers_in_Southwest_China.png"
+	}
+	SpriteType = {
+		name = "GFX_construction_of_national_microwave_communication_network"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_construction_of_national_microwave_communication_network.png"
+	}
+	SpriteType = {
+		name = "GFX_expansion_of_water_conservancy_construction_in_rural_areas"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_expansion_of_water_conservancy_construction_in_rural_areas.png"
+	}
+	SpriteType = {
+		name = "GFX_yanshan_oil_renfinery"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_yanshan_oil_renfinery.png"
+	}
+	SpriteType = {
+		name = "GFX_expansion_of_shipyards_in_coastal_areas"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_expansion_of_shipyards_in_coastal_areas.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Breakthroughs_in_science_and_technology"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Breakthroughs_in_science_and_technology.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Against_the_lono_government"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Against_the_lono_government.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Continue_industrial_construction"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Continue_industrial_construction.png"
+	}
+	SpriteType = {
+		name = "GFX_foucusing_on_diplomacy"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_foucusing_on_diplomacy.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Consolidate_the_rule_of_the_PLA_over_local_areas"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Consolidate_the_rule_of_the_PLA_over_local_areas.png"
+	}
+	SpriteType = {
+		name = "GFX_tank_research_Missions_in_the_seventies"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_tank_research_Missions_in_the_seventies.png"
+	}
+	SpriteType = {
+		name = "GFX_Guarantee_urban_and_rural_transactions"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Guarantee_urban_and_rural_transactions.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Support_the_top_leaders_meeting_of_the_three_countries_and_the_Quartet"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Support_the_top_leaders_meeting_of_the_three_countries_and_the_Quartet.png"
+	}
+	SpriteType = {
+		name = "GFX_Relations_with_soth_asian_countries"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Relations_with_soth_asian_countries.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Restore_relations_with_the_government_of_Myanmar"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Restore_relations_with_the_government_of_Myanmar.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Continue_to_support_the_Communist_Party_of_Myanmar"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Continue_to_support_the_Communist_Party_of_Myanmar.png"
+	}
+	SpriteType = {
+		name = "GFX_relations_with_west_asian_countries"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_relations_with_west_asian_countries.png"
+	}
+	SpriteType = {
+		name = "GFX_relations_with_african_countries"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_relations_with_african_countries.png"
+	}
+	SpriteType = {
+		name = "GFX_exploration_of_large_reserves_oil_plant"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_exploration_of_large_reserves_oil_plant.tga"
+	}
+	SpriteType = {
+		name = "GFX_expansion_of_steel_and_metallurgical"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_expansion_of_steel_and_metallurgical.dds"
+	}
+	SpriteType = {
+		name = "GFX_PRC70s_dFH_one"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_PRC70s_dFH_one.dds"
+	}
+	SpriteType = {
+		name = "GFX_support_vietnams_struggle_against_US"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_support_vietnams_struggle_against_US.png"
+	}
+	SpriteType = {
+		name = "GFX_assistance_for_Vietnam"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_assistance_for_Vietnam.png"
+	}
+	SpriteType = {
+		name = "GFX_indifferent_to_the_situation_in_thailand"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_indifferent_to_the_situation_in_thailand.png"
+	}
+	SpriteType = {
+		name = "GFX_support_the_communist_party_of_thailand"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_support_the_communist_party_of_thailand.png"
+	}
+	SpriteType = {
+		name = "GFX_Improve_relations_with_Thailand_democortic_goverment"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Improve_relations_with_Thailand_democortic_goverment.png"
+	}
+	SpriteType = {
+		name = "GFX_support_Sihanouk"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_support_Sihanouk.png"
+	}
+	SpriteType = {
+		name = "GFX_Support_Khmer_Rouge"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Support_Khmer_Rouge.png"
+	}
+	SpriteType = {
+		name = "GFX_the_faliure_of_the_policy_targeting_thailand"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_the_faliure_of_the_policy_targeting_thailand.png"
+	}
+	SpriteType = {
+		name = "GFX_thailand_civilwar"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_thailand_civilwar.png"
+	}
+	SpriteType = {
+		name = "GFX_just_limited_reinforcements"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_just_limited_reinforcements.png"
+	}
+	SpriteType = {
+		name = "GFX_a_base_for_southeast_asia_revolution"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_a_base_for_southeast_asia_revolution.png"
+	}
+	SpriteType = {
+		name = "GFX_the_third_indo_pakistani_war"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_the_third_indo_pakistani_war.png"
+	}
+	SpriteType = {
+		name = "GFX_Demand_LaDakh"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Demand_LaDakh.png"
+	}
+	SpriteType = {
+		name = "GFX_Closer_to_Bhuttos_regime"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Closer_to_Bhuttos_regime.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_70s_tangshan_earthquake"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_PRC_70s_tangshan_earthquake.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_70s_request_for_international_aid"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_PRC_70s_request_for_international_aid.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_70s_send_relief_to_the_victims_ourselves"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_PRC_70s_send_relief_to_the_victims_ourselves.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_70s_PLA_troops_for_earthquake_relief"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_PRC_70s_PLA_troops_for_earthquake_relief.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_70s_reconstruction_of_tangshan"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_PRC_70s_reconstruction_of_tangshan.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_70s_reconstruction_of_the_beijing_shanhaiguan_rairoad"
+		texturefile = "gfx/interface/goals/GFX_PRC_70s_reconstruction_of_the_beijing_shanhaiguan_rairoad.png"
+	}
+	SpriteType = {
+		name = "GFX_Acting_in_tandem_with_pakistan"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Acting_in_tandem_with_pakistan.png"
+	}
+	SpriteType = {
+		name = "GFX_support_the_communist_Party_of_Nepal"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_support_the_communist_Party_of_Nepal.png"
+	}
+	SpriteType = {
+		name = "GFX_maintaining_non_interference_policy_in_south_asian"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_maintaining_non_interference_policy_in_south_asian.png"
+	}
+	SpriteType = {
+		name = "GFX_Send_advisors_to_guide_the_south_asian_communist_parties"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Send_advisors_to_guide_the_south_asian_communist_parties.png"
+	}
+
+
+	
+
+    SpriteType = {
+		name = "GFX_prc_70s_focusing_on_intra-party_discipline"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc_70s_focusing_on_intra-party_discipline.png"
+	}
+	SpriteType = {
+		name = "GFX_prc_70s_Use_the_support_of_the_Soviet_Union"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc_70s_Use_the_support_of_the_Soviet_Union.png"
+	}
+	SpriteType = {
+		name = "GFX_The_Central_Working_Conference"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_The_Central_Working_Conference.png"
+	}
+	SpriteType = {
+		name = "GFX_prc_70s_Expand_the_supply_of_consumer_goods"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc_70s_Expand_the_supply_of_consumer_goods.png"
+	}
+	SpriteType = {
+		name = "GFX_Improve_people_s_welfare"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Improve_people_s_welfare.png"
+	}
+	SpriteType = {
+		name = "GFX_Increase_scientific_research_expenditure"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Increase_scientific_research_expenditure.png"
+	}
+	SpriteType = {
+		name = "GFX_restore_agricultural_production"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_restore_agricultural_production.png"
+	}
+	SpriteType = {
+		name = "GFX_empphasis_on_sixty_article_regulations_for_agriculture"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_empphasis_on_sixty_article_regulations_for_agriculture.png"
+	}
+	SpriteType = {
+		name = "GFX_establishing_the_enius_theory"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_establishing_the_enius_theory.png"
+	}
+	SpriteType = {
+		name = "GFX_establishment_of_the_Central_Organizational_and_Propaganda_goup"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_establishment_of_the_Central_Organizational_and_Propaganda_goup.png"
+	}
+	SpriteType = {
+		name = "GFX_Crackdown_on_members_of_linbiaos_bloc_within_the_PLA"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Crackdown_on_members_of_linbiaos_bloc_within_the_PLA.png"
+	}
+	SpriteType = {
+		name = "GFX_rectification_of_the_current_state_of_education"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_rectification_of_the_current_state_of_education.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Beware_of_capitalist_elements_in_economic_recovery"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Beware_of_capitalist_elements_in_economic_recovery.png"
+	}
+	SpriteType = {
+		name = "GFX_resumpition_of_railroad_construction_in_the_third_line_area"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_resumpition_of_railroad_construction_in_the_third_line_area.png"
+	}
+	SpriteType = {
+		name = "GFX_expansion_of_local_railroad_network"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_expansion_of_local_railroad_network.png"
+	}
+	SpriteType = {
+		name = "GFX_nspring_labor_enthusiasm_with_literature_and_art"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_nspring_labor_enthusiasm_with_literature_and_art.png"
+	}
+	SpriteType = {
+		name = "GFX_exporation_oil_and_gas_plants_in_the_third_line_area"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_exporation_oil_and_gas_plants_in_the_third_line_area.png"
+	}
+	SpriteType = {
+		name = "GFX_connectivity_to_the_coal_and_O_G_mines"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_connectivity_to_the_coal_and_O_G_mines.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Pay_attention_to_people_s_life"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Pay_attention_to_people_s_life.png"
+	}
+	SpriteType = {
+		name = "GFX_investment_in_electronic_industury_construction"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_investment_in_electronic_industury_construction.png"
+	}
+	SpriteType = {
+		name = "GFX_construction_of_hydraulic_hubs"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_construction_of_hydraulic_hubs.png"
+	}
+	SpriteType = {
+		name = "GFX_Relation_with_sotheast_asian_countries"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Relation_with_sotheast_asian_countries.png"
+	}
+	SpriteType = {
+		name = "GFX_Stay_out_of_war"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Stay_out_of_war.png"
+	}
+	SpriteType = {
+		name = "GFX_support_communist_party_of_India_Marxist_leninist"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_support_communist_party_of_India_Marxist_leninist.png"
+	}
+	SpriteType = {
+		name = "GFX_support_communist_party_of_india_marxist"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_support_communist_party_of_india_marxist.png"
+	}
+	SpriteType = {
+		name = "GFX_recognition_of_Bangledesh_as_an_independent_state"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_recognition_of_Bangledesh_as_an_independent_state.png"
+	}
+	SpriteType = {
+		name = "GFX_improve_relations_with_the_republic_of_afghanistan"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_improve_relations_with_the_republic_of_afghanistan.png"
+	}
+	SpriteType = {
+		name = "GFX_improve_relations_with_west_asian_countries"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_improve_relations_with_west_asian_countries.png"
+	}
+	SpriteType = {
+		name = "GFX_support_the_afghan_maoist"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_support_the_afghan_maoist.png"
+	}
+	SpriteType = {
+		name = "GFX_send_advisors_to_the_republic_of_afghanistan"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_send_advisors_to_the_republic_of_afghanistan.png"
+	}
+	SpriteType = {
+		name = "GFX_improve_relations_with_frican_countries"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_improve_relations_with_frican_countries.png"
+	}
+	SpriteType = {
+		name = "GFX_the_culmination_of_diomatic_relations_with_african_countries"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_the_culmination_of_diomatic_relations_with_african_countries.png"
+	}
+	SpriteType = {
+		name = "GFX_boosting_trade_with_africa"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_boosting_trade_with_africa.png"
+	}
+	SpriteType = {
+		name = "GFX_support_our_african_brothers"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_support_our_african_brothers.png"
+	}
+	SpriteType = {
+		name = "GFX_support_african_countries_to_cut_diplomatic_relation_with_Taiwan"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_support_african_countries_to_cut_diplomatic_relation_with_Taiwan.png"
+	}
+	SpriteType = {
+		name = "GFX_The_Three_World_theory"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_The_Three_World_theory.png"
+	}
+	SpriteType = {
+		name = "GFX_Nixons_shock"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Nixons_shock.png"
+	}
+	SpriteType = {
+		name = "GFX_ninteen_seventy_two_japen_china_joint_communique"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_ninteen_seventy_two_japen_china_joint_communique.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Conclude_economic_and_trade_agreement_with_Japan"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Conclude_economic_and_trade_agreement_with_Japan.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Receiving_Japanese_loans"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Receiving_Japanese_loans.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Exchange_for_advanced_Japanese_equipment"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Exchange_for_advanced_Japanese_equipment.png"
+	}
+	SpriteType = {
+		name = "GFX_korean_penisula"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_korean_penisula.png"
+	}
+	SpriteType = {
+		name = "GFX_continued_aid_to_DPRK"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_continued_aid_to_DPRK.png"
+	}
+	SpriteType = {
+		name = "GFX_sale_arms_to_DPRK"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_sale_arms_to_DPRK.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Detonate_the_second_Korean_War"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Detonate_the_second_Korean_War.png"
+	}
+	SpriteType = {
+		name = "GFX_promote_trade_with_Korean_Peninsula"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_promote_trade_with_Korean_Peninsula.png"
+	}
+	SpriteType = {
+		name = "GFX_Cut_off_aid_to_DPRK"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Cut_off_aid_to_DPRK.png"
+	}
+	SpriteType = {
+		name = "GFX_Use_ROK_instead_of_South_Korea"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Use_ROK_instead_of_South_Korea.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Promote_regime_change_in_North_Korea"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Promote_regime_change_in_North_Korea.png"
+	}
+	SpriteType = {
+		name = "GFX_Sino_US_trade_talk"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Sino_US_trade_talk.png"
+	}
+	SpriteType = {
+		name = "GFX_request_to_lift_the_embargo_decree_against_china"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_request_to_lift_the_embargo_decree_against_china.png"
+	}
+	SpriteType = {
+		name = "GFX_taiwan_problems"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_taiwan_problems.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Let_the_United_States_remain_calm_on_the_Vietnam_issue"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Let_the_United_States_remain_calm_on_the_Vietnam_issue.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Impact_of_diplomatic_nuclear_explosion"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Impact_of_diplomatic_nuclear_explosion.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Establish_diplomatic_relations_with_Western_European_capitalist_countries"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Establish_diplomatic_relations_with_Western_European_capitalist_countries.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Enhance_cooperation_with_the_European_Community"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Enhance_cooperation_with_the_European_Community.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_200_Sino_French_agreements"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_200_Sino_French_agreements.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Purchase_advanced_weapons"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Purchase_advanced_weapons.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Seek_economic_assistance_from_the_European_Community"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Seek_economic_assistance_from_the_European_Community.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_prepare_the_war"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_prepare_the_war.png"
+	}
+	SpriteType = {
+		name = "GFX_reuse_of_Type_five_six_semi_automantic_rifles"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_reuse_of_Type_five_six_semi_automantic_rifles.png"
+	}
+	SpriteType = {
+		name = "GFX_CZ_first"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_CZ_first.png"
+	}
+	SpriteType = {
+		name = "GFX_use_funds_elsewhere"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_use_funds_elsewhere.png"
+	}
+	SpriteType = {
+		name = "GFX_new_AA_missile_experiment"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_new_AA_missile_experiment.png"
+	}
+	SpriteType = {
+		name = "GFX_prc70s_Ground_to_air_missile_experiment"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_prc70s_Ground_to_air_missile_experiment.png"
+	}
+	SpriteType = {
+		name = "GFX_Chinas_new_anti_missile_system"
+		texturefile = "gfx/interface/goals/PRC70s_new/GFX_Chinas_new_anti_missile_system.png"
+	}
+} 

@@ -1,0 +1,654 @@
+spriteTypes = {	
+    SpriteType = {
+		name = "GFX_PRC_76_82_Committee_for_Editing_and_Publishing_the_Works_of_Mao_Zedong"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Committee_for_Editing_and_Publishing_the_Works_of_Mao_Zedong.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_The_race_to_the_finish_line"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_The_race_to_the_finish_line.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Problems_in_the_duty_room"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Problems_in_the_duty_room.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_The_Problem_of_Chairman_Mao_s_Will"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_The_Problem_of_Chairman_Mao_s_Will.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Problems_of_the_South_Exit_Tank_Division"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Problems_of_the_South_Exit_Tank_Division.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Always_follow_the_established_policy_of_Chairman_Mao"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Always_follow_the_established_policy_of_Chairman_Mao.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_A_counter-coup"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_A_counter-coup.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Evacuate_members"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Evacuate_members.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Reviving_the_Great_Proletarian_Cultural_Revolution"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Reviving_the_Great_Proletarian_Cultural_Revolution.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Evaluation_of_the_education_system"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Evaluation_of_the_education_system.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_National_Conference_on_Higher_Education_Admissions"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_National_Conference_on_Higher_Education_Admissions.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_The_problem_of_going_to_the_mountains_and_the_countryside"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_The_problem_of_going_to_the_mountains_and_the_countryside.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Solving_the_problem_of_worker_advocacy_teams"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Solving_the_problem_of_worker_advocacy_teams.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Resumption_of_college_entrance_examinations"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Resumption_of_college_entrance_examinations.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Continuation_of_the_University_of_Workers_and_Peasants"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Continuation_of_the_University_of_Workers_and_Peasants.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Maintaining_the_presence_of_the_Workers_Advocacy_Team"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Maintaining_the_presence_of_the_Workers_Advocacy_Team.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Removal_of_workers_propaganda_teams_from_schools"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Removal_of_workers_propaganda_teams_from_schools.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Development_of_industrial_basic_education"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Development_of_industrial_basic_education.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_The_problem_of_the_Red_Guard_organization"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_The_problem_of_the_Red_Guard_organization.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Restoration_of_the_Society_of_Arts_and_Letters"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Restoration_of_the_Society_of_Arts_and_Letters.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Modern_teaching_materials"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Modern_teaching_materials.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Addition_of_higher_education_institutions"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Addition_of_higher_education_institutions.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Universal_Primary_Education"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Universal_Primary_Education.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_The_Trinity"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_The_Trinity.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Control_of_urban_prices"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Control_of_urban_prices.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Promoting_Family_Planning"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Promoting_Family_Planning.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Development_of_urban_construction"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Development_of_urban_construction.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Issuance_of_treasury_bills"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Issuance_of_treasury_bills.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Strengthening_environmental_protection"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Strengthening_environmental_protection.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Adjustment_of_employee_wages"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Adjustment_of_employee_wages.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Four_Modernizations"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Four_Modernizations.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Adjustment_of_domestic_policies"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Adjustment_of_domestic_policies.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Revision_of_the_Constitution"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Revision_of_the_Constitution.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Change_the_lyrics_of_the_national_anthem"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Change_the_lyrics_of_the_national_anthem.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Restoration_of_people_s_congresses_at_all_levels"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Restoration_of_people_s_congresses_at_all_levels.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Preserving_the_revolutionary_heritage"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Preserving_the_revolutionary_heritage.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Protecting_the_right_to_freedom_of_expression_and_debate"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Protecting_the_right_to_freedom_of_expression_and_debate.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Eliminate_extreme_freedom_of_speech"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Eliminate_extreme_freedom_of_speech.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Purge_the_Cult_of_the_Individual"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Purge_the_Cult_of_the_Individual.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Carry_out_a_strict_campaign"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Carry_out_a_strict_campaign.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Restoration_of_local_party_committees_and_governments"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Restoration_of_local_party_committees_and_governments.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Younger_cadre_groups"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Younger_cadre_groups.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Maintaining_the_existence_of_the_Revolutionary_Committee"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Maintaining_the_existence_of_the_Revolutionary_Committee.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Retaining_the_People_s_Commune"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Retaining_the_People_s_Commune.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Streamlining_the_central_organization"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Streamlining_the_central_organization.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Combating_Corruption"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Combating_Corruption.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Establishment_of_the_Central_Advisory_Board"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Establishment_of_the_Central_Advisory_Board.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Destroying_the_Gang_of_Four"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Destroying_the_Gang_of_Four.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Consult_Marshal_Ye_s_opinion"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Consult_Marshal_Ye_s_opinion.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Coordination_of_the_Central_Police_Regiment"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Coordination_of_the_Central_Police_Regiment.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_The_final_word"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_The_final_word.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Wise_Leaders"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Wise_Leaders.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Business_as_usual"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Business_as_usual.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Funeral_Committee_Matters"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Funeral_Committee_Matters.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Three_correct_treatments"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Three_correct_treatments.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Covering_up_the_April_5th_Incident"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Covering_up_the_April_5th_Incident.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Chairman_Mao_Memorial_Hall"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Chairman_Mao_Memorial_Hall.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_The_Great_Discussion_on_the_Standard_of_Truth"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_The_Great_Discussion_on_the_Standard_of_Truth.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Practice_as_the_only_standard_to_test_the_right_and_wrong_of_the_route"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Practice_as_the_only_standard_to_test_the_right_and_wrong_of_the_route.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Rereading_Where_Do_People_Get_Their_Right_Ideas_From"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Rereading_Where_Do_People_Get_Their_Right_Ideas_From.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Fully_understand_Mao_Zedong_s_relevant_instructions"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Fully_understand_Mao_Zedong_s_relevant_instructions.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Complete_understanding_of_Chairman_Mao_s_revolutionary_line"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Complete_understanding_of_Chairman_Mao_s_revolutionary_line.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Truth_standard_remedial_course"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Truth_standard_remedial_course.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_The_purpose_of_the_proletariat_in_understanding_the_world"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_The_purpose_of_the_proletariat_in_understanding_the_world.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Theoretical_work_retreat"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Theoretical_work_retreat.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Rectification_of_theoretical_work"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Rectification_of_theoretical_work.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Carrying_on_the_legacy_of_Chairman_Mao"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Carrying_on_the_legacy_of_Chairman_Mao.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_To_work_for_the_rejuvenation_of_the_Chinese_nation"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_To_work_for_the_rejuvenation_of_the_Chinese_nation.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Ending_Strife"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Ending_Strife.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Purity_of_party_members_thinking"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Purity_of_party_members_thinking.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_The_12th_Communist_Party_Congress"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_The_12th_Communist_Party_Congress.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Exposing_and_criticizing_the_Gang_of_Four"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Exposing_and_criticizing_the_Gang_of_Four.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Set_Sail"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Set_Sail.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Retention_of_former_writing_team_members_in_Shanghai"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Retention_of_former_writing_team_members_in_Shanghai.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Identified_the_Gang_of_Four_as_a_far_right_force"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Identified_the_Gang_of_Four_as_a_far_right_force.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Small-scale_opposition_to_left_leaning"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Small-scale_opposition_to_left_leaning.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Continued_persecution_of_right_leaning_elements"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Continued_persecution_of_right_leaning_elements.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Rehabilitating_those_persecuted_by_the_Gang_of_Four"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Rehabilitating_those_persecuted_by_the_Gang_of_Four.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Vindication_of_all_persecuted_persons"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Vindication_of_all_persecuted_persons.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Opposing_Rightism_in_the_Party"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Opposing_Rightism_in_the_Party.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Monument_to_Chairman_Mao"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Monument_to_Chairman_Mao.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_The_decision_to_downplay_the_Mao_era"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_The_decision_to_downplay_the_Mao_era.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Empowered_rebel_militias"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Empowered_rebel_militias.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Forced_Retirement_of_Rocket_Riding_Officials"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Forced_Retirement_of_Rocket_Riding_Officials.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Doing_justice_to_the_early_leaders_of_the_Party"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Doing_justice_to_the_early_leaders_of_the_Party.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Euphemistic_criticism_of_Deng_Xiaoping"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Euphemistic_criticism_of_Deng_Xiaoping.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Remove_Deng_Xiaoping_s_name_from_the_criticism_list"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Remove_Deng_Xiaoping_s_name_from_the_criticism_list.png"
+	}
+	SpriteType = {
+		name = "GFX_PRC_76_82_Stimulate_economic_vitality"
+		texturefile = "gfx/interface/goals/PRC76_82/GFX_PRC_76_82_Stimulate_economic_vitality.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+	SpriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/PRC76_82/.png"
+	}
+} 

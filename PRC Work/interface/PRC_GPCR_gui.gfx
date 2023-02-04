@@ -1,0 +1,246 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_GPCR_map_bg"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_map_bg.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_provinces_bg_0"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_provinces_bg_0.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_provinces_bg_1"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_provinces_bg_1.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_provinces_bg_2"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_provinces_bg_2.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_map_bg_0"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_map_bg_0.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_map_bg_1"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_map_bg_1.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_map_bg_2"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_map_bg_2.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_map_bg_2"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_map_bg_2.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_map_bg_3"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_map_bg_3.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_map_bg_4"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_map_bg_4.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_map_bg_5"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_map_bg_5.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_map_bg_6"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_map_bg_6.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_map_bg_7"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_map_bg_7.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_map_provinces_1"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_map_provinces_1.png"
+		noOfFrames = 36
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_map_provinces_2"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_map_provinces_2.png"
+		noOfFrames = 36
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_map_provinces_3"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_map_provinces_3.png"
+		noOfFrames = 36
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_map_Sinkiang_0"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_map_Sinkiang_0.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_map_Sinkiang"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_map_Sinkiang.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_map_Sinkiang_1"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_map_Sinkiang_1.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_map_Sinkiang_2"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_map_Sinkiang_2.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_map_Tibet_0"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_map_Tibet_0.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_map_Tibet"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_map_Tibet.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_map_Tibet_1"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_map_Tibet_1.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_map_Tibet_2"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_map_Tibet_2.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_map_Tibet_3"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_map_Tibet_3.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_map_Tibet_4"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_map_Tibet_4.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_map_Inner_Mongolia_lost"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_map_Inner_Mongolia_lost.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_map_Inner_Mongolia_0"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_map_Inner_Mongolia_0.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_map_Trans_Karakoram"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_map_Trans_Karakoram.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_map_Aksai_Chin"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_map_Aksai_Chin.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_map_Demchok"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_map_Demchok.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_map_Southern_Tibet"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_map_Southern_Tibet.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_map_Inner_Mongolia_1"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_map_Inner_Mongolia_1.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_map_Taiwan_blue"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_map_Taiwan_blue.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_map_Taiwan_red"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_map_Taiwan_red.png"
+		transparencecheck = yes
+	}
+	progressbartype = {
+		name = "GFX_GPCR_province_unrest_progress_bar"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		textureFile1 = "gfx/Scripted_GUI_Special/CPC/GPCR_progress_bar_red_0.png"
+		textureFile2 = "gfx/Scripted_GUI_Special/CPC/GPCR_progress_bar_blue_0.png"
+		size = { x = 36 y = 120 }
+		effectFile = "gfx/FX/progress.lua"	
+		steps = 100   
+		horizontal = no
+	}
+	SpriteType = {
+		name = "GFX_GPCR_Military_administered_provinces"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_Military_administered_provinces.png"
+		noOfFrames = 36
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_GPCR_Military_administered_button"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_Military_administered_button.png"
+		transparencecheck = yes
+	}
+	circularProgressBarType = {
+		name = "GFX_GPCR_province_zaozao_VS_laobao_pie"
+		textureFile1 = "gfx/Scripted_GUI_Special/CPC/GPCR_province_laobao_pie.png"
+		textureFile2 = "gfx/Scripted_GUI_Special/CPC/GPCR_province_zaozao_pie.png"
+		size = 70
+		rotation = -90
+		amount = 100
+	}
+	SpriteType = {
+		name = "GFX_GPCR_province_piechart_overlay"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_province_piechart_overlay.png"
+	}
+	SpriteType = {
+		name = "GFX_GPCR_province_zaozao_mark"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_province_zaozao_mark.png"
+	}
+	SpriteType = {
+		name = "GFX_GPCR_province_laobao_mark"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_province_laobao_mark.png"
+	}
+	SpriteType = {
+		name = "GFX_GPCR_province_PLA_tendency"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_province_PLA_tendency.png"
+	}
+	SpriteType = {
+		name = "GFX_GPCR_button"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_button.png"
+	}
+	SpriteType = {
+		name = "GFX_GPCR_province_PLA_tendency_pointer"   
+		texturefile = "gfx/Scripted_GUI_Special/CPC/GPCR_province_PLA_tendency_pointer.png"
+		noOfFrames = 9
+		transparencecheck = yes
+	}
+}

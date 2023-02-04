@@ -1,0 +1,645 @@
+guiTypes = {
+	containerWindowType = {
+		name = "PRC_all_gui"
+		position = { x = 740 y = 80 }
+		size = { width = 100%% height = 100%% }
+		moveable = no
+		clipping = no
+		background = {
+			name = "PRC_Economic_gui_bg"		
+			quadTextureSprite ="GFX_PRC_Economic_gui_bg"
+		}
+		iconType ={
+			name ="PRC_Economic_gui_china_map_icon"
+			spriteType = "GFX_PRC_Economic_GUI_China_icon"
+			position = { x = 660 y = 620 }
+			alwaystransparent = no
+		}
+		iconType ={
+			name ="PRC_Economic_GUI_PRC_icon"
+			spriteType = "GFX_PRC_Economic_GUI_PRC_icon"
+			position = { x = 400 y = 628 }
+			alwaystransparent = no
+
+		}
+		iconType ={
+			name ="PRC_Economic_GUI_money_icon"
+			spriteType = "GFX_PRC_Economic_GUI_money_icon"
+			position = { x = 33 y = 570 }
+			alwaystransparent = no
+
+		}
+		instantTextboxType = {
+			name = "PRC_Economic_gui_txt_1"
+			position = { x = 125 y = 605 }
+			font = "hoi_24header"
+			text = "Government Bond"
+			maxWidth = 10000
+			maxHeight = 60
+			fixedsize = yes
+			format = left
+			alwaystransparent = yes
+		}
+		iconType ={
+			name ="Economic_GUI_civ_government_bond_icon"
+			spriteType = "GFX_Economic_GUI_civ_government_bond_icon"
+			position = { x = 70 y = 650 }
+			alwaystransparent = no
+
+		}
+		instantTextboxType = {
+			name = "PRC_Economic_gui_txt_4"
+			position = { x = 140 y = 660 }
+			font = "hoi_24header"
+			text = "[?PRC.gov_bond_civ]B"
+			maxWidth = 10000
+			maxHeight = 60
+			fixedsize = yes
+			format = centre
+			alwaystransparent = yes
+		}
+		iconType ={
+			name ="Economic_GUI_mili_government_bond_icon"
+			spriteType = "GFX_Economic_GUI_mili_government_bond_icon"
+			position = { x = 70 y = 690 }
+			alwaystransparent = no
+
+		}
+		instantTextboxType = {
+			name = "PRC_Economic_gui_txt_5"
+			position = { x = 140 y = 700 }
+			font = "hoi_24header"
+			text = "[?PRC.gov_bond_mili]B"
+			maxWidth = 10000
+			maxHeight = 60
+			fixedsize = yes
+			format = centre
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "PRC_Economic_gui_txt_2"
+			position = { x = 50 y = 420 }
+			font = "hoi_24header"
+			text = "DEBT"
+			maxWidth = 10000
+			maxHeight = 60
+			fixedsize = yes
+			format = left
+			alwaystransparent = yes
+		}
+		iconType ={
+			name ="Economic_GUI_USSR_flag"
+			spriteType = "GFX_PRC_Economic_GUI_USSR_flag"
+			position = { x = 50 y = 470 }
+			alwaystransparent = no
+
+		}
+		instantTextboxType = {
+			name = "PRC_Economic_gui_txt_3"
+			position = { x = 100 y = 525 }
+			font = "hoi_24header"
+			text = "[?sov_prc_loan]B"
+			maxWidth = 10000
+			maxHeight = 60
+			fixedsize = yes
+			format = centre
+			alwaystransparent = yes
+		}
+		iconType ={
+			name ="Economic_GUI_USA_flag"
+			spriteType = "GFX_PRC_Economic_GUI_USA_flag"
+			position = { x = 230 y = 470 }
+			alwaystransparent = no
+
+		}
+		instantTextboxType = {
+			name = "PRC_Economic_gui_txt_6"
+			position = { x = 280 y = 525 }
+			font = "hoi_24header"
+			text = "[?usa_prc_loan]B"
+			maxWidth = 10000
+			maxHeight = 60
+			fixedsize = yes
+			format = centre
+			alwaystransparent = yes
+		}
+		buttonType ={
+			name ="PRC_Economic_gui_civ_industry"
+			spriteType = "GFX_PRC_Economic_gui_civ_industry"
+			position = { x = 780 y = 100 }
+			alwaystransparent = no
+		}
+		instantTextboxType = {
+			name = "PRC_Economic_gui_txt_7"
+			position = { x = 790 y = 100 }
+			font = "hoi_30header"
+			text = "[?civ_industry_budget]B"
+			maxWidth = 10000
+			maxHeight = 60
+			fixedsize = yes
+			format = centre
+			alwaystransparent = yes
+		}
+		buttonType ={
+			name ="PRC_Economic_gui_mil_industry"
+			spriteType = "GFX_PRC_Economic_gui_mil_industry"
+			position = { x = 390 y = 100 }
+			alwaystransparent = no
+		}
+		instantTextboxType = {
+			name = "PRC_Economic_gui_txt_8"
+			position = { x = 400 y = 100 }
+			font = "hoi_30header"
+			text = "[?mili_industry_budget]B"
+			maxWidth = 10000
+			maxHeight = 60
+			fixedsize = yes
+			format = centre
+			alwaystransparent = yes
+		}
+		buttonType ={
+			name ="PRC_Economic_gui_ship_industry"
+			spriteType = "GFX_PRC_Economic_gui_ship_industry"
+			position = { x = 520 y = 100 }
+			alwaystransparent = no
+		}
+		instantTextboxType = {
+			name = "PRC_Economic_gui_txt_9"
+			position = { x = 530 y = 100 }
+			font = "hoi_30header"
+			text = "[?ship_industry_budget]B"
+			maxWidth = 10000
+			maxHeight = 60
+			fixedsize = yes
+			format = centre
+			alwaystransparent = yes
+		}
+		buttonType ={
+			name ="PRC_Economic_gui_agri_industry"
+			spriteType = "GFX_PRC_Economic_gui_agri_industry"
+			position = { x = 650 y = 100 }
+			alwaystransparent = no
+		}
+		instantTextboxType = {
+			name = "PRC_Economic_gui_txt_10"
+			position = { x = 660 y = 100 }
+			font = "hoi_30header"
+			text = "[?agri_industry_budget]B"
+			maxWidth = 10000
+			maxHeight = 60
+			fixedsize = yes
+			format = centre
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "PRC_Economic_government_bar"
+			spriteType = "GFX_cpc_progress_bar2" 
+			position = { x = 460 y = 640 } 
+			#frame = 64	 
+		}
+		iconType = {
+			name = "PRC_Economic_agri_industry_bar"
+			spriteType = "GFX_cpc_progress_bar2" 
+			position = { x = 460 y = 700 } 
+			#frame = 64	 
+		}
+		#################################################
+		iconType = {
+			name = "pie_1"
+			position = { x = 800 y = 400 }
+			spriteType = GFX_pie_1
+			pdx_tooltip = CPC_pie_1_tt
+		}
+		iconType = {
+			name = "pie_2"
+			position = { x = 800 y = 400 }
+			spriteType = GFX_pie_2
+			pdx_tooltip = CPC_pie_2_tt
+		}
+		iconType = {
+			name = "pie_3"
+			position = { x = 800 y = 400 }
+			spriteType = GFX_pie_3
+			pdx_tooltip = CPC_pie_3_tt
+		}
+		
+		
+		#GFX_button_123x34
+		#GFX_button_94x31
+		#GFX_button_148x34
+
+		buttonType ={
+			name ="CPC_add_1"
+			position = { x = 274 y = -760 }
+			
+			quadTextureSprite ="GFX_button_94x31"
+			buttonFont = "hoi_16mbs"
+			Orientation = "LOWER_LEFT"
+			buttonText = "+1B"
+			#pdx_tooltip = "DIPLOMACY_SEND"
+			clicksound = click_send
+			#shortcut = "RETURN"
+		}
+		buttonType ={
+			name ="CPC_reduce_1"
+			position = { x = 50 y = -760 }
+			
+			quadTextureSprite ="GFX_button_94x31"
+			buttonFont = "hoi_16mbs"
+			Orientation = "LOWER_LEFT"
+			buttonText = "-1B"
+			#pdx_tooltip = "DIPLOMACY_SEND"
+			clicksound = click_send
+			#shortcut = "RETURN"
+		}
+		buttonType ={
+			name ="CPC_reduce_10"
+			position = { x = 36 y = -805 }
+			
+			quadTextureSprite ="GFX_button_123x34"
+			buttonFont = "hoi_16mbs"
+			Orientation = "LOWER_LEFT"
+			buttonText = "-10B"
+			#pdx_tooltip = "DIPLOMACY_SEND"
+			clicksound = click_send
+			#shortcut = "RETURN"
+		}
+		buttonType ={
+			name ="CPC_add_10"
+			position = { x = 270 y = -805 }
+			
+			quadTextureSprite ="GFX_button_123x34"
+			buttonFont = "hoi_16mbs"
+			Orientation = "LOWER_LEFT"
+			buttonText = "+10B"
+			#pdx_tooltip = "DIPLOMACY_SEND"
+			clicksound = click_send
+			#shortcut = "RETURN"
+		}
+		buttonType ={
+			name ="CPC_add_to_yusuan"
+			position = { x = 150 y = -760 }
+			
+			quadTextureSprite ="GFX_button_123x34"
+			buttonFont = "hoi_16mbs"
+			Orientation = "LOWER_LEFT"
+			buttonText = "Modifier the Budget"
+			#pdx_tooltip = "DIPLOMACY_SEND"
+			clicksound = click_send
+			#shortcut = "RETURN"
+		}
+
+		buttonType ={
+			name ="CPC_test"
+			position = { x = 180 y = -30 }
+			
+			quadTextureSprite ="GFX_button_148x34"
+			buttonFont = "hoi_16mbs"
+			Orientation = "LOWER_LEFT"
+			buttonText = "Refresh the Pie Chart"
+			#pdx_tooltip = "DIPLOMACY_SEND"
+			clicksound = click_send
+			#shortcut = "RETURN"
+		}
+
+		instantTextboxType = {
+			name = "CPC_add_10_txt"
+			position = { x = 60 y = 190 }
+			font = "hoi_30header"
+			text = "[?undecided_budget]B"
+			format = center
+			maxWidth = 300
+			maxHeight = 60
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+		
+
+
+		instantTextboxType = {
+			name = "CPC_General_budget_pie"
+			position = { x = 653 y = 534 }
+			font = "hoi_30header"
+			text = "Next Month :[?general_budget]B"
+			format = center
+			maxWidth = 300
+			maxHeight = 60
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+
+		
+		iconType = {
+			name = "cpc_bar_research"	 
+			spriteType = "GFX_strategicair_progress"
+			position = { x = 440 y = 436 }
+			#frame = 64
+		}
+		iconType = {
+			name = "cpc_bar_administration"	 
+			spriteType = "GFX_strategicair_progress"
+			position = { x = 440 y = 486 }
+			#frame = 64
+		}
+		iconType = {
+			name = "cpc_bar_construction"	 
+			spriteType = "GFX_strategicair_progress"
+			position = { x = 440 y = 536 }
+			#frame = 64
+		}
+
+
+
+		instantTextboxType = {
+			name = "CPC_Research_budget_bar"
+			position = { x = 440 y = 415 }
+			font = "hoi_16mbs"
+			text = "Research budget:[?research_money]B/[?research_budget]B"
+			format = left
+			maxWidth = 300
+			maxHeight = 60
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "CPC_Construction_budget_bar"
+			position = { x = 440 y = 515 }
+			font = "hoi_16mbs"
+			text = "Construction budget:[?construction_money]B/[?construction_budget]B"
+			format = left
+			maxWidth = 300
+			maxHeight = 60
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "CPC_Administration_budget_bar"
+			position = { x = 440 y = 465 }
+			font = "hoi_16mbs"
+			text = "Administration budget:[?administration_money]/[?administration_budget]B"
+			format = left
+			maxWidth = 300
+			maxHeight = 60
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+		#################################################
+
+		iconType ={
+			name ="PRC_Political_gui_bg"
+			spriteType = "GFX_PRC_Political_GUI_bg"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType ={
+			name ="PRC_Political_gui_china_map_icon"
+			spriteType = "GFX_PRC_Political_GUI_china_map_icon"
+			position = { x = 40 y = 90 }
+			alwaystransparent = no
+		}
+		iconType = {
+			name = "PRC_Political_GUI_china_progress_bar"	 
+			spriteType = "GFX_cpc_progress_bar1"
+			position = { x = 120 y = 110 }
+			#frame = 64
+		}
+		iconType ={
+			name ="PRC_Political_GUI_Politic_GUI_CPC_icon"
+			spriteType = "GFX_PRC_Political_GUI_Politic_GUI_CPC_icon"
+			position = { x = 40 y = 230 }
+			alwaystransparent = no
+		}
+		iconType = {
+			name = "PRC_Political_GUI_CPC_progress_bar"	 
+			spriteType = "GFX_cpc_progress_bar1"
+			position = { x = 120 y = 250 }
+			#frame = 64
+		}
+		iconType ={
+			name ="PRC_Political_GUI_PRC_icon"
+			spriteType = "GFX_PRC_Political_GUI_PRC_icon"
+			position = { x = 40 y = 160 }
+			alwaystransparent = no
+		}
+		iconType = {
+			name = "PRC_Political_GUI_PRC_progress_bar"	 
+			spriteType = "GFX_cpc_progress_bar1"
+			position = { x = 120 y = 180 }
+			#frame = 64
+		}
+		iconType ={
+			name ="CPC_zhou_enlai"
+			spriteType = "GFX_cpc_zhou_enlai"
+			position = { x = 403 y = 63 }
+			alwaystransparent = no
+		}
+		iconType ={
+			name ="CPC_zhang_chunqiao"
+			spriteType = "GFX_cpc_zhang_chunqiao"
+			position = { x = 403 y = 63 }
+			alwaystransparent = no
+		}
+		iconType ={
+			name ="CPC_new_frame_1"
+			spriteType = "GFX_new_cpc_gui_frame"
+			position = { x = 400 y = 60 }
+			alwaystransparent = yes
+		}
+		iconType ={
+			name ="CPC_mao_zedong"
+			spriteType = "GFX_cpc_mao_zedong"
+			position = { x = 583 y = 63 }
+			alwaystransparent = no
+			pdx_tooltip = "CPC_mao_tt"
+		}
+		iconType ={
+			name ="CPC_wang_ming"
+			spriteType = "GFX_cpc_wang_ming"
+			position = { x = 583 y = 63 }
+			alwaystransparent = no
+		}
+		iconType ={
+			name ="CPC_wang_hongwen"
+			spriteType = "GFX_cpc_wang_hongwen"
+			position = { x = 583 y = 63 }
+			alwaystransparent = yes
+		}
+		iconType ={
+			name ="CPC_new_frame_2"
+			spriteType = "GFX_new_cpc_gui_frame"
+			position = { x = 580 y = 60 }
+			alwaystransparent = yes
+		}
+		iconType ={
+			name ="CPC_zhu_de"
+			spriteType = "GFX_cpc_zhu_de"
+			position = { x = 763 y = 63 }
+			alwaystransparent = no
+		}
+		iconType ={
+			name ="CPC_lin_biao"
+			spriteType = "GFX_cpc_lin_biao"
+			position = { x = 763 y = 63 }
+			alwaystransparent = no
+		}
+		iconType ={
+			name ="CPC_peng_dehuai"
+			spriteType = "GFX_cpc_peng_dehuai"
+			position = { x = 763 y = 63 }
+			alwaystransparent = no
+		}
+		iconType ={
+			name ="CPC_ding_sheng"
+			spriteType = "GFX_cpc_ding_sheng"
+			position = { x = 763 y = 63 }
+			alwaystransparent = no
+		}
+		iconType ={
+			name ="CPC_new_frame_3"
+			spriteType = "GFX_new_cpc_gui_frame"
+			position = { x = 760 y = 60 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "PRC_Political_GUI_LeftRadical_progress_bar"	 
+			spriteType = "GFX_cpc_progress_bar1"
+			position = { x = 60 y = 450 }
+			#frame = 64
+		}
+		instantTextboxType = {
+			name = "PRC_Political_GUI_LeftRadical_txt"
+			position = { x = 70 y = 430 }
+			font = "hoi_16mbs"
+			text = "Left-Radical"
+			format = left
+			maxWidth = 300
+			maxHeight = 60
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "PRC_Political_GUI_Consevatives_progress_bar"	 
+			spriteType = "GFX_cpc_progress_bar1"
+			position = { x = 60 y = 510 }
+			#frame = 64
+		}
+		instantTextboxType = {
+			name = "PRC_Political_GUI_Consevatives_txt"
+			position = { x = 70 y = 490 }
+			font = "hoi_16mbs"
+			text = "Consevatives"
+			format = left
+			maxWidth = 300
+			maxHeight = 60
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "PRC_Political_GUI_Moderates_progress_bar"	 
+			spriteType = "GFX_cpc_progress_bar1"
+			position = { x = 60 y = 570 }
+			#frame = 64
+		}
+		instantTextboxType = {
+			name = "PRC_Political_GUI_Moderates_txt"
+			position = { x = 70 y = 550 }
+			font = "hoi_16mbs"
+			text = "Moderates"
+			format = left
+			maxWidth = 300
+			maxHeight = 60
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "PRC_Political_GUI_Reformers_progress_bar"	 
+			spriteType = "GFX_cpc_progress_bar1"
+			position = { x = 60 y = 630 }
+			#frame = 64
+		}
+		instantTextboxType = {
+			name = "PRC_Political_GUI_Reformers_txt"
+			position = { x = 70 y = 610 }
+			font = "hoi_16mbs"
+			text = "Reformers"
+			format = left
+			maxWidth = 300
+			maxHeight = 60
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "PRC_Political_GUI_Liberal_progress_bar"	 
+			spriteType = "GFX_cpc_progress_bar1"
+			position = { x = 60 y = 690 }
+			#frame = 64
+		}
+		instantTextboxType = {
+			name = "PRC_Political_GUI_Liberal_txt"
+			position = { x = 70 y = 670 }
+			font = "hoi_16mbs"
+			text = "Liberal"
+			format = left
+			maxWidth = 300
+			maxHeight = 60
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+		iconType ={
+			name ="PRC_Politic_GUI_poster_frame1"
+			spriteType = "GFX_PRC_Politic_GUI_poster_frame"
+			position = { x = 450 y = 440 }
+		}
+		iconType ={
+			name ="PRC_Politic_GUI_poster_liberation_war"
+			spriteType = "GFX_PRC_Politic_GUI_poster_liberation_war"
+			position = { x = 450 y = 440 }
+		}
+		iconType ={
+			name ="PRC_Politic_GUI_poster_frame2"
+			spriteType = "GFX_PRC_Politic_GUI_poster_frame"
+			position = { x = 690 y = 440 }
+		}
+		iconType ={
+			name ="PRC_Politic_GUI_poster_liberal_taiwan"
+			spriteType = "GFX_PRC_Politic_GUI_poster_liberal_taiwan"
+			position = { x = 690 y = 440 }
+		}
+		buttonType ={
+			name ="colse_window"
+			position = { x = 850 y = -990 }
+			
+			quadTextureSprite ="GFX_button_94x31"
+			buttonFont = "hoi_16mbs"
+			Orientation = "LOWER_LEFT"
+			buttonText = "CLOSE"
+			#pdx_tooltip = "DIPLOMACY_SEND"
+			clicksound = click_send
+			shortcut = "ESCAPE"
+		}
+		buttonType ={
+			name ="change_window1"
+			position = { x = 0 y = -990 }
+			
+			quadTextureSprite ="GFX_button_94x31"
+			buttonFont = "hoi_16mbs"
+			Orientation = "LOWER_LEFT"
+			buttonText = "Politic Window"
+			#pdx_tooltip = "DIPLOMACY_SEND"
+			clicksound = click_send
+			#shortcut = "RETURN"
+		}
+		buttonType ={
+			name ="change_window0"
+			position = { x = 0 y = -990 }
+			
+			quadTextureSprite ="GFX_button_94x31"
+			buttonFont = "hoi_16mbs"
+			Orientation = "LOWER_LEFT"
+			buttonText = "Economic Window"
+			#pdx_tooltip = "DIPLOMACY_SEND"
+			clicksound = click_send
+			#shortcut = "RETURN"
+		}
+	}
+}
