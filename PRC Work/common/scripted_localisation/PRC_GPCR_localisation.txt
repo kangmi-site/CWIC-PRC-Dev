@@ -1,0 +1,603 @@
+defined_text = {
+    name = Get_PRC_province_name
+
+	text = {
+		localization_key = Heilongjiang_loc
+	    trigger = {
+			OR = {
+			    check_variable = { 
+				    var = prc_province_var
+				    value = 1
+				    compare = equals
+		        }
+			    check_variable = { 
+				    var = prc_province_var
+				    value = 33
+				    compare = equals
+		        }
+		    } 
+		}
+	}
+	text = {
+	    localization_key = Jilin_loc
+	    trigger = { 
+		    OR = {
+			    check_variable = { 
+				    var = prc_province_var
+				    value = 2
+				    compare = equals
+		        }
+			    check_variable = { 
+				    var = prc_province_var
+				    value = 32
+				    compare = equals
+		        }
+		    } 
+	    }
+	}
+	text = {
+	    localization_key = Liaoning_loc
+	    trigger = { 
+		    OR = {
+			    check_variable = { 
+				    var = prc_province_var
+				    value = 3
+				    compare = equals
+		        }
+			    check_variable = { 
+				    var = prc_province_var
+				    value = 31
+				    compare = equals
+		        }
+		    } 
+	    }
+	}
+	text = {
+	    localization_key = Neimenggu_loc
+	    trigger = { 
+		    OR = {
+			    check_variable = { 
+				    var = prc_province_var
+				    value = 4
+				    compare = equals
+		        }
+			    check_variable = { 
+				    var = prc_province_var
+				    value = 30
+				    compare = equals
+		        }
+		    } 
+	    }
+	}
+	text = {
+	    localization_key = Beijing_loc
+	    trigger = { 
+		    check_variable = { 
+				var = prc_province_var
+				value = 5
+				compare = equals
+		    }
+	    }
+	}
+	text = {
+	    localization_key = Tianjin_loc
+	    trigger = { 
+		    check_variable = { 
+				var = prc_province_var
+				value = 6
+				compare = equals
+		    }
+	    }
+	}
+	text = {
+	    localization_key = Hubei_loc
+	    trigger = { 
+		    check_variable = { 
+				var = prc_province_var
+				value = 7
+				compare = equals
+		    }
+	    }
+	}
+	text = {
+	    localization_key = Shanxi_loc
+	    trigger = { 
+		    check_variable = { 
+				var = prc_province_var
+				value = 8
+				compare = equals
+		    }
+	    }
+	}
+	text = {
+	    localization_key = Shannxi_loc
+	    trigger = { 
+		    check_variable = { 
+				var = prc_province_var
+				value = 9
+				compare = equals
+		    }
+	    }
+	}
+	text = {
+	    localization_key = Ningxia_loc
+	    trigger = { 
+			OR = {
+			    check_variable = { 
+				    var = prc_province_var
+				    value = 10
+				    compare = equals
+		        }
+			    check_variable = { 
+				    var = prc_province_var
+				    value = 34
+				    compare = equals
+		        }
+		    } 
+	    }
+	}
+	text = {
+	    localization_key = Gansu_loc
+	    trigger = { 
+			OR = {
+			    check_variable = { 
+				    var = prc_province_var
+				    value = 11
+				    compare = equals
+		        }
+			    check_variable = { 
+				    var = prc_province_var
+				    value = 35
+				    compare = equals
+		        }
+		    } 
+	    }
+	}
+	text = {
+	    localization_key = Qinghai_loc
+	    trigger = { 
+		    check_variable = { 
+				var = prc_province_var
+				value = 12
+				compare = equals
+		    }
+	    }
+	}
+	text = {
+	    localization_key = Sinkiang_loc
+	    trigger = { 
+		    check_variable = { 
+				var = prc_province_var
+				value = 13
+				compare = equals
+		    }
+	    }
+	}
+	text = {
+	    localization_key = Tibet_loc
+	    trigger = { 
+			OR = {
+			    check_variable = { 
+				    var = prc_province_var
+				    value = 14
+				    compare = equals
+		        }
+			    check_variable = { 
+				    var = prc_province_var
+				    value = 36
+				    compare = equals
+		        }
+		    } 
+	    }
+	}
+	text = {
+	    localization_key = Henan_loc
+	    trigger = { 
+		    check_variable = { 
+				var = prc_province_var
+				value = 15
+				compare = equals
+		    }
+	    }
+	}
+	text = {
+	    localization_key = Hubei_loc
+	    trigger = { 
+		    check_variable = { 
+				var = prc_province_var
+				value = 16
+				compare = equals
+		    }
+	    }
+	}
+	text = {
+	    localization_key = Hunan_loc
+	    trigger = { 
+			check_variable = { 
+				var = prc_province_var
+				value = 17
+				compare = equals
+		    }
+	    }
+	}
+	text = {
+	    localization_key = Jiangxi_loc
+	    trigger = { 
+		    check_variable = { 
+				var = prc_province_var
+				value = 18
+				compare = equals
+		    }
+	    }
+	}
+    text = {
+	    localization_key = Shandong_loc
+	    trigger = { 
+		    check_variable = { 
+				var = prc_province_var
+				value = 19
+				compare = equals
+		    }
+	    }
+	}
+	text = {
+	    localization_key = Anhui_loc
+	    trigger = { 
+		    check_variable = { 
+				var = prc_province_var
+				value = 20
+				compare = equals
+		    }
+	    }
+	}
+	text = {
+	    localization_key = Jiangsu_loc
+	    trigger = { 
+		    check_variable = { 
+				var = prc_province_var
+				value = 21
+				compare = equals
+		    }
+	    }
+	}
+	text = {
+	    localization_key = Shanghai_loc
+	    trigger = { 
+		    check_variable = { 
+				var = prc_province_var
+				value = 22
+				compare = equals
+		    }
+	    }
+	}
+	text = {
+	    localization_key = Zhejiang_loc
+	    trigger = { 
+		    check_variable = { 
+				var = prc_province_var
+				value = 23
+				compare = equals
+		    }
+	    }
+	}
+	text = {
+	    localization_key = Fujian_loc
+	    trigger = { 
+		    check_variable = { 
+				var = prc_province_var
+				value = 24
+				compare = equals
+		    }
+	    }
+	}
+	text = {
+	    localization_key = Sichuan_loc
+	    trigger = { 
+		    check_variable = { 
+				var = prc_province_var
+				value = 25
+				compare = equals
+		    }
+	    }
+	}
+	text = {
+	    localization_key = Guizhou_loc
+	    trigger = { 
+		    check_variable = { 
+				var = prc_province_var
+				value = 26
+				compare = equals
+		    }
+	    }
+	}
+	text = {
+	    localization_key = Yunan_loc
+	    trigger = { 
+		    check_variable = { 
+				var = prc_province_var
+				value = 27
+				compare = equals
+		    }
+	    }
+	}
+	text = {
+	    localization_key = Guangxi_loc
+	    trigger = { 
+		    check_variable = { 
+				var = prc_province_var
+				value = 28
+				compare = equals
+		    }
+	    }
+	}
+	text = {
+	    localization_key = Guangdong_loc
+	    trigger = { 
+		    check_variable = { 
+				var = prc_province_var
+				value = 29
+				compare = equals
+		    }
+	    }
+	}
+}
+defined_text = {
+	name = Get_provinces_PLA_power_level
+ 
+	text = {
+		localization_key = province_PLA_power_none
+		trigger = { 
+			check_variable = {
+				var = GPCR_province_PLA_power_gui_var
+				value = 0
+				compare = equals
+			}
+		}
+	}
+	text = {
+		localization_key = province_PLA_power_quite_low
+		trigger = { 
+			check_variable = {
+				var = GPCR_province_PLA_power_gui_var
+				value = 0
+				compare = greater_than
+			}
+			check_variable = {
+				var = GPCR_province_PLA_power_gui_var
+				value = 20
+				compare = less_than_or_equals
+			}
+		}
+	}
+	text = {
+		localization_key = province_PLA_power_low
+		trigger = { 
+			check_variable = {
+				var = GPCR_province_PLA_power_gui_var
+				value = 20
+				compare = greater_than
+			}
+			check_variable = {
+				var = GPCR_province_PLA_power_gui_var
+				value = 40
+				compare = less_than_or_equals
+			}
+		}
+	}
+	text = {
+		localization_key = province_PLA_power_medium
+		trigger = { 
+			check_variable = {
+				var = GPCR_province_PLA_power_gui_var
+				value = 40
+				compare = greater_than
+			}
+			check_variable = {
+				var = GPCR_province_PLA_power_gui_var
+				value = 60
+				compare = less_than_or_equals
+			}
+		}
+	}
+	text = {
+		localization_key = province_PLA_power_high
+		trigger = { 
+			check_variable = {
+				var = GPCR_province_PLA_power_gui_var
+				value = 60
+				compare = greater_than
+			}
+			check_variable = {
+				var = GPCR_province_PLA_power_gui_var
+				value = 80
+				compare = less_than_or_equals
+			}
+		}
+	}
+	text = {
+		localization_key = province_PLA_power_quite_high
+		trigger = { 
+			check_variable = {
+				var = GPCR_province_PLA_power_gui_var
+				value = 80
+				compare = greater_than
+			}
+			check_variable = {
+				var = GPCR_province_PLA_power_gui_var
+				value = 100
+				compare = less_than_or_equals
+			}
+		}
+	}
+}
+defined_text = {
+	name = Get_PLA_tendency
+ 
+	text = {
+		localization_key = PLA_strongly_pro_revolutionary
+		trigger = { 
+			OR = {
+			    check_variable = {
+				    var = GPCR_province_PLA_tendency_pointer_frame
+				    value = 1
+				    compare = equals
+			    }
+			    check_variable = {
+				    var = GPCR_province_PLA_tendency_pointer_frame
+				    value = 2
+				    compare = equals
+			    }
+		    }
+		}
+	}
+	text = {
+		localization_key = PLA_pro_revolutionary
+		trigger = { 
+			OR = {
+			    check_variable = {
+				    var = GPCR_province_PLA_tendency_pointer_frame
+				    value = 3
+				    compare = equals
+			    }
+			    check_variable = {
+				    var = GPCR_province_PLA_tendency_pointer_frame
+				    value = 4
+				    compare = equals
+			    }
+		    }
+		}
+	}
+	text = {
+		localization_key = PLA_neutrality
+		trigger = { 
+			check_variable = {
+				var = GPCR_province_PLA_tendency_pointer_frame
+				value = 5
+				compare = equals
+			}
+		}
+	}
+	text = {
+		localization_key = PLA_pro_consertives
+		trigger = { 
+			OR = {
+			    check_variable = {
+				    var = GPCR_province_PLA_tendency_pointer_frame
+				    value = 6
+				    compare = equals
+			    }
+			    check_variable = {
+				    var = GPCR_province_PLA_tendency_pointer_frame
+				    value = 7
+				    compare = equals
+			    }
+		    }
+		}
+	}
+	text = {
+		localization_key = PLA_strongly_pro_consertives
+		trigger = { 
+			OR = {
+			    check_variable = {
+				    var = GPCR_province_PLA_tendency_pointer_frame
+				    value = 8
+				    compare = equals
+			    }
+			    check_variable = {
+				    var = GPCR_province_PLA_tendency_pointer_frame
+				    value = 9
+				    compare = equals
+			    }
+		    }
+		}
+	}
+}
+defined_text = {
+	name = Get_PLA_influence
+    
+	text = {
+		localization_key = PLA_influence_level_none
+		trigger = { 
+			check_variable = {
+				var = GPCR_province_PLA_tendency_pointer_frame
+				value = 5
+				compare = equals
+			}
+		}
+	}
+	text = {
+		localization_key = PLA_influence_level_pro_revolutionary
+		trigger = { 
+			OR = {
+				check_variable = {
+					var = GPCR_province_PLA_tendency_pointer_frame
+					value = 1
+					compare = equals
+				}
+				check_variable = {
+					var = GPCR_province_PLA_tendency_pointer_frame
+					value = 2
+					compare = equals
+				}
+				check_variable = {
+					var = GPCR_province_PLA_tendency_pointer_frame
+					value = 3
+					compare = equals
+				}
+				check_variable = {
+					var = GPCR_province_PLA_tendency_pointer_frame
+					value = 4
+					compare = equals
+				}
+			}
+		}
+	}
+	text = {
+		localization_key = PLA_influence_level_pro_consertives
+		trigger = { 
+			OR = {
+				check_variable = {
+					var = GPCR_province_PLA_tendency_pointer_frame
+					value = 6
+					compare = equals
+				}
+				check_variable = {
+					var = GPCR_province_PLA_tendency_pointer_frame
+					value = 7
+					compare = equals
+				}
+				check_variable = {
+					var = GPCR_province_PLA_tendency_pointer_frame
+					value = 8
+					compare = equals
+				}
+				check_variable = {
+					var = GPCR_province_PLA_tendency_pointer_frame
+					value = 9
+					compare = equals
+				}
+			}
+		}
+	}
+}
+defined_text = {
+	name = Get_Southern_Tibet_loc
+
+	text = {
+		localization_key = Southern_Tibet_loc1
+		trigger = {
+			PRC = {
+				NOT = { owns_state = 434 }
+			}
+		}
+	}
+
+	text = {
+		localization_key = Southern_Tibet_loc2
+		trigger = {
+			PRC = {
+				owns_state = 434
+			}
+		}
+	}
+}
