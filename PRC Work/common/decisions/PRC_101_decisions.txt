@@ -1,0 +1,906 @@
+PRC_101_The_dark_continent_interaction = {
+	PRC_sh_Promote_friendly_exchanges = {
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_flag = PRC_show_Promote_friendly_exchanges
+				}
+				clr_country_flag = PRC_show_Promote_friendly_exchanges
+			}
+			else = {
+				set_country_flag = PRC_show_Promote_friendly_exchanges
+			}
+		}
+	   	cost = 0
+	   	days_remove = 0
+		days_re_enable = 0
+	}
+
+	PRC_Promote_friendly_exchanges = {
+		visible = {
+			has_country_flag = PRC_show_Promote_friendly_exchanges
+	   	}
+		target_trigger = {
+			FROM = {
+				is_africa_trigger = yes
+			}
+		}
+		available = {
+			FROM = {
+				has_opinion = {
+					target = ROOT
+					value > -50
+				}
+			}
+		}
+	   	remove_effect = {
+			reverse_add_opinion_modifier = {
+                target = FROM
+                modifier = PRC_Improved_relations_less
+            }
+		}
+	   	cost = 10
+	   	days_remove = 20
+		days_re_enable = 80
+	}
+
+	PRC_sh_trade_with_East_Africa = {
+		visible = {
+			has_completed_focus = PRC_101_71s_Promote_trade_with_East_Africa
+	   	}
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_flag = PRC_show_trade_with_East_Africa
+				}
+				clr_country_flag = PRC_show_trade_with_East_Africa
+			}
+			else = {
+				set_country_flag = PRC_show_trade_with_East_Africa
+			}
+		}
+	   	cost = 0
+	   	days_remove = 0
+		days_re_enable = 0
+	}
+
+	PRC_trade_with_East_Africa = {
+		visible = {
+			has_country_flag = PRC_show_trade_with_East_Africa
+			has_completed_focus = PRC_101_71s_Promote_trade_with_East_Africa
+	   	}
+		target_trigger = {
+			FROM = {
+				is_eastern_africa_trigger = yes
+			}
+		}
+		available = {
+			FROM = {
+				has_opinion = {
+					target = ROOT
+					value > 30
+				}
+			}
+			num_of_civilian_factories_available_for_projects > 5
+		}
+		modifier = {
+			civilian_factory_use = 6
+		}
+	   	remove_effect = {
+			FROM = {
+				random_owned_state = {
+					add_extra_state_shared_building_slots = 1
+                	add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			random_owned_state = {
+				limit = {
+                    is_coastal = yes
+                }
+				random_list = {
+					33 = {
+						add_resource = {
+							type = aluminium
+							amount = 8
+						}
+					}
+					33 = {
+						add_resource = {
+							type = tungsten
+							amount = 8
+						}
+					}
+					33 = {
+						add_resource = {
+							type = steel
+							amount = 8
+						}
+					}
+				}
+			}
+		}
+	   	cost = 50
+	   	days_remove = 60
+		days_re_enable = 120
+	}
+
+	PRC_sh_Arms_for_resources = {
+		visible = {
+			has_completed_focus = PRC_101_71s_Arms_for_resources_agreement
+	   	}
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_flag = PRC_show_Arms_for_resources
+				}
+				clr_country_flag = PRC_show_Arms_for_resources
+			}
+			else = {
+				set_country_flag = PRC_show_Arms_for_resources
+			}
+		}
+	   	cost = 0
+	   	days_remove = 0
+		days_re_enable = 0
+	}
+
+	PRC_Arms_for_resources = {
+		visible = {
+			has_country_flag = PRC_show_Arms_for_resources
+			has_completed_focus = PRC_101_71s_Arms_for_resources_agreement
+	   	}
+		target_trigger = {
+			FROM = {
+				is_africa_trigger = yes
+				NOT = { is_eastern_africa_trigger = yes }
+			}
+		}
+		available = {
+			FROM = {
+				has_opinion = {
+					target = ROOT
+					value > 10
+				}
+			}
+			has_equipment = { infantry_equipment > 500 }
+		}
+		complete_effect = {
+			send_equipment = {
+                target = FROM
+                type = infantry_equipment
+                amount = 500
+            }
+		}
+	   	remove_effect = {
+			random_owned_state = {
+				limit = {
+                    is_coastal = yes
+                }
+				random_list = {
+					25 = {
+						add_resource = {
+							type = aluminium
+							amount = 3
+						}
+					}
+					25 = {
+						add_resource = {
+							type = tungsten
+							amount = 3
+						}
+					}
+					25 = {
+						add_resource = {
+							type = steel
+							amount = 3
+						}
+					}
+					25 = {
+						add_resource = {
+							type = oil
+							amount = 3
+						}
+					}
+				}
+			}
+		}
+	   	cost = 25
+	   	days_remove = 60
+		days_re_enable = 120
+	}
+}
+
+PRC_101_Deal_with_the_Gang_of_Four = {
+	PRC_Krupskaya_of_China = {
+		remove_effect = {
+			country_event = {
+				id = PRC_Lin_b1.301
+			}
+		}
+	   	cost = 50
+	   	days_remove = 10
+	   	fire_only_once = yes
+	}
+
+	PRC_Shut_the_two_pens_up = {
+		remove_effect = {
+			country_event = {
+				id = PRC_Lin_b1.302
+			}
+		}
+	   	cost = 50
+	   	days_remove = 10
+	   	fire_only_once = yes
+	}
+
+	PRC_Send_Security_back_to_the_factory = {
+		remove_effect = {
+			country_event = {
+				id = PRC_Lin_b1.303
+			}
+		}
+	   	cost = 50
+	   	days_remove = 10
+	   	fire_only_once = yes
+	}
+}
+
+PRC_101_The_weakened_generalissimo = {
+	PRC_101_health_worsening_crisis = {
+	
+		priority = 100
+
+		allowed = { 
+			original_tag = PRC
+		}
+
+		available = {
+			OR = {
+				check_variable = {
+					PRC_101_health_condition > 3
+				}
+				NOT = {
+					has_country_leader = {
+						name = "LinBiao"
+						ruling_only = yes
+					}
+				}
+			}			
+		}
+
+		days_mission_timeout = 180
+
+		fire_only_once = no
+
+		activation = {
+			has_country_flag = PRC_101_The_weakened_generalissimo_show
+			NOT = {
+				check_variable = {
+					PRC_101_health_condition > 3
+				}
+			}
+		}
+
+		is_good = no
+
+		timeout_effect = {
+			add_to_variable = { PRC_101_health_condition = 1 }
+			if = {
+				limit = {
+					check_variable = {
+						PRC_101_health_condition > 3
+					}
+				}
+				add_country_leader_trait = PRC_101_The_paralyzed_leader_of_the_country
+				clr_country_flag = PRC_101_The_weakened_generalissimo_show
+			}
+		}
+	}
+
+	PRC_101_seek_treatment_for_101_s_Physical_disease = {
+	
+		icon = generic_research
+
+		allowed = { 
+			original_tag = PRC
+		}
+
+		available = {
+			has_country_leader = {
+				name = "LinBiao"
+				ruling_only = yes
+			}
+		}
+
+		cost = 50
+
+		days_remove = 40
+		days_re_enable = 20
+
+		visible = {
+			has_active_mission = PRC_101_health_worsening_crisis
+		}
+
+		fire_only_once = no
+
+		cancel_trigger = {
+			NOT = {
+				has_country_leader = {
+					name = "LinBiao"
+					ruling_only = yes
+				}
+			}
+		}
+
+		remove_effect = {
+			random_list = {
+				2 = {
+					country_event = {
+						id = PRC_Lin_b1.703
+					}
+				}
+				PRC_101_health_condition?0 = { #随着病情恶化提高接受的概率
+					add_days_mission_timeout = {
+						mission = PRC_101_health_worsening_crisis
+						days = 120
+					}
+				}
+			}
+		}
+	}
+
+	PRC_101_seek_treatment_for_101_s_Mental_illness = {
+	
+		icon = generic_research
+
+		allowed = { 
+			original_tag = PRC
+		}
+
+		available = {
+			has_country_leader = {
+				name = "LinBiao"
+				ruling_only = yes
+			}
+		}
+
+		cost = 50
+
+		days_remove = 40
+		days_re_enable = 20
+
+		visible = {
+			has_active_mission = PRC_101_health_worsening_crisis
+		}
+
+		fire_only_once = no
+
+		cancel_trigger = {
+			NOT = {
+				has_country_leader = {
+					name = "LinBiao"
+					ruling_only = yes
+				}
+			}
+		}
+
+		remove_effect = {
+			random_list = {
+				1 = {
+					country_event = {
+						id = PRC_Lin_b1.703
+					}
+				}
+				PRC_101_health_condition?0 = {	#PRC_101_health_condition为0的时候是健康的，健康的人谁吃药啊（
+					add_days_mission_timeout = {
+						mission = PRC_101_health_worsening_crisis
+						days = 90
+					}
+				}
+			}
+		}
+	}
+}
+
+influence_desicions = {
+	PRC_101_Improved_relations_with_the_sov = {
+	
+		icon = generic_research
+
+		allowed = { 
+			original_tag = PRC
+		}
+
+		available = {
+			NOT = {
+				has_idea = PRC_101_diplomacy_balance_sov_1
+			}
+		}
+
+		cost = 50
+
+		days_remove = 60
+		days_re_enable = 120
+
+		visible = {
+			has_completed_focus = PRC_101_71s_New_Practical_Diplomacy
+		}
+
+		fire_only_once = no
+
+		remove_effect = {
+			PRC_LinBiao_diplomacy_balance_change_sov = yes
+		}
+	}
+
+	PRC_101_Improved_relations_with_the_usa = {
+	
+		icon = generic_research
+
+		allowed = { 
+			original_tag = PRC
+		}
+
+		available = {
+			NOT = {
+				has_idea = PRC_101_diplomacy_balance_usa_1
+			}
+		}
+
+		cost = 50
+
+		days_remove = 60
+		days_re_enable = 120
+
+		visible = {
+			has_completed_focus = PRC_101_71s_New_Practical_Diplomacy
+		}
+
+		fire_only_once = no
+
+		remove_effect = {
+			PRC_LinBiao_diplomacy_balance_change_usa = yes
+		}
+	}
+}
+
+PRC_101_Groom_a_successor = {
+	PRC_101_Cultivate_political_ability = {
+		remove_effect = {
+			effect_tooltip = {
+				PRC_Lin_Liguo = { add_country_leader_trait = PRC_101_At_least_a_qualified_politician }
+			}
+			set_country_flag = PRC_101_At_least_a_qualified_politician
+		}
+	   	cost = 100
+	   	days_remove = 10
+	   	fire_only_once = yes
+	}
+
+	PRC_101_Cultivate_general_ability = {
+		available = {
+			has_army_experience > 100
+		}
+		complete_effect = {
+			army_experience = -100
+		}
+		remove_effect = {
+			effect_tooltip = {
+				PRC_Lin_Liguo = { add_country_leader_trait = PRC_101_At_least_a_qualified_general }
+			}
+			set_country_flag = PRC_101_At_least_a_qualified_general
+			set_variable = { PRC_101_Lin_Liguo_attack = 0 }
+			set_variable = { PRC_101_Lin_Liguo_defense = 0 }
+			set_variable = { PRC_101_Lin_Liguo_planning = 0 }
+			set_variable = { PRC_101_Lin_Liguo_logistics = 0 }
+		}
+	   	cost = 0
+	   	days_remove = 10
+	   	fire_only_once = yes
+	}
+
+	PRC_101_Cultivate_general_ability2 = {
+		available = {
+			has_army_experience > 20
+			has_air_experience > 20
+			has_navy_experience > 20
+		}
+		visible = {
+			has_country_flag = PRC_101_At_least_a_qualified_general
+		}
+		complete_effect = {
+			army_experience = -20
+			air_experience = -20
+			navy_experience = -20
+		}
+		remove_effect = {
+			effect_tooltip = {
+				random_list = {
+					25 = {
+						PRC_Lin_Liguo = {
+							add_attack = 1
+						}
+					}
+					25 = {
+						PRC_Lin_Liguo = {
+							add_defense = 1
+						}
+					}
+					25 = {
+						PRC_Lin_Liguo = {
+							add_planning = 1
+						}
+					}
+					25 = {
+						PRC_Lin_Liguo = {
+							add_logistics = 1
+						}
+					}
+				}
+			}
+			hidden_effect = {
+				random_list = {
+					25 = {
+						add_to_variable = { PRC_101_Lin_Liguo_attack = 1 }
+					}
+					25 = {
+						add_to_variable = { PRC_101_Lin_Liguo_defense = 1 }
+					}
+					25 = {
+						add_to_variable = { PRC_101_Lin_Liguo_planning = 1 }
+					}
+					25 = {
+						add_to_variable = { PRC_101_Lin_Liguo_logistics = 1 }
+					}
+				}
+			}
+		}
+	   	cost = 0
+	   	days_remove = 40
+		days_re_enable = 20
+	}
+
+	PRC_101_Cultivate_manager_ability = {
+		available = {
+			has_stability > 0
+		}
+		complete_effect = {
+			add_stability = -0.05
+		}
+		remove_effect = {
+			effect_tooltip = {
+				PRC_Lin_Liguo = { add_country_leader_trait = PRC_101_At_least_a_qualified_manager }
+			}
+			set_country_flag = PRC_101_At_least_a_qualified_manager
+		}
+	   	cost = 20
+	   	days_remove = 10
+	   	fire_only_once = yes
+	}
+
+	PRC_101_Cultivate_speaker_ability = {
+		available = {
+			has_war_support > 0
+		}
+		complete_effect = {
+			add_war_support = -0.05
+		}
+		remove_effect = {
+			effect_tooltip = {
+				PRC_Lin_Liguo = { add_country_leader_trait = PRC_101_At_least_a_qualified_speaker }
+			}
+			set_country_flag = PRC_101_At_least_a_qualified_speaker
+		}
+	   	cost = 20
+	   	days_remove = 10
+	   	fire_only_once = yes
+	}
+}
+
+PRC_101_Chen_Boda_s_e_centrism_decision = {
+	PRC_101_Small_scale_administrative_support = {
+		available = {
+			political_power_daily > 1
+		}
+		visible = {
+			has_completed_focus = PRC_101_71s_Chen_Boda_s_e_centrism
+			NOT = { has_country_flag = PRC_101_administrative_support }
+		}
+		modifier = {
+			political_power_gain = -1
+			PRC_101_Chen_Boda_s_e_centrism_var_gain_weekly = 0.003
+		}
+		complete_effect = {
+			set_country_flag = PRC_101_administrative_support
+		}
+		remove_effect = {
+			clr_country_flag = PRC_101_administrative_support
+		}
+	   	cost = 100
+	   	days_remove = 40
+		days_re_enable = 20
+	}
+
+	PRC_101_administrative_support = {
+		available = {
+			political_power_daily > 2
+		}
+		visible = {
+			has_completed_focus = PRC_101_71s_Chen_Boda_s_e_centrism
+			NOT = { has_country_flag = PRC_101_administrative_support }
+		}
+		modifier = {
+			political_power_gain = -2
+			PRC_101_Chen_Boda_s_e_centrism_var_gain_weekly = 0.006
+		}
+		complete_effect = {
+			set_country_flag = PRC_101_administrative_support
+		}
+		remove_effect = {
+			clr_country_flag = PRC_101_administrative_support
+		}
+	   	cost = 200
+	   	days_remove = 80
+		days_re_enable = 40
+	}
+
+	PRC_101_Large_scale_administrative_support = {
+		available = {
+			political_power_daily > 3
+		}
+		visible = {
+			has_completed_focus = PRC_101_71s_Chen_Boda_s_e_centrism
+			NOT = { has_country_flag = PRC_101_administrative_support }
+		}
+		modifier = {
+			political_power_gain = -3
+			PRC_101_Chen_Boda_s_e_centrism_var_gain_weekly = 0.01
+		}
+		complete_effect = {
+			set_country_flag = PRC_101_administrative_support
+		}
+		remove_effect = {
+			clr_country_flag = PRC_101_administrative_support
+		}
+	   	cost = 300
+	   	days_remove = 120
+		days_re_enable = 60
+	}
+
+	PRC_101_Small_scale_grant_support = {
+		available = {
+		}
+		visible = {
+			has_completed_focus = PRC_101_71s_Chen_Boda_s_e_centrism
+			NOT = { has_country_flag = PRC_101_grant_support }
+		}
+		modifier = {
+			PRC_101_Chen_Boda_s_e_centrism_var_gain_weekly = 0.003
+			office_park_income_adjustment = -0.1
+		}
+		complete_effect = {
+			set_temp_variable = { temp_x = 20 }
+            PRC_LinBiao_spend_money_tt = yes
+			set_country_flag = PRC_101_grant_support
+		}
+		remove_effect = {
+			clr_country_flag = PRC_101_grant_support
+		}
+	   	cost = 50
+	   	days_remove = 20
+		days_re_enable = 20
+	}
+
+	PRC_101_grant_support = {
+		available = {
+		}
+		visible = {
+			has_completed_focus = PRC_101_71s_Chen_Boda_s_e_centrism
+			NOT = { has_country_flag = PRC_101_grant_support }
+		}
+		modifier = {
+			office_park_income_adjustment = -0.1
+			PRC_101_Chen_Boda_s_e_centrism_var_gain_weekly = 0.006
+		}
+		complete_effect = {
+			set_temp_variable = { temp_x = 40 }
+            PRC_LinBiao_spend_money_tt = yes
+			set_country_flag = PRC_101_grant_support
+		}
+		remove_effect = {
+			clr_country_flag = PRC_101_grant_support
+		}
+	   	cost = 50
+	   	days_remove = 40
+		days_re_enable = 40
+	}
+
+	PRC_101_Large_scale_grant_support = {
+		available = {
+		}
+		visible = {
+			has_completed_focus = PRC_101_71s_Chen_Boda_s_e_centrism
+			NOT = { has_country_flag = PRC_101_grant_support }
+		}
+		modifier = {
+			PRC_101_Chen_Boda_s_e_centrism_var_gain_weekly = 0.01
+			office_park_income_adjustment = -0.1
+		}
+		complete_effect = {
+			set_temp_variable = { temp_x = 60 }
+            PRC_LinBiao_spend_money_tt = yes
+			set_country_flag = PRC_101_grant_support
+		}
+		remove_effect = {
+			clr_country_flag = PRC_101_grant_support
+		}
+	   	cost = 50
+	   	days_remove = 60
+		days_re_enable = 60
+	}
+
+	PRC_101_Small_scale_industrial_support = {
+		available = {
+		}
+		visible = {
+			has_completed_focus = PRC_101_71s_Unicom_Mainland_Network
+			NOT = { has_country_flag = PRC_101_industrial_support }
+		}
+		modifier = {
+			PRC_101_Chen_Boda_s_e_centrism_var_gain_weekly = 0.003
+			consumer_goods_factor = 0.1
+		}
+		complete_effect = {
+			set_country_flag = PRC_101_industrial_support
+		}
+		remove_effect = {
+			clr_country_flag = PRC_101_industrial_support
+		}
+	   	cost = 50
+	   	days_remove = 30
+		days_re_enable = 20
+	}
+
+	PRC_101_industrial_support = {
+		available = {
+		}
+		visible = {
+			has_completed_focus = PRC_101_71s_Unicom_Mainland_Network
+			NOT = { has_country_flag = PRC_101_industrial_support }
+		}
+		modifier = {
+			consumer_goods_factor = 0.15
+			PRC_101_Chen_Boda_s_e_centrism_var_gain_weekly = 0.006
+		}
+		complete_effect = {
+			set_country_flag = PRC_101_industrial_support
+		}
+		remove_effect = {
+			clr_country_flag = PRC_101_industrial_support
+		}
+	   	cost = 50
+	   	days_remove = 60
+		days_re_enable = 40
+	}
+
+	PRC_101_Large_scale_industrial_support = {
+		available = {
+		}
+		visible = {
+			has_completed_focus = PRC_101_71s_Unicom_Mainland_Network
+			NOT = { has_country_flag = PRC_101_industrial_support }
+		}
+		modifier = {
+			PRC_101_Chen_Boda_s_e_centrism_var_gain_weekly = 0.01
+			consumer_goods_factor = 0.2
+		}
+		complete_effect = {
+			set_country_flag = PRC_101_industrial_support
+		}
+		remove_effect = {
+			clr_country_flag = PRC_101_industrial_support
+		}
+	   	cost = 50
+	   	days_remove = 90
+		days_re_enable = 60
+	}
+
+	PRC_101_Small_scale_CNC_machine_tools_updated = {
+		available = {
+		}
+		visible = {
+			has_completed_focus = PRC_101_71s_Development_of_CNC_machine_tools
+			NOT = { has_country_flag = PRC_101_CNC_machine_tools_updated }
+		}
+		modifier = {
+			PRC_101_Chen_Boda_s_e_centrism_var_gain_weekly = 0.003
+			industrial_capacity_factory = -0.15
+			industrial_capacity_dockyard = -0.05
+		}
+		complete_effect = {
+			set_country_flag = PRC_101_CNC_machine_tools_updated
+		}
+		remove_effect = {
+			clr_country_flag = PRC_101_CNC_machine_tools_updated
+		}
+	   	cost = 50
+	   	days_remove = 90
+		days_re_enable = 60
+	}
+
+	PRC_101_CNC_machine_tools_updated = {
+		available = {
+		}
+		visible = {
+			has_completed_focus = PRC_101_71s_Development_of_CNC_machine_tools
+			NOT = { has_country_flag = PRC_101_CNC_machine_tools_updated }
+		}
+		modifier = {
+			PRC_101_Chen_Boda_s_e_centrism_var_gain_weekly = 0.006
+			industrial_capacity_factory = -0.15
+			industrial_capacity_dockyard = -0.05
+		}
+		complete_effect = {
+			set_country_flag = PRC_101_CNC_machine_tools_updated
+		}
+		remove_effect = {
+			clr_country_flag = PRC_101_CNC_machine_tools_updated
+		}
+	   	cost = 50
+	   	days_remove = 90
+		days_re_enable = 60
+	}
+
+	PRC_101_Large_scale_CNC_machine_tools_updated = {
+		available = {
+		}
+		visible = {
+			has_completed_focus = PRC_101_71s_Development_of_CNC_machine_tools
+			NOT = { has_country_flag = PRC_101_CNC_machine_tools_updated }
+		}
+		modifier = {
+			PRC_101_Chen_Boda_s_e_centrism_var_gain_weekly = 0.01
+			industrial_capacity_factory = -0.2
+			industrial_capacity_dockyard = -0.1
+		}
+		complete_effect = {
+			set_country_flag = PRC_101_CNC_machine_tools_updated
+		}
+		remove_effect = {
+			clr_country_flag = PRC_101_CNC_machine_tools_updated
+		}
+	   	cost = 50
+	   	days_remove = 90
+		days_re_enable = 60
+	}
+
+	PRC_101_Building_an_earthquake_early_warning_system = {
+		available = {
+			num_of_civilian_factories_available_for_projects > 15
+		}
+		visible = {
+			has_completed_focus = PRC_101_71s_Construction_of_national_microwave_communication_network
+			NOT = { has_country_flag = PRC_101_Building_an_earthquake_early_warning_system }
+		}
+		modifier = {
+			civilian_factory_use = 15
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			add_to_variable = {
+				PRC_101_Chen_Boda_s_e_centrism_modifiers_var = 0.05
+				tooltip = PRC_101_Chen_Boda_s_e_centrism_modifiers_tt
+			}
+			add_stability = 0.05
+			add_political_power = 100
+		}
+	   	cost = 50
+	   	days_remove = 365
+		fire_only_once = yes
+	}
+}

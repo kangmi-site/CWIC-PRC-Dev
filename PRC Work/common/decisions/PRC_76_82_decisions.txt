@@ -1,0 +1,1735 @@
+PRC_76_82_Foreign_Leapfrog_cate = {
+
+	PRC_76_82_Shanghai_Baoshan_Iron_and_Steel_Works_agreement = {
+		allowed = { 
+			original_tag = PRC
+		}
+		available = {
+			has_country_flag = PRC_76_82_Foreign_Leapfrog_Call_off
+		}
+		activation = {
+			has_completed_focus = PRC_76_82_Foreign_Leapfrog
+		}
+		is_good = yes
+		timeout_effect = {
+			set_temp_variable = { temp_x = 6 }
+			PRC_76_82_spend_Foreign_exchange = yes
+			set_temp_variable = { temp_x = 17.6 }
+			PRC_76_82_Foreign_Leapfrog_spend_else = yes
+			activate_mission = PRC_76_82_Construction_of_Shanghai_Baoshan_Iron_and_Steel_Works
+		}
+	   	cost = 0
+		days_mission_timeout = 10
+		fire_only_once = yes
+	}
+
+	PRC_76_82_Construction_of_Shanghai_Baoshan_Iron_and_Steel_Works = {
+		allowed = { 
+			original_tag = PRC
+		}
+		available = {
+			has_country_flag = PRC_76_82_Foreign_Leapfrog_Call_off
+		}
+		activation = {
+			always = no
+		}
+		is_good = yes
+		timeout_effect = {
+			613 = {
+				add_extra_state_shared_building_slots = 3
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+				add_building_construction = {
+                    type = steel_factory
+                    level = 1
+                    instant_build = yes
+                }
+			}
+			set_country_flag = PRC_76_82_Foreign_Leapfrog_achievement
+			add_to_variable = { PRC_76_82_Foreign_achievement = 7.5 }
+		}
+	   	cost = 0
+		days_mission_timeout = 600
+		fire_only_once = yes
+	}
+
+	PRC_76_82_Northwest_Investment_in_petroleum_industry_agreement = {
+		allowed = { 
+			original_tag = PRC
+		}
+		available = {
+			has_country_flag = PRC_76_82_Foreign_Leapfrog_Call_off
+		}
+		activation = {
+			has_completed_focus = PRC_76_82_Foreign_Leapfrog
+		}
+		is_good = yes
+		timeout_effect = {
+			set_temp_variable = { temp_x = 2 }
+			PRC_76_82_spend_Foreign_exchange = yes
+			set_temp_variable = { temp_x = 8 }
+			PRC_76_82_Foreign_Leapfrog_spend_else = yes
+			activate_mission = PRC_76_82_Northwest_Construction_of_Investment_in_petroleum_industry
+		}
+	   	cost = 0
+		days_mission_timeout = 25
+		fire_only_once = yes
+	}
+
+	PRC_76_82_Northwest_Construction_of_Investment_in_petroleum_industry = {
+		allowed = { 
+			original_tag = PRC
+		}
+		available = {
+			has_country_flag = PRC_76_82_Foreign_Leapfrog_Call_off
+		}
+		activation = {
+			always = no
+		}
+		is_good = yes
+		timeout_effect = {
+			617 = {
+				add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = synthetic_refinery
+                    level = 1
+                    instant_build = yes
+                }
+			}
+			616 = {
+				add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = synthetic_refinery
+                    level = 1
+                    instant_build = yes
+                }
+			}
+			set_country_flag = PRC_76_82_Foreign_Leapfrog_achievement
+			add_to_variable = { PRC_76_82_Foreign_achievement = 4 }
+		}
+	   	cost = 0
+		days_mission_timeout = 200
+		fire_only_once = yes
+	}
+
+	PRC_76_82_Southeast_Investment_in_petroleum_industry_agreement = {
+		allowed = { 
+			original_tag = PRC
+		}
+		available = {
+			has_country_flag = PRC_76_82_Foreign_Leapfrog_Call_off
+		}
+		activation = {
+			has_completed_focus = PRC_76_82_Foreign_Leapfrog
+		}
+		is_good = yes
+		timeout_effect = {
+			set_temp_variable = { temp_x = 3 }
+			PRC_76_82_spend_Foreign_exchange = yes
+			set_temp_variable = { temp_x = 11 }
+			PRC_76_82_Foreign_Leapfrog_spend_else = yes
+			activate_mission = PRC_76_82_Southeast_Construction_of_Investment_in_petroleum_industry
+		}
+	   	cost = 0
+		days_mission_timeout = 35
+		fire_only_once = yes
+	}
+
+	PRC_76_82_Southeast_Construction_of_Investment_in_petroleum_industry = {
+		allowed = { 
+			original_tag = PRC
+		}
+		available = {
+			has_country_flag = PRC_76_82_Foreign_Leapfrog_Call_off
+		}
+		activation = {
+			always = no
+		}
+		is_good = yes
+		timeout_effect = {
+			596 = {
+				add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = synthetic_refinery
+                    level = 1
+                    instant_build = yes
+                }
+			}
+			613 = {
+				add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = synthetic_refinery
+                    level = 1
+                    instant_build = yes
+                }
+			}
+			595 = {
+				add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = synthetic_refinery
+                    level = 1
+                    instant_build = yes
+                }
+			}
+			set_country_flag = PRC_76_82_Foreign_Leapfrog_achievement
+			add_to_variable = { PRC_76_82_Foreign_achievement = 6 }
+		}
+	   	cost = 0
+		days_mission_timeout = 300
+		fire_only_once = yes
+	}
+	
+	PRC_76_82_Chemical_industry_investment = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = PRC_76_82_Foreign_Leapfrog_Call_off
+			}
+		}
+
+		cost = 10
+
+		days_remove = 10
+		days_re_enable = 120
+
+		visible = {
+			has_country_flag = PRC_76_82_Foreign_Leapfrog_achievement
+		}
+
+		fire_only_once = no
+
+		remove_effect = {
+			set_temp_variable = { temp_x = 1.5 }
+			PRC_76_82_spend_Foreign_exchange = yes
+			set_temp_variable = { temp_x = 6 }
+			PRC_76_82_Foreign_Leapfrog_spend_else = yes
+			activate_mission = PRC_76_82_Construction_of_Chemical_industry_investment
+		}
+
+		cancel_trigger = {
+			has_country_flag = PRC_76_82_Foreign_Leapfrog_Call_off
+		}
+	}
+
+	PRC_76_82_Construction_of_Chemical_industry_investment = {
+		allowed = { 
+			original_tag = PRC
+		}
+		available = {
+			has_country_flag = PRC_76_82_Foreign_Leapfrog_Call_off
+		}
+		activation = {
+			always = no
+		}
+		is_good = yes
+		timeout_effect = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = synthetic_refinery
+                    level = 1
+                    instant_build = yes
+                }
+			}
+			add_to_variable = { PRC_76_82_Foreign_achievement = 1 }
+		}
+	   	cost = 0
+		days_mission_timeout = 80
+		fire_only_once = yes
+	}
+
+	PRC_76_82_Investment_in_steel_industry = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = PRC_76_82_Foreign_Leapfrog_Call_off
+			}
+		}
+
+		cost = 10
+
+		days_remove = 10
+		days_re_enable = 250
+
+		visible = {
+			has_country_flag = PRC_76_82_Foreign_Leapfrog_achievement
+		}
+
+		fire_only_once = no
+
+		remove_effect = {
+			set_temp_variable = { temp_x = 5 }
+			PRC_76_82_spend_Foreign_exchange = yes
+			set_temp_variable = { temp_x = 25 }
+			PRC_76_82_Foreign_Leapfrog_spend_else = yes
+			activate_mission = PRC_76_82_Construction_of_steel_industry
+		}
+
+		cancel_trigger = {
+			has_country_flag = PRC_76_82_Foreign_Leapfrog_Call_off
+		}
+	}
+
+	PRC_76_82_Construction_of_steel_industry = {
+		allowed = { 
+			original_tag = PRC
+		}
+		available = {
+			has_country_flag = PRC_76_82_Foreign_Leapfrog_Call_off
+		}
+		activation = {
+			always = no
+		}
+		is_good = yes
+		timeout_effect = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+				add_building_construction = {
+                    type = steel_factory
+                    level = 1
+                    instant_build = yes
+                }
+			}
+			add_to_variable = { PRC_76_82_Foreign_achievement = 4 }
+		}
+	   	cost = 0
+		days_mission_timeout = 240
+		fire_only_once = yes
+	}
+
+	PRC_76_82_Investment_in_chemical_fiber_and_chemical_fertilizer = {
+	
+
+		allowed = { 
+			original_tag = PRC
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = PRC_76_82_Foreign_Leapfrog_Call_off
+			}
+		}
+
+		cost = 10
+
+		days_remove = 10
+		days_re_enable = 200
+
+		visible = {
+			has_country_flag = PRC_76_82_Foreign_Leapfrog_achievement
+		}
+
+		fire_only_once = no
+
+		remove_effect = {
+			set_temp_variable = { temp_x = 4.5 }
+			PRC_76_82_spend_Foreign_exchange = yes
+			set_temp_variable = { temp_x = 22 }
+			PRC_76_82_Foreign_Leapfrog_spend_else = yes
+			activate_mission = PRC_76_82_Construction_of_chemical_fiber_and_chemical_fertilizer
+		}
+
+		cancel_trigger = {
+			has_country_flag = PRC_76_82_Foreign_Leapfrog_Call_off
+		}
+	}
+
+	PRC_76_82_Construction_of_chemical_fiber_and_chemical_fertilizer = {
+		allowed = { 
+			original_tag = PRC
+		}
+		available = {
+			has_country_flag = PRC_76_82_Foreign_Leapfrog_Call_off
+		}
+		activation = {
+			always = no
+		}
+		is_good = yes
+		timeout_effect = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+				add_building_construction = {
+                    type = synthetic_refinery
+                    level = 1
+                    instant_build = yes
+                }
+			}
+			add_to_variable = { PRC_76_82_Foreign_achievement = 3 }
+		}
+	   	cost = 0
+		days_mission_timeout = 180
+		fire_only_once = yes
+	}
+
+	PRC_76_82_Foreign_Leapfrog_Call_off_de = {
+		complete_effect = {
+			set_country_flag = PRC_76_82_Foreign_Leapfrog_Call_off
+			if = {
+				limit = {
+					NOT = { has_country_flag = PRC_76_82_Foreign_Leapfrog_achievement }
+				}
+				custom_effect_tooltip = PRC_76_82_Foreign_Leapfrog_Call_off_de_bad
+				add_political_power = -200
+				add_stability = -0.2
+				add_to_variable = {
+					CPC_bar_c = -4
+					tooltip = PRC_76_82_qlxt_hgf_6
+				}
+
+				custom_effect_tooltip = PRC_76_82_Foreign_Leapfrog_Call_off_debt_cal
+				subtract_from_variable = {
+					currentMoney = PRC_76_82_Foreign_debt
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						check_variable = { PRC_76_82_Foreign_achievement > PRC_76_82_Foreign_debt }
+					}
+					custom_effect_tooltip = PRC_76_82_Foreign_Leapfrog_Call_off_vic
+					add_political_power = 100
+					add_stability = 0.05
+					add_to_variable = {
+						CPC_bar_c = 3
+						tooltip = PRC_76_82_qlxt_hgf_3
+					}
+				}
+				else = {
+					custom_effect_tooltip = PRC_76_82_Foreign_Leapfrog_Call_off_fail
+					add_political_power = -100
+					add_stability = -0.05
+					add_to_variable = {
+						CPC_bar_d = -3
+						tooltip = PRC_76_82_qlxt_hgf_6
+					}
+				}
+
+				custom_effect_tooltip = PRC_76_82_Foreign_Leapfrog_Call_off_debt_cal
+				subtract_from_variable = {
+					currentMoney = PRC_76_82_Foreign_debt
+				}
+			}
+		}
+	   	cost = 50
+	   	days_remove = 0
+	   	fire_only_once = yes
+	}
+
+	PRC_76_82_Increase_commodity_exports = {
+
+		allowed = { 
+			original_tag = PRC
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = PRC_76_82_Foreign_Leapfrog_Call_off
+			}
+		}
+
+		cost = 10
+
+		days_remove = 80
+		days_re_enable = 10
+
+		fire_only_once = no
+
+		visible = {
+			check_variable = {
+				currentMoney > 5
+			}
+		}
+
+		modifier = {
+			consumer_goods_factor = 0.15
+			political_power_factor = -0.05
+		}
+
+		complete_effect = {
+			add_stability = -0.025
+		}
+
+		remove_effect = {
+			set_temp_variable = { temp_x = 4 }
+			PRC_76_82_get_Foreign_exchange_tt = yes
+		}
+
+		cancel_trigger = {
+			has_country_flag = PRC_76_82_Foreign_Leapfrog_Call_off
+		}
+	}
+
+	PRC_76_82_Call_an_emergency_halt_to_Foreign_Leapfrog = {
+		allowed = { 
+			original_tag = PRC
+		}
+		available = {
+			has_country_flag = PRC_76_82_Foreign_Leapfrog_Call_off
+		}
+		activation = {
+			OR = {
+				AND = {
+					has_country_flag = PRC_76_82_Foreign_Leapfrog_achievement
+					set_temp_variable = { PRC_76_82_Foreign_achievement_cal = PRC_76_82_Foreign_achievement }
+					multiply_temp_variable = { PRC_76_82_Foreign_achievement_cal = 1.3 }
+					check_variable = { PRC_76_82_Foreign_debt > PRC_76_82_Foreign_achievement_cal }
+				}
+				NOT = {
+					has_country_leader = {
+						name = "Hua GuoFeng"
+						ruling_only = yes
+					}
+				}
+			}
+			has_completed_focus = PRC_76_82_Foreign_Leapfrog
+		}
+		is_good = no
+		timeout_effect = {
+			set_country_flag = PRC_76_82_Foreign_Leapfrog_Call_off
+			if = {
+				limit = {
+					NOT = { has_country_flag = PRC_76_82_Foreign_Leapfrog_achievement }
+				}
+				custom_effect_tooltip = PRC_76_82_Foreign_Leapfrog_Call_off_de_bad
+				add_political_power = -200
+				add_stability = -0.2
+				add_to_variable = {
+					CPC_bar_c = -4
+					tooltip = PRC_76_82_qlxt_hgf_6
+				}
+
+				custom_effect_tooltip = PRC_76_82_Foreign_Leapfrog_Call_off_debt_cal
+				subtract_from_variable = {
+					currentMoney = PRC_76_82_Foreign_debt
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						check_variable = { PRC_76_82_Foreign_achievement > PRC_76_82_Foreign_debt }
+					}
+					custom_effect_tooltip = PRC_76_82_Foreign_Leapfrog_Call_off_vic
+					add_political_power = 100
+					add_stability = 0.05
+					add_to_variable = {
+						CPC_bar_c = 3
+						tooltip = PRC_76_82_qlxt_hgf_3
+					}
+				}
+				else = {
+					custom_effect_tooltip = PRC_76_82_Foreign_Leapfrog_Call_off_fail
+					add_political_power = -100
+					add_stability = -0.05
+					add_to_variable = {
+						CPC_bar_d = -3
+						tooltip = PRC_76_82_qlxt_hgf_6
+					}
+				}
+
+				custom_effect_tooltip = PRC_76_82_Foreign_Leapfrog_Call_off_debt_cal
+				subtract_from_variable = {
+					currentMoney = PRC_76_82_Foreign_debt
+				}
+			}
+		}
+	   	cost = 0
+		days_mission_timeout = 5
+		fire_only_once = yes
+	}
+
+	PRC_76_82_Introduce_foreign_investment_soh = {
+		visible = {
+			has_country_flag = PRC_76_82_Foreign_Leapfrog_achievement
+	   	}
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_flag = PRC_76_82_Foreign_Leapfrog_achievement
+				}
+				clr_country_flag = PRC_76_82_Foreign_Leapfrog_achievement
+			}
+			else = {
+				set_country_flag = PRC_76_82_Foreign_Leapfrog_achievement
+			}
+		}
+	   	cost = 0
+	   	days_remove = 0
+		days_re_enable = 0
+	}
+
+	PRC_76_82_Introduce_foreign_investment = {
+		visible = {
+			FROM = {
+				free_building_slots = { 
+					building = industrial_complex
+					size > 0
+					include_locked = no
+				}
+			}
+			ROOT = {
+				has_country_flag = PRC_76_82_Introduce_foreign_investment_show
+				has_country_flag = PRC_76_82_Foreign_Leapfrog_achievement
+			}
+	   	}
+		complete_effect = {
+			set_temp_variable = { temp_x = 5 }
+			PRC_76_82_spend_Foreign_exchange = yes
+			set_temp_variable = { temp_x = 25 }
+			PRC_76_82_Foreign_Leapfrog_spend_else = yes
+		}
+	   	remove_effect = {
+			FROM = {
+				add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+			}
+			ROOT = {
+				add_to_variable = { PRC_76_82_Foreign_achievement = 2 }
+			}
+		}
+		state_target = yes
+		target_array = ROOT.owned_states
+	   	cost = 20
+	   	days_remove = 180
+		days_re_enable = 60
+	}
+}
+
+PRC_76_82_The_Great_Discussion_on_the_Standard_of_Truth_dxp_movement = {
+
+	PRC_76_82_Practice_as_the_only_standard_to_test_the_right_and_wrong_of_the_route_f = {
+		allowed = { 
+			original_tag = PRC
+		}
+		available = {
+			OR = {
+				has_completed_focus = PRC_76_82_Rereading_Where_Do_People_Get_Their_Right_Ideas_From
+				has_completed_focus = PRC_76_82_Practice_as_the_only_standard_to_test_the_right_and_wrong_of_the_route
+			}
+		}
+		activation = {
+			has_completed_focus = PRC_76_82_The_Great_Discussion_on_the_Standard_of_Truth
+		}
+		is_good = no
+		timeout_effect = {
+			complete_national_focus = PRC_76_82_Practice_as_the_only_standard_to_test_the_right_and_wrong_of_the_route
+		}
+		days_mission_timeout = 30
+		fire_only_once = yes
+	}
+
+	PRC_76_82_Fully_understand_Mao_Zedong_s_relevant_instructions_f = {
+		allowed = { 
+			original_tag = PRC
+		}
+		available = {
+			OR = {
+				has_completed_focus = PRC_76_82_Complete_understanding_of_Chairman_Mao_s_revolutionary_line
+				has_completed_focus = PRC_76_82_Fully_understand_Mao_Zedong_s_relevant_instructions
+			}
+		}
+		activation = {
+			OR = {
+				has_completed_focus = PRC_76_82_Practice_as_the_only_standard_to_test_the_right_and_wrong_of_the_route
+				has_completed_focus = PRC_76_82_Rereading_Where_Do_People_Get_Their_Right_Ideas_From
+			}
+		}
+		is_good = no
+		timeout_effect = {
+			complete_national_focus = PRC_76_82_Fully_understand_Mao_Zedong_s_relevant_instructions
+		}
+		days_mission_timeout = 30
+		fire_only_once = yes
+	}
+
+	PRC_76_82_Truth_standard_remedial_course_f = {
+		allowed = { 
+			original_tag = PRC
+		}
+		available = {
+			OR = {
+				has_completed_focus = PRC_76_82_Truth_standard_remedial_course
+				has_completed_focus = PRC_76_82_The_purpose_of_the_proletariat_in_understanding_the_world
+			}
+		}
+		activation = {
+			OR = {
+				has_completed_focus = PRC_76_82_Fully_understand_Mao_Zedong_s_relevant_instructions
+				has_completed_focus = PRC_76_82_Complete_understanding_of_Chairman_Mao_s_revolutionary_line
+			}
+		}
+		is_good = no
+		timeout_effect = {
+			complete_national_focus = PRC_76_82_Truth_standard_remedial_course
+		}
+		days_mission_timeout = 30
+		fire_only_once = yes
+	}
+
+	PRC_76_82_Theoretical_work_retreat_f = {
+		allowed = { 
+			original_tag = PRC
+		}
+		available = {
+			OR = {
+				has_completed_focus = PRC_76_82_Theoretical_work_retreat
+				has_completed_focus = PRC_76_82_Rectification_of_theoretical_work
+			}
+		}
+		activation = {
+			OR = {
+				has_completed_focus = PRC_76_82_Truth_standard_remedial_course
+				has_completed_focus = PRC_76_82_The_purpose_of_the_proletariat_in_understanding_the_world
+			}
+		}
+		is_good = no
+		timeout_effect = {
+			complete_national_focus = PRC_76_82_Theoretical_work_retreat
+		}
+		days_mission_timeout = 30
+		fire_only_once = yes
+	}
+
+	PRC_76_82_To_work_for_the_rejuvenation_of_the_Chinese_nation_f = {
+		allowed = { 
+			original_tag = PRC
+		}
+		available = {
+			OR = {
+				has_completed_focus = PRC_76_82_To_work_for_the_rejuvenation_of_the_Chinese_nation
+				has_completed_focus = PRC_76_82_Carrying_on_the_legacy_of_Chairman_Mao
+			}
+		}
+		activation = {
+			OR = {
+				has_completed_focus = PRC_76_82_Theoretical_work_retreat
+				has_completed_focus = PRC_76_82_Rectification_of_theoretical_work
+			}
+		}
+		is_good = no
+		timeout_effect = {
+			complete_national_focus = PRC_76_82_To_work_for_the_rejuvenation_of_the_Chinese_nation
+		}
+		days_mission_timeout = 30
+		fire_only_once = yes
+	}
+
+}
+
+PRC_76_82_false_and_wrong_cases_cate = {
+
+	PRC_76_82_Reinstate_the_discipline_inspection_Commission = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		visible = {
+			has_completed_focus = PRC_76_82_Rehabilitate_the_work_of_government_departments
+		}
+
+		cost = 20
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		remove_effect = {
+			add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+		}
+	}
+
+	PRC_76_82_redress_Propaganda_Department_of_the_CPC_Central_Committee = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		visible = {
+			has_completed_focus = PRC_76_82_Rehabilitate_the_work_of_government_departments
+		}
+
+		cost = 20
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		remove_effect = {
+			add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+		}
+	}
+
+	PRC_76_82_redress_Central_Supervisory_Commission = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		visible = {
+			has_completed_focus = PRC_76_82_Rehabilitate_the_work_of_government_departments
+		}
+
+		cost = 20
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		remove_effect = {
+			add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+		}
+	}
+
+	PRC_76_82_redress_He_Long = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		visible = {
+			has_completed_focus = PRC_76_82_Redraw_the_Rightists
+		}
+
+		cost = 20
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		remove_effect = {
+			add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+		}
+	}
+
+	PRC_76_82_redress_Reclassifying_the_Tiananmen_Incident = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		visible = {
+			has_completed_focus = PRC_76_82_Party_and_state_leaders
+		}
+
+		cost = 20
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		remove_effect = {
+			add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+		}
+	}
+
+	PRC_76_82_Peng_Luo_Lu_Yang_incident = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		visible = {
+			has_completed_focus = PRC_76_82_Redraw_the_Rightists
+		}
+
+		cost = 20
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		remove_effect = {
+			add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+		}
+	}
+
+	PRC_76_82_Qualitative_Deng_Xiaoping_s_work_in_1975 = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		cost = 20
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		remove_effect = {
+			add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+		}
+	}
+
+	PRC_76_82_redress_Ma_Yinchu = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		visible = {
+			has_completed_focus = PRC_76_82_Redraw_the_Rightists
+		}
+
+		cost = 20
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		remove_effect = {
+			add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+		}
+	}
+
+	PRC_76_82_redress_Liu_Shaoqi = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		visible = {
+			has_completed_focus = PRC_76_82_Party_and_state_leaders
+		}
+
+		cost = 20
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		remove_effect = {
+			add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+		}
+	}
+
+	PRC_76_82_Yang_Yu_and_Fu_Events = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		visible = {
+			has_completed_focus = PRC_76_82_Redraw_the_Rightists
+		}
+
+		cost = 20
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		remove_effect = {
+			add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+		}
+	}
+
+	PRC_76_82_Sixty_one_traitor_group_case = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		visible = {
+			has_completed_focus = PRC_76_82_Redraw_the_Rightists
+		}
+
+		cost = 20
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		remove_effect = {
+			add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+		}
+	}
+
+	PRC_76_82_redress_Tan_Zhenlin = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		visible = {
+			has_completed_focus = PRC_76_82_Redraw_the_Rightists
+		}
+
+		cost = 20
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		remove_effect = {
+			add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+		}
+	}
+
+	PRC_76_82_redress_Li_Desheng = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		visible = {
+			has_completed_focus = PRC_76_82_Redraw_the_Rightists
+		}
+
+		cost = 20
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		remove_effect = {
+			add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+		}
+	}
+
+	PRC_76_82_redress_Zhang_Wentian = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		visible = {
+			has_completed_focus = PRC_76_82_Redraw_the_Rightists
+		}
+
+		cost = 20
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		remove_effect = {
+			add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+		}
+	}
+
+	PRC_76_82_redress_Six_rightists = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		visible = {
+			has_completed_focus = PRC_76_82_Redraw_the_Rightists
+		}
+
+		cost = 20
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		remove_effect = {
+			add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+		}
+	}
+
+	PRC_76_82_The_case_of_Liu_Zhidan = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		visible = {
+			has_completed_focus = PRC_76_82_Redraw_the_Rightists
+		}
+
+		cost = 20
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		remove_effect = {
+			add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+		}
+	}
+
+	PRC_76_82_The_Case_of_the_Inner_Mongolian_People_s_Revolutionary_Party = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		visible = {
+			has_completed_focus = PRC_76_82_Rectify_the_affairs_of_the_Autonomous_Region
+		}
+
+		cost = 20
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		remove_effect = {
+			add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+		}
+	}
+
+	PRC_76_82_redress_Ulanhu = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		visible = {
+			has_completed_focus = PRC_76_82_Rectify_the_affairs_of_the_Autonomous_Region
+		}
+
+		cost = 20
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		remove_effect = {
+			add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+		}
+	}
+
+	PRC_76_82_The_Three_Villages_Case = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		visible = {
+			has_completed_focus = PRC_76_82_Rehabilitate_literary_and_art_work
+		}
+
+		cost = 20
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		remove_effect = {
+			add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+		}
+	}
+
+	PRC_76_82_redress_Six_Professors_of_the_Right = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		visible = {
+			has_completed_focus = PRC_76_82_Redraw_the_Rightists
+		}
+
+		cost = 20
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		remove_effect = {
+			add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+		}
+	}
+
+	PRC_76_82_redress_The_Hu_Feng_Case = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		visible = {
+			has_completed_focus = PRC_76_82_Rehabilitate_literary_and_art_work
+		}
+
+		cost = 20
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		remove_effect = {
+			add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+		}
+	}
+
+	PRC_76_82_Appointment_of_Hu_Yaobang_as_Vice_President_of_the_Central_Party_School = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		visible = {
+			has_completed_focus = PRC_76_82_Rectify_the_affairs_of_the_Autonomous_Region
+			has_completed_focus = PRC_76_82_Emancipate_artisans_and_small_traders
+			has_completed_focus = PRC_76_82_Rehabilitate_literary_and_art_work
+			NOT = {
+				has_country_flag = PRC_76_82_Vice_President_of_the_Central_Party_School
+			}
+		}
+
+		cost = 20
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = PRC_76_82_Vice_President_of_the_Central_Party_School
+			add_to_variable = {
+                CPC_bar_e = 0.5
+                tooltip = liberal_gain_a_little_influence_tt
+            }
+		}
+	}
+
+	PRC_76_82_Appointment_of_Zhang_Pinghua_as_Vice_President_of_the_Central_Party_School = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		visible = {
+			has_completed_focus = PRC_76_82_Rectify_the_affairs_of_the_Autonomous_Region
+			has_completed_focus = PRC_76_82_Emancipate_artisans_and_small_traders
+			has_completed_focus = PRC_76_82_Rehabilitate_literary_and_art_work
+			NOT = {
+				has_country_flag = PRC_76_82_Vice_President_of_the_Central_Party_School
+			}
+		}
+
+		cost = 20
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = PRC_76_82_Vice_President_of_the_Central_Party_School
+			add_to_variable = {
+                CPC_bar_d = 0.5
+                tooltip = PRC_76_82_qlxt_dxp_1
+            }
+		}
+	}
+
+	PRC_76_82_Appointment_of_Cao_Chichio_as_Vice_President_of_the_Central_Party_School = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		visible = {
+			has_completed_focus = PRC_76_82_Rectify_the_affairs_of_the_Autonomous_Region
+			has_completed_focus = PRC_76_82_Emancipate_artisans_and_small_traders
+			has_completed_focus = PRC_76_82_Rehabilitate_literary_and_art_work
+			NOT = {
+				has_country_flag = PRC_76_82_Vice_President_of_the_Central_Party_School
+			}
+		}
+
+		cost = 20
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = PRC_76_82_Vice_President_of_the_Central_Party_School
+			add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+		}
+	}
+
+	PRC_76_82_Review_of_Kang_Sheng_and_Xie_Fuji = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		visible = {
+			has_completed_focus = PRC_76_82_Rectify_the_affairs_of_the_Autonomous_Region
+			has_completed_focus = PRC_76_82_Emancipate_artisans_and_small_traders
+			has_completed_focus = PRC_76_82_Rehabilitate_literary_and_art_work
+		}
+		cost = 20
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		remove_effect = {
+			add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+		}
+	}
+
+	PRC_76_82_Appointment_of_Ji_Dengkui_as_Minister_of_the_Central_Organization_Department = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		visible = {
+			has_completed_focus = PRC_76_82_Rectify_the_affairs_of_the_Autonomous_Region
+			has_completed_focus = PRC_76_82_Emancipate_artisans_and_small_traders
+			has_completed_focus = PRC_76_82_Rehabilitate_literary_and_art_work
+			NOT = {
+				has_country_flag = PRC_76_82_Minister_of_the_Central_Organization_Department
+			}
+		}
+
+		cost = 20
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = PRC_76_82_Minister_of_the_Central_Organization_Department
+			add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+		}
+	}
+
+	PRC_76_82_Appointment_of_Hu_Yaobang_as_Minister_of_the_Central_Organization_Department = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		visible = {
+			has_completed_focus = PRC_76_82_Rectify_the_affairs_of_the_Autonomous_Region
+			has_completed_focus = PRC_76_82_Emancipate_artisans_and_small_traders
+			has_completed_focus = PRC_76_82_Rehabilitate_literary_and_art_work
+			NOT = {
+				has_country_flag = PRC_76_82_Minister_of_the_Central_Organization_Department
+			}
+		}
+
+		cost = 20
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = PRC_76_82_Minister_of_the_Central_Organization_Department
+			add_to_variable = {
+                CPC_bar_d = 0.5
+                tooltip = PRC_76_82_qlxt_dxp_1
+            }
+		}
+	}
+}
+
+PRC_76_82_Universal_Primary_Education_cate = {
+
+	PRC_76_82_Universal_Primary_Education_promote = {
+		visible = {
+			check_variable = { Universal_Primary_Education_period < 6 }
+	   	}
+		modifier = {
+			research_speed_factor = 0.1
+			consumer_goods_factor = 0.1
+		}
+		complete_effect = {
+			set_temp_variable = { temp_x = 20 }
+			PRC_76_82_spend_money_tt = yes
+		}
+	   	remove_effect = {
+			if = {
+				limit = {
+					check_variable = {
+						Universal_Primary_Education_period = 5
+					}
+				}
+				add_research_slot = 1
+				set_country_flag = PRC_76_82_Universal_Primary_Education_completed
+				set_variable = { PRC_76_82_Hua_Guofeng_s_reform_var5 = 0 }
+			}
+			add_to_variable = { Universal_Primary_Education_period = 1 }
+            set_temp_variable = { Universal_Primary_Education_period_speed = 1 }
+            add_to_temp_variable = { Universal_Primary_Education_period_speed = modifier@PRC_76_82_Universal_premium_on_compulsory_education }
+            set_variable = { Universal_Primary_Education_time = 365 }
+            divide_variable = { Universal_Primary_Education_time = Universal_Primary_Education_period_speed }
+		}
+	   	cost = 20
+	   	days_remove = Universal_Primary_Education_time
+		days_re_enable = 0
+	}
+
+	PRC_76_82_Promote_the_participation_of_educated_youth_in_primary_education = {
+		visible = {
+			check_variable = { Universal_Primary_Education_period < 5 }
+			has_country_flag = PRC_76_82_102_a
+	   	}
+		modifier = {
+			consumer_goods_factor = -0.05
+		}
+		complete_effect = {
+			add_stability = 0.025
+		}
+	   	remove_effect = {
+			add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var5 = 0.05
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var5_in
+            }
+		}
+	   	cost = 100
+	   	days_remove = 90
+		days_re_enable = 90
+	}
+
+	PRC_76_82_Subsidize_primary_education = {
+		visible = {
+			check_variable = { Universal_Primary_Education_period < 5 }
+	   	}
+		complete_effect = {
+			set_temp_variable = { temp_x = 15 }
+			PRC_76_82_spend_money_tt = yes
+		}
+	   	remove_effect = {
+			add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var5 = 0.1
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var5_in
+            }
+		}
+	   	cost = 20
+	   	days_remove = 180
+		days_re_enable = 180
+	}
+
+	PRC_76_82_Use_the_Communist_Youth_League = {
+		visible = {
+			check_variable = { Universal_Primary_Education_period < 5 }
+	   	}
+		complete_effect = {
+		}
+		modifier = {
+			political_power_gain = -0.1
+		}
+	   	remove_effect = {
+			add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var5 = 0.05
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var5_in
+            }
+		}
+	   	cost = 50
+	   	days_remove = 180
+		days_re_enable = 180
+	}
+
+	PRC_76_82_Strengthen_family_planning = {
+		visible = {
+			check_variable = { Universal_Primary_Education_period < 5 }
+			has_completed_focus = PRC_76_82_Promoting_Family_Planning
+	   	}
+		complete_effect = {
+		}
+		modifier = {
+			monthly_population = -0.5
+		}
+	   	remove_effect = {
+			add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var5 = 0.05
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var5_in
+            }
+		}
+	   	cost = 50
+	   	days_remove = 180
+		days_re_enable = 180
+	}
+
+}
+
+PRC_76_82_National_internal_affairs = {
+	PRC_76_82_Price_reform = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		available = {
+			has_completed_focus = PRC_76_82_Control_of_urban_prices
+		}
+
+		cost = 50
+
+		days_remove = 90
+
+		fire_only_once = yes
+
+		remove_effect = {
+			add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var6 = -0.03
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var6_de
+            }
+		}
+	}
+
+	PRC_76_82_Establishment_of_staff_assemblies_in_enterprises = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		available = {
+			has_completed_focus = PRC_76_82_Adjustment_of_employee_wages
+		}
+
+		cost = 25
+
+		days_remove = 60
+
+		fire_only_once = yes
+
+		remove_effect = {
+			add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var2 = 0.05
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var2_in
+            }
+			add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var10 = 0.05
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var10_in
+            }
+		}
+	}
+
+	PRC_76_82_Abolition_of_cadre_tenure = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		available = {
+			has_completed_focus = PRC_76_82_Younger_cadre_groups
+		}
+
+		cost = 50
+
+		days_remove = 90
+
+		fire_only_once = yes
+
+		complete_effect = {
+			add_stability = -0.1
+		}
+
+		remove_effect = {
+			add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var2 = 0.05
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var2_in
+            }
+			add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var6 = -0.015
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var6_de
+            }
+		}
+	}
+
+	PRC_76_82_Two_Vanities_r = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		visible = {
+			date > "1977.2.5"
+			NOT = {
+				has_country_flag = PRC_76_82_Two_Vanities_a
+			}
+		}
+
+		cost = 10
+
+		days_remove = 5
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = PRC_76_82_Two_Vanities_a
+		}
+
+		remove_effect = {
+			country_event = {
+				id = PRC_76_82.6
+			}
+		}
+	}
+
+	PRC_76_82_Two_Vanities_c = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		visible = {
+			date > "1977.2.5"
+			NOT = {
+				has_country_flag = PRC_76_82_Two_Vanities_a
+			}
+		}
+
+		cost = 10
+
+		days_remove = 5
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = PRC_76_82_Two_Vanities_a
+		}
+
+		remove_effect = {
+			country_event = {
+				id = PRC_76_82.7
+			}
+		}
+	}
+
+	PRC_76_82_Hold_high_the_great_banner_of_Chairman_Mao = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		visible = {
+			has_completed_focus = PRC_76_82_Adherence_to_the_basic_party_line
+		}
+
+		cost = 10
+
+		days_remove = 5
+
+		fire_only_once = yes
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			country_event = {
+				id = PRC_76_82.15
+			}
+			add_timed_idea = { idea = PRC_76_82_Mao_Zedong_Thought days = 365 }
+		}
+	}
+
+	PRC_76_82_Building_a_modern_and_strong_socialist_state = {
+	
+		allowed = { 
+			original_tag = PRC
+		}
+
+		visible = {
+			has_completed_focus = PRC_76_82_Adherence_to_the_basic_party_line
+		}
+
+		cost = 10
+
+		days_remove = 5
+
+		fire_only_once = yes
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			add_timed_idea = { idea = PRC_76_82_Building_a_modern_and_strong_socialist_state_idea days = 365 }
+		}
+	}
+}

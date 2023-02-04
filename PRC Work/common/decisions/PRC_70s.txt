@@ -1,0 +1,2892 @@
+#内人党
+PRC_70s_Neirendang = {    
+	PRC_70s_Neirendang_mission = { 
+		activation = {
+           always = no
+        }
+        available = {
+            num_divisions_in_states = {
+                count > 3
+                states = { 612 621 611 175 }
+                #exclude = { }
+            }
+        }
+        cancel_trigger = {
+           always = no
+        }
+        is_good = no
+        days_mission_timeout = 30
+        selectable_mission = yes
+        complete_effect = {
+            complete_national_focus = prc70s_Successfully_suppressed_the_rebellion_in_Inner_Mongolia
+        }
+        timeout_effect = {
+            complete_national_focus = prc70s_Successful_rebellion_in_Inner_Mongolia
+        }
+	}
+}
+
+
+#平反贺龙
+PRC_70s_helong_categery = {
+    PRC_70s_pingfan_helong_decision = {
+		cost = 20
+        fire_only_once = yes
+        visible = {
+            has_country_flag = prc70s_pingfan_helong_flag
+        }
+        allowed = {
+            tag = PRC
+        }
+		complete_effect = {
+            country_event = {
+                id = prc70s.78
+            }
+		}
+    }
+}
+
+
+#任命林立果
+PRC_70s_linliguo_categery = {
+    PRC_70s_linliguo_decision = {
+        cost = 20
+        fire_only_once = yes
+        allowed = { tag = PRC }
+        visible = { 
+            has_country_leader = {
+                name = "Mao Zedong"
+                ruling_only = yes
+            }
+            date > 1969.10.15 
+            date < 1971.9.13
+            NOT = {
+                has_completed_focus = linbiao_incident
+            }
+            NOT = {
+                has_completed_focus = linbiao_incident
+            }
+        }
+        complete_effect = {
+            add_corps_commander_role = {
+                Character = PRC_Lin_Liguo
+                skill = 1
+                attack_skill = 1
+                defense_skill = 2
+                planning_skill = 1
+                logistics_skill = 1
+            }
+            set_country_flag = PRC_70s_linliguo_tt
+            custom_effect_tooltip = PRC_70s_linliguo_effect_tt
+        }
+    }
+}
+
+
+#一打三反
+PRC_70s_One_strike_three_anti_decision_category = {
+    PRC_70s_YU_Luoke = {
+		cost = 50
+		days_remove = 7
+        fire_only_once = yes
+        visible = {
+            tag = PRC
+        }
+        available = {
+            tag = PRC
+        }
+		remove_effect = {
+            country_event = {
+                id = prc70s.28
+                days = 1
+            }
+		}
+    }
+    PRC_70s_anti_corruption = {
+		cost = 35
+		days_remove = 15
+        fire_only_once = yes
+		remove_effect = {
+			add_political_power = -100
+            add_stability = -0.1
+            add_to_variable = {
+                CPC_bar_d = -1.1
+                tooltip = reformers_lose_a_little_influence_tt
+            }
+            add_to_variable = {
+                CPC_bar_c = -0.6
+                tooltip = conservatives_lose_a_little_influence_tt
+            }
+            clamp_variable = {
+                var = CPC_bar_d
+                max = 100
+                min = 0
+            }
+            clamp_variable = {
+                var = CPC_bar_c
+                max = 100
+                min = 0
+            }
+            add_to_variable = {
+                CPC_bar_a = -1.7
+            }
+            clamp_variable = {
+                var = CPC_bar_a
+                max = 100
+                min = 0
+            }
+		}
+    }
+    PRC_70s_anti_speculation_and_profiteering = {
+		cost = 35
+		days_remove = 15
+        fire_only_once = yes
+		remove_effect = {
+			add_timed_idea = { 
+                idea = PRC70s_idea_anti_speculation_and_profiteering
+                days = 200
+            }
+            add_to_variable = {
+                CPC_bar_a = -1.7
+            }
+            clamp_variable = {
+                var = CPC_bar_a
+                max = 100
+                min = 0
+            }
+		}
+    }
+}
+
+
+#四五计划
+PRC_70s_the_fourth_five_year_plan_decision_category = {    
+	PRC_the_fourth_five_year_plan_mission = { 
+		activation = {
+           always = no
+        }
+        available = {
+            num_of_civilian_factories > 159
+            num_of_military_factories > 49
+            num_of_naval_factories > 24
+        }
+        cancel_trigger = {
+           always = no
+        }
+        fire_only_once = yes
+        is_good = yes
+        days_mission_timeout = 1826
+        selectable_mission = no
+        complete_effect = {
+            add_stability = 0.02
+            add_timed_idea = {
+                idea = PRC70s_idea_success_Fourth_Five_Year_Plan
+                days = 280
+            }
+        }
+        timeout_effect = {
+            add_stability = -0.075
+        }
+	}
+}
+
+
+#整军备战
+PRC_70s_prepare_for_war_category = {    
+	PRC_Off_road_vehicle_development_decision = { 
+        visible = {  
+            has_country_flag = PRC_Off_road_vehicle_development_flag
+        }
+        available = {
+            
+        }
+        cost = 10
+		days_remove = 75
+        fire_only_once = yes
+        complete_effect = {
+            add_to_variable = {
+                currentMoney = -48
+                tooltip = increase_money_tt
+            }
+        }
+        remove_effect = {
+            clr_country_flag = PRC_Off_road_vehicle_development_flag
+            add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = infantry_vehicles_marine
+			}
+            add_to_variable = {
+                PRC_STM = 0.5
+                tooltip = PRC_70s_advance_modernization_of_science_and_technology_tt
+            }
+            clamp_variable = {
+                var = PRC_STM
+                max = 100
+                min = 0
+            }
+        }
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 1000
+                check_variable = {
+                    var = currentMoney
+                    value = 48
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+	}
+    PRC_Improve_the_Type_six_three_automatic_rifle_decision = { 
+        visible = {  
+            has_country_flag = PRC_Improve_the_Type_six_three_automatic_rifle_flag
+            NOT = {
+                OR = {
+                    has_tech = manpats_3
+			        has_tech = squad_weapons_3
+			        has_tech = team_weapons_3
+			        has_tech = specialist_3
+			        has_tech = ammo_explosives_3
+			        has_tech = protection_equip_3
+			        has_tech = manpads_3
+                }
+            }
+        }
+        available = {
+            NOT = {
+                OR = {
+                    has_tech = manpats_3
+			        has_tech = squad_weapons_3
+			        has_tech = team_weapons_3
+			        has_tech = specialist_3
+			        has_tech = ammo_explosives_3
+			        has_tech = protection_equip_3
+			        has_tech = manpads_3
+                }
+            }
+        }
+        cancel_trigger = {
+            has_tech = manpats_3
+			has_tech = squad_weapons_3
+			has_tech = team_weapons_3
+			has_tech = specialist_3
+			has_tech = ammo_explosives_3
+			has_tech = protection_equip_3
+			has_tech = manpads_3
+        }
+        cost = 10
+		days_remove = 45
+        fire_only_once = yes
+        complete_effect = {
+            add_to_variable = {
+                currentMoney = -30
+                tooltip = increase_money_tt
+            }
+        }
+        cancel_effect = {
+            clr_country_flag = PRC_Improve_the_Type_six_three_automatic_rifle_flag
+        }
+        remove_effect = {
+            clr_country_flag = PRC_Improve_the_Type_six_three_automatic_rifle_flag
+            add_tech_bonus = {
+				bonus = 0.15
+				uses = 3
+				category = weapon_upgrades
+			}
+            add_to_variable = {
+                PRC_STM = 0.4
+                tooltip = PRC_70s_advance_modernization_of_science_and_technology_tt
+            }
+            clamp_variable = {
+                var = PRC_STM
+                max = 100
+                min = 0
+            }
+        }
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 1000
+                check_variable = {
+                    var = currentMoney
+                    value = 30
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+	}
+    PRC_70s_development_of_light_tank_decision_1 = { 
+        visible = {  
+            has_country_flag = PRC_70s_development_of_light_tank_flag
+        }
+        available = {
+        }
+        cost = 10
+		days_remove = 150
+        fire_only_once = yes
+        complete_effect = {
+            add_to_variable = {
+                currentMoney = -42
+                tooltip = increase_money_tt
+            }
+            clr_country_flag = PRC_70s_development_of_light_tank_flag
+        }
+        remove_effect = {
+            add_tech_bonus = {
+                bonus = 0.35
+                uses = 1
+                technology = light_tanks_5
+            }
+            add_to_variable = {
+                PRC_STM = 0.6
+                tooltip = PRC_70s_advance_modernization_of_science_and_technology_tt
+            }
+            clamp_variable = {
+                var = PRC_STM
+                max = 100
+                min = 0
+            }
+        }
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 1000
+                check_variable = {
+                    var = currentMoney
+                    value = 42
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+	}
+    PRC_70s_development_of_light_tank_decision_2 = { 
+        visible = {  
+            has_country_flag = PRC_70s_development_of_light_tank_flag
+        }
+        available = {
+        }
+        cost = 10
+		days_remove = 150
+        fire_only_once = yes
+        complete_effect = {
+            add_to_variable = {
+                currentMoney = -42
+                tooltip = increase_money_tt
+            }
+            clr_country_flag = PRC_70s_development_of_light_tank_flag
+        }
+        remove_effect = {
+            if = {
+                limit = {
+                    has_tech
+                }
+            }
+            add_tech_bonus = {
+                bonus = 0.5
+                uses = 1
+                technology = light_tanks_4
+            }
+            add_to_variable = {
+                PRC_STM = 0.6
+                tooltip = PRC_70s_advance_modernization_of_science_and_technology_tt
+            }
+            clamp_variable = {
+                var = PRC_STM
+                max = 100
+                min = 0
+            }
+        }
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 1000
+                check_variable = {
+                    var = currentMoney
+                    value = 42
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+	}
+    PRC_70s_718_project_decision = { 
+        visible = {  
+            has_country_flag = PRC_70s_718_project_flag
+        }
+        available = {
+            has_tech = maritime_sonar_0
+            has_tech = screen_hull_medium_0
+        }
+        cost = 35
+		days_remove = 1200
+        fire_only_once = yes
+        complete_effect = {
+            add_to_variable = {
+                currentMoney = -100
+                tooltip = increase_money_tt
+            }
+        }
+        cancel_trigger = {
+            has_tech = screen_hull_medium_1
+            has_tech = screen_hull_medium_2
+            has_tech = maritime_sonar_1
+            has_tech = maritime_sonar_2
+        }
+        cancel_effect = {
+            add_to_variable = {
+                PRC_STM = 0.8
+                tooltip = PRC_70s_advance_modernization_of_science_and_technology_tt
+            }
+            clamp_variable = {
+                var = PRC_STM
+                max = 100
+                min = 0
+            }
+        }
+        remove_effect = {
+            clr_country_flag = PRC_70s_718_project_flag
+            if = {
+                limit = {
+                    NOT = {
+                        has_tech = screen_hull_medium_1
+                    }
+                }
+                set_technology = {
+                    screen_hull_medium_1 = 1
+                    popup = yes
+                }
+                add_tech_bonus = {
+                    bonus = 0.1
+                    uses = 1
+                    technology = screen_hull_medium_2
+                }
+            }
+            else_if = {
+                limit = {
+                    NOT = {
+                        has_tech = screen_hull_medium_2
+                    }
+                }
+                set_technology = {
+                    screen_hull_medium_2 = 1
+                    popup = yes
+                }
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        has_tech = maritime_sonar_1
+                    }
+                }
+                set_technology = {
+                    maritime_sonar_1 = 1
+                    popup = yes
+                }
+            }
+            else_if = {
+                limit = {
+                    NOT = {
+                        has_tech = maritime_sonar_2
+                    }
+                }
+                set_technology = {
+                    maritime_sonar_2 = 1
+                    popup = yes
+                }
+            }
+            add_to_variable = {
+                PRC_STM = 0.8
+                tooltip = PRC_70s_advance_modernization_of_science_and_technology_tt
+            }
+            clamp_variable = {
+                var = PRC_STM
+                max = 100
+                min = 0
+            }
+        }
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 1000
+                check_variable = {
+                    var = currentMoney
+                    value = 100
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+	}
+    PRC_70s_055_Large_Artillery_Missile_Destroyer_decision = { 
+        visible = {  
+            has_country_flag = PRC_70s_055_Large_Artillery_Missile_Destroyer_flag
+        }
+        available = {
+        }
+        cost = 5
+		days_remove = 150
+        fire_only_once = yes
+        complete_effect = {
+            add_to_variable = {
+                currentMoney = -50
+                tooltip = increase_money_tt
+            }
+        }
+        remove_effect = {
+            clr_country_flag = PRC_70s_055_Large_Artillery_Missile_Destroyer_flag
+            add_tech_bonus = {
+				bonus = 0.2
+				uses = 1
+				category = sub_hull_large_single
+			}
+            add_to_variable = {
+                PRC_STM = 0.6
+                tooltip = PRC_70s_advance_modernization_of_science_and_technology_tt
+            }
+            clamp_variable = {
+                var = PRC_STM
+                max = 100
+                min = 0
+            }
+        }
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 1000
+                check_variable = {
+                    var = currentMoney
+                    value = 50
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+	}
+    PRC_70s_simultaneous_develop_J_nine_and_J_eight_decision = { 
+        visible = {  
+            has_country_flag = PRC_70s_simultaneous_develop_J_nine_and_J_eight_flag
+        }
+        available = {
+        }
+        cost = 20
+		days_remove = 2555
+        fire_only_once = yes
+        complete_effect = {
+            add_to_variable = {
+                currentMoney = -125
+                tooltip = increase_money_tt
+            }
+        }
+        cancel_trigger = {
+            has_country_leader = {
+                name = "Deng Xiaoping"
+                ruling_only = yes
+            }
+        }
+        cancel_effect = {
+            clr_country_flag = PRC_70s_simultaneous_develop_J_nine_and_J_eight_flag
+        }
+        remove_effect = {
+            clr_country_flag = PRC_70s_simultaneous_develop_J_nine_and_J_eight_flag
+            set_technology = {
+                jet_interceptor6 = 1
+                popup = yes
+            }
+            set_technology = {
+                high_mach_jet_interceptor4 = 1
+                popup = yes
+            }
+            add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				technology = jet_interceptor7
+			}
+            add_to_variable = {
+                PRC_STM = 1
+                tooltip = PRC_70s_advance_modernization_of_science_and_technology_tt
+            }
+            clamp_variable = {
+                var = PRC_STM
+                max = 100
+                min = 0
+            }
+        }
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 1000
+                check_variable = {
+                    var = currentMoney
+                    value = 125
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+    }
+    PRC_70s_continued_Mission_two_decision = { 
+        visible = {  
+            has_country_flag = PRC_70s_continued_Mission_two_flag
+        }
+        available = {
+            has_tech = jet_multirole5
+        }
+        cost = 20
+		days_remove = 2555
+        fire_only_once = yes
+        complete_effect = {
+            add_to_variable = {
+                currentMoney = -86
+                tooltip = increase_money_tt
+            }
+        }
+        cancel_trigger = {
+            has_country_leader = {
+                name = "Deng Xiaoping"
+                ruling_only = yes
+            }
+        }
+        cancel_effect = {
+            clr_country_flag = PRC_70s_continued_Mission_two_flag
+        }
+        remove_effect = {
+            clr_country_flag = PRC_70s_continued_Mission_two_flag
+            if = {
+                limit = {
+                    has_tech = jet_multirole5
+                    NOT = { 
+                        has_tech = jet_multirole6
+                    }
+                }
+                set_technology = {
+                    jet_multirole6 = 1
+                    popup = yes
+                }
+                add_tech_bonus = {
+                    bonus = 0.15
+                    uses = 1
+                    technology = jet_multirole7
+                }
+            }
+            else_if = {
+                limit = {
+                    has_tech = jet_multirole6
+                    NOT = { 
+                        has_tech = jet_multirole7
+                    }
+                }
+                set_technology = {
+                    jet_multirole7 = 1
+                    popup = yes
+                }
+            }
+            else_if = {
+                limit = {
+                    has_tech = jet_multirole7
+                    NOT = { 
+                        has_tech = jet_multirole8
+                    }
+                }
+                set_technology = {
+                    jet_multirole8 = 1
+                    popup = yes
+                }
+            }
+            add_to_variable = {
+                PRC_STM = 1
+                tooltip = PRC_70s_advance_modernization_of_science_and_technology_tt
+            }
+            clamp_variable = {
+                var = PRC_STM
+                max = 100
+                min = 0
+            }
+        }
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 1000
+                check_variable = {
+                    var = currentMoney
+                    value = 86
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+    }
+    PRC_70s_new_AA_missile_experiment_decision = {
+        visible = {  
+            has_country_flag = PRC_70s_new_AA_missile_experiment_flag
+        }
+        available = {
+        }
+        cost = 20
+		days_remove = 150
+        fire_only_once = yes
+        complete_effect = {
+            add_to_variable = {
+                currentMoney = -72
+                tooltip = increase_money_tt
+            }
+        }
+        remove_effect = {
+            clr_country_flag = PRC_70s_new_AA_missile_experiment_flag
+            add_tech_bonus = {
+				bonus = 0.15
+				uses = 2
+				category = rocketry_aam
+			}
+        }
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 1000
+                check_variable = {
+                    var = currentMoney
+                    value = 72
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+    }
+    PRC_70s_Medium_sized_transport_aircraft_RD_decision = {
+        visible = {  
+            has_country_flag = PRC_70s_Medium_sized_transport_aircraft_RD_flag
+        }
+        available = {
+        }
+        cost = 20
+		days_remove = 150
+        fire_only_once = yes
+        complete_effect = {
+            add_to_variable = {
+                currentMoney = -36
+                tooltip = increase_money_tt
+            }
+        }
+        remove_effect = {
+            clr_country_flag = PRC_70s_Medium_sized_transport_aircraft_RD_flag
+            add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = transport  
+			}
+            add_to_variable = {
+                PRC_STM = 0.6
+                tooltip = PRC_70s_advance_modernization_of_science_and_technology_tt
+            }
+            clamp_variable = {
+                var = PRC_STM
+                max = 100
+                min = 0
+            }
+        }
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 1000
+                check_variable = {
+                    var = currentMoney
+                    value = 36
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+    }
+    PRC_70s_putting_funds_into_large_transport_aircraft_decision = {
+        visible = {  
+            has_country_flag = PRC_70s_putting_funds_into_large_transport_aircraft_flag
+        }
+        available = {
+            has_tech = transport3
+        }
+        cost = 20
+		days_remove = 2555
+        fire_only_once = yes
+        complete_effect = {
+            add_to_variable = {
+                currentMoney = -141
+                tooltip = increase_money_tt
+            }
+        }
+        cancel_trigger = {
+            has_country_leader = {
+                name = "Deng Xiaoping"
+                ruling_only = yes
+            }
+        }
+        cancel_effect = {
+            add_tech_bonus = {
+				bonus = 0.01
+				uses = 1
+				category = transport  
+			}
+            clr_country_flag = PRC_70s_putting_funds_into_large_transport_aircraft_flag
+        }
+        remove_effect = {
+            clr_country_flag = PRC_70s_putting_funds_into_large_transport_aircraft_flag
+            if = {
+                limit = {
+                    has_tech = transport5
+                }
+                set_technology = {
+                    transport6 = 1
+                    popup = yes
+                }
+            }
+            else_if = {
+                limit = {
+                    has_tech = transport4
+                    NOT = { has_tech = transport5 }
+                }
+                set_technology = {
+                    transport5 = 1
+                    popup = yes
+                }
+                add_tech_bonus = {
+                    bonus = 0.25
+                    uses = 1
+                    technology = transport6  
+                }
+            }
+            else_if = {
+                limit = {
+                    has_tech = transport3
+                    NOT = { has_tech = transport4 }
+                    NOT = { has_tech = transport5 }
+                }
+                set_technology = {
+                    transport4 = 1
+                    popup = yes
+                }
+                set_technology = {
+                    transport5 = 1
+                    popup = yes
+                }
+            }
+            add_to_variable = {
+                PRC_STM = 0.8
+                tooltip = PRC_70s_advance_modernization_of_science_and_technology_tt
+            }
+            clamp_variable = {
+                var = PRC_STM
+                max = 100
+                min = 0
+            }
+        }
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 1000
+                check_variable = {
+                    var = currentMoney
+                    value = 141
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+    }
+    PRC_70s_continuation_of_project_six_four_zero_ccc_decision = {
+        visible = {  
+            has_country_flag = PRC_70s_continuation_of_project_six_four_zero_ccc_flag
+        }
+        available = {
+            has_tech = prototype_aa
+            has_tech = sam_short_range_0
+        }
+        cost = 10
+		days_remove = 2555
+        fire_only_once = yes
+        complete_effect = {
+            add_to_variable = {
+                currentMoney = -164
+                tooltip = increase_money_tt
+            }
+        }
+        cancel_trigger = {
+            has_country_leader = {
+                name = "Deng Xiaoping"
+                ruling_only = yes
+            }
+        }
+        cancel_effect = {
+            add_tech_bonus = {
+				bonus = 0.01
+				uses = 1
+				category = rocketry_aam
+			}
+            clr_country_flag = PRC_70s_simultaneous_develop_J_nine_and_J_eight_flag
+        }
+        remove_effect = {
+            clr_country_flag = PRC_70s_continuation_of_project_six_four_zero_ccc_flag
+            if = {
+                limit = {
+                    NOT = {
+                        has_tech = sam_short_range_1
+                        has_tech = sam_long_range_0
+                    }
+                    
+                }
+                set_technology = {
+                    sam_short_range_1 = 1
+                    popup = yes
+                }
+                add_tech_bonus = {
+                    bonus = 0.35
+                    uses = 1
+                    technology = sam_short_range_2
+                }
+                set_technology = {
+                    sam_long_range_0 = 1
+                    popup = yes
+                }
+                add_tech_bonus = {
+                    bonus = 0.2
+                    uses = 1
+                    technology = sam_long_range_1
+                }
+            }
+            else_if = {
+                limit = {
+                    has_tech = sam_short_range_1
+                    NOT = {
+                        has_tech = sam_short_range_2
+                        has_tech = sam_long_range_0
+                    }
+                    
+                }
+                set_technology = {
+                    sam_short_range_2 = 1
+                    popup = yes
+                }
+                set_technology = {
+                    sam_long_range_0 = 1
+                    popup = yes
+                }
+                add_tech_bonus = {
+                    bonus = 0.2
+                    uses = 1
+                    technology = sam_long_range_1
+                }
+            }
+            else_if = {
+                limit = {
+                    has_tech = sam_long_range_0
+                    NOT = {
+                        has_tech = sam_short_range_1
+                        has_tech = sam_long_range_1
+                    }
+                    
+                }
+                set_technology = {
+                    sam_short_range_1 = 1
+                    popup = yes
+                }
+                add_tech_bonus = {
+                    bonus = 0.35
+                    uses = 1
+                    technology = sam_short_range_2
+                }
+                set_technology = {
+                    sam_long_range_1 = 1
+                    popup = yes
+                }
+            }
+            if = {
+                limit = {
+                    has_tech = sam_short_range_2
+                    has_tech = sam_long_range_1
+                }
+                set_technology = {
+                    sam_short_range_2 = 1
+                    popup = yes
+                }
+                set_technology = {
+                    sam_long_range_1 = 1
+                    popup = yes
+                }
+            }
+            add_to_variable = {
+                PRC_STM = 0.8
+                tooltip = PRC_70s_advance_modernization_of_science_and_technology_tt
+            }
+            clamp_variable = {
+                var = PRC_STM
+                max = 100
+                min = 0
+            }
+        }
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 1000
+                check_variable = {
+                    var = currentMoney
+                    value = 164
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+    }
+}
+
+
+#中法200项
+PRC_70s_PRC_FRA_HELP = {
+	PRC_70s_PRC_FRA_help_timeout_1 = {
+		icon = GFX_PRC_politic_decision_1
+		activation = {
+            always = no
+		}
+        cancel_trigger = {
+            always = no
+        }
+        available = {
+            always = no
+        }
+        fire_only_once = yes
+		is_good = yes
+		days_mission_timeout = 365 
+        complete_effect = {
+        }
+		timeout_effect = { 
+			608 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = office_park
+					level = 2
+                    instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+                    instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+                    instant_build = yes
+				}
+				add_building_construction = {
+					type = state_infrastructure
+					level = 2
+                    instant_build = yes
+				}
+			}
+            add_to_variable = { 
+                currentMoney = -65
+                tooltip = increase_money_tt
+            }
+            FRA = {
+                add_to_variable = { 
+                    currentMoney = 65
+                    tooltip = increase_money_tt
+                }
+            }
+            clr_country_flag = PRC_70s_PRC_FRA_HELP_1
+            set_country_flag = PRC_70s_PRC_FRA_HELP_2
+            hidden_effect = {
+                activate_mission = PRC_70s_PRC_FRA_help_timeout_2
+            }
+		}
+	}
+	PRC_70s_PRC_FRA_help_timeout_2 = {
+		icon = GFX_PRC_politic_decision_1
+		activation = {
+			always = no
+		}
+        cancel_trigger = {
+            always = no
+        }
+        available = {
+            always = no
+        }
+		fire_only_once = yes
+		is_good = yes
+		days_mission_timeout = 365
+        complete_effect = {
+        }
+		timeout_effect = {
+			614 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = office_park
+					level = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+                add_building_construction = {
+					type = renewable_powerplant
+					level = 1
+				}
+			}
+            add_to_variable = { 
+                currentMoney = -55
+                tooltip = increase_money_tt
+            }
+            FRA = {
+                add_to_variable = { 
+                    currentMoney = 55
+                    tooltip = increase_money_tt
+                }
+            }
+            add_to_variable = {
+				PRC_EIM = 0.5
+				tooltip = PRC_70s_advance_modernization_of_industry_tt
+			}
+			clamp_variable = {
+                var = PRC_EIM
+                max = 100
+                min = 0
+            }
+            clr_country_flag = PRC_70s_PRC_FRA_HELP_2
+            set_country_flag = PRC_70s_PRC_FRA_HELP_3
+            hidden_effect = {
+                activate_mission = PRC_70s_PRC_FRA_help_timeout_3
+            }
+		}
+	}
+	PRC_70s_PRC_FRA_help_timeout_3 = {
+		icon = GFX_PRC_politic_decision_1
+		activation = {
+			always = no
+		}
+        cancel_trigger = {
+            always = no
+        }
+        available = {
+            always = no
+        }
+		fire_only_once = yes
+		is_good = yes
+		days_mission_timeout = 365
+        complete_effect = {
+        }
+		timeout_effect = {
+			609 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = office_park
+					level = 3
+				}
+                add_building_construction = {
+					type = infrastructure
+					level = 1
+                    instant_build = yes
+				}
+				add_building_construction = {
+					type = state_infrastructure
+					level = 1
+                    instant_build = yes
+				}
+			}
+            add_to_variable = { 
+                currentMoney = -60
+                tooltip = increase_money_tt
+            }
+            FRA = {
+                add_to_variable = { 
+                    currentMoney = 60
+                    tooltip = increase_money_tt
+                }
+            }
+            clr_country_flag = PRC_70s_PRC_FRA_HELP_3
+            set_country_flag = PRC_70s_PRC_FRA_HELP_4
+            hidden_effect = {
+                activate_mission = PRC_70s_PRC_FRA_help_timeout_4
+            }
+		}
+	}
+	PRC_70s_PRC_FRA_help_timeout_4 = {
+		icon = GFX_PRC_politic_decision_1
+		activation = {
+			always = no
+		}
+        cancel_trigger = {
+            always = no
+        }
+        available = {
+            always = no
+        }
+		fire_only_once = yes
+		is_good = yes
+		days_mission_timeout = 365
+        complete_effect = {
+        }
+		timeout_effect = {
+			601 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = office_park
+					level = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = renewable_powerplant
+					level = 1
+				}
+                add_building_construction = {
+					type = infrastructure
+					level = 1
+                    instant_build = yes
+				}
+				add_building_construction = {
+					type = state_infrastructure
+					level = 1
+                    instant_build = yes
+				}
+			}
+            add_to_variable = { 
+                currentMoney = -55
+                tooltip = increase_money_tt
+            }
+            FRA = {
+                add_to_variable = { 
+                    currentMoney = 55
+                    tooltip = increase_money_tt
+                }
+            }
+            clr_country_flag = PRC_70s_PRC_FRA_HELP_4
+            set_country_flag = PRC_70s_PRC_FRA_HELP_5
+            hidden_effect = {
+                activate_mission = PRC_70s_PRC_FRA_help_timeout_5
+            }
+		}
+	}
+	PRC_70s_PRC_FRA_help_timeout_5 = {
+		icon = GFX_PRC_politic_decision_1
+		activation = {
+			always = no
+		}
+        cancel_trigger = {
+            always = no
+        }
+        available = {
+            always = no
+        }
+		fire_only_once = yes
+		is_good = yes
+		days_mission_timeout = 365
+        complete_effect = {
+        }
+		timeout_effect = {
+			597 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = office_park
+					level = 2
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = renewable_powerplant
+					level = 1
+				}
+			}
+            add_to_variable = { 
+                currentMoney = -70
+                tooltip = increase_money_tt
+            }
+            FRA = {
+                add_to_variable = { 
+                    currentMoney = 70
+                    tooltip = increase_money_tt
+                }
+            }
+            clr_country_flag = PRC_70s_PRC_FRA_HELP_5
+            set_country_flag = PRC_70s_PRC_FRA_HELP_6
+            hidden_effect = {
+                activate_mission = PRC_70s_PRC_FRA_help_timeout_6
+            }
+		}
+	}
+	PRC_70s_PRC_FRA_help_timeout_6 = {
+		icon = GFX_PRC_politic_decision_1
+		activation = {
+			always = no
+		}
+        cancel_trigger = {
+            always = no
+        }
+        available = {
+            always = no
+        }
+		fire_only_once = yes
+		is_good = yes
+		days_mission_timeout = 365
+        complete_effect = {
+        }
+		timeout_effect = {
+			613 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = office_park
+					level = 2
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+                add_building_construction = {
+					type = infrastructure
+					level = 2
+                    instant_build = yes
+				}
+				add_building_construction = {
+					type = state_infrastructure
+					level = 2
+                    instant_build = yes
+				}
+			}
+            add_to_variable = { 
+                currentMoney = -60
+                tooltip = increase_money_tt
+            }
+            FRA = {
+                add_to_variable = { 
+                    currentMoney = 60
+                    tooltip = increase_money_tt
+                }
+            }
+            clr_country_flag = PRC_70s_PRC_FRA_HELP_6
+		}
+	}
+
+
+	PRC_70s_PRC_FRA_HELPCivilian_factories_Mobilize_more_workers = {
+		icon = GFX_PRC_politic_decision_1
+		visible = {
+			or = {
+				has_country_flag = PRC_70s_PRC_FRA_HELP_1
+				has_country_flag = PRC_70s_PRC_FRA_HELP_2
+				has_country_flag = PRC_70s_PRC_FRA_HELP_3
+				has_country_flag = PRC_70s_PRC_FRA_HELP_4
+				has_country_flag = PRC_70s_PRC_FRA_HELP_5
+				has_country_flag = PRC_70s_PRC_FRA_HELP_6
+			}
+		}
+        cost = 25
+		days_remove = 14
+		days_re_enable = 60
+        fire_only_once = no
+		complete_effect = {
+			add_timed_idea = {
+				days = 30
+				idea = PRC_70s_PRC_FRA_HELPCivilian_factories_Mobilize_more_workers
+			}
+			add_to_variable = {
+				currentMoney = -1
+				tooltip = increase_money_tt
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_country_flag = PRC_70s_PRC_FRA_HELP_1
+				}
+				add_days_mission_timeout = {
+					mission = PRC_70s_PRC_FRA_help_timeout_1
+					days = -30
+				}
+			}
+			else if = {
+				limit = {
+					has_country_flag = PRC_70s_PRC_FRA_HELP_2
+				}
+				add_days_mission_timeout = {
+					mission = PRC_70s_PRC_FRA_help_timeout_2
+					days = -30
+				}
+			}
+			else if = {
+				limit = {
+					has_country_flag = PRC_70s_PRC_FRA_HELP_3
+				}
+				add_days_mission_timeout = {
+					mission = PRC_70s_PRC_FRA_help_timeout_3
+					days = -30
+				}
+			}
+			else if = {
+				limit = {
+					has_country_flag = PRC_70s_PRC_FRA_HELP_4
+				}
+				add_days_mission_timeout = {
+					mission = PRC_70s_PRC_FRA_help_timeout_4
+					days = -30
+				}
+			}
+			else if = {
+				limit = {
+					has_country_flag = PRC_70s_PRC_FRA_HELP_5
+				}
+				add_days_mission_timeout = {
+					mission = PRC_70s_PRC_FRA_help_timeout_5
+					days = -30
+				}
+			}
+			else = {
+				add_days_mission_timeout = {
+					mission = PRC_70s_PRC_FRA_help_timeout_6
+					days = -30
+				}
+			}
+		}
+	}
+	PRC_70s_PRC_FRA_HELP_Military_factories_Extending_workers_working_hours = {
+		icon = GFX_PRC_politic_decision_1
+		visible = {
+			or = {
+				has_country_flag = PRC_70s_PRC_FRA_HELP_1
+				has_country_flag = PRC_70s_PRC_FRA_HELP_2
+				has_country_flag = PRC_70s_PRC_FRA_HELP_3
+				has_country_flag = PRC_70s_PRC_FRA_HELP_4
+				has_country_flag = PRC_70s_PRC_FRA_HELP_5
+				has_country_flag = PRC_70s_PRC_FRA_HELP_6
+			}
+		}
+        fire_only_once = no
+        cost = 50
+		days_remove = 30
+		complete_effect = {
+            add_stability = -0.01
+			add_to_variable = {
+				currentMoney = -2
+				tooltip = increase_money_tt
+			}
+		}
+		remove_effect = {
+			random_list = {
+                20 = {
+                    country_event = {
+                        id = prc70s.21
+                    }
+                }
+                10 = {
+                    country_event = {
+                        id = prc70s.22
+                    }
+                }
+                15 = {
+                    country_event = {
+                        id = prc70s.23
+                    }
+                }
+                15 = {
+                    country_event = {
+                        id = prc70s.24
+                    }
+                }
+				40 = {
+					if = {
+						limit = {
+							has_country_flag = PRC_70s_PRC_FRA_HELP_1
+						}
+						add_days_mission_timeout = {
+							mission = PRC_70s_PRC_FRA_help_timeout_1
+							days = -30
+						}
+					}
+					else if = {
+						limit = {
+							has_country_flag = PRC_70s_PRC_FRA_HELP_2
+						}
+						add_days_mission_timeout = {
+							mission = PRC_70s_PRC_FRA_help_timeout_2
+							days = -30
+						}
+					}
+					else if = {
+						limit = {
+							has_country_flag = PRC_70s_PRC_FRA_HELP_3
+						}
+						add_days_mission_timeout = {
+							mission = PRC_70s_PRC_FRA_help_timeout_3
+							days = -30
+						}
+					}
+					else if = {
+						limit = {
+							has_country_flag = PRC_70s_PRC_FRA_HELP_4
+						}
+						add_days_mission_timeout = {
+							mission = PRC_70s_PRC_FRA_help_timeout_4
+							days = -30
+						}
+					}
+					else if = { 
+						limit = {
+							has_country_flag = PRC_70s_PRC_FRA_HELP_5
+						}
+						add_days_mission_timeout = {
+							mission = PRC_70s_PRC_FRA_help_timeout_5
+							days = -30
+						}
+					}
+					else = {
+						add_days_mission_timeout = {
+							mission = PRC_70s_PRC_FRA_help_timeout_6
+							days = -30
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+#泰国内战
+PRC_70s_Thai_Civil_War = {
+	PRC_70s_Revolutionary_Volunteers_1 = {
+		#icon = GFX_PRC_politic_decision_1
+		cost = 5
+		days_remove = 15
+        fire_only_once = yes
+        visible = {
+			has_country_flag = thailand_civilwar
+		}
+		complete_effect = {  
+			PRC = {
+				add_manpower = -1000
+			}
+		}
+		remove_effect = {
+			TTM = {
+				add_manpower = 1000
+			}
+			set_country_flag = thai_civil_war_manpower_1
+		}
+        ai_will_do = {
+            base = 10
+        }
+	}
+	PRC_70s_Revolutionary_Volunteers_2 = {
+		#icon = GFX_PRC_politic_decision_1
+		cost = 10
+		days_remove = 15
+        fire_only_once = yes
+		visible = {
+			has_country_flag = thai_civil_war_manpower_1
+		}
+		complete_effect = {  
+			PRC = {
+				add_manpower = -2000
+			}
+		}
+		remove_effect = {
+			TTM = {
+				add_manpower = 2000
+			}
+			clr_country_flag = thai_civil_war_manpower_1
+			set_country_flag = thai_civil_war_manpower_2
+		}
+        ai_will_do = {
+            base = 10
+        }
+	}
+	PRC_70s_Revolutionary_Volunteers_3 = {
+		#icon = GFX_PRC_politic_decision_1
+		cost = 20
+		days_remove = 15
+        fire_only_once = yes
+		visible = {
+			has_country_flag = thai_civil_war_manpower_2
+		}
+		complete_effect = {  
+			PRC = {
+				add_manpower = -5000
+			}
+		}
+		remove_effect = {
+			TTM = {
+				add_manpower = 5000
+			}
+			clr_country_flag = thai_civil_war_manpower_2
+			set_country_flag = thai_civil_war_manpower_3
+		}
+        ai_will_do = {
+            base = 10
+        }
+	}
+	PRC_70s_Revolutionary_Volunteers_4 = {
+		#icon = GFX_PRC_politic_decision_1
+		cost = 35
+		days_remove = 15
+        fire_only_once = yes
+		visible = {
+			has_country_flag = thai_civil_war_manpower_3
+		}
+		complete_effect = {  
+			PRC = {
+				add_manpower = -10000
+			}
+		}
+		remove_effect = {
+			TTM = {
+				add_manpower = 10000
+			}
+			clr_country_flag = thai_civil_war_manpower_3
+		}
+        ai_will_do = {
+            base = 10
+        }
+	}
+	PRC_70s_Revolutionary_Guns_1 = {
+		#icon = GFX_PRC_politic_decision_1
+		cost = 5
+		days_remove = 15
+        fire_only_once = yes
+		available = {
+			country_exists = TTM
+			has_equipment = {
+				infantry_equipment > 500
+			}
+			has_equipment = {
+				light_artillery_equipment > 50
+			}
+		}
+		complete_effect = {  
+			add_opinion_modifier = {
+				target = TTM
+				modifier = prc70s_Olive_Branch_from_China_opinion
+			}
+		}
+		remove_effect = {
+			send_equipment = {
+                target = TTM 
+                type = infantry_equipment
+                amount = 500
+            }
+			send_equipment = {
+                target = TTM 
+                type = light_artillery_equipment
+                amount = 50
+            }
+			set_country_flag = thai_civil_war_Guns_1
+		}
+        ai_will_do = {
+            base = 10
+        }
+	}
+	PRC_70s_Revolutionary_Guns_2 = {
+		#icon = GFX_PRC_politic_decision_1
+		cost = 10
+		days_remove = 15
+        fire_only_once = yes
+		visible = {
+			has_country_flag = thai_civil_war_Guns_1
+		}
+		available = {
+			country_exists = TTM
+			has_equipment = {
+				infantry_equipment > 999
+			}
+			has_equipment = {
+				light_artillery_equipment > 49
+			}
+		}
+		complete_effect = {  
+			add_opinion_modifier = {
+				target = TTM
+				modifier = prc70s_China_s_Big_Olive_Branch_opinion
+			}
+		}
+		remove_effect = {
+			send_equipment = {
+                target = TTM 
+                type = infantry_equipment
+                amount = 1000
+            }
+			send_equipment = {
+                target = TTM 
+                type = light_artillery_equipment
+                amount = 50
+            }
+			clr_country_flag = thai_civil_war_Guns_1
+			set_country_flag = thai_civil_war_Guns_2
+		}
+        ai_will_do = {
+            base = 10
+        }
+	}
+	PRC_70s_Revolutionary_Guns_3 = {
+		#icon = GFX_PRC_politic_decision_1
+		cost = 20
+		days_remove = 15
+        fire_only_once = yes
+		visible = {
+			has_country_flag = thai_civil_war_Guns_2
+		}
+		available = {
+			country_exists = TTM
+			has_equipment = {
+				infantry_equipment > 5999
+			}
+			has_equipment = {
+				light_artillery_equipment > 99
+			}
+		}
+		complete_effect = {  
+			add_opinion_modifier = {
+				target = TTM
+				modifier = prc70s_China_helps_revolutionaries_opinion
+			}
+		}
+		remove_effect = {
+			send_equipment = {
+                target = TTM 
+                type = infantry_equipment
+                amount = 6000
+            }
+			send_equipment = {
+                target = TTM 
+                type = light_artillery_equipment
+                amount = 100
+            }
+			clr_country_flag = thai_civil_war_Guns_2
+			set_country_flag = thai_civil_war_Guns_3
+		}
+        ai_will_do = {
+            base = 10
+        }
+	}
+	PRC_70s_Revolutionary_Guns_4 = {
+		#icon = GFX_PRC_politic_decision_1
+		cost = 35
+		days_remove = 15
+        fire_only_once = yes
+		visible = {
+			has_country_flag = thai_civil_war_Guns_3
+		}
+		available = {
+			country_exists = TTM
+			has_equipment = {
+				infantry_equipment > 9999
+			}
+			has_equipment = {
+				light_artillery_equipment > 299
+			}
+		}
+		complete_effect = {  
+			add_opinion_modifier = {
+				target = TTM
+				modifier = prc70s_China_helps_revolutionaries_opinion
+			}
+		}
+		remove_effect = {
+			send_equipment = {
+                target = TTM 
+                type = infantry_equipment
+                amount = 10000
+            }
+			send_equipment = {
+                target = TTM 
+                type = light_artillery_equipment
+                amount = 300
+            }
+			clr_country_flag = thai_civil_war_Guns_3
+		}
+        ai_will_do = {
+            base = 10
+        }
+	}
+	PRC_70s_Southeast_Asia_Liberation_War = {
+        #icon = GFX_PRC_politic_decision_1
+		activation = {
+			original_tag = PRC
+			has_completed_focus = a_base_for_southeast_asia_revolution
+		}
+		available = {        
+			NOT = {
+				country_exists = SIA
+			}
+			NOT = {
+				country_exists = BRM
+			}
+			NOT = {
+				country_exists = LOS
+			}
+			NOT = {
+				country_exists = VIE
+			}
+			NOT = {
+				country_exists = CAM
+			}
+			NOT = {
+				country_exists = MAL
+			}
+		}
+		is_good = no
+        fire_only_once = yes
+		days_mission_timeout = 365
+		timeout_effect = {
+            hidden_effect = {
+                VIN = { dismantle_faction = yes }
+			    LAO = { dismantle_faction = yes }
+			    KMP = { dismantle_faction = yes }
+			    MLA = { dismantle_faction = yes }
+			    BCP = { dismantle_faction = yes }
+			    TTM = { dismantle_faction = yes }
+			    SIA = { dismantle_faction = yes }
+			    BRM = { dismantle_faction = yes }
+			    LOS = { dismantle_faction = yes }
+			    VIE = { dismantle_faction = yes }
+			    CAM = { dismantle_faction = yes }
+			    MAL = { dismantle_faction = yes }
+            }
+			VIN = {
+				white_peace = SIA
+				white_peace = BRM
+				white_peace = MAL
+				white_peace = CAM
+				white_peace = LOS
+				white_peace = VIE
+			}
+			LAO = {
+				white_peace = SIA
+				white_peace = BRM
+				white_peace = MAL
+				white_peace = CAM
+				white_peace = LOS
+				white_peace = VIE
+			}
+			KMP = {
+				white_peace = SIA
+				white_peace = BRM
+				white_peace = MAL
+				white_peace = CAM
+				white_peace = LOS
+				white_peace = VIE
+			}
+			MLA = {
+				white_peace = SIA
+				white_peace = BRM
+				white_peace = MAL
+				white_peace = CAM
+				white_peace = LOS
+				white_peace = VIE
+			}
+			BCP = {
+				white_peace = SIA
+				white_peace = BRM
+				white_peace = MAL
+				white_peace = CAM
+				white_peace = LOS
+				white_peace = VIE
+			}
+			TTM = {
+				white_peace = SIA
+				white_peace = BRM
+				white_peace = MAL
+				white_peace = CAM
+				white_peace = LOS
+				white_peace = VIE
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+                VIN = { dismantle_faction = yes }
+			    LAO = { dismantle_faction = yes }
+			    KMP = { dismantle_faction = yes }
+			    MLA = { dismantle_faction = yes }
+			    BCP = { dismantle_faction = yes }
+			    TTM = { dismantle_faction = yes }
+			    SIA = { dismantle_faction = yes }
+			    BRM = { dismantle_faction = yes }
+			    LOS = { dismantle_faction = yes }
+			    VIE = { dismantle_faction = yes }
+			    CAM = { dismantle_faction = yes }
+			    MAL = { dismantle_faction = yes }
+            }
+            PRC = {
+                add_stability = 0.1
+				add_war_support = 0.1
+            }
+			VIN = {
+				add_stability = 0.1
+				add_war_support = 0.1
+			}
+			LAO = {
+				add_stability = 0.1
+				add_war_support = 0.1
+			}
+			KMP = {
+				add_stability = 0.1
+				add_war_support = 0.1
+			}
+			MLA = {
+				add_stability = 0.1
+				add_war_support = 0.1
+			}
+			BCP = {
+				add_stability = 0.1
+				add_war_support = 0.1
+			}
+			TTM = {
+				add_stability = 0.1
+				add_war_support = 0.1
+			}
+		}
+	}
+}
+
+#四三方案
+PRC_70s_Four_three_plan_category = {
+    PRC_70s_Buy_an_off_PRC_Off_road_vehicle_development_decision = {
+		#icon = GFX_PRC_politic_decision_1
+		days_remove = 30
+        days_re_enable = 90
+        visible = {
+            has_variable = PRC_70s_Buy_an_off_PRC_Off_road_vehicle_development_var
+        }
+        available = {
+            OR = {
+                ENG = {
+                    has_opinion = {
+                        target = PRC
+                        value > 29
+                    }
+                }
+                FRA = {
+                    has_opinion = {
+                        target = PRC
+                        value > 29
+                    }
+                }
+                USA = {
+                    has_opinion = {
+                        target = PRC
+                        value > 29
+                    }
+                }          
+            }
+            custom_trigger_tooltip = {
+                tooltip = prc70s_43_decisions_times_tt
+                always = yes
+            }
+        }
+		complete_effect = {  
+			add_to_variable = {
+                currentMoney = -26
+                tooltip = increase_money_tt
+            }
+		}
+		remove_effect = {
+	 		add_equipment_to_stockpile = {
+                type = mechanized_equipment_6
+                amount = 100
+                #producer = GER
+            } 
+            add_to_variable = { PRC_70s_Buy_an_off_PRC_Off_road_vehicle_development_var = 1 }
+            if = {
+                limit = {
+                    check_variable = {
+                        var = PRC_70s_Buy_an_off_PRC_Off_road_vehicle_development_var
+                        value = 2
+                        compare = equals
+                    }
+                }
+                clear_variable = PRC_70s_Buy_an_off_PRC_Off_road_vehicle_development_var
+            }
+		}
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 1000
+                check_variable = {
+                    var = currentMoney
+                    value = 26
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+	}
+    PRC_70s_ipoet_chemical_equipment_decision = {
+		#icon = GFX_PRC_politic_decision_1
+		days_remove = 30
+        days_re_enable = 90
+        visible = {
+            has_variable = PRC_70s_ipoet_chemical_equipment_var
+        }
+        available = {
+            OR = {
+                ENG = {
+                    has_opinion = {
+                        target = PRC
+                        value > 29
+                    }
+                }
+                FRA = {
+                    has_opinion = {
+                        target = PRC
+                        value > 29
+                    }
+                }
+                USA = {
+                    has_opinion = {
+                        target = PRC
+                        value > 29
+                    }
+                }          
+            }
+            custom_trigger_tooltip = {
+                tooltip = prc70s_43_decisions_times_tt
+            }
+        }
+		complete_effect = {  
+			add_to_variable = {
+                currentMoney = -64
+                tooltip = increase_money_tt
+            }
+		}
+		remove_effect = {
+			add_offsite_building = { 
+                type = industrial_complex
+                level = 2
+            }
+            add_to_variable = { PRC_70s_ipoet_chemical_equipment_var = 1 }
+            if = {
+                limit = {
+                    check_variable = {
+                        var = PRC_70s_ipoet_chemical_equipment_var
+                        value = 2
+                        compare = equals
+                    }
+                }
+                clear_variable = PRC_70s_ipoet_chemical_equipment_var
+            }
+		}
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 1000
+                check_variable = {
+                    var = currentMoney
+                    value = 64
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+	}
+    PRC_70s_purchase_of_military_helicopters_decision = {
+		#icon = GFX_PRC_politic_decision_1
+		days_remove = 30
+        days_re_enable = 90
+        visible = {
+            has_variable = PRC_70s_purchase_of_military_helicopters_var
+        }
+        available = {
+            OR = {
+                ENG = {
+                    has_opinion = {
+                        target = PRC
+                        value > 29
+                    }
+                }
+                FRA = {
+                    has_opinion = {
+                        target = PRC
+                        value > 29
+                    }
+                }
+                USA = {
+                    has_opinion = {
+                        target = PRC
+                        value > 29
+                    }
+                }          
+            }
+            custom_trigger_tooltip = {
+                tooltip = prc70s_43_decisions_times_tt
+            }
+        }
+		complete_effect = {  
+			add_to_variable = {
+                currentMoney = -22
+                tooltip = increase_money_tt
+            }
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = { 
+                type = attack_helicopter_equipment_1
+                amount = 20
+                #producer = GER 
+            }
+            add_to_variable = { PRC_70s_purchase_of_military_helicopters_var = 1 }
+            if = {
+                limit = {
+                    check_variable = {
+                        var = PRC_70s_purchase_of_military_helicopters_var
+                        value = 2
+                        compare = equals
+                    }
+                }
+                clear_variable = PRC_70s_purchase_of_military_helicopters_var
+            }
+		}
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 1000
+                check_variable = {
+                    var = currentMoney
+                    value = 22
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+	}
+    PRC_70s_import_advance_industrial_decision = {
+		#icon = GFX_PRC_politic_decision_1
+		days_remove = 30
+        days_re_enable = 90
+        visible = {
+            has_variable = PRC_70s_import_advance_industrial_var
+        }
+        available = {
+            OR = {
+                ENG = {
+                    has_opinion = {
+                        target = PRC
+                        value > 29
+                    }
+                }
+                FRA = {
+                    has_opinion = {
+                        target = PRC
+                        value > 29
+                    }
+                }
+                USA = {
+                    has_opinion = {
+                        target = PRC
+                        value > 29
+                    }
+                }          
+            }
+            custom_trigger_tooltip = {
+                tooltip = prc70s_43_decisions_times_tt
+            }
+        }
+		complete_effect = {  
+			add_to_variable = {
+                currentMoney = -56
+                tooltip = increase_money_tt
+            }
+		}
+		remove_effect = {
+			add_offsite_building = { 
+                type = industrial_complex
+                level = 1 
+            }
+            add_to_variable = {
+				PRC_EIM = 0.5
+				tooltip = PRC_70s_advance_modernization_of_industry_tt
+			}
+            add_to_variable = { PRC_70s_import_advance_industrial_var = 1 }
+            if = {
+                limit = {
+                    check_variable = {
+                        var = PRC_70s_import_advance_industrial_var
+                        value = 2
+                        compare = equals
+                    }
+                }
+                clear_variable = PRC_70s_import_advance_industrial_var
+            }
+		}
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 1000
+                check_variable = {
+                    var = currentMoney
+                    value = 56
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+	}
+    PRC_70s_expansion_of_ocean_going_fleet_decision = {
+		#icon = GFX_PRC_politic_decision_1
+		days_remove = 30
+        days_re_enable = 90
+        visible = {
+            has_variable = PRC_70s_expansion_of_ocean_going_fleet_var
+        }
+        available = {
+            OR = {
+                ENG = {
+                    has_opinion = {
+                        target = PRC
+                        value > 29
+                    }
+                }
+                FRA = {
+                    has_opinion = {
+                        target = PRC
+                        value > 29
+                    }
+                }
+                USA = {
+                    has_opinion = {
+                        target = PRC
+                        value > 29
+                    }
+                }          
+            }
+            custom_trigger_tooltip = {
+                tooltip = prc70s_43_decisions_times_tt
+            }
+        }
+		complete_effect = {  
+			add_to_variable = {
+                currentMoney = -30
+                tooltip = increase_money_tt
+            }
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = { 
+                type = convoy_1
+                amount = 50
+                #producer = GER 
+            }
+            add_to_variable = { PRC_70s_expansion_of_ocean_going_fleet_var = 1 }
+            if = {
+                limit = {
+                    check_variable = {
+                        var = PRC_70s_expansion_of_ocean_going_fleet_var
+                        value = 2
+                        compare = equals
+                    }
+                }
+                clear_variable = PRC_70s_expansion_of_ocean_going_fleet_var
+            }
+		}
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 1000
+                check_variable = {
+                    var = currentMoney
+                    value = 30
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+	}
+    PRC_70s_import_power_station_equipment_decision = {
+		#icon = GFX_PRC_politic_decision_1
+		days_remove = 30
+        days_re_enable = 90
+        visible = {
+            has_variable = PRC_70s_import_power_station_equipment_var
+        }
+        available = {
+            OR = {
+                ENG = {
+                    has_opinion = {
+                        target = PRC
+                        value > 29
+                    }
+                }
+                FRA = {
+                    has_opinion = {
+                        target = PRC
+                        value > 29
+                    }
+                }
+                USA = {
+                    has_opinion = {
+                        target = PRC
+                        value > 29
+                    }
+                }          
+            }
+            custom_trigger_tooltip = {
+                tooltip = prc70s_43_decisions_times_tt
+            }
+        }
+        fixed_random_seed = no
+		complete_effect = {  
+			add_to_variable = {
+                currentMoney = -26
+                tooltip = increase_money_tt
+            }
+		}
+		remove_effect = {
+			random_owned_state = {
+                add_building_construction = {
+                    type = fossil_fuel_powerplant
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            add_to_variable = { PRC_70s_import_power_station_equipment_var = 1 }
+            if = {
+                limit = {
+                    check_variable = {
+                        var = PRC_70s_import_power_station_equipment_var
+                        value = 2
+                        compare = equals
+                    }
+                }
+                clear_variable = PRC_70s_import_power_station_equipment_var
+            }
+		}
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 1000
+                check_variable = {
+                    var = currentMoney
+                    value = 26
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+	}
+    PRC_70s_purchase_of_airners_decision = {
+		#icon = GFX_PRC_politic_decision_1
+		days_remove = 30
+        days_re_enable = 90
+        visible = {
+            has_variable = PRC_70s_purchase_of_airners_var
+        }
+        available = {
+            OR = {
+                ENG = {
+                    has_opinion = {
+                        target = PRC
+                        value > 29
+                    }
+                }
+                FRA = {
+                    has_opinion = {
+                        target = PRC
+                        value > 29
+                    }
+                }
+                USA = {
+                    has_opinion = {
+                        target = PRC
+                        value > 29
+                    }
+                }          
+            }
+            custom_trigger_tooltip = {
+                tooltip = prc70s_43_decisions_times_tt
+            }
+        }
+        modifier = {
+            consumer_goods_factor = -0.02
+        }
+		complete_effect = {  
+			add_to_variable = {
+                currentMoney = -30
+                tooltip = increase_money_tt
+            }
+		}
+        remove_effect = {
+            add_to_variable = { PRC_70s_purchase_of_airners_var = 1 }
+            if = {
+                limit = {
+                    check_variable = {
+                        var = PRC_70s_purchase_of_airners_var
+                        value = 2
+                        compare = equals
+                    }
+                }
+                clear_variable = PRC_70s_purchase_of_airners_var
+            }
+        }
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 1000
+                check_variable = {
+                    var = currentMoney
+                    value = 30
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+	}
+    PRC_70s_imported_chemical_fiber_and_fertilizer_equipment_decision = {
+		#icon = GFX_PRC_politic_decision_1
+		days_remove = 30
+        days_re_enable = 90
+        visible = {
+            has_variable = PRC_70s_imported_chemical_fiber_and_fertilizer_equipment_var
+        }
+        available = {
+            OR = {
+                ENG = {
+                    has_opinion = {
+                        target = PRC
+                        value > 29
+                    }
+                }
+                FRA = {
+                    has_opinion = {
+                        target = PRC
+                        value > 29
+                    }
+                }
+                USA = {
+                    has_opinion = {
+                        target = PRC
+                        value > 29
+                    }
+                }          
+            }
+            custom_trigger_tooltip = {
+                tooltip = prc70s_43_decisions_times_tt
+            }
+        }
+		fixed_random_seed = no
+		complete_effect = {  
+			add_to_variable = {
+                currentMoney = -46
+                tooltip = increase_money_tt
+            }
+		}
+		remove_effect = {
+			random_owned_state = {
+                add_building_construction = {
+                    type = agri_industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            add_to_variable = {
+				PRC_AIM = 2
+				tooltip = PRC_70s_advance_modernization_of_agriculture_tt
+			}
+            add_to_variable = { PRC_70s_imported_chemical_fiber_and_fertilizer_equipment_var = 1 }
+            if = {
+                limit = {
+                    check_variable = {
+                        var = PRC_70s_imported_chemical_fiber_and_fertilizer_equipment_var
+                        value = 2
+                        compare = equals
+                    }
+                }
+                clear_variable = PRC_70s_imported_chemical_fiber_and_fertilizer_equipment_var
+            }
+		}
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 1000
+                check_variable = {
+                    var = currentMoney
+                    value = 46
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+	}
+    PRC_70s_Improve_residents_lives_decision = {
+		#icon = GFX_PRC_politic_decision_1
+		days_remove = 45
+        days_re_enable = 90
+        visible = {
+            has_variable = PRC_70s_Improve_residents_lives_var
+        }
+        available = {
+            OR = {
+                ENG = {
+                    has_opinion = {
+                        target = PRC
+                        value > 29
+                    }
+                }
+                FRA = {
+                    has_opinion = {
+                        target = PRC
+                        value > 29
+                    }
+                }
+                USA = {
+                    has_opinion = {
+                        target = PRC
+                        value > 29
+                    }
+                }          
+            }
+            custom_trigger_tooltip = {
+                tooltip = prc70s_43_decisions_times_tt
+            }
+        }
+		modifier = {
+            consumer_goods_factor = -0.02
+        }
+		complete_effect = {  
+			add_to_variable = {
+                currentMoney = -30
+                tooltip = increase_money_tt
+            }
+		}
+        remove_effect = {
+            add_to_variable = { PRC_70s_Improve_residents_lives_var = 1 }
+            if = {
+                limit = {
+                    check_variable = {
+                        var = PRC_70s_Improve_residents_lives_var
+                        value = 2
+                        compare = equals
+                    }
+                }
+                clear_variable = PRC_70s_Improve_residents_lives_var
+            }
+        }
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 1000
+                check_variable = {
+                    var = currentMoney
+                    value = 30
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+	}
+} 
+
+
+#唐山大地震
+PRC_70s_tangshan_earthquake_decision_category = {
+    send_PLA_troops_for_earthquake_relief_decision = {
+		cost = 20
+		days_remove = 5
+        fire_only_once = yes
+        visible = {
+            has_completed_focus = send_PLA_troops_for_earthquake_relief
+        }
+        available = {
+            num_divisions_in_states = {
+                count > 2
+                states = { 77 }
+                #exclude = { }
+            }
+        }
+		remove_effect = {
+			1556 = {
+			    add_extra_state_shared_building_slots = 3
+			    add_building_construction = {
+				    type = agri_industrial_complex
+				    level = 3
+				    instant_build = yes
+			    }
+			}
+		}
+    }
+}
+
+
+#命运的交叉口
+PRC_70s_destroy_GOF_category = {
+	PRC_70s_destroy_GOF_mission = {
+	    activation = {
+            always = no
+        }
+        available = {
+            hidden_trigger = {
+                if = {
+                    limit = { has_completed_focus = PRC_76_82_Destroying_the_Gang_of_Four }
+                    has_completed_focus = PRC_76_82_The_final_word
+                }
+                else_if = {
+                    limit = { has_completed_focus = PRC_76_82_The_race_to_the_finish_line }
+                    has_completed_focus = PRC_76_82_Reviving_the_Great_Proletarian_Cultural_Revolution
+                }
+            }    
+        }
+        cancel_trigger = {
+            always = no
+        }
+        fire_only_once = yes
+        is_good = no
+        days_mission_timeout = 27
+        selectable_mission = no
+        complete_effect = {
+            custom_effect_tooltip = PRC_70s_destroy_GOF_mission_tt
+            set_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 714.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 328.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 716.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 621.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 608.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 609.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 614.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 615.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 622.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 616.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 283.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 604.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 617.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 1549.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 607.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 620.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 602.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 600.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 597.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 606.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 598.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 613.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 596.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 595.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 605.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 603.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 325.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 594.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 1569.GPCR_province_zaozao_power_var }
+                            
+            set_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 714.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 328.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 716.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 621.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 608.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 609.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 614.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 615.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 622.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 616.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 283.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 604.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 617.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 1549.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 607.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 620.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 602.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 600.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 597.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 606.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 598.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 613.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 596.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 595.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 605.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 603.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 325.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 594.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 1569.GPCR_province_laobao_power_var }
+
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = PRC_70s_destroy_GOF_temp_var1 }
+            divide_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = PRC_70s_destroy_GOF_temp_var2 }
+            multiply_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 100 }
+            multiply_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 0.4 }
+
+            set_temp_variable = { PRC_70s_destroy_GOF_temp_var3 = CPC_bar_a }
+            set_temp_variable = { PRC_70s_destroy_GOF_temp_var4 = CPC_bar_c }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var4 = CPC_bar_d }
+
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var4 = PRC_70s_destroy_GOF_temp_var3 }
+            divide_temp_variable = { PRC_70s_destroy_GOF_temp_var3 = PRC_70s_destroy_GOF_temp_var4 }
+            multiply_temp_variable = { PRC_70s_destroy_GOF_temp_var3 = 100 }
+            multiply_temp_variable = { PRC_70s_destroy_GOF_temp_var3 = 0.6 }
+
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = PRC_70s_destroy_GOF_temp_var3 }
+            hidden_effect = {
+                if = {
+                    limit = {
+                        has_completed_focus = PRC_76_82_Destroying_the_Gang_of_Four
+                        check_variable = {
+                            var = PRC_70s_destroy_GOF_temp_var1
+                            value = 50
+                            compare = less_than_or_equals
+                        }
+                    }
+                    country_event = {
+                        id = PRC_76_82.1
+                        hours = 6
+                    }
+                }
+                else_if = {
+                    limit = {
+                        has_completed_focus = PRC_76_82_The_race_to_the_finish_line
+                        check_variable = {
+                            var = PRC_70s_destroy_GOF_temp_var1
+                            value = 50
+                            compare = greater_than_or_equals
+                        }
+                    }
+                    country_event = {
+                        id = prc70s.105
+                        hours = 6
+                    }
+                }
+                else_if = {
+                    limit = {
+                        has_completed_focus = PRC_76_82_Destroying_the_Gang_of_Four
+                        check_variable = {
+                            var = PRC_70s_destroy_GOF_temp_var1
+                            value = 50
+                            compare = greater_than
+                        }
+                    }
+                    country_event = {
+                        id = prc70s.106
+                        days = 3
+                    }
+                }
+                else_if = {
+                    limit = {
+                        has_completed_focus = PRC_76_82_The_race_to_the_finish_line
+                        check_variable = {
+                            var = PRC_70s_destroy_GOF_temp_var1
+                            value = 50
+                            compare = less_than
+                        }
+                    }
+                    country_event = {
+                        id = prc70s.107
+                        days = 3
+                    }
+                }   
+            }
+        }
+        timeout_effect = {
+            custom_effect_tooltip = PRC_70s_destroy_GOF_mission_tt
+            set_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 714.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 328.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 716.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 621.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 608.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 609.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 614.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 615.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 622.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 616.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 283.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 604.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 617.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 1549.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 607.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 620.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 602.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 600.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 597.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 606.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 598.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 613.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 596.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 595.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 605.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 603.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 325.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 594.GPCR_province_zaozao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 1569.GPCR_province_zaozao_power_var }
+                            
+            set_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 714.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 328.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 716.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 621.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 608.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 609.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 614.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 615.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 622.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 616.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 283.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 604.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 617.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 1549.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 607.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 620.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 602.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 600.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 597.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 606.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 598.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 613.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 596.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 595.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 605.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 603.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 325.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 594.GPCR_province_laobao_power_var }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = 1569.GPCR_province_laobao_power_var }
+
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var2 = PRC_70s_destroy_GOF_temp_var1 }
+            divide_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = PRC_70s_destroy_GOF_temp_var2 }
+            multiply_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 100 }
+            multiply_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = 0.4 }
+
+            set_temp_variable = { PRC_70s_destroy_GOF_temp_var3 = CPC_bar_a }
+            set_temp_variable = { PRC_70s_destroy_GOF_temp_var4 = CPC_bar_c }
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var4 = CPC_bar_d }
+
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var4 = PRC_70s_destroy_GOF_temp_var3 }
+            divide_temp_variable = { PRC_70s_destroy_GOF_temp_var3 = PRC_70s_destroy_GOF_temp_var4 }
+            multiply_temp_variable = { PRC_70s_destroy_GOF_temp_var3 = 100 }
+            multiply_temp_variable = { PRC_70s_destroy_GOF_temp_var3 = 0.6 }
+
+            add_to_temp_variable = { PRC_70s_destroy_GOF_temp_var1 = PRC_70s_destroy_GOF_temp_var3 }
+            hidden_effect = {
+                if = {
+                    limit = {
+                        has_completed_focus = PRC_76_82_Destroying_the_Gang_of_Four
+                        check_variable = {
+                            var = PRC_70s_destroy_GOF_temp_var1
+                            value = 50
+                            compare = less_than_or_equals
+                        }
+                    }
+                    country_event = {
+                        id = PRC_76_82.1
+                        hours = 6
+                    }
+                }
+                else_if = {
+                    limit = {
+                        has_completed_focus = PRC_76_82_The_race_to_the_finish_line
+                        check_variable = {
+                            var = PRC_70s_destroy_GOF_temp_var1
+                            value = 50
+                            compare = greater_than_or_equals
+                        }
+                    }
+                    country_event = {
+                        id = prc70s.105
+                        hours = 6
+                    }
+                }
+                else_if = {
+                    limit = {
+                        has_completed_focus = PRC_76_82_Destroying_the_Gang_of_Four
+                        check_variable = {
+                            var = PRC_70s_destroy_GOF_temp_var1
+                            value = 50
+                            compare = greater_than
+                        }
+                    }
+                    country_event = {
+                        id = prc70s.106
+                        days = 3
+                    }
+                }
+                else_if = {
+                    limit = {
+                        has_completed_focus = PRC_76_82_The_race_to_the_finish_line
+                        check_variable = {
+                            var = PRC_70s_destroy_GOF_temp_var1
+                            value = 50
+                            compare = less_than
+                        }
+                    }
+                    country_event = {
+                        id = prc70s.107
+                        days = 3
+                    }
+                }   
+            }
+        }
+    }
+}

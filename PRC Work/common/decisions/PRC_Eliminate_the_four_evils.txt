@@ -1,0 +1,57 @@
+PRC_EFE_categories = {
+    PRC_1_EFE_50s = {
+        icon = GFX_PRC_politic_decision_2
+        cost = 400
+        available = {
+			date > 1958.2.12
+            has_idea = PRC_four_evils_1
+        }
+        visible = {
+            original_tag = PRC
+        }
+        days_remove = 365
+        fire_only_once = yes
+        modifier = {
+            political_power_factor = -0.05
+            civilian_factory_use = 5
+           }
+        remove_effect = {
+			swap_ideas = {
+                add_idea = PRC_four_evils_2
+                remove_idea = PRC_four_evils_1
+            }
+		}
+    }
+    PRC_1_EFE_60s = {
+        icon = GFX_PRC_politic_decision_2
+        cost = 500
+        visible = {
+            date > 1960.1.26
+            has_idea = PRC_four_evils_2
+            has_completed_focus = PRC_60s_Eliminate_the_four_evils
+        }
+        days_remove = 365
+        fire_only_once = yes
+        modifier = {
+            political_power_factor = -0.05
+            civilian_factory_use = 10
+           }
+        remove_effect = {
+			swap_ideas = {
+                add_idea = PRC_defeat_four_evils
+                remove_idea = PRC_four_evils_2
+            }
+		}
+    }
+    PRC_test_60S = {
+        icon = GFX_PRC_politic_decision_2
+        cost = 1
+        visible = {
+            original_tag = PRC
+        }
+        days_remove = 2
+        remove_effect = {
+           load_focus_tree = PRC_60s_New
+        }
+    }
+}
