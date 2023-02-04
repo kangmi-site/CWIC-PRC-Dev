@@ -1,0 +1,6 @@
+PRC_76_82_Universal_premium_on_compulsory_education = {
+	color_type = good
+	value_type = percentage
+	precision = 2
+	category = all
+}

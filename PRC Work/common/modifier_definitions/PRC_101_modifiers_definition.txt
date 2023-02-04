@@ -1,0 +1,6 @@
+PRC_101_Chen_Boda_s_e_centrism_var_gain_weekly = {
+	color_type = good
+	value_type = percentage
+	precision = 2
+	category = all
+}
