@@ -1,0 +1,1034 @@
+ideas = {
+    country = {
+		PRC70s_idea_success_Fourth_Five_Year_Plan = {
+			#picture = xxxx
+			removal_cost = -1 
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+				original_tag = PRC
+			}
+			modifier = {
+				party_popularity_stability_factor = 0.25
+				political_power_gain = 0.2
+				fuel_gain_factor = 0.1
+				equipment_upgrade_xp_cost = -0.2
+                agricultural_complex_production_bonus = 0.05
+				office_park_income_adjustment = 0.05
+			}
+		}
+		PRC70s_idea_USA_blockades_Taiwan = {
+			#picture = xxxx
+			removal_cost = -1 
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				original_tag = CHI
+			}
+			modifier = {
+				consumer_goods_factor = 0.2
+				trade_opinion_factor = -1
+			}
+		}
+		PRC70s_idea_Grain_saving_campaign = {
+			#picture = xxxx
+			removal_cost = -1 
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+				original_tag = PRC
+			}
+			modifier = {
+				food_consumption_need = -0.1
+			}
+		}
+		PRC70s_idea_multiple_busness_model = {
+			#picture = xxxx
+			removal_cost = -1 
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+				original_tag = PRC
+			}
+			modifier = {
+				production_factory_start_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		PRC70s_idea_socialist_busness = {
+			#picture = xxxx
+			removal_cost = -1 
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+				original_tag = PRC
+			}
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_lack_of_resource_penalty_factor = -0.15
+			}
+		}
+		PRC70s_idea_army_construction = {
+			#picture = xxxx
+			removal_cost = -1 
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+				original_tag = PRC
+				has_government = maoism
+			}
+			modifier = {
+				army_core_attack_factor = 0.035
+				army_core_defence_factor = 0.035
+				army_speed_factor = 0.05
+				training_time_factor = -0.05
+			}
+		}
+		PRC70s_idea_Linbiao_action_1 = {
+			#picture = xxxx
+			removal_cost = -1 
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+				has_country_leader = { 
+					character = PRC_mao_zedong
+					ruling_only = yes
+				}
+			}
+			modifier = {
+				political_power_factor = -0.15
+				stability_factor = -0.1
+			}
+		}
+		PRC70s_idea_Linbiao_action_2 = {
+			#picture = xxxx
+			removal_cost = -1 
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+				has_country_leader = { 
+					character = PRC_mao_zedong
+					ruling_only = yes
+				}
+			}
+			modifier = {
+				political_power_factor = -0.15
+				stability_factor = -0.2
+			}
+		}
+		PRC70s_idea_Linbiao_action_3 = {
+			#picture = xxxx
+			removal_cost = -1 
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+				has_country_leader = { 
+					character = PRC_lin_biao
+					ruling_only = yes
+				}
+			}
+			modifier = {
+				political_power_factor = 0.02
+				stability_factor = 0.05
+			}
+		}
+		PRC70s_idea_anti_speculation_and_profiteering = {
+			#picture = xxxx
+			removal_cost = -1 
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+				has_government = maoism
+			}
+			modifier = {
+				political_power_gain = -0.1
+				production_lack_of_resource_penalty_factor = -0.2
+				production_factory_start_efficiency_factor = 0.03
+			}
+		}
+		PRC70s_idea_consumption_goods_1 = {
+			#picture = xxxx
+			removal_cost = -1 
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+				original_tag = PRC
+			}
+			modifier = {
+				consumer_goods_factor = 0.03
+				monthly_population = 0.1
+				stability_factor = 0.025
+			}
+		}
+		PRC70s_idea_consumption_goods_2 = {
+			#picture = xxxx
+			removal_cost = -1 
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+				original_tag = PRC
+			}
+			modifier = {
+				consumer_goods_factor = 0.05
+				monthly_population = 0.15
+				stability_factor = 0.05
+			}
+		}
+		PRC70s_idea_consumption_goods_3 = {
+			#picture = xxxx
+			removal_cost = -1 
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+				original_tag = PRC
+			}
+			modifier = {
+				consumer_goods_factor = 0.05
+				monthly_population = 0.15
+				stability_factor = 0.05
+				production_speed_infrastructure_factor = 0.05
+			}
+		}
+		PRC70s_idea_consumption_goods_4 = {
+			#picture = xxxx
+			removal_cost = -1 
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+				original_tag = PRC
+			}
+			modifier = {
+				consumer_goods_factor = 0.05
+				monthly_population = 0.15
+				stability_factor = 0.05
+				research_speed_factor = 0.04
+			}
+		}
+		PRC70s_idea_consumption_goods_5 = {
+			#picture = xxxx
+			removal_cost = -1 
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+				original_tag = PRC
+			}
+			modifier = {
+				consumer_goods_factor = 0.05
+				monthly_population = 0.15
+				stability_factor = 0.05
+				production_speed_infrastructure_factor = 0.05
+				research_speed_factor = 0.04
+			}
+		}
+		PRC70s_idea_family_planning = {
+			#picture = xxxx
+			removal_cost = -1 
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+				original_tag = PRC
+			}
+			modifier = {
+				monthly_population = -0.2
+			}
+		}
+		three_line3 = {
+            picture = hundred_flowers_campaign
+			removal_cost = -1
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+                has_country_leader = {
+					character = PRC_mao_zedong
+					ruling_only = yes
+				}
+            }
+            modifier = { 
+				consumer_goods_factor = 0.2
+                production_speed_buildings_factor = 0.3
+                political_power_factor = -0.1
+                stability_factor = -0.05
+			}
+			on_remove = {
+               clr_country_flag = PRC_70s_resumpition_of_railway_flag
+			   clr_country_flag = PRC_70s_expand_railway_net_flag
+			   clr_country_flag = PRC_70s_the_electrification_of_Baocheng_Railway_flag
+			}
+        }
+		three_line4 = {
+            picture = hundred_flowers_campaign
+			removal_cost = -1
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+                has_country_leader = {
+					character = PRC_mao_zedong
+					ruling_only = yes
+				}
+            }
+            modifier = { 
+				consumer_goods_factor = 0.25
+                production_speed_buildings_factor = 0.33
+                political_power_factor = -0.15
+			}
+			on_remove = {
+               clr_country_flag = PRC_70s_resumpition_of_railway_flag
+			   clr_country_flag = PRC_70s_expand_railway_net_flag
+			   clr_country_flag = PRC_70s_the_electrification_of_Baocheng_Railway_flag
+			}
+        }
+		three_line5 = {
+            picture = hundred_flowers_campaign
+			removal_cost = -1
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+                has_country_leader = {
+					character = PRC_mao_zedong
+					ruling_only = yes
+				}
+            }
+            modifier = { 
+				consumer_goods_factor = 0.2
+                production_speed_buildings_factor = 0.35
+                political_power_factor = -0.1
+                stability_factor = -0.05
+			}
+			on_remove = {
+               clr_country_flag = PRC_70s_resumpition_of_railway_flag
+			   clr_country_flag = PRC_70s_expand_railway_net_flag
+			   clr_country_flag = PRC_70s_the_electrification_of_Baocheng_Railway_flag
+			}
+        }
+		three_line6 = {
+            picture = hundred_flowers_campaign
+			removal_cost = -1
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+                has_country_leader = {
+					character = PRC_mao_zedong
+					ruling_only = yes
+				}
+            }
+            modifier = { 
+				consumer_goods_factor = 0.25
+                production_speed_buildings_factor = 0.38
+                political_power_factor = -0.15
+			}
+			on_remove = {
+               clr_country_flag = PRC_70s_resumpition_of_railway_flag
+			   clr_country_flag = PRC_70s_expand_railway_net_flag
+			   clr_country_flag = PRC_70s_the_electrification_of_Baocheng_Railway_flag
+			}
+        }
+		three_line7 = {
+            picture = hundred_flowers_campaign
+			removal_cost = -1
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+                has_country_leader = {
+					character = PRC_mao_zedong
+					ruling_only = yes
+				}
+            }
+            modifier = { 
+				consumer_goods_factor = 0.25
+                production_speed_buildings_factor = 0.43
+                political_power_factor = -0.15
+			}
+			on_remove = {
+               clr_country_flag = PRC_70s_resumpition_of_railway_flag
+			   clr_country_flag = PRC_70s_expand_railway_net_flag
+			   clr_country_flag = PRC_70s_the_electrification_of_Baocheng_Railway_flag
+			}
+        }
+		three_line8 = {
+            picture = hundred_flowers_campaign
+			removal_cost = -1
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+                has_country_leader = {
+					character = PRC_mao_zedong
+					ruling_only = yes
+				}
+            }
+            modifier = { 
+				consumer_goods_factor = 0.2
+                production_speed_buildings_factor = 0.42
+                political_power_factor = -0.1
+                stability_factor = -0.05
+			}
+			on_remove = {
+               clr_country_flag = PRC_70s_resumpition_of_railway_flag
+			   clr_country_flag = PRC_70s_expand_railway_net_flag
+			   clr_country_flag = PRC_70s_the_electrification_of_Baocheng_Railway_flag
+			}
+        }
+		three_line9 = {
+            picture = hundred_flowers_campaign
+			removal_cost = -1
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+                has_country_leader = {
+					character = PRC_mao_zedong
+					ruling_only = yes
+				}
+            }
+            modifier = { 
+				consumer_goods_factor = 0.25
+                production_speed_buildings_factor = 0.45
+                political_power_factor = -0.15
+			}
+			on_remove = {
+               clr_country_flag = PRC_70s_resumpition_of_railway_flag
+			   clr_country_flag = PRC_70s_expand_railway_net_flag
+			   clr_country_flag = PRC_70s_the_electrification_of_Baocheng_Railway_flag
+			}
+        }
+		three_line10 = {
+            picture = hundred_flowers_campaign
+			removal_cost = -1
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+                has_country_leader = {
+					character = PRC_mao_zedong
+					ruling_only = yes
+				}
+            }
+            modifier = { 
+				consumer_goods_factor = 0.25
+                production_speed_buildings_factor = 0.5
+                political_power_factor = -0.15
+			}
+			on_remove = {
+               clr_country_flag = PRC_70s_resumpition_of_railway_flag
+			   clr_country_flag = PRC_70s_expand_railway_net_flag
+			   clr_country_flag = PRC_70s_the_electrification_of_Baocheng_Railway_flag
+			}
+        }
+		PRC70s_idea_GPCR_leanings_to_REV5 = {
+            picture = hundred_flowers_campaign
+			removal_cost = -1
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+				tag = PRC
+                has_global_flag = PRC_GPCR_flag
+            }
+            modifier = { 
+				maoism_drift = 0.02
+				communism_drift = 0.01
+				political_power_factor = -0.15
+				stability_factor = -0.2
+				war_support_factor = 0.2
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = -0.25
+				weekly_manpower = -1000
+			}
+        }
+		PRC70s_idea_GPCR_leanings_to_REV4 = {
+            picture = hundred_flowers_campaign
+			removal_cost = -1
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+				tag = PRC
+                has_global_flag = PRC_GPCR_flag
+            }
+            modifier = { 
+				maoism_drift = 0.02
+				communism_drift = 0.01
+				political_power_factor = -0.1
+				stability_factor = -0.15
+				war_support_factor = 0.2
+				consumer_goods_factor = -0.025
+				production_speed_buildings_factor = -0.2
+				weekly_manpower = -500
+			}
+        }
+        PRC70s_idea_GPCR_leanings_to_REV3 = {
+            picture = hundred_flowers_campaign
+			removal_cost = -1
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+				tag = PRC
+                has_global_flag = PRC_GPCR_flag
+            }
+            modifier = { 
+				maoism_drift = 0.02
+				political_power_factor = -0.05
+				stability_factor = -0.125
+				war_support_factor = 0.165
+				consumer_goods_factor = 0.02
+				production_speed_buildings_factor = -0.1
+				weekly_manpower = -200
+			}
+        }
+		PRC70s_idea_GPCR_leanings_to_REV2 = {
+            picture = hundred_flowers_campaign
+			removal_cost = -1
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+				tag = PRC
+                has_global_flag = PRC_GPCR_flag
+            }
+            modifier = { 
+				maoism_drift = 0.01
+				stability_factor = -0.1
+				war_support_factor = 0.125
+				consumer_goods_factor = -0.015
+				production_speed_buildings_factor = -0.1
+			}
+        }
+		PRC70s_idea_GPCR_leanings_to_REV1 = {
+            picture = hundred_flowers_campaign
+			removal_cost = -1
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+				tag = PRC
+                has_global_flag = PRC_GPCR_flag
+            }
+            modifier = { 
+				maoism_drift = 0.01
+				political_power_factor = 0.05
+				stability_factor = -0.075
+				war_support_factor = 0.1
+				production_speed_buildings_factor = -0.05
+			}
+        }
+		PRC70s_idea_GPCR_Neutrality = {
+            picture = hundred_flowers_campaign
+			removal_cost = -1
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+				tag = PRC
+                has_global_flag = PRC_GPCR_flag
+            }
+            modifier = { 
+				political_power_factor = 0.075
+				stability_factor = -0.05
+				war_support_factor = 0.05
+				consumer_goods_factor = 0.01
+			}
+        }
+		PRC70s_idea_GPCR_leanings_to_CON1 = {
+            picture = hundred_flowers_campaign
+			removal_cost = -1
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+				tag = PRC
+                has_global_flag = PRC_GPCR_flag
+            }
+            modifier = { 
+				trotskyism_drift = 0.01
+				political_power_factor = 0.1
+				war_support_factor = -0.025
+				consumer_goods_factor = 0.02
+				production_speed_buildings_factor = 0.02
+			}
+        }
+		PRC70s_idea_GPCR_leanings_to_CON2 = {
+            picture = hundred_flowers_campaign
+			removal_cost = -1
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+				tag = PRC
+                has_global_flag = PRC_GPCR_flag
+            }
+            modifier = { 
+				trotskyism_drift = 0.01
+				political_power_factor = 0.125
+				stability_factor = 0.05
+				war_support_factor = -0.05
+				consumer_goods_factor = 0.035
+				production_speed_buildings_factor = 0.04
+			}
+        }
+		PRC70s_idea_GPCR_leanings_to_CON3 = {
+            picture = hundred_flowers_campaign
+			removal_cost = -1
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+				tag = PRC
+                has_global_flag = PRC_GPCR_flag
+            }
+            modifier = { 
+				trotskyism_drift = 0.02
+				socialist_drift = 0.01
+				political_power_factor = 0.15
+				stability_factor = 0.125
+				war_support_factor = -0.1
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+        }
+		PRC70s_idea_GPCR_leanings_to_CON4 = {
+            picture = hundred_flowers_campaign
+			removal_cost = -1
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+				tag = PRC
+                has_global_flag = PRC_GPCR_flag
+            }
+            modifier = { 
+				trotskyism_drift = 0.01
+				socialist_drift = 0.02
+				political_power_factor = 0.1
+				stability_factor = 0.2
+				war_support_factor = -0.15
+				consumer_goods_factor = 0.065
+				production_speed_buildings_factor = 0.075
+			}
+        }
+		PRC70s_idea_GPCR_leanings_to_CON5 = {
+            picture = hundred_flowers_campaign
+			removal_cost = -1
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+				tag = PRC
+                has_global_flag = PRC_GPCR_flag
+            }
+            modifier = { 
+				trotskyism_drift = 0.01
+				socialist_drift = 0.02
+				political_power_factor = 0.05
+				stability_factor = 0.25
+				war_support_factor = -0.2
+				consumer_goods_factor = 0.08
+				production_speed_buildings_factor = 0.1
+			}
+        }
+        PRC70s_idea_Operating_in_concert_with_Pakistan = {
+			removal_cost = -1
+			#picture = non_prc_eastern_bloc_1
+			allowed = {
+				original_tag = PRC
+			}
+			allowed_civil_war = {
+				has_government = maoism
+			}
+			modifier = {
+				send_volunteer_size = 10
+			}
+		}
+		PRC70s_idea_China_West_Asia_Trade = {
+			removal_cost = -1
+			picture = non_prc_eastern_bloc_1
+			allowed = {
+				NOT = { original_tag = PRC }
+			}
+			targeted_modifier = {
+				tag = PRC 
+				trade_cost_for_target_factor = -0.05
+			}
+		}
+		PRC70s_idea_China_West_Asia_Trade_china = {
+			removal_cost = -1
+			picture = non_prc_eastern_bloc_1
+			allowed = {
+				original_tag = PRC
+			}
+			targeted_modifier = {
+				tag = TUR 
+				trade_cost_for_target_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = SRT 
+				trade_cost_for_target_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = ALW 
+				trade_cost_for_target_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = KRD 
+				trade_cost_for_target_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = PER 
+				trade_cost_for_target_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = IRQ 
+				trade_cost_for_target_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = AFG 
+				trade_cost_for_target_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = SYR 
+				trade_cost_for_target_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = LEB 
+				trade_cost_for_target_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = ISR 
+				trade_cost_for_target_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = JOR 
+				trade_cost_for_target_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = EGY 
+				trade_cost_for_target_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = KUW 
+				trade_cost_for_target_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = SAU 
+				trade_cost_for_target_factor = -0.05
+			}
+			valuetargeted_modifier = {
+				tag = BHR 
+				trade_cost_for_target_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = QAT 
+				trade_cost_for_target_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = UAE 
+				trade_cost_for_target_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = SMI 
+				trade_cost_for_target_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = OMA 
+				trade_cost_for_target_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = YEM 
+				trade_cost_for_target_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = DRY 
+				trade_cost_for_target_factor = -0.05
+			}
+		}
+		PRC70s_idea_China_Japan_Economic_and_Trade_Agreement_for_jap = {
+			removal_cost = -1
+			picture = non_prc_eastern_bloc_1
+			allowed = {
+				original_tag = JAP
+			}
+			targeted_modifier = {
+				tag = PRC 
+				trade_cost_for_target_factor = -0.15
+			}
+		}
+		PRC70s_idea_China_Japan_Economic_and_Trade_Agreement_for_china = {
+			removal_cost = -1
+			picture = non_prc_eastern_bloc_1
+			allowed = {
+				original_tag = PRC
+			}
+			targeted_modifier = {
+				tag = JAP 
+				trade_cost_for_target_factor = -0.15
+			}
+		}
+		PRC70s_idea_Loans_from_Japan_for_jap = {
+			removal_cost = -1
+			picture = non_prc_eastern_bloc_1
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				consumer_goods_factor = 0.01
+			}
+		}
+		PRC70s_idea_Loans_from_Japan_for_china = {
+			removal_cost = -1
+			picture = non_prc_eastern_bloc_1
+			allowed = {
+				original_tag = PRC
+			}
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+				production_speed_state_infrastructure_factor = 0.1
+				production_speed_water_infrastructure_factor = 0.15
+				production_speed_agri_industrial_complex_factor = 0.15
+				production_speed_fossil_fuel_powerplant_factor = 0.1
+				production_speed_steel_factory_factor = 0.15
+				production_speed_tungsten_factory_factor = 0.1
+				industry_repair_factor = 0.2
+			}
+			targeted_modifier = {
+				tag = JAP
+				cic_to_target_factor = 0.025
+			}
+		}
+		PRC70s_idea_Economic_assistance_to_China = {
+			removal_cost = -1
+			#picture = xxxx
+			allowed = {
+				OR = {
+                    original_tag = ENG
+					original_tag = FRA
+				}
+			}
+			modifier = {
+				consumer_goods_factor = -0.04
+			}
+		}
+		PRC70s_idea_Sino_USA_Economic_and_Trade_Agreement_for_USA = {
+			removal_cost = -1
+			picture = non_prc_eastern_bloc_1
+			allowed = {
+				original_tag = USA
+			}
+			targeted_modifier = {
+				tag = PRC 
+				trade_cost_for_target_factor = -0.1
+			}
+		}
+		PRC70s_idea_Sino_USA_Economic_and_Trade_Agreement_for_USA_1 = {
+			removal_cost = -1
+			picture = non_prc_eastern_bloc_1
+			allowed = {
+				original_tag = USA
+			}
+			targeted_modifier = {
+				tag = PRC 
+				trade_cost_for_target_factor = -0.1
+			}
+		}
+		PRC70s_idea_Sino_USA_Economic_and_Trade_Agreement_for_USA_2 = {
+			removal_cost = -1
+			picture = non_prc_eastern_bloc_1
+			allowed = {
+				original_tag = USA
+			}
+			available = {
+				NOT = { has_war_with = PRC }
+			}
+			targeted_modifier = {
+				tag = PRC 
+				trade_cost_for_target_factor = -0.05
+			}
+		}
+		PRC70s_idea_Sino_USA_Economic_and_Trade_Agreement_for_PRC = {
+			removal_cost = -1
+			picture = non_prc_eastern_bloc_1
+			allowed = {
+				original_tag = PRC
+			}
+			targeted_modifier = {
+				tag = USA 
+				trade_cost_for_target_factor = -0.1
+			}
+		}
+		PRC70s_idea_Sino_USA_Economic_and_Trade_Agreement_for_PRC_1 = {
+			removal_cost = -1
+			picture = non_prc_eastern_bloc_1
+			allowed = {
+				original_tag = PRC
+			}
+			targeted_modifier = {
+				tag = USA 
+				trade_cost_for_target_factor = -0.15
+			}
+		}
+		PRC70s_idea_Sino_USA_Economic_and_Trade_Agreement_for_PRC_2 = {
+			removal_cost = -1
+			picture = non_prc_eastern_bloc_1
+			allowed = {
+				original_tag = PRC
+			}
+			targeted_modifier = {
+				tag = USA 
+				trade_cost_for_target_factor = -0.05
+			}
+		}
+		PRC70s_idea_Sino_Chosen_Korea_Trade_Agreement_for_KPA = {
+			removal_cost = -1
+			picture = non_prc_eastern_bloc_1
+			allowed = {
+				original_tag = KPA
+			}
+			targeted_modifier = {
+				tag = PRC
+				trade_cost_for_target_factor = -0.1
+			}
+			targeted_modifier = {
+				tag = KOR
+				trade_cost_for_target_factor = -0.1
+			}
+		}
+		PRC70s_idea_Sino_Chosen_Korea_Trade_Agreement_for_KOR = {
+			removal_cost = -1
+			picture = non_prc_eastern_bloc_1
+			allowed = {
+				original_tag = KOR
+			}
+			targeted_modifier = {
+				tag = KPA
+				trade_cost_for_target_factor = -0.1
+			}
+			targeted_modifier = {
+				tag = PRC
+				trade_cost_for_target_factor = -0.1
+			}
+		}
+		PRC70s_idea_Sino_Chosen_Korea_Trade_Agreement_for_PRC = {
+			removal_cost = -1
+			picture = non_prc_eastern_bloc_1
+			allowed = {
+				original_tag = PRC
+			}
+			targeted_modifier = {
+				tag = KPA
+				trade_cost_for_target_factor = -0.1
+			}
+			targeted_modifier = {
+				tag = KOR
+				trade_cost_for_target_factor = -0.1
+			}
+		}
+		PRC70s_idea_Sino_Korea_secret_Trade_Agreement_for_KOR = {
+			removal_cost = -1
+			picture = non_prc_eastern_bloc_1
+			allowed = {
+				original_tag = KOR
+			}
+			targeted_modifier = {
+				tag = PRC 
+				trade_cost_for_target_factor = -0.15
+			}
+		}
+		PRC70s_idea_Sino_Korea_secret_Trade_Agreement_for_PRC = {
+			removal_cost = -1
+			picture = non_prc_eastern_bloc_1
+			allowed = {
+				original_tag = PRC
+			}
+			targeted_modifier = {
+				tag = KOR 
+				trade_cost_for_target_factor = -0.15
+			}
+		}
+		PRC70s_idea_Sino_Africa_Trade_for_Africa = {
+			removal_cost = -1
+			picture = non_prc_eastern_bloc_1
+			allowed = {
+				NOT = { original_tag = PRC }
+			}
+			targeted_modifier = {
+				tag = PRC
+				trade_cost_for_target_factor = -0.05
+			}
+		}
+		PRC70s_idea_Sino_Africa_Trade_for_Sino = {
+			removal_cost = -1
+			picture = non_prc_eastern_bloc_1
+			allowed = {
+				original_tag = PRC
+			}
+			targeted_modifier = {
+				tag = KEN 
+				trade_cost_for_target_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = ZAM 
+				trade_cost_for_target_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = MZB
+				trade_cost_for_target_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = MAD 
+				trade_cost_for_target_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = RWA 
+				trade_cost_for_target_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = MLW
+				trade_cost_for_target_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = ETH 
+				trade_cost_for_target_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = NGR 
+				trade_cost_for_target_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = MAU
+				trade_cost_for_target_factor = -0.05
+			}
+		}
+		PRC70s_idea_Mobilize_more_workers = {
+			removal_cost = -1 
+			#picture = non_prc_eastern_bloc_1
+			allowed = {
+				original_tag = PRC
+			}
+			modifier = {
+				consumer_goods_factor = 0.01
+				food_consumption_need = 0.01
+			}
+		}
+    }
+}

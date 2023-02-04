@@ -1,0 +1,1203 @@
+ideas = {
+	country = {
+		PRC_101_Intra_party_opposition1 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Intra_party_opposition
+			name = PRC_101_Intra_party_opposition
+			modifier = {
+				stability_factor = -0.4
+				political_power_factor = -0.4
+				consumer_goods_factor = 0.15
+				encryption_factor = -0.25
+			}
+		}
+
+		PRC_101_Intra_party_opposition2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Intra_party_opposition
+			name = PRC_101_Intra_party_opposition
+			modifier = {
+				stability_factor = -0.3
+				political_power_factor = -0.3
+				consumer_goods_factor = 0.1
+				encryption_factor = -0.15
+			}
+		}
+
+		PRC_101_Intra_party_opposition3 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Intra_party_opposition
+			name = PRC_101_Intra_party_opposition
+			modifier = {
+				stability_factor = -0.2
+				political_power_factor = -0.25
+				consumer_goods_factor = 0.1
+				encryption_factor = -0.05
+			}
+		}
+
+		PRC_101_Intra_party_opposition4 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Intra_party_opposition
+			name = PRC_101_Intra_party_opposition
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		PRC_101_Military_opposition1 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Military_opposition
+			name = PRC_101_Military_opposition
+			modifier = {
+				experience_gain_army_factor = -0.5
+				max_command_power_mult = -0.2
+				command_power_gain_mult = -0.4
+				decryption_factor = -0.25
+			}
+		}
+
+		PRC_101_Military_opposition2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Military_opposition
+			name = PRC_101_Military_opposition
+			modifier = {
+				experience_gain_army_factor = -0.35
+				max_command_power_mult = -0.15
+				command_power_gain_mult = -0.3
+				decryption_factor = -0.15
+			}
+		}
+
+		PRC_101_Military_opposition3 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Military_opposition
+			name = PRC_101_Military_opposition
+			modifier = {
+				experience_gain_army_factor = -0.2
+				max_command_power_mult = -0.1
+				command_power_gain_mult = -0.2
+				decryption_factor = -0.1
+			}
+		}
+
+		PRC_101_Military_opposition4 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Military_opposition
+			name = PRC_101_Military_opposition
+			modifier = {
+				experience_gain_army_factor = -0.05
+				max_command_power_mult = -0.05
+				command_power_gain_mult = -0.1
+			}
+		}
+
+		PRC_101_New_intelligence_agency = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_New_intelligence_agency
+			modifier = {
+				decryption_factor = 0.05
+				encryption_factor = 0.05
+				operative_slot = 1
+			}
+		}
+
+		PRC_101_Expand_military_scientific_research_programs = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Expand_military_scientific_research_programs
+			name = PRC_101_Expand_military_scientific_research_programs
+			modifier = {
+				research_speed_factor = 0.1
+				agency_upgrade_time = -0.1
+				consumer_goods_factor = 0.015
+			}
+		}
+
+		PRC_101_Expand_military_scientific_research_programs1 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Expand_military_scientific_research_programs
+			name = PRC_101_Expand_military_scientific_research_programs
+			modifier = {
+				research_speed_factor = 0.15
+				agency_upgrade_time = -0.1
+				consumer_goods_factor = 0.02
+			}
+		}
+
+		PRC_101_Expand_military_scientific_research_programs2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Expand_military_scientific_research_programs
+			name = PRC_101_Expand_military_scientific_research_programs
+			modifier = {
+				research_speed_factor = 0.1
+				experience_gain_army_factor = 0.1
+				agency_upgrade_time = -0.1
+				consumer_goods_factor = 0.02
+			}
+		}
+
+		PRC_101_Expand_military_scientific_research_programs3 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Expand_military_scientific_research_programs
+			name = PRC_101_Expand_military_scientific_research_programs
+			modifier = {
+				research_speed_factor = 0.15
+				experience_gain_army_factor = 0.1
+				agency_upgrade_time = -0.1
+				consumer_goods_factor = 0.025
+			}
+		}
+
+		PRC_101_Expand_military_scientific_research_programs4 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Expand_military_scientific_research_programs
+			name = PRC_101_Expand_military_scientific_research_programs
+			modifier = {
+				research_speed_factor = 0.15
+				experience_gain_army_factor = 0.1
+				agency_upgrade_time = -0.1
+				consumer_goods_factor = 0.03
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+
+		PRC_101_Expand_military_scientific_research_programs5 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Expand_military_scientific_research_programs
+			name = PRC_101_Expand_military_scientific_research_programs
+			modifier = {
+				research_speed_factor = 0.15
+				experience_gain_army_factor = 0.1
+				agency_upgrade_time = -0.1
+				consumer_goods_factor = 0.03
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.05
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					reliability = 0.15
+					soft_attack = 0.05
+					hard_attack = 0.05
+					ap_attack = 0.05
+					defense = 0.05
+					breakthrough = 0.05
+					build_cost_ic = 0.2
+					instant = yes
+				}
+			}
+		}
+
+		PRC_101_Six_tactical_principles = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Six_tactical_principles
+			name = PRC_101_Six_tactical_principles
+			modifier = {
+				army_org_factor = 0.1
+				army_morale_factor = 0.05
+				army_speed_factor = 0.05
+			}
+		}
+
+		PRC_101_Six_tactical_principles2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Six_tactical_principles
+			name = PRC_101_Six_tactical_principles
+			modifier = {
+				army_org_factor = 0.1
+				army_morale_factor = 0.05
+				army_speed_factor = 0.1
+				recon_factor = 0.15
+			}
+		}
+
+		PRC_101_New_modern_army = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_New_modern_army
+			modifier = {
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				army_speed_factor = 0.1
+				recon_factor = 0.2
+				army_armor_attack_factor = 0.1
+				army_armor_defence_factor = 0.1
+			}
+		}
+
+		PRC_101_Chen_Boda_s_e_centrism = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Chen_Boda_s_e_centrism
+			modifier = {
+				land_reinforce_rate = 0.05
+			}
+			research_bonus = {
+				electronics = 0.15
+			}
+		}
+
+		PRC_101_Chen_Boda_s_e_centrism2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Chen_Boda_s_e_centrism
+			name = PRC_101_Chen_Boda_s_e_centrism
+			modifier = {
+				land_reinforce_rate = 0.05
+				PRC_101_Chen_Boda_s_e_centrism_var_gain_weekly = 0.001
+			}
+			research_bonus = {
+				electronics = 0.1
+				industry = 0.05
+				manufacturing = 0.05
+			}
+		}
+
+		PRC_101_Chen_Boda_s_e_centrism3 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Chen_Boda_s_e_centrism
+			name = PRC_101_Chen_Boda_s_e_centrism
+			modifier = {
+				land_reinforce_rate = 0.05
+				research_speed_factor = 0.05
+				PRC_101_Chen_Boda_s_e_centrism_var_gain_weekly = 0.001
+			}
+			research_bonus = {
+				electronics = 0.05
+			}
+		}
+
+		PRC_101_chinese_ogas_experiment = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_chinese_ogas_experiment
+			name = PRC_101_chinese_ogas_experiment
+			modifier = {
+				land_reinforce_rate = 0.05
+				research_speed_factor = 0.1
+				PRC_101_Chen_Boda_s_e_centrism_var_gain_weekly = 0.001
+			}
+		}
+
+		PRC_101_Scientific_research_is_surging_forward = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Scientific_research_is_surging_forward
+			modifier = {
+				research_speed_factor = 0.2
+			}
+		}
+
+		PRC_101_traditional_industrial_construction = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_traditional_industrial_construction
+			name = PRC_101_traditional_industrial_construction
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
+		PRC_101_traditional_industrial_construction2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_traditional_industrial_construction
+			name = PRC_101_traditional_industrial_construction
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		PRC_101_traditional_industrial_construction3 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_traditional_industrial_construction
+			name = PRC_101_traditional_industrial_construction
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				consumer_goods_factor = -0.05
+				production_factory_max_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+
+		PRC_101_traditional_industrial_construction4 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_traditional_industrial_construction
+			name = PRC_101_traditional_industrial_construction
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				production_factory_max_efficiency_factor = 0.05
+				consumer_goods_factor = -0.075
+				global_building_slots_factor = 0.05
+			}
+		}
+
+		###########
+
+		PRC_101_The_chaotic_Cultural_Revolution = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_The_chaotic_Cultural_Revolution
+			modifier = {
+				stability_factor = -0.45
+				war_support_factor = -0.35
+				political_power_factor = -0.25
+				consumer_goods_factor = 0.3
+				stability_weekly = -0.01
+			}
+		}
+
+		PRC_101_Normalizing_the_Cultural_Revolution = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Normalizing_the_Cultural_Revolution
+			name = PRC_101_Normalizing_the_Cultural_Revolution
+			modifier = {
+				stability_factor = -0.4
+				war_support_factor = -0.3
+				political_power_factor = -0.2
+				consumer_goods_factor = 0.25
+				stability_weekly = -0.01
+			}
+		}
+
+		PRC_101_Normalizing_the_Cultural_Revolution2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Normalizing_the_Cultural_Revolution
+			name = PRC_101_Normalizing_the_Cultural_Revolution
+			modifier = {
+				stability_factor = -0.3
+				war_support_factor = -0.25
+				political_power_factor = -0.15
+				consumer_goods_factor = 0.2
+				stability_weekly = -0.01
+			}
+		}
+
+		PRC_101_Normalizing_the_Cultural_Revolution3 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Normalizing_the_Cultural_Revolution
+			name = PRC_101_Normalizing_the_Cultural_Revolution
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.2
+				political_power_factor = -0.15
+				consumer_goods_factor = 0.1
+				stability_weekly = -0.01
+			}
+		}
+
+		PRC_101_Normalizing_the_Cultural_Revolution4 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Normalizing_the_Cultural_Revolution
+			name = PRC_101_Normalizing_the_Cultural_Revolution
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				political_power_factor = -0.1
+				consumer_goods_factor = 0.1
+				stability_weekly = -0.01
+			}
+		}
+
+		PRC_101_Normalizing_the_Cultural_Revolution5 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Normalizing_the_Cultural_Revolution
+			name = PRC_101_Normalizing_the_Cultural_Revolution
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				political_power_factor = -0.05
+				consumer_goods_factor = 0.05
+				stability_weekly = -0.01
+			}
+		}
+
+		PRC_101_Lin_s_new_Policy = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Lin_s_new_Policy
+			name = PRC_101_Lin_s_new_Policy
+			modifier = {
+				political_power_factor = 0.15
+				master_ideology_drift = 0.01
+			}
+		}
+
+		PRC_101_Lin_s_new_Policy1 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Lin_s_new_Policy
+			name = PRC_101_Lin_s_new_Policy
+			modifier = {
+				political_power_factor = 0.2
+				drift_defence_factor = -0.05
+				stability_factor = 0.05
+			}
+		}
+
+		PRC_101_Lin_s_new_Policy2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Lin_s_new_Policy
+			name = PRC_101_Lin_s_new_Policy
+			modifier = {
+				political_power_factor = 0.2
+				drift_defence_factor = -0.05
+				stability_factor = 0.1
+				war_support_factor = 0.05
+				master_ideology_drift = 0.005
+			}
+		}
+
+		PRC_101_Lin_s_new_Policy3 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Lin_s_new_Policy
+			name = PRC_101_Lin_s_new_Policy
+			modifier = {
+				political_power_factor = 0.2
+				stability_factor = 0.15
+				war_support_factor = 0.1
+				master_ideology_drift = 0.005
+			}
+		}
+
+		PRC_101_Lin_s_new_Policy4 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Lin_s_new_Policy
+			name = PRC_101_Lin_s_new_Policy
+			modifier = {
+				political_power_factor = 0.2
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				max_command_power_mult = 0.15
+				experience_gain_army_factor = 0.1
+				master_ideology_drift = 0.005
+			}
+		}
+
+		PRC_101_Lin_s_new_Policy5 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Lin_s_new_Policy
+			name = PRC_101_Lin_s_new_Policy
+			modifier = {
+				political_power_factor = 0.2
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				max_command_power_mult = 0.15
+				experience_gain_army_factor = 0.1
+				master_ideology_drift = 0.005
+				local_resources_factor = 0.15
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+
+		PRC_101_Lin_s_new_Policy6 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Lin_s_new_Policy
+			name = PRC_101_Lin_s_new_Policy
+			modifier = {
+				political_power_factor = 0.25
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				max_command_power_mult = 0.15
+				experience_gain_army_factor = 0.1
+				master_ideology_drift = 0.005
+				local_resources_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+			}
+		}
+
+		PRC_101_Lin_s_new_Policy7 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Lin_s_new_Policy
+			name = PRC_101_Lin_s_new_Policy
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				max_command_power_mult = 0.15
+				experience_gain_army_factor = 0.1
+				local_resources_factor = 0.2
+				production_factory_max_efficiency_factor = 0.2
+			}
+		}
+
+		PRC_101_Lin_s_new_Policy8 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Lin_s_new_Policy
+			name = PRC_101_Lin_s_new_Policy
+			modifier = {
+				political_power_factor = 0.2
+				consumer_goods_factor = -0.05
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				max_command_power_mult = 0.15
+				experience_gain_army_factor = 0.1
+				master_ideology_drift = 0.005
+				local_resources_factor = 0.1
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+
+		PRC_101_Lin_s_new_Policy9 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Lin_s_new_Policy
+			name = PRC_101_Lin_s_new_Policy
+			modifier = {
+				political_power_factor = 0.05
+				consumer_goods_factor = -0.05
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				max_command_power_mult = 0.15
+				experience_gain_army_factor = 0.1
+				local_resources_factor = 0.15
+				production_factory_max_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+
+		PRC_101_Lin_s_new_Policy10 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Lin_s_new_Policy
+			name = PRC_101_Lin_s_new_Policy
+			modifier = {
+				political_power_factor = 0.25
+				consumer_goods_factor = 0.025
+				stability_factor = 0.25
+				war_support_factor = 0.15
+				max_command_power_mult = 0.15
+				experience_gain_army_factor = 0.1
+				master_ideology_drift = 0.005
+				local_resources_factor = 0.15
+				production_factory_max_efficiency_factor = 0.2
+			}
+		}
+
+		PRC_101_Lin_s_new_Policy11 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Lin_s_new_Policy
+			name = PRC_101_Lin_s_new_Policy
+			modifier = {
+				political_power_factor = 0.1
+				consumer_goods_factor = 0.025
+				stability_factor = 0.25
+				war_support_factor = 0.15
+				max_command_power_mult = 0.15
+				experience_gain_army_factor = 0.1
+				local_resources_factor = 0.2
+				production_factory_max_efficiency_factor = 0.25
+			}
+		}
+
+		PRC_101_Lin_s_new_Policy12 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Lin_s_new_Policy
+			name = PRC_101_Lin_s_new_Policy
+			modifier = {
+				political_power_factor = 0.25
+				stability_factor = 0.25
+				war_support_factor = 0.15
+				max_command_power_mult = 0.15
+				experience_gain_army_factor = 0.1
+				master_ideology_drift = 0.005
+				local_resources_factor = 0.2
+				production_factory_max_efficiency_factor = 0.25
+			}
+		}
+
+		PRC_101_Lin_s_new_Policy13 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Lin_s_new_Policy
+			name = PRC_101_Lin_s_new_Policy
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.25
+				war_support_factor = 0.15
+				max_command_power_mult = 0.15
+				experience_gain_army_factor = 0.1
+				local_resources_factor = 0.25
+				production_factory_max_efficiency_factor = 0.3
+			}
+		}
+
+		PRC_101_Make_enterprises_self_financing = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Make_enterprises_self_financing
+			modifier = {
+				political_power_factor = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		PRC_101_Agricultural_land_autonomy = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Agricultural_land_autonomy
+			modifier = {
+				production_speed_agri_industrial_complex_factor = -0.4
+				production_speed_buildings_factor = 0.25
+			}
+		}
+
+		PRC_101_Reorganize_the_State_Planning_Commission = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Reorganize_the_State_Planning_Commission
+			name = PRC_101_Reorganize_the_State_Planning_Commission
+			modifier = {
+				consumer_goods_factor = -0.025
+				production_factory_max_efficiency_factor = 0.05
+				local_resources_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		PRC_101_Reorganize_the_State_Planning_Commission2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Reorganize_the_State_Planning_Commission
+			name = PRC_101_Reorganize_the_State_Planning_Commission
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_max_efficiency_factor = 0.075
+				local_resources_factor = 0.075
+				production_speed_buildings_factor = 0.075
+				political_power_factor = -0.05
+			}
+		}
+
+		PRC_101_President_Lin_s_Order_No_1 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_President_Lin_s_Order_No_1
+			name = PRC_101_President_Lin_s_Order_No_1
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.1
+			}
+		}
+
+		PRC_101_President_Lin_s_Order_No_1_2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_President_Lin_s_Order_No_1
+			name = PRC_101_President_Lin_s_Order_No_1
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				stability_weekly = 0.002
+			}
+		}
+
+		################
+
+		PRC_101_New_Practical_Diplomacy = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_New_Practical_Diplomacy
+			name = PRC_101_New_Practical_Diplomacy
+			modifier = {
+				trade_opinion_factor = 0.2
+				opinion_gain_monthly_factor = 0.25
+			}
+		}
+
+		PRC_101_Revision_of_the_revisionist_list = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = Revision_of_the_revisionist_list
+			modifier = {
+				opinion_gain_monthly_same_ideology_factor = 0.2
+				communism_acceptance = 30
+				maoism_acceptance = 30
+				trotskyism = 30
+			}
+		}
+
+		PRC_101_New_intelligence_agency2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_New_intelligence_agency
+			name = PRC_101_New_intelligence_agency
+			modifier = {
+				decryption_factor = 0.1
+				encryption_factor = 0.1
+				agency_upgrade_time = -0.1
+				operative_slot = 2
+			}
+		}
+		
+		PRC_101_cooperation_with_the_Warsaw_Pact = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_cooperation_with_the_Warsaw_Pact
+			name = PRC_101_cooperation_with_the_Warsaw_Pact
+			modifier = {
+				min_export = 0.2
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				research_speed_factor = 0.02
+			}
+		}
+
+		PRC_101_cooperation_with_the_Warsaw_Pact_SOV = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_cooperation_with_the_Warsaw_Pact
+			name = PRC_101_cooperation_with_the_Warsaw_Pact
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.02
+			}
+			targeted_modifier = {
+				tag = PRC
+				trade_cost_for_target_factor = -0.4
+			}
+		}
+		
+		PRC_101_Theory_of_three_worlds = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Theory_of_three_worlds
+			modifier = {
+				trade_opinion_factor = 0.2
+				opinion_gain_monthly_factor = 0.2
+				send_volunteer_size = 5
+			}
+		}
+
+		PRC_101_Advanced_Japanese_industrial_equipment = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Advanced_Japanese_industrial_equipment
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+
+		PRC_101_Chinese_withdrawal_from_kor = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Chinese_withdrawal_from_kor
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = -0.15
+			}
+		}
+
+		PRC_101_Purchase_of_advanced_weapons = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Purchase_of_advanced_weapons
+			name = PRC_101_Purchase_of_advanced_weapons
+			modifier = {
+				license_purchase_cost_factor = -0.5
+				license_tech_difference_speed_factor = -0.9
+			}
+		}
+
+		PRC_101_Purchase_of_advanced_weapons_West = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Purchase_of_advanced_weapons
+			name = PRC_101_Purchase_of_advanced_weapons
+			modifier = {
+				ai_license_acceptance = 100
+			}
+		}
+
+		########
+
+		PRC_101_Military_control = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Military_control
+			name = PRC_101_Military_control
+			modifier = {
+				stability_weekly = 0.01
+				stability_factor = -0.15
+				political_power_factor = -0.5
+				experience_gain_army_factor = -0.3
+				command_power_gain_mult = -0.2
+				max_command_power_mult = -0.2
+			}
+		}
+
+		PRC_101_Military_control2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Military_control
+			name = PRC_101_Military_control
+			modifier = {
+				stability_weekly = 0.01
+				stability_factor = -0.1
+				political_power_factor = -0.4
+				experience_gain_army_factor = -0.3
+				command_power_gain_mult = -0.2
+				max_command_power_mult = -0.2
+			}
+		}
+
+		PRC_101_Military_control3 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Military_control
+			name = PRC_101_Military_control
+			modifier = {
+				stability_weekly = 0.01
+				stability_factor = -0.1
+				political_power_factor = -0.2
+				experience_gain_army_factor = -0.3
+				command_power_gain_mult = -0.1
+				max_command_power_mult = -0.1
+			}
+		}
+
+		PRC_101_Military_control4 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Military_control
+			name = PRC_101_Military_control
+			modifier = {
+				stability_weekly = 0.015
+				stability_factor = -0.05
+				political_power_factor = -0.2
+				experience_gain_army_factor = -0.15
+				command_power_gain_mult = -0.1
+				max_command_power_mult = -0.1
+			}
+		}
+
+		PRC_101_Military_control5 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Military_control
+			name = PRC_101_Military_control
+			modifier = {
+				stability_weekly = 0.015
+				stability_factor = -0.05
+				political_power_factor = -0.2
+			}
+		}
+
+		PRC_101_Military_control6 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Military_control
+			name = PRC_101_Military_control
+			modifier = {
+				stability_weekly = 0.015
+				political_power_factor = -0.1
+			}
+		}
+
+		PRC_101_Military_control7 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_Military_control
+			name = PRC_101_Military_control
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = -0.05
+			}
+		}
+
+		########
+
+		PRC_101_diplomacy_balance_sov_1 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_diplomacy_balance_sov_1
+			modifier = {
+				office_park_income_adjustment = -0.25
+				production_speed_office_park_factor = -0.2
+				local_resources_factor = -0.15
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+
+		PRC_101_diplomacy_balance_sov_2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_diplomacy_balance_sov_2
+			modifier = {
+				office_park_income_adjustment = -0.15
+				production_speed_office_park_factor = -0.15
+				local_resources_factor = -0.05
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+
+		PRC_101_diplomacy_balance_sov_3 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_diplomacy_balance_sov_3
+			modifier = {
+				office_park_income_adjustment = -0.05
+				production_speed_office_park_factor = -0.05
+				production_speed_arms_factory_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				research_speed_factor = 0.025
+			}
+		}
+
+		PRC_101_diplomacy_balance_center = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_diplomacy_balance_center
+			modifier = {
+				production_speed_office_park_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				research_speed_factor = 0.05
+			}
+		}
+
+		PRC_101_diplomacy_balance_usa_3 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_diplomacy_balance_usa_3
+			modifier = {
+				office_park_income_adjustment = 0.05
+				production_speed_office_park_factor = 0.05
+				production_speed_industrial_complex_factor = 0.025
+				production_speed_arms_factory_factor = -0.05
+				production_factory_max_efficiency_factor = -0.025
+				research_speed_factor = 0.025
+			}
+		}
+
+		PRC_101_diplomacy_balance_usa_2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_diplomacy_balance_usa_3
+			modifier = {
+				office_park_income_adjustment = 0.15
+				production_speed_office_park_factor = 0.15
+				production_speed_industrial_complex_factor = 0.05
+				local_resources_factor = -0.05
+				production_speed_arms_factory_factor = -0.1
+				production_factory_max_efficiency_factor = -0.075
+			}
+		}
+
+		PRC_101_diplomacy_balance_usa_1 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_101_diplomacy_balance_usa_1
+			modifier = {
+				office_park_income_adjustment = 0.3
+				production_speed_office_park_factor = 0.25
+				production_speed_industrial_complex_factor = 0.05
+				local_resources_factor = -0.15
+				production_speed_arms_factory_factor = -0.2
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+	}
+}

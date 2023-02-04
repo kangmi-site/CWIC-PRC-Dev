@@ -1,0 +1,248 @@
+ideas = {
+	country = {
+		PRC_76_82_The_residual_influence_of_the_far_left = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_76_82_The_residual_influence_of_the_far_left
+			name = PRC_76_82_The_residual_influence_of_the_far_left
+			modifier = {
+				stability_factor = -0.15
+				political_power_factor = -0.15
+			}
+		}
+
+		PRC_76_82_The_residual_influence_of_the_far_left1 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_76_82_The_residual_influence_of_the_far_left
+			name = PRC_76_82_The_residual_influence_of_the_far_left
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.1
+			}
+		}
+
+		PRC_76_82_Harnessing_Mao_s_legacy = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_76_82_Harnessing_Mao_s_legacy
+			name = PRC_76_82_Harnessing_Mao_s_legacy
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.05
+				master_ideology_drift = 0.02
+			}
+		}
+
+		PRC_76_82_Harnessing_Mao_s_legacy2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_76_82_Harnessing_Mao_s_legacy
+			name = PRC_76_82_Harnessing_Mao_s_legacy
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = 0.05
+				political_power_gain = 0.2
+				master_ideology_drift = 0.02
+			}
+		}
+
+		PRC_76_82_The_aftermath_of_the_April_5_incident_dissipated = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_76_82_The_aftermath_of_the_April_5_incident_dissipated
+			name = PRC_76_82_The_aftermath_of_the_April_5_incident_dissipated
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.1
+				stability_weekly = 0.001
+			}
+		}
+
+		PRC_76_82_The_adjustment_of_administrative_system = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_76_82_The_adjustment_of_administrative_system
+			name = PRC_76_82_The_adjustment_of_administrative_system
+			modifier = {
+				stability_factor = -0.15
+				political_power_factor = -0.25
+			}
+		}
+
+		PRC_76_82_Mao_Zedong_Thought = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_76_82_Mao_Zedong_Thought
+			name = PRC_76_82_Mao_Zedong_Thought
+			modifier = {
+				maoism_drift = 0.005
+				communism_drift = 0.005
+			}
+		}
+
+		PRC_76_82_Mao_Zedong_Thought2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_76_82_Mao_Zedong_Thought
+			name = PRC_76_82_Mao_Zedong_Thought
+			modifier = {
+				maoism_drift = 0.005
+				communism_drift = 0.005
+				political_power_gain = 0.2
+			}
+		}
+
+		PRC_76_82_Mao_Zedong_Thought3 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_76_82_Mao_Zedong_Thought
+			name = PRC_76_82_Mao_Zedong_Thought
+			modifier = {
+				maoism_drift = 0.005
+				communism_drift = 0.005
+				drift_defence_factor = 0.2
+			}
+		}
+
+		PRC_76_82_Mao_Zedong_Thought4 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_76_82_Mao_Zedong_Thought
+			name = PRC_76_82_Mao_Zedong_Thought
+			modifier = {
+				maoism_drift = 0.005
+				communism_drift = 0.005
+				drift_defence_factor = 0.2
+				political_power_gain = 0.2
+			}
+		}
+
+		PRC_76_82_Split_of_the_party = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_76_82_Split_of_the_party
+			name = PRC_76_82_Split_of_the_party
+			modifier = {
+				stability_factor = -0.15
+				political_power_gain = -0.2
+			}
+		}
+
+		PRC_76_82_Split_of_the_party2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_76_82_Split_of_the_party
+			name = PRC_76_82_Split_of_the_party
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = -0.15
+			}
+		}
+
+		PRC_76_82_Emancipate_artisans_and_small_traders = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_76_82_Emancipate_artisans_and_small_traders
+			name = PRC_76_82_Emancipate_artisans_and_small_traders
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_factor = -0.05
+			}
+		}
+		
+		PRC_76_82_Development_of_industrial_basic_education_idea = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_76_82_Development_of_industrial_basic_education_idea
+			name = PRC_76_82_Development_of_industrial_basic_education_idea
+			modifier = {
+				political_power_factor = -0.05
+			}
+			research_bonus = {
+				industry = 0.15
+			}
+		}
+
+		PRC_76_82_Intellectual_youth_protest = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_76_82_Intellectual_youth_protest
+			name = PRC_76_82_Intellectual_youth_protest
+			modifier = {
+				stability_factor = -0.25
+				political_power_factor = -0.25
+				consumer_goods_factor = 0.1
+				research_speed_factor = -0.1
+			}
+		}
+
+		PRC_76_82_The_dilemma_of_resettlement_of_educated_youth = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_76_82_The_dilemma_of_resettlement_of_educated_youth
+			name = PRC_76_82_The_dilemma_of_resettlement_of_educated_youth
+			modifier = {
+				consumer_goods_factor = 0.2
+				political_power_factor = -0.2
+				research_speed_factor = 0.05
+			}
+		}
+
+		PRC_76_82_Constitution_of_78 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_76_82_Constitution_of_78
+			name = PRC_76_82_Constitution_of_78
+			modifier = {
+				custom_modifier_tooltip = PRC_76_82_Constitution_of_78_tt
+			}
+		}
+
+		PRC_76_82_Building_a_modern_and_strong_socialist_state_idea = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = PRC_76_82_Building_a_modern_and_strong_socialist_state_idea
+			name = PRC_76_82_Building_a_modern_and_strong_socialist_state_idea
+			modifier = {
+				political_power_factor = 0.1
+			}
+		}
+	}
+}

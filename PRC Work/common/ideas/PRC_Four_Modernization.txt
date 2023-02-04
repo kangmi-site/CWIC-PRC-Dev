@@ -1,0 +1,1128 @@
+ideas = {
+	country = {
+		###农业现代化###
+		PRC_AIM_1 = { #0-20
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = -0.25
+				country_resource_rubber = -200
+				production_speed_agri_industrial_complex_factor = -0.25
+				conscription = -0.01
+				production_speed_water_infrastructure_factor = -0.5
+				consumer_goods_factor = 0.05
+			}
+
+		}
+
+		PRC_AIM_2 = { #21-40
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = -0.2
+				country_resource_rubber = -150
+				production_speed_agri_industrial_complex_factor = -0.2
+				conscription = -0.008
+				production_speed_water_infrastructure_factor = -0.4
+				consumer_goods_factor = 0.04
+			}
+
+		}
+
+		PRC_AIM_3 = { #41-60
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = -0.15
+				country_resource_rubber = -100
+				production_speed_agri_industrial_complex_factor = -0.15
+				conscription = -0.006
+				production_speed_water_infrastructure_factor = -0.3
+				consumer_goods_factor = 0.03
+			}
+
+		}
+
+		PRC_AIM_4 = { #61-80
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = -0.10
+				country_resource_rubber = -50
+				production_speed_agri_industrial_complex_factor = -0.1
+				conscription = -0.004
+				production_speed_water_infrastructure_factor = -0.2
+				consumer_goods_factor = 0.02
+			}
+
+		}
+
+		PRC_AIM_5 = { #81-99
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = -0.05
+				production_speed_agri_industrial_complex_factor = -0.05
+				conscription = -0.002
+				production_speed_water_infrastructure_factor = -0.1
+				consumer_goods_factor = 0.01
+			}
+
+		}
+
+		PRC_AIM_6 = { #100
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = 0.05
+				production_speed_agri_industrial_complex_factor = 0.05
+				conscription = 0.005
+				country_resource_rubber = 50
+				production_speed_water_infrastructure_factor = 0.1
+				consumer_goods_factor = -0.025
+			}
+
+		}
+
+		###工业现代化###
+		PRC_EIM_1 = { #0-20
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = -0.25
+				production_factory_max_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				line_change_production_efficiency_factor = -0.2
+				industrial_capacity_factory = -0.2
+				local_resources_factor = -0.2
+				consumer_goods_factor = 0.1
+				local_building_slots_factor = -0.25
+				industrial_capacity_dockyard = -0.5
+			}
+
+		}
+
+		PRC_EIM_2 = { #21-40
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = -0.2
+				production_factory_max_efficiency_factor = -0.08
+				production_factory_efficiency_gain_factor = -0.08
+				line_change_production_efficiency_factor = -0.15
+				industrial_capacity_factory = -0.15
+				local_resources_factor = -0.15
+				consumer_goods_factor = 0.08
+				local_building_slots_factor = -0.2
+				industrial_capacity_dockyard = -0.4
+			}
+
+		}
+
+		PRC_EIM_3 = { #41-60
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = -0.15
+				production_factory_max_efficiency_factor = -0.06
+				production_factory_efficiency_gain_factor = -0.06
+				line_change_production_efficiency_factor = -0.1
+				industrial_capacity_factory = -0.1
+				local_resources_factor = -0.1
+				consumer_goods_factor = 0.06
+				local_building_slots_factor = -0.15
+				industrial_capacity_dockyard = -0.3
+			}
+
+		}
+
+		PRC_EIM_4 = { #61-80
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				production_factory_max_efficiency_factor = -0.04
+				production_factory_efficiency_gain_factor = -0.04
+				line_change_production_efficiency_factor = -0.05
+				industrial_capacity_factory = -0.05
+				local_resources_factor = -0.05
+				consumer_goods_factor = 0.04
+				local_building_slots_factor = -0.1
+				industrial_capacity_dockyard = -0.2
+			}
+
+		}
+
+		PRC_EIM_5 = { #81-99
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = -0.05
+				production_factory_max_efficiency_factor = -0.02
+				production_factory_efficiency_gain_factor = -0.02
+				consumer_goods_factor = 0.02
+				local_building_slots_factor = -0.05
+				industrial_capacity_dockyard = -0.1
+			}
+
+		}
+
+		PRC_EIM_6 = { #100
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				local_building_slots_factor = 0.1
+			}
+
+		}
+
+		###国防现代化###
+
+		###Army###
+		PRC_NDM_Army_1 = { #0-20
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				land_doctrine_cost_factor = 0.5
+				out_of_supply_factor = -0.5
+				experience_gain_army_factor  = -0.3
+				army_speed_factor = 0.1
+				planning_speed  = -0.5
+				max_planning = -0.5
+				training_time_army_factor  = -0.3
+				army_core_defence_factor = 0.2
+				army_core_attack_factor = 0.2
+				supply_consumption_factor = -0.3
+				equipment_capture_factor = 0.25
+				army_armor_attack_factor = -0.5
+				army_armor_defence_factor = -0.5
+				no_supply_grace = 114
+				invasion_preparation = 0.99
+
+			}
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = 0.15	
+					instant = yes
+				}
+				mechanized_equipment = {
+					build_cost_ic = 0.1	
+					instant = yes
+				}
+			}
+		}
+
+		PRC_NDM_Army_2 = { #21-40
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				land_doctrine_cost_factor = 0.4
+				out_of_supply_factor = -0.25
+				experience_gain_army_factor  = -0.25
+				army_speed_factor = 0.15
+				planning_speed  = -0.25
+				max_planning = -0.25
+				training_time_army_factor  = -0.15
+				army_core_defence_factor = 0.2
+				army_core_attack_factor = 0.2
+				supply_consumption_factor = -0.15
+				equipment_capture_factor = 0.1
+				army_armor_attack_factor = -0.25
+				army_armor_defence_factor = -0.25
+
+			}
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = 0.05	
+					instant = yes
+				}
+				mechanized_equipment = {
+					build_cost_ic = 0.05	
+					instant = yes
+				}
+			}
+		}
+
+		PRC_NDM_Army_3 = { #41-60
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				land_doctrine_cost_factor = 0.25
+				out_of_supply_factor = -0.15
+				experience_gain_army_factor  = -0.15
+				army_speed_factor = 0.15
+				planning_speed  = -0.15
+				max_planning = -0.15
+				training_time_army_factor  = -0.1
+				army_core_defence_factor = 0.2
+				army_core_attack_factor = 0.2
+				supply_consumption_factor = -0.1
+				equipment_capture_factor = 0.05
+				army_armor_attack_factor = -0.2
+				army_armor_defence_factor = -0.2
+
+			}
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = 0.05	
+					instant = yes
+				}
+				mechanized_equipment = {
+					build_cost_ic = 0.05	
+					instant = yes
+				}
+			}
+		}
+
+		PRC_NDM_Army_4 = { #61-80
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				land_doctrine_cost_factor = 0.1
+				out_of_supply_factor = -0.1
+				experience_gain_army_factor  = -0.1
+				army_speed_factor = 0.15
+				planning_speed  = -0.05
+				max_planning = -0.05
+				training_time_army_factor  = -0.1
+				army_core_defence_factor = 0.2
+				army_core_attack_factor = 0.2
+				supply_consumption_factor = -0.1
+				equipment_capture_factor = 0.05
+				army_armor_attack_factor = -0.1
+				army_armor_defence_factor = -0.1
+
+			}
+
+		}
+
+		PRC_NDM_Army_5 = { #0-20
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_speed_factor = 0.15
+				planning_speed  = -0.05
+				max_planning = -0.05
+				army_core_defence_factor = 0.2
+				army_core_attack_factor = 0.2
+				supply_consumption_factor = -0.05
+				army_armor_attack_factor = -0.05
+				army_armor_defence_factor = -0.05
+
+			}
+			
+		}
+
+		PRC_NDM_Army_6 = { #0-20
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_speed_factor = 0.15
+				planning_speed  = 0.05
+				max_planning = 0.05
+				army_core_defence_factor = 0.2
+				army_core_attack_factor = 0.2
+				army_armor_attack_factor = 0.05
+				army_armor_defence_factor = 0.05
+
+			}
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.1	
+					instant = yes
+				}
+				mechanized_equipment = {
+					build_cost_ic = -0.1	
+					instant = yes
+				}
+				motorized_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+			
+		}
+
+		###Air###
+		PRC_NDM_Air_1 = { #0-20
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				air_doctrine_cost_factor = 0.3
+				air_nav_efficiency = -0.2
+				air_accidents_factor = 0.15
+				air_night_penalty = 0.3
+				air_weather_penalty = 0.3
+				air_superiority_bonus_in_combat = -0.1
+				air_superiority_detect_factor = -0.25
+				refit_ic_cost = 0.5
+				air_attack_factor = -0.05
+
+			}
+
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = 1	
+					instant = yes
+				}
+				CAS_equipment = {
+					build_cost_ic = 1	
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					build_cost_ic = 1	
+					instant = yes
+				}
+				heavy_fighter_equipment = {
+					build_cost_ic = 1	
+					instant = yes
+				}
+				naval_bomber = {
+					build_cost_ic = 1	
+					instant = yes
+				}
+				air_transport = {
+					build_cost_ic = 2	
+					instant = yes
+				}
+			}
+		}
+
+		PRC_NDM_Air_2 = { #21-40
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				air_doctrine_cost_factor = 0.25
+				air_nav_efficiency = -0.15
+				air_accidents_factor = 0.12
+				air_night_penalty = 0.25
+				air_weather_penalty = 0.25
+				air_superiority_bonus_in_combat = -0.08
+				air_superiority_detect_factor = -0.2
+				air_attack_factor = -0.04
+
+			}
+
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = 0.5	
+					instant = yes
+				}
+				CAS_equipment = {
+					build_cost_ic = 0.5	
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					build_cost_ic = 0.5	
+					instant = yes
+				}
+				heavy_fighter_equipment = {
+					build_cost_ic = 0.5	
+					instant = yes
+				}
+				naval_bomber = {
+					build_cost_ic = 0.5	
+					instant = yes
+				}
+				air_transport = {
+					build_cost_ic = 1	
+					instant = yes
+				}
+			}
+		}
+
+		PRC_NDM_Air_3 = { #41-60
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				air_doctrine_cost_factor = 0.2
+				air_nav_efficiency = -0.1
+				air_accidents_factor = 0.09
+				air_night_penalty = 0.2
+				air_weather_penalty = 0.2
+				air_superiority_bonus_in_combat = -0.06
+				air_superiority_detect_factor = -0.15
+				air_attack_factor = -0.02
+
+			}
+
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = 0.25	
+					instant = yes
+				}
+				CAS_equipment = {
+					build_cost_ic = 0.25	
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					build_cost_ic = 0.25	
+					instant = yes
+				}
+				heavy_fighter_equipment = {
+					build_cost_ic = 0.25	
+					instant = yes
+				}
+				naval_bomber = {
+					build_cost_ic = 0.25	
+					instant = yes
+				}
+				air_transport = {
+					build_cost_ic = 0.5	
+					instant = yes
+				}
+			}
+		}
+
+		PRC_NDM_Air_4 = { #61-80
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				air_doctrine_cost_factor = 0.1
+				air_nav_efficiency = -0.05
+				air_accidents_factor = 0.05
+				air_night_penalty = 0.1
+				air_weather_penalty = 0.15
+				air_superiority_bonus_in_combat = -0.04
+				air_superiority_detect_factor = -0.1
+
+			}
+
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = 0.05	
+					instant = yes
+				}
+				CAS_equipment = {
+					build_cost_ic = 0.05	
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					build_cost_ic = 0.05	
+					instant = yes
+				}
+				heavy_fighter_equipment = {
+					build_cost_ic = 0.05	
+					instant = yes
+				}
+				naval_bomber = {
+					build_cost_ic = 0.05	
+					instant = yes
+				}
+				air_transport = {
+					build_cost_ic = 0.2	
+					instant = yes
+				}
+			}
+		}
+
+		PRC_NDM_Air_5 = { #0-20
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				air_doctrine_cost_factor = 0.05
+				air_accidents_factor = 0.05
+				air_night_penalty = 0.05
+				air_weather_penalty = 0.05
+				air_superiority_detect_factor = -0.05
+
+			}
+
+		}
+
+		PRC_NDM_Air_6 = { #0-20
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				air_doctrine_cost_factor = -0.1
+				air_accidents_factor = -0.08
+				air_night_penalty = -0.08
+				air_weather_penalty = -0.08
+				air_superiority_detect_factor = 0.1
+
+			}
+
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = -0.03	
+					instant = yes
+				}
+				CAS_equipment = {
+					build_cost_ic = -0.03	
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					build_cost_ic = -0.03	
+					instant = yes
+				}
+				heavy_fighter_equipment = {
+					build_cost_ic = -0.03	
+					instant = yes
+				}
+			}
+
+		}
+
+		###Naval###
+		PRC_NDM_Naval_1 = { #0-20
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				naval_coordination = -0.2	
+				naval_detection = -0.1
+				screening_efficiency = -0.1
+				naval_doctrine_cost_factor = 0.3
+				repair_speed_factor = -0.25
+				navy_refit_ic_cost = 0.5
+				industrial_capacity_dockyard = -0.5
+
+			}
+
+			equipment_bonus = {
+			}
+		}
+
+		PRC_NDM_Naval_2 = { #21-40
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				naval_coordination = -0.15	
+				naval_detection = -0.08
+				screening_efficiency = -0.08
+				naval_doctrine_cost_factor = 0.24
+				repair_speed_factor = -0.2
+				navy_refit_ic_cost = 0.4
+				industrial_capacity_dockyard = -0.4
+
+			}
+
+			equipment_bonus = {
+			}
+		}
+
+		PRC_NDM_Naval_3 = { #41-60
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				naval_coordination = -0.1	
+				naval_detection = -0.05
+				screening_efficiency = -0.05
+				naval_doctrine_cost_factor = 0.18
+				repair_speed_factor = -0.15
+				navy_refit_ic_cost = 0.3
+				industrial_capacity_dockyard = -0.3
+
+			}
+
+			equipment_bonus = {
+			}
+		}
+
+		PRC_NDM_Naval_4 = { #61-80
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				naval_coordination = -0.05	
+				naval_detection = -0.02
+				screening_efficiency = -0.02
+				naval_doctrine_cost_factor = 0.1
+				repair_speed_factor = -0.1
+				navy_refit_ic_cost = 0.2
+				industrial_capacity_dockyard = -0.2
+
+			}
+
+			equipment_bonus = {
+			}
+		}
+
+		PRC_NDM_Naval_5 = { #0-20
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				naval_doctrine_cost_factor = 0.05
+				repair_speed_factor = -0.05
+				navy_refit_ic_cost = 0.1
+				industrial_capacity_dockyard = -0.1
+
+			}
+
+			equipment_bonus = {
+			}
+		}
+
+		PRC_NDM_Naval_6 = { #0-20
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				naval_coordination = 0.1	
+				naval_detection = 0.1
+				screening_efficiency = 0.1
+				naval_doctrine_cost_factor = -0.1
+				industrial_capacity_dockyard = 0.05
+
+			}
+
+			equipment_bonus = {
+			}
+		}
+
+		###科学技术现代化###
+		PRC_STM_1 = { #0-20
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = -0.15
+			}
+
+			research_bonus = { armor = -0.25 }
+			research_bonus = { air_equipment = -0.35 }
+			research_bonus = { naval_equipment = -0.5 }
+			research_bonus = { rocketry = -0.75 }
+			research_bonus = { nbc = -2 }
+			research_bonus = { space_research = -2 }
+
+		}
+
+		PRC_STM_2 = { #21-40
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = -0.12
+			}
+
+				research_bonus = { armor = -0.15 }
+				research_bonus = { air_equipment = -0.25 }
+				research_bonus = { naval_equipment = -0.3 }
+				research_bonus = { rocketry = -0.5 }
+				research_bonus = { nbc = -2 }
+				research_bonus = { space_research = -1.5 }
+
+		}
+
+		PRC_STM_3 = { #41-60
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = -0.09
+			}
+
+				research_bonus = { armor = -0.05 }
+				research_bonus = { air_equipment = -0.15 }
+				research_bonus = { naval_equipment = -0.2 }
+				research_bonus = { rocketry = -0.3 }
+				research_bonus = { nbc = -1 }
+				research_bonus = { space_research = -0.8 }
+
+		}
+
+		PRC_STM_4 = { #61-80
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = -0.05
+			}
+
+				research_bonus = { air_equipment = -0.05 }
+				research_bonus = { naval_equipment = -0.05 }
+				research_bonus = { rocketry = -0.1 }
+				research_bonus = { nbc = -0.5 }
+				research_bonus = { space_research = -0.3 }
+
+		}
+
+		PRC_STM_5 = { 
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+				research_bonus = { rocketry = -0.05 }
+				research_bonus = { nbc = -0.25 }
+				research_bonus = { space_research = -0.15 }
+
+		}
+
+		PRC_STM_6 = { 
+			picture = hundred_flowers_campaign
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.15
+			}
+
+				research_bonus = { armor = 0.05 }
+				research_bonus = { air_equipment = 0.05 }
+				research_bonus = { naval_equipment = 0.05 }
+				research_bonus = { rocketry = 0.05 }
+				research_bonus = { space_research = 0.1 }
+
+		}
+	}
+}

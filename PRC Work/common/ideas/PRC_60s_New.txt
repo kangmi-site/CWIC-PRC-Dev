@@ -1,0 +1,339 @@
+#If you open this file,I will disappointment in you trying to revising product of my labour
+
+ideas = {
+	country = {
+		three_line1 = {
+			picture = hundred_flowers_campaign
+			allowed_civil_war = {
+				has_government = communism
+			}
+			modifier = { 
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = 0.15
+				political_power_factor = -0.05
+				conscription_factor = -0.03
+			}
+		}
+		three_line2 = {
+			picture = hundred_flowers_campaign
+			allowed_civil_war = {
+				has_government = communism
+			}
+			modifier = { 
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.25
+				political_power_factor = -0.1
+				stability_factor = -0.05
+			}
+		}
+		insist_on_self = {
+			picture = hundred_flowers_campaign
+			allowed_civil_war = {
+				has_government = communism
+			}
+			modifier = { 
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.05
+				political_power_factor = -0.05
+				local_resources_factor = 0.05
+				local_building_slots_factor = 0.05
+			}
+		}
+		Construction_civil_facilities = {
+			picture = hundred_flowers_campaign
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = communism
+			}
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+				production_speed_industrial_complex_factor = 0.1
+				stability_factor = 0.05
+			}
+		}
+		The_Industry_Seventy_Points = {
+			picture = hundred_flowers_campaign
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = communism
+			}
+			available = {
+				not = {has_completed_focus = PRC_60s_Industry_Daqing_Argicultural_Dazhai_People_PLA}
+			}
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		Article_14_of_the_scientific_research = {
+			picture = hundred_flowers_campaign
+			allowed_civil_war = { always = no }
+			available = {
+				not = {has_completed_focus = PRC_60s_Industry_Daqing_Argicultural_Dazhai_People_PLA}
+			}
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		Eight_articles_of_literature_and_art = {
+			picture = hundred_flowers_campaign
+			allowed_civil_war = { always = no }
+			available = {
+				not = {has_completed_focus = PRC_60s_Industry_Daqing_Argicultural_Dazhai_People_PLA}
+			}
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		Sixty_Articles_of_Agriculture = {
+			picture = hundred_flowers_campaign
+			allowed_civil_war = { always = no }
+			available = {
+				not = {has_completed_focus = PRC_60s_Industry_Daqing_Argicultural_Dazhai_People_PLA}
+			}
+			modifier = {
+				monthly_population = 0.1
+			}
+		}
+		Study_leifeng = {
+			picture = hundred_flowers_campaign
+			allowed_civil_war = { always = no }
+			available = {
+				not = {has_completed_focus = PRC_60s_Industry_Daqing_Argicultural_Dazhai_People_PLA}
+			}
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.05
+			}
+		}
+		Barefoot_doctor = {
+			picture = hundred_flowers_campaign
+			allowed_civil_war = { always = no }
+			modifier = {
+				monthly_population = 0.3
+				stability_factor = 0.01
+			}
+		}
+		Work_arduously = {
+			picture = hundred_flowers_campaign
+			allowed_civil_war = { always = no }
+			modifier = {
+				supply_consumption_factor = -0.15
+				army_org_factor = 0.05
+				conscription_factor = 0.05
+			}
+		}
+		Agricultural_Science_Dazhai = {
+			picture = hundred_flowers_campaign
+			allowed_civil_war = { always = no }
+			available = {
+				not = {has_completed_focus = PRC_60s_Industry_Daqing_Argicultural_Dazhai_People_PLA}
+			}
+			modifier = {
+				monthly_population = 0.1
+				stability_factor = 0.05
+				political_power_factor = 0.03
+			}
+		}
+		Industry_Daqing_Argicultural_Dazhai_People_PLA = {
+			picture = hundred_flowers_campaign
+			allowed_civil_war = { always = no }
+			modifier = {
+				monthly_population = 0.15
+				stability_factor = 0.12
+				political_power_factor = 0.1
+				war_support_factor = 0.08
+				research_speed_factor = 0.07
+				production_factory_max_efficiency_factor = 0.06
+			}
+		}
+		PRC_541 = {
+			picture = hundred_flowers_campaign
+			allowed_civil_war = { always = no }
+			visible = {
+				always = no
+			}
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.03
+					instant = yes
+				}
+			}
+		}
+		PRC_erqi = {
+			picture = hundred_flowers_campaign
+			allowed_civil_war = { always = no }
+			visible = {
+				always = no
+			}
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.02
+					instant = yes
+				}
+			}
+		}
+		PRC_SOV_60s_research = {
+			picture = hundred_flowers_campaign
+			available = {
+				country_exists = SOV
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			modifier = {
+				research_speed_factor = 0.08
+				political_power_factor = 0.03
+			}
+		}
+		SevenBillion_SevenArmy = {
+			picture = hundred_flowers_campaign
+			allowed_civil_war = { always = no }
+			modifier = {
+				conscription = 0.1
+				war_support_factor = 0.25
+				training_time_army_factor  = -0.07
+				minimum_training_level = -0.07
+				army_org_factor = 0.1
+				army_defence_factor = 0.07
+				production_factory_efficiency_gain_factor = -0.15
+				political_power_factor = -0.03
+				stability_factor = -0.1
+				industrial_capacity_factory = -0.1
+				line_change_production_efficiency_factor = -0.06
+			}
+		}
+		Cultrue_Revolution = {
+			picture = hundred_flowers_campaign
+			allowed_civil_war = { always = no }
+			modifier = {
+				stability_factor = -0.25
+				political_power_factor = -0.15				
+				war_support_factor = -0.25
+			}
+		}
+		Reform_the_education_system = {
+			picture = hundred_flowers_campaign
+			allowed_civil_war = {
+				has_government = communism
+			}
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.1			
+				research_speed_factor = 0.15
+			}
+		}
+		Go_up_the_mountain_and_go_down_to_the_countryside = {
+			picture = hundred_flowers_campaign
+			allowed_civil_war = { always = no }
+			modifier = {
+				stability_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		National_labor_force = {
+			picture = hundred_flowers_campaign
+			allowed_civil_war = { always = no }
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		Reclamation_of_the_frontier = {
+			picture = hundred_flowers_campaign
+			allowed_civil_war = { always = no }
+			modifier = {
+				conscription = -0.005
+				consumer_goods_factor = -0.03
+				production_speed_buildings_factor = 0.1
+				local_building_slots_factor = 0.05
+			}
+		}
+		PRC_four_evils_1 = {	
+			allowed = { always = no }
+			allowed_civil_war = {  }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = -0.2
+				monthly_population = -0.15
+				industrial_capacity_factory = -0.05
+				line_change_production_efficiency_factor = -0.1
+			}
+			picture = GFX_SOV_Technical_Aid
+		}
+		PRC_four_evils_2 = {	
+			allowed = { always = no }
+			allowed_civil_war = {  }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				monthly_population = -0.05
+				line_change_production_efficiency_factor = -0.05
+			}
+			picture = GFX_SOV_Technical_Aid
+		}
+		PRC_defeat_four_evils = {	
+			allowed = { always = no }
+			allowed_civil_war = {  }
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.05
+				production_speed_buildings_factor = 0.02
+				monthly_population = 0.05
+				stability_factor = 0.05
+			}
+			picture = GFX_SOV_Technical_Aid
+		}
+		PRC_7000_1 = {	
+			allowed = { always = no }
+			allowed_civil_war = {  }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				monthly_population = -0.05
+				consumer_goods_factor = 0.15
+			}
+			picture = GFX_SOV_Technical_Aid
+		}
+		PRC_60s_glf = {	
+			allowed = { always = no }
+			allowed_civil_war = {  }
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.05
+			}
+			picture = GFX_SOV_Technical_Aid
+		}
+		PRC_60s_real_socialism_economic = {	
+			allowed = { always = no }
+			allowed_civil_war = {  }
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.1
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = 0.1
+				local_resources_factor = 0.05
+				production_speed_buildings_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+			}
+			picture = GFX_SOV_Technical_Aid
+		}
+		PRC_60s_New_democratic_economic = {	
+			allowed = { always = no }
+			allowed_civil_war = {  }
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.1
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.1
+				local_resources_factor = 0.05
+				production_speed_buildings_factor = 0.1
+				production_factory_start_efficiency_factor = -0.15
+			}
+			picture = GFX_SOV_Technical_Aid
+		}
+	}
+}
