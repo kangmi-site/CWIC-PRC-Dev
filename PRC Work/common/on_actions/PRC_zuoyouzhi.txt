@@ -1,0 +1,93 @@
+on_actions = {
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					has_variable = zuoyouzhi
+				}
+				PRC = {
+					if = {
+						limit = {
+							check_variable = { zuoyouzhi < 56 }
+							check_variable = { zuoyouzhi > 44 }
+						}
+						swap_ideas = {
+							remove_idea = prc_zuoyou_z1
+							add_idea = prc_zuoyou_x
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = { zuoyouzhi < 56 }
+							check_variable = { zuoyouzhi > 44 }
+						}
+						swap_ideas = {
+							remove_idea = prc_zuoyou_b1
+							add_idea = prc_zuoyou_x
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = { zuoyouzhi < 45 }
+							check_variable = { zuoyouzhi > 34 }
+						}
+						swap_ideas = {
+							remove_idea = prc_zuoyou_x
+							add_idea = prc_zuoyou_z1
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = { zuoyouzhi < 35 }
+							check_variable = { zuoyouzhi > 14 }
+						}
+						swap_ideas = {
+							remove_idea = prc_zuoyou_z1
+							add_idea = prc_zuoyou_z2
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = { zuoyouzhi < 15 }
+							check_variable = { zuoyouzhi > -1 }
+						}
+						swap_ideas = {
+							remove_idea = prc_zuoyou_z1
+							add_idea = prc_zuoyou_z2
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = { zuoyouzhi < 66 }
+							check_variable = { zuoyouzhi > 55 }
+						}
+						swap_ideas = {
+							remove_idea = prc_zuoyou_x
+							add_idea = prc_zuoyou_b1
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = { zuoyouzhi < 86 }
+							check_variable = { zuoyouzhi > 65 }
+						}
+						swap_ideas = {
+							remove_idea = prc_zuoyou_x
+							add_idea = prc_zuoyou_b2
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = { zuoyouzhi < 101 }
+							check_variable = { zuoyouzhi > 85 }
+						}
+						swap_ideas = {
+							remove_idea = prc_zuoyou_x
+							add_idea = prc_zuoyou_b3
+						}
+					}
+				}
+			}
+		}
+	}
+}

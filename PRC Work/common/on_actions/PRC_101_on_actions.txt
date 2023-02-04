@@ -1,0 +1,14 @@
+on_actions = {
+
+	on_weekly_PRC = {
+		effect = {
+			if = {
+				limit = {
+					has_completed_focus = PRC_101_71s_Chen_Boda_s_e_centrism
+				}
+				PRC_101_Chen_Boda_s_e_centrism_weekly_var_change = yes
+			}
+		}
+	}
+
+}

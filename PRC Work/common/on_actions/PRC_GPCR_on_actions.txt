@@ -1,0 +1,216 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					date > 1969.12.30
+					date < 1976.10.11
+				}
+				PRC = {  
+					PRC_GPCR_begins = yes
+					add_to_variable = { 714.prc_change_of_administrative_division = 9 }
+					add_to_variable = { 328.prc_change_of_administrative_division = 7 }
+					add_to_variable = { 716.prc_change_of_administrative_division = 5 }
+					add_to_variable = { 621.prc_change_of_administrative_division = 3 }
+					add_to_variable = { 616.prc_change_of_administrative_division = 6 }
+					add_to_variable = { 283.prc_change_of_administrative_division = 6 }
+					set_country_flag = PRC_Inner_Mongolia_69-79_administrative_division
+					PRC_GPCR_province_variable_update = yes
+	                PRC_GPCR_ui_update = yes
+					PRC_GPCR_national_spirit_update = yes
+				}
+			}
+		}
+	}
+	on_month = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = PRC_GPCR_flag
+				}
+				PRC = {
+					set_variable = { GPCR_monthly_available_support_times = 0 }
+					every_owned_state = {
+						limit = { has_variable = GPCR_province_zaozao_power_var }
+						clr_state_flag = GPCR_has_support_province_faction
+					    add_to_variable = { GPCR_province_unrest_var = GPCR_province_unrest_monthly_vary_var0 }
+						add_to_variable = { GPCR_province_unrest_var = GPCR_province_unrest_monthly_vary_var1 }
+						add_to_variable = { GPCR_province_unrest_var = GPCR_province_unrest_monthly_vary_var2 }
+						if = {
+							limit = {  
+							    check_variable = {
+                                    var = GPCR_province_PLA_tendency_var
+									value = -5
+									compare = less_than
+							    }
+					    	}
+							add_to_variable = { GPCR_province_zaozao_power_var = GPCR_province_PLA_influence_var }
+							set_temp_variable = { GPCR_province_PLA_influence_var_temp = GPCR_province_PLA_influence_var }
+							multiply_temp_variable = { GPCR_province_PLA_influence_var_temp = -1 }
+							add_to_variable = { GPCR_province_laobao_power_var = GPCR_province_PLA_influence_var_temp }
+						}
+						else_if = {
+							limit = {  
+							    check_variable = {
+                                    var = GPCR_province_PLA_tendency_var
+									value = 5
+									compare = greater_than
+							    }
+					    	}
+							add_to_variable = { GPCR_province_laobao_power_var = GPCR_province_PLA_influence_var }
+							set_temp_variable = { GPCR_province_PLA_influence_var_temp = GPCR_province_PLA_influence_var }
+							multiply_temp_variable = { GPCR_province_PLA_influence_var_temp = -1 }
+							add_to_variable = { GPCR_province_zaozao_power_var = GPCR_province_PLA_influence_var_temp }
+						}
+				    }
+					PRC_GPCR_ui_update = yes
+				    PRC_GPCR_province_variable_update = yes
+					PRC_GPCR_national_spirit_update = yes
+			    }
+			}
+		}
+	}
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+                    has_global_flag = Southeast_Asia_Liberation_War
+					ROOT = {
+						all_allied_country = {
+							has_capitulated = yes
+						}
+						OR = {
+							original_tag = VIE
+							original_tag = LOS
+							original_tag = CAM
+							original_tag = SIA
+							original_tag = BRM
+						}
+					}
+					FROM = {
+						OR = {
+							original_tag = VIN
+							original_tag = LAO
+							original_tag = KMP
+							original_tag = TTM
+							original_tag = BCP
+						}
+					}
+				}
+				VIN = {
+                    annex_country = {
+						target = VIE
+						transfer_troops = yes
+					}
+				}
+	            LAO = {
+                    annex_country = {
+						target = LOS
+						transfer_troops = yes
+					}
+				}
+				KMP = {
+                    annex_country = {
+						target = CAM
+						transfer_troops = yes
+					}
+				}
+				TTM = {
+                    annex_country = {
+						target = SIA
+						transfer_troops = yes
+					}
+				}
+				BCP = {
+                    annex_country = {
+						target = BRM
+						transfer_troops = yes
+					}
+				}
+				clr_global_flag = Southeast_Asia_Liberation_War
+				set_global_flag = Southeast_Asia_Liberation_War_Communist_Victory
+				if = {
+					limit = {
+						FROM = {
+							any_enemy_country = {
+								original_tag = USA
+							}
+						}
+					}
+					every_country = {
+						limit = {
+							OR = {
+								original_tag = TMM
+								is_ally_with = TTM
+							}
+						}
+						white_peace = USA
+					}
+				}
+			}
+		}
+	}
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+                    has_global_flag = Southeast_Asia_Liberation_War
+					ROOT = {
+						all_allied_country = {
+							has_capitulated = yes
+						}
+						OR = {
+							original_tag = VIN
+							original_tag = LAO
+							original_tag = KMP
+							original_tag = TTM
+							original_tag = BCP
+						}
+					}
+					FROM = {
+						OR = {
+							original_tag = VIE
+							original_tag = LOS
+							original_tag = CAM
+							original_tag = SIA
+							original_tag = BRM
+						}
+					}
+				}
+				VIE = {
+                    annex_country = {
+						target = VIN
+						transfer_troops = yes
+					}
+				}
+	            LOS = {
+                    annex_country = {
+						target = LAO
+						transfer_troops = yes
+					}
+				}
+				CAM = {
+                    annex_country = {
+						target = KMP
+						transfer_troops = yes
+					}
+				}
+				SIA = {
+                    annex_country = {
+						target = TTM
+						transfer_troops = yes
+					}
+				}
+				BRM = {
+                    annex_country = {
+						target = BCP
+						transfer_troops = yes
+					}
+				}
+				clr_global_flag = Southeast_Asia_Liberation_War
+				set_global_flag = Southeast_Asia_Liberation_War_Anti_Communist_Victory
+			}
+		}
+	}
+}

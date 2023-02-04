@@ -1,0 +1,15 @@
+on_actions = {
+
+	on_weekly_PRC = {
+		effect = {
+			if = {
+				limit = {
+					has_completed_focus = PRC_76_82_Foreign_Leapfrog
+					NOT = { has_country_flag = PRC_76_82_Foreign_Leapfrog_Call_off }
+				}
+				multiply_variable = { PRC_76_82_Foreign_debt = 1.011 }
+			}
+		}
+	}
+
+}

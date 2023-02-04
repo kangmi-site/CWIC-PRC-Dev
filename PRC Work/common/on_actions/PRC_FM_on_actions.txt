@@ -1,0 +1,70 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					date < 1950.1.1
+					date > 1949.1.1
+				}
+				PRC = {
+					set_variable = { PRC_AIM = 0 }
+					set_variable = { PRC_EIM = 0 }
+					set_variable = { PRC_NDM = 0 }
+					set_variable = { PRC_STM = 0 }
+					set_variable = { PRC_NDM_ARMY = 0 }
+					set_variable = { PRC_NDM_AIR = 0 }
+					set_variable = { PRC_NDM_NAVAL = 0 }
+					set_variable = { PRC_NDM_ARMY_1 = 0 }
+					set_variable = { PRC_NDM_AIR_1 = 0 }
+					set_variable = { PRC_NDM_NAVAL_1 = 0 }
+					clamp_variable = {
+						var = PRC_AIM
+						min = 0
+						max = 100
+					}
+					clamp_variable = {
+						var = PRC_EIM
+						min = 0
+						max = 100
+					}
+					clamp_variable = {
+						var = PRC_NDM
+						min = 0
+						max = 100
+					}
+					clamp_variable = {
+						var = PRC_STM
+						min = 0
+						max = 100
+					}
+					clamp_variable = {
+						var = PRC_NDM_ARMY
+						min = 0
+						max = 100
+					}
+					clamp_variable = {
+						var = PRC_NDM_AIR
+						min = 0
+						max = 100
+					}
+					clamp_variable = {
+						var = PRC_NDM_NAVAL
+						min = 0
+						max = 100
+					}
+				}
+			}
+		}
+	}
+	on_startup = {
+		if = {
+			limit = {
+				date < 1950.1.1
+				date > 1949.1.1
+			}
+			PRC = {
+				set_flags
+			}
+		}
+	}
+}
