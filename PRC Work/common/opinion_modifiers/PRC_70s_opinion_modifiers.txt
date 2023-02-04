@@ -1,0 +1,66 @@
+########PRC70s_opinion_modifiers#############
+opinion_modifiers = {
+    prc70s_Olive_Branch_from_China_opinion = { 
+        value = 10 
+        months = 6
+    }
+    prc70s_China_s_Big_Olive_Branch_opinion = { 
+        value = 25 
+        months = 18 
+    }
+    prc70s_culmination_of_diomatic_relations_opinion = { 
+        value = 30 
+        months = 12
+    }
+    prc70s_China_is_not_friendly_opinion = { 
+        value = -10 
+        months = 6
+    }
+
+    prc70s_China_is_very_not_friendly_opinion = { 
+        value = -25 
+        months = 18 
+    }
+
+    prc70s_China_helps_revolutionaries_opinion = { 
+        value = 15 
+        decay = 1
+        months = 20
+    }
+	prc70s_China_recognizes_revolutionary_opposition_opinion = { 
+        value = -30 
+        decay = 1
+        months = 20
+    }
+	prc70s_China_betrays_internationalism_opinion = { 
+        value = -30 
+        decay = 1
+        months = 20
+    }
+    prc70s_China_is_far_from_revolutionaries_opinion = { 
+        value = 15 
+        decay = 1
+        months = 20
+    }
+    prc70s_Indochina_People_s_Supreme_Council = { 
+        value = 10 
+        months = 15
+    }
+    
+    prc70s_Break_off_diplomatic_relations_with_Taiwan = { 
+        value = -40 
+        months = 48
+    }
+    prc70s_USA_cut_off_aid_to_Taiwan = { value = -20 }
+
+    prc70s_USA_end_guarantee_to_Taiwan = { value = -45 }
+
+    prc70s_USA_send_embargo_target_Taiwan = { value = -45 }
+
+    prc70s_Sino_French_economic_cooperation = { value = 25 }
+
+    prc70s_name_ROK_instead_of_South_Korea = { 
+        value = 15
+        months = 36 
+    }
+}

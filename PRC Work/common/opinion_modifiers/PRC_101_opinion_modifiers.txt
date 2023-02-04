@@ -1,0 +1,30 @@
+#####################
+# PRC Opinion Modifiers
+#####################
+
+opinion_modifiers = {
+	PRC_Rebuilding_the_communication_network = { value = 25 }
+
+	PRC_All_round_cooperation_with_Yugoslavia = { value = 50 trade = yes }
+
+	PRC_Southeast_Asia_operation = { value = 25 }
+
+	PRC_Promote_communication_with_Chen_Ping = { value = 40 }
+
+	PRC_Detente_with_Vietnam = { value = 25 }
+
+	PRC_Improved_relations = { value = 20 }
+
+	PRC_non_involvement_in_South_Asia = { value = 40 }
+
+	PRC_Improved_relations_less = { value = 10 }
+
+	PRC_economic_and_trade_agreements_with_Japan = { value = 100 trade = yes }
+
+	PRC_KOR_trade_improvement = { value = 100 trade = yes }
+
+	PRC_cooperation_with_the_European_Community = { value = 100 trade = yes }
+
+	PRC_USA_trade_improvement = { value = 100 trade = yes }
+
+}
