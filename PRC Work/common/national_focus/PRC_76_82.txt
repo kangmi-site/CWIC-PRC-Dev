@@ -1,0 +1,5352 @@
+﻿focus_tree = {
+    id = PRC_76_82
+    country = {
+        factor = 0
+        modifier = {
+            add = 0
+            tag = PRC
+        }
+    }
+    default = no
+    shared_focus = PRC_76_82_The_Eleventh_National_Congress_of_the_Communist_Party_of_China
+    shared_focus = PRC_76_82_The_Great_Discussion_on_the_Standard_of_Truth
+    focus = {
+        id = PRC_76_82_false_and_wrong_cases
+        cost = 2
+        x = 4
+        y = 0
+        available = {
+            has_country_flag = PRC_GOF_has_been_destroyed_flag
+        }
+        completion_reward = {
+            country_event = {
+                id = PRC_76_82.12
+            }
+            hidden_effect = {
+                country_event = {
+                    id = PRC_76_82.13
+                    days = 90
+                }
+            }
+            add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+            unlock_decision_category_tooltip = PRC_76_82_false_and_wrong_cases_cate
+        }
+    }
+    focus = {
+        id = PRC_76_82_Party_and_state_leaders
+        cost = 2
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = PRC_76_82_false_and_wrong_cases
+        }
+        completion_reward = {
+            unlock_decision_tooltip = PRC_76_82_redress_Reclassifying_the_Tiananmen_Incident
+            unlock_decision_tooltip = PRC_76_82_redress_Liu_Shaoqi
+        }
+    }
+    focus = {
+        id = PRC_76_82_Rehabilitate_the_work_of_government_departments
+        cost = 2
+        x = 3
+        y = 1
+        prerequisite = {
+            focus = PRC_76_82_false_and_wrong_cases
+        }
+        completion_reward = {
+            unlock_decision_tooltip = PRC_76_82_Reinstate_the_discipline_inspection_Commission
+            unlock_decision_tooltip = PRC_76_82_redress_Propaganda_Department_of_the_CPC_Central_Committee
+            unlock_decision_tooltip = PRC_76_82_redress_Central_Supervisory_Commission
+        }
+    }
+    focus = {
+        id = PRC_76_82_Redraw_the_Rightists
+        cost = 2
+        x = 5
+        y = 1
+        prerequisite = {
+            focus = PRC_76_82_false_and_wrong_cases
+        }
+        completion_reward = {
+            unlock_decision_tooltip = PRC_76_82_redress_He_Long
+            unlock_decision_tooltip = PRC_76_82_Peng_Luo_Lu_Yang_incident
+            unlock_decision_tooltip = PRC_76_82_redress_Ma_Yinchu
+            unlock_decision_tooltip = PRC_76_82_Yang_Yu_and_Fu_Events
+            unlock_decision_tooltip = PRC_76_82_Sixty_one_traitor_group_case
+            unlock_decision_tooltip = PRC_76_82_redress_Tan_Zhenlin
+            unlock_decision_tooltip = PRC_76_82_redress_Li_Desheng
+            unlock_decision_tooltip = PRC_76_82_redress_Zhang_Wentian
+            unlock_decision_tooltip = PRC_76_82_redress_Six_rightists
+            unlock_decision_tooltip = PRC_76_82_The_case_of_Liu_Zhidan
+            unlock_decision_tooltip = PRC_76_82_redress_Ulanhu
+            unlock_decision_tooltip = PRC_76_82_The_Three_Villages_Case
+            unlock_decision_tooltip = PRC_76_82_redress_Six_Professors_of_the_Right
+        }
+    }
+    focus = {
+        id = PRC_76_82_Treat_three_kinds_of_people
+        cost = 2
+        x = 7
+        y = 1
+        prerequisite = {
+            focus = PRC_76_82_false_and_wrong_cases
+        }
+        completion_reward = {
+            add_political_power = -40
+            add_stability = -0.015
+            add_to_variable = {
+                CPC_bar_c = -4
+                tooltip = PRC_76_82_qlxt_gof_1
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Resume_the_work_of_the_Political_Consultative_Conference
+        cost = 2
+        x = 4
+        y = 2
+        prerequisite = {
+            focus = PRC_76_82_Party_and_state_leaders
+        }
+        prerequisite = {
+            focus = PRC_76_82_Rehabilitate_the_work_of_government_departments
+        }
+        prerequisite = {
+            focus = PRC_76_82_Redraw_the_Rightists
+        }
+        prerequisite = {
+            focus = PRC_76_82_Treat_three_kinds_of_people
+        }
+        completion_reward = {
+            add_political_power = 100
+            add_stability = 0.05
+        }
+    }
+    focus = {
+        id = PRC_76_82_Rectify_the_affairs_of_the_Autonomous_Region
+        cost = 2
+        x = 2
+        y = 3
+        prerequisite = {
+            focus = PRC_76_82_Resume_the_work_of_the_Political_Consultative_Conference
+        }
+        completion_reward = {
+            unlock_decision_tooltip = PRC_76_82_The_Case_of_the_Inner_Mongolian_People_s_Revolutionary_Party
+            unlock_decision_tooltip = PRC_76_82_redress_Ulanhu
+        }
+    }
+    focus = {
+        id = PRC_76_82_Emancipate_artisans_and_small_traders
+        cost = 2
+        x = 4
+        y = 3
+        prerequisite = {
+            focus = PRC_76_82_Resume_the_work_of_the_Political_Consultative_Conference
+        }
+        completion_reward = {
+            add_timed_idea = { idea = PRC_76_82_Emancipate_artisans_and_small_traders days = 365 }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Rehabilitate_literary_and_art_work
+        cost = 2
+        x = 6
+        y = 3
+        prerequisite = {
+            focus = PRC_76_82_Resume_the_work_of_the_Political_Consultative_Conference
+        }
+        completion_reward = {
+            unlock_decision_tooltip = PRC_76_82_redress_The_Hu_Feng_Case
+            unlock_decision_tooltip = PRC_76_82_The_Three_Villages_Case
+        }
+    }
+    
+    
+    focus = {
+        id = PRC_76_82_Destroying_the_Gang_of_Four
+        icon = GFX_PRC_76_82_Destroying_the_Gang_of_Four
+        cost = 1.5
+        x = 13
+        y = 0
+        mutually_exclusive = {
+            focus = PRC_76_82_The_race_to_the_finish_line
+        }
+        completion_reward = {
+            custom_effect_tooltip = PRC_76_82_Destroying_the_Gang_of_Four_tt
+            custom_effect_tooltip = PRC_76_82_qlxt_gof_1
+            add_to_variable = {
+                var = CPC_bar_a
+                value = -1.5
+            }
+            hidden_effect = {
+                country_event = {
+                    id = PRC_76_82.5
+                    days = 329
+                }
+                country_event = {
+                    id = PRC_76_82.201
+                    days = 828
+                }
+                country_event = {
+                    id = PRC_76_82.11
+                    days = 1500
+                }
+                country_event = {
+                    id = PRC_76_82.14
+                    days = 550
+                }
+                country_event = {
+                    id = PRC_76_82.21
+                    days = 608
+                }
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Consult_Marshal_Ye_s_opinion
+        icon = GFX_PRC_76_82_Consult_Marshal_Ye_s_opinion
+        cost = 1.6
+        x = 11
+        y = 1
+        prerequisite = {
+            focus = PRC_76_82_Destroying_the_Gang_of_Four
+        }
+        bypass = {
+            has_country_flag = PRC_GOF_has_been_destoryed_flag
+        }
+        completion_reward = {
+            custom_effect_tooltip = PRC_76_82_Consult_Marshal_Ye_s_opinion_tt
+            custom_effect_tooltip = PRC_76_82_qlxt_dxp_3
+            add_to_variable = {
+                var = CPC_bar_d
+                value = 1.5
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Coordination_of_the_Central_Police_Regiment
+        icon = GFX_PRC_76_82_Coordination_of_the_Central_Police_Regiment
+        cost = 1.6
+        x = 15
+        y = 1
+        prerequisite = {
+            focus = PRC_76_82_Destroying_the_Gang_of_Four
+        }
+        bypass = {
+            has_country_flag = PRC_GOF_has_been_destoryed_flag
+        }
+        completion_reward = {
+            custom_effect_tooltip = PRC_76_82_Coordination_of_the_Central_Police_Regiment_tt
+            custom_effect_tooltip = PRC_76_82_qlxt_dxp_2
+            custom_effect_tooltip = PRC_76_82_qlxt_hgf_3
+            add_to_variable = {
+                var = CPC_bar_d
+                value = 1
+            }
+            add_to_variable = {
+                var = CPC_bar_c
+                value = 1.5
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_The_final_word
+        icon = GFX_PRC_76_82_The_final_word
+        cost = 2
+        x = 13
+        y = 2
+        prerequisite = {
+            focus = PRC_76_82_Consult_Marshal_Ye_s_opinion
+        }
+        prerequisite = {
+            focus = PRC_76_82_Coordination_of_the_Central_Police_Regiment
+        }
+        completion_reward = {
+            custom_effect_tooltip = PRC_76_82_The_final_word_tt
+            custom_effect_tooltip = PRC_76_82_qlxt_dxp_1
+            add_to_variable = {
+                var = CPC_bar_d
+                value = 0.5
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_The_race_to_the_finish_line
+        icon = GFX_PRC_76_82_The_race_to_the_finish_line
+        cost = 2
+        x = 27
+        y = 0
+        mutually_exclusive = {
+            focus = PRC_76_82_Destroying_the_Gang_of_Four
+        }
+        completion_reward = {
+            custom_effect_tooltip = PRC_76_82_qlxt_gof_2
+            add_to_variable = {
+                var = CPC_bar_a
+                value = 0.5
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Problems_in_the_duty_room
+        icon = GFX_PRC_76_82_Problems_in_the_duty_room
+        cost = 1.4
+        x = 22
+        y = 1
+        prerequisite = {
+            focus = PRC_76_82_The_race_to_the_finish_line
+        }
+        completion_reward = {
+            random_list = {
+                30 = {
+                    custom_effect_tooltip = PRC_76_82_qlxt_gof_4
+                    add_to_variable = {
+                        var = CPC_bar_a
+                        value = 1.5
+                    }
+                }
+                70 = {
+                    custom_effect_tooltip = PRC_76_82_qlxt_gof_3
+                    add_to_variable = {
+                        var = CPC_bar_a
+                        value = 1
+                    }
+                }
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_The_Problem_of_Chairman_Mao_s_Will
+        icon = GFX_PRC_76_82_The_Problem_of_Chairman_Mao_s_Will
+        cost = 1.4
+        x = 24
+        y = 1
+        prerequisite = {
+            focus = PRC_76_82_The_race_to_the_finish_line
+        }
+        completion_reward = {
+            random_list = {
+                45 = {
+                    custom_effect_tooltip = PRC_76_82_qlxt_gof_3
+                    add_to_variable = {
+                        var = CPC_bar_a
+                        value = 1
+                    }
+                }
+                55 = {
+                    custom_effect_tooltip = PRC_76_82_qlxt_gof_2
+                    add_to_variable = {
+                        var = CPC_bar_a
+                        value = 0.5
+                    }
+                }
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Problems_of_the_South_Exit_Tank_Division
+        icon = GFX_PRC_76_82_Problems_of_the_South_Exit_Tank_Division
+        cost = 1.4
+        x = 26
+        y = 1
+        prerequisite = {
+            focus = PRC_76_82_The_race_to_the_finish_line
+        }
+        completion_reward = {
+            random_list = {
+                35 = {
+                    custom_effect_tooltip = PRC_76_82_qlxt_gof_4
+                    add_to_variable = {
+                        var = CPC_bar_a
+                        value = 1.5
+                    }
+                }
+                65 = {
+                    custom_effect_tooltip = PRC_76_82_qlxt_gof_3
+                    add_to_variable = {
+                        var = CPC_bar_a
+                        value = 1
+                    }
+                }
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Always_follow_the_established_policy_of_Chairman_Mao
+        icon = GFX_PRC_76_82_Always_follow_the_established_policy_of_Chairman_Mao
+        cost = 1.4
+        x = 28
+        y = 1
+        prerequisite = {
+            focus = PRC_76_82_The_race_to_the_finish_line
+        }
+        completion_reward = {
+            random_list = {
+                15 = {
+                    custom_effect_tooltip = PRC_76_82_qlxt_gof_3
+                    add_to_variable = {
+                        var = CPC_bar_a
+                        value = 1
+                    }
+                }
+                85 = {
+                    custom_effect_tooltip = PRC_76_82_qlxt_gof_2
+                    add_to_variable = {
+                        var = CPC_bar_a
+                        value = 0.5
+                    }
+                }
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_A_counter-coup
+        icon = GFX_PRC_76_82_A_counter-coup
+        cost = 1.4
+        x = 30
+        y = 1
+        prerequisite = {
+            focus = PRC_76_82_The_race_to_the_finish_line
+        }
+        completion_reward = {
+            random_list = {
+                20 = {
+                    custom_effect_tooltip = PRC_76_82_qlxt_gof_3
+                    add_to_variable = {
+                        var = CPC_bar_a
+                        value = 1
+                    }
+                }
+                80 = {
+                    custom_effect_tooltip = PRC_76_82_qlxt_gof_2
+                    add_to_variable = {
+                        var = CPC_bar_a
+                        value = 0.5
+                    }
+                }
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Evacuate_members
+        icon = GFX_PRC_76_82_Evacuate_members
+        cost = 1.4
+        x = 32
+        y = 1
+        prerequisite = {
+            focus = PRC_76_82_The_race_to_the_finish_line
+        }
+        completion_reward = {
+            random_list = {
+                90 = {
+                    custom_effect_tooltip = PRC_76_82_qlxt_gof_3
+                    add_to_variable = {
+                        var = CPC_bar_a
+                        value = 1
+                    }
+                }
+                10 = {
+                    custom_effect_tooltip = PRC_76_82_qlxt_gof_2
+                    add_to_variable = {
+                        var = CPC_bar_a
+                        value = 0.5
+                    }
+                }
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Reviving_the_Great_Proletarian_Cultural_Revolution
+        icon = GFX_PRC_76_82_Reviving_the_Great_Proletarian_Cultural_Revolution
+        cost = 2
+        x = 27
+        y = 2
+        prerequisite = {
+            focus = PRC_76_82_Problems_in_the_duty_room
+            focus = PRC_76_82_The_Problem_of_Chairman_Mao_s_Will
+            focus = PRC_76_82_Problems_of_the_South_Exit_Tank_Division
+            focus = PRC_76_82_Always_follow_the_established_policy_of_Chairman_Mao
+            focus = PRC_76_82_A_counter-coup
+            focus = PRC_76_82_Evacuate_members
+        }
+        completion_reward = {
+            custom_effect_tooltip = PRC_76_82_qlxt_gof_3
+            add_to_variable = {
+                var = CPC_bar_a
+                value = 1
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Wise_Leaders
+        icon = GFX_PRC_76_82_Wise_Leaders
+        cost = 2
+        x = 13
+        y = 3
+        available = {
+            has_country_flag = PRC_GOF_has_been_destroyed_flag
+        }
+        completion_reward = {
+            add_country_leader_trait = PRC_76_82_The_beginning_of_a_wise_leader        
+        }
+    }
+    focus = {
+        id = PRC_76_82_Business_as_usual
+        icon = GFX_PRC_76_82_Business_as_usual
+        cost = 2
+        x = 10
+        y = 4
+        prerequisite = {
+            focus = PRC_76_82_Wise_Leaders
+        }
+        completion_reward = {
+            add_timed_idea = { idea = PRC_76_82_Harnessing_Mao_s_legacy days = 365 }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Funeral_Committee_Matters
+        icon = GFX_PRC_76_82_Funeral_Committee_Matters
+        cost = 0.5
+        x = 13
+        y = 4
+        prerequisite = {
+            focus = PRC_76_82_Wise_Leaders
+        }
+        completion_reward = {
+            country_event = {
+                id = PRC_76_82.2
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Three_correct_treatments
+        icon = GFX_PRC_76_82_Three_correct_treatments
+        cost = 2
+        x = 16
+        y = 4
+        available = {
+            has_idea = PRC_76_82_Harnessing_Mao_s_legacy
+        }
+        bypass = {
+            NOT = { has_idea = PRC_76_82_Harnessing_Mao_s_legacy }
+            has_completed_focus = PRC_76_82_Business_as_usual
+        }
+        prerequisite = {
+            focus = PRC_76_82_Wise_Leaders
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = PRC_76_82_Harnessing_Mao_s_legacy
+                add_idea = PRC_76_82_Harnessing_Mao_s_legacy2
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Covering_up_the_April_5th_Incident
+        icon = GFX_PRC_76_82_Covering_up_the_April_5th_Incident
+        cost = 2
+        x = 9
+        y = 5
+        prerequisite = {
+            focus = PRC_76_82_Business_as_usual
+        }
+        completion_reward = {
+            add_timed_idea = { idea = PRC_76_82_The_aftermath_of_the_April_5_incident_dissipated days = 180 }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Chairman_Mao_Memorial_Hall
+        icon = GFX_PRC_76_82_Chairman_Mao_Memorial_Hall
+        cost = 4
+        x = 11
+        y = 5
+        available = {
+            hidden_trigger = {
+                has_country_flag = PRC_76_82_Chairman_Mao_Memorial_Hall_enabled
+            }
+        }
+        prerequisite = {
+            focus = PRC_76_82_Funeral_Committee_Matters
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Monument_to_Chairman_Mao
+        }
+        completion_reward = {
+            add_political_power = -20
+            add_stability = 0.025
+            add_to_variable = {
+                CPC_bar_d = 0.5
+                tooltip = PRC_76_82_qlxt_dxp_1
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Monument_to_Chairman_Mao
+        icon = GFX_PRC_76_82_Monument_to_Chairman_Mao
+        cost = 4
+        x = 15
+        y = 5
+        available = {
+            hidden_trigger = {
+                has_country_flag = PRC_76_82_Monument_to_Chairman_Mao_enabled
+            }
+        }
+        prerequisite = {
+            focus = PRC_76_82_Funeral_Committee_Matters
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Chairman_Mao_Memorial_Hall
+        }
+        completion_reward = {
+            add_political_power = 25
+            add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Exposing_and_criticizing_the_Gang_of_Four
+        icon = GFX_PRC_76_82_Exposing_and_criticizing_the_Gang_of_Four
+        cost = 2
+        x = 17
+        y = 5
+        prerequisite = {
+            focus = PRC_76_82_Three_correct_treatments
+        }
+        completion_reward = {
+            country_event = {
+                id = PRC_76_82.3
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Opposing_Rightism_in_the_Party
+        icon = GFX_PRC_76_82_Opposing_Rightism_in_the_Party
+        cost = 2
+        x = 13
+        y = 6
+        prerequisite = {
+            focus = PRC_76_82_Covering_up_the_April_5th_Incident
+        }
+        prerequisite = {
+            focus = PRC_76_82_Chairman_Mao_Memorial_Hall
+            focus = PRC_76_82_Monument_to_Chairman_Mao
+        }
+        prerequisite = {
+            focus = PRC_76_82_Exposing_and_criticizing_the_Gang_of_Four
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_c = 1
+                tooltip = PRC_76_82_qlxt_hgf_2
+            }
+            add_political_power = 50
+        }
+    }
+    focus = {
+        id = PRC_76_82_Continued_persecution_of_right_leaning_elements
+        icon = GFX_PRC_76_82_Continued_persecution_of_right_leaning_elements
+        cost = 2
+        x = 11
+        y = 7
+        prerequisite = {
+            focus = PRC_76_82_Opposing_Rightism_in_the_Party
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Rehabilitating_those_persecuted_by_the_Gang_of_Four
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Vindication_of_all_persecuted_persons
+        }
+        completion_reward = {
+            add_stability = -0.025
+            add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Rehabilitating_those_persecuted_by_the_Gang_of_Four
+        icon = GFX_PRC_76_82_Rehabilitating_those_persecuted_by_the_Gang_of_Four
+        cost = 2
+        x = 13
+        y = 7
+        prerequisite = {
+            focus = PRC_76_82_Opposing_Rightism_in_the_Party
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Continued_persecution_of_right_leaning_elements
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Vindication_of_all_persecuted_persons
+        }
+        completion_reward = {
+            add_stability = -0.01
+            add_to_variable = {
+                CPC_bar_d = 0.5
+                tooltip = PRC_76_82_qlxt_dxp_1
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Vindication_of_all_persecuted_persons
+        icon = GFX_PRC_76_82_Vindication_of_all_persecuted_persons
+        cost = 2
+        x = 15
+        y = 7
+        mutually_exclusive = {
+            focus = PRC_76_82_Continued_persecution_of_right_leaning_elements
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Rehabilitating_those_persecuted_by_the_Gang_of_Four
+        }
+        prerequisite = {
+            focus = PRC_76_82_Opposing_Rightism_in_the_Party
+        }
+        completion_reward = {
+            add_stability = -0.05
+            add_to_variable = {
+                CPC_bar_d = 1
+                tooltip = PRC_76_82_qlxt_dxp_2
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Retention_of_former_writing_team_members_in_Shanghai
+        icon = GFX_PRC_76_82_Retention_of_former_writing_team_members_in_Shanghai
+        cost = 2
+        x = 11
+        y = 8
+        prerequisite = {
+            focus = PRC_76_82_Continued_persecution_of_right_leaning_elements
+            focus = PRC_76_82_Rehabilitating_those_persecuted_by_the_Gang_of_Four
+            focus = PRC_76_82_Vindication_of_all_persecuted_persons
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Identified_the_Gang_of_Four_as_a_far_right_force
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Small-scale_opposition_to_left_leaning
+        }
+        completion_reward = {
+            add_political_power = 25
+            add_to_variable = {
+                CPC_bar_c = 1
+                tooltip = PRC_76_82_qlxt_hgf_2
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Identified_the_Gang_of_Four_as_a_far_right_force
+        icon = GFX_PRC_76_82_Identified_the_Gang_of_Four_as_a_far_right_force
+        cost = 2
+        x = 13
+        y = 8
+        prerequisite = {
+            focus = PRC_76_82_Continued_persecution_of_right_leaning_elements
+            focus = PRC_76_82_Rehabilitating_those_persecuted_by_the_Gang_of_Four
+            focus = PRC_76_82_Vindication_of_all_persecuted_persons
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Retention_of_former_writing_team_members_in_Shanghai
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Small-scale_opposition_to_left_leaning
+        }
+        completion_reward = {
+            add_political_power = -25
+            add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Small-scale_opposition_to_left_leaning
+        icon = GFX_PRC_76_82_Small-scale_opposition_to_left_leaning
+        cost = 2
+        x = 15
+        y = 8
+        mutually_exclusive = {
+            focus = PRC_76_82_Retention_of_former_writing_team_members_in_Shanghai
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Identified_the_Gang_of_Four_as_a_far_right_force
+        }
+        prerequisite = {
+            focus = PRC_76_82_Continued_persecution_of_right_leaning_elements
+            focus = PRC_76_82_Rehabilitating_those_persecuted_by_the_Gang_of_Four
+            focus = PRC_76_82_Vindication_of_all_persecuted_persons
+        }
+        completion_reward = {
+            add_popularity = {
+                ideology = ROOT
+                popularity = -0.025
+            }
+            add_to_variable = {
+                CPC_bar_d = 0.5
+                tooltip = PRC_76_82_qlxt_dxp_1
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Empowered_rebel_militias
+        icon = GFX_PRC_76_82_Empowered_rebel_militias
+        cost = 2
+        x = 10
+        y = 9
+        prerequisite = {
+            focus = PRC_76_82_Retention_of_former_writing_team_members_in_Shanghai
+        }
+        available = {
+            has_completed_focus = PRC_76_82_Continued_persecution_of_right_leaning_elements
+        }
+        completion_reward = {
+            add_popularity = {
+                ideology = maoism
+                popularity = 0.05
+            }
+            add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_The_decision_to_downplay_the_Mao_era
+        icon = GFX_PRC_76_82_The_decision_to_downplay_the_Mao_era
+        cost = 2
+        x = 12
+        y = 9
+        prerequisite = {
+            focus = PRC_76_82_Retention_of_former_writing_team_members_in_Shanghai
+            focus = PRC_76_82_Identified_the_Gang_of_Four_as_a_far_right_force
+            focus = PRC_76_82_Small-scale_opposition_to_left_leaning
+        }
+        completion_reward = {
+            add_political_power = -25
+            add_stability = 0.025
+            add_popularity = {
+                ideology = maoism
+                popularity = -0.05
+            }
+            add_to_variable = {
+                CPC_bar_d = 1
+                tooltip = PRC_76_82_qlxt_dxp_2
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Forced_Retirement_of_Rocket_Riding_Officials
+        icon = GFX_PRC_76_82_Forced_Retirement_of_Rocket_Riding_Officials
+        cost = 2
+        x = 14
+        y = 9
+        prerequisite = {
+            focus = PRC_76_82_Retention_of_former_writing_team_members_in_Shanghai
+            focus = PRC_76_82_Identified_the_Gang_of_Four_as_a_far_right_force
+            focus = PRC_76_82_Small-scale_opposition_to_left_leaning
+        }
+        completion_reward = {
+            add_timed_idea = {
+                idea = PRC_76_82_The_adjustment_of_administrative_system
+                days = 60
+            }
+            add_to_variable = {
+                CPC_bar_d = 1
+                tooltip = PRC_76_82_qlxt_dxp_2
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Doing_justice_to_the_early_leaders_of_the_Party
+        icon = GFX_PRC_76_82_Doing_justice_to_the_early_leaders_of_the_Party
+        cost = 2
+        x = 16
+        y = 9
+        prerequisite = {
+            focus = PRC_76_82_Small-scale_opposition_to_left_leaning
+        }
+        available = {
+            has_completed_focus = PRC_76_82_Vindication_of_all_persecuted_persons
+        }
+        completion_reward = {
+            add_political_power = -25
+            add_popularity = {
+                ideology = Social_Democratic
+                popularity = 0.025
+            }
+            add_popularity = {
+                ideology = Social_Liberalism
+                popularity = 0.025
+            }
+            add_popularity = {
+                ideology = socialist
+                popularity = 0.025
+            }
+            add_to_variable = {
+                CPC_bar_d = 1.5
+                tooltip = PRC_76_82_qlxt_dxp_3
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Set_Sail
+        icon = GFX_PRC_76_82_Set_Sail
+        cost = 2
+        x = 13
+        y = 10
+        prerequisite = {
+            focus = PRC_76_82_Retention_of_former_writing_team_members_in_Shanghai
+            focus = PRC_76_82_Identified_the_Gang_of_Four_as_a_far_right_force
+            focus = PRC_76_82_Small-scale_opposition_to_left_leaning
+        }
+        completion_reward = {
+            effect_tooltip = {
+                unlock_national_focus = PRC_76_82_Industrial_restructuring
+                unlock_national_focus = PRC_76_82_Army_modernization_and_construction
+                unlock_national_focus = PRC_76_82_The_Age_of_Openness
+            }
+            add_political_power = 50
+        }
+    }
+    focus = {
+        id = PRC_76_82_Committee_for_Editing_and_Publishing_the_Works_of_Mao_Zedong
+        icon = GFX_PRC_76_82_Committee_for_Editing_and_Publishing_the_Works_of_Mao_Zedong
+        cost = 2
+        x = 13
+        y = 11
+        prerequisite = {
+            focus = PRC_76_82_Set_Sail
+        }
+        completion_reward = {
+            country_event = {
+            	id = PRC_76_82.4 
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Euphemistic_criticism_of_Deng_Xiaoping
+        icon = GFX_PRC_76_82_Euphemistic_criticism_of_Deng_Xiaoping
+        cost = 2
+        x = 11
+        y = 12
+        prerequisite = {
+            focus = PRC_76_82_Set_Sail
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Remove_Deng_Xiaoping_s_name_from_the_criticism_list
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+            add_popularity = {
+                ideology = ROOT
+                popularity = 0.025
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Remove_Deng_Xiaoping_s_name_from_the_criticism_list
+        icon = GFX_PRC_76_82_Remove_Deng_Xiaoping_s_name_from_the_criticism_list
+        cost = 2
+        x = 15
+        y = 12
+        prerequisite = {
+            focus = PRC_76_82_Set_Sail
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Euphemistic_criticism_of_Deng_Xiaoping
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_d = 1
+                tooltip = PRC_76_82_qlxt_dxp_2
+            }
+            add_popularity = {
+                ideology = ROOT
+                popularity = -0.025
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_The_Trinity
+        icon = GFX_PRC_76_82_The_Trinity
+        cost = 2
+        x = 13
+        y = 13
+        prerequisite = {
+            focus = PRC_76_82_Euphemistic_criticism_of_Deng_Xiaoping
+            focus = PRC_76_82_Remove_Deng_Xiaoping_s_name_from_the_criticism_list
+        }
+        completion_reward = {
+            add_country_leader_trait = PRC_76_82_Top_leaders_of_the_Party_government_and_army
+            add_dynamic_modifier = {
+                modifier = PRC_76_82_Hua_Guofeng_s_reform
+            }
+            country_event = {
+                id = PRC_76_82.6
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Adjustment_of_employee_wages
+        icon = GFX_PRC_76_82_Adjustment_of_employee_wages
+        cost = 2
+        x = 13
+        y = 14
+        prerequisite = {
+            focus = PRC_76_82_The_Trinity
+        }
+        completion_reward = {
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var6 = 0.025
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var6_in
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var2 = 0.05
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var2_in
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var4 = 0.05
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var4_in
+            }
+            unlock_decision_tooltip = PRC_76_82_Establishment_of_staff_assemblies_in_enterprises
+        }
+    }
+    focus = {
+        id = PRC_76_82_Promoting_Family_Planning
+        icon = GFX_PRC_76_82_Promoting_Family_Planning
+        cost = 2
+        x = 12
+        y = 15
+        prerequisite = {
+            focus = PRC_76_82_Adjustment_of_employee_wages
+        }
+        completion_reward = {
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var7 = -0.25
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var7_de
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var6 = -0.03
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var6_de
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Development_of_urban_construction
+        icon = GFX_PRC_76_82_Development_of_urban_construction
+        cost = 2
+        x = 14
+        y = 15
+        prerequisite = {
+            focus = PRC_76_82_Adjustment_of_employee_wages
+        }
+        completion_reward = {
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var8 = 0.1
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var8_in
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var9 = 0.1
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var9_in
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Control_of_urban_prices
+        icon = GFX_PRC_76_82_Control_of_urban_prices
+        cost = 2
+        x = 12
+        y = 16
+        prerequisite = {
+            focus = PRC_76_82_Promoting_Family_Planning
+        }
+        completion_reward = {
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var6 = 0.06
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var6_in
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var4 = 0.05
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var4_in
+            }
+            unlock_decision_tooltip = PRC_76_82_Price_reform
+        }
+    }
+    focus = {
+        id = PRC_76_82_Issuance_of_treasury_bills
+        icon = GFX_PRC_76_82_Issuance_of_treasury_bills
+        cost = 2
+        x = 14
+        y = 16
+        prerequisite = {
+            focus = PRC_76_82_Development_of_urban_construction
+        }
+        completion_reward = {
+            add_political_power = -100
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var2 = -0.1
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var2_de
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var6 = -0.05
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var6_de
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Strengthening_environmental_protection
+        icon = GFX_PRC_76_82_Strengthening_environmental_protection
+        cost = 2
+        x = 13
+        y = 17
+        prerequisite = {
+            focus = PRC_76_82_Control_of_urban_prices
+        }
+        prerequisite = {
+            focus = PRC_76_82_Issuance_of_treasury_bills
+        }
+        completion_reward = {
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var4 = 0.025
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var4_in
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var7 = 0.15
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var7_in
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Evaluation_of_the_education_system
+        icon = GFX_PRC_76_82_Evaluation_of_the_education_system
+        cost = 2
+        x = 7
+        y = 14
+        prerequisite = {
+            focus = PRC_76_82_The_Trinity
+        }
+        completion_reward = {
+            add_political_power = 100
+            hidden_effect = {
+                country_event = {
+                    id = PRC_76_82.103
+                    days = 60
+                }
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_National_Conference_on_Higher_Education_Admissions
+        icon = GFX_PRC_76_82_National_Conference_on_Higher_Education_Admissions
+        cost = 2
+        x = 5
+        y = 15
+        prerequisite = {
+            focus = PRC_76_82_Evaluation_of_the_education_system
+        }
+        completion_reward = {
+            country_event = {
+                id = PRC_76_82.101
+                days = 5
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_The_problem_of_going_to_the_mountains_and_the_countryside
+        icon = GFX_PRC_76_82_The_problem_of_going_to_the_mountains_and_the_countryside
+        cost = 2
+        x = 7
+        y = 15
+        available = {
+            hidden_trigger = {
+                has_idea = PRC_76_82_Intellectual_youth_protest
+            }
+        }
+        prerequisite = {
+            focus = PRC_76_82_Evaluation_of_the_education_system
+        }
+        completion_reward = {
+            country_event = {
+                id = PRC_76_82.102
+                days = 5
+            }
+            remove_ideas = PRC_76_82_Intellectual_youth_protest
+        }
+    }
+    focus = {
+        id = PRC_76_82_Solving_the_problem_of_worker_advocacy_teams
+        icon = GFX_PRC_76_82_Solving_the_problem_of_worker_advocacy_teams
+        cost = 2
+        x = 9
+        y = 15
+        prerequisite = {
+            focus = PRC_76_82_Evaluation_of_the_education_system
+        }
+        completion_reward = {
+            country_event = {
+                id = PRC_76_82.105
+                days = 5
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Resumption_of_college_entrance_examinations
+        icon = GFX_PRC_76_82_Resumption_of_college_entrance_examinations
+        cost = 2
+        x = 4
+        y = 16
+        available = {
+            hidden_trigger = {
+                has_country_flag = PRC_76_82_Resumption_of_college_entrance_examinations_enabled
+            }
+        }
+        prerequisite = {
+            focus = PRC_76_82_National_Conference_on_Higher_Education_Admissions
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Continuation_of_the_University_of_Workers_and_Peasants
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_d = 1
+                tooltip = PRC_76_82_qlxt_dxp_2
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var1 = 0.05
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var1_in
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var2 = -0.2
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var2_de
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Continuation_of_the_University_of_Workers_and_Peasants
+        icon = GFX_PRC_76_82_Continuation_of_the_University_of_Workers_and_Peasants
+        cost = 2
+        x = 6
+        y = 16
+        available = {
+            hidden_trigger = {
+                has_country_flag = PRC_76_82_Continuation_of_the_University_of_Workers_and_Peasants_enabled
+            }
+        }
+        prerequisite = {
+            focus = PRC_76_82_National_Conference_on_Higher_Education_Admissions
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Resumption_of_college_entrance_examinations
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var2 = 0.2
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var2_in
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var3 = 0.01
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var3_in
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Maintaining_the_presence_of_the_Workers_Advocacy_Team
+        icon = GFX_PRC_76_82_Maintaining_the_presence_of_the_Workers_Advocacy_Team
+        cost = 2
+        x = 8
+        y = 16
+        available = {
+            hidden_trigger = {
+                has_country_flag = PRC_76_82_Maintaining_the_presence_of_the_Workers_Advocacy_Team_enabled
+            }
+        }
+        prerequisite = {
+            focus = PRC_76_82_Solving_the_problem_of_worker_advocacy_teams
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Removal_of_workers_propaganda_teams_from_schools
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_c = 1
+                tooltip = PRC_76_82_qlxt_hgf_2
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var1 = -0.01
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var1_de
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var2 = 0.05
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var2_in
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Removal_of_workers_propaganda_teams_from_schools
+        icon = GFX_PRC_76_82_Removal_of_workers_propaganda_teams_from_schools
+        cost = 2
+        x = 10
+        y = 16
+        available = {
+            hidden_trigger = {
+                has_country_flag = PRC_76_82_Removal_of_workers_propaganda_teams_from_schools_enabled
+            }
+        }
+        prerequisite = {
+            focus = PRC_76_82_Solving_the_problem_of_worker_advocacy_teams
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Maintaining_the_presence_of_the_Workers_Advocacy_Team
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_d = 0.5
+                tooltip = PRC_76_82_qlxt_dxp_1
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var2 = -0.05
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var2_de
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Development_of_industrial_basic_education
+        icon = GFX_PRC_76_82_Development_of_industrial_basic_education
+        cost = 2
+        x = 5
+        y = 17
+        prerequisite = {
+            focus = PRC_76_82_Resumption_of_college_entrance_examinations
+            focus = PRC_76_82_Continuation_of_the_University_of_Workers_and_Peasants
+        }
+        completion_reward = {
+            add_timed_idea = { idea = PRC_76_82_Development_of_industrial_basic_education_idea days = 365 }
+        }
+    }
+    focus = {
+        id = PRC_76_82_The_problem_of_the_Red_Guard_organization
+        icon = GFX_PRC_76_82_The_problem_of_the_Red_Guard_organization
+        cost = 2
+        x = 7
+        y = 17
+        prerequisite = {
+            focus = PRC_76_82_The_problem_of_going_to_the_mountains_and_the_countryside
+        }
+        completion_reward = {
+            country_event = {
+                id = PRC_76_82.104
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Restoration_of_the_Society_of_Arts_and_Letters
+        icon = GFX_PRC_76_82_Restoration_of_the_Society_of_Arts_and_Letters
+        cost = 2
+        x = 9
+        y = 17
+        prerequisite = {
+            focus = PRC_76_82_Maintaining_the_presence_of_the_Workers_Advocacy_Team
+            focus = PRC_76_82_Removal_of_workers_propaganda_teams_from_schools
+        }
+        completion_reward = {
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var2 = 0.15
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var2_in
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var4 = 0.1
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var4_in
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Modern_teaching_materials
+        icon = GFX_PRC_76_82_Modern_teaching_materials
+        cost = 2
+        x = 6
+        y = 18
+        prerequisite = {
+            focus = PRC_76_82_Development_of_industrial_basic_education
+            focus = PRC_76_82_Restoration_of_the_Society_of_Arts_and_Letters
+        }
+        completion_reward = {
+            add_political_power = -50
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var1 = 0.025
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var1_in
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var5 = 0.1
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var5_in
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Addition_of_higher_education_institutions
+        icon = GFX_PRC_76_82_Addition_of_higher_education_institutions
+        cost = 2
+        x = 8
+        y = 18
+        prerequisite = {
+            focus = PRC_76_82_Development_of_industrial_basic_education
+            focus = PRC_76_82_Restoration_of_the_Society_of_Arts_and_Letters
+        }
+        completion_reward = {
+            set_temp_variable = { temp_x = 10 }
+            PRC_76_82_spend_money_tt = yes
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var1 = 0.05
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var1_in
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Universal_Primary_Education
+        icon = GFX_PRC_76_82_Universal_Primary_Education
+        cost = 2
+        x = 7
+        y = 19
+        prerequisite = {
+            focus = PRC_76_82_Modern_teaching_materials
+        }
+        prerequisite = {
+            focus = PRC_76_82_Addition_of_higher_education_institutions
+        }
+        completion_reward = {
+            unlock_decision_category_tooltip = PRC_76_82_Universal_Primary_Education_cate
+            set_variable = { Universal_Primary_Education_period = 1 }
+            set_temp_variable = { Universal_Primary_Education_period_speed = 1 }
+            add_to_temp_variable = { Universal_Primary_Education_period_speed = modifier@PRC_76_82_Universal_premium_on_compulsory_education }
+            set_variable = { Universal_Primary_Education_time = 365 }
+            divide_variable = { Universal_Primary_Education_time = Universal_Primary_Education_period_speed }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Adjustment_of_domestic_policies
+        icon = GFX_PRC_76_82_Adjustment_of_domestic_policies
+        cost = 2
+        x = 19
+        y = 14
+        prerequisite = {
+            focus = PRC_76_82_The_Trinity
+        }
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+    focus = {
+        id = PRC_76_82_Revision_of_the_Constitution
+        icon = GFX_PRC_76_82_Revision_of_the_Constitution
+        cost = 2
+        x = 16
+        y = 15
+        available = {
+            date > "1978.3.5"
+            date < "1979.1.1"
+        }
+        bypass = {
+            date > "1979.1.1"
+        }
+        prerequisite = {
+            focus = PRC_76_82_Adjustment_of_domestic_policies
+        }
+        completion_reward = {
+            add_ideas = PRC_76_82_Constitution_of_78
+        }
+    }
+    focus = {
+        id = PRC_76_82_Change_the_lyrics_of_the_national_anthem
+        icon = GFX_PRC_76_82_Change_the_lyrics_of_the_national_anthem
+        cost = 2
+        x = 18
+        y = 15
+        prerequisite = {
+            focus = PRC_76_82_Adjustment_of_domestic_policies
+        }
+        completion_reward = {
+            add_political_power = 25
+            add_stability = 0.02
+            add_popularity = {
+                ideology = ROOT
+                popularity = 0.02
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Restoration_of_people_s_congresses_at_all_levels
+        icon = GFX_PRC_76_82_Restoration_of_people_s_congresses_at_all_levels
+        cost = 2
+        x = 20
+        y = 15
+        prerequisite = {
+            focus = PRC_76_82_Adjustment_of_domestic_policies
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Maintaining_the_existence_of_the_Revolutionary_Committee
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_d = 1
+                tooltip = PRC_76_82_qlxt_dxp_2
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var2 = -0.1
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var2_in
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var4 = 0.05
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var4_in
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Maintaining_the_existence_of_the_Revolutionary_Committee
+        icon = GFX_PRC_76_82_Maintaining_the_existence_of_the_Revolutionary_Committee
+        cost = 2
+        x = 22
+        y = 15
+        prerequisite = {
+            focus = PRC_76_82_Adjustment_of_domestic_policies
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Restoration_of_people_s_congresses_at_all_levels
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var2 = 0.15
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var2_in
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Protecting_the_right_to_freedom_of_expression_and_debate
+        icon = GFX_PRC_76_82_Protecting_the_right_to_freedom_of_expression_and_debate
+        cost = 2
+        x = 16
+        y = 16
+        prerequisite = {
+            focus = PRC_76_82_Revision_of_the_Constitution
+        }
+        prerequisite = {
+            focus = PRC_76_82_Change_the_lyrics_of_the_national_anthem
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Eliminate_extreme_freedom_of_speech
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var3 = 0.01
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var3_in
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var2 = 0.05
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var2_in
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var1 = 0.05
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var1_in
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Eliminate_extreme_freedom_of_speech
+        icon = GFX_PRC_76_82_Eliminate_extreme_freedom_of_speech
+        cost = 2
+        x = 18
+        y = 16
+        prerequisite = {
+            focus = PRC_76_82_Revision_of_the_Constitution
+        }
+        prerequisite = {
+            focus = PRC_76_82_Change_the_lyrics_of_the_national_anthem
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Protecting_the_right_to_freedom_of_expression_and_debate
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_d = 1.5
+                tooltip = PRC_76_82_qlxt_dxp_3
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var2 = -0.1
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var2_de
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var4 = 0.05
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var4_in
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Restoration_of_local_party_committees_and_governments
+        icon = GFX_PRC_76_82_Restoration_of_local_party_committees_and_governments
+        cost = 2
+        x = 20
+        y = 16
+        prerequisite = {
+            focus = PRC_76_82_Restoration_of_people_s_congresses_at_all_levels
+            focus = PRC_76_82_Maintaining_the_existence_of_the_Revolutionary_Committee
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Retaining_the_People_s_Commune
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_d = 1
+                tooltip = PRC_76_82_qlxt_dxp_2
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var11 = 0.1
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var11_in
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Retaining_the_People_s_Commune
+        icon = GFX_PRC_76_82_Retaining_the_People_s_Commune
+        cost = 2
+        x = 22
+        y = 16
+        prerequisite = {
+            focus = PRC_76_82_Restoration_of_people_s_congresses_at_all_levels
+            focus = PRC_76_82_Maintaining_the_existence_of_the_Revolutionary_Committee
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Restoration_of_local_party_committees_and_governments
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_c = 1
+                tooltip = PRC_76_82_qlxt_hgf_2
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var4 = 0.05
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var4_in
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var11 = -0.1
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var11_de
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Preserving_the_revolutionary_heritage
+        icon = GFX_PRC_76_82_Preserving_the_revolutionary_heritage
+        cost = 2
+        x = 16
+        y = 17
+        prerequisite = {
+            focus = PRC_76_82_Protecting_the_right_to_freedom_of_expression_and_debate
+            focus = PRC_76_82_Eliminate_extreme_freedom_of_speech
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Purge_the_Cult_of_the_Individual
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_c = 1.5
+                tooltip = PRC_76_82_qlxt_hgf_3
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var10 = 0.3
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var10_in
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Purge_the_Cult_of_the_Individual
+        icon = GFX_PRC_76_82_Purge_the_Cult_of_the_Individual
+        cost = 2
+        x = 18
+        y = 17
+        prerequisite = {
+            focus = PRC_76_82_Protecting_the_right_to_freedom_of_expression_and_debate
+            focus = PRC_76_82_Eliminate_extreme_freedom_of_speech
+        }
+        mutually_exclusive ={
+            focus = PRC_76_82_Preserving_the_revolutionary_heritage
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_d = 1.5
+                tooltip = PRC_76_82_qlxt_dxp_3
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var10 = -0.1
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var10_de
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var2 = 0.1
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var2_in
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Younger_cadre_groups
+        icon = GFX_PRC_76_82_Younger_cadre_groups
+        cost = 2
+        x = 20
+        y = 17
+        prerequisite = {
+            focus = PRC_76_82_Restoration_of_local_party_committees_and_governments
+        }
+        completion_reward = {
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var10 = -0.1
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var10_de
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var11 = 0.1
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var11_in
+            }
+            unlock_decision_tooltip = PRC_76_82_Abolition_of_cadre_tenure
+        }
+    }
+    focus = {
+        id = PRC_76_82_Streamlining_the_central_organization
+        icon = GFX_PRC_76_82_Streamlining_the_central_organization
+        cost = 2
+        x = 22
+        y = 17
+        prerequisite = {
+            focus = PRC_76_82_Restoration_of_local_party_committees_and_governments
+            focus = PRC_76_82_Retaining_the_People_s_Commune
+        }
+        completion_reward = {
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var6 = -0.05
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var6_de
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var11 = -0.25
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var11_de
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Carry_out_a_strict_campaign
+        icon = GFX_PRC_76_82_Carry_out_a_strict_campaign
+        cost = 2
+        x = 17
+        y = 18
+        prerequisite = {
+            focus = PRC_76_82_Preserving_the_revolutionary_heritage
+            focus = PRC_76_82_Purge_the_Cult_of_the_Individual
+        }
+        completion_reward = {
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var2 = -0.5
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var2_de
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var4 = 0.05
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var4_in
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Combating_Corruption
+        icon = GFX_PRC_76_82_Combating_Corruption
+        cost = 2
+        x = 21
+        y = 18
+        prerequisite = {
+            focus = PRC_76_82_Younger_cadre_groups
+            focus = PRC_76_82_Streamlining_the_central_organization
+        }
+        completion_reward = {
+            add_political_power = -50
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var2 = 0.2
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var2_in
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var4 = 0.05
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var4_in
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Establishment_of_the_Central_Advisory_Board
+        icon = GFX_PRC_76_82_Establishment_of_the_Central_Advisory_Board
+        cost = 2
+        x = 19
+        y = 19
+        prerequisite = {
+            focus = PRC_76_82_Carry_out_a_strict_campaign
+        }
+        prerequisite = {
+            focus = PRC_76_82_Combating_Corruption
+        }
+        completion_reward = {
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var3 = 0.02
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var3_in
+            }
+            add_to_variable = {
+                PRC_76_82_Hua_Guofeng_s_reform_var11 = 0.05
+                tooltip = PRC_76_82_Hua_Guofeng_s_reform_var11_in
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Industrial_restructuring
+        cost = 2
+        x = 27
+        y = 3
+        available = {
+            has_completed_focus = PRC_76_82_Set_Sail
+        }
+        available = {
+            has_country_flag = PRC_GOF_has_been_destroyed_flag
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Improving_indicators
+        cost = 2
+        x = 26
+        y = 4
+        prerequisite = {
+            focus = PRC_76_82_Industrial_restructuring
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Conservative_Economy
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_d = 0.5
+                tooltip = PRC_76_82_qlxt_dxp_1
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Conservative_Economy
+        cost = 2
+        x = 28
+        y = 4
+        prerequisite = {
+            focus = PRC_76_82_Industrial_restructuring
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Improving_indicators
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_The_Second_Conference_on_Agricultural_Learning_from_Dazhai
+        cost = 2
+        x = 24
+        y = 5
+        prerequisite = {
+            focus = PRC_76_82_Improving_indicators
+            focus = PRC_76_82_Conservative_Economy
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_National_Conference_on_Industrial_Science_Jubilee
+        cost = 2
+        x = 30
+        y = 5
+        prerequisite = {
+            focus = PRC_76_82_Improving_indicators
+            focus = PRC_76_82_Conservative_Economy
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_National_Agricultural_Mechanization
+        cost = 2
+        x = 23
+        y = 6
+        prerequisite = {
+            focus = PRC_76_82_The_Second_Conference_on_Agricultural_Learning_from_Dazhai
+        }
+        prerequisite = {
+            focus = PRC_76_82_National_Conference_on_Industrial_Science_Jubilee
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_National_completion_of_Dazhai_County
+        cost = 2
+        x = 25
+        y = 6
+        prerequisite = {
+            focus = PRC_76_82_The_Second_Conference_on_Agricultural_Learning_from_Dazhai
+        }
+        prerequisite = {
+            focus = PRC_76_82_National_Conference_on_Industrial_Science_Jubilee
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Symposium_on_Science_and_Education
+        cost = 2
+        x = 27
+        y = 6
+        prerequisite = {
+            focus = PRC_76_82_The_Second_Conference_on_Agricultural_Learning_from_Dazhai
+        }
+        prerequisite = {
+            focus = PRC_76_82_National_Conference_on_Industrial_Science_Jubilee
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_d = 1
+                tooltip = PRC_76_82_qlxt_dxp_2
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Learning_from_Ansteel_s_experience
+        cost = 2
+        x = 29
+        y = 6
+        prerequisite = {
+            focus = PRC_76_82_The_Second_Conference_on_Agricultural_Learning_from_Dazhai
+        }
+        prerequisite = {
+            focus = PRC_76_82_National_Conference_on_Industrial_Science_Jubilee
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Economic_management_system_reform
+        cost = 2
+        x = 31
+        y = 6
+        prerequisite = {
+            focus = PRC_76_82_The_Second_Conference_on_Agricultural_Learning_from_Dazhai
+        }
+        prerequisite = {
+            focus = PRC_76_82_National_Conference_on_Industrial_Science_Jubilee
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_d = 1
+                tooltip = PRC_76_82_qlxt_dxp_2
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Increase_communal_livestock_breeding
+        cost = 2
+        x = 21
+        y = 7
+        prerequisite = {
+            focus = PRC_76_82_National_Agricultural_Mechanization
+        }
+        prerequisite = {
+            focus = PRC_76_82_National_completion_of_Dazhai_County
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Opening_up_self_reserved_land_and_family_side_business
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_c = 1
+                tooltip = PRC_76_82_qlxt_hgf_2
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Opening_up_self_reserved_land_and_family_side_business
+        cost = 2
+        x = 25
+        y = 7
+        prerequisite = {
+            focus = PRC_76_82_National_Agricultural_Mechanization
+        }
+        prerequisite = {
+            focus = PRC_76_82_National_completion_of_Dazhai_County
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Increase_communal_livestock_breeding
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_d = 0.5
+                tooltip = PRC_76_82_qlxt_dxp_1
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Agricultural_raw_materials_to_the_countryside
+        cost = 2
+        x = 21
+        y = 8
+        prerequisite = {
+            focus = PRC_76_82_Increase_communal_livestock_breeding
+            focus = PRC_76_82_Opening_up_self_reserved_land_and_family_side_business
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Limited_implementation_of_the_package_to_the_household
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Limited_implementation_of_the_package_to_the_household
+        cost = 2
+        x = 25
+        y = 8
+        prerequisite = {
+            focus = PRC_76_82_Increase_communal_livestock_breeding
+            focus = PRC_76_82_Opening_up_self_reserved_land_and_family_side_business
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Agricultural_raw_materials_to_the_countryside
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_d = 1
+                tooltip = PRC_76_82_qlxt_dxp_2
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Affirming_the_views_of_the_National_Agricultural_Committee
+        cost = 2
+        x = 21
+        y = 9
+        prerequisite = {
+            focus = PRC_76_82_Agricultural_raw_materials_to_the_countryside
+            focus = PRC_76_82_Limited_implementation_of_the_package_to_the_household
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Definitely_a_big_package
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_c = 1
+                tooltip = PRC_76_82_qlxt_hgf_2
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Definitely_a_big_package
+        cost = 2
+        x = 25
+        y = 9
+        prerequisite = {
+            focus = PRC_76_82_Agricultural_raw_materials_to_the_countryside
+            focus = PRC_76_82_Limited_implementation_of_the_package_to_the_household
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Affirming_the_views_of_the_National_Agricultural_Committee
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_d = 1.5
+                tooltip = PRC_76_82_qlxt_dxp_3
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Commune_Collective_Farming
+        cost = 2
+        x = 21
+        y = 10
+        prerequisite = {
+            focus = PRC_76_82_Affirming_the_views_of_the_National_Agricultural_Committee
+            focus = PRC_76_82_Definitely_a_big_package
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Establishing_a_production_responsibility_system
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Establishing_a_production_responsibility_system
+        cost = 2
+        x = 25
+        y = 10
+        prerequisite = {
+            focus = PRC_76_82_Affirming_the_views_of_the_National_Agricultural_Committee
+            focus = PRC_76_82_Definitely_a_big_package
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Commune_Collective_Farming
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_d = 1
+                tooltip = PRC_76_82_qlxt_dxp_2
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_March_to_the_modernization_of_science_and_technology
+        cost = 2
+        x = 27
+        y = 8
+        prerequisite = {
+            focus = PRC_76_82_Symposium_on_Science_and_Education
+        }
+        prerequisite = {
+            focus = PRC_76_82_National_Agricultural_Mechanization
+        }
+        prerequisite = {
+            focus = PRC_76_82_Learning_from_Ansteel_s_experience
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_d = 0.5
+                tooltip = PRC_76_82_qlxt_dxp_1
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Construction_of_a_new_type_of_atomic_reactor
+        cost = 2
+        x = 27
+        y = 10
+        prerequisite = {
+            focus = PRC_76_82_March_to_the_modernization_of_science_and_technology
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Expand_the_autonomy_of_business_management
+        cost = 2
+        x = 29
+        y = 7
+        prerequisite = {
+            focus = PRC_76_82_Learning_from_Ansteel_s_experience
+        }
+        prerequisite = {
+            focus = PRC_76_82_Economic_management_system_reform
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Empowering_trade_unions_to_participate_in_economic_management
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_d = 1
+                tooltip = PRC_76_82_qlxt_dxp_2
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Empowering_trade_unions_to_participate_in_economic_management
+        cost = 2
+        x = 33
+        y = 7
+        prerequisite = {
+            focus = PRC_76_82_Learning_from_Ansteel_s_experience
+        }
+        prerequisite = {
+            focus = PRC_76_82_Economic_management_system_reform
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Expand_the_autonomy_of_business_management
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_c = 1.5
+                tooltip = PRC_76_82_qlxt_hgf_3
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Carrying_out_mixed_economy_reforms
+        cost = 2
+        x = 29
+        y = 8
+        prerequisite = {
+            focus = PRC_76_82_Expand_the_autonomy_of_business_management
+            focus = PRC_76_82_Empowering_trade_unions_to_participate_in_economic_management
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Collective_ownership_of_state_owned_enterprises
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_d = 1
+                tooltip = PRC_76_82_qlxt_dxp_2
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Collective_ownership_of_state_owned_enterprises
+        cost = 2
+        x = 33
+        y = 8
+        prerequisite = {
+            focus = PRC_76_82_Expand_the_autonomy_of_business_management
+            focus = PRC_76_82_Empowering_trade_unions_to_participate_in_economic_management
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Carrying_out_mixed_economy_reforms
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_c = 1.5
+                tooltip = PRC_76_82_qlxt_hgf_3
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Carry_out_corporate_profit_retention
+        cost = 2
+        x = 29
+        y = 9
+        prerequisite = {
+            focus = PRC_76_82_Carrying_out_mixed_economy_reforms
+            focus = PRC_76_82_Collective_ownership_of_state_owned_enterprises
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Improve_worker_welfare_levels
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_d = 1.5
+                tooltip = PRC_76_82_qlxt_dxp_3
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Improve_worker_welfare_levels
+        cost = 2
+        x = 33
+        y = 9
+        prerequisite = {
+            focus = PRC_76_82_Carrying_out_mixed_economy_reforms
+            focus = PRC_76_82_Collective_ownership_of_state_owned_enterprises
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Carry_out_corporate_profit_retention
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Reforming_the_system_of_state_owned_enterprises
+        cost = 2
+        x = 29
+        y = 10
+        prerequisite = {
+            focus = PRC_76_82_Carry_out_corporate_profit_retention
+            focus = PRC_76_82_Improve_worker_welfare_levels
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Rebuilding_the_All_China_Federation_of_Trade_Unions
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_d = 1
+                tooltip = PRC_76_82_qlxt_dxp_2
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Rebuilding_the_All_China_Federation_of_Trade_Unions
+        cost = 2
+        x = 33
+        y = 10
+        prerequisite = {
+            focus = PRC_76_82_Carry_out_corporate_profit_retention
+            focus = PRC_76_82_Improve_worker_welfare_levels
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Reforming_the_system_of_state_owned_enterprises
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_c = 1.5
+                tooltip = PRC_76_82_qlxt_hgf_3
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Allowing_the_package_to_the_household
+        cost = 2
+        x = 23
+        y = 11
+        prerequisite = {
+            focus = PRC_76_82_Establishing_a_production_responsibility_system
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_d = 1.5
+                tooltip = PRC_76_82_qlxt_dxp_3
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Adjustment_reform_consolidation_improvement
+        cost = 2
+        x = 25
+        y = 11
+        prerequisite = {
+            focus = PRC_76_82_Commune_Collective_Farming
+            focus = PRC_76_82_Establishing_a_production_responsibility_system
+        }
+        prerequisite = {
+            focus = PRC_76_82_Reforming_the_system_of_state_owned_enterprises
+            focus = PRC_76_82_Rebuilding_the_All_China_Federation_of_Trade_Unions
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_A_new_leap_forward
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_d = 1.5
+                tooltip = PRC_76_82_qlxt_dxp_3
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_A_new_leap_forward
+        cost = 2
+        x = 29
+        y = 11
+        prerequisite = {
+            focus = PRC_76_82_Commune_Collective_Farming
+            focus = PRC_76_82_Establishing_a_production_responsibility_system
+        }
+        prerequisite = {
+            focus = PRC_76_82_Reforming_the_system_of_state_owned_enterprises
+            focus = PRC_76_82_Rebuilding_the_All_China_Federation_of_Trade_Unions
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Adjustment_reform_consolidation_improvement
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_c = 1
+                tooltip = PRC_76_82_qlxt_hgf_2
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Establishment_of_a_long_system_of_management
+        cost = 2
+        x = 31
+        y = 11
+        prerequisite = {
+            focus = PRC_76_82_Reforming_the_system_of_state_owned_enterprises
+            focus = PRC_76_82_Rebuilding_the_All_China_Federation_of_Trade_Unions
+        }
+        completion_reward = {
+            add_to_variable = {
+                CPC_bar_c = 0.5
+                tooltip = PRC_76_82_qlxt_hgf_1
+            }
+        }
+    }
+    focus = {
+        id = PRC_76_82_Four_Modernizations
+        icon = GFX_PRC_76_82_Four_Modernizations
+        cost = 2
+        x = 27
+        y = 12
+        prerequisite = {
+            focus = PRC_76_82_Adjustment_reform_consolidation_improvement
+            focus = PRC_76_82_A_new_leap_forward
+        }
+        prerequisite = {
+            focus = PRC_76_82_Construction_of_a_new_type_of_atomic_reactor
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Stimulate_economic_vitality
+        icon = GFX_PRC_76_82_Stimulate_economic_vitality
+        cost = 2
+        x = 40
+        y = 3
+        available = {
+            has_country_flag = PRC_GOF_has_been_destroyed_flag
+            has_completed_focus = PRC_76_82_Four_Modernizations
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Continue_the_forty_three_program
+        cost = 2
+        x = 36
+        y = 4
+        prerequisite = {
+            focus = PRC_76_82_Stimulate_economic_vitality
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Eighty_two_program
+            focus = PRC_76_82_One_hundred_programs
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Eighty_two_program
+        cost = 2
+        x = 40
+        y = 4
+        prerequisite = {
+            focus = PRC_76_82_Stimulate_economic_vitality
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Continue_the_forty_three_program
+            focus = PRC_76_82_One_hundred_programs
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_One_hundred_programs
+        cost = 2
+        x = 44
+        y = 4
+        prerequisite = {
+            focus = PRC_76_82_Stimulate_economic_vitality
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Continue_the_forty_three_program
+            focus = PRC_76_82_Eighty_two_program
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Building_Special_Economic_Zones
+        cost = 2
+        x = 36
+        y = 5
+        prerequisite = {
+            focus = PRC_76_82_Continue_the_forty_three_program
+            focus = PRC_76_82_Eighty_two_program
+            focus = PRC_76_82_One_hundred_programs
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Introduction_of_foreign_industrial_equipment
+        cost = 2
+        x = 40
+        y = 5
+        prerequisite = {
+            focus = PRC_76_82_Continue_the_forty_three_program
+            focus = PRC_76_82_Eighty_two_program
+            focus = PRC_76_82_One_hundred_programs
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Start_of_economic_thaw
+        cost = 2
+        x = 44
+        y = 5
+        prerequisite = {
+            focus = PRC_76_82_Continue_the_forty_three_program
+            focus = PRC_76_82_Eighty_two_program
+            focus = PRC_76_82_One_hundred_programs
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Play_the_advantages_of_Guangdong_and_Fujian
+        cost = 2
+        x = 35
+        y = 6
+        prerequisite = {
+            focus = PRC_76_82_Building_Special_Economic_Zones
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Reduction_of_the_national_budget
+        cost = 2
+        x = 37
+        y = 6
+        prerequisite = {
+            focus = PRC_76_82_Building_Special_Economic_Zones
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Newly_built_Baoshan_Iron_and_Steel_Plant
+        cost = 2
+        x = 39
+        y = 6
+        prerequisite = {
+            focus = PRC_76_82_Introduction_of_foreign_industrial_equipment
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Construction_of_Sino_foreign_joint_ventures
+        cost = 2
+        x = 41
+        y = 6
+        prerequisite = {
+            focus = PRC_76_82_Introduction_of_foreign_industrial_equipment
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Founded_China_International_Trust_and_Investment_Corporation
+        cost = 2
+        x = 43
+        y = 6
+        prerequisite = {
+            focus = PRC_76_82_Start_of_economic_thaw
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Encourage_the_development_of_the_banking_industry
+        cost = 2
+        x = 45
+        y = 6
+        prerequisite = {
+            focus = PRC_76_82_Start_of_economic_thaw
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Development_of_social_team_enterprises
+        cost = 2
+        x = 36
+        y = 7
+        prerequisite = {
+            focus = PRC_76_82_Play_the_advantages_of_Guangdong_and_Fujian
+        }
+        prerequisite = {
+            focus = PRC_76_82_Reduction_of_the_national_budget
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Reduced_program_targets
+        cost = 2
+        x = 39
+        y = 7
+        prerequisite = {
+            focus = PRC_76_82_Newly_built_Baoshan_Iron_and_Steel_Plant
+        }
+        prerequisite = {
+            focus = PRC_76_82_Construction_of_Sino_foreign_joint_ventures
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Increase_in_program_targets
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Increase_in_program_targets
+        cost = 2
+        x = 41
+        y = 7
+        prerequisite = {
+            focus = PRC_76_82_Newly_built_Baoshan_Iron_and_Steel_Plant
+        }
+        prerequisite = {
+            focus = PRC_76_82_Construction_of_Sino_foreign_joint_ventures
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Reduced_program_targets
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Promoting_the_real_estate_industry
+        cost = 2
+        x = 44
+        y = 7
+        prerequisite = {
+            focus = PRC_76_82_Founded_China_International_Trust_and_Investment_Corporation
+        }
+        prerequisite = {
+            focus = PRC_76_82_Encourage_the_development_of_the_banking_industry
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Strengthen_the_opening_of_coastal_areas_to_the_outside_world
+        cost = 2
+        x = 36
+        y = 8
+        prerequisite = {
+            focus = PRC_76_82_Development_of_social_team_enterprises
+        }
+        prerequisite = {
+            focus = PRC_76_82_Reduced_program_targets
+            focus = PRC_76_82_Increase_in_program_targets
+        }
+        prerequisite = {
+            focus = PRC_76_82_Promoting_the_real_estate_industry
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Enhancing_business_dynamics
+        cost = 2
+        x = 39
+        y = 8
+        prerequisite = {
+            focus = PRC_76_82_Development_of_social_team_enterprises
+        }
+        prerequisite = {
+            focus = PRC_76_82_Reduced_program_targets
+            focus = PRC_76_82_Increase_in_program_targets
+        }
+        prerequisite = {
+            focus = PRC_76_82_Promoting_the_real_estate_industry
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Encourage_the_development_of_self_employment
+        cost = 2
+        x = 41
+        y = 8
+        prerequisite = {
+            focus = PRC_76_82_Development_of_social_team_enterprises
+        }
+        prerequisite = {
+            focus = PRC_76_82_Reduced_program_targets
+            focus = PRC_76_82_Increase_in_program_targets
+        }
+        prerequisite = {
+            focus = PRC_76_82_Promoting_the_real_estate_industry
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Production_of_color_television_sets
+        cost = 2
+        x = 44
+        y = 8
+        prerequisite = {
+            focus = PRC_76_82_Development_of_social_team_enterprises
+        }
+        prerequisite = {
+            focus = PRC_76_82_Reduced_program_targets
+            focus = PRC_76_82_Increase_in_program_targets
+        }
+        prerequisite = {
+            focus = PRC_76_82_Promoting_the_real_estate_industry
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Birdcage_Economy
+        cost = 2
+        x = 40
+        y = 9
+        prerequisite = {
+            focus = PRC_76_82_Strengthen_the_opening_of_coastal_areas_to_the_outside_world
+        }
+        prerequisite = {
+            focus = PRC_76_82_Enhancing_business_dynamics
+        }
+        prerequisite = {
+            focus = PRC_76_82_Encourage_the_development_of_self_employment
+        }
+        prerequisite = {
+            focus = PRC_76_82_Production_of_color_television_sets
+        }
+        completion_reward = {
+        }
+    }
+     focus = {#	军队现代化
+        id = PRC_76_82_Army_modernization_and_construction
+        x = 38
+        y = 12
+        completion_reward = {			
+		army_experience = 25
+		navy_experience = 25
+		air_experience = 25
+        }
+    }
+    focus = {#	看向外部
+        id = PRC_76_82_Look_Outside
+        x = 31
+        y = 13
+        prerequisite = {
+            focus = PRC_76_82_Army_modernization_and_construction
+        }
+        completion_reward = {			
+		army_experience = 25
+		navy_experience = 25
+		air_experience = 25
+        }
+    }
+    focus = {#	与西方合作
+        id = PRC_76_82_Military_Cooperation_with_the_West
+        x = 31
+        y = 14
+        prerequisite = {
+            focus = PRC_76_82_Look_Outside
+        }
+        completion_reward = {			
+		army_experience = 50
+		navy_experience = 50
+		air_experience = 50
+        }
+    }
+    focus = {#	引进先进炮兵装备
+        id = PRC_76_82_Introduction_of_advanced_artillery_equipment
+        x = 25
+        y = 15
+        prerequisite = {	
+            focus = PRC_76_82_Military_Cooperation_with_the_West
+        }
+        available = {
+            check_variable = { currentMoney > 3 }
+        }
+        completion_reward = {
+		add_to_variable ={
+      			currentMoney = -3
+      			tooltip = decrease_money_3B_tt
+		}
+		ENG = {
+			add_to_variable ={
+      				currentMoney = 3
+      				tooltip = increase_money_3B_tt
+			}
+		}
+		custom_effect_tooltip = PRC_76_82_Introduction_of_advanced_artillery_equipment_tt
+		hidden_effect = {
+		if = { 
+			limit = {
+			NPC = { NOT = { has_tech = direct_fire_gun_3 }}}
+			NPC = { set_technology = { direct_fire_gun_3 = 1 }}
+		}
+		add_equipment_to_stockpile = {
+			type = direct_fire_gun_equipment_3
+			amount = 150
+			producer = NPC
+		}
+		}
+		set_technology = {
+			direct_fire_gun_3 = 1
+		}
+		add_tech_bonus = {
+			name = PRC_76_82_Introduction_of_advanced_artillery_equipment
+			ahead_reduction = 3
+			bonus = 0.1
+			uses = 1
+			category = support_anti_tank
+		}
+		add_tech_bonus = {
+			name = PRC_76_82_Introduction_of_advanced_artillery_equipment
+			ahead_reduction = 3
+			bonus = 0.1
+			uses = 1
+			category = support_artillery
+		}
+		add_tech_bonus = {
+			name = PRC_76_82_Introduction_of_advanced_artillery_equipment
+			bonus = 0.35
+			uses = 1
+			category = armor
+		}
+        }
+    }
+    focus = {#	让步兵武器紧跟世界潮流
+        id = PRC_76_82_Keeping_infantry_weapons_up_to_date_with_international_trends
+        x = 27
+        y = 15
+        prerequisite = {
+            focus = PRC_76_82_Military_Cooperation_with_the_West
+        }
+        completion_reward = {
+		add_to_variable ={
+      			currentMoney = -1
+      			tooltip = decrease_money_1B_tt
+		}			
+		add_tech_bonus = {
+			name = PRC_76_82_Introduction_of_advanced_artillery_equipment
+			bonus = 0.1
+			ahead_reduction = 5
+			uses = 2
+			category = infantry_weapons
+		}	         
+        }
+    }
+    focus = {#	引进汽车动力技术
+        id = PRC_76_82_Introduction_of_automotive_power_technology
+        x = 24
+        y = 16
+        prerequisite = {	
+            focus = PRC_76_82_Introduction_of_advanced_artillery_equipment
+        }
+        prerequisite = {	
+            focus = PRC_76_82_Keeping_infantry_weapons_up_to_date_with_international_trends
+        }
+        completion_reward = {	
+		add_to_variable ={
+      			currentMoney = -2.5
+      			tooltip = decrease_money_2_5B_tt
+		}
+		add_tech_bonus = {
+			name = PRC_76_82_Introduction_of_automotive_power_technology
+			bonus = 0.25
+			ahead_reduction = 5
+			uses = 1
+			category = infantry_vehicles_truck
+		}         
+        }
+    }
+    focus = {#	增强装甲力量
+        id = PRC_76_82_Enhanced_armor_strength
+        x = 26
+        y = 16
+        prerequisite = {
+            focus = PRC_76_82_Introduction_of_advanced_artillery_equipment
+        }
+        prerequisite = {
+            focus = PRC_76_82_Keeping_infantry_weapons_up_to_date_with_international_trends
+        }
+        completion_reward = {			
+		add_timed_idea = { idea = Enhanced_armor_strength days = 1825 }
+        }
+    }
+    focus = {#	购买导弹
+        id = PRC_76_82_Purchase_of_missiles
+        x = 31
+        y = 15
+        prerequisite = {
+            focus = PRC_76_82_Military_Cooperation_with_the_West
+        }
+        bypass = {
+            has_tech = aam_short_range_3
+        }
+        completion_reward = {
+		ISR = {
+			add_to_variable ={
+      				currentMoney = 5
+      				tooltip = increase_money_5B_tt
+			}
+		}
+		add_to_variable ={
+      			currentMoney = -5
+      			tooltip = decrease_money_5B_tt
+		}
+		set_technology = {
+			aam_short_range_3 = 1
+		}
+#以色列怪蛇3，12.7万单价，共5亿美元
+        }
+    }
+    focus = {#	进口野战防空系统
+        id = PRC_76_82_Imported_field_air_defense_system
+        x = 28
+        y = 16
+        prerequisite = {
+            focus = PRC_76_82_Purchase_of_missiles
+        }
+        completion_reward = {
+		FRA = {
+			add_to_variable ={
+      				currentMoney = 0.8
+      				tooltip = increase_money_0_8B_tt
+			}
+		}
+		add_to_variable ={
+      			currentMoney = -0.8
+      			tooltip = decrease_money_0_8B_tt
+		}
+		custom_effect_tooltip = PRC_76_82_Imported_field_air_defense_system_tt
+		hidden_effect = {
+		if = { 
+			limit = {
+			NPC = { NOT = { has_tech = sam_short_range_2 }}}
+			NPC = { set_technology = { sam_short_range_2 = 1 }}
+		}
+		add_equipment_to_stockpile = {
+			type = sam_carrier_equipment_3
+			amount = 2
+			producer = NPC
+		}
+		}		
+		add_tech_bonus = {
+			name = PRC_76_82_Imported_field_air_defense_system
+			bonus = 1
+			uses = 1
+			technology = sam_short_range_3
+		}
+#法国响尾蛇2套，8000万美元
+        }
+    }
+    focus = {#	引进外国直升机技术
+        id = PRC_76_82_Imported_foreign_helicopter_technology
+        x = 30
+        y = 16
+        prerequisite = {
+            focus = PRC_76_82_Purchase_of_missiles
+        }
+        completion_reward = {
+		add_to_variable ={
+      			currentMoney = -2
+      			tooltip = decrease_money_2B_tt
+		}			
+		add_tech_bonus = {
+			name = PRC_76_82_Imported_foreign_helicopter_technology
+			ahead_reduction = 1
+			bonus = 0.1
+			uses = 1
+			category = helicopter
+		}	         
+        }
+    }
+    focus = {#	升级051型驱逐舰
+        id = PRC_76_82_Upgrade_Type_051_Destroyer
+        x = 32
+        y = 16
+        prerequisite = {
+            focus = PRC_76_82_Purchase_of_missiles
+        }
+        completion_reward = {
+		ENG = {
+			add_to_variable ={
+      				currentMoney = 2.4
+      				tooltip = increase_money_2_4B_tt
+			}
+		}
+		add_to_variable ={
+      			currentMoney = -2.4
+      			tooltip = decrease_money_2_4B_tt
+		}
+		add_tech_bonus = {
+			name = PRC_76_82_Upgrade_Type_051_Destroyer
+			bonus = 1
+			uses = 1
+			technology = screen_hull_heavy_1
+		}			
+		add_tech_bonus = {
+			name = PRC_76_82_Upgrade_Type_051_Destroyer
+			bonus = 1
+			uses = 1
+			category = maritime_sonar
+		}
+		add_tech_bonus = {
+			name = PRC_76_82_Upgrade_Type_051_Destroyer
+			bonus = 1
+			uses = 1
+			category = naval_maritime_ew_ss
+		}
+		add_tech_bonus = {
+			name = PRC_76_82_Upgrade_Type_051_Destroyer
+			bonus = 1
+			uses = 1
+			category = naval_maritime_ta_fcs
+		}
+		add_tech_bonus = {
+			name = PRC_76_82_Upgrade_Type_051_Destroyer
+			bonus = 1
+			uses = 1
+			category = naval_ship_armament_light
+		}
+#升级要1亿英镑	         
+        }
+    }
+    focus = {#	
+
+#42型驱逐舰
+        id = PRC_76_82_Introduction_of_42_class_destroyers
+        x = 34
+        y = 16
+        prerequisite = {
+            focus = PRC_76_82_Purchase_of_missiles
+        }
+        completion_reward = {
+		ENG = {
+			add_to_variable ={
+      				currentMoney = 9.6
+      				tooltip = increase_money_9_6B_tt
+			}
+		}
+		add_to_variable ={
+      			currentMoney = -9.6
+      			tooltip = decrease_money_9_6B_tt
+		}
+			create_equipment_variant = {
+				name = "Type 42 destroyer"
+				type = screen_hull_heavy_2
+				#name_group = POR_SS_HISTORICAL
+				parent_version = 0
+				modules = {
+					front_1_custom_slot = ship_armament_light_2
+					front_2_custom_slot = ship_SAM_mid_range_0
+					mid_1_custom_slot = ship_AA_gun_2
+					#rear_1_custom_slot = 无
+					rear_2_custom_slot = ship_screen_aviation_2
+					fixed_ship_air_radar_slot = A2A_navalradar_2
+					fixed_ship_surface_radar_slot = maritime_ta_fcs_3
+					fixed_sonar_slot = maritime_sonar_2
+					fixed_ship_asw_slot = ship_subkiller_3
+					fixed_ship_countermeasure_slot = countermeasures_2
+					fixed_ship_engine_slot = screen_engine_2
+					fixed_ship_CIWS_slot = ciws_0
+				}
+			}
+			#create_ship = { type = screen_hull_heavy_2 equipment_variant = "42型驱逐舰" creator = ENG }			
+			#create_ship = { type = screen_hull_heavy_2 equipment_variant = "42型驱逐舰" creator = ENG }	
+			#create_ship = { type = screen_hull_heavy_2 equipment_variant = "42型驱逐舰" creator = ENG }
+			load_oob = "PRC_76_82_42_destroyer"	
+        }
+#引进1艘要1.5亿英镑
+    }
+    focus = {#	升级我们的飞机
+        id = PRC_76_82_Upgrade_our_aircraft
+        x = 26
+        y = 17
+        prerequisite = {
+            focus = PRC_76_82_Imported_field_air_defense_system
+        }
+        completion_reward = {
+		add_to_variable ={
+      			currentMoney = -3
+      			tooltip = decrease_money_3B_tt
+		}			
+		add_tech_bonus = {
+			name = PRC_76_82_Upgrade_our_aircraft
+			bonus = 1
+			uses = 2
+			category = air_equipment
+		}
+        }
+    }
+    focus = {#	购买美系直升机
+        id = PRC_76_82_Buy_American_Helicopter
+        x = 28
+        y = 17
+        prerequisite = {
+            focus = PRC_76_82_Imported_field_air_defense_system
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Buy_Eurocopter
+        }
+        completion_reward = {
+		USA = {
+			add_to_variable ={
+      				currentMoney = 1.5
+      				tooltip = increase_money_1_5B_tt
+			}
+		}
+		add_to_variable ={
+      			currentMoney = -1.5
+      			tooltip = decrease_money_1_5B_tt
+		}
+		custom_effect_tooltip = PRC_76_82_Buy_American_Helicopter_tt
+		hidden_effect = {
+		if = { 
+			limit = {
+			NPC = { NOT = { has_tech = utility_helicopter_5 }}}
+			NPC = { set_technology = { utility_helicopter_5 = 1 }}
+		}
+		add_equipment_to_stockpile = {
+			type = utility_helicopter_equipment_5
+			amount = 24
+			producer = NPC
+		}
+		}
+##美国黑鹰24架，1.5亿美元,utility_helicopter_equipment_5	         
+        }
+    }
+    focus = {#	购买欧系直升机
+        id = PRC_76_82_Buy_Eurocopter
+        x = 30
+        y = 17
+        prerequisite = {
+            focus = PRC_76_82_Imported_foreign_helicopter_technology
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Buy_American_Helicopter
+        }
+        completion_reward = {
+		if = {
+			limit = { has_completed_focus =PRC_76_82_Transferring_funds_elsewhere }
+		FRA = {
+			add_to_variable ={
+      				currentMoney = 2.7
+      				tooltip = increase_money_2_7B_tt
+			}
+		}
+		add_to_variable ={
+      			currentMoney = -2.7
+      			tooltip = decrease_money_2_7B_tt
+		}
+		custom_effect_tooltip = PRC_76_82_Buy_Eurocopter_I_I_tt
+		custom_effect_tooltip = PRC_76_82_Buy_Eurocopter_I_II_tt
+		hidden_effect = {
+		if = { 
+			limit = {
+			NPC = { NOT = { has_tech = cargo_helicopter_2 }}}
+			NPC = { set_technology = { cargo_helicopter_2 = 1 }}
+		}
+		add_equipment_to_stockpile = {
+			type = cargo_helicopter_equipment_2
+			amount = 21
+			producer = NPC
+		}
+		if = { 
+			limit = {
+			NPC = { NOT = { has_tech = utility_helicopter_4 }}}
+			NPC = { set_technology = { utility_helicopter_4 = 1 }}
+		}
+		add_equipment_to_stockpile = {
+			type = utility_helicopter_equipment_4
+			amount = 75
+			producer = NPC
+		}
+		}
+		activate_mission = Research_straight_8_project_mission
+		}
+###上述任务未知错误，无显示无效果
+###法国超黄蜂N/N1，21架，共1亿5750万美元，法国海豚直升机75架，共1亿1100万美元
+				
+		else_if = {
+			limit = { NOT = { has_completed_focus =PRC_76_82_Transferring_funds_elsewhere }}	
+		FRA = {
+			add_to_variable ={
+      				currentMoney = 1.8
+      				tooltip = increase_money_1_8B_tt
+			}
+		}
+		add_to_variable ={
+      			currentMoney = -1.8
+      			tooltip = decrease_money_1_8B_tt
+		}		
+		custom_effect_tooltip = PRC_76_82_Buy_Eurocopter_II_I_tt
+		custom_effect_tooltip = PRC_76_82_Buy_Eurocopter_II_II_tt
+		hidden_effect = {
+		if = { 
+			limit = {
+			NPC = { NOT = { has_tech = cargo_helicopter_2 }}}
+			NPC = { set_technology = { cargo_helicopter_2 = 1 }}
+		}
+		add_equipment_to_stockpile = {
+			type = cargo_helicopter_equipment_2
+			amount = 14
+			producer = NPC
+		}
+		if = { 
+			limit = {
+			NPC = { NOT = { has_tech = utility_helicopter_4 }}}
+			NPC = { set_technology = { utility_helicopter_4 = 1 }}
+		}
+		add_equipment_to_stockpile = {
+			type = utility_helicopter_equipment_4
+			amount = 50
+			producer = NPC
+		}
+		}
+		}
+###法国超黄蜂N/N1，14架，共1亿零500万美元，法国海豚直升机50架，共7400万美元	         	         
+       }
+    }
+    focus = {#	西班牙轻型航母
+        id = PRC_76_82_Spanish_Light_Aircraft_Carrier
+        x = 32
+        y = 17
+        prerequisite = {
+            focus = PRC_76_82_Upgrade_Type_051_Destroyer
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Invincible_Class_Light_Aircraft_Carrier
+        }
+        completion_reward = {
+		SPR = {
+			add_to_variable ={
+      				currentMoney = 4
+      				tooltip = increase_money_4B_tt
+			}
+		}
+		add_to_variable ={
+      			currentMoney = -4
+      			tooltip = decrease_money_4B_tt
+		}			
+			create_equipment_variant = {
+				name = "Spanish light aircraft carrier"
+				type = carrier_hull_light_2
+				#name_group = POR_SS_HISTORICAL
+				parent_version = 0
+				modules = {
+					front_1_custom_slot = ship_AA_gun_2
+					#front_2_custom_slot = 无
+					mid_1_custom_slot = carrier_deck
+					#rear_1_custom_slot = ship_SAM_mid_range_0
+					#rear_2_custom_slot = ship_screen_aviation_2
+					fixed_ship_air_radar_slot = A2A_navalradar_1
+					fixed_ship_surface_radar_slot = maritime_ta_fcs_2
+					#fixed_sonar_slot = 无
+					#fixed_ship_asw_slot = 无
+					fixed_ship_countermeasure_slot = countermeasures_1
+					fixed_ship_engine_slot = capital_engine_1
+					#fixed_ship_CIWS_slot = ciws_0
+				}
+			}
+			#load_oob = "PRC_76_82_Liaoning_carrier_SPR"#The built fleet will flash back after clicking on the map
+#4亿美元	         
+        }
+    }
+    focus = {#	无敌级轻型航母
+        id = PRC_76_82_Invincible_Class_Light_Aircraft_Carrier
+        x = 34
+        y = 17
+        prerequisite = {
+            focus = PRC_76_82_Introduction_of_42_class_destroyers
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Spanish_Light_Aircraft_Carrier
+        }
+        completion_reward = {
+		ENG = {
+			add_to_variable ={
+      				currentMoney = 6
+      				tooltip = increase_money_6B_tt
+			}
+		}
+		add_to_variable ={
+      			currentMoney = -6
+      			tooltip = decrease_money_6B_tt
+		}			
+			create_equipment_variant = {
+				name = "Invincible class aircraft carrier"
+				type = carrier_hull_light_2
+				#name_group = POR_SS_HISTORICAL
+				parent_version = 0
+				modules = {
+					front_1_custom_slot = ship_AA_gun_2
+					#front_2_custom_slot = 无
+					mid_1_custom_slot = carrier_deck
+					rear_1_custom_slot = ship_SAM_mid_range_0
+					#rear_2_custom_slot = ship_screen_aviation_2
+					fixed_ship_air_radar_slot = A2A_navalradar_2
+					fixed_ship_surface_radar_slot = maritime_ta_fcs_3
+					#fixed_sonar_slot = 无
+					#fixed_ship_asw_slot = 无
+					fixed_ship_countermeasure_slot = countermeasures_2
+					fixed_ship_engine_slot = capital_engine_2
+					#fixed_ship_CIWS_slot = ciws_0
+				}
+			}
+			#load_oob = "PRC_76_82_Liaoning_carrier_ENG"#The built fleet will flash back after clicking on the map
+        }
+    }
+    focus = {#	学习潜艇技术
+        id = PRC_76_82_Learn_about_submarine_technology
+        x = 36
+        y = 17
+        prerequisite = {
+            focus = PRC_76_82_Introduction_of_42_class_destroyers
+        }
+        completion_reward = {
+		add_to_variable ={
+      			currentMoney = -1
+      			tooltip = decrease_money_1B_tt
+		}			
+		add_tech_bonus = {
+			name = PRC_76_82_Learn_about_submarine_technology
+			bonus = 1
+			uses = 1
+			category = ss_tech
+		}	         
+        }
+    }
+    focus = {#	幻影2000
+        id = PRC_76_82_Mirage_2000
+        x = 26
+        y = 18
+        prerequisite = {
+            focus = PRC_76_82_Upgrade_our_aircraft
+        }
+        completion_reward = {
+		FRA = {
+			add_to_variable ={
+      				currentMoney = 24
+      				tooltip = increase_money_24B_tt
+			}
+		}
+		add_to_variable ={
+      			currentMoney = -24
+      			tooltip = decrease_money_24B_tt
+		}
+		custom_effect_tooltip = PRC_76_82_Mirage_2000_tt
+		hidden_effect = {
+		if = { 
+			limit = {
+			NPC = { NOT = { has_tech = jet_multirole9 }}}
+			NPC = { set_technology = { jet_multirole9 = 1 }}
+		}
+		add_equipment_to_stockpile = {
+			type = jet_multirole_equipment_9
+			amount = 24
+			producer = NPC
+		}
+		}
+#幻影2000，40架，单价6000万美元，共计24亿美元
+        }
+    }
+    focus = {#	实验"树梢杀手"战术
+        id = PRC_76_82_Experimenting_with_treetop_killer_tactics
+        x = 29
+        y = 18
+        prerequisite = {
+            focus = PRC_76_82_Buy_American_Helicopter
+            focus = PRC_76_82_Buy_Eurocopter
+        }
+        completion_reward = {
+		army_experience = 25
+		air_experience = 25
+		add_timed_idea = { idea = Experimental_treetop_killer_tactics days = 3650 }
+        }
+    }
+    focus = {#	购买鹞式飞机
+        id = PRC_76_82_Purchase_of_Harrier_aircraft
+        x = 33
+        y = 18
+        prerequisite = {
+            focus = PRC_76_82_Spanish_Light_Aircraft_Carrier
+            focus = PRC_76_82_Invincible_Class_Light_Aircraft_Carrier
+        }
+        completion_reward = {
+		ENG = {
+			add_to_variable ={
+      				currentMoney = 8.4
+      				tooltip = increase_money_8_4B_tt
+			}
+		}
+		add_to_variable ={
+      			currentMoney = -8.4
+      			tooltip = decrease_money_8_4B_tt
+		}
+		custom_effect_tooltip = PRC_76_82_Purchase_of_Harrier_aircraft_tt
+		hidden_effect = {
+		if = { 
+			limit = {
+			NPC = { NOT = { has_tech = jump_jet1 }}}
+			NPC = { set_technology = { jump_jet1 = 1 }}
+		}
+		add_equipment_to_stockpile = {
+			type = jump_jet_equipment_1
+			amount = 24
+			producer = NPC
+		}
+		}
+#鹞式，30架，单价2800万人民币，共计8亿4000万人民币        
+        }
+    }
+    focus = {#	LM2500
+        id = PRC_76_82_LM2500_Gas_Turbine
+        x = 36
+        y = 18
+        prerequisite = {
+            focus = PRC_76_82_Learn_about_submarine_technology
+        }
+        completion_reward = {
+		USA = {
+			add_to_variable ={
+      				currentMoney = 1
+      				tooltip = increase_money_1B_tt
+			}
+		}
+		add_to_variable ={
+      			currentMoney = -1
+      			tooltip = decrease_money_1B_tt
+		}			
+		add_timed_idea = { idea = Introduce_LM2500_gas_turbine days = 3650 }	         
+        }
+    }
+    focus = {#	西式武器中国心
+        id = PRC_76_82_Western_style_weapons_Chinese_heart
+        x = 31
+        y = 19
+        prerequisite = {
+            focus = PRC_76_82_Mirage_2000
+        }
+        prerequisite = {
+            focus = PRC_76_82_Experimenting_with_treetop_killer_tactics
+        }
+        prerequisite = {
+            focus = PRC_76_82_Purchase_of_Harrier_aircraft
+        }
+        prerequisite = {
+            focus = PRC_76_82_LM2500_Gas_Turbine
+        }
+        completion_reward = {			
+		add_timed_idea = { idea = Western_weapon_Chinese_heart days = 3650 }	         
+        }
+    }
+    focus = {#	引进F4战斗机
+        id = PRC_76_82_Introduction_of_F4_fighter_jets
+        x = 35
+        y = 15
+        prerequisite = {
+            focus = PRC_76_82_Military_Cooperation_with_the_West
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Piloting_the_F16_79_program
+        }
+        completion_reward = {
+		USA = {
+			add_to_variable ={
+      				currentMoney = 2
+      				tooltip = increase_money_2B_tt
+			}
+		}
+		add_to_variable ={
+      			currentMoney = -2
+      			tooltip = decrease_money_2B_tt
+		}			
+		custom_effect_tooltip = PRC_76_82_Introduction_of_F4_fighter_jets_tt
+		hidden_effect = {
+		if = { 
+			limit = {
+			NPC = { NOT = { has_tech = jet_multirole6 }}}
+			NPC = { set_technology = { jet_multirole6 = 1 }}
+		}
+		add_equipment_to_stockpile = {
+			type = jet_multirole_equipment_6
+			amount = 40
+			producer = NPC
+		}
+		}
+#F4，40架，单价507万美元，共计2亿零280万美元	         
+        }
+    }
+    focus = {#	试水F16/79项目
+        id = PRC_76_82_Piloting_the_F16_79_program
+        x = 37
+        y = 15
+        prerequisite = {
+            focus = PRC_76_82_Military_Cooperation_with_the_West
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Introduction_of_F4_fighter_jets
+        }
+        completion_reward = {			
+		USA = {
+			add_to_variable ={
+      				currentMoney = 2
+      				tooltip = increase_money_2B_tt
+			}
+		}
+		add_to_variable ={
+      			currentMoney = -2
+      			tooltip = decrease_money_2B_tt
+		}
+		custom_effect_tooltip = PRC_76_82_Piloting_the_F16_79_program_tt
+		hidden_effect = {
+		if = { 
+			limit = {
+			NPC = { NOT = { has_tech = jet_multirole8 }}}
+			NPC = { set_technology = { jet_multirole8 = 1 }}
+		}
+		add_equipment_to_stockpile = {
+			type = jet_multirole_equipment_8
+			amount = 24
+			producer = NPC
+		}
+		}
+		add_timed_idea = { idea = Piloting_the_F16_79_program days = 1825 }	         
+        }
+#F16/79，24架，单价800万美元，共计2亿美元
+    }
+    focus = {#	雄猫
+        id = PRC_76_82_Red_Male_Cat
+        x = 36
+        y = 16
+        prerequisite = {
+            focus = PRC_76_82_Introduction_of_F4_fighter_jets
+            focus = PRC_76_82_Piloting_the_F16_79_program
+        }
+        completion_reward = {
+		USA = {
+			add_to_variable ={
+      				currentMoney = 6
+      				tooltip = increase_money_6B_tt
+			}
+		}
+		add_to_variable ={
+      			currentMoney = -6
+      			tooltip = decrease_money_6B_tt
+		}
+		custom_effect_tooltip = PRC_76_82_Red_Male_Cat_tt
+		hidden_effect = {
+		if = { 
+			limit = {
+			NPC = { NOT = { has_tech = cv_jet_multirole9 }}}
+			NPC = { set_technology = { cv_jet_multirole9 = 1 }}
+		}
+		add_equipment_to_stockpile = {
+			type = cv_jet_multirole_equipment_9
+			amount = 24
+			producer = NPC
+		}
+		}	         
+        }
+#F14，24架，单价2500万美元，共计6亿美元
+    }
+    focus = {#	来一款正版F-16?
+        id = PRC_76_82_Come_to_a_genuine_F16
+        x = 38
+        y = 16
+        prerequisite = {
+            focus = PRC_76_82_Piloting_the_F16_79_program
+        }
+        completion_reward = {
+		USA = {
+			add_to_variable ={
+      				currentMoney = 2.4
+      				tooltip = increase_money_2_4B_tt
+			}
+		}
+		add_to_variable ={
+      			currentMoney = -2.4
+      			tooltip = decrease_money_2_4B_tt
+		}			
+		custom_effect_tooltip = PRC_76_82_Come_to_a_genuine_F16_tt
+		hidden_effect = {
+		if = { 
+			limit = {
+			NPC = { NOT = { has_tech = jet_multirole8 }}}
+			NPC = { set_technology = { jet_multirole8 = 1 }}
+		}
+		add_equipment_to_stockpile = {
+			type = jet_multirole_equipment_8
+			amount = 24
+			producer = NPC
+		}
+		}
+        }
+#F16，24架，单价1000万美元，共计2亿4000万美元
+    }
+    focus = {#	自力更生
+        id = PRC_76_82_Self_reliance
+        x = 45
+        y = 13
+        prerequisite = {
+            focus = PRC_76_82_Army_modernization_and_construction
+        }
+        completion_reward = {			
+		army_experience = 25
+		navy_experience = 25
+		air_experience = 25
+        }
+    }
+    focus = {#	逆向研究米格-23
+        id = PRC_76_82_Reverse_Research_MiG_23
+        x = 41
+        y = 14
+        prerequisite = {
+            focus = PRC_76_82_Self_reliance
+        }
+        bypass = {
+            has_tech = jet_multirole7
+        }
+        completion_reward = {			
+		if = {
+			limit = { NOT = { has_tech = jet_multirole7 }}
+			add_tech_bonus = {
+				name = PRC_76_82_Reverse_Research_MiG_23
+				ahead_reduction = 3
+				bonus = 0.1
+				uses = 1
+				technology =jet_multirole7
+			}
+		}
+		add_tech_bonus = {
+			name = PRC_76_82_Reverse_Research_MiG_23
+			ahead_reduction = 1
+			bonus = 0.1
+			uses = 2
+			category = air_equipment
+		}
+	         
+        }
+    }
+    focus = {#	关于加强部队教育训练的决定
+        id = PRC_76_82_Decision_on_strengthening_the_education_and_training_of_troops
+        x = 43
+        y = 14
+        prerequisite = {
+            focus = PRC_76_82_Self_reliance
+        }
+        completion_reward = {			
+		army_experience = 75
+		navy_experience = 75
+		air_experience = 75
+        }
+    }
+    focus = {#	四炮一仪工程
+        id = PRC_76_82_Four_guns_and_one_instrument_project
+        x = 45
+        y = 14
+        prerequisite = {
+            focus = PRC_76_82_Self_reliance
+        }
+        completion_reward = {
+		add_to_variable ={
+      			currentMoney = -1.5
+      			tooltip = decrease_money_1_5B_tt
+		}			
+		add_tech_bonus = {
+			name = PRC_76_82_Four_guns_and_one_instrument_project
+			bonus = 1
+			uses = 1
+			category = support_anti_air
+		}
+		add_tech_bonus = {
+			name = PRC_76_82_Four_guns_and_one_instrument_project
+			bonus = 1
+			uses = 1
+			category = artillery_light
+		}
+		add_tech_bonus = {
+			name = PRC_76_82_Four_guns_and_one_instrument_project
+			bonus = 1
+			uses = 1
+			category = artillery_medium
+		}
+		add_tech_bonus = {
+			name = PRC_76_82_Four_guns_and_one_instrument_project
+			bonus = 1
+			uses = 1
+			category = artillery_heavy
+		}
+        }
+    }
+    focus = {#	纯洁军队思想
+        id = PRC_76_82_Purity_of_military_thinking
+        x = 47
+        y = 14
+        prerequisite = {
+            focus = PRC_76_82_Self_reliance
+        }
+        completion_reward = {			
+		add_stability = 0.03
+		add_war_support = 0.03
+        }
+    }
+    focus = {#	扩大造船工业
+        id = PRC_76_82_Expansion_of_shipbuilding_industry
+        x = 49
+        y = 14
+        prerequisite = {
+            focus = PRC_76_82_Self_reliance
+        }
+        completion_reward = {
+		add_to_variable ={
+      			currentMoney = -15
+      			tooltip = decrease_money_15B_tt
+		}
+		610 = {			
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+		613 = {			
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+		1569 = {			
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+        }
+    }
+    focus = {#	升级强-5平台
+        id = PRC_76_82_Upgrade_Strong_5_platform
+        x = 40
+        y = 15
+        prerequisite = {
+            focus = PRC_76_82_Reverse_Research_MiG_23
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Investing_in_Strong_6
+        }
+        completion_reward = {
+		add_to_variable ={
+      			currentMoney = -0.3
+      			tooltip = decrease_money_0_3B_tt
+		}			
+		add_tech_bonus = {
+			name = PRC_76_82_Upgrade_Strong_5_platform
+			bonus = 1
+			uses = 1
+			category = cas_cas
+		}
+        }
+    }
+    focus = {#	在强-6上投入资金
+        id = PRC_76_82_Investing_in_Strong_6
+        x = 42
+        y = 15
+        prerequisite = {
+            focus = PRC_76_82_Reverse_Research_MiG_23
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Upgrade_Strong_5_platform
+        }
+        bypass = {
+            has_tech = cas_stealth
+        }
+        completion_reward = {
+		add_to_variable ={
+      			currentMoney = -0.6
+      			tooltip = decrease_money_0_6B_tt
+		}			
+		add_timed_idea = { idea = Strong_6_attacker_aircraft days = 3650 }
+        }
+    }
+    focus = {#	逆向研究外国装甲车辆
+        id = PRC_76_82_Reverse_research_on_foreign_armored_vehicles
+        x = 44
+        y = 15
+        prerequisite = {
+            focus = PRC_76_82_Four_guns_and_one_instrument_project
+        }
+        completion_reward = {			
+		add_tech_bonus = {
+			name = PRC_76_82_Reverse_research_on_foreign_armored_vehicles
+			ahead_reduction = 3
+			bonus = 0.1
+			uses = 1
+			category = armor
+		}
+		add_tech_bonus = {
+			name = PRC_76_82_Reverse_research_on_foreign_armored_vehicles
+			ahead_reduction = 3
+			bonus = 0.1
+			uses = 1
+			category = infantry_vehicles
+		}	         
+        }
+    }
+    focus = {#	302式反坦克导弹
+        id = PRC_76_82_Type_302_Anti_Tank_Missile
+        x = 46
+        y = 15
+        prerequisite = {
+            focus = PRC_76_82_Four_guns_and_one_instrument_project
+        }
+        bypass = {
+            has_tech = atgm_1
+        }
+        completion_reward = {
+		add_to_variable ={
+      			currentMoney = -0.1
+      			tooltip = decrease_money_0_1B_tt
+		}			
+		add_tech_bonus = {
+			name = PRC_76_82_Type_302_Anti_Tank_Missile
+			bonus = 1
+			uses = 1
+			technology = atgm_1
+		}
+        }
+    }
+    focus = {#	继续直-6项目
+        id = PRC_76_82_Continue_straight_6_project
+        x = 48
+        y = 15
+        prerequisite = {
+            focus = PRC_76_82_Expansion_of_shipbuilding_industry
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Retirement_of_all_straight_6
+        }
+        bypass = {
+            has_tech = cargo_helicopter_1
+        }
+        completion_reward = {
+		add_to_variable ={
+      			currentMoney = -1
+      			tooltip = decrease_money_1B_tt
+		}
+		add_tech_bonus = {
+			name = PRC_76_82_Type_302_Anti_Tank_Missile
+			bonus = 1
+			uses = 1
+			technology = cargo_helicopter_1
+		}			
+        }
+    }
+    focus = {#	退役全部直-6
+        id = PRC_76_82_Retirement_of_all_straight_6
+        x = 50
+        y = 15
+        prerequisite = {
+            focus = PRC_76_82_Expansion_of_shipbuilding_industry
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Continue_straight_6_project
+        }
+        bypass = {
+            has_tech = cargo_helicopter_1
+        }
+        completion_reward = {
+		add_to_variable ={
+      			currentMoney = 0.5
+      			tooltip = increase_money_0_5B_tt
+		}			
+	         	add_political_power = 125
+        }
+    }
+    focus = {#	轰-6I
+        id = PRC_76_82_Boom_6I
+        x = 40
+        y = 16
+        prerequisite = {
+            focus = PRC_76_82_Upgrade_Strong_5_platform
+            focus = PRC_76_82_Investing_in_Strong_6
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Give_up_the_illusion_of_a_new_bomber
+        }
+        bypass = {
+            has_tech = jet_strategic_bomber4
+        }
+        completion_reward = {
+		add_to_variable ={
+      			currentMoney = -3
+      			tooltip = decrease_money_3B_tt
+		}			
+		add_tech_bonus = {
+			name = PRC_76_82_Boom_6I
+			bonus = 1
+			uses = 1
+			technology = jet_strategic_bomber4
+		}	         
+        }
+    }
+    focus = {#	放弃新轰炸机的幻想
+        id = PRC_76_82_Give_up_the_illusion_of_a_new_bomber
+        x = 42
+        y = 16
+        prerequisite = {
+            focus = PRC_76_82_Upgrade_Strong_5_platform
+            focus = PRC_76_82_Investing_in_Strong_6
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Boom_6I
+        }
+        bypass = {
+            has_tech = jet_strategic_bomber4
+        }
+        completion_reward = {
+		add_to_variable ={
+      			currentMoney = 0.5
+      			tooltip = increase_money_0_5B_tt
+		}
+	         	add_political_power = 125
+        }
+    }
+    focus = {#	定型直-7直升机
+        id = PRC_76_82_Finalized_straight_7_helicopter
+        x = 48
+        y = 16
+        prerequisite = {
+            focus = PRC_76_82_Continue_straight_6_project
+            focus = PRC_76_82_Retirement_of_all_straight_6
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Transferring_funds_elsewhere
+        }
+        bypass = {
+            has_tech = utility_helicopter_3
+        }
+        completion_reward = {
+		add_to_variable ={
+      			currentMoney = -1.5
+      			tooltip = decrease_money_1_5B_tt
+		}			
+	         	set_technology = {
+			utility_helicopter_3 = 1
+		}
+        }
+    }
+    focus = {#	转移资金到别处去
+        id = PRC_76_82_Transferring_funds_elsewhere
+        x = 50
+        y = 16
+        prerequisite = {
+            focus = PRC_76_82_Continue_straight_6_project
+            focus = PRC_76_82_Retirement_of_all_straight_6
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Finalized_straight_7_helicopter
+        }
+        bypass = {
+            has_tech = utility_helicopter_3
+        }
+        completion_reward = {
+		add_to_variable ={
+      			currentMoney = 0.7
+      			tooltip = increase_money_0_7B_tt
+		}			
+	         add_political_power = 125
+        }
+    }
+    focus = {#	继续水轰-5项目
+        id = PRC_76_82_Continue_the_Water_Boom_5_project
+        x = 41
+        y = 17
+        prerequisite = {
+            focus = PRC_76_82_Boom_6I
+            focus = PRC_76_82_Give_up_the_illusion_of_a_new_bomber
+        }
+        bypass = {
+            has_tech = naval_bomber6
+        }
+        completion_reward = {
+		add_to_variable ={
+      			currentMoney = -1
+      			tooltip = decrease_money_1B_tt
+		}			
+		add_tech_bonus = {
+			name = PRC_76_82_Continue_the_Water_Boom_5_project
+			bonus = 1
+			uses = 1
+			technology = naval_bomber6
+		}	         
+        }
+    }
+    focus = {#	继续改进苏系坦克
+        id = PRC_76_82_Continued_improvement_of_Soviet_tanks
+        x = 44
+        y = 17
+        prerequisite = {
+            focus = PRC_76_82_Reverse_research_on_foreign_armored_vehicles
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_WZ122_4_Tank
+        }
+        bypass = {
+            has_tech = main_battle_tanks_5
+        }
+        completion_reward = {
+		add_to_variable ={
+      			currentMoney = -1
+      			tooltip = decrease_money_1B_tt
+		}			
+		add_tech_bonus = {
+			name = PRC_76_82_Continued_improvement_of_Soviet_tanks
+			bonus = 1
+			uses = 1
+			category = armor
+		}	         
+        }
+    }
+    focus = {#	WZ122-4坦克
+        id = PRC_76_82_WZ122_4_Tank
+        x = 46
+        y = 17
+        prerequisite = {
+            focus = PRC_76_82_Type_302_Anti_Tank_Missile
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Continued_improvement_of_Soviet_tanks
+        }
+        bypass = {
+            has_tech = main_battle_tanks_6
+        }
+        completion_reward = {
+		add_to_variable ={
+      			currentMoney = -1.5
+      			tooltip = decrease_money_1_5B_tt
+		}			
+		add_tech_bonus = {
+			name = PRC_76_82_WZ122_4_Tank
+			bonus = 0.25
+			uses = 1
+			technology = main_battle_tanks_6
+		}
+		add_timed_idea = { idea = WZ122_4_Tank days = 1750 }
+        }
+    }
+    focus = {#	707航母项目
+        id = PRC_76_82_707_Aircraft_Carrier_Project
+        x = 48
+        y = 17
+        prerequisite = {
+            focus = PRC_76_82_Finalized_straight_7_helicopter
+            focus = PRC_76_82_Transferring_funds_elsewhere
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Let_go_of_unrealistic_fantasies
+        }
+        completion_reward = {
+		add_to_variable ={
+      			currentMoney = -20
+      			tooltip = decrease_money_20B_tt
+		}			
+			create_equipment_variant = {
+				name = "707_Aircraft_Carrier_Project"
+				type = carrier_hull_2
+				#name_group = POR_SS_HISTORICAL
+				parent_version = 0
+				modules = {
+					front_1_custom_slot = ship_AA_gun_2
+					#front_2_custom_slot = 无
+					mid_2_custom_slot = ship_SAM_mid_range_0
+					mid_1_custom_slot = carrier_deck
+					rear_1_custom_slot = carrier_deck
+					#rear_2_custom_slot = ship_screen_aviation_2
+					fixed_ship_air_radar_slot = A2A_navalradar_1
+					fixed_ship_surface_radar_slot = maritime_ta_fcs_2
+					#fixed_sonar_slot = 无
+					fixed_ship_engine_slot = capital_engine_1
+					#fixed_ship_asw_slot = 无
+					fixed_ship_countermeasure_slot = countermeasures_2
+					#fixed_ship_CIWS_slot = ciws_0
+				}
+			}	         
+        }
+    }
+    focus = {#	放弃不切实际的幻想
+        id = PRC_76_82_Let_go_of_unrealistic_fantasies
+        x = 50
+        y = 17
+        prerequisite = {
+            focus = PRC_76_82_Finalized_straight_7_helicopter
+            focus = PRC_76_82_Transferring_funds_elsewhere
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_707_Aircraft_Carrier_Project
+        }
+        completion_reward = {
+		add_to_variable ={
+      			currentMoney = 1
+      			tooltip = increase_money_1B_tt
+		}			
+		add_tech_bonus = {
+			name = PRC_76_82_Let_go_of_unrealistic_fantasies
+			bonus = 1
+			uses = 1
+			category = sub_hull_large_single
+		}
+		add_tech_bonus = {
+			name = PRC_76_82_Let_go_of_unrealistic_fantasies
+			bonus = 1
+			uses = 1
+			category = sub_hull_large_double
+		}	         
+        }
+    }
+    focus = {#	追上西方标准
+        id = PRC_76_82_Catching_up_with_Western_standards
+        x = 43
+        y = 18
+        prerequisite = {
+            focus = PRC_76_82_Continue_the_Water_Boom_5_project
+        }
+        prerequisite = {
+            focus = PRC_76_82_707_Aircraft_Carrier_Project
+        }
+        prerequisite = {
+            focus = PRC_76_82_Continued_improvement_of_Soviet_tanks
+            focus = PRC_76_82_WZ122_4_Tank
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Reduction_of_army_posts
+        }
+        completion_reward = {
+		add_to_variable ={
+      			currentMoney = -5
+      			tooltip = decrease_money_5B_tt
+		}			
+		add_timed_idea = { idea = Catching_up_with_Western_standards days = 3650 }
+		hidden_effect = {
+			add_timed_idea = { idea = Catching_up_with_Western_standards_hidden days = 3650 }
+		}
+        }
+    }
+    focus = {#	裁减军队员额
+        id = PRC_76_82_Reduction_of_army_posts
+        x = 47
+        y = 18
+        prerequisite = {
+            focus = PRC_76_82_707_Aircraft_Carrier_Project
+            focus = PRC_76_82_Let_go_of_unrealistic_fantasies
+        }
+        prerequisite = {
+            focus = PRC_76_82_Continued_improvement_of_Soviet_tanks
+            focus = PRC_76_82_WZ122_4_Tank
+        }
+        prerequisite = {
+            focus = PRC_76_82_Continue_the_Water_Boom_5_project
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Catching_up_with_Western_standards
+        }
+        completion_reward = {			
+		add_manpower = -1000000
+		army_experience = 125
+		navy_experience = 125
+		air_experience = 125
+        }
+    }
+    focus = {#	华北大演习
+        id = PRC_76_82_Great_North_China_Exercise
+        x = 45
+        y = 19
+        prerequisite = {
+            focus = PRC_76_82_Four_guns_and_one_instrument_project
+        }
+        available = {
+            command_power > 50
+        }
+        completion_reward = {			
+		add_command_power = -50
+		army_experience = 125
+		navy_experience = 125
+		air_experience = 125
+        }
+    }
+    focus = {
+        id = PRC_76_82_The_Age_of_Openness
+        cost = 2
+        x = 58
+        y = 2
+        available = {
+            has_country_flag = PRC_GOF_has_been_destroyed_flag
+            has_completed_focus = PRC_76_82_Set_Sail
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Diplomatic_Steering
+        cost = 2
+        x = 53
+        y = 3
+        prerequisite = {
+            focus = PRC_76_82_The_Age_of_Openness
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Stay_on_course
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Shrinking_Revolution_Aid
+        cost = 2
+        x = 48
+        y = 4
+        prerequisite = {
+            focus = PRC_76_82_Diplomatic_Steering
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Cancellation_of_support_for_the_NPA
+        cost = 2
+        x = 47
+        y = 5
+        prerequisite = {
+            focus = PRC_76_82_Shrinking_Revolution_Aid
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Severing_ties_with_the_Communist_Party_of_Burma
+        cost = 2
+        x = 49
+        y = 5
+        prerequisite = {
+            focus = PRC_76_82_Shrinking_Revolution_Aid
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Easing_relations_with_capitalist_countries
+        cost = 2
+        x = 48
+        y = 6
+        prerequisite = {
+            focus = PRC_76_82_Cancellation_of_support_for_the_NPA
+        }
+        prerequisite = {
+            focus = PRC_76_82_Severing_ties_with_the_Communist_Party_of_Burma
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Vindication_of_the_three_and_one_less_line
+        cost = 2
+        x = 53
+        y = 4
+        prerequisite = {
+            focus = PRC_76_82_Diplomatic_Steering
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Strengthening_Cooperation_with_the_United_States
+        cost = 2
+        x = 51
+        y = 5
+        prerequisite = {
+            focus = PRC_76_82_Vindication_of_the_three_and_one_less_line
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Strengthening_cooperation_with_India
+        cost = 2
+        x = 53
+        y = 5
+        prerequisite = {
+            focus = PRC_76_82_Vindication_of_the_three_and_one_less_line
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Assistance_to_Afghan_Mujahideen
+        cost = 2
+        x = 55
+        y = 5
+        prerequisite = {
+            focus = PRC_76_82_Vindication_of_the_three_and_one_less_line
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Visits_to_Western_European_countries
+        cost = 2
+        x = 52
+        y = 6
+        prerequisite = {
+            focus = PRC_76_82_Vindication_of_the_three_and_one_less_line
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Objective_understanding_of_Sino_Japanese_history
+        cost = 2
+        x = 54
+        y = 6
+        prerequisite = {
+            focus = PRC_76_82_Vindication_of_the_three_and_one_less_line
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Support_the_Indira_government
+        cost = 2
+        x = 53
+        y = 7
+        prerequisite = {
+            focus = PRC_76_82_Strengthening_cooperation_with_India
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Allow_self_funded_study_abroad
+        cost = 2
+        x = 58
+        y = 4
+        prerequisite = {
+            focus = PRC_76_82_The_Age_of_Openness
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Treaty_of_Peace_and_Friendship_between_China_and_Japan
+        cost = 2
+        x = 57
+        y = 5
+        prerequisite = {
+            focus = PRC_76_82_Allow_self_funded_study_abroad
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Restoration_of_diplomatic_relations_with_Yugoslavia
+        cost = 2
+        x = 59
+        y = 5
+        prerequisite = {
+            focus = PRC_76_82_Allow_self_funded_study_abroad
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Establishing_diplomatic_relations_with_the_United_States
+        cost = 2
+        x = 58
+        y = 6
+        prerequisite = {
+            focus = PRC_76_82_Treaty_of_Peace_and_Friendship_between_China_and_Japan
+        }
+        prerequisite = {
+            focus = PRC_76_82_Restoration_of_diplomatic_relations_with_Yugoslavia
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_US_Science_and_Technology_Assistance
+        cost = 2
+        x = 56
+        y = 7
+        prerequisite = {
+            focus = PRC_76_82_Establishing_diplomatic_relations_with_the_United_States
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Sending_Deng_Xiaoping_to_the_United_States
+        cost = 2
+        x = 58
+        y = 7
+        prerequisite = {
+            focus = PRC_76_82_Establishing_diplomatic_relations_with_the_United_States
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Premier_s_trip_to_Africa
+        cost = 2
+        x = 60
+        y = 7
+        prerequisite = {
+            focus = PRC_76_82_Establishing_diplomatic_relations_with_the_United_States
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Sino_Vietnamese_War
+        cost = 2
+        x = 63
+        y = 4
+        prerequisite = {
+            focus = PRC_76_82_Diplomatic_Steering
+            focus = PRC_76_82_Stay_on_course
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Easing_relations_with_Vietnam
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Preventive_attack_against_the_Soviet_Union
+        cost = 2
+        x = 62
+        y = 5
+        prerequisite = {
+            focus = PRC_76_82_Sino_Vietnamese_War
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Defensive_strategy
+        cost = 2
+        x = 64
+        y = 5
+        prerequisite = {
+            focus = PRC_76_82_Sino_Vietnamese_War
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Armistice_with_the_Soviet_Union
+        cost = 2
+        x = 63
+        y = 6
+        prerequisite = {
+            focus = PRC_76_82_Preventive_attack_against_the_Soviet_Union
+            focus = PRC_76_82_Defensive_strategy
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Independent_Southeast_Asia
+        cost = 2
+        x = 63
+        y = 7
+        prerequisite = {
+            focus = PRC_76_82_Armistice_with_the_Soviet_Union
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Stay_on_course
+        cost = 2
+        x = 71
+        y = 3
+        prerequisite = {
+            focus = PRC_76_82_The_Age_of_Openness
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Diplomatic_Steering
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Easing_relations_with_Vietnam
+        cost = 2
+        x = 66
+        y = 4
+        prerequisite = {
+            focus = PRC_76_82_Stay_on_course
+        }
+        mutually_exclusive = {
+            focus = PRC_76_82_Sino_Vietnamese_War
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Contact_Sudong_Group
+        cost = 2
+        x = 66
+        y = 5
+        prerequisite = {
+            focus = PRC_76_82_Easing_relations_with_Vietnam
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_The_New_Indochinese_Federation
+        cost = 2
+        x = 66
+        y = 6
+        prerequisite = {
+            focus = PRC_76_82_Contact_Sudong_Group
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Normalizing_the_Cambodian_Revolution
+        cost = 2
+        x = 68
+        y = 4
+        prerequisite = {
+            focus = PRC_76_82_Stay_on_course
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Close_to_Laos
+        cost = 2
+        x = 68
+        y = 5
+        prerequisite = {
+            focus = PRC_76_82_Normalizing_the_Cambodian_Revolution
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Helping_the_Burmese_Communist_Party_take_power
+        cost = 2
+        x = 68
+        y = 6
+        prerequisite = {
+            focus = PRC_76_82_Close_to_Laos
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Help_solidify_Bhutto_s_regime
+        cost = 2
+        x = 70
+        y = 4
+        prerequisite = {
+            focus = PRC_76_82_Stay_on_course
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Assistance_to_Afghan_Maoist_guerrillas
+        cost = 2
+        x = 70
+        y = 5
+        prerequisite = {
+            focus = PRC_76_82_Help_solidify_Bhutto_s_regime
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Maoist_involvement_in_the_Iranian_Revolution
+        cost = 2
+        x = 70
+        y = 6
+        prerequisite = {
+            focus = PRC_76_82_Assistance_to_Afghan_Maoist_guerrillas
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Maintaining_Hostility_to_India
+        cost = 2
+        x = 72
+        y = 4
+        prerequisite = {
+            focus = PRC_76_82_Stay_on_course
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Assistance_to_the_Nassar_Movement
+        cost = 2
+        x = 72
+        y = 5
+        prerequisite = {
+            focus = PRC_76_82_Maintaining_Hostility_to_India
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Cutting_the_Siliguri_Corridor
+        cost = 2
+        x = 72
+        y = 6
+        prerequisite = {
+            focus = PRC_76_82_Assistance_to_the_Nassar_Movement
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Assistance_to_the_partisans_of_the_Matai_border_area
+        cost = 2
+        x = 74
+        y = 4
+        prerequisite = {
+            focus = PRC_76_82_Stay_on_course
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Support_the_New_People_s_Army
+        cost = 2
+        x = 74
+        y = 5
+        prerequisite = {
+            focus = PRC_76_82_Assistance_to_the_partisans_of_the_Matai_border_area
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Triggering_the_Indonesian_Civil_War
+        cost = 2
+        x = 74
+        y = 6
+        prerequisite = {
+            focus = PRC_76_82_Support_the_New_People_s_Army
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Assistance_to_the_Asian_Revolutionary_Movement
+        cost = 2
+        x = 70
+        y = 7
+        prerequisite = {
+            focus = PRC_76_82_The_New_Indochinese_Federation
+        }
+        prerequisite = {
+            focus = PRC_76_82_Helping_the_Burmese_Communist_Party_take_power
+        }
+        prerequisite = {
+            focus = PRC_76_82_Maoist_involvement_in_the_Iranian_Revolution
+        }
+        prerequisite = {
+            focus = PRC_76_82_Cutting_the_Siliguri_Corridor
+        }
+        prerequisite = {
+            focus = PRC_76_82_Triggering_the_Indonesian_Civil_War
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Spreading_Maoist_ideas_in_South_America
+        cost = 2
+        x = 77
+        y = 4
+        prerequisite = {
+            focus = PRC_76_82_Stay_on_course
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Economic_cooperation_with_Cuba
+        cost = 2
+        x = 76
+        y = 5
+        prerequisite = {
+            focus = PRC_76_82_Spreading_Maoist_ideas_in_South_America
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Assistance_to_the_Shining_Path
+        cost = 2
+        x = 78
+        y = 5
+        prerequisite = {
+            focus = PRC_76_82_Spreading_Maoist_ideas_in_South_America
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Expanding_China_s_influence_in_the_international_arena
+        cost = 2
+        x = 81
+        y = 4
+        prerequisite = {
+            focus = PRC_76_82_Stay_on_course
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Support_for_Central_Asian_Separatists
+        cost = 2
+        x = 80
+        y = 5
+        prerequisite = {
+            focus = PRC_76_82_Expanding_China_s_influence_in_the_international_arena
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Support_for_Nasserists
+        cost = 2
+        x = 82
+        y = 5
+        prerequisite = {
+            focus = PRC_76_82_Expanding_China_s_influence_in_the_international_arena
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Mao_Zedong_Thought_Shines_on_the_Four_Seas
+        cost = 2
+        x = 79
+        y = 6
+        prerequisite = {
+            focus = PRC_76_82_Economic_cooperation_with_Cuba
+        }
+        prerequisite = {
+            focus = PRC_76_82_Assistance_to_the_Shining_Path
+        }
+        prerequisite = {
+            focus = PRC_76_82_Support_for_Central_Asian_Separatists
+        }
+        prerequisite = {
+            focus = PRC_76_82_Support_for_Nasserists
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Maintaining_the_unity_of_the_motherland
+        cost = 2
+        x = 58
+        y = 10
+        available = {
+            has_completed_focus = PRC_76_82_The_Age_of_Openness
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Letter_to_Taiwan_Compatriots
+        cost = 2
+        x = 58
+        y = 11
+        prerequisite = {
+            focus = PRC_76_82_Maintaining_the_unity_of_the_motherland
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Stop_shelling_of_Kinmen
+        cost = 2
+        x = 58
+        y = 12
+        prerequisite = {
+            focus = PRC_76_82_Letter_to_Taiwan_Compatriots
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Encouraging_uprisings_and_defections
+        cost = 2
+        x = 56
+        y = 13
+        prerequisite = {
+            focus = PRC_76_82_Stop_shelling_of_Kinmen
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Opposition_to_Taiwan_Relations_Act
+        cost = 2
+        x = 58
+        y = 13
+        prerequisite = {
+            focus = PRC_76_82_Stop_shelling_of_Kinmen
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Lowering_diplomatic_relations_with_the_Netherlands
+        cost = 2
+        x = 58
+        y = 14
+        prerequisite = {
+            focus = PRC_76_82_Opposition_to_Taiwan_Relations_Act
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_One_Country_Two_Systems_Concept
+        cost = 2
+        x = 60
+        y = 12
+        prerequisite = {
+            focus = PRC_76_82_Letter_to_Taiwan_Compatriots
+        }
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = PRC_76_82_Discussions_with_Britain_on_the_return_of_HongKong
+        cost = 2
+        x = 60
+        y = 13
+        prerequisite = {
+            focus = PRC_76_82_One_Country_Two_Systems_Concept
+        }
+        completion_reward = {
+        }
+    }
+}
+
+shared_focus = {
+    id = PRC_76_82_The_Eleventh_National_Congress_of_the_Communist_Party_of_China
+    cost = 2
+    x = 4
+    y = 4
+    available = {
+        always = no
+    }
+    allow_branch = {
+        has_country_flag = PRC_76_82_The_Eleventh_National_Congress_of_the_Communist_Party_of_China_show
+    }
+    completion_reward = {
+        country_event = {
+            id = PRC_76_82.5
+        }
+    }
+}
+shared_focus = {
+    id = PRC_76_82_Tit_for_tat_with_the_Reformists
+    cost = 2
+    x = 1
+    y = 5
+    prerequisite = {
+        focus = PRC_76_82_The_Eleventh_National_Congress_of_the_Communist_Party_of_China
+    }
+    mutually_exclusive = {
+        focus = PRC_76_82_Revise_the_Party_Constitution
+    }
+    completion_reward = {
+        add_stability = -0.025
+        add_to_variable = {
+            CPC_bar_c = 1
+            tooltip = PRC_76_82_qlxt_hgf_2
+        }
+    }
+}
+shared_focus = {
+    id = PRC_76_82_Revise_the_Party_Constitution
+    cost = 2
+    x = 3
+    y = 5
+    prerequisite = {
+        focus = PRC_76_82_The_Eleventh_National_Congress_of_the_Communist_Party_of_China
+    }
+    mutually_exclusive = {
+        focus = PRC_76_82_Tit_for_tat_with_the_Reformists
+    }
+    completion_reward = {
+        add_political_power = -25
+        add_to_variable = {
+            CPC_bar_d = 1.5
+            tooltip = PRC_76_82_qlxt_dxp_3
+        }
+    }
+}
+shared_focus = {
+    id = PRC_76_82_Carry_forward_good_style
+    cost = 2
+    x = 5
+    y = 5
+    prerequisite = {
+        focus = PRC_76_82_The_Eleventh_National_Congress_of_the_Communist_Party_of_China
+    }
+    mutually_exclusive = {
+        focus = PRC_76_82_Take_seriously_the_restoration_tendency_of_some_people_in_the_party
+    }
+    completion_reward = {
+        add_political_power = 15
+        country_event = {
+            id = PRC_76_82.10
+        }
+    }
+}
+shared_focus = {
+    id = PRC_76_82_Take_seriously_the_restoration_tendency_of_some_people_in_the_party
+    cost = 2
+    x = 7
+    y = 5
+    prerequisite = {
+        focus = PRC_76_82_The_Eleventh_National_Congress_of_the_Communist_Party_of_China
+    }
+    mutually_exclusive = {
+        focus = PRC_76_82_Carry_forward_good_style
+    }
+    completion_reward = {
+        add_stability = 0.025
+        add_to_variable = {
+            CPC_bar_c = 1.5
+            tooltip = PRC_76_82_qlxt_hgf_3
+        }
+    }
+}
+shared_focus = {
+    id = PRC_76_82_Adherence_to_the_basic_party_line
+    cost = 2
+    x = 4
+    y = 6
+    prerequisite = {
+        focus = PRC_76_82_Tit_for_tat_with_the_Reformists
+        focus = PRC_76_82_Revise_the_Party_Constitution
+    }
+    prerequisite = {
+        focus = PRC_76_82_Carry_forward_good_style
+        focus = PRC_76_82_Take_seriously_the_restoration_tendency_of_some_people_in_the_party
+    }
+    completion_reward = {
+        unlock_decision_tooltip = PRC_76_82_Hold_high_the_great_banner_of_Chairman_Mao
+        unlock_decision_tooltip = PRC_76_82_Building_a_modern_and_strong_socialist_state
+    }
+}
+shared_focus = {
+    id = PRC_76_82_Establishment_of_party_groups_and_party_committees
+    cost = 2
+    x = 3
+    y = 7
+    prerequisite = {
+        focus = PRC_76_82_Adherence_to_the_basic_party_line
+    }
+    bypass = {
+        hidden_trigger = {
+            NOT = {
+                has_idea = PRC_76_82_Mao_Zedong_Thought
+                has_idea = PRC_76_82_Mao_Zedong_Thought2
+                has_idea = PRC_76_82_Mao_Zedong_Thought3
+                has_idea = PRC_76_82_Mao_Zedong_Thought4
+            }
+        }
+    }
+    completion_reward = {
+        if = {
+            limit = {
+                has_idea = PRC_76_82_Mao_Zedong_Thought
+            }
+            swap_ideas = {
+                remove_idea = PRC_76_82_Mao_Zedong_Thought
+                add_idea = PRC_76_82_Mao_Zedong_Thought2
+            }
+        }
+        else = {
+            swap_ideas = {
+                remove_idea = PRC_76_82_Mao_Zedong_Thought3
+                add_idea = PRC_76_82_Mao_Zedong_Thought4
+            }
+        }
+    }
+}
+shared_focus = {
+    id = PRC_76_82_Restoration_of_party_schools_at_all_levels
+    cost = 2
+    x = 5
+    y = 7
+    bypass = {
+        hidden_trigger = {
+            NOT = {
+                has_idea = PRC_76_82_Mao_Zedong_Thought
+                has_idea = PRC_76_82_Mao_Zedong_Thought2
+                has_idea = PRC_76_82_Mao_Zedong_Thought3
+                has_idea = PRC_76_82_Mao_Zedong_Thought4
+            }
+        }
+    }
+    prerequisite = {
+        focus = PRC_76_82_Adherence_to_the_basic_party_line
+    }
+    completion_reward = {
+        if = {
+            limit = {
+                has_idea = PRC_76_82_Mao_Zedong_Thought
+            }
+            swap_ideas = {
+                remove_idea = PRC_76_82_Mao_Zedong_Thought
+                add_idea = PRC_76_82_Mao_Zedong_Thought3
+            }
+        }
+        else = {
+            swap_ideas = {
+                remove_idea = PRC_76_82_Mao_Zedong_Thought2
+                add_idea = PRC_76_82_Mao_Zedong_Thought4
+            }
+        }
+    }
+}
+shared_focus = {
+    id = PRC_76_82_Foreign_Leapfrog
+    cost = 2
+    x = 4
+    y = 8
+    prerequisite = {
+        focus = PRC_76_82_Establishment_of_party_groups_and_party_committees
+    }
+    prerequisite = {
+        focus = PRC_76_82_Restoration_of_party_schools_at_all_levels
+    }
+    completion_reward = {
+        unlock_decision_category_tooltip = PRC_76_82_Foreign_Leapfrog_cate
+        hidden_effect = {
+            set_variable = { PRC_76_82_Foreign_exchange = 0.95 }
+            set_variable = { PRC_76_82_Foreign_debt = 0 }
+            set_variable = { PRC_76_82_Foreign_achievement = 0 }
+        }
+    }
+}
+
+shared_focus = {
+    id = PRC_76_82_The_Great_Discussion_on_the_Standard_of_Truth
+    icon = GFX_PRC_76_82_The_Great_Discussion_on_the_Standard_of_Truth
+    cost = 2
+    available = {
+        date > "1978.5.10"
+    }
+    bypass = {
+        date > "1978.5.10"
+    }
+    allow_branch = {
+        has_country_flag = PRC_76_82_The_Great_Discussion_on_the_Standard_of_Truth_show
+    }
+    x = 4
+    y = 9
+    completion_reward = {
+    }
+}
+shared_focus = {
+    id = PRC_76_82_Practice_as_the_only_standard_to_test_the_right_and_wrong_of_the_route
+    icon = GFX_PRC_76_82_Practice_as_the_only_standard_to_test_the_right_and_wrong_of_the_route
+    cost = 5
+    x = 1
+    y = 10
+    prerequisite = {
+        focus = PRC_76_82_The_Great_Discussion_on_the_Standard_of_Truth
+    }
+    mutually_exclusive = {
+        focus = PRC_76_82_Rereading_Where_Do_People_Get_Their_Right_Ideas_From
+    }
+    completion_reward = {
+        country_event = {
+            id = PRC_76_82.9
+        }
+    }
+}
+shared_focus = {
+    id = PRC_76_82_Rereading_Where_Do_People_Get_Their_Right_Ideas_From
+    icon = GFX_PRC_76_82_Rereading_Where_Do_People_Get_Their_Right_Ideas_From
+    cost = 5
+    x = 3
+    y = 10
+    prerequisite = {
+        focus = PRC_76_82_The_Great_Discussion_on_the_Standard_of_Truth
+    }
+    mutually_exclusive = {
+        focus = PRC_76_82_Practice_as_the_only_standard_to_test_the_right_and_wrong_of_the_route
+    }
+    completion_reward = {
+        country_event = {
+            id = PRC_76_82.8
+        }
+    }
+}
+shared_focus = {
+    id = PRC_76_82_Fully_understand_Mao_Zedong_s_relevant_instructions
+    icon = GFX_PRC_76_82_Fully_understand_Mao_Zedong_s_relevant_instructions
+    cost = 5
+    x = 5
+    y = 10
+    prerequisite = {
+        focus = PRC_76_82_The_Great_Discussion_on_the_Standard_of_Truth
+    }
+    mutually_exclusive = {
+        focus = PRC_76_82_Complete_understanding_of_Chairman_Mao_s_revolutionary_line
+    }
+    completion_reward = {
+        country_event = {
+            id = PRC_76_82.16
+        }
+    }
+}
+shared_focus = {
+    id = PRC_76_82_Complete_understanding_of_Chairman_Mao_s_revolutionary_line
+    icon = GFX_PRC_76_82_Complete_understanding_of_Chairman_Mao_s_revolutionary_line
+    cost = 5
+    x = 7
+    y = 10
+    prerequisite = {
+        focus = PRC_76_82_The_Great_Discussion_on_the_Standard_of_Truth
+    }
+    mutually_exclusive = {
+        focus = PRC_76_82_Fully_understand_Mao_Zedong_s_relevant_instructions
+    }
+    completion_reward = {
+        country_event = {
+            id = PRC_76_82.17
+        }
+    }
+}
+shared_focus = {
+    id = PRC_76_82_Truth_standard_remedial_course
+    icon = GFX_PRC_76_82_Truth_standard_remedial_course
+    cost = 5
+    x = 1
+    y = 11
+    prerequisite = {
+        focus = PRC_76_82_Practice_as_the_only_standard_to_test_the_right_and_wrong_of_the_route
+        focus = PRC_76_82_Rereading_Where_Do_People_Get_Their_Right_Ideas_From
+    }
+    mutually_exclusive = {
+        focus = PRC_76_82_The_purpose_of_the_proletariat_in_understanding_the_world
+    }
+    completion_reward = {
+        add_to_variable = {
+            CPC_bar_d = 1.5
+            tooltip = PRC_76_82_qlxt_dxp_3
+        }
+    }
+}
+shared_focus = {
+    id = PRC_76_82_The_purpose_of_the_proletariat_in_understanding_the_world
+    icon = GFX_PRC_76_82_The_purpose_of_the_proletariat_in_understanding_the_world
+    cost = 5
+    x = 3
+    y = 11
+    prerequisite = {
+        focus = PRC_76_82_Practice_as_the_only_standard_to_test_the_right_and_wrong_of_the_route
+        focus = PRC_76_82_Rereading_Where_Do_People_Get_Their_Right_Ideas_From
+    }
+    mutually_exclusive = {
+        focus = PRC_76_82_Truth_standard_remedial_course
+    }
+    completion_reward = {
+        add_to_variable = {
+            CPC_bar_c = 1
+            tooltip = PRC_76_82_qlxt_hgf_2
+        }
+    }
+}
+shared_focus = {
+    id = PRC_76_82_Theoretical_work_retreat
+    icon = GFX_PRC_76_82_Theoretical_work_retreat
+    cost = 5
+    x = 5
+    y = 11
+    prerequisite = {
+        focus = PRC_76_82_Fully_understand_Mao_Zedong_s_relevant_instructions
+        focus = PRC_76_82_Complete_understanding_of_Chairman_Mao_s_revolutionary_line
+    }
+    mutually_exclusive = {
+        focus = PRC_76_82_Rectification_of_theoretical_work
+    }
+    completion_reward = {
+        add_to_variable = {
+            CPC_bar_d = 1
+            tooltip = PRC_76_82_qlxt_dxp_2
+        }
+    }
+}
+shared_focus = {
+    id = PRC_76_82_Rectification_of_theoretical_work
+    icon = GFX_PRC_76_82_Rectification_of_theoretical_work
+    cost = 5
+    x = 7
+    y = 11
+    prerequisite = {
+        focus = PRC_76_82_Fully_understand_Mao_Zedong_s_relevant_instructions
+        focus = PRC_76_82_Complete_understanding_of_Chairman_Mao_s_revolutionary_line
+    }
+    mutually_exclusive = {
+        focus = PRC_76_82_Theoretical_work_retreat
+    }
+    completion_reward = {
+        add_to_variable = {
+            CPC_bar_c = 1
+            tooltip = PRC_76_82_qlxt_hgf_2
+        }
+    }
+}
+shared_focus = {
+    id = PRC_76_82_Carrying_on_the_legacy_of_Chairman_Mao
+    icon = GFX_PRC_76_82_Carrying_on_the_legacy_of_Chairman_Mao
+    cost = 5
+    x = 3
+    y = 12
+    prerequisite = {
+        focus = PRC_76_82_Truth_standard_remedial_course
+        focus = PRC_76_82_The_purpose_of_the_proletariat_in_understanding_the_world
+    }
+    prerequisite = {
+        focus = PRC_76_82_Theoretical_work_retreat
+        focus = PRC_76_82_Rectification_of_theoretical_work
+    }
+    mutually_exclusive = {
+        focus = PRC_76_82_To_work_for_the_rejuvenation_of_the_Chinese_nation
+    }
+    completion_reward = {
+        add_to_variable = {
+            CPC_bar_c = 1.5
+            tooltip = PRC_76_82_qlxt_hgf_3
+        }
+    }
+}
+shared_focus = {
+    id = PRC_76_82_To_work_for_the_rejuvenation_of_the_Chinese_nation
+    icon = GFX_PRC_76_82_To_work_for_the_rejuvenation_of_the_Chinese_nation
+    cost = 5
+    x = 5
+    y = 12
+    prerequisite = {
+        focus = PRC_76_82_Truth_standard_remedial_course
+        focus = PRC_76_82_The_purpose_of_the_proletariat_in_understanding_the_world
+    }
+    prerequisite = {
+        focus = PRC_76_82_Theoretical_work_retreat
+        focus = PRC_76_82_Rectification_of_theoretical_work
+    }
+    mutually_exclusive = {
+        focus = PRC_76_82_Carrying_on_the_legacy_of_Chairman_Mao
+    }
+    completion_reward = {
+        add_to_variable = {
+            CPC_bar_d = 1
+            tooltip = PRC_76_82_qlxt_dxp_2
+        }
+    }
+}
+shared_focus = {
+    id = PRC_76_82_Ending_Strife
+    icon = GFX_PRC_76_82_Ending_Strife
+    cost = 5
+    x = 3
+    y = 13
+    prerequisite = {
+        focus = PRC_76_82_Carrying_on_the_legacy_of_Chairman_Mao
+        focus = PRC_76_82_To_work_for_the_rejuvenation_of_the_Chinese_nation
+    }
+    completion_reward = {
+        effect_tooltip = {
+            swap_ideas = {
+                remove_idea = PRC_76_82_Split_of_the_party
+                add_idea = PRC_76_82_Split_of_the_party2
+            }
+        }
+        hidden_effect = {
+            add_timed_idea = { idea = PRC_76_82_Split_of_the_party2 days = 1300 }
+        }
+    }
+}
+shared_focus = {
+    id = PRC_76_82_Purity_of_party_members_thinking
+    icon = GFX_PRC_76_82_Purity_of_party_members_thinking
+    cost = 5
+    x = 5
+    y = 13
+    prerequisite = {
+        focus = PRC_76_82_Carrying_on_the_legacy_of_Chairman_Mao
+        focus = PRC_76_82_To_work_for_the_rejuvenation_of_the_Chinese_nation
+    }
+    completion_reward = {
+        if = {
+            limit = {
+                check_variable = {
+                    CPC_bar_c > CPC_bar_d
+                }
+            }
+            add_popularity = {
+                ideology = ROOT
+                popularity = 0.05
+            }
+        }
+        else = {
+            add_popularity = {
+                ideology = ROOT
+                popularity = -0.05
+            }
+        }
+        add_political_power = 50
+    }
+}
+shared_focus = {
+    id = PRC_76_82_The_12th_Communist_Party_Congress
+    icon = GFX_PRC_76_82_The_12th_Communist_Party_Congress
+    cost = 1.5
+    x = 4
+    y = 14
+    available = {
+        date > "1982.9.1"
+    }
+    prerequisite = {
+        focus = PRC_76_82_Ending_Strife
+    }
+    prerequisite = {
+        focus = PRC_76_82_Purity_of_party_members_thinking
+    }
+    completion_reward = {
+    }
+}

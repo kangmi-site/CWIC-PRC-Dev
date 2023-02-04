@@ -1,0 +1,6160 @@
+﻿focus_tree = {
+	id = PRC_60s_New
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+		tag = PRC
+		}
+	}
+	default = no
+	shared_focus = prc70s_The_Inner_Mongolia_People_s_party_incident_intensified_contradictions
+	focus = {
+		id = PRC_60s_Eight_character_policy
+		icon = GFX_Eight_character_policy
+		cost = 3
+		available = {
+			has_country_flag = Recover
+		}
+		x = 28
+		y = 2
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+	focus = {
+		id = PRC_60s_Eight_Articles_of_Literature_and_Art
+		icon = GFX_Eight_Articles_of_Literature_and_Art
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Eight_character_policy
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_60s_Eight_character_policy
+		completion_reward = {
+			add_ideas = Eight_articles_of_literature_and_art
+		}
+	}
+	focus = {
+		id = PRC_60s_fight_infectious_diseases
+		icon = GFX_PRC_Pennant
+		cost = 5
+		available = {
+			has_idea = Barefoot_doctor
+		}
+		prerequisite = {
+			focus = PRC_60s_Eight_Articles_of_Literature_and_Art
+		}
+		x = 0
+		y = 2
+		relative_position_id = PRC_60s_Eight_character_policy
+		completion_reward = {
+			remove_ideas = PRC_Extremely_low_standards_of_medical_care
+		}
+	}
+	focus = {
+		id = PRC_60s_study_leifeng
+		icon = GFX_PRC_Pennant
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_fight_infectious_diseases
+		}
+		x = 0
+		y = 3
+		relative_position_id = PRC_60s_Eight_character_policy
+		completion_reward = {
+			add_ideas = Study_leifeng
+		}
+	}
+	focus = {
+		id = PRC_60s_Sixty_Articles_of_Agriculture
+		icon = GFX_Sixty_Articles_of_Agriculture
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Eight_character_policy
+		}
+		x = -3
+		y = 1
+		relative_position_id = PRC_60s_Eight_character_policy
+		completion_reward = {
+			add_ideas = Sixty_Articles_of_Agriculture
+		}
+	}
+	focus = {
+		id = PRC_60s_Eliminate_the_four_evils
+		icon = GFX_Eliminate_the_four_evils
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Sixty_Articles_of_Agriculture
+			
+		}
+		available = {
+			has_idea = PRC_four_evils_2
+			date > 1960.1.26
+		}
+		x = -4
+		y = 2
+		relative_position_id = PRC_60s_Eight_character_policy
+		completion_reward = {
+			add_political_power = -25
+			custom_effect_tooltip = "PRC_60s_Eliminate_the_four_evils_tt"
+		}
+	}
+	focus = {
+		id = PRC_60s_Agricultural_Science_Dazhai
+		icon = GFX_Agricultural_Science_Dazhai
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Eliminate_the_four_evils
+		}
+		prerequisite = {
+			focus = PRC_60s_barefoot_doctor
+		}
+		available = {
+			date > 1963.1.1
+		}
+		x = -3
+		y = 3
+		relative_position_id = PRC_60s_Eight_character_policy
+		completion_reward = {
+			add_ideas = Agricultural_Science_Dazhai
+			add_political_power = 15
+		}
+	}
+	focus = {
+		id = PRC_60s_barefoot_doctor
+		icon = GFX_barefoot_doctor
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Sixty_Articles_of_Agriculture
+		}
+		x = -2
+		y = 2
+		relative_position_id = PRC_60s_Eight_character_policy
+		completion_reward = {
+			add_ideas = Barefoot_doctor
+		}
+	}
+	focus = {
+		id = PRC_60s_stable_place
+		icon = GFX_PRC_Pennant
+		cost = 5
+		prerequisite = {
+			focus = PRC_60s_Eight_character_policy
+		}
+		x = -7
+		y = 1
+		relative_position_id = PRC_60s_Eight_character_policy
+		completion_reward = {
+			add_political_power = -100
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = PRC_60s_Established_Tibet_Autonomous_Region
+		icon = GFX_PRC_Pennant
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_stable_place
+		}
+		x = -6
+		y = 2
+		relative_position_id = PRC_60s_Eight_character_policy
+	}
+	focus = {
+		id = PRC_60s_clear_old_habits
+		icon = GFX_PRC_60s_clear_old_habits
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Established_Tibet_Autonomous_Region
+		}
+		x = -6
+		y = 3
+		relative_position_id = PRC_60s_Eight_character_policy
+	}
+	focus = {
+		id = PRC_60s_Construction_Corps_enters_Xinjiang
+		icon = GFX_Construction_Corps_enters_Xinjiang
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_stable_place
+		}
+		x = -8
+		y = 2
+		relative_position_id = PRC_60s_Eight_character_policy
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PRC_60s_Open_up_Xinjiang_farms
+		icon = GFX_PRC_Pennant
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Construction_Corps_enters_Xinjiang
+		}
+		x = -8
+		y = 3
+		relative_position_id = PRC_60s_Eight_character_policy
+		completion_reward = {
+			618 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = agri_industrial_complex
+				level = 1
+				instant_build = yes
+				}
+			}
+			617 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = agri_industrial_complex
+				level = 1
+				instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_Industry_Seventy
+		icon = GFX_Industry_Seventy
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Eight_character_policy
+		}
+		x = 4
+		y = 1
+		relative_position_id = PRC_60s_Eight_character_policy
+		completion_reward = {
+			add_ideas = The_Industry_Seventy_Points
+		}
+	}
+	focus = {
+		id = PRC_60s_science_forteen
+		icon = GFX_PRC_Pennant
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Industry_Seventy
+		}
+		x = 4
+		y = 2
+		relative_position_id = PRC_60s_Eight_character_policy
+		completion_reward = {
+			add_ideas = Article_14_of_the_scientific_research
+		}
+	}
+	focus = {
+		id = PRC_60s_baotou_steel
+		icon = GFX_PRC_Pennant
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Industry_Seventy
+		}
+		available = {
+			has_tech = excavation_II
+		}
+		x = 2
+		y = 2
+		relative_position_id = PRC_60s_Eight_character_policy
+		completion_reward = {
+			621 = {
+				add_resource = {
+					type = steel
+					amount = 46
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_XinanRiver_Hydropower_Station
+		icon = GFX_PRC_Pennant
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Industry_Seventy
+		}
+		x = 6
+		y = 2
+		relative_position_id = PRC_60s_Eight_character_policy
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					state = 596
+				}
+				add_dynamic_modifier = { 
+					modifier = XinanRiver_Hydropower_Station
+				}
+			}
+			596 = {
+				add_extra_state_shared_building_slots = 2
+				add_resource = {
+					type = electricity
+					amount = 63
+				}
+			}
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PRC_60s_Construction_of_Daqing_Oilfield
+		icon = GFX_PRC_Pennant
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_XinanRiver_Hydropower_Station
+		}
+		prerequisite = {
+			focus = PRC_60s_baotou_steel
+		}
+		available = {
+			has_tech = excavation_II
+		}
+		x = 4
+		y = 3
+		relative_position_id = PRC_60s_Eight_character_policy
+		completion_reward = {
+			714 = {
+				add_resource = {
+					type = oil
+					amount = 17
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_Industry_Daqing_Argicultural_Dazhai_People_PLA
+		icon = GFX_PRC_60s_Industry_Daqing_Argicultural_Dazhai_People_PLA
+		cost = 5
+		prerequisite = {
+			focus = PRC_60s_study_leifeng
+		}
+		prerequisite = {
+			focus = PRC_60s_Construction_of_Daqing_Oilfield
+		}
+		prerequisite = {
+			focus = PRC_60s_Agricultural_Science_Dazhai
+		}
+		x = 0
+		y = 5
+		relative_position_id = PRC_60s_Eight_character_policy
+		completion_reward = {
+			add_ideas = Industry_Daqing_Argicultural_Dazhai_People_PLA
+			add_political_power = 100
+			add_stability = 0.05
+			add_dynamic_modifier = {
+				modifier = Adjustment_of_the_economic_system
+				scope = PRC
+			}
+			add_to_variable = {
+				aes_8 = -0.05
+			}
+			hidden_effect = {
+				remove_ideas = Agricultural_Science_Dazhai
+				remove_ideas = Study_leifeng
+				remove_ideas = Article_14_of_the_scientific_research
+				remove_ideas = The_Industry_Seventy_Points
+				remove_ideas = Eight_articles_of_literature_and_art
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_gaizao_shehuizhidu
+		icon = GFX_PRC_60s_gaizao_shehuizhidu
+		cost = 5
+		prerequisite = {
+			focus = PRC_60s_study_leifeng
+		}
+		prerequisite = {
+			focus = PRC_60s_Construction_of_Daqing_Oilfield
+		}
+		prerequisite = {
+			focus = PRC_60s_Agricultural_Science_Dazhai
+		}
+		x = -6
+		y = 5
+		relative_position_id = PRC_60s_Eight_character_policy
+		completion_reward = {
+			add_political_power = 100
+			add_dynamic_modifier = {
+				modifier = Transform_the_social_system
+				scope = PRC
+			}
+			add_to_variable = {
+				tss_1 = -0.25
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_raise_employee_wages
+		icon = GFX_PRC_60s_raise_employee_wages
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_gaizao_shehuizhidu
+		}
+		completion_reward = {
+			add_to_variable = { zuoyouzhi = 2}
+			custom_effect_tooltip = PRC_60s_liu_gain_influence_tt
+			add_to_variable = {
+				tss_2 = 0.03
+			}
+			add_to_variable = {
+				tss_3 = 0.1
+			}
+			add_to_variable = {
+				tss_5 = 0.02
+			}
+			add_to_variable = {
+				tss_7 = 0.03
+			}
+		}
+		x = -8
+		y = 6
+		relative_position_id = PRC_60s_Eight_character_policy
+	}
+	focus = {
+		id = PRC_60s_Build_an_urban_people_commune
+		icon = GFX_PRC_60s_Build_an_urban_people_commune
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_gaizao_shehuizhidu
+		}
+		completion_reward = {
+			add_to_variable = { zuoyouzhi = 2}
+			custom_effect_tooltip = PRC_60s_liu_gain_influence_tt
+			add_to_variable = {
+				tss_4 = 4
+			}
+			add_to_variable = {
+				tss_7 = 0.03
+			}
+			add_to_variable = {
+				tss_6 = 0.07
+			}
+			add_to_variable = {
+				tss_1 = 0.1
+			}
+		}
+		x = -6
+		y = 6
+		relative_position_id = PRC_60s_Eight_character_policy
+	}
+	focus = {
+		id = PRC_60s_Promote_canteen_system
+		icon = GFX_PRC_60s_Promote_canteen_system
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_gaizao_shehuizhidu
+		}
+		completion_reward = {
+			add_to_variable = { zuoyouzhi = 2}
+			custom_effect_tooltip = PRC_60s_liu_gain_influence_tt
+			add_to_variable = {
+				tss_6 = 0.02
+			}
+			add_to_variable = {
+				tss_8 = 0.02
+			}
+			add_to_variable = {
+				tss_2 = 0.01
+			}
+			add_to_variable = {
+				tss_1 = 0.05
+			}
+		}
+		x = -4
+		y = 6
+		relative_position_id = PRC_60s_Eight_character_policy
+	}
+	focus = {
+		id = PRC_60s_Developing_Taoyuan_Experience
+		icon = GFX_PRC_60s_Developing_Taoyuan_Experience
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Promote_canteen_system
+		}
+		prerequisite = {
+			focus = PRC_60s_Build_an_urban_people_commune
+		}
+		prerequisite = {
+			focus = PRC_60s_raise_employee_wages
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_uphold_the_principles_of_socialism
+		}
+		completion_reward = {
+			add_to_variable = { zuoyouzhi = 4}
+			custom_effect_tooltip = PRC_60s_liu_gain_lot_influence_tt
+			add_to_variable = {
+				tss_1 = 0.25
+			}
+			add_to_variable = {
+				tss_6 = 0.05
+			}
+			add_to_variable = {
+				tss_2 = 0.15
+			}
+		}
+
+		x = -7
+		y = 7
+		relative_position_id = PRC_60s_Eight_character_policy
+	}
+	focus = {
+		id = PRC_60s_uphold_the_principles_of_socialism
+		icon = GFX_PRC_60s_uphold_the_principles_of_socialism
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Promote_canteen_system
+		}
+		prerequisite = {
+			focus = PRC_60s_Build_an_urban_people_commune
+		}
+		prerequisite = {
+			focus = PRC_60s_raise_employee_wages
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Developing_Taoyuan_Experience
+		}
+		completion_reward = {
+			add_to_variable = { zuoyouzhi = -2}
+			custom_effect_tooltip = PRC_60s_lmao_gain_influence_tt
+			add_to_variable = {
+				tss_6 = 0.1
+			}
+			add_to_variable = {
+				tss_1 = 0.15
+			}
+			add_to_variable = {
+				tss_7 = 0.05
+			}
+		}
+		x = -5
+		y = 7
+		relative_position_id = PRC_60s_Eight_character_policy
+	}
+	focus = {
+		id = PRC_60s_tiaozheng_nongyezhidu
+		icon = GFX_PRC_60s_tiaozheng_nongyezhidu
+		cost = 5
+		prerequisite = {
+			focus = PRC_60s_study_leifeng
+		}
+		prerequisite = {
+			focus = PRC_60s_Construction_of_Daqing_Oilfield
+		}
+		prerequisite = {
+			focus = PRC_60s_Agricultural_Science_Dazhai
+		}
+		x = 5
+		y = 5
+		relative_position_id = PRC_60s_Eight_character_policy
+		completion_reward = {
+			add_political_power = 50
+			add_dynamic_modifier = {
+				modifier = Adjustment_of_the_agricultural_system
+				scope = PRC
+			}
+			add_to_variable = {
+				aas_1 = 0.03
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_Three_in_one_package
+		icon = GFX_PRC_60s_Three_in_one_package
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_tiaozheng_nongyezhidu
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_against_going_it_alone
+		}
+		x = 4
+		y = 6
+		relative_position_id = PRC_60s_Eight_character_policy
+		completion_reward = {
+			add_to_variable = { zuoyouzhi = 4}
+			add_to_variable = {
+				aas_1 = 0.02
+			}
+			add_to_variable = {
+				aas_8 = -0.05
+			}
+			add_to_variable = {
+				aas_4 = 0.02
+			}
+			custom_effect_tooltip = PRC_60s_liu_gain_lot_influence_tt
+		}
+	}
+	focus = {
+		id = PRC_60s_against_going_it_alone
+		icon = GFX_PRC_60s_against_going_it_alone
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_tiaozheng_nongyezhidu
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Three_in_one_package
+		}
+		x = 6
+		y = 6
+		relative_position_id = PRC_60s_Eight_character_policy
+		completion_reward = {
+			add_to_variable = { zuoyouzhi = -2}
+			add_to_variable = {
+				aas_1 = -0.02
+			}
+			add_to_variable = {
+				aas_8 = 0.05
+			}
+			add_to_variable = {
+				aas_6 = 0.02
+			}
+			custom_effect_tooltip = PRC_60s_lmao_gain_influence_tt
+		}
+	}
+	focus = {
+		id = PRC_60s_four_freedoms
+		icon = GFX_PRC_60s_four_freedoms
+		cost = 3
+		mutually_exclusive = {
+			focus = PRC_60s_by_production_team
+		}
+		prerequisite = {
+			focus = PRC_60s_against_going_it_alone
+			focus = PRC_60s_Three_in_one_package
+		}
+		completion_reward = {
+			add_to_variable = { zuoyouzhi = 4}
+			add_to_variable = {
+				aas_1 = 0.02
+			}
+			add_to_variable = {
+				aas_2 = 0.05
+			}
+			custom_effect_tooltip = PRC_60s_liu_gain_lot_influence_tt
+		}
+		x = 4
+		y = 7
+		relative_position_id = PRC_60s_Eight_character_policy
+	}
+	focus = {
+		id = PRC_60s_by_production_team
+		icon = GFX_PRC_60s_by_production_team
+		cost = 3
+		mutually_exclusive = {
+			focus = PRC_60s_four_freedoms
+		}
+		prerequisite = {
+			focus = PRC_60s_against_going_it_alone
+			focus = PRC_60s_Three_in_one_package
+		}
+		completion_reward = {
+			add_to_variable = { zuoyouzhi = -2}
+			add_to_variable = {
+				aas_8 = 0.03
+			}
+			add_to_variable = {
+				aas_3 = 0.02
+			}
+			custom_effect_tooltip = PRC_60s_lmao_gain_influence_tt
+		}
+		x = 6
+		y = 7
+		relative_position_id = PRC_60s_Eight_character_policy
+	}
+	focus = {
+		id = PRC_60s_Maanshan_Iron_and_Steel_Constitution
+		icon = GFX_PRC_60s_Maanshan_Iron_and_Steel_Constitution
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Industry_Daqing_Argicultural_Dazhai_People_PLA
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Ansteel_Constitution
+		}
+		completion_reward = {
+			add_to_variable = { zuoyouzhi = 2}
+			add_to_variable = {
+				aes_5 = -0.1
+			}
+			add_to_variable = {
+				aes_6 = 0.05
+			}
+			add_to_variable = {
+				aes_7 = -0.05
+			}
+			add_to_variable = {
+				aes_10 = -0.2
+			}
+			add_to_variable = {
+				aes_1 = -0.02
+			}
+			custom_effect_tooltip = PRC_60s_liu_gain_influence_tt
+		}
+		x = -1
+		y = 6
+		relative_position_id = PRC_60s_Eight_character_policy
+	}
+	focus = {
+		id = PRC_60s_Ansteel_Constitution
+		icon = GFX_PRC_60s_Ansteel_Constitution
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Industry_Daqing_Argicultural_Dazhai_People_PLA
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Maanshan_Iron_and_Steel_Constitution
+		}
+		completion_reward = {
+			add_to_variable = { zuoyouzhi = -2}
+			add_political_power = 25
+			add_to_variable = {
+				aes_5 = 0.1
+			}
+			add_to_variable = {
+				aes_6 = -0.05
+			}
+			add_to_variable = {
+				aes_7 = 0.05
+			}
+			add_to_variable = {
+				aes_10 = 0.2
+			}
+			add_to_variable = {
+				aes_1 = 0.02
+			}
+			custom_effect_tooltip = PRC_60s_lmao_gain_influence_tt
+		}
+		x = 1
+		y = 6
+		relative_position_id = PRC_60s_Eight_character_policy
+	}
+	focus = {
+		id = PRC_60s_Pay_attention_to_corporate_profits
+		icon = GFX_PRC_60s_Pay_attention_to_corporate_profits
+		cost = 3
+		mutually_exclusive = {
+			focus = PRC_60s_against_economism
+		}
+		prerequisite = {
+			focus = PRC_60s_Maanshan_Iron_and_Steel_Constitution
+			focus = PRC_60s_Ansteel_Constitution
+		}
+		completion_reward = {
+			add_to_variable = { zuoyouzhi = 2}
+			add_to_variable = {
+				aes_9 = 0.05
+			}
+			add_to_variable = {
+				aes_2 = -0.05
+			}
+			add_to_variable = {
+				aes_3 = 0.1
+			}
+			add_to_variable = {
+				aes_1 = -0.03
+			}
+			custom_effect_tooltip = PRC_60s_liu_gain_influence_tt
+		}
+		x = -1
+		y = 7
+		relative_position_id = PRC_60s_Eight_character_policy
+	}
+	focus = {
+		id = PRC_60s_against_economism
+		icon = GFX_PRC_60s_against_economism
+		cost = 3
+		mutually_exclusive = {
+			focus = PRC_60s_Pay_attention_to_corporate_profits
+		}
+		prerequisite = {
+			focus = PRC_60s_Maanshan_Iron_and_Steel_Constitution
+			focus = PRC_60s_Ansteel_Constitution
+		}
+		completion_reward = {
+			add_to_variable = { zuoyouzhi = -2}
+			add_to_variable = {
+				aes_9 = -0.05
+			}
+			add_to_variable = {
+				aes_2 = 0.07
+			}
+			add_to_variable = {
+				aes_3 = -0.07
+			}
+			add_to_variable = {
+				aes_1 = 0.02
+			}
+			custom_effect_tooltip = PRC_60s_lmao_gain_influence_tt
+		}
+		x = 1
+		y = 7
+		relative_position_id = PRC_60s_Eight_character_policy
+	}
+	focus = {
+		id = PRC_60s_Two-reference_one-change_three-combination
+		icon = GFX_PRC_60s_Two-reference_one-change_three-combination
+		cost = 4
+		mutually_exclusive = {
+			
+		}
+		prerequisite = {
+			focus = PRC_60s_Pay_attention_to_corporate_profits
+			focus = PRC_60s_against_economism
+		}
+		prerequisite = {
+			focus = PRC_60s_Developing_Taoyuan_Experience
+			focus = PRC_60s_uphold_the_principles_of_socialism
+		}
+		prerequisite = {
+			focus = PRC_60s_four_freedoms
+			focus = PRC_60s_by_production_team
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_to_variable = {
+				aes_4 = 0.05
+			}
+			add_to_variable = {
+				aes_6 = 0.05
+			}
+			add_to_variable = {
+				aes_1 = -0.05
+			}
+		}
+		x = 0
+		y = 8
+		relative_position_id = PRC_60s_Eight_character_policy
+	}
+	focus = {
+		id = PRC_60s_Three_line
+		icon = GFX_PRC_60s_Three_line
+		cost = 5.4
+		available = {
+			has_country_flag = Recover
+		}
+		x = 49
+		y = 2
+		completion_reward = {
+			add_timed_idea = {
+				idea = three_line1
+				days = 5840
+			}
+			add_war_support = 0.02
+			add_political_power = -50
+			set_country_flag = prc_three_line_star
+		}
+	}
+	focus = {
+		id = PRC_60s_insist_on_self-reliance
+		icon = GFX_PRC_60s_insist_on_self-reliance
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Three_line
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_60s_Three_line
+		completion_reward = {
+			add_ideas = insist_on_self
+			add_political_power = -50
+		}
+	}
+	focus = {
+		id = PRC_60s_Jiuquan_panzhihua_steel
+		icon = GFX_PRC_60s_Jiuquan_panzhihua_steel
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_insist_on_self-reliance
+		}
+		x = 0
+		y = 2
+		relative_position_id = PRC_60s_Three_line
+		completion_reward = {
+			283 = {
+				add_resource = {
+					type = steel
+					amount = 15
+				}
+			}
+			605 = {
+				add_resource = {
+					type = steel
+					amount = 15
+				}
+			}
+			PRC = {
+				add_to_variable = {
+					currentMoney = -15
+					tooltip = increase_money_tt
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_Non-ferrous_metal_industry
+		icon = GFX_PRC_60s_Non-ferrous_metal_industry
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_insist_on_self-reliance
+		}
+		available = {
+			has_tech = excavation_II
+		}
+		completion_reward = {
+			603 = {
+				add_resource = {
+					type = aluminium
+					amount = 28
+				}
+			}
+			PRC = {
+				add_to_variable = {
+					currentMoney = -10
+					tooltip = increase_money_tt
+				}
+			}
+		}
+		x = -4
+		y = 2
+		relative_position_id = PRC_60s_Three_line
+	}
+	focus = {
+		id = PRC_60s_Construction_of_large_power_stations
+		icon = GFX_PRC_60s_Construction_of_large_power_stations
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_insist_on_self-reliance
+		}
+		completion_reward = {
+			283 = {
+				add_resource = {
+					type = electricity
+					amount = 42
+				}
+			}
+			PRC = {
+				add_to_variable = {
+					currentMoney = -28
+					tooltip = increase_money_tt
+				}
+			}
+		}
+		x = 4
+		y = 2
+		relative_position_id = PRC_60s_Three_line
+	}
+	focus = {
+		id = PRC_60s_achieve_oil_self-sufficiency
+		icon = GFX_PRC_60s_achieve_oil_self-sufficiency
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_insist_on_self-reliance
+		}
+		completion_reward = {
+			715 = {
+				add_resource = {
+					type = oil
+					amount = 21
+				}
+			}
+			PRC = {
+				add_to_variable = {
+					currentMoney = -10
+					tooltip = increase_money_tt
+				}
+			}
+		}
+		x = -2
+		y = 3
+		relative_position_id = PRC_60s_Three_line
+	}
+	focus = {
+		id = PRC_60s_Increase_rare_earth_mining
+		icon = GFX_PRC_60s_Increase_rare_earth_mining
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_insist_on_self-reliance
+		}
+		available = {
+			has_tech = excavation_II
+		}
+		completion_reward = {
+			605 = {
+				add_resource = {
+					type = tungsten
+					amount = 36
+				}
+			}
+			PRC = {
+				add_to_variable = {
+					currentMoney = -15
+					tooltip = increase_money_tt
+				}
+			}
+		}
+		x = 2
+		y = 3
+		relative_position_id = PRC_60s_Three_line
+	}
+	focus = {
+		id = PRC_60s_Construction_of_new_shipyards
+		icon = GFX_PRC_60s_Construction_of_new_shipyards
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Jiuquan_panzhihua_steel
+		}
+		x = 0
+		y = 4
+		relative_position_id = PRC_60s_Three_line
+		completion_reward = {
+			610 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+				}
+			}
+			598 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+				}
+			}
+			596 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+				}
+			}
+			595 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_Construction_of_civil_facilities
+		icon = GFX_PRC_60s_Construction_of_civil_facilities
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Three_line
+		}
+		x = -9
+		y = 1
+		relative_position_id = PRC_60s_Three_line
+		completion_reward = {
+			add_timed_idea = {
+				idea = Construction_civil_facilities
+				days = 365
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_Unicom_Frontier_Regions
+		icon = GFX_PRC_60s_Unicom_Frontier_Regions
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Construction_of_civil_facilities
+		}
+		x = -9
+		y = 2
+		relative_position_id = PRC_60s_Three_line
+		completion_reward = {
+			add_political_power = -50
+			add_war_support = 0.05
+			
+		}
+	}
+	focus = {
+		id = PRC_60s_Nanjing_Yangtze_River_Bridge
+		icon = GFX_PRC_60s_Nanjing_Yangtze_River_Bridge
+		cost = 5
+		prerequisite = {
+			focus = PRC_60s_Construction_of_civil_facilities
+		}
+		x = -6
+		y = 2
+		relative_position_id = PRC_60s_Three_line
+		completion_reward = {
+			598 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+				}
+			}
+			PRC = {
+				add_to_variable = {
+					currentMoney = -3
+					tooltip = increase_money_tt
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_Construction_farmland_water_conservancy
+		icon = GFX_PRC_60s_Construction_farmland_water_conservancy
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Construction_of_civil_facilities
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						is_core_of = PRC
+					}
+				}
+				add_building_construction = {
+					type = agri_industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						is_core_of = PRC
+					}
+				}
+				add_building_construction = {
+					type = agri_industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						is_core_of = PRC
+					}
+				}
+				add_building_construction = {
+					type = agri_industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						is_core_of = PRC
+					}
+				}
+				add_building_construction = {
+					type = agri_industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						is_core_of = PRC
+					}
+				}
+				add_building_construction = {
+					type = agri_industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			PRC = {
+				add_to_variable = {
+					currentMoney = -38
+					tooltip = increase_money_tt
+				}
+			}
+		}
+		x = -12
+		y = 2
+		relative_position_id = PRC_60s_Three_line
+	}
+	focus = {
+		id = PRC_60s_Lanxin_Railway
+		icon = GFX_PRC_60s_Lanxin_Railway
+		cost = 5
+		prerequisite = {
+			focus = PRC_60s_Unicom_Frontier_Regions
+		}
+		x = -11
+		y = 3
+		relative_position_id = PRC_60s_Three_line
+		completion_reward = {
+			build_railway = { 
+				path = { 4709 12656 7732 2524 4947 12820 7971 5100 12776 5057 1630 }
+		}
+		PRC = {
+			add_to_variable = {
+				currentMoney = -30
+				tooltip = increase_money_tt
+			}
+		}
+		}
+	}
+	focus = {
+		id = PRC_60s_Chengdu-Kunming_Railway
+		icon = GFX_PRC_60s_Chengdu-Kunming_Railway
+		cost = 5
+		prerequisite = {
+			focus = PRC_60s_Construction_of_civil_facilities
+		}
+		x = -9
+		y = 3
+		relative_position_id = PRC_60s_Three_line
+		completion_reward = {
+			PRC = {
+				add_to_variable = {
+					currentMoney = -30
+					tooltip = increase_money_tt
+				}
+			}
+			build_railway = { 
+				path = { 12282 7606 1884 4532 10616 8095 4325 1010 4431 6999 7240 4925 }
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_Unicom_Xinzang_Highway
+		icon = GFX_PRC_60s_Unicom_Xinzang_Highway
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Unicom_Frontier_Regions
+		}
+		completion_reward = {
+			322 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+				}
+			}
+			287 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+				}
+			}
+			617 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+				}
+			}
+			PRC = {
+				add_to_variable = {
+					currentMoney = -50
+					tooltip = increase_money_tt
+				}
+			}
+		}
+		x = -7
+		y = 3
+		relative_position_id = PRC_60s_Three_line
+	}
+	focus = {
+		id = PRC_60s_Relocation_military_facilities
+		icon = GFX_PRC_60s_Relocation_military_facilities
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Three_line
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						is_core_of = PRC
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		x = 10
+		y = 1
+		relative_position_id = PRC_60s_Three_line
+	}
+	focus = {
+		id = PRC_60s_Relocated_military_parts_factory
+		icon = GFX_PRC_60s_Relocated_military_parts_factory
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Relocation_military_facilities
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						is_core_of = PRC
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		x = 10
+		y = 2
+		relative_position_id = PRC_60s_Three_line
+	}
+	focus = {
+		id = PRC_60s_transfer_nuclear_industry
+		icon = GFX_PRC_60s_transfer_nuclear_industry
+		cost = 4
+		prerequisite = {
+			focus = PRC_60s_Relocation_military_facilities
+		}
+		available = {
+			has_tech = atomic_reactor_0
+		}
+		completion_reward = {
+			604 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = nuclear_reactor
+				level = 1
+				instant_build = yes
+				}
+			}
+		}
+		x = 6
+		y = 2
+		relative_position_id = PRC_60s_Three_line
+	}
+	focus = {
+		id = PRC_60s_Jiuquan_Xichang
+		icon = GFX_PRC_60s_Jiuquan_Xichang
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Relocation_military_facilities
+		}
+		x = 14
+		y = 2
+		relative_position_id = PRC_60s_Three_line
+	}
+	focus = {
+		id = PRC_60s_Chengfei
+		icon = GFX_PRC_60s_Chengfei
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Relocation_military_facilities
+		}
+		x = 8
+		y = 3
+		relative_position_id = PRC_60s_Three_line
+	}
+	focus = {
+		id = PRC_60s_Shanfei
+		icon = GFX_PRC_60s_Shanfei
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Relocation_military_facilities
+		}
+		x = 12
+		y = 3
+		relative_position_id = PRC_60s_Three_line
+	}
+	focus = {
+		id = PRC_60s_Relocatio_College
+		icon = GFX_PRC_60s_Relocatio_College
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Relocated_military_parts_factory
+		}
+		prerequisite = {
+			focus = PRC_60s_Shanfei
+		}
+		prerequisite = {
+			focus = PRC_60s_Chengfei
+		}
+		completion_reward = {
+			add_political_power = -50
+			add_research_slot = 1
+		}
+		x = 10
+		y = 4
+		relative_position_id = PRC_60s_Three_line
+	}
+	focus = {
+		id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+		icon = GFX_Kang_Sheng_commented_on_LiuZhidan
+		cost = 3
+		x = 7
+		y = 13
+		available = {
+			has_completed_focus = PRC_60s_Eight_character_policy
+		}
+		completion_reward = {
+			add_political_power = 5
+			add_to_variable = { zuoyouzhi = -2}
+		}
+	}
+	focus = {
+		id = PRC_60s_Easing_economic_reforms
+		icon = GFX_Easing_economic_reforms
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+		}
+		x = -1
+		y = 1
+		relative_position_id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+		completion_reward = {
+			add_to_variable = { zuoyouzhi = 2}
+			add_political_power = 20
+			add_stability = 0.05
+			custom_effect_tooltip = PRC_60s_liu_gain_influence_tt
+		}
+	}
+	focus = {
+		id = PRC_60s_revisit_class_struggle
+		icon = GFX_revisit_class_struggle
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+		}
+		x = 1
+		y = 1
+		relative_position_id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+		completion_reward = {
+			add_to_variable = { zuoyouzhi = -2}
+			add_political_power = 25
+			add_stability = -0.05
+			custom_effect_tooltip = PRC_60s_lmao_gain_influence_tt
+		}
+	}
+	focus = {
+		id = PRC_60s_Form_group_of_five
+		icon = GFX_Form_group_of_five
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_revisit_class_struggle
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Establishment_of_Mass_Literature_and_Art_Department
+		}
+		x = 2
+		y = 2
+		relative_position_id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+		completion_reward = {
+			add_to_variable = { zuoyouzhi = 2}
+			add_political_power = 50
+			custom_effect_tooltip = PRC_60s_liu_gain_influence_tt
+		}
+	}
+	focus = {
+		id = PRC_60s_Establishment_of_Mass_Literature_and_Art_Department
+		icon = GFX_Establishment_of_Mass_Literature_and_Art_Department
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_revisit_class_struggle
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Form_group_of_five
+		}
+		x = 4
+		y = 2
+		relative_position_id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+		completion_reward = {
+			add_to_variable = { zuoyouzhi = -2}
+			add_political_power = -25
+			custom_effect_tooltip = PRC_60s_lmao_gain_influence_tt
+		}
+	}
+	focus = {
+		id = PRC_60s_Siqing_Movement
+		icon = GFX_Siqing_Movement
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Easing_economic_reforms
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Anti-bureaucratic_purge
+		}
+		x = -2
+		y = 2
+		relative_position_id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+		completion_reward = {
+			add_to_variable = { zuoyouzhi = 2}
+			add_political_power = 50
+			add_stability = 0.05
+			custom_effect_tooltip = PRC_60s_liu_gain_influence_tt
+		}
+	}
+	focus = {
+		id = PRC_60s_Anti-bureaucratic_purge
+		icon = GFX_Anti-bureaucratic_purge
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Easing_economic_reforms
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Siqing_Movement
+		}
+		x = -4
+		y = 2
+		relative_position_id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+		completion_reward = {
+			add_to_variable = { zuoyouzhi = -2}
+			add_stability = -0.1
+			custom_effect_tooltip = PRC_60s_lmao_gain_influence_tt
+		}
+	}
+	focus = {
+		id = PRC_60s_Peking_Opera_Revolution
+		icon = GFX_Communist_Opera 
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Siqing_Movement
+			focus = PRC_60s_Anti-bureaucratic_purge
+		}
+		prerequisite = {
+			focus = PRC_60s_Form_group_of_five
+			focus = PRC_60s_Establishment_of_Mass_Literature_and_Art_Department
+		}
+		x = -4
+		y = 3
+		relative_position_id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+		completion_reward = {
+			add_to_variable = { zuoyouzhi = -2}
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_political_power = 20	
+			custom_effect_tooltip = PRC_60s_lmao_gain_influence_tt
+		}
+	}
+	focus = {
+		id = PRC_60s_Reject_the_February_outline
+		icon = GFX_Reject_the_February_outline
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Siqing_Movement
+			focus = PRC_60s_Anti-bureaucratic_purge
+			focus = PRC_60s_Form_group_of_five
+			focus = PRC_60s_Establishment_of_Mass_Literature_and_Art_Department
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Agree_the_February_outline
+		}
+		x = -2
+		y = 3
+		relative_position_id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+		completion_reward = {
+			add_to_variable = { zuoyouzhi = -4}
+			add_stability = -0.1
+			add_political_power = -30
+			custom_effect_tooltip = PRC_60s_lmao_gain_lot_influence_tt
+		}
+	}
+	focus = {
+		id = PRC_60s_Agree_the_February_outline
+		icon = GFX_Agree_the_February_outline
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Siqing_Movement
+			focus = PRC_60s_Anti-bureaucratic_purge
+		}
+		prerequisite = {
+			focus = PRC_60s_Form_group_of_five
+			focus = PRC_60s_Establishment_of_Mass_Literature_and_Art_Department
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Reject_the_February_outline
+		}
+		x = 2
+		y = 3
+		relative_position_id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+		completion_reward = {
+			add_to_variable = { zuoyouzhi = 4}
+			add_stability = 0.05
+			add_political_power = -15
+			custom_effect_tooltip = PRC_60s_liu_gain_lot_influence_tt
+		}
+	}
+	focus = {
+		id = PRC_60s_Commentary_on_Hai_Rui_dismissal
+		icon = GFX_Commentary_on_Hai_Rui_dismissal
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Siqing_Movement
+			focus = PRC_60s_Anti-bureaucratic_purge
+		}
+		prerequisite = {
+			focus = PRC_60s_Form_group_of_five
+			focus = PRC_60s_Establishment_of_Mass_Literature_and_Art_Department
+		}
+		x = 4
+		y = 3
+		relative_position_id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+		completion_reward = {
+			add_to_variable = { zuoyouzhi = -2}
+			add_stability = -0.05
+			add_political_power = -20
+			custom_effect_tooltip = PRC_60s_lmao_gain_influence_tt
+		}
+	}
+	focus = {
+		id = PRC_60s_Five_One_Six
+		icon = GFX_Five_One_Six
+		cost = 4
+		prerequisite = {
+			focus = PRC_60s_Agree_the_February_outline
+			focus = PRC_60s_Reject_the_February_outline
+		}
+		x = 0
+		y = 4
+		available = {
+			date > 1966.4.26
+		}
+		relative_position_id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+		completion_reward = {
+			add_to_variable = { zuoyouzhi = -2}
+			add_stability = -0.2
+			add_political_power = 50
+			custom_effect_tooltip = PRC_60s_lmao_gain_influence_tt
+		}
+	}
+	focus = {
+		id = PRC_60s_Established_the_Central_Cultural_Revolution_Group
+		icon = GFX_Established_the_Central_Cultural_Revolution_Group
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Five_One_Six
+		}
+		x = 0
+		y = 5
+		relative_position_id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+		completion_reward = {
+			add_to_variable = { zuoyouzhi = -4}
+			add_stability = 0.05
+			add_political_power = 50
+			custom_effect_tooltip = PRC_60s_lmao_gain_lot_influence_tt
+		}
+	}
+	focus = {
+		id = PRC_60s_Call_for_calm_everywhere
+		icon = GFX_Call_for_calm_everywhere
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Established_the_Central_Cultural_Revolution_Group
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_artillery_command
+		}
+		x = -1
+		y = 6
+		relative_position_id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+		completion_reward = {
+			add_to_variable = { zuoyouzhi = 2}
+			add_stability = 0.03
+			add_political_power = 25
+			custom_effect_tooltip = PRC_60s_liu_gain_influence_tt
+		}
+	}
+	focus = {
+		id = PRC_60s_artillery_command
+		icon = GFX_artillery_command
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Established_the_Central_Cultural_Revolution_Group
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Call_for_calm_everywhere
+		}
+		x = -3
+		y = 6
+		relative_position_id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+		completion_reward = {
+			add_to_variable = { zuoyouzhi = -4}
+			add_stability = -0.1
+			add_political_power = -50
+			custom_effect_tooltip = PRC_60s_lmao_gain_lot_influence_tt
+		}
+	}
+	focus = {
+		id = PRC_60s_dispatch_working_group
+		icon = GFX_dispatch_working_group
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Established_the_Central_Cultural_Revolution_Group
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_mass_self-revolution
+		}
+		x = 1
+		y = 6
+		relative_position_id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+		completion_reward = {
+			add_to_variable = { zuoyouzhi = 2}
+			add_stability = 0.05
+			add_political_power = 15
+			custom_effect_tooltip = PRC_60s_liu_gain_influence_tt
+		}
+	}
+	focus = {
+		id = PRC_60s_mass_self-revolution
+		icon = GFX_mass_self_revolution
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Established_the_Central_Cultural_Revolution_Group
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_dispatch_working_group
+		}
+		x = 3
+		y = 6
+		relative_position_id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+		completion_reward = {
+			add_to_variable = { zuoyouzhi = -4}
+			add_stability = -0.05
+			add_political_power = 50
+			custom_effect_tooltip = PRC_60s_lmao_gain_lot_influence_tt
+		}
+	}
+	focus = {
+		id = PRC_60s_Decision_on_the_Cultural_Revolution
+		icon = GFX_Decision_on_the_Cultural_Revolution
+		cost = 4
+		available = {
+			check_variable = {zuoyouzhi < 51}
+			date > 1966.7.20
+		}
+		prerequisite = {
+			focus = PRC_60s_mass_self-revolution
+			focus = PRC_60s_dispatch_working_group
+		}
+		prerequisite = {
+			focus = PRC_60s_artillery_command
+			focus = PRC_60s_Call_for_calm_everywhere
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_The_Peking_Spring
+		}
+		completion_reward = {
+			PRC_GPCR_begins = yes
+			prc_gpcr_super_event = yes
+		}
+		x = -1
+		y = 7
+		relative_position_id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+	}
+	focus = {
+		id = PRC_60s_The_Peking_Spring
+		icon = GFX_The_Peking_Spring
+		cost = 3
+		available = {
+			check_variable = {zuoyouzhi > 50}
+		}
+		prerequisite = {
+			focus = PRC_60s_mass_self-revolution
+			focus = PRC_60s_dispatch_working_group
+		}
+		prerequisite = {
+			focus = PRC_60s_artillery_command
+			focus = PRC_60s_Call_for_calm_everywhere
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Decision_on_the_Cultural_Revolution
+		}
+		completion_reward = {
+			add_political_power = 100
+			custom_effect_tooltip = PRC_60s_liu_play_tt
+			custom_effect_tooltip = "WIP"
+		}
+		x = 1
+		y = 7
+		relative_position_id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+	}
+	focus = {
+		id = PRC_60s_reform_the_education_system
+		icon = GFX_reform_the_education_system
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Decision_on_the_Cultural_Revolution
+		}
+		x = -3
+		y = 8
+		relative_position_id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+		completion_reward = {
+			add_political_power = -100
+			add_timed_idea = {
+				idea = Reform_the_education_system
+				days = 730
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_cancel_the_college_entrance_examination
+		icon = GFX_cancel_the_college_entrance_examination
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_reform_the_education_system
+		}
+		completion_reward = {
+			add_political_power = -50
+		}
+		x = -4
+		y = 9
+		relative_position_id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+	}
+	focus = {
+		id = PRC_60s_Clear_the_poison_of_the_previous_seventeen_years
+		icon = GFX_Clear_the_poison_of_the_previous_seventeen_years
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_reform_the_education_system
+		}
+		completion_reward = {
+			add_political_power = -50
+			add_stability = -0.05
+		}
+		x = -2
+		y = 9
+		relative_position_id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+	}
+	focus = {
+		id = PRC_60s_Recruit_school_graduates
+		icon = GFX_PRC_60s_Recruit_school_graduates
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Clear_the_poison_of_the_previous_seventeen_years
+		}
+		prerequisite = {
+			focus = PRC_60s_cancel_the_college_entrance_examination
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+		x = -3
+		y = 10
+		relative_position_id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+	}
+	focus = {
+		id = PRC_60s_Go_up_the_mountain_and_go_down_to_the_countryside
+		icon = GFX_Go_up_the_mountain_and_go_down_to_the_countryside
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Recruit_school_graduates
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_national_labor_force
+		}
+		x = -4
+		y = 11
+		relative_position_id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+		completion_reward = {
+			add_timed_idea = {
+				idea = Go_up_the_mountain_and_go_down_to_the_countryside
+				days = 730
+			}
+			add_political_power = -25
+		}
+	}
+	focus = {
+		id = PRC_60s_national_labor_force
+		icon = GFX_national_labor_force
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Recruit_school_graduates
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Go_up_the_mountain_and_go_down_to_the_countryside
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = National_labor_force
+				days = 730
+			}
+			add_political_power = 25
+		}
+		x = -2
+		y = 11
+		relative_position_id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+	}
+	focus = {
+		id = PRC_60s_Reclamation_of_the_frontier
+		icon = GFX_Reclamation_of_the_frontier
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Go_up_the_mountain_and_go_down_to_the_countryside
+			focus = PRC_60s_national_labor_force
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = Reclamation_of_the_frontier
+				days = 730
+			}
+		}
+		x = -3
+		y = 12
+		relative_position_id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+	}
+	focus = {
+		id = PRC_60s_Promote_freedom_of_speech
+		icon = GFX_Promote_freedom_of_speech
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Decision_on_the_Cultural_Revolution
+		}
+		completion_reward = {
+			add_stability = -0.1
+			add_political_power = -50
+		}
+		x = 3
+		y = 8
+		relative_position_id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+	}
+	focus = {
+		id = PRC_60s_Red_Book
+		icon = GFX_Red_Book
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Promote_freedom_of_speech
+		}
+		x = 1
+		y = 9
+		relative_position_id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+	}
+	focus = {
+		id = PRC_60s_Promote_the_Red_Guard_movement
+		icon = GFX_Promote_the_Red_Guard_movement
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Promote_freedom_of_speech
+		}
+		completion_reward = {
+			add_stability = -0.1
+			add_political_power = -50
+		}
+		x = 5
+		y = 9
+		relative_position_id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+	}
+	focus = {
+		id = PRC_60s_Clear_the_ranks
+		icon = GFX_Clear_the_ranks
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Red_Book
+		}
+		prerequisite = {
+			focus = PRC_60s_Promote_the_Red_Guard_movement
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+			add_manpower = -32000
+		}
+		x = 3
+		y = 10
+		relative_position_id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+	}
+	focus = {
+		id = PRC_60s_Sanzhi_liangjun
+		icon = GFX_Sanzhi_liangjun
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Clear_the_ranks
+		}
+		x = 1
+		y = 11
+		relative_position_id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+	}
+	focus = {
+		id = PRC_60s_Wen_attacking_Wuwei
+		icon = GFX_Wen_attacking_Wuwei
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Clear_the_ranks
+		}
+		completion_reward = {
+			custom_effect_tooltip = "WIP"
+		}
+		x = 5
+		y = 11
+		relative_position_id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+	}
+	focus = {
+		id = PRC_60s_Fight_against_class_enemies
+		icon = PRC_60s_Fight_against_class_enemies
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Clear_the_ranks
+		}
+		completion_reward = {
+			custom_effect_tooltip = "WIP"
+		}
+		x = 3
+		y = 11
+		relative_position_id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+	}
+	focus = {
+		id = PRC_60s_Build_May_Seventh_Cadre_School
+		icon = GFX_Build_May_Seventh_Cadre_School
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Fight_against_class_enemies
+		}
+		prerequisite = {
+			focus = PRC_60s_Wen_attacking_Wuwei
+		}
+		prerequisite = {
+			focus = PRC_60s_Sanzhi_liangjun
+		}
+		completion_reward = {
+			custom_effect_tooltip = "WIP"
+		}
+		x = 3
+		y = 12
+		relative_position_id = PRC_60s_Kang_Sheng_commented_on_LiuZhidan
+	}
+	focus = {
+		id = PRC_60s_The_fullence_of_January_storm
+		icon = GFX_PRC_60s_The_fullence_of_January_storm
+		cost = 3
+		x = 15
+		y = 14
+		allow_branch = {
+			has_country_flag = prc_60s_January_Storm
+		}
+		available = {
+			always = no
+		}
+	}
+	focus = {
+		id = PRC_60s_Down_with_bureaucracy
+		icon = GFX_PRC_60s_Down_with_bureaucracy
+		prerequisite = {
+			focus = PRC_60s_The_fullence_of_January_storm
+		}
+		cost = 3
+		relative_position_id = PRC_60s_The_fullence_of_January_storm
+		x = -1
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = PRC_60s_This_will_benefit_revolutionaries_tt
+			hidden_effect = {
+				set_temp_variable = {
+					prc60s_circle_temp = 1
+				}
+				while_loop_effect = {
+					limit = {
+						check_variable = {
+							prc60s_circle_temp < 6
+						}
+					}
+					random_owned_state = {
+						limit = {
+							NOT = {
+								has_country_flag = prc_60s_circle_temp_cr_1
+							}
+							has_variable = GPCR_province_laobao_power_var
+						}
+						add_to_variable = {
+							GPCR_province_laobao_power_var = -1
+						}
+						add_to_variable = {
+							GPCR_province_zaozao_power_var = 1
+						}
+						set_country_flag = prc_60s_circle_temp_cr_1
+					}
+					add_to_temp_variable = {
+						prc60s_circle_temp = 1
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_Power_grab
+		icon = GFX_PRC_60s_Power_grab
+		prerequisite = {
+			focus = PRC_60s_The_fullence_of_January_storm
+		}
+		cost = 3
+		relative_position_id = PRC_60s_The_fullence_of_January_storm
+		x = 1
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = PRC_60s_This_will_benefit_revolutionaries_tt
+			hidden_effect = {
+				set_temp_variable = {
+					prc60s_circle_temp = 1
+				}
+				while_loop_effect = {
+					limit = {
+						check_variable = {
+							prc60s_circle_temp < 6
+						}
+					}
+					random_owned_state = {
+						limit = {
+							NOT = {
+								has_country_flag = prc_60s_circle_temp_cr_2
+							}
+							has_variable = GPCR_province_laobao_power_var
+						}
+						add_to_variable = {
+							GPCR_province_laobao_power_var = -1
+						}
+						add_to_variable = {
+							GPCR_province_zaozao_power_var = 1
+						}
+						set_country_flag = prc_60s_circle_temp_cr_2
+					}
+					add_to_temp_variable = {
+						prc60s_circle_temp = 1
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_Coping_with_uncontrolled_situations
+		icon = GFX_PRC_60s_Coping_with_uncontrolled_situations
+		prerequisite = {
+			focus = PRC_60s_Down_with_bureaucracy
+		}
+		prerequisite = {
+			focus = PRC_60s_Power_grab
+		}
+		cost = 3
+		relative_position_id = PRC_60s_The_fullence_of_January_storm
+		x = 0
+		y = 2
+		available = {
+			always = no
+		}
+	}
+	focus = {
+		id = PRC_60s_Uphold_the_commune_leadership
+		icon = GFX_PRC_60s_Uphold_the_commune_leadership
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Coping_with_uncontrolled_situations
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_The_whole_country_is_red
+		}
+		relative_position_id = PRC_60s_The_fullence_of_January_storm
+		x = 1
+		y = 3
+		completion_reward = {
+			custom_effect_tooltip = PRC_60s_This_will_benefit_revolutionaries_tt
+			hidden_effect = {
+				any_owned_state = {
+					if = {
+						limit = {
+							has_variable = GPCR_province_laobao_power_var
+						}
+						add_to_variable = {
+							GPCR_province_laobao_power_var = -3
+						}
+						add_to_variable = {
+							GPCR_province_zaozao_power_var = 3
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_The_whole_country_is_red
+		icon = GFX_PRC_60s_The_whole_country_is_red
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Coping_with_uncontrolled_situations
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Uphold_the_commune_leadership
+		}
+		relative_position_id = PRC_60s_The_fullence_of_January_storm
+		x = -1
+		y = 3
+		completion_reward = {
+			custom_effect_tooltip = PRC_60s_This_will_benefit_conservatives_tt
+			hidden_effect = {
+				any_owned_state = {
+					if = {
+						limit = {
+							has_variable = GPCR_province_laobao_power_var
+						}
+						add_to_variable = {
+							GPCR_province_laobao_power_var = 3
+						}
+						add_to_variable = {
+							GPCR_province_zaozao_power_var = -3
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_Sixty_six_orders
+		icon = GFX_PRC_60s_Sixty_six_orders
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_The_whole_country_is_red
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_destroy_local_bureaucracy
+		}
+		relative_position_id = PRC_60s_The_fullence_of_January_storm
+		x = -3
+		y = 4
+		completion_reward = {
+			custom_effect_tooltip = PRC_60s_This_will_benefit_conservatives_tt
+			hidden_effect = {
+				any_owned_state = {
+					if = {
+						limit = {
+							has_variable = GPCR_province_laobao_power_var
+						}
+						add_to_variable = {
+							GPCR_province_laobao_power_var = 3
+						}
+						add_to_variable = {
+							GPCR_province_zaozao_power_var = -3
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_destroy_local_bureaucracy
+		icon = GFX_PRC_60s_destroy_local_bureaucracy
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Coping_with_uncontrolled_situations
+			focus = PRC_60s_Uphold_the_commune_leadership
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Sixty_six_orders
+		}
+		relative_position_id = PRC_60s_The_fullence_of_January_storm
+		x = -1
+		y = 4
+		completion_reward = {
+			custom_effect_tooltip = PRC_60s_This_will_benefit_revolutionaries_tt
+			hidden_effect = {
+				any_owned_state = {
+					if = {
+						limit = {
+							has_variable = GPCR_province_laobao_power_var
+						}
+						add_to_variable = {
+							GPCR_province_laobao_power_var = -3
+						}
+						add_to_variable = {
+							GPCR_province_zaozao_power_var = 3
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_Rescue_cultural_relics
+		icon = GFX_PRC_60s_Rescue_cultural_relics
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_destroy_local_bureaucracy
+			focus = PRC_60s_Sixty_six_orders
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Continue_to_Destroy_Feudal_Superstition
+		}
+		relative_position_id = PRC_60s_The_fullence_of_January_storm
+		x = -3
+		y = 5
+		completion_reward = {
+			custom_effect_tooltip = PRC_60s_This_will_benefit_revolutionaries_tt
+			hidden_effect = {
+				any_owned_state = {
+					if = {
+						limit = {
+							has_variable = GPCR_province_laobao_power_var
+						}
+						add_to_variable = {
+							GPCR_province_laobao_power_var = -3
+						}
+						add_to_variable = {
+							GPCR_province_zaozao_power_var = 3
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = { 
+		id = PRC_60s_Continue_to_Destroy_Feudal_Superstition
+		icon = GFX_PRC_60s_Continue_to_Destroy_Feudal_Superstition
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_destroy_local_bureaucracy
+			focus = PRC_60s_Sixty_six_orders
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Rescue_cultural_relics
+		}
+		relative_position_id = PRC_60s_The_fullence_of_January_storm
+		x = -1
+		y = 5
+		completion_reward = {
+			custom_effect_tooltip = PRC_60s_This_will_benefit_conservatives_tt
+			hidden_effect = {
+				any_owned_state = {
+					if = {
+						limit = {
+							has_variable = GPCR_province_laobao_power_var
+						}
+						add_to_variable = {
+							GPCR_province_laobao_power_var = 3
+						}
+						add_to_variable = {
+							GPCR_province_zaozao_power_var = -3
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_Dispatch_the_PLA_to_stabilize_the_situation
+		icon = GFX_PRC_60s_Dispatch_the_PLA_to_stabilize_the_situation
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_The_whole_country_is_red
+			focus = PRC_60s_Uphold_the_commune_leadership
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_rely_on_the_militia
+		}
+		relative_position_id = PRC_60s_The_fullence_of_January_storm
+		x = 1
+		y = 4
+		completion_reward = {
+			custom_effect_tooltip = PRC_60s_This_will_benefit_conservatives_tt
+			hidden_effect = {
+				any_owned_state = {
+					if = {
+						limit = {
+							has_variable = GPCR_province_laobao_power_var
+						}
+						add_to_variable = {
+							GPCR_province_laobao_power_var = 3
+						}
+						add_to_variable = {
+							GPCR_province_zaozao_power_var = -3
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_rely_on_the_militia
+		icon = GFX_PRC_60s_rely_on_the_militia
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Uphold_the_commune_leadership
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Dispatch_the_PLA_to_stabilize_the_situation
+		}
+		relative_position_id = PRC_60s_The_fullence_of_January_storm
+		x = 3
+		y = 4
+		completion_reward = {
+			custom_effect_tooltip = PRC_60s_This_will_weaken_the_PLA_tt
+			hidden_effect = {
+				any_owned_state = {
+					if = {
+						limit = {
+							has_variable = GPCR_province_PLA_power_var
+						}
+						add_to_variable = {
+							GPCR_province_PLA_power_var = -5
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_coercive_measures
+		icon = GFX_PRC_60s_coercive_measures
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_rely_on_the_militia
+			focus = PRC_60s_Dispatch_the_PLA_to_stabilize_the_situation
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Subjectivity
+		}
+		relative_position_id = PRC_60s_The_fullence_of_January_storm
+		x = 1
+		y = 5
+		completion_reward = {
+			custom_effect_tooltip = PRC_60s_This_will_benefit_conservatives_tt
+			hidden_effect = {
+				any_owned_state = {
+					if = {
+						limit = {
+							has_variable = GPCR_province_laobao_power_var
+						}
+						add_to_variable = {
+							GPCR_province_laobao_power_var = 3
+						}
+						add_to_variable = {
+							GPCR_province_zaozao_power_var = -3
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_Subjectivity
+		icon = GFX_PRC_60s_Subjectivity 
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_rely_on_the_militia
+			focus = PRC_60s_Dispatch_the_PLA_to_stabilize_the_situation
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_coercive_measures
+		}
+		relative_position_id = PRC_60s_The_fullence_of_January_storm
+		x = 3
+		y = 5
+		completion_reward = {
+			custom_effect_tooltip = PRC_60s_This_will_benefit_revolutionaries_tt
+			hidden_effect = {
+				any_owned_state = {
+					if = {
+						limit = {
+							has_variable = GPCR_province_laobao_power_var
+						}
+						add_to_variable = {
+							GPCR_province_laobao_power_var = -3
+						}
+						add_to_variable = {
+							GPCR_province_zaozao_power_var = 3
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_January_storm
+		icon = GFX_PRC_60s_January_storm
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_The_fullence_of_January_storm
+		}
+		relative_position_id = PRC_60s_The_fullence_of_January_storm
+		x = 6
+		y = 2
+	    allow_branch = {
+			has_country_flag = prc_60s_February_Counterflow
+		}
+	}
+	focus = {
+		id = PRC_60s_January_storm_1a
+		icon = GFX_PRC_60s_January_storm_1a
+		cost = 3
+		relative_position_id = PRC_60s_The_fullence_of_January_storm
+		x = 5
+		y = 3
+		prerequisite = {
+			focus = PRC_60s_January_storm
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_January_storm_1b
+		}
+		completion_reward = {
+			add_to_variable = {
+				CPC_bar_a = -1.6
+			}
+			add_to_variable = {
+				CPC_bar_b = 1.6
+			}
+			add_to_variable = {
+				CPC_bar_c = 1.6
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_January_storm_1b
+		icon = GFX_PRC_60s_January_storm_1b
+		cost = 3
+		relative_position_id = PRC_60s_The_fullence_of_January_storm
+		x = 7
+		y = 3
+		prerequisite = {
+			focus = PRC_60s_January_storm
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_January_storm_1a
+		}
+		completion_reward = {
+			add_to_variable = {
+				CPC_bar_a = 1.6
+			}
+			add_to_variable = {
+				CPC_bar_b = -1.6
+			}
+			add_to_variable = {
+				CPC_bar_c = -1.6
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_January_storm_2a
+		icon = GFX_PRC_60s_January_storm_2a
+		cost = 3
+		relative_position_id = PRC_60s_The_fullence_of_January_storm
+		x = 5
+		y = 4
+		prerequisite = {
+			focus = PRC_60s_January_storm_1b
+			focus = PRC_60s_January_storm_1a
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_January_storm_2b
+		}
+		completion_reward = {
+			custom_effect_tooltip = PRC_60s_This_will_benefit_conservatives_tt
+			hidden_effect = {
+				any_owned_state = {
+					if = {
+						limit = {
+							has_variable = GPCR_province_laobao_power_var
+						}
+						add_to_variable = {
+							GPCR_province_laobao_power_var = 3
+						}
+						add_to_variable = {
+							GPCR_province_zaozao_power_var = -3
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_January_storm_2b
+		icon = GFX_PRC_60s_January_storm_2b
+		cost = 3
+		relative_position_id = PRC_60s_The_fullence_of_January_storm
+		x = 7
+		y = 4
+		prerequisite = {
+			focus = PRC_60s_January_storm_1b
+			focus = PRC_60s_January_storm_1a
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_January_storm_2a
+		}
+		completion_reward = {
+			custom_effect_tooltip = PRC_60s_This_will_benefit_revolutionaries_tt
+			hidden_effect = {
+				any_owned_state = {
+					if = {
+						limit = {
+							has_variable = GPCR_province_laobao_power_var
+						}
+						add_to_variable = {
+							GPCR_province_laobao_power_var = -3
+						}
+						add_to_variable = {
+							GPCR_province_zaozao_power_var = 3
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_January_storm_3a
+		icon = GFX_PRC_60s_January_storm_3a
+		cost = 3
+		relative_position_id = PRC_60s_The_fullence_of_January_storm
+		x = 5
+		y = 5
+		prerequisite = {
+			focus = PRC_60s_January_storm_2b
+			focus = PRC_60s_January_storm_2a
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_January_storm_3b
+		}
+		completion_reward = {
+			custom_effect_tooltip = PRC_60s_This_will_benefit_conservatives_tt
+			hidden_effect = {
+				any_owned_state = {
+					if = {
+						limit = {
+							has_variable = GPCR_province_laobao_power_var
+						}
+						add_to_variable = {
+							GPCR_province_laobao_power_var = 3
+						}
+						add_to_variable = {
+							GPCR_province_zaozao_power_var = -3
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_January_storm_3b
+		icon = GFX_PRC_60s_January_storm_3b
+		cost = 3
+		relative_position_id = PRC_60s_The_fullence_of_January_storm
+		x = 7
+		y = 5
+		prerequisite = {
+			focus = PRC_60s_January_storm_2b
+			focus = PRC_60s_January_storm_2a
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_January_storm_3a
+		}
+		completion_reward = {
+			custom_effect_tooltip = PRC_60s_This_will_benefit_revolutionaries_tt
+			hidden_effect = {
+				any_owned_state = {
+					if = {
+						limit = {
+							has_variable = GPCR_province_laobao_power_var
+						}
+						add_to_variable = {
+							GPCR_province_laobao_power_var = -3
+						}
+						add_to_variable = {
+							GPCR_province_zaozao_power_var = 3
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_Nineth_CPC
+		icon = GFX_PRC_60s_Nineth_CPC
+		prerequisite = {
+			focus = PRC_60s_Rescue_cultural_relics
+			focus = PRC_60s_Continue_to_Destroy_Feudal_Superstition
+		}
+		prerequisite = {
+			focus = PRC_60s_coercive_measures
+			focus = PRC_60s_Subjectivity
+		}
+		prerequisite = {
+			focus = PRC_60s_January_storm_3a
+			focus = PRC_60s_January_storm_3b
+		}
+		cost = 3
+		relative_position_id = PRC_60s_The_fullence_of_January_storm
+		x = 3
+		y = 6
+	}
+	focus = {
+		id = PRC_60s_Promote_the_great_cause_of_unification
+		icon = GFX_PRC_60s_Promote_the_great_cause_of_unification
+		cost = 3
+		available = {
+			has_country_flag = Recover
+		}
+		x = 27
+		y = 15
+		completion_reward = {
+			add_political_power = 50
+		}
+		available = {
+			always = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = "WIP"
+		}
+	}
+	focus = {
+		id = PRC_60s_HK_MC_question
+		icon = GFX_PRC_60s_HK_MC_question
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Promote_the_great_cause_of_unification
+		}
+		x = -1
+		y = 3
+		relative_position_id = PRC_60s_Promote_the_great_cause_of_unification
+	}
+	focus = {
+		id = PRC_60s_Taiwan_method
+		icon = GFX_PRC_60s_Taiwan_method
+		cost = 3
+		x = 1
+		y = 4
+		relative_position_id = PRC_60s_Promote_the_great_cause_of_unification
+		prerequisite = {
+			focus = PRC_60s_HK_MC_question
+		}
+		prerequisite = {
+			focus = PRC_60s_Taiwan_peaceful
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Bigger_concessions
+		}
+	}
+	focus = {
+		id = PRC_60s_Bigger_concessions
+		icon = GFX_PRC_60s_Bigger_concessions
+		cost = 3
+		x = -2
+		y = 4
+		relative_position_id = PRC_60s_Promote_the_great_cause_of_unification
+		prerequisite = {
+			focus = PRC_60s_HK_MC_question
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Taiwan_method
+		}
+	}
+	focus = {
+		id = PRC_60s_Taiwan_secreatly
+		icon = GFX_PRC_60s_Taiwan_secreatly
+		cost = 3
+		prerequisite = {
+			focus = PRC_60s_Promote_the_great_cause_of_unification
+		}
+		x = 2
+		y = 1
+		relative_position_id = PRC_60s_Promote_the_great_cause_of_unification
+	}
+	focus = {
+		id = PRC_60s_Taiwan_peaceful
+		icon = GFX_PRC_60s_Taiwan_peaceful
+		cost = 3
+		x = 1
+		y = 2
+		relative_position_id = PRC_60s_Promote_the_great_cause_of_unification
+		prerequisite = {
+			focus = PRC_60s_Taiwan_secreatly
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Taiwan_CR
+		}
+	}
+	focus = {
+		id = PRC_60s_Taiwan_CR
+		icon = GFX_PRC_60s_Taiwan_CR
+		cost = 3
+		x = 3
+		y = 2
+		relative_position_id = PRC_60s_Promote_the_great_cause_of_unification
+		prerequisite = {
+			focus = PRC_60s_Taiwan_secreatly
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Taiwan_peaceful
+		}
+	}
+	focus = {
+		id = PRC_60s_Taiwan_research_usa
+		icon = GFX_PRC_60s_Taiwan_research_usa
+		cost = 3
+		x = 2
+		y = 3
+		relative_position_id = PRC_60s_Promote_the_great_cause_of_unification
+		prerequisite = {
+			focus = PRC_60s_Taiwan_peaceful
+		}
+	}
+	focus = {
+		id = PRC_60s_Air_defense_circle
+		icon = GFX_PRC_60s_Air_defense_circle
+		cost = 3
+		x = 4
+		y = 3
+		relative_position_id = PRC_60s_Promote_the_great_cause_of_unification
+		prerequisite = {
+			focus = PRC_60s_Taiwan_peaceful
+		}
+	}
+	focus = {
+		id = PRC_60s_Taiwan_kuojian_shengshuigang
+		icon = GFX_PRC_60s_Taiwan_kuojian_shengshuigang
+		cost = 3
+		x = 3
+		y = 4
+		relative_position_id = PRC_60s_Promote_the_great_cause_of_unification
+		prerequisite = {
+			focus = PRC_60s_Taiwan_research_usa
+			focus = PRC_60s_Air_defense_circle
+		}
+	}
+	focus = {
+		id = PRC_60s_Taiwan_industy
+		icon = GFX_PRC_60s_Taiwan_industy
+		cost = 3
+		x = 2
+		y = 5
+		relative_position_id = PRC_60s_Promote_the_great_cause_of_unification
+		prerequisite = {
+			focus = PRC_60s_Taiwan_method
+			focus = PRC_60s_Taiwan_kuojian_shengshuigang
+		}
+	}
+	focus = {
+		id = PRC_60s_Unimpressed
+		icon = GFX_PRC_60s_Unimpressed
+		cost = 3
+		available = {
+			has_country_flag = Recover
+		}
+		x = 48
+		y = 8
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PRC_60s_Anti_sanheyishao
+		icon = GFX_PRC_60s_Anti_sanheyishao
+		cost = 3
+		x = -1
+		y = 1
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Unimpressed
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Pragmatic_diplomacy
+		}
+		available = {
+			has_completed_focus = PRC_60s_Decision_on_the_Cultural_Revolution
+		}
+		completion_reward = {
+			custom_effect_tooltip = PRC_60s_This_will_benefit_revolutionaries_tt
+			hidden_effect = {
+				set_temp_variable = {
+					prc60s_circle_temp = 1
+				}
+				while_loop_effect = {
+					limit = {
+						check_variable = {
+							prc60s_circle_temp < 4
+						}
+					}
+					random_owned_state = {
+						limit = {
+							NOT = {
+								has_country_flag = prc_60s_circle_temp_1
+							}
+							has_variable = GPCR_province_laobao_power_var
+						}
+						add_to_variable = {
+							GPCR_province_laobao_power_var = -1
+						}
+						add_to_variable = {
+							GPCR_province_zaozao_power_var = 1
+						}
+						set_country_flag = prc_60s_circle_temp_1
+					}
+					add_to_temp_variable = {
+						prc60s_circle_temp = 1
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_Pragmatic_diplomacy
+		icon = GFX_PRC_Pennant
+		cost = 3
+		x = 1
+		y = 1
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Unimpressed
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Anti_sanheyishao
+		}
+		available = {
+			has_completed_focus = PRC_60s_Decision_on_the_Cultural_Revolution
+		}
+		completion_reward = {
+			custom_effect_tooltip = PRC_60s_This_will_benefit_conservative_tt
+			hidden_effect = {
+				set_temp_variable = {
+					prc60s_circle_temp = 1
+				}
+				while_loop_effect = {
+					limit = {
+						check_variable = {
+							prc60s_circle_temp < 4
+						}
+					}
+					random_owned_state = {
+						limit = {
+							NOT = {
+								has_country_flag = prc_60s_circle_temp_1
+							}
+							has_variable = GPCR_province_laobao_power_var
+						}
+						add_to_variable = {
+							GPCR_province_laobao_power_var = 1
+						}
+						add_to_variable = {
+							GPCR_province_zaozao_power_var = -1
+						}
+						set_country_flag = prc_60s_circle_temp_1
+					}
+					add_to_temp_variable = {
+						prc60s_circle_temp = 1
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_Our_asian_partner
+		icon = GFX_PRC_60s_Our_asian_partner
+		cost = 3
+		x = -8
+		y = 3
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Anti_sanheyishao
+			focus = PRC_60s_Pragmatic_diplomacy
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PRC_60s_Deal_with_516
+		icon = GFX_PRC_60s_Deal_with_516
+		cost = 3
+		x = -20
+		y = 4
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Our_asian_partner
+		}
+		available = {
+			always = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = "WIP"
+		}
+		available = {
+			always = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = "WIP"
+		}
+	}
+	focus = {
+		id = PRC_60s_China-Northkorea_friendship
+		icon = GFX_PRC_60s_China-Northkorea_friendship
+		cost = 3
+		x = -18
+		y = 4
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Our_asian_partner
+		}
+		completion_reward = {
+			KOR = {
+				add_opinion_modifier = {
+					target = PRC
+					modifier = large_increase
+				}
+			}
+			PRC = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = large_increase
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_Assisted_in_the_North_Korean_assassination
+		icon = GFX_PRC_60s_Assisted_in_the_North_Korean_assassination
+		cost = 3
+		x = -22
+		y = 5
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Deal_with_516
+		}
+		prerequisite = {
+			focus = PRC_60s_China-Northkorea_friendship
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Crossing_the_demilitarized_zone
+		}
+	}
+	focus = {
+		id = PRC_60s_Crossing_the_demilitarized_zone
+		icon = GFX_PRC_60s_Crossing_the_demilitarized_zone
+		cost = 3
+		x = -20
+		y = 5
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Deal_with_516
+		}
+		prerequisite = {
+			focus = PRC_60s_China-Northkorea_friendship
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Assisted_in_the_North_Korean_assassination
+		}
+	}
+	focus = {
+		id = PRC_60s_Economic_aid_to_North_Koreae
+		icon = GFX_PRC_60s_Economic_aid_to_North_Koreae
+		cost = 3
+		x = -18
+		y = 5
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Deal_with_516
+		}
+		prerequisite = {
+			focus = PRC_60s_China-Northkorea_friendship
+		}
+	}
+	focus = {
+		id = PRC_60s_Cooperation_with_Myanmar
+		icon = GFX_PRC_60s_Cooperation_with_Myanmar
+		cost = 3
+		x = -15
+		y = 4
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Our_asian_partner
+		}
+		available = {
+			always = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = "WIP"
+		}
+	}
+	focus = {
+		id = PRC_60s_Help_WuNu
+		icon = GFX_PRC_60s_Help_WuNu
+		cost = 3
+		x = -16
+		y = 5
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Cooperation_with_Myanmar
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Reprimand_Wunaiwen
+		}
+	}
+	focus = {
+		id = PRC_60s_Reprimand_Wunaiwen
+		icon = GFX_PRC_60s_Reprimand_Wunaiwen
+		cost = 3
+		x = -14
+		y = 5
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Cooperation_with_Myanmar
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Help_WuNu
+		}
+	}
+	focus = {
+		id = PRC_60s_Armed_seizure_of_power_in_Burma
+		icon = GFX_PRC_60s_Armed_seizure_of_power_in_Burma
+		cost = 3
+		x = -13
+		y = 6
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Reprimand_Wunaiwen
+		}
+	}
+	focus = {
+		id = PRC_60s_Deal_with_Chinese_Exclusion_Incident_in_Myanmar
+		icon = GFX_PRC_60s_Deal_with_Chinese_Exclusion_Incident_in_Myanmar
+		cost = 3
+		x = -15
+		y = 6
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Reprimand_Wunaiwen
+		}
+	}
+	focus = {
+		id = PRC_60s_Wunaiwen_peacefully
+		icon = GFX_PRC_60s_Wunaiwen_peacefully
+		cost = 3
+		x = -15
+		y = 7
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Deal_with_Chinese_Exclusion_Incident_in_Myanmar
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Aid_to_the_Communist_Party_of_Myanmar
+		}
+	}
+	focus = {
+		id = PRC_60s_Aid_to_the_Communist_Party_of_Myanmar
+		icon = GFX_PRC_60s_Aid_to_the_Communist_Party_of_Myanmar
+		cost = 3
+		x = -13
+		y = 7
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Deal_with_Chinese_Exclusion_Incident_in_Myanmar
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Wunaiwen_peacefully
+		}
+	}
+	focus = {
+		id = PRC_60s_Indonesian_coup
+		icon = GFX_PRC_60s_Indonesian_coup
+		cost = 3
+		x = -10
+		y = 4
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Our_asian_partner
+		}
+		available = {
+			always = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = "WIP"
+		}
+	}
+	focus = {
+		id = PRC_60s_Evacuation_of_expatriates
+		icon = GFX_PRC_60s_Evacuation_of_expatriates
+		cost = 3
+		x = -11
+		y = 5
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Indonesian_coup
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Stabilize_the_Indonesian_Communist_Party
+		}
+	}
+	focus = {
+		id = PRC_60s_Stabilize_the_Indonesian_Communist_Party
+		icon = GFX_PRC_60s_Stabilize_the_Indonesian_Communist_Party
+		cost = 3
+		x = -9
+		y = 5
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Indonesian_coup
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Evacuation_of_expatriates
+		}
+	}
+	focus = {
+		id = PRC_60s_Intervene_in_Indochina
+		icon = GFX_PRC_60s_Intervene_in_Indochina
+		cost = 3
+		x = -5
+		y = 4
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Our_asian_partner
+		}
+		available = {
+			always = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = "WIP"
+		} 
+	}
+	focus = {
+		id = PRC_60s_Indirect_support
+		icon = GFX_PRC_60s_Indirect_support
+		cost = 3
+		x = -6
+		y = 5
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Intervene_in_Indochina
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Ignite_the_flames_of_war
+		}
+	}
+	focus = {
+		id = PRC_60s_Ignite_the_flames_of_war
+		icon = GFX_PRC_60s_Ignite_the_flames_of_war
+		cost = 3
+		x = -4
+		y = 5
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Intervene_in_Indochina
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Indirect_support
+		}
+	}
+	focus = {
+		id = PRC_60s_Support_the_Communist_Party_of_Cambodia
+		icon = GFX_PRC_60s_Support_the_Communist_Party_of_Cambodia
+		cost = 3
+		x = -5
+		y = 6
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Intervene_in_Indochina
+		}
+	}
+	focus = {
+		id = PRC_60s_Promote_infrastructure_construction_in_Vietnam
+		icon = GFX_PRC_60s_Promote_infrastructure_construction_in_Vietnam
+		cost = 3
+		x = -7
+		y = 6
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Intervene_in_Indochina
+		}
+	}
+	focus = {
+		id = PRC_60s_Aid_to_Bartleao
+		icon = GFX_PRC_60s_Aid_to_Bartleao
+		cost = 3
+		cost = 3
+		x = -3
+		y = 6
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Intervene_in_Indochina
+		}
+	}
+	focus = {
+		id = PRC_60s_Send_support_troops
+		icon = GFX_PRC_60s_Send_support_troops
+		cost = 3
+		x = -5
+		y = 7
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Aid_to_Bartleao
+		}
+		prerequisite = {
+			focus = PRC_60s_Promote_infrastructure_construction_in_Vietnam
+		}
+		prerequisite = {
+			focus = PRC_60s_Support_the_Communist_Party_of_Cambodia
+		}
+	}
+	focus = {
+		id = PRC_60s_The_situation_in_South_Asia
+		icon = GFX_PRC_60s_The_situation_in_South_Asia
+		cost = 3
+		x = 1
+		y = 4
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Our_asian_partner
+		}
+	}
+	focus = {
+		id = PRC_60s_Abandon_border_claims
+		icon = GFX_PRC_60s_Abandon_border_claims
+		cost = 3
+		x = 0
+		y = 5
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_The_situation_in_South_Asia
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_McMahon_Line_is_not_recognized
+		}
+		completion_reward = {
+			RAJ = {
+				add_opinion_modifier = {
+					target = PRC
+					modifier = small_increase
+				}
+			}
+			PRC = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = small_increase
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_Jointly_developed_with_India
+		icon = GFX_PRC_60s_Jointly_developed_with_India
+		cost = 3
+		x = 0
+		y = 6
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Abandon_border_claims
+		}
+		completion_reward = {
+			1361 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			873 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_Stabilize_South_Asia
+		icon = GFX_PRC_60s_Stabilize_South_Asia
+		cost = 3
+		x = 0
+		y = 7
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Jointly_developed_with_India
+		}
+		completion_reward = {
+			RAJ = {
+				add_opinion_modifier = {
+					target = PRC
+					modifier = large_increase
+				}
+			}
+			PRC = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = large_increase
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_McMahon_Line_is_not_recognized
+		icon = GFX_PRC_60s_McMahon_Line_is_not_recognized
+		cost = 3
+		x = 2
+		y = 5
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_The_situation_in_South_Asia
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Abandon_border_claims
+		}
+		completion_reward = {
+			RAJ = {
+				add_opinion_modifier = {
+					target = PRC
+					modifier = small_decrease
+				}
+			}
+			PRC = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = small_decrease
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_Make_good_friends_with_Pakistan
+		icon = GFX_PRC_60s_Make_good_friends_with_Pakistan
+		cost = 3
+		x = 2
+		y = 6
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_McMahon_Line_is_not_recognized
+		}
+		completion_reward = {
+			PAK = {
+				add_opinion_modifier = {
+					target = PRC
+					modifier = small_increase
+				}
+			}
+			PRC = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = small_increase
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_Liberate_the_Indian_people
+		icon = GFX_PRC_60s_Liberate_the_Indian_people
+		cost = 3
+		x = 2
+		y = 7
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Make_good_friends_with_Pakistan
+		}
+	}
+	focus = {
+		id = PRC_60s_African_diplomacy
+		icon = GFX_PRC_60s_African_diplomacy
+		cost = 3
+		x = 5
+		y = 3
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Anti_sanheyishao
+			focus = PRC_60s_Pragmatic_diplomacy
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+		completion_reward = {
+			RAJ = {
+				add_opinion_modifier = {
+					target = PRC
+					modifier = large_decrease
+				}
+			}
+			PRC = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = large_decrease
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_Zhou_circumnavigated_the_Indian_Ocean
+		icon = GFX_PRC_60s_Zhou_circumnavigated_the_Indian_Ocean
+		cost = 3
+		x = 4
+		y = 4
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_African_diplomacy
+		}
+	}
+	focus = {
+		id = PRC_60s_Dispatch_medical_teams
+		icon = GFX_PRC_60s_Dispatch_medical_teams
+		cost = 3
+		x = 6
+		y = 4
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_African_diplomacy
+		}
+	}
+	focus = {
+		id = PRC_60s_Tanzan_Railway
+		icon = GFX_PRC_60s_Tanzan_Railway
+		cost = 3
+		x = 5
+		y = 5
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Dispatch_medical_teams
+		}
+		prerequisite = {
+			focus = PRC_60s_Zhou_circumnavigated_the_Indian_Ocean
+		}
+	}
+	focus = {
+		id = PRC_60s_Focus_on_socialist_countries
+		icon = GFX_PRC_60s_Focus_on_socialist_countries
+		cost = 3
+		x = 11
+		y = 3
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Anti_sanheyishao
+			focus = PRC_60s_Pragmatic_diplomacy
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PRC_60s_Soviet_leaders_visit_China
+		icon = GFX_PRC_60s_Soviet_leaders_visit_China
+		cost = 3
+		x = 11
+		y = 4
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Focus_on_socialist_countries
+		}
+		completion_reward = {
+			SOV = {
+				add_opinion_modifier = {
+					target = PRC
+					modifier = small_increase
+				}
+			}
+			PRC = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = small_increase
+				}
+			}
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = PRC_60s_The_last_aid_of_the_Soviet_Union
+		icon = GFX_PRC_60s_The_last_aid_of_the_Soviet_Union
+		cost = 3
+		x = 11
+		y = 6
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Soviet_leaders_visit_China
+		}
+		completion_reward = {
+			PRC = {
+				add_to_variable = {
+					currentMoney = 100
+					tooltip = increase_money_tt
+				}
+			}
+			SOV = {
+				add_to_variable = {
+					currentMoney = -100
+					tooltip = increase_money_tt
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_Oppose_revisionist_policies
+		icon = GFX_PRC_60s_Oppose_revisionist_policies
+		cost = 3
+		x = 8
+		y = 5
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Soviet_leaders_visit_China
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_The_friendship_remains_the_same
+		}
+		completion_reward = {
+			SOV = {
+				add_opinion_modifier = {
+					target = PRC
+					modifier = large_decrease
+				}
+			}
+			PRC = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = large_decrease
+				}
+			}
+			add_political_power = -20
+			if = {
+				limit = {
+					is_in_faction_with = SOV
+				}
+				leave_faction = yes
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_Make_good_friends_with_Albania
+		icon = GFX_PRC_60s_Make_good_friends_with_Albania
+		cost = 3
+		x = 7
+		y = 6
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Oppose_revisionist_policies
+		}
+		completion_reward = {
+			ALB = {
+				add_opinion_modifier = {
+					target = PRC
+					modifier = large_increase
+				}
+			}
+			PRC = {
+				add_opinion_modifier = {
+					target = ALB
+					modifier = large_increase
+				}
+			}
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = PRC_60s_Detente_relations_with_Yugoslavia
+		icon = GFX_PRC_60s_Detente_relations_with_Yugoslavia
+		cost = 3
+		x = 9
+		y = 6
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Oppose_revisionist_policies
+		}
+		completion_reward = {
+			YUG = {
+				add_opinion_modifier = {
+					target = PRC
+					modifier = small_increase
+				}
+			}
+			PRC = {
+				add_opinion_modifier = {
+					target = YUG
+					modifier = small_increase
+				}
+			}
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = PRC_60s_Join_the_Non-Aligned_Alliance
+		icon = GFX_PRC_60s_Join_the_Non-Aligned_Alliance
+		cost = 3
+		x = 7
+		y = 7
+		relative_position_id = PRC_60s_Unimpressed
+		available = {
+			is_in_faction = no
+		}
+		prerequisite = {
+			focus = PRC_60s_Make_good_friends_with_Albania
+		}
+		prerequisite = {
+			focus = PRC_60s_Detente_relations_with_Yugoslavia
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Established_the_Emerging_Forces_Alliance
+		}
+		completion_reward = {
+			YUG = {
+				add_opinion_modifier = {
+					target = PRC
+					modifier = small_increase
+				}
+			}
+			PRC = {
+				add_opinion_modifier = {
+					target = YUG
+					modifier = small_increase
+				}
+			}
+			set_rule = {
+				can_join_factions = no
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_Established_the_Emerging_Forces_Alliance
+		icon = GFX_PRC_60s_Established_the_Emerging_Forces_Alliance
+		cost = 3
+		x = 9
+		y = 7
+		relative_position_id = PRC_60s_Unimpressed
+		available = {
+			is_in_faction = no
+		}
+		prerequisite = {
+			focus = PRC_60s_Detente_relations_with_Yugoslavia
+		}
+		prerequisite = {
+			focus = PRC_60s_Make_good_friends_with_Albania
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Join_the_Non-Aligned_Alliance
+		}
+		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+			create_faction = Alliance_of_Emerging_Forces
+		}
+	}
+	focus = {
+		id = PRC_60s_The_friendship_remains_the_same
+		icon = GFX_PRC_60s_The_friendship_remains_the_same
+		cost = 3
+		x = 14
+		y = 5
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Soviet_leaders_visit_China
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Oppose_revisionist_policies
+		}
+		completion_reward = {
+			SOV = {
+				add_opinion_modifier = {
+					target = PRC
+					modifier = large_increase
+				}
+			}
+			PRC = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = large_increase
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_More_aid_of_the_Soviet_Union
+		icon = GFX_PRC_60s_More_aid_of_the_Soviet_Union
+		cost = 3
+		x = 14
+		y = 6
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_The_friendship_remains_the_same
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.15
+				uses = 2
+				category = industry
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.2
+				uses = 1
+				category = armor
+			}
+			PRC = {
+				add_to_variable = {
+					currentMoney = 200
+					tooltip = increase_money_tt
+				}
+			}
+			SOV = {
+				add_to_variable = {
+					currentMoney = -200
+					tooltip = increase_money_tt
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_East_64
+		icon = GFX_PRC_60s_East_64
+		cost = 3
+		x = 12
+		y = 7
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_More_aid_of_the_Soviet_Union
+		}
+		available = {
+			date > 1964.1.1
+		}
+		completion_reward = {
+			PRC = {
+				army_experience = 50
+			}
+			SOV = {
+				army_experience = 50
+			}
+			all_country = {
+				if = {
+					limit = {
+						is_in_faction_with = SOV
+					}
+					army_experience = 50
+				}
+			}
+			news_event = {
+				id = prc_60s_East_64
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_Scientific_Research_Mutual_Aid_Program
+		icon = GFX_PRC_60s_Scientific_Research_Mutual_Aid_Program
+		cost = 3
+		x = 14
+		y = 7
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_More_aid_of_the_Soviet_Union
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = PRC_SOV_60s_research
+				days = 730
+			}
+			SOV = {
+				add_timed_idea = {
+					idea = PRC_SOV_60s_research
+					days = 730
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_Joint_development_of_Central_Asia
+		icon = GFX_PRC_60s_Joint_development_of_Central_Asia
+		cost = 3
+		x = 16
+		y = 7
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_More_aid_of_the_Soviet_Union
+		}
+		set_temp_variable = {
+			PRC60s_PRC_SOV_HELP = 1
+		}
+		completion_reward = {
+			618 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			619 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			617 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			287 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			while_loop_effect = {
+				limit = {
+					check_variable = {
+						PRC60s_PRC_SOV_HELP < 6
+					}
+				}
+				random_all_state = {
+					limit = {
+						NOT = {
+							has_country_flag = prc_60s_PRC_SOV_Central_Asia_HELP
+						}
+						OR = {
+							state = 588
+							state = 573
+							state = 576
+							state = 590
+							state = 583
+							state = 407
+							state = 406
+							state = 402
+							state = 404
+							state = 589
+							state = 587
+							state = 886
+							state = 885
+							state = 585
+							state = 516
+							state = 586
+							state = 888
+							state = 804
+							state = 732
+							state = 405
+							state = 887
+							state = 1215
+							state = 914
+							state = 584
+							state = 874
+						}
+					}
+					set_country_flag = prc_60s_PRC_SOV_Central_Asia_HELP
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_to_temp_variable = {
+					PRC60s_PRC_SOV_HELP = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_Accession_to_the_Warsaw_Pact
+		icon = GFX_PRC_60s_Accession_to_the_Warsaw_Pact
+		cost = 3
+		x = 12
+		y = 8
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_East_64
+		}
+		prerequisite = {
+			focus = PRC_60s_Scientific_Research_Mutual_Aid_Program
+		}
+		prerequisite = {
+			focus = PRC_60s_Joint_development_of_Central_Asia
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Join_the_Economic_Mutual_Association
+		}
+		completion_reward = {
+			set_global_flag = PRC_INTERVENTION
+			add_to_faction = PRC
+			clamp_variable = {
+				var = badboy
+				min = 0
+				max = 100
+			}
+		}
+		available = {
+			always = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = "WIP"
+		}
+	}
+	focus = {
+		id = PRC_60s_Join_the_Economic_Mutual_Association
+		icon = GFX_PRC_60s_Join_the_Economic_Mutual_Association
+		cost = 3
+		x = 16
+		y = 8
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_East_64
+		}
+		prerequisite = {
+			focus = PRC_60s_Scientific_Research_Mutual_Aid_Program
+		}
+		prerequisite = {
+			focus = PRC_60s_Joint_development_of_Central_Asia
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Accession_to_the_Warsaw_Pact
+		}
+		available = {
+			always = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = "WIP"
+		}
+	}
+	focus = {
+		id = PRC_60s_Focus_on_capitalism_countries
+		icon = GFX_PRC_60s_Focus_on_capitalism_countries
+		cost = 3
+		x = 19
+		y = 3
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Anti_sanheyishao
+			focus = PRC_60s_Pragmatic_diplomacy
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PRC_60s_Establishment_of_diplomatic_relations_with_France
+		icon = GFX_PRC_60s_Establishment_of_diplomatic_relations_with_France
+		cost = 3
+		x = 19
+		y = 4
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Anti_sanheyishao
+		}
+		completion_reward = {
+			FRA = {
+				add_opinion_modifier = {
+					target = PRC
+					modifier = large_increase
+				}
+			}
+			PRC = {
+				add_opinion_modifier = {
+					target = FRA
+					modifier = large_increase
+				}
+			}
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = PRC_60s_May_storm
+		icon = GFX_PRC_60s_May_storm
+		cost = 3
+		x = 19
+		y = 5
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Establishment_of_diplomatic_relations_with_France
+		}
+		completion_reward = {
+			FRA = {
+				add_popularity = {
+					ideology = maoism
+					popularity = 0.2
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_Support_the_Maoists
+		icon = GFX_ PRC_60s_Support_the_Maoists
+		cost = 3
+		x = 18
+		y = 6
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_May_storm
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Powerless
+		}
+		available = {
+			has_completed_focus = PRC_60s_Anti_sanheyishao
+		}
+		completion_reward = {
+			FRA = {
+				add_opinion_modifier = {
+					target = PRC
+					modifier = small_decrease
+				}
+			}
+			custom_effect_tooltip = PRC_60s_This_will_benefit_revolutionaries_tt
+			hidden_effect = {
+				set_temp_variable = {
+					prc60s_circle_temp = 1
+				}
+				while_loop_effect = {
+					limit = {
+						check_variable = {
+							prc60s_circle_temp < 4
+						}
+					}
+					random_owned_state = {
+						limit = {
+							NOT = {
+								has_country_flag = prc_60s_circle_temp_1
+							}
+							has_variable = GPCR_province_laobao_power_var
+						}
+						add_to_variable = {
+							GPCR_province_laobao_power_var = -1
+						}
+						add_to_variable = {
+							GPCR_province_zaozao_power_var = 1
+						}
+						set_country_flag = prc_60s_circle_temp_1
+					}
+					add_to_temp_variable = {
+						prc60s_circle_temp = 1
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_Powerless
+		icon = GFX_PRC_60s_Powerless
+		cost = 3
+		x = 20
+		y = 6
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_May_storm
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Support_the_Maoists
+		}
+		completion_reward = {
+			FRA = {
+				add_opinion_modifier = {
+					target = PRC
+					modifier = small_increase
+				}
+			}
+			custom_effect_tooltip = PRC_60s_This_will_benefit_conservative_tt
+			hidden_effect = {
+				set_temp_variable = {
+					prc60s_circle_temp = 1
+				}
+				while_loop_effect = {
+					limit = {
+						check_variable = {
+							prc60s_circle_temp < 4
+						}
+					}
+					random_owned_state = {
+						limit = {
+							NOT = {
+								has_country_flag = prc_60s_circle_temp_1
+							}
+							has_variable = GPCR_province_laobao_power_var
+						}
+						add_to_variable = {
+							GPCR_province_laobao_power_var = 1
+						}
+						add_to_variable = {
+							GPCR_province_zaozao_power_var = -1
+						}
+						set_country_flag = prc_60s_circle_temp_1
+					}
+					add_to_temp_variable = {
+						prc60s_circle_temp = 1
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_Condemn_the_Atrocities_of_the_United_States
+		icon = GFX_PRC_60s_Condemn_the_Atrocities_of_the_United_States
+		cost = 3
+		x = 21
+		y = 4
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Focus_on_capitalism_countries
+		}
+		completion_reward = {
+			USA = {
+				add_opinion_modifier = {
+					target = PRC
+					modifier = small_decrease
+				}
+			}
+			PRC = {
+				add_opinion_modifier = {
+					target = PRC
+					modifier = small_decrease
+				}
+			}
+			custom_effect_tooltip = PRC_60s_This_will_benefit_revolutionaries_tt
+			hidden_effect = {
+				set_temp_variable = {
+					prc60s_circle_temp = 1
+				}
+				while_loop_effect = {
+					limit = {
+						check_variable = {
+							prc60s_circle_temp < 4
+						}
+					}
+					random_owned_state = {
+						limit = {
+							NOT = {
+								has_country_flag = prc_60s_circle_temp_1
+							}
+							has_variable = GPCR_province_laobao_power_var
+						}
+						add_to_variable = {
+							GPCR_province_laobao_power_var = -1
+						}
+						add_to_variable = {
+							GPCR_province_zaozao_power_var = 1
+						}
+						set_country_flag = prc_60s_circle_temp_1
+					}
+					add_to_temp_variable = {
+						prc60s_circle_temp = 1
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_Support_anti-war_in_the_United_States
+		icon = GFX_PRC_60s_Support_anti-war_in_the_United_States
+		cost = 3
+		x = 21
+		y = 5
+		relative_position_id = PRC_60s_Unimpressed
+		prerequisite = {
+			focus = PRC_60s_Condemn_the_Atrocities_of_the_United_States
+		}
+		completion_reward = {
+			USA = {
+				add_opinion_modifier = {
+					target = PRC
+					modifier = large_decrease
+				}
+			}
+			USA = {
+				add_popularity = {
+					ideology = maoism
+					popularity = 0.05
+				}
+			}
+			custom_effect_tooltip = PRC_60s_This_will_benefit_revolutionaries_tt
+			hidden_effect = {
+				set_temp_variable = {
+					prc60s_circle_temp = 1
+				}
+				while_loop_effect = {
+					limit = {
+						check_variable = {
+							prc60s_circle_temp < 4
+						}
+					}
+					random_owned_state = {
+						limit = {
+							NOT = {
+								has_country_flag = prc_60s_circle_temp_1
+							}
+							has_variable = GPCR_province_laobao_power_var
+						}
+						add_to_variable = {
+							GPCR_province_laobao_power_var = -1
+						}
+						add_to_variable = {
+							GPCR_province_zaozao_power_var = 1
+						}
+						set_country_flag = prc_60s_circle_temp_1
+					}
+					add_to_temp_variable = {
+						prc60s_circle_temp = 1
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRC_60s_C-I_67
+		icon = GFX_PRC_60s_C-I_67
+		cost = 3
+		allow_branch = {
+			has_country_flag = PRC_60s_china_india_67war_has_begin
+		}
+		x = 46
+		y = 17
+		available = {
+			always = no
+		}
+	}
+	focus = {
+		id = PRC_60s_C-I_67_bigger
+		icon = GFX_PRC_60s_C-I_67_bigger
+		cost = 3
+		x = -1
+		y = 1
+		relative_position_id = PRC_60s_C-I_67
+		prerequisite = {
+			focus = PRC_60s_C-I_67
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_C-I_67_smaller
+		}
+	}
+	focus = {
+		id = PRC_60s_C-I_67_smaller
+		icon = GFX_PRC_60s_C-I_67_smaller
+		cost = 3
+		x = 1
+		y = 1
+		relative_position_id = PRC_60s_C-I_67
+		prerequisite = {
+			focus = PRC_60s_C-I_67
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_C-I_67_bigger
+		}
+	}
+	focus = {
+		id = PRC_60s_C-I_67_xijing_1
+		icon = GFX_PRC_60s_C-I_67_xijing_1
+		cost = 3
+		x = -2
+		y = 2
+		relative_position_id = PRC_60s_C-I_67
+		prerequisite = {
+			focus = PRC_60s_C-I_67_bigger
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_C-I_67_xijing_2
+		}
+		completion_reward = {
+			annex_country = {
+				target = SKK
+				transfer_troops = yes
+			}
+			set_variable = { 1549.prc_change_of_administrative_division = 38 }
+		}
+	}
+	focus = {
+		id = PRC_60s_C-I_67_xijing_2
+		icon = GFX_PRC_60s_C-I_67_xijing_2
+		cost = 3
+		x = 0
+		y = 2
+		relative_position_id = PRC_60s_C-I_67
+		prerequisite = {
+			focus = PRC_60s_C-I_67_bigger
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_C-I_67_xijing_1
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
+	}
+	focus = {
+		id = PRC_60s_C-I_62
+		icon = GFX_PRC_60s_C-I_62
+		cost = 3
+		allow_branch = {
+			has_country_flag = PRC_60s_china_india_62war_has_begin
+		}
+		x = 37
+		y = 16
+		available = {
+			always = no
+		}
+	}
+	focus = {
+		id = PRC_60s_C-I_62_bigger
+		icon = GFX_PRC_60s_C-I_62_bigger
+		cost = 3
+		x = -2
+		y = 1
+		relative_position_id = PRC_60s_C-I_62
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = PRC_60s_C-I_62
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_C-I_62_smaller
+		}
+	}
+	focus = {
+		id = PRC_60s_C-I_62_smaller
+		icon = GFX_PRC_60s_C-I_62_smaller
+		cost = 3
+		x = 2
+		y = 1
+		relative_position_id = PRC_60s_C-I_62
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = PRC_60s_C-I_62
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_C-I_62_bigger
+		}
+	}
+	focus = {
+		id = PRC_60s_C-I_62_xijing_1
+		icon = GFX_PRC_60s_C-I_62_xijing_1
+		cost = 3
+		x = -3
+		y = 2
+		relative_position_id = PRC_60s_C-I_62
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = PRC_60s_C-I_62_bigger
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_C-I_62_xijing_2
+		}
+	}
+	focus = {
+		id = PRC_60s_C-I_62_xijing_2
+		icon = GFX_PRC_60s_C-I_62_xijing_2
+		cost = 3
+		x = -1
+		y = 2
+		relative_position_id = PRC_60s_C-I_62
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = PRC_60s_C-I_62_bigger
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_C-I_62_xijing_1
+		}
+	}
+	focus = {
+		id = PRC_60s_C-I_62_95_1
+		icon = GFX_PRC_60s_C-I_62_95_1
+		cost = 3
+		x = 1
+		y = 2
+		relative_position_id = PRC_60s_C-I_62
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = PRC_60s_C-I_62_smaller
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_C-I_62_95_2
+		}
+	}
+	focus = {
+		id = PRC_60s_C-I_62_95_2
+		icon = GFX_PRC_60s_C-I_62_95_2
+		cost = 3
+		x = 3
+		y = 2
+		relative_position_id = PRC_60s_C-I_62
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = PRC_60s_C-I_62_smaller
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_C-I_62_95_1
+		}
+	}
+	focus = {
+		id = PRC_60s_C-S_Z
+		icon = GFX_PRC_60s_C-S_Z
+		cost = 3
+		allow_branch = {
+			has_country_flag = PRC_60s_chanpoisland_war_has_begin
+		}
+		x = 53
+		y = 17
+		available = {
+			always = no
+		}
+	}
+	focus = {
+		id = PRC_60s_C-S_Z_1
+		icon = GFX_PRC_60s_C-S_Z_1
+		cost = 3
+		x = -2
+		y = 1
+		relative_position_id = PRC_60s_C-S_Z
+		prerequisite = {
+			focus = PRC_60s_C-S_Z
+		}
+	}
+	focus = {
+		id = PRC_60s_C-S_Z_2
+		icon = GFX_PRC_60s_C-S_Z_2
+		cost = 3
+		x = 2
+		y = 1
+		relative_position_id = PRC_60s_C-S_Z
+		prerequisite = {
+			focus = PRC_60s_C-S_Z
+		}
+		by_pass = {
+			has_country_flag = PRC_60s_china_lose_the_chanpoisland
+		}
+	}
+	focus = {
+		id = PRC_60s_C-S_Z_3
+		icon = GFX_PRC_60s_C-S_Z_3
+		cost = 3
+		x = 0
+		y = 2
+		relative_position_id = PRC_60s_C-S_Z
+		prerequisite = {
+			focus = PRC_60s_C-S_Z_2
+			focus = PRC_60s_C-S_Z_1
+		}
+	}
+	focus = {
+		id = PRC_60s_PLA_work_arduously
+		icon = GFX_PRC_60s_PLA_work_arduously
+		cost = 7
+		available = {
+			has_country_flag = Recover
+		}
+		x = 41
+		y = 21
+		completion_reward = {
+			add_ideas = Work_arduously
+			add_political_power = 10
+		}
+	}
+	focus = {
+		id = PRC_60s_army
+		icon = GFX_PRC_60s_army
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = PRC_60s_PLA_work_arduously
+		prerequisite = {
+			focus = PRC_60s_PLA_work_arduously
+		}
+		completion_reward = {
+			army_experience = 50
+		}
+	}
+	focus = {
+	    id = PRC_60s_59_tank
+	    icon = GFX_PRC_60s_59_tank
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_army
+	    }
+	    x = -3
+		y = 2
+		relative_position_id = PRC_60s_PLA_work_arduously
+	    completion_reward = {
+			army_experience = 10
+			custom_effect_tooltip = "WIP"
+	    }
+	}
+	focus = {
+	    id = PRC_60s_huopao
+	    icon = GFX_PRC_60s_huopao
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_army
+	    }
+	    x = -1
+		y = 2
+		relative_position_id = PRC_60s_PLA_work_arduously
+	    completion_reward = {
+			add_tech_bonus = {
+				name = artillery_medium
+				bonus = 0.25
+				uses = 2
+				category = artillery_medium 
+			}
+	    }
+	}
+	focus = {
+	    id = PRC_60s_63
+	    icon = GFX_PRC_60s_63
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_army
+	    }
+		x = 1
+		y = 2
+		relative_position_id = PRC_60s_PLA_work_arduously
+	    completion_reward = {
+			add_tech_bonus = {
+				name = infantry_tech
+				bonus = 0.3
+				uses = 1
+				category = infantry_tech 
+			}
+	    }	
+	}
+	focus = {
+	    id = PRC_60s_56
+	    icon = GFX_PRC_60s_56
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_army
+	    }
+	    x = 3
+		y = 2
+		relative_position_id = PRC_60s_PLA_work_arduously
+	    completion_reward = {
+			add_tech_bonus = {
+				name = infantry_tech
+				bonus = 0.3
+				uses = 1
+				category = infantry_tech 
+			}
+	    }
+	}
+	focus = {
+	    id = PRC_60s_zhuangjia
+	    icon = GFX_PRC_60s_zhuangjia
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_59_tank
+		}
+		prerequisite = {
+		focus = PRC_60s_huopao	
+		}
+	    x = -2
+		y = 3
+		relative_position_id = PRC_60s_PLA_work_arduously
+	    completion_reward = {
+			custom_effect_tooltip = "WIP"
+	    }
+	}
+	focus = {
+	    id = PRC_60s_qiyibin
+	    icon = GFX_PRC_60s_qiyibin
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_56
+		}
+		prerequisite = {
+	        focus = PRC_60s_63
+		}
+		available = {
+			has_completed_focus = PRC_60s_C-S_Z
+		}
+		available = {
+			threat > 0.35
+		}
+		bypass = {
+			has_completed_focus = PRC_60s_C-S_Z
+		}
+	    x = 2
+		y = 3
+		relative_position_id = PRC_60s_PLA_work_arduously
+	    completion_reward = {
+			add_ideas = SevenBillion_SevenArmy
+			add_political_power = 50
+	    }
+	}
+	focus = {
+	    id = PRC_60s_sixiang_gongzuo
+	    icon = GFX_PRC_60s_sixiang_gongzuo
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_army
+	    }
+		x = 0
+		y = 3
+		relative_position_id = PRC_60s_PLA_work_arduously
+	    completion_reward = {
+			add_political_power = 100
+			army_experience = 20
+	    }
+	}
+	focus = {
+	    id = PRC_60s_Nixiangkeji
+	    icon = GFX_PRC_60s_Nixiangkeji
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_qiyibin
+		}
+		prerequisite = {
+	        focus = PRC_60s_zhuangjia
+		}
+		x = 0
+		y = 4
+		relative_position_id = PRC_60s_PLA_work_arduously
+	    completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = armor 
+			}
+	    }
+	}
+	focus = {
+		id = PRC_60s_air
+		icon = GFX_PRC_60s_air
+		cost = 3
+		x = -9
+		y = 1
+		relative_position_id = PRC_60s_PLA_work_arduously
+		prerequisite = {
+			focus = PRC_60s_PLA_work_arduously
+		}
+		completion_reward = {
+			air_experience = 50
+			custom_effect_tooltip = "WIP"
+		}
+	}
+	focus = {
+	    id = PRC_60s_HQ2
+	    icon = GFX_PRC_60s_HQ2
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_air
+	    }
+	    x = -12
+		y = 2
+		relative_position_id = PRC_60s_PLA_work_arduously
+	    completion_reward = {
+	
+	    }
+	}
+	focus = {
+	    id = PRC_60s_DF
+	    icon = GFX_PRC_60s_DF
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_air
+	    }
+	    x = -9
+		y = 2
+		relative_position_id = PRC_60s_PLA_work_arduously
+	    completion_reward = {
+	
+	    }
+	}
+	focus = {
+	    id = PRC_60s_H6
+	    icon = GFX_ PRC_60s_H6
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_air
+	    }
+	    x = -7
+		y = 2
+		relative_position_id = PRC_60s_PLA_work_arduously
+	    completion_reward = {
+	
+	    }
+	}
+	focus = {
+	    id = PRC_60s_J6
+	    icon = GFX_PRC_60s_J6
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_M4
+		}
+		prerequisite = {
+			focus = PRC_60s_HQ2
+		}
+		prerequisite = {
+			focus = PRC_60s_M21
+		}
+	    x = -6
+		y = 3
+		relative_position_id = PRC_60s_PLA_work_arduously
+	    completion_reward = {
+	
+	    }
+	}
+	focus = {
+	    id = PRC_60s_DF106
+	    icon = GFX_PRC_60s_DF106
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_DF
+	    }
+		x = -11
+		y = 3
+		relative_position_id = PRC_60s_PLA_work_arduously
+	    completion_reward = {
+	
+	    }
+	}
+	focus = {
+	    id = PRC_60s_DF104
+	    icon = GFX_PRC_60s_DF104
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_DF
+	    }
+		x = -15
+		y = 3
+		relative_position_id = PRC_60s_PLA_work_arduously
+	    completion_reward = {
+	
+	    }
+	}
+	focus = {
+	    id = PRC_60s_J6_jia
+	    icon = GFX_PRC_60s_J6_jia
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_DF
+	    }
+	    x = -8
+		y = 3
+		relative_position_id = PRC_60s_PLA_work_arduously
+	    completion_reward = {
+	
+	    }
+	}
+	focus = {
+	    id = PRC_60s_302
+	    icon = GFX_PRC_60s_302
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_DF106
+	    }
+	    mutually_exclusive = {
+	        focus = PRC_60s_Jingfei_wu
+	    }
+	    x = -12
+		y = 4
+		relative_position_id = PRC_60s_PLA_work_arduously
+	    completion_reward = {
+	
+	    }
+	}
+	focus = {
+	    id = PRC_60s_Jingfei_wu
+	    icon = GFX_PRC_60s_Jingfei_wu
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_DF106
+	    }
+	    mutually_exclusive = {
+	        focus = PRC_60s_302
+	    }
+		x = -10
+		y = 4
+		relative_position_id = PRC_60s_PLA_work_arduously
+	    completion_reward = {
+	
+	    }
+	}
+	focus = {
+	    id = PRC_60s_DF107
+	    icon = GFX_PRC_60s_DF107
+	    cost = 3
+	    mutually_exclusive = {
+	        focus = PRC_60s_DF113
+	    }
+		prerequisite = {
+	        focus = PRC_60s_DF104
+	    }
+	    x = -16
+		y = 4
+		relative_position_id = PRC_60s_PLA_work_arduously
+	    completion_reward = {
+	
+	    }
+	}
+	focus = {
+	    id = PRC_60s_DF113
+	    icon = GFX_PRC_60s_DF113
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_DF104
+	    }
+	    mutually_exclusive = {
+	        focus = PRC_60s_DF107
+	    }
+	    x = -14
+		y = 4
+		relative_position_id = PRC_60s_PLA_work_arduously
+	    completion_reward = {
+	
+	    }
+	}
+	focus = {
+	    id = PRC_60s_J6_yi
+	    icon = GFX_PRC_60s_J6_yi
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_J6_jia
+	    }
+		x = -7
+		y = 4
+		relative_position_id = PRC_60s_PLA_work_arduously
+	    completion_reward = {
+	
+	    }
+	}
+	focus = {
+	    id = PRC_60s_J6_yi_more
+	    icon = GFX_PRC_60s_J6_yi
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_J6_yi
+	    }
+		prerequisite = {
+	        focus = PRC_60s_J6
+	    }
+		x = -6
+		y = 5
+		relative_position_id = PRC_60s_PLA_work_arduously
+	    completion_reward = {
+	
+	    }
+	}
+	focus = {
+	    id = PRC_60s_J7
+	    icon = GFX_PRC_60s_J7
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_DF113
+		}
+		prerequisite = {
+			focus = PRC_60s_DF107
+		}
+	    x = -15
+		y = 5
+		relative_position_id = PRC_60s_PLA_work_arduously
+	    completion_reward = {
+	
+	    }
+	}
+	focus = {
+	    id = PRC_60s_4
+	    icon = GFX_PRC_60s_4
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_J6_yi_more
+		}
+		prerequisite = {
+			focus = PRC_60s_J7
+		}
+	    x = -12
+		y = 6
+		relative_position_id = PRC_60s_PLA_work_arduously
+	    completion_reward = {
+	
+	    }
+	}
+	focus = {
+	    id = PRC_60s_Navy
+	    icon = GFX_PRC_60s_Navy
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_PLA_work_arduously
+	    }
+	    x = 7
+		y = 1
+		relative_position_id = PRC_60s_PLA_work_arduously
+	    completion_reward = {
+			navy_experience = 50
+	    }
+	}
+	focus = {
+	    id = PRC_60s_033
+	    icon = GFX_PRC_60s_033
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_Navy
+	    }
+	    x = 6
+		y = 2
+		relative_position_id = PRC_60s_PLA_work_arduously
+	    completion_reward = {
+			add_tech_bonus = {
+				name = sub_hull_small_single
+				bonus = 0.3
+				uses = 1
+				category = sub_hull_small_single 
+			}
+	    }
+	}
+	focus = {
+	    id = PRC_60s_091
+	    icon = GFX_PRC_60s_091
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_Navy
+	    }
+		x = 8
+		y = 2
+		relative_position_id = PRC_60s_PLA_work_arduously
+	    completion_reward = {
+			add_tech_bonus = {
+				name = sub_hull_large_double
+				bonus = 0.5
+				uses = 1
+				category = sub_hull_large_double   
+			}
+	    }
+	}
+	focus = {
+	    id = PRC_60s_4_Gaizao
+	    icon = GFX_PRC_60s_4_Gaizao
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_033
+	    }
+	    x = 6
+		y = 3
+		relative_position_id = PRC_60s_PLA_work_arduously
+	    completion_reward = {
+	
+	    }
+	}
+	focus = {
+	    id = PRC_60s_051
+	    icon = GFX_PRC_60s_051
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_091
+	    }
+	    x = 8
+		y = 3
+		relative_position_id = PRC_60s_PLA_work_arduously
+	    completion_reward = {
+			add_tech_bonus = {
+				name = screen_hull_medium
+				bonus = 0.5
+				uses = 1
+				category = screen_hull_medium   
+			}
+	    }
+	}
+	focus = {
+	    id = PRC_60s_Haijun_kuozhang
+	    icon = GFX_PRC_60s_Haijun_kuozhang
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_051
+		}
+		prerequisite = {
+		focus = PRC_60s_4_Gaizao	
+		}
+	    x = 7
+		y = 4
+		relative_position_id = PRC_60s_PLA_work_arduously
+	    completion_reward = {
+			610 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = dockyard 
+				level = 2
+				instant_build = yes
+				}
+			}
+	    }
+	}
+	focus = {
+	    id = PRC_60s_Construction_of_atomic_energy_industry
+	    icon = GFX_PRC_60s_Construction_of_atomic_energy_industry
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_PLA_work_arduously
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Receive_assistance
+		}
+	    x = 13
+		y = 1
+		relative_position_id = PRC_60s_PLA_work_arduously
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = nuclear_fusion   
+			}
+		}
+	}
+	focus = {
+	    id = PRC_60s_Receive_assistance
+	    icon = GFX_PRC_60s_Receive_assistance
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_PLA_work_arduously
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Construction_of_atomic_energy_industry
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.65
+				uses = 1
+				category = nuclear_fusion
+			}
+		}
+	    x = 15
+		y = 1
+		relative_position_id = PRC_60s_PLA_work_arduously
+	}
+	focus = {
+	    id = PRC_60s_The_Second_Artillery_was_established
+	    icon = GFX_PRC_60s_The_Second_Artillery_was_established
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_Receive_assistance
+		}
+		prerequisite = {
+			focus = PRC_60s_Construction_of_atomic_energy_industry
+		}
+		completion_reward = {
+			custom_effect_tooltip = "WIP"
+		}
+	    x = 14
+		y = 2
+		relative_position_id = PRC_60s_PLA_work_arduously
+	}
+	focus = {
+	    id = PRC_60s_Develop_DF
+	    icon = GFX_PRC_60s_Develop_DF
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_Construction_of_atomic_energy_industry
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = rocket_bonus
+				bonus = 1
+				uses = 1
+				category = rocketry
+			}
+		}
+	    x = 11
+		y = 3
+		relative_position_id = PRC_60s_PLA_work_arduously
+	}
+	focus = {
+	    id = PRC_60s_Rescue_data
+	    icon = GFX_PRC_60s_Rescue_data
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_Construction_of_atomic_energy_industry
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = rocket_engines_bonus     
+				bonus = 0.65
+				uses = 1
+				category = nuclear_weapons         
+			}
+		}
+	    x = 13
+		y = 3
+		relative_position_id = PRC_60s_PLA_work_arduously
+	}
+	focus = {
+	    id = PRC_60s_Buy_Soviet_samples
+	    icon = GFX_PRC_60s_Buy_Soviet_samples
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_Receive_assistance
+		}
+		completion_reward = {
+			custom_effect_tooltip = "WIP"
+		}
+		x = 17
+		y = 3
+		relative_position_id = PRC_60s_PLA_work_arduously
+	}
+	focus = {
+	    id = PRC_60s_Get_data_of_SOV
+	    icon = GFX_PRC_60s_Get_data_of_SOV
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_Receive_assistance
+		}
+	    x = 15
+		y = 3
+		relative_position_id = PRC_60s_PLA_work_arduously
+	}
+	focus = {
+	    id = PRC_60s_Scramble_bombs
+	    icon = GFX_PRC_60s_Scramble_bombs
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_Develop_DF
+		}
+		prerequisite = {
+			focus = PRC_60s_Rescue_data
+		}
+		x = 13
+		y = 4
+		relative_position_id = PRC_60s_PLA_work_arduously
+	}
+	focus = {
+	    id = PRC_60s_Modify_aircraft
+	    icon = GFX_PRC_60s_Modify_aircraft
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_Get_data_of_SOV
+		}
+		prerequisite = {
+			focus = PRC_60s_Buy_Soviet_samples
+		}
+	    x = 15
+		y = 4
+		relative_position_id = PRC_60s_PLA_work_arduously
+	}
+	focus = {
+	    id = PRC_60s_Own_hydrogen_bomb_configuration
+	    icon = GFX_PRC_60s_Own_hydrogen_bomb_configuration
+	    cost = 3
+	    prerequisite = {
+	        focus = PRC_60s_Modify_aircraft
+		}
+		prerequisite = {
+			focus = PRC_60s_Scramble_bombs
+		}
+		x = 14
+		y = 5
+		relative_position_id = PRC_60s_PLA_work_arduously
+	}
+	focus = {
+		id = PRC_60s_Respond_to_three_years_of_harm
+		icon = GFX_PRC_60s_Respond_to_three_years_of_harm
+		cost = 7
+		x = 10
+		y = 2
+		completion_reward = {
+			set_variable = { zuoyouzhi = 62 }
+			add_political_power = -100
+			add_stability = -0.05
+			add_dynamic_modifier = {
+				modifier = Recover_from_Geat_Leap_Forward
+				scope = PRC
+			}
+			set_country_flag = prc_60s_rfglf
+			custom_effect_tooltip = PRC_60s_GLF_OPEN_tt
+		}
+	}
+	focus = {
+		id = PRC_60s_Lower_rations
+		icon = GFX_PRC_60s_Lower_rations
+		prerequisite = {
+			focus = PRC_60s_Respond_to_three_years_of_harm
+		}
+		completion_reward = {
+			add_political_power = -20
+			add_to_variable = {
+				rfglf2 = -0.02
+			}
+			PRC_60s_glf_up = YES
+			custom_effect_tooltip = PRC_60s_GLF_UP_tt
+		}
+		cost = 3
+		x = -2
+		y = 1
+		relative_position_id = PRC_60s_Respond_to_three_years_of_harm
+	}
+	focus = {
+		id = PRC_60s_Develop_substitute_food
+		icon = GFX_PRC_60s_Develop_substitute_food
+		prerequisite = {
+			focus = PRC_60s_Respond_to_three_years_of_harm
+		}
+		completion_reward = {
+			add_to_variable = {
+				rfglf7 = 1
+			}
+			PRC_60s_glf_up = YES
+			custom_effect_tooltip = PRC_60s_GLF_UP_tt
+		}
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = PRC_60s_Respond_to_three_years_of_harm
+	}
+	focus = {
+		id = PRC_60s_Support_city
+		icon = GFX_PRC_60s_Support_city
+		prerequisite = {
+			focus = PRC_60s_Respond_to_three_years_of_harm
+		}
+		completion_reward = {
+			add_political_power = -50
+			add_to_variable = {
+				rfglf7 = 1
+			}
+			add_to_variable = {
+				rfglf2 = -0.05
+			}
+			PRC_60s_glf_up = YES
+			custom_effect_tooltip = PRC_60s_GLF_UP_tt
+		}
+		cost = 3
+		x = 2
+		y = 1
+		relative_position_id = PRC_60s_Respond_to_three_years_of_harm
+	}
+	focus = {
+		id = PRC_60s_The_reform_of_famine
+		icon = GFX_PRC_60s_The_reform_of_famine
+		prerequisite = {
+			focus = PRC_60s_Develop_substitute_food
+		}
+		prerequisite = {
+			focus = PRC_60s_Support_city
+		}
+		prerequisite = {
+			focus = PRC_60s_Lower_rations
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+		cost = 3
+		x = 0
+		y = 2
+		relative_position_id = PRC_60s_Respond_to_three_years_of_harm
+	}
+	focus = {
+		id = PRC_60s_Increas_railway
+		icon = GFX_PRC_60s_Increas_railway
+		prerequisite = {
+			focus = PRC_60s_The_reform_of_famine
+		}
+		completion_reward = {
+			add_political_power = -10
+			add_to_variable = {
+				rfglf7 = 2
+			}
+			add_to_variable = {
+				rfglf9 = 0.05
+			}
+			add_to_variable = {
+				rfglf10 = 0.08	
+			}
+			PRC_60s_glf_up = YES
+			custom_effect_tooltip = PRC_60s_GLF_UP_tt
+		}
+		cost = 3
+		x = 0
+		y = 3
+		relative_position_id = PRC_60s_Respond_to_three_years_of_harm
+	}
+	focus = {
+		id = PRC_60s_Expand_agricultural_and_sideline_industries
+		icon = GFX_PRC_60s_Expand_agricultural_and_sideline_industries
+		prerequisite = {
+			focus = PRC_60s_The_reform_of_famine
+		}
+		completion_reward = {
+				add_political_power = 5
+				add_to_variable = {
+					rfglf6 = -0.03
+				}
+				add_to_variable = {
+					rfglf2 = 0.05
+				}
+				add_to_variable = {
+					rfglf9 = -0.02
+				}
+				add_to_variable = {
+					zuoyouzhi = 2
+				}
+				PRC_60s_glf_up = YES
+				custom_effect_tooltip = PRC_60s_GLF_UP_tt
+		}
+		cost = 3
+		x = -2
+		y = 3
+		relative_position_id = PRC_60s_Respond_to_three_years_of_harm
+	}
+	focus = {
+		id = PRC_60s_Reclaim_your_own_land
+		icon = GFX_PRC_60s_Reclaim_your_own_land
+		prerequisite = {
+			focus = PRC_60s_The_reform_of_famine
+		}
+		completion_reward = {
+			add_to_variable = {
+				zuoyouzhi = 2
+			}
+			add_to_variable = {
+				rfglf2 = 0.05
+			}
+			add_to_variable = {
+				rfglf3 = 0.02
+			}
+			add_to_variable = {
+				zuoyouzhi = 2
+			}
+			PRC_60s_glf_up = YES
+			custom_effect_tooltip = PRC_60s_GLF_UP_tt
+		}
+		cost = 3
+		x = 2
+		y = 3
+		relative_position_id = PRC_60s_Respond_to_three_years_of_harm
+	}
+	focus = {
+		id = PRC_60s_Allow_country_market
+		icon = GFX_PRC_60s_Allow_country_market
+		prerequisite = {
+			focus = PRC_60s_Expand_agricultural_and_sideline_industries
+		}
+		prerequisite = {
+			focus = PRC_60s_Increas_railway
+		}
+		prerequisite = {
+			focus = PRC_60s_Reclaim_your_own_land
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Expand_rural_raw_materials
+		}
+		completion_reward = {
+				add_political_power = 30
+				add_to_variable = {
+					rfglf6 = -0.03
+				}
+				add_to_variable = {
+					rfglf2 = 0.05 
+				}
+				add_to_variable = {
+					rfglf9 = -0.05
+				}
+				add_to_variable = {
+					zuoyouzhi = 2
+				}
+				PRC_60s_glf_up = YES
+				custom_effect_tooltip = PRC_60s_GLF_UP_tt
+		}
+		cost = 3
+		x = 1
+		y = 4
+		relative_position_id = PRC_60s_Respond_to_three_years_of_harm
+	}
+	focus = {
+		id = PRC_60s_The_second_land_revolution
+		icon = GFX_PRC_60s_The_second_land_revolution
+		prerequisite = {
+			focus = PRC_60s_Expand_agricultural_and_sideline_industries
+		}
+		prerequisite = {
+			focus = PRC_60s_Increas_railway
+		}
+		prerequisite = {
+			focus = PRC_60s_Reclaim_your_own_land
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Classify_rich_poor
+		}
+		completion_reward = {
+			add_to_variable = {
+				rfglf2 = 0.01
+			}
+			add_to_variable = {
+				rfglf1 = 0.05
+			}
+			add_to_variable = {
+				zuoyouzhi = 2
+			}
+			PRC_60s_glf_up = YES
+			custom_effect_tooltip = PRC_60s_GLF_UP_tt
+		}
+		cost = 3
+		x = -1
+		y = 4
+		relative_position_id = PRC_60s_Respond_to_three_years_of_harm
+	}
+	focus = {
+		id = PRC_60s_Dismantling_the_people_commune
+		icon = GFX_PRC_60s_Dismantling_the_people_commune
+		prerequisite = {
+			focus = PRC_60s_Expand_agricultural_and_sideline_industries
+		}
+		prerequisite = {
+			focus = PRC_60s_Increas_railway
+		}
+		prerequisite = {
+			focus = PRC_60s_Reclaim_your_own_land
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Balanced_scale
+		}
+		completion_reward = {
+			add_to_variable = {
+				rfglf6 = -0.03 
+			}
+			add_to_variable = {
+				rfglf2 = -0.03 
+			}
+			add_to_variable = {
+				zuoyouzhi = 2
+			}
+			custom_effect_tooltip = PRC_60s_GLF_UP_little
+		}
+		cost = 3
+		x = -7
+		y = 4
+		relative_position_id = PRC_60s_Respond_to_three_years_of_harm
+	}
+	focus = {
+		id = PRC_60s_Abolition_of_five_small_industries
+		icon = GFX_PRC_60s_Abolition_of_five_small_industries
+		prerequisite = {
+			focus = PRC_60s_Expand_the_powers_of_the_plant_director
+			focus = PRC_60s_Close_the_rank_gap
+		}
+		prerequisite = {
+			focus = PRC_60s_Cuts_to_leader_welfare
+			focus = PRC_60s_Cuts_to_city_welfare
+		}
+		prerequisite = {
+			focus = PRC_60s_Traffic_of_city_country
+			focus = PRC_60s_Support_country
+		}
+		prerequisite = {
+			focus = PRC_60s_The_sports_of_easy
+			focus = PRC_60s_Ensure_the_treatment_of_urban_workers
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Strengthen_five_small_industries
+		}
+		completion_reward = {
+			add_to_variable = {
+				rfglf1 = 0.05
+			}
+			add_to_variable = {
+				rfglf8 = 0.05
+			}
+			add_to_variable = {
+				rfglf7 = 1
+			}
+			add_to_variable = {
+				zuoyouzhi = 2
+			}
+			custom_effect_tooltip = PRC_60s_GLF_UP_little
+		}
+		cost = 3
+		x = 1
+		y = 6
+		relative_position_id = PRC_60s_Respond_to_three_years_of_harm
+	}
+	focus = {
+		id = PRC_60s_The_sports_of_easy
+		icon = GFX_PRC_60s_The_sports_of_easy
+		prerequisite = {
+			focus = PRC_60s_Follow_the_laws_of_nature
+			focus = PRC_60s_Change_natural
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Ensure_the_treatment_of_urban_workers
+		}
+		completion_reward = {
+			add_to_variable = {
+				rfglf5 = 0.05
+			}
+			add_to_variable = {
+				rfglf6 = -0.02
+			}
+			add_to_variable = {
+				zuoyouzhi = 2
+			}
+			PRC_60s_glf_up = YES
+			custom_effect_tooltip = PRC_60s_GLF_UP_tt
+		}
+		cost = 3
+		x = 5
+		y = 5
+		relative_position_id = PRC_60s_Respond_to_three_years_of_harm
+	}
+	focus = {
+		id = PRC_60s_Ensure_the_treatment_of_urban_workers
+		icon = GFX_PRC_60s_Ensure_the_treatment_of_urban_workers
+		prerequisite = {
+			focus = PRC_60s_Follow_the_laws_of_nature
+			focus = PRC_60s_Change_natural
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_The_sports_of_easy
+		}
+		cost = 3
+		x = 7
+		y = 5
+		relative_position_id = PRC_60s_Respond_to_three_years_of_harm
+		completion_reward = {
+			add_to_variable = {
+				rfglf2 = 0.05
+			}
+			add_to_variable = {
+				rfglf7 = 2
+			}
+			add_to_variable = {
+				rfglf6 = 0.06
+			}
+			add_to_variable = {
+				zuoyouzhi = -2
+			}
+			PRC_60s_glf_down = YES
+			custom_effect_tooltip = PRC_60s_GLF_DOWN_tt
+		}
+	}
+	focus = {
+		id = PRC_60s_Traffic_of_city_country
+		icon = GFX_PRC_60s_Traffic_of_city_country
+		prerequisite = {
+			focus = PRC_60s_Allow_country_market
+			focus = PRC_60s_Expand_rural_raw_materials
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Support_country
+		}
+		completion_reward = {
+			add_to_variable = {
+				rfglf10 = 0.04
+			}
+			add_to_variable = {
+				rfglf7 = 1
+			}
+			add_to_variable = {
+				rfglf2 = 0.03
+			}
+			add_to_variable = {
+				zuoyouzhi = 2
+			}
+			PRC_60s_glf_down = YES
+			custom_effect_tooltip = PRC_60s_GLF_DOWN_tt
+		}
+		cost = 3
+		x = 1
+		y = 5
+		relative_position_id = PRC_60s_Respond_to_three_years_of_harm
+	}
+	focus = {
+		id = PRC_60s_Expand_the_powers_of_the_plant_director
+		icon = GFX_PRC_60s_Expand_the_powers_of_the_plant_director
+		prerequisite = {
+			focus = PRC_60s_Classify_rich_poor
+			focus = PRC_60s_The_second_land_revolution
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Close_the_rank_gap
+		}
+		completion_reward = {
+			add_to_variable = {
+				rfglf2 = -0.1
+			}
+			add_to_variable = {
+				rfglf8 = -0.05
+			}
+			add_to_variable = {
+				rfglf5 = 0.05
+			}
+			add_to_variable = {
+				zuoyouzhi = 2
+			}
+			custom_effect_tooltip = PRC_60s_GLF_UP_little
+		}
+		cost = 3
+		x = -1
+		y = 5
+		relative_position_id = PRC_60s_Respond_to_three_years_of_harm
+	}
+	focus = {
+		id = PRC_60s_Cuts_to_city_welfare
+		icon = GFX_PRC_60s_Cuts_to_city_welfare
+		prerequisite = {
+			focus = PRC_60s_Dismantling_the_people_commune
+			focus = PRC_60s_Balanced_scale
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Cuts_to_leader_welfare
+		}
+		completion_reward = {
+			add_to_variable = {
+				rfglf8 = -0.1 
+			}
+			add_to_variable = {
+				rfglf2 = -0.1 
+			}
+			add_to_variable = {
+				rfglf6 = -0.05
+			}
+			add_to_variable = {
+				zuoyouzhi = 2
+			}
+			PRC_60s_glf_up = YES
+			custom_effect_tooltip = PRC_60s_GLF_UP_tt
+		}
+		cost = 3
+		x = -7
+		y = 5
+		relative_position_id = PRC_60s_Respond_to_three_years_of_harm
+	}
+	focus = {
+		id = PRC_60s_New_democratic_economic
+		icon = GFX_PRC_60s_New_democratic_economic
+		prerequisite = {
+			focus = PRC_60s_Strengthen_five_small_industries
+			focus = PRC_60s_Abolition_of_five_small_industries
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_real_socialism_economic
+		}
+		available = {
+			check_variable = {
+				zuoyouzhi > 54
+			}
+		}
+		completion_reward = {
+			add_ideas = PRC_60s_New_democratic_economic
+			add_political_power = 50
+		}
+		cost = 3
+		x = 1
+		y = 7
+		relative_position_id = PRC_60s_Respond_to_three_years_of_harm
+	}
+	focus = {
+		id = PRC_60s_Change_natural
+		icon = GFX_PRC_60s_Change_natural
+		prerequisite = {
+			focus = PRC_60s_Expand_agricultural_and_sideline_industries
+		}
+		prerequisite = {
+			focus = PRC_60s_Increas_railway
+		}
+		prerequisite = {
+			focus = PRC_60s_Reclaim_your_own_land
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Follow_the_laws_of_nature
+		}
+		completion_reward = {
+			add_to_variable = {
+				rfglf9 = 0.05
+			}
+			add_to_variable = {
+				rfglf5 = -0.08
+			}
+			add_to_variable = {
+				zuoyouzhi = -2
+			}
+			PRC_60s_glf_up = YES
+			custom_effect_tooltip = PRC_60s_GLF_UP_tt
+		}
+		cost = 3
+		x = 7
+		y = 4
+		relative_position_id = PRC_60s_Respond_to_three_years_of_harm
+	}
+	focus = {
+		id = PRC_60s_Classify_rich_poor
+		icon = GFX_PRC_60s_Classify_rich_poor
+		prerequisite = {
+			focus = PRC_60s_Expand_agricultural_and_sideline_industries
+		}
+		prerequisite = {
+			focus = PRC_60s_Increas_railway
+		}
+		prerequisite = {
+			focus = PRC_60s_Reclaim_your_own_land
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_The_second_land_revolution
+		}
+		completion_reward = {
+			add_to_variable = {
+				rfglf2 = 0.02
+			}
+			add_to_variable = {
+				rfglf1 = 0.03
+			}
+			add_to_variable = {
+				zuoyouzhi = -2
+			}
+			PRC_60s_glf_up = YES
+			custom_effect_tooltip = PRC_60s_GLF_UP_tt
+		}
+		cost = 3
+		x = -3
+		y = 4
+		relative_position_id = PRC_60s_Respond_to_three_years_of_harm
+	}
+	focus = {
+		id = PRC_60s_Strengthen_five_small_industries
+		icon = GFX_PRC_60s_Strengthen_five_small_industries
+		prerequisite = {
+			focus = PRC_60s_Expand_the_powers_of_the_plant_director
+			focus = PRC_60s_Close_the_rank_gap
+		}
+		prerequisite = {
+			focus = PRC_60s_Cuts_to_leader_welfare
+			focus = PRC_60s_Cuts_to_city_welfare
+		}
+		prerequisite = {
+			focus = PRC_60s_Traffic_of_city_country
+			focus = PRC_60s_Support_country
+		}
+		prerequisite = {
+			focus = PRC_60s_The_sports_of_easy
+			focus = PRC_60s_Ensure_the_treatment_of_urban_workers
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Abolition_of_five_small_industries
+		}
+		completion_reward = {
+			add_to_variable = {
+				rfglf1 = 0.05
+			}
+			add_to_variable = {
+				rfglf2 = 0.05
+			}
+			add_to_variable = {
+				rfglf7 = 1
+			}
+			add_to_variable = {
+				zuoyouzhi = -2
+			}
+			custom_effect_tooltip = PRC_60s_GLF_UP_little
+		}
+		cost = 3
+		x = -1
+		y = 6
+		relative_position_id = PRC_60s_Respond_to_three_years_of_harm
+	}
+	focus = {
+		id = PRC_60s_Balanced_scale
+		icon = GFX_PRC_60s_Balanced_scale
+		prerequisite = {
+			focus = PRC_60s_Expand_agricultural_and_sideline_industries
+		}
+		prerequisite = {
+			focus = PRC_60s_Increas_railway
+		}
+		prerequisite = {
+			focus = PRC_60s_Reclaim_your_own_land
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Dismantling_the_people_commune
+		}
+		completion_reward = {
+			add_to_variable = {
+				rfglf6 = 0.02
+			}
+			add_to_variable = {
+				rfglf2 = 0.04 
+			}
+			add_to_variable = {
+				zuoyouzhi = -2
+			}
+			custom_effect_tooltip = PRC_60s_GLF_UP_little
+		}
+		cost = 3
+		x = -5
+		y = 4
+		relative_position_id = PRC_60s_Respond_to_three_years_of_harm
+	}
+	focus = {
+		id = PRC_60s_Support_country
+		icon = GFX_PRC_60s_Support_country
+		prerequisite = {
+			focus = PRC_60s_Allow_country_market
+			focus = PRC_60s_Expand_rural_raw_materials
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Traffic_of_city_country
+		}
+		completion_reward = {
+			add_to_variable = {
+				rfglf5 = -0.03
+			}
+			add_to_variable = {
+				rfglf2 = 0.05 
+			}
+			add_to_variable = {
+				rfglf6 = 0.01 
+			}
+			add_to_variable = {
+				zuoyouzhi = -2
+			}
+			PRC_60s_glf_up = YES
+			custom_effect_tooltip = PRC_60s_GLF_UP_tt
+		}
+		cost = 3
+		x = 3
+		y = 5
+		relative_position_id = PRC_60s_Respond_to_three_years_of_harm
+	}
+	focus = {
+		id = PRC_60s_Expand_rural_raw_materials
+		icon = GFX_PRC_60s_Expand_rural_raw_materials
+		prerequisite = {
+			focus = PRC_60s_Expand_agricultural_and_sideline_industries
+		}
+		prerequisite = {
+			focus = PRC_60s_Increas_railway
+		}
+		prerequisite = {
+			focus = PRC_60s_Reclaim_your_own_land
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Allow_country_market
+		}
+		completion_reward = {
+			add_to_variable = {
+				rfglf9 = 0.04
+			}
+			add_to_variable = {
+				rfglf8 = 0.02
+			}
+			add_to_variable = {
+				rfglf7 = 1
+			}
+			add_to_variable = {
+				zuoyouzhi = -2
+			}
+			add_political_power = 30
+			PRC_60s_glf_up = YES
+			custom_effect_tooltip = PRC_60s_GLF_UP_tt
+		}
+		cost = 3
+		x = 3
+		y = 4
+		relative_position_id = PRC_60s_Respond_to_three_years_of_harm
+	}
+	focus = {
+		id = PRC_60s_Follow_the_laws_of_nature
+		icon = GFX_PRC_60s_Follow_the_laws_of_nature
+		prerequisite = {
+			focus = PRC_60s_Expand_agricultural_and_sideline_industries
+		}
+		prerequisite = {
+			focus = PRC_60s_Increas_railway
+		}
+		prerequisite = {
+			focus = PRC_60s_Reclaim_your_own_land
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Change_natural
+		}
+		cost = 3
+		x = 5
+		y = 4
+		relative_position_id = PRC_60s_Respond_to_three_years_of_harm
+		completion_reward = {
+			add_to_variable = {
+				rfglf9 = -0.08
+			}
+			add_to_variable = {
+				rfglf5 = 0.05
+			}
+			add_to_variable = {
+				zuoyouzhi = 2
+			}
+			PRC_60s_glf_down = YES
+			custom_effect_tooltip = PRC_60s_GLF_DOWN_tt
+		}
+	}
+	focus = {
+		id = PRC_60s_Close_the_rank_gap
+		icon = GFX_PRC_60s_Close_the_rank_gap
+		prerequisite = {
+			focus = PRC_60s_Classify_rich_poor
+			focus = PRC_60s_The_second_land_revolution
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Expand_the_powers_of_the_plant_director 
+		}
+		completion_reward = {
+			add_to_variable = {
+				rfglf2 = 0.05
+			}
+			add_to_variable = {
+				rfglf8= 0.02
+			}
+			add_to_variable = {
+				rfglf9 = 0.01
+			}
+			add_to_variable = {
+				zuoyouzhi = -2
+			}
+			custom_effect_tooltip = PRC_60s_GLF_UP_little
+		}
+		cost = 3
+		x = -3
+		y = 5
+		relative_position_id = PRC_60s_Respond_to_three_years_of_harm
+	}
+	focus = {
+		id = PRC_60s_Mao_Improve_workers_democracy
+		icon = GFX_PRC_60s_Mao_Improve_workers_democracy
+		prerequisite = {
+			focus = PRC_60s_real_socialism_economic
+		}
+		completion_reward = {
+			add_ideas = PRC_60s_Improve_workers_democracy
+			add_political_power = 50
+		}
+		cost = 3
+		x = -3
+		y = 8
+		relative_position_id = PRC_60s_Respond_to_three_years_of_harm
+	}
+	focus = {
+		id = PRC_60s_make_economic_powerful
+		icon = GFX_PRC_60s_make_economic_powerful
+		prerequisite = {
+			focus = PRC_60s_New_democratic_economic
+		}
+		completion_reward = {
+			add_ideas = PRC_60s_Make_economic_powerful
+			add_political_power = 100
+			PRC = {
+				add_to_variable = {
+					currentMoney = 50
+					tooltip = increase_money_tt
+				}
+			}
+		}
+		cost = 3
+		x = 3
+		y = 8
+		relative_position_id = PRC_60s_Respond_to_three_years_of_harm
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_60s_Cuts_to_leader_welfare
+		icon = GFX_PRC_60s_Cuts_to_leader_welfare
+		prerequisite = {
+			focus = PRC_60s_Dismantling_the_people_commune
+			focus = PRC_60s_Balanced_scale
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_Cuts_to_city_welfare
+		}
+		completion_reward = {
+			add_to_variable = {
+				rfglf5 = -0.1 
+			}
+			add_to_variable = {
+				rfglf2 = -0.1 
+			}
+			add_to_variable = {
+				rfglf6 = -0.05
+			}
+			add_to_variable = {
+				zuoyouzhi = -2
+			}
+			PRC_60s_glf_up = YES
+			custom_effect_tooltip = PRC_60s_GLF_UP_tt
+		}
+		cost = 3
+		x = -5
+		y = 5
+		relative_position_id = PRC_60s_Respond_to_three_years_of_harm
+	}
+	focus = {
+		id = PRC_60s_real_socialism_economic
+		icon = GFX_PRC_60s_real_socialism_economic
+		prerequisite = {
+			focus = PRC_60s_Strengthen_five_small_industries
+			focus = PRC_60s_Abolition_of_five_small_industries
+		}
+		mutually_exclusive = {
+			focus = PRC_60s_New_democratic_economic
+		}
+		available = {
+			check_variable = {
+				zuoyouzhi < 55
+			}
+		}
+		completion_reward = {
+			add_ideas = PRC_60s_real_socialism_economic
+			add_political_power = 50
+		}
+		cost = 3
+		x = -1
+		y = 7
+		relative_position_id = PRC_60s_Respond_to_three_years_of_harm
+	}
+	focus = {
+		id = PRC_60s_Abandon_yipinerdiao
+		icon = GFX_PRC_60s_Abandon_yipinerdiao
+		prerequisite = {
+			focus = PRC_60s_New_democratic_economic
+			focus = PRC_60s_real_socialism_economic
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+		cost = 7
+		x = -1
+		y = 8
+		relative_position_id = PRC_60s_Respond_to_three_years_of_harm
+	}
+	focus = {
+		id = PRC_60s_Enrich_international_trade
+		icon = GFX_PRC_60s_Enrich_international_trade
+		prerequisite = {
+			focus = PRC_60s_New_democratic_economic
+			focus = PRC_60s_real_socialism_economic
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = PRC_60s_Enrich_international_trade
+				days = 350
+			}
+			PRC = {
+				add_to_variable = {
+					currentMoney = 300
+					tooltip = increase_money_tt
+				}
+			}
+		}
+		cost = 3
+		x = 1
+		y = 8
+		relative_position_id = PRC_60s_Respond_to_three_years_of_harm
+	}
+	focus = {
+		id = PRC_60s_Recover_form_Great_leap_forward
+		icon = GFX_PRC_60s_Recover_form_Great_leap_forward
+		prerequisite = {
+			focus = PRC_60s_Enrich_international_trade
+		}
+		prerequisite = {
+			focus = PRC_60s_Abandon_yipinerdiao
+		}
+		cost = 7
+		x = 0
+		y = 9
+		relative_position_id = PRC_60s_Respond_to_three_years_of_harm
+		completion_reward = {
+			add_political_power = 300
+			add_stability = 0.1
+			set_country_flag = Recover
+			remove_dynamic_modifier = {
+				modifier = PRC_Great_Leap_Foward_dynamic
+			}	
+			custom_effect_tooltip = PRC_60s_Recover_form_GLF_tt
+		}
+		
+	}
+}

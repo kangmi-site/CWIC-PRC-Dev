@@ -1,0 +1,348 @@
+shared_focus = {
+	id = prc70s_The_Inner_Mongolia_People_s_party_incident_intensified_contradictions
+	icon = GFX_The_Inner_Mongolia_People_s_party_incident_intensified_contradictions
+	x = 6
+	y = 18
+	cost = 0.2
+	allow_branch = {
+        has_country_flag = neirendang_begin
+    }	
+	available = {
+		always = no
+	}
+	completion_reward = {
+		set_variable = {
+ 			nrddikang = 0.05
+		}
+		set_variable = {
+   			nrdshuncong = -0.05
+		}
+		add_stability = -0.1
+	}
+}
+shared_focus = {
+	id = prc70s_Continue_to_brutally_suppress_the_masses_in_Inner_Mongolia
+	icon = GFX_Continue_to_brutally_suppress_the_masses_in_Inner_Mongolia
+	cost = 1.4
+	x = 4
+	y = 19
+	prerequisite = {
+		focus = prc70s_The_Inner_Mongolia_People_s_party_incident_intensified_contradictions
+	}
+	mutually_exclusive = {
+		focus = prc70s_Issue_may_22_instructions
+	}
+	completion_reward = {
+		715 = { 
+			add_manpower = -8000
+			remove_dynamic_modifier = {
+				modifier = PRC_Inter_Mongolia_turmoil_2
+			}
+			add_dynamic_modifier = {
+				modifier = PRC_Inter_Mongolia_turmoil_3
+			}
+		}
+		611 = { 
+			add_manpower = -2000
+			remove_dynamic_modifier = {
+				modifier = PRC_Inter_Mongolia_turmoil_2
+			}
+			add_dynamic_modifier = {
+				modifier = PRC_Inter_Mongolia_turmoil_3
+			}
+		}
+		621 = { 
+			add_manpower = -6000
+			remove_dynamic_modifier = {
+				modifier = PRC_Inter_Mongolia_turmoil_2
+			}
+			add_dynamic_modifier = {
+				modifier = PRC_Inter_Mongolia_turmoil_3
+			}
+		}
+		612 = { 
+			add_manpower = -500
+			remove_dynamic_modifier = {
+				modifier = PRC_Inter_Mongolia_turmoil_2
+			}
+			add_dynamic_modifier = {
+				modifier = PRC_Inter_Mongolia_turmoil_3
+			}
+		}
+	}
+}
+shared_focus = {
+	id = prc70s_Send_the_15th_airborne_army_to_Inner_Mongolia
+	icon = GFX_Send_the_15th_airborne_army_to_Inner_Mongolia
+	cost = 1.4
+	x = 4
+	y = 20
+	prerequisite = {
+		focus = prc70s_Continue_to_brutally_suppress_the_masses_in_Inner_Mongolia
+	}
+	completion_reward = {
+		country_event = prc70s.2
+	}
+}
+shared_focus = {
+	id = prc70s_Successful_rebellion_in_Inner_Mongolia
+	icon = GFX_Successful_rebellion_in_Inner_Mongolia
+	cost = 1.4
+	x = 3
+	y = 21
+	prerequisite = {
+		focus = prc70s_Send_the_15th_airborne_army_to_Inner_Mongolia
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 715
+						state = 611
+						state = 621
+						state = 612
+					}
+				}
+                clear_variable = GPCR_province_zaozao_power_var
+                clear_variable = GPCR_province_laobao_power_var
+                clear_variable = GPCR_province_PLA_power_var
+                clear_variable = GPCR_province_PLA_tendency_var
+                clear_variable = GPCR_province_PLA_influence_var
+                clear_variable = GPCR_province_unrest_var
+                clear_variable = GPCR_province_zaozao_VS_laobao_influence_var
+                clear_variable = GPCR_province_unrest_monthly_vary_var0
+                clear_variable = GPCR_province_unrest_monthly_vary_var1
+                clear_variable = GPCR_province_unrest_monthly_vary_var2
+            }
+		}
+		release = MEN
+		715 = { 
+			remove_dynamic_modifier = {
+				modifier = PRC_Inter_Mongolia_turmoil_3
+			}
+		}
+		611 = { 
+			remove_dynamic_modifier = {
+				modifier = PRC_Inter_Mongolia_turmoil_3
+			}
+		}
+		621 = { 
+			remove_dynamic_modifier = {
+				modifier = PRC_Inter_Mongolia_turmoil_3
+			}
+		}
+		612 = { 
+			remove_dynamic_modifier = {
+				modifier = PRC_Inter_Mongolia_turmoil_3
+			}
+		}
+	}
+}
+shared_focus = {
+	id = prc70s_Successfully_suppressed_the_rebellion_in_Inner_Mongolia
+	icon = GFX_Successfully_suppressed_the_rebellion_in_Inner_Mongolia
+	cost = 1.4
+	x = 5
+	y = 21
+	prerequisite = {
+		focus = prc70s_Send_the_15th_airborne_army_to_Inner_Mongolia
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+		715 = { 
+			add_manpower = -24000
+			remove_dynamic_modifier = {
+				modifier = PRC_Inter_Mongolia_turmoil_3
+			}
+			add_dynamic_modifier = {
+				modifier = PRC_Inter_Mongolia_turmoil_1
+			}
+		}
+		611 = { 
+			add_manpower = -6000
+			remove_dynamic_modifier = {
+				modifier = PRC_Inter_Mongolia_turmoil_3
+			}
+			add_dynamic_modifier = {
+				modifier = PRC_Inter_Mongolia_turmoil_1
+			}
+		}
+		621 = { 
+			add_manpower = -18000
+			remove_dynamic_modifier = {
+				modifier = PRC_Inter_Mongolia_turmoil_3
+			}
+			add_dynamic_modifier = {
+				modifier = PRC_Inter_Mongolia_turmoil_1
+			}
+		}
+		612 = { 
+			add_manpower = -1500
+			remove_dynamic_modifier = {
+				modifier = PRC_Inter_Mongolia_turmoil_3
+			}
+			add_dynamic_modifier = {
+				modifier = PRC_Inter_Mongolia_turmoil_1
+			}
+		}
+	}
+}
+shared_focus = {
+	id = prc70s_Issue_may_22_instructions 
+	icon = GFX_Issue_may_22_instructions
+	cost = 1.4 
+	x = 8
+	y = 19
+	prerequisite = {
+		focus = prc70s_The_Inner_Mongolia_People_s_party_incident_intensified_contradictions
+	}
+	mutually_exclusive = {
+		focus = prc70s_Continue_to_brutally_suppress_the_masses_in_Inner_Mongolia
+	}
+	completion_reward = {
+		add_stability = 0.02
+		715 = { 
+			set_demilitarized_zone = yes 
+		}
+		611 = { 
+			set_demilitarized_zone = yes 
+		}
+		621 = { 
+			set_demilitarized_zone = yes 
+		}
+		612 = { 
+			set_demilitarized_zone = yes 
+		}
+	}
+}
+shared_focus = {
+	id = prc70s_Change_the_administrative_division_of_Inner_Mongolia
+	icon = GFX_Change_the_administrative_division_of_Inner_Mongolia
+	cost = 1.4
+	x = 8
+	y = 20
+	prerequisite = {
+		focus = prc70s_Issue_may_22_instructions
+	}
+	completion_reward = {
+		set_country_flag = PRC_Inner_Mongolia_69-79_administrative_division
+		add_to_variable = { 714.prc_change_of_administrative_division = 9 }
+	    add_to_variable = { 328.prc_change_of_administrative_division = 7 }
+	    add_to_variable = { 716.prc_change_of_administrative_division = 5 }
+	    add_to_variable = { 621.prc_change_of_administrative_division = 3 }
+	    add_to_variable = { 616.prc_change_of_administrative_division = 6 }
+        add_to_variable = { 283.prc_change_of_administrative_division = 6 }
+		add_stability = 0.02
+		715 = { 
+			set_demilitarized_zone = no
+			remove_dynamic_modifier = { 
+				modifier = PRC_Inter_Mongolia_turmoil_2 
+			}
+		}
+		612 = { 
+			set_demilitarized_zone = no
+			remove_dynamic_modifier = { 
+				modifier = PRC_Inter_Mongolia_turmoil_2 
+			}
+		}	
+	}
+}
+shared_focus = {
+	id = prc70s_Implement_comprehensive_military_control_over_Inner_Mongolia
+	icon = GFX_Implement_comprehensive_military_control_over_Inner_Mongolia
+	cost = 1.4
+	x = 8
+	y = 21
+	prerequisite = {
+		focus = prc70s_Change_the_administrative_division_of_Inner_Mongolia
+	}
+	completion_reward = {
+		add_stability = 0.02
+		611 = { 
+			set_demilitarized_zone = no
+			remove_dynamic_modifier = { 
+				modifier = PRC_Inter_Mongolia_turmoil_2 
+			} 
+			add_dynamic_modifier = {
+				modifier = PRC_Inter_Mongolia_turmoil_1
+			}
+		}
+		621 = { 
+			set_demilitarized_zone = no 
+			remove_dynamic_modifier = { 
+				modifier = PRC_Inter_Mongolia_turmoil_2 
+			}
+			add_dynamic_modifier = {
+				modifier = PRC_Inter_Mongolia_turmoil_1
+			}
+		}
+	}
+}
+shared_focus = {
+	id = prc70s_Remove_the_military_control_of_Inner_Mongolia
+	icon = GFX_Remove_the_military_control_of_Inner_Mongolia
+	cost = 1.4
+	x = 8
+	y = 22
+	prerequisite = {
+		focus = prc70s_Implement_comprehensive_military_control_over_Inner_Mongolia
+		focus = prc70s_Successfully_suppressed_the_rebellion_in_Inner_Mongolia
+	}
+	completion_reward = {
+		add_stability = 0.02
+		if = {
+			limit = {
+				has_completed_focus = prc70s_Issue_may_22_instructions 
+			}
+			611 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_Inter_Mongolia_turmoil_1 
+				}
+			}
+			621 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_Inter_Mongolia_turmoil_1 
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_completed_focus = prc70s_Continue_to_brutally_suppress_the_masses_in_Inner_Mongolia
+			}
+			612 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_Inter_Mongolia_turmoil_1
+				}
+				add_core_of = PRC
+			    remove_core_of = MEN
+			}
+			611 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_Inter_Mongolia_turmoil_1
+				}
+				add_core_of = PRC
+			    remove_core_of = MEN
+			}
+			621 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_Inter_Mongolia_turmoil_1 
+				}
+				add_core_of = PRC
+			    remove_core_of = MEN
+			}
+			715 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_Inter_Mongolia_turmoil_1
+				}
+				add_core_of = PRC
+			    remove_core_of = MEN
+			}
+		}
+	}
+}

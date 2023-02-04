@@ -1,0 +1,3016 @@
+
+shared_focus = {
+	id = continue_the_constraction_of_the_third_tier_city_ccc
+	icon = GFX_continue_the_constraction_of_the_third_tier_city_ccc
+	cost = 1.4
+	x = 27
+	y = 0
+	offset = {
+		x = 33
+		y = 0
+		trigger = {
+			has_country_leader = {
+				name = "LinBiao"
+				ruling_only = yes
+			}	
+		}
+	}
+	allow_branch = {
+		always = yes
+	}
+	available = {
+		has_completed_focus = a_great_new_victory
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = continue_the_constraction_of_the_third_tier_city_ccc"
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = three_line3
+			    add_idea = three_line5
+			}
+		}
+		hidden_effect = {
+            swap_ideas = {
+				remove_idea = three_line2
+				add_idea = three_line3
+			}
+		}
+		unlock_decision_category_tooltip = continue_third_line_construction_project_category
+		set_country_flag = continue_third_line_construction
+	}
+}
+shared_focus = {
+	id = resumpition_of_railroad_construction_in_the_third_line_area
+	icon = GFX_resumpition_of_railroad_construction_in_the_third_line_area
+	cost = 1.4
+	prerequisite = {
+		focus = continue_the_constraction_of_the_third_tier_city_ccc
+	}
+	x = 23
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = resumpition_of_railroad_construction_in_the_third_line_area"
+		set_country_flag = PRC_70s_resumpition_of_railway_flag
+		unlock_decision_tooltip = PRC_70s_resumpition_of_railway
+	}
+}
+shared_focus = {
+	id = expansion_of_local_railroad_network
+	icon = GFX_expansion_of_local_railroad_network
+	cost = 3
+	prerequisite = {
+		focus = resumpition_of_railroad_construction_in_the_third_line_area
+	}
+	x = 22
+	y = 2
+	available = {
+		if = {
+			limit = {
+				has_country_leader = {
+					character = PRC_lin_biao
+					ruling_only = yes
+				}
+			}
+			has_country_flag = prc70s_Great_victory
+		}
+		else_if = {
+			limit = {
+				has_country_leader = {
+					character = PRC_mao_zedong
+					ruling_only = yes
+				}
+			}
+			has_completed_focus = a_great_new_victory
+		}
+		if = {
+			limit = {
+				has_country_flag = PRC_70s_It_has_been_20_days_flag
+			}
+			custom_trigger_tooltip = {
+				tooltip = PRC_70s_It_has_been_20_days_tt
+				NOT = { has_country_flag = PRC_70s_It_has_been_20_days_flag }
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = expansion_of_local_railroad_network"
+		set_country_flag = {
+			falg = PRC_70s_It_has_been_20_days_flag
+			value = 1
+			days = 20
+		}
+		set_country_flag = PRC_70s_expand_railway_net_flag
+		unlock_decision_tooltip = PRC_70s_expand_railway_net_Lanzhou_Haidong_Xining
+		unlock_decision_tooltip = PRC_70s_expand_railway_net_Lanzhou_Haidong_Xining
+		unlock_decision_tooltip = PRC_70s_expand_railway_net_Lanzhou_Haidong_Xining
+		unlock_decision_tooltip = PRC_70s_expand_railway_net_Lanzhou_Haidong_Xining
+	}
+
+}
+shared_focus = {
+	id = power_of_our_people
+	icon = GFX_power_of_our_people
+	cost = 3
+	prerequisite = {
+		focus = expansion_of_local_railroad_network
+	}
+	x = 21
+	y = 3
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PRC_70s_It_has_been_20_days_flag
+			}
+			custom_trigger_tooltip = {
+				tooltip = PRC_70s_It_has_been_20_days_tt
+				NOT = { has_country_flag = PRC_70s_It_has_been_20_days_flag }
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = power_of_our_people"
+		set_country_flag = {
+			falg = PRC_70s_It_has_been_20_days_flag
+			value = 1
+			days = 20
+		}
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = three_line3
+			    add_idea = three_line4
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = { has_idea = three_line3 }
+				swap_ideas = {
+					remove_idea = three_line3
+					add_idea = three_line4
+				}
+			}
+			else_if = {
+				limit = { has_idea = three_line5 }
+				swap_ideas = {
+					remove_idea = three_line5
+					add_idea = three_line6
+				}
+			}
+			else_if = {
+				limit = { has_idea = three_line8 }
+				swap_ideas = {
+					remove_idea = three_line8
+					add_idea = three_line9
+				}
+			}
+		}
+		add_to_variable = {
+			CPC_bar_a = 1.1
+			tooltip = LeftRadical_gain_influence_tt
+		}
+		add_to_variable = {
+			CPC_bar_c = 0.6
+			tooltip = conservatives_gain_a_little_influence_tt
+		}
+	}
+}
+shared_focus = {
+	id = nspring_labor_enthusiasm_with_literature_and_art
+	icon = GFX_nspring_labor_enthusiasm_with_literature_and_art
+	cost = 3
+	prerequisite = {
+		focus = power_of_our_people
+	}
+	x = 20
+	y = 4
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PRC_70s_It_has_been_20_days_flag
+			}
+			custom_trigger_tooltip = {
+				tooltip = PRC_70s_It_has_been_20_days_tt
+				NOT = { has_country_flag = PRC_70s_It_has_been_20_days_flag }
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = nspring_labor_enthusiasm_with_literature_and_art"
+		set_country_flag = {
+			falg = PRC_70s_It_has_been_20_days_flag
+			value = 1
+			days = 20
+		}
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = three_line4
+			    add_idea = three_line6
+			}
+		}
+        hidden_effect = {
+			if = {
+				limit = { has_idea = three_line4 }
+				swap_ideas = {
+					remove_idea = three_line4
+					add_idea = three_line6
+				}
+			}
+			else_if = {
+				limit = { has_idea = three_line6 }
+				swap_ideas = {
+					remove_idea = three_line6
+					add_idea = three_line7
+				}
+			}
+			else_if = {
+				limit = { has_idea = three_line9 }
+				swap_ideas = {
+					remove_idea = three_line9
+					add_idea = three_line10
+				}
+			}
+		}
+		add_to_variable = {
+			CPC_bar_a = 1.1
+			tooltip = LeftRadical_gain_influence_tt
+		}
+	}
+}
+shared_focus = {
+	id = the_electrification_of_Baocheng_Railway
+	icon = GFX_the_electrification_of_Baocheng_Railway
+	cost = 3
+	prerequisite = {
+		focus = resumpition_of_railroad_construction_in_the_third_line_area
+	}
+	x = 24
+	y = 2
+	available = {
+		if = {
+			limit = {
+				has_country_leader = {
+					character = PRC_lin_biao
+					ruling_only = yes
+				}
+			}
+			has_country_flag = prc70s_Great_victory
+		}
+		else_if = {
+			limit = {
+				has_country_leader = {
+					character = PRC_mao_zedong
+					ruling_only = yes
+				}
+			}
+			has_completed_focus = a_great_new_victory
+		}
+		if = {
+			limit = {
+				has_country_flag = PRC_70s_It_has_been_20_days_flag
+			}
+			custom_trigger_tooltip = {
+				tooltip = PRC_70s_It_has_been_20_days_tt
+				NOT = { has_country_flag = PRC_70s_It_has_been_20_days_flag }
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = the_electrification_of_Baocheng_Railway"
+		set_country_flag = {
+			falg = PRC_70s_It_has_been_20_days_flag
+			value = 1
+			days = 20
+		}
+		set_country_flag = PRC_70s_the_electrification_of_Baocheng_Railway_flag
+		unlock_decision_tooltip = PRC_70s_the_electrification_of_Baocheng_Railway
+	}
+}
+shared_focus = {
+	id = standardized_railroad_construction_system
+	icon = GFX_standardized_railroad_construction_system
+	cost = 3
+	prerequisite = {
+		focus = the_electrification_of_Baocheng_Railway
+	}
+	prerequisite = {
+		focus = expansion_of_local_railroad_network
+	}
+	x = 23
+	y = 3
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PRC_70s_It_has_been_20_days_flag
+			}
+			custom_trigger_tooltip = {
+				tooltip = PRC_70s_It_has_been_20_days_tt
+				NOT = { has_country_flag = PRC_70s_It_has_been_20_days_flag }
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = standardized_railroad_construction_system"
+		set_country_flag = {
+			falg = PRC_70s_It_has_been_20_days_flag
+			value = 1
+			days = 20
+		}
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = three_line3
+			    add_idea = three_line5
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = { has_idea = three_line3 }
+				swap_ideas = {
+					remove_idea = three_line3
+					add_idea = three_line5
+				}
+			}
+			else_if = {
+				limit = { has_idea = three_line4 }
+				swap_ideas = {
+					remove_idea = three_line4
+					add_idea = three_line6
+				}
+			}
+			else_if = {
+				limit = { has_idea = three_line6 }
+				swap_ideas = {
+					remove_idea = three_line6
+					add_idea = three_line7
+				}
+			}
+		}
+		add_to_variable = {
+			CPC_bar_d = 0.6
+			tooltip = reformers_gain_a_little_influence_tt
+		}
+		add_to_variable = {
+			CPC_bar_c = 1.1
+			tooltip = conservatives_gain_influence_tt
+		}
+		add_to_variable = {
+			PRC_EIM = 0.75
+			tooltip = PRC_70s_advance_modernization_of_industry_tt
+		}
+	}
+}
+shared_focus = {
+	id = standarized_railroad_management_sysytem
+	icon = GFX_standarized_railroad_management_sysytem
+	cost = 3
+	prerequisite = {
+		focus = standardized_railroad_construction_system
+	}
+	x = 24
+	y = 4
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PRC_70s_It_has_been_20_days_flag
+			}
+			custom_trigger_tooltip = {
+				tooltip = PRC_70s_It_has_been_20_days_tt
+				NOT = { has_country_flag = PRC_70s_It_has_been_20_days_flag }
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = standarized_railroad_management_sysytem"
+		set_country_flag = {
+			falg = PRC_70s_It_has_been_20_days_flag
+			value = 1
+			days = 20
+		}
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = three_line5
+			    add_idea = three_line8
+			}
+		}
+        hidden_effect = {
+			if = {
+				limit = { has_idea = three_line5 }
+				swap_ideas = {
+					remove_idea = three_line5
+					add_idea = three_line8
+				}
+			}
+			else_if = {
+				limit = { has_idea = three_line6 }
+				swap_ideas = {
+					remove_idea = three_line6
+					add_idea = three_line9
+				}
+			}
+			else_if = {
+				limit = { has_idea = three_line7 }
+				swap_ideas = {
+					remove_idea = three_line7
+					add_idea = three_line10
+				}
+			}
+		}
+		add_to_variable = {
+			CPC_bar_d = 1.1
+			tooltip = reformers_gain_influence_tt
+		}
+		add_to_variable = {
+			CPC_bar_c = 0.6
+			tooltip = conservatives_gain_a_little_influence_tt
+		}
+		add_to_variable = {
+			PRC_EIM = 0.75
+			tooltip = PRC_70s_advance_modernization_of_industry_tt
+		}
+	}
+}
+shared_focus = {
+	id = second_north_south_main_line
+	icon = GFX_second_north_south_main_line
+	cost = 3
+	prerequisite = {
+		focus = standardized_railroad_construction_system
+		focus = power_of_our_people
+	}
+	x = 22
+	y = 4
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PRC_70s_It_has_been_20_days_flag
+			}
+			custom_trigger_tooltip = {
+				tooltip = PRC_70s_It_has_been_20_days_tt
+				NOT = { has_country_flag = PRC_70s_It_has_been_20_days_flag }
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = second_north_south_main_line"
+		set_country_flag = {
+			falg = PRC_70s_It_has_been_20_days_flag
+			value = 1
+			days = 20
+		}
+		add_to_variable = {
+			currentMoney = -60
+			tooltip = increase_money_tt
+		}
+		build_railway = {
+			path = { 9843 11761 4140 12026 7109 4190 1188 1169 4144 1139 4606 1004 7508 7459 4009 9934 1612 12086 7434 7101 10517 12310 10377 4125 12407 1203 7128 11941 1047 }
+		}
+	}
+}
+shared_focus = {
+	id = neconnectivity_to_the_southwest
+	icon = GFX_neconnectivity_to_the_southwest
+	cost = 3
+	prerequisite = {
+		focus = the_electrification_of_Baocheng_Railway
+	}
+	x = 25
+	y = 3
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PRC_70s_It_has_been_20_days_flag
+			}
+			custom_trigger_tooltip = {
+				tooltip = PRC_70s_It_has_been_20_days_tt
+				NOT = { has_country_flag = PRC_70s_It_has_been_20_days_flag }
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = neconnectivity_to_the_southwest"
+		set_country_flag = {
+			falg = PRC_70s_It_has_been_20_days_flag
+			value = 1
+			days = 20
+		}
+		add_to_variable = {
+			currentMoney = -45
+			tooltip = increase_money_tt
+		}
+		build_railway = {
+			path = { 7446 7606 4192 4504 10616 4532 12436 4134 1597 }	
+		}
+		build_railway = {
+			path = { 4532 7549 7577 10335 7665 }
+		}
+	}
+}
+shared_focus = {
+	id = third_line_area_exploration_campaigns
+	icon = GFX_third_line_area_exploration_campaigns
+	cost = 1.4
+	prerequisite = {
+		focus = continue_the_constraction_of_the_third_tier_city_ccc
+	}
+	x = 25
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = third_line_area_exploration_campaigns"
+		add_to_variable = {
+			currentMoney = -75
+			tooltip = increase_money_tt
+		}
+		add_resource = {
+			type = tungsten
+			amount = 18
+			state = 714
+		}
+		add_resource = {
+			type = tungsten
+			amount = 12
+			state = 328
+		}
+		add_resource = {
+			type = tungsten
+			amount = 6
+			state = 283
+		}
+		add_resource = {
+			type = tungsten
+			amount = 4
+			state = 604
+		}
+		add_resource = {
+			type = tungsten
+			amount = 12
+			state = 605
+		}
+		add_resource = {
+			type = tungsten
+			amount = 9
+			state = 622
+		}
+		add_resource = {
+			type = tungsten
+			amount = 9
+			state = 594
+		}
+		add_resource = {
+			type = tungsten
+			amount = 12
+			state = 325
+		}
+	}
+}
+shared_focus = {
+	id = relocation_of_university_clooeges_and_enterprises_to_the_india
+	icon = GFX_relocation_of_university_clooeges_and_enterprises_to_the_india
+	cost = 1.4
+	prerequisite = {
+		focus = continue_the_constraction_of_the_third_tier_city_ccc
+	}
+	x = 29
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = relocation_of_university_clooeges_and_enterprises_to_the_india"
+		598 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = -6
+				instant_build = yes
+			}
+		}
+		604 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		325 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 4
+				instant_build = yes
+			}
+		}
+		596 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = -5
+				instant_build = yes
+			}
+		}
+		603 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		594 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+		597 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = -7
+				instant_build = yes
+			}
+		}
+		601 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 4
+				instant_build = yes
+			}
+		}
+		605 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+		614 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = -6
+				instant_build = yes
+			}
+		}
+		620 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 4
+				instant_build = yes
+			}
+		}
+		602 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		714 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = -4
+				instant_build = yes
+			}
+		}
+		615 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 4
+				instant_build = yes
+			}
+		}
+		328 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = -3
+				instant_build = yes
+			}
+		}
+		616 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+		716 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = -3
+				instant_build = yes
+			}
+		}
+		602 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+}
+shared_focus = {
+	id = exporation_oil_and_gas_plants_in_the_third_line_area
+	icon = GFX_exporation_oil_and_gas_plants_in_the_third_line_area
+	cost = 3
+	prerequisite = {
+		focus = third_line_area_exploration_campaigns
+	}
+	x = 27
+	y = 2
+	available = {
+		if = {
+			limit = {
+				has_country_leader = {
+					character = PRC_lin_biao
+					ruling_only = yes
+				}
+			}
+			has_country_flag = prc70s_Great_victory
+		}
+		else_if = {
+			limit = {
+				has_country_leader = {
+					character = PRC_mao_zedong
+					ruling_only = yes
+				}
+			}
+			has_completed_focus = a_great_new_victory
+		}
+		if = {
+			limit = {
+				has_country_flag = PRC_70s_It_has_been_20_days_flag
+			}
+			custom_trigger_tooltip = {
+				tooltip = PRC_70s_It_has_been_20_days_tt
+				NOT = { has_country_flag = PRC_70s_It_has_been_20_days_flag }
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = exporation_oil_and_gas_plants_in_the_third_line_area"
+		set_country_flag = {
+			falg = PRC_70s_It_has_been_20_days_flag
+			value = 1
+			days = 20
+		}
+		add_to_variable = {
+			currentMoney = -95
+			tooltip = increase_money_tt
+		}
+		add_resource = {
+			type = oil
+			amount = 8
+			state = 283
+		}
+		add_resource = {
+			type = oil
+			amount = 5
+			state = 616
+		}
+		add_resource = {
+			type = oil
+			amount = 5
+			state = 620
+		}
+		add_resource = {
+			type = oil
+			amount = 12
+			state = 604
+		}
+		add_resource = {
+			type = oil
+			amount = 5
+			state = 594
+		}
+	}
+}
+shared_focus = {
+	id = connectivity_to_the_coal_and_O_G_mines
+	icon = GFX_connectivity_to_the_coal_and_O_G_mines
+	cost = 3
+	prerequisite = {
+		focus = exporation_oil_and_gas_plants_in_the_third_line_area
+	}
+	x = 27
+	y = 4
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PRC_70s_It_has_been_20_days_flag
+			}
+			custom_trigger_tooltip = {
+				tooltip = PRC_70s_It_has_been_20_days_tt
+				NOT = { has_country_flag = PRC_70s_It_has_been_20_days_flag }
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = connectivity_to_the_coal_and_O_G_mines"
+		set_country_flag = {
+			falg = PRC_70s_It_has_been_20_days_flag
+			value = 1
+			days = 20
+		}
+		add_to_variable = {
+			currentMoney = -78
+			tooltip = increase_money_tt
+		}
+		build_railway = {
+			path = { 1645 7582 10433 7652 4503 4572 4642 916 11808 11771 6951 11815 9835 6837 11886 3900 3830 900 12043 10068 9843 }
+		}
+		build_railway = {
+			path = { 4089 12093 1084 7189 1069 4037 12015 9956 12055 1121 1161 1001 10008 4148 11913 }
+		}
+		add_to_variable = {
+			PRC_EIM = 1
+			tooltip = PRC_70s_advance_modernization_of_industry_tt
+		}
+	}
+}
+shared_focus = {
+	id = exploration_of_large_reserves_oil_plant
+	icon = GFX_exploration_of_large_reserves_oil_plant
+	cost = 3
+	prerequisite = {
+		focus = neconnectivity_to_the_southwest
+	}
+	x = 30
+	y = 4
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PRC_70s_It_has_been_20_days_flag
+			}
+			custom_trigger_tooltip = {
+				tooltip = PRC_70s_It_has_been_20_days_tt
+				NOT = { has_country_flag = PRC_70s_It_has_been_20_days_flag }
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = exploration_of_large_reserves_oil_plant"
+		set_country_flag = {
+			falg = PRC_70s_It_has_been_20_days_flag
+			value = 1
+			days = 20
+		}
+		add_to_variable = {
+			currentMoney = -135
+			tooltip = increase_money_tt
+		}
+		add_resource = {
+			type = oil
+			amount = 8
+			state = 607
+		}
+		add_resource = {
+			type = oil
+			amount = 6
+			state = 622
+		}
+		add_resource = {
+			type = oil
+			amount = 12
+			state = 714
+		}
+		add_resource = {
+			type = oil
+			amount = 8
+			state = 328
+		}
+		add_resource = {
+			type = oil
+			amount = 8
+			state = 609
+		}
+		add_resource = {
+			type = oil
+			amount = 6
+			state = 597
+		}
+	}
+}
+shared_focus = {
+	id = continue_eight_sixteen_nuclear_military_project
+	icon = GFX_continue_eight_sixteen_nuclear_military_project
+	cost = 1.4
+	prerequisite = {
+		focus = continue_the_constraction_of_the_third_tier_city_ccc
+	}
+	x = 31
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = continue_eight_sixteen_nuclear_military_project"
+		set_country_flag = continue_816_nuclear_military_project_flag
+		unlock_decision_tooltip = PRC_70s_continue_816_nuclear_military_project_1
+		unlock_decision_tooltip = PRC_70s_continue_816_nuclear_military_project_2
+		unlock_decision_tooltip = PRC_70s_continue_816_nuclear_military_project_3
+		unlock_decision_tooltip = PRC_70s_continue_816_nuclear_military_project_4
+		unlock_decision_tooltip = PRC_70s_continue_816_nuclear_military_project_5
+	}
+}
+shared_focus = {
+	id = developing_military_enterprise_in_the_southwest_china
+	icon = GFX_developing_military_enterprise_in_the_southwest_china
+	cost = 3
+	prerequisite = {
+		focus = relocation_of_university_clooeges_and_enterprises_to_the_india
+	}
+	prerequisite = {
+		focus = third_line_area_exploration_campaigns
+	}
+	prerequisite = {
+		focus = continue_eight_sixteen_nuclear_military_project
+	}
+	x = 30
+	y = 2
+	available = {
+		if = {
+			limit = {
+				has_country_leader = {
+					character = PRC_lin_biao
+					ruling_only = yes
+				}
+			}
+			has_country_flag = prc70s_Great_victory
+		}
+		else_if = {
+			limit = {
+				has_country_leader = {
+					character = PRC_mao_zedong
+					ruling_only = yes
+				}
+			}
+			has_completed_focus = a_great_new_victory
+		}
+		if = {
+			limit = {
+				has_country_flag = PRC_70s_It_has_been_20_days_flag
+			}
+			custom_trigger_tooltip = {
+				tooltip = PRC_70s_It_has_been_20_days_tt
+				NOT = { has_country_flag = PRC_70s_It_has_been_20_days_flag }
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = developing_military_enterprise_in_the_southwest_china"
+		set_country_flag = {
+			falg = PRC_70s_It_has_been_20_days_flag
+			value = 1
+			days = 20
+		}
+		add_to_variable = {
+			currentMoney = -220
+			tooltip = increase_money_tt
+		}
+		605 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+		601 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}
+		325 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		603 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		594 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		add_to_variable = {
+			PRC_EIM = 0.75
+			tooltip = PRC_70s_advance_modernization_of_industry_tt
+		}
+	}
+}
+shared_focus = {
+	id = expansion_of_steel_and_metallurgical
+	icon = GFX_expansion_of_steel_and_metallurgical
+	cost = 3
+	prerequisite = {
+		focus = developing_military_enterprise_in_the_southwest_china
+	}
+	x = 30
+	y = 3
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PRC_70s_It_has_been_20_days_flag
+			}
+			custom_trigger_tooltip = {
+				tooltip = PRC_70s_It_has_been_20_days_tt
+				NOT = { has_country_flag = PRC_70s_It_has_been_20_days_flag }
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = expansion_of_steel_and_metallurgical"
+		set_country_flag = {
+			falg = PRC_70s_It_has_been_20_days_flag
+			value = 1
+			days = 20
+		}
+		add_to_variable = {
+			currentMoney = -75
+			tooltip = increase_money_tt
+		}
+		add_resource = {
+			type = aluminium
+			amount = 12
+			state = 622
+		}
+		add_resource = {
+			type = aluminium
+			amount = 8
+			state = 621
+		}
+		add_resource = {
+			type = aluminium
+			amount = 6
+			state = 616
+		}
+		add_resource = {
+			type = aluminium
+			amount = 8
+			state = 283
+		}
+		add_resource = {
+			type = aluminium
+			amount = 4
+			state = 604
+		}
+		add_resource = {
+			type = aluminium
+			amount = 12
+			state = 601
+		}
+		add_resource = {
+			type = aluminium
+			amount = 12
+			state = 605
+		}
+		add_to_variable = {
+			PRC_EIM = 0.75
+			tooltip = PRC_70s_advance_modernization_of_industry_tt
+		}
+	}
+}
+
+
+
+shared_focus = {
+	id = prc70s_prepare_the_war
+	icon = GFX_prc70s_prepare_the_war
+	cost = 1.4
+	x = 36
+	y = 12
+	offset = {
+		x = 25
+		y = 5
+		trigger = {
+			has_country_leader = {
+				name = "LinBiao"
+				ruling_only = yes
+			}	
+		}
+	}
+	allow_branch = {
+		always = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = prc70s_prepare_the_war"
+		add_command_power = 10
+		army_experience = 10
+		navy_experience = 10
+		air_experience = 10
+	}
+}
+shared_focus = {
+	id = PRC_70s_Army
+	icon = GFX_goal_generic_axis_build_infantry
+	cost = 2
+	x = -10
+	y = 1
+	relative_position_id = prc70s_prepare_the_war
+	prerequisite = {
+		focus = prc70s_prepare_the_war
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = PRC_70s_Army"
+		add_command_power = 10
+		army_experience = 30
+	}
+}
+shared_focus = {
+	id = Off_road_vehicle_development
+	icon = GFX_goal_generic_cavalry
+	cost = 2
+	prerequisite = {
+		focus = PRC_70s_Army
+	}
+	x = -11
+	y = 2
+	relative_position_id = prc70s_prepare_the_war
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = Off_road_vehicle_development"
+		set_country_flag = PRC_Off_road_vehicle_development_flag
+		unlock_decision_tooltip = PRC_Off_road_vehicle_development_decision
+	}
+}
+shared_focus = {
+	id = Improve_the_Type_six_three_automatic_rifle
+	icon = GFX_goal_generic_cavalry
+	cost = 2
+	prerequisite = {
+		focus = Off_road_vehicle_development
+	}
+	mutually_exclusive = {
+		focus = reuse_of_Type_five_six_semi_automantic_rifles
+	}
+	x = -12
+	y = 3
+	relative_position_id = prc70s_prepare_the_war
+	bypass = {
+		has_tech = manpats_3
+		has_tech = squad_weapons_3
+		has_tech = team_weapons_3
+		has_tech = specialist_3
+		has_tech = ammo_explosives_3
+		has_tech = protection_equip_3
+		has_tech = manpads_3
+	}
+	available = {
+		has_tech = infantry_equip_3
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = Improve_the_Type_six_three_automatic_rifle"
+		set_country_flag = PRC_Improve_the_Type_six_three_automatic_rifle_flag
+		unlock_decision_tooltip = PRC_Improve_the_Type_six_three_automatic_rifle_decision
+	}
+}
+shared_focus = {
+	id = reuse_of_Type_five_six_semi_automantic_rifles
+	icon = GFX_reuse_of_Type_five_six_semi_automantic_rifles
+	cost = 2
+	prerequisite = {
+		focus = Off_road_vehicle_development
+	}
+	mutually_exclusive = {
+		focus = Improve_the_Type_six_three_automatic_rifle
+	}
+	x = -10
+	y = 3
+	relative_position_id = prc70s_prepare_the_war
+	available = {
+		has_tech = infantry_equip_2
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = reuse_of_Type_five_six_semi_automantic_rifles"
+		add_to_variable = {
+			currentMoney = -15
+			tooltip = increase_money_tt
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_1
+			amount = 50000
+			producer = PRC
+		}
+	}
+}
+shared_focus = {
+	id = development_of_light_tank
+	icon = GFX_goal_generic_cavalry
+	cost = 2
+	prerequisite = {
+		focus = Improve_the_Type_six_three_automatic_rifle
+		focus = reuse_of_Type_five_six_semi_automantic_rifles
+		focus = Improve_the_Type_six_three_automatic_rifle
+		focus = reuse_of_Type_five_six_semi_automantic_rifles
+	}
+	x = -12
+	y = 4
+	relative_position_id = prc70s_prepare_the_war
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = development_of_light_tank"
+		set_country_flag = PRC_70s_development_of_light_tank_flag
+		unlock_decision_tooltip = PRC_70s_development_of_light_tank_decision_1
+		unlock_decision_tooltip = PRC_70s_development_of_light_tank_decision_2
+	}
+}
+shared_focus = {
+	id = PRC_101_An_assault_gun_to_intercept_the_torrent_of_steel
+	icon = GFX_PRC_101_An_assault_gun_to_intercept_the_torrent_of_steel
+	cost = 2
+	prerequisite = {
+		focus = development_of_light_tank
+	}
+	x = -13
+	y = 5
+	relative_position_id = prc70s_prepare_the_war
+	available = {
+	}
+	allow_branch = {
+		has_country_leader = {
+		    character = PRC_lin_biao
+		    ruling_only = yes
+	   }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = PRC_101_An_assault_gun_to_intercept_the_torrent_of_steel"
+	}
+}
+shared_focus = {
+	id = type_six_nine_Main_Battle_Tank
+	icon = GFX_goal_generic_cavalry
+	cost = 2
+	prerequisite = {
+		focus = Improve_the_Type_six_three_automatic_rifle
+		focus = reuse_of_Type_five_six_semi_automantic_rifles
+	}
+	x = -10
+	y = 4
+	relative_position_id = prc70s_prepare_the_war
+	available = {
+		OR = {
+			has_tech = main_battle_tanks_4
+			has_tech = heavy_tanks_4
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = type_six_nine_Main_Battle_Tank"
+		if = {
+			limit = {
+				NOT = {
+                    has_tech = main_battle_tanks_5
+				}
+			}
+			add_to_variable = {
+				currentMoney = -58
+				tooltip = increase_money_tt
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				technology = main_battle_tanks_5
+			}
+		}
+		add_to_variable = {
+			PRC_STM = 0.8
+			tooltip = PRC_70s_advance_modernization_of_science_and_technology_tt
+		}
+		clamp_variable = {
+			var = PRC_STM
+			max = 100
+			min = 0
+		}
+	}
+}
+shared_focus = {
+	id = tank_research_Missions_in_the_seventies
+	icon = GFX_tank_research_Missions_in_the_seventies
+	cost = 2
+	prerequisite = {
+		focus = type_six_nine_Main_Battle_Tank
+	}
+	prerequisite = {
+		focus = development_of_light_tank
+	}
+	x = -11
+	y = 5
+	relative_position_id = prc70s_prepare_the_war
+	bypass = {
+		has_tech = amphibious3
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_leader = {
+					character = PRC_lin_biao
+					ruling_only = yes
+				}
+			}
+			has_country_flag = prc70s_Great_victory
+		}
+		else_if = {
+			limit = {
+				has_country_leader = {
+					character = PRC_mao_zedong
+					ruling_only = yes
+				}
+			}
+			has_completed_focus = a_great_new_victory
+		}
+		has_tech = amphibious2
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = tank_research_Missions_in_the_seventies"
+		add_to_variable = {
+			currentMoney = -26
+			tooltip = increase_money_tt
+		}
+		add_tech_bonus = {
+			bonus = 0.4
+			uses = 1
+			technology = amphibious3
+		}
+	}
+}
+shared_focus = {
+	id = PRC_70s_We_need_world-class_tanks
+	icon = GFX_PRC_PRC_70s_We_need_world-class_tanks
+	cost = 2
+	prerequisite = {
+		focus = tank_research_Missions_in_the_seventies
+	}
+	mutually_exclusive = {
+		focus = PRC_70s_Missile_omnipotence_in_China
+	}
+	x = -12
+	y = 6
+	relative_position_id = prc70s_prepare_the_war
+	available = {
+	}
+	allow_branch = {
+		has_country_leader = {
+		    character = PRC_lin_biao
+		    ruling_only = yes
+	   }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = PRC_70s_We_need_world-class_tanks"
+	}
+}
+shared_focus = {
+	id = PRC_70s_Missile_omnipotence_in_China
+	icon = GFX_PRC_70s_Missile_omnipotence_in_China
+	cost = 2
+	prerequisite = {
+		focus = tank_research_Missions_in_the_seventies
+	}
+	prerequisite = {
+		focus = PRC_101_Reverse_development_of_Soviet_weapons
+	}
+	mutually_exclusive = {
+		focus = PRC_70s_We_need_world-class_tanks
+	}
+	x = -10
+	y = 6
+	relative_position_id = prc70s_prepare_the_war
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = PRC_70s_Missile_omnipotence_in_China"
+	}
+}
+shared_focus = {
+	id = PRC_101_Developing_present_self-propelled_artillery
+	icon = GFX_PRC_101_Developing_present_self-propelled_artillery
+	cost = 2
+	prerequisite = {
+		focus = PRC_70s_We_need_world-class_tanks
+		focus = PRC_70s_Missile_omnipotence_in_China
+	}
+	x = -11
+	y = 7
+	relative_position_id = prc70s_prepare_the_war
+	available = {
+	}
+	allow_branch = {
+		has_country_leader = {
+		    character = PRC_lin_biao
+		    ruling_only = yes
+	   }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = PRC_101_Developing_present_self-propelled_artillery"
+	}
+}
+shared_focus = {
+	id = PRC_101_Reverse_development_of_Soviet_weapons
+	icon = GFX_PRC_101_Reverse_development_of_Soviet_weapons
+	cost = 2
+	prerequisite = {
+		focus = Improve_the_Type_six_three_automatic_rifle
+	}
+	x = -9
+	y = 5
+	relative_position_id = prc70s_prepare_the_war
+	available = {
+	}
+	allow_branch = {
+		has_country_leader = {
+		    character = PRC_lin_biao
+		    ruling_only = yes
+	   }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = PRC_101_Reverse_development_of_Soviet_weapons"
+	}
+}
+shared_focus = {
+	id = PRC_101_Infantry_chariot_assault_theory
+	icon = GFX_PRC_101_Infantry_chariot_assault_theory
+	cost = 2
+	prerequisite = {
+		focus = PRC_101_Reverse_development_of_Soviet_weapons
+	}
+	x = -8
+	y = 6
+	relative_position_id = prc70s_prepare_the_war
+	available = {
+	}
+	allow_branch = {
+		has_country_leader = {
+		    character = PRC_lin_biao
+		    ruling_only = yes
+	   }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = PRC_101_Infantry_chariot_assault_theory"
+	}
+}
+shared_focus = {
+	id = PRC_101_Expand_the_logistics_support_force
+	icon = GFX_PRC_101_Expand_the_logistics_support_force
+	cost = 2
+	prerequisite = {
+		focus = PRC_101_Infantry_chariot_assault_theory
+	}
+	prerequisite = {
+		focus = PRC_70s_Missile_omnipotence_in_China
+	}
+	x = -9
+	y = 7
+	relative_position_id = prc70s_prepare_the_war
+	available = {
+	}
+	allow_branch = {
+		has_country_leader = {
+		    character = PRC_lin_biao
+		    ruling_only = yes
+	   }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = PRC_101_Expand_the_logistics_support_force"
+	}
+}
+shared_focus = {
+	id = PRC_101_Update_infantry_ATGM
+	icon = GFX_PRC_101_Update_infantry_ATGM
+	cost = 2
+	prerequisite = {
+		focus = PRC_101_Infantry_chariot_assault_theory
+	}
+	x = -7
+	y = 7
+	relative_position_id = prc70s_prepare_the_war
+	available = {
+	}
+	allow_branch = {
+		has_country_leader = {
+		    character = PRC_lin_biao
+		    ruling_only = yes
+	   }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = PRC_101_Update_infantry_ATGM"
+	}
+}
+shared_focus = {
+	id = five_nine_one_Cannon
+	icon = GFX_goal_generic_cavalry
+	cost = 2
+	prerequisite = {
+		focus = PRC_70s_Army
+	}
+	x = -8
+	y = 2
+	relative_position_id = prc70s_prepare_the_war
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = five_nine_one_Cannon"
+		add_to_variable = {
+			currentMoney = -18
+			tooltip = increase_money_tt
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = artillery_heavy
+		}
+		add_to_variable = {
+			PRC_STM = 0.5
+			tooltip = PRC_70s_advance_modernization_of_science_and_technology_tt
+		}
+		clamp_variable = {
+			var = PRC_STM
+			max = 100
+			min = 0
+		}
+	}
+}
+shared_focus = {
+	id = PLZ_seven_zero
+	icon = GFX_goal_generic_cavalry
+	cost = 2
+	prerequisite = {
+		focus = five_nine_one_Cannon
+	}
+	x = -8
+	y = 4
+	relative_position_id = prc70s_prepare_the_war
+	available = {
+		if = {
+			limit = {
+				has_country_leader = {
+					character = PRC_lin_biao
+					ruling_only = yes
+				}
+			}
+			has_country_flag = prc70s_Great_victory
+		}
+		else_if = {
+			limit = {
+				has_country_leader = {
+					character = PRC_mao_zedong
+					ruling_only = yes
+				}
+			}
+			has_completed_focus = a_great_new_victory
+		}
+		has_tech = sp_rocket2
+	}
+	allow_branch = {
+		has_country_leader = {
+			character = PRC_mao_zedong
+			ruling_only = yes
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = PLZ_seven_zero"
+		if = {
+			limit = {
+				NOT = {
+					has_tech = sp_rocket3
+				}
+			}
+			add_to_variable = {
+				currentMoney = -30
+				tooltip = increase_money_tt
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				technology = sp_rocket3
+			}
+		}
+		add_to_variable = {
+			PRC_STM = 0.6
+			tooltip = PRC_70s_advance_modernization_of_science_and_technology_tt
+		}
+		clamp_variable = {
+			var = PRC_STM
+			max = 100
+			min = 0
+		}
+	}
+}
+shared_focus = {
+	id = PRC_101_Upgrade_naval_equipment
+	icon = GFX_PRC_101_Upgrade_naval_equipment
+	cost = 2
+	prerequisite = {
+		focus = prc70s_prepare_the_war
+	}
+	x = -5
+	y = 1
+	relative_position_id = prc70s_prepare_the_war
+	allow_branch = {
+		has_country_leader = {
+		    character = PRC_lin_biao
+		    ruling_only = yes
+	   }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = PRC_101_Upgrade_naval_equipment"
+		add_command_power = 10
+		navy_experience = 30
+	}
+}
+shared_focus = {
+	id = PRC_101_718_project
+	icon = GFX_PRC_101_718_project
+	cost = 2
+	prerequisite = {
+		focus = PRC_101_Upgrade_naval_equipment
+	}
+	x = -4
+	y = 2
+	relative_position_id = prc70s_prepare_the_war
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = PRC_101_718_project"
+	}
+}
+shared_focus = {
+	id = PRC_101_begin_to_research_zero_nine_two_xia_class
+	icon = GFX_PRC_101_begin_to_research_zero_nine_two_xia_class
+	cost = 2
+	prerequisite = {
+		focus = PRC_101_718_project
+	}
+	x = -3
+	y = 3
+	relative_position_id = prc70s_prepare_the_war
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = PRC_101_begin_to_research_zero_nine_two_xia_class"
+	}
+}
+shared_focus = {
+	id = PRC_101_type_zero_five_five_Large_Artillery_Missile_Destroyer
+	icon = GFX_PRC_101_type_zero_five_five_Large_Artillery_Missile_Destroyer
+	cost = 2
+	prerequisite = {
+		focus = PRC_101_Upgrade_naval_equipment
+	}
+	x = -5
+	y = 3
+	relative_position_id = prc70s_prepare_the_war
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = PRC_101_type_zero_five_five_Large_Artillery_Missile_Destroyer"
+	}
+}
+shared_focus = {
+	id = PRC_101_New_air_defense_cruiser
+	icon = GFX_PRC_101_New_air_defense_cruiser
+	cost = 2
+	prerequisite = {
+		focus = PRC_101_type_zero_five_five_Large_Artillery_Missile_Destroyer
+	}
+	x = -5
+	y = 4
+	relative_position_id = prc70s_prepare_the_war
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id =PRC_101_New_air_defense_cruiser"
+	}
+}
+shared_focus = {
+	id = PRC_101_Develop_naval_helicopters
+	icon = GFX_PRC_101_Develop_naval_helicopters
+	cost = 2
+	prerequisite = {
+		focus = PRC_101_begin_to_research_zero_nine_two_xia_class
+	}
+	prerequisite = {
+		focus = PRC_101_New_air_defense_cruiser
+	}
+	x = -3
+	y = 5
+	relative_position_id = prc70s_prepare_the_war
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = PRC_101_Develop_naval_helicopters"
+	}
+}
+shared_focus = {
+	id = PRC_101_Improved_destroyer_051
+	icon = GFX_PRC_101_Improved_destroyer_051
+	cost = 2
+	prerequisite = {
+		focus = PRC_101_Develop_naval_helicopters
+	}
+	x = -3
+	y = 6
+	relative_position_id = prc70s_prepare_the_war
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = PRC_101_Improved_destroyer_051"
+	}
+}
+shared_focus = {
+	id = PRC_70s_Navy
+	icon = GFX_goal_generic_build_navy
+	cost = 2
+	prerequisite = {
+		focus = prc70s_prepare_the_war
+	}
+	x = -4
+	y = 1
+	relative_position_id = prc70s_prepare_the_war
+	allow_branch = {
+		has_country_leader = {
+			character = PRC_mao_zedong
+			ruling_only = yes
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = PRC_70s_Navy"
+		add_command_power = 10
+		navy_experience = 30
+	}
+}
+shared_focus = {
+	id = the_experience_of_the_paracel_island_battle
+	icon = GFX_goal_generic_cavalry
+	cost = 2
+	prerequisite = {
+		focus = PRC_70s_Navy
+	}
+	x = -5
+	y = 2
+	relative_position_id = prc70s_prepare_the_war
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = the_experience_of_the_paracel_island_battle"
+		add_command_power = 10
+		navy_experience = 20
+	}
+}
+shared_focus = {
+	id = CZ_first
+	icon = GFX_CZ_first
+	x = -3
+	y = 2
+	relative_position_id = prc70s_prepare_the_war
+	prerequisite = {
+		focus = PRC_70s_Navy
+	}
+	available = {
+		has_tech = screen_hull_medium_2
+	}
+	cost = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = CZ_first"
+		if = {
+			NOT = {
+				has_tech = screen_hull_medium_3
+			}
+			add_to_variable ={
+				currentMoney = -76
+				tooltip = increase_money_tt
+			}
+			add_tech_bonus = {
+				bonus = 0.6
+				uses = 1
+				technology =  screen_hull_medium_3
+			}
+		}
+		add_to_variable = {
+			PRC_STM = 0.8
+			tooltip = PRC_70s_advance_modernization_of_science_and_technology_tt
+		}
+		clamp_variable = {
+			var = PRC_STM
+			max = 100
+			min = 0
+		}
+	}
+}
+shared_focus = {
+	id = prc70s_718_project
+	icon = GFX_prc70s_718_project
+	x = -1
+	y = 2
+	relative_position_id = prc70s_prepare_the_war
+	cost = 2
+	prerequisite = {
+		focus = PRC_70s_Navy
+	}
+	bypass = {
+		has_tech = icbm1
+		has_tech = icbm2
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = prc70s_718_project"
+		set_country_flag = PRC_70s_718_project_flag
+		unlock_decision_tooltip = PRC_70s_718_project_decision
+	}
+}
+shared_focus = {
+	id = JL_one
+	icon = GFX_goal_generic_cavalry
+	cost = 2
+	prerequisite = {
+		focus = PRC_70s_Navy
+	}
+	x = -6
+	y = 3
+	relative_position_id = prc70s_prepare_the_war
+	available = {
+		has_idea = slbm3
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = JL_one"
+		if = {
+			NOT = {
+				has_idea = slbm4
+			}
+			add_to_variable ={
+				currentMoney = -77
+				tooltip = increase_money_tt
+			}
+			add_tech_bonus = {
+				bonus = 0.6
+				uses = 1
+				technology = slbm4
+			}
+		}
+		add_to_variable = {
+			PRC_STM = 0.8
+			tooltip = PRC_70s_advance_modernization_of_science_and_technology_tt
+		}
+		clamp_variable = {
+			var = PRC_STM
+			max = 100
+			min = 0
+		}
+	}
+}
+shared_focus = {
+	id = begin_to_research_zero_nine_two_xia_class
+	icon = GFX_goal_generic_cavalry
+	cost = 2
+	prerequisite = {
+		focus = CZ_first
+	}
+	x = -4
+	y = 3
+	relative_position_id = prc70s_prepare_the_war
+	available = {
+		if = {
+			limit = {
+				has_country_leader = {
+					character = PRC_lin_biao
+					ruling_only = yes
+				}
+			}
+			has_country_flag = prc70s_Great_victory
+		}
+		else_if = {
+			limit = {
+				has_country_leader = {
+					character = PRC_mao_zedong
+					ruling_only = yes
+				}
+			}
+			has_completed_focus = a_great_new_victory
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = begin_to_research_zero_nine_two_xia_class"
+		add_to_variable ={
+			currentMoney = -44
+			tooltip = increase_money_tt
+		}
+		add_tech_bonus = {
+			bonus = 0.15
+			uses = 1
+			technology = sub_hull_large_double_1
+		}
+		add_to_variable = {
+			PRC_STM = 0.8
+			tooltip = PRC_70s_advance_modernization_of_science_and_technology_tt
+		}
+		clamp_variable = {
+			var = PRC_STM
+			max = 100
+			min = 0
+		}
+	}
+}
+shared_focus = {
+	id = type_zero_five_five_Large_Artillery_Missile_Destroyer
+	icon = GFX_type_zero_five_five_Large_Artillery_Missile_Destroyer
+	cost = 2
+	prerequisite = {
+		focus = CZ_first
+	}
+	x = -2
+	y = 3
+	relative_position_id = prc70s_prepare_the_war
+	available = {
+		if = {
+			limit = {
+				has_country_leader = {
+					character = PRC_lin_biao
+					ruling_only = yes
+				}
+				has_completed_focus = prc70s_Great_victory
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_leader = {
+					character = PRC_mao_zedong
+					ruling_only = yes
+				}
+			}
+			has_completed_focus = a_great_new_victory
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = type_zero_five_five_Large_Artillery_Missile_Destroyer"
+		set_country_flag = PRC_70s_055_Large_Artillery_Missile_Destroyer_flag
+		
+	}
+}
+shared_focus = {
+	id = anti_submarine_nuclear_tor_pedoes
+	icon = GFX_goal_generic_cavalry
+	cost = 2
+	prerequisite = {
+		focus = JL_one
+	}
+	prerequisite = {
+		focus = begin_to_research_zero_nine_two_xia_class
+	}
+	x = -5
+	y = 4
+	relative_position_id = prc70s_prepare_the_war
+	available = {
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = anti_submarine_nuclear_tor_pedoes"
+		add_tech_bonus = {
+			bonus = 0.2
+			uses = 1
+			category = torpedo
+		}
+		add_to_variable = {
+			PRC_STM = 0.8
+			tooltip = PRC_70s_advance_modernization_of_science_and_technology_tt
+		}
+		clamp_variable = {
+			var = PRC_STM
+			max = 100
+			min = 0
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_70s_Air_forced
+	icon = GFX_goal_generic_build_airforce
+	cost = 2
+	prerequisite = {
+		focus = prc70s_prepare_the_war
+	}
+	x = 2
+	y = 1
+	relative_position_id = prc70s_prepare_the_war
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = PRC_70s_Air_forced"
+		add_command_power = 10
+		air_experience = 30
+	}
+}
+shared_focus = {
+	id = stated_mass_productioon_of_H_six
+	icon = GFX_goal_generic_cavalry
+	cost = 2
+	prerequisite = {
+		focus = PRC_70s_Air_forced
+	}
+	x = 1
+	y = 2
+	relative_position_id = prc70s_prepare_the_war
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = stated_mass_productioon_of_H_six"
+		add_equipment_production = {
+			equipment = {
+				type = strategic_bomber3 
+			}
+			requested_factories = 3
+			progress = 0.95
+			amount = 6
+		}
+	}
+}
+shared_focus = {
+	id = advancing_the_development_of_J_eight
+	icon = GFX_goal_generic_cavalry
+	cost = 2
+	prerequisite = {
+		focus = stated_mass_productioon_of_H_six
+	}
+	mutually_exclusive = {
+		focus = simultaneous_develop_J_nine_and_J_eight
+	}
+	x = 0
+	y = 3
+	relative_position_id = prc70s_prepare_the_war
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = advancing_the_development_of_J_eight"
+		if = {
+			limit = {
+				NOT = {
+                    has_tech = jet_interceptor7
+				}
+			}
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = jet_interceptor7
+			}
+		}
+		add_to_variable = {
+			PRC_STM = 0.8
+			tooltip = PRC_70s_advance_modernization_of_science_and_technology_tt
+		}
+		clamp_variable = {
+			var = PRC_STM
+			max = 100
+			min = 0
+		}
+	}
+}
+shared_focus = {
+	id = simultaneous_develop_J_nine_and_J_eight
+	icon = GFX_goal_generic_cavalry
+	cost = 2
+	prerequisite = {
+		focus = stated_mass_productioon_of_H_six
+	}
+	mutually_exclusive = {
+		focus = advancing_the_development_of_J_eight
+	}
+	x = 2
+	y = 3
+	relative_position_id = prc70s_prepare_the_war
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = simultaneous_develop_J_nine_and_J_eight"
+		set_country_flag = PRC_70s_simultaneous_develop_J_nine_and_J_eight_flag
+		unlock_decision_tooltip = PRC_70s_simultaneous_develop_J_nine_and_J_eight_decision
+	}
+}
+shared_focus = {
+	id = continued_Mission_two
+	icon = GFX_goal_generic_cavalry
+	cost = 2
+	prerequisite = {
+		focus = simultaneous_develop_J_nine_and_J_eight
+		focus = advancing_the_development_of_J_eight
+	}
+	mutually_exclusive = {
+		focus = use_funds_elsewhere
+	}
+	x = 0
+	y = 4
+	relative_position_id = prc70s_prepare_the_war
+	available = {
+		if = {
+			limit = {
+				has_country_leader = {
+					character = PRC_lin_biao
+					ruling_only = yes
+				}
+			}
+			has_country_flag = prc70s_Great_victory
+		}
+		else_if = {
+			limit = {
+				has_country_leader = {
+					character = PRC_mao_zedong
+					ruling_only = yes
+				}
+			}
+			has_completed_focus = a_great_new_victory
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = continued_Mission_two"
+		set_country_flag = PRC_70s_continued_Mission_two_flag
+		unlock_decision_tooltip = PRC_70s_continued_Mission_two_decision
+	}
+}
+shared_focus = {
+	id = use_funds_elsewhere
+	icon = GFX_use_funds_elsewhere
+	cost = 2
+	prerequisite = {
+		focus = advancing_the_development_of_J_eight
+		focus = simultaneous_develop_J_nine_and_J_eight
+	}
+	mutually_exclusive = {
+		focus = continued_Mission_two
+	}
+	x = 2
+	y = 4
+	relative_position_id = prc70s_prepare_the_war
+	available = {
+		if = {
+			limit = {
+				has_country_leader = {
+					character = PRC_lin_biao
+					ruling_only = yes
+				}
+			}
+			has_country_flag = prc70s_Great_victory
+		}
+		else_if = {
+			limit = {
+				has_country_leader = {
+					character = PRC_mao_zedong
+					ruling_only = yes
+				}
+			}
+			has_completed_focus = a_great_new_victory
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = continued_Mission_two"
+		add_to_variable = {
+			currentMoney = 20
+			tooltip = increase_money_tt
+		}
+	}
+}
+shared_focus = {
+	id = new_AA_missile_experiment
+	icon = GFX_new_AA_missile_experiment
+	cost = 2
+	prerequisite = {
+		focus = continued_Mission_two
+		focus = use_funds_elsewhere
+	}
+	x = 1
+	y = 5
+	relative_position_id = prc70s_prepare_the_war
+	available = {
+		if = {
+			limit = {
+				has_country_leader = {
+					character = PRC_lin_biao
+					ruling_only = yes
+				}
+			}
+			has_country_flag = prc70s_Great_victory
+		}
+		else_if = {
+			limit = {
+				has_country_leader = {
+					character = PRC_mao_zedong
+					ruling_only = yes
+				}
+			}
+			has_completed_focus = a_great_new_victory
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = new_AA_missile_experiment"
+		set_country_flag = PRC_70s_new_AA_missile_experiment_flag
+		unlock_decision_tooltip = PRC_70s_new_AA_missile_experiment_decision
+	}
+}
+shared_focus = {
+	id = PRC_101_mprove_the_performance_of_the_J-12_fighter
+	icon = GFX_PRC_101_mprove_the_performance_of_the_J-12_fighter
+	cost = 2
+	prerequisite = {
+		focus = new_AA_missile_experiment
+	}
+	prerequisite = {
+		focus = putting_funds_into_large_transport_aircraft
+	}
+	x = 1
+	y = 6
+	relative_position_id = prc70s_prepare_the_war
+	available = {
+	}
+	allow_branch = {
+		has_country_leader = {
+		    character = PRC_lin_biao
+		    ruling_only = yes
+	   }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = PRC_101_mprove_the_performance_of_the_J-12_fighter"
+	}
+}
+shared_focus = {
+	id = prc70s_Continue_the_research_and_development_of_H-8
+	icon = GFX_prc70s_Continue_the_research_and_development_of_H-8
+	cost = 2
+	x = 3
+	y = 2
+	relative_position_id = prc70s_prepare_the_war
+	prerequisite = {
+		focus = PRC_70s_Air_forced
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = prc70s_Continue_the_research_and_development_of_H-8"
+		add_tech_bonus = {
+			bonus = 0.05
+			uses = 1
+			technology = jet_strategic_bomber5
+		}
+	}
+}
+shared_focus = {
+	id = Medium_sized_transport_aircraft_RD
+	icon = GFX_goal_generic_cavalry
+	cost = 2
+	prerequisite = {
+		focus = PRC_70s_Air_forced
+	}
+	x = 5
+	y = 2
+	relative_position_id = prc70s_prepare_the_war
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = Medium_sized_transport_aircraft_RD"
+		set_country_flag = PRC_70s_Medium_sized_transport_aircraft_RD_flag
+		unlock_decision_tooltip = PRC_70s_Medium_sized_transport_aircraft_RD_decision
+	}
+}
+shared_focus = {
+	id = putting_funds_into_large_transport_aircraft
+	icon = GFX_goal_generic_cavalry
+	cost = 2
+	prerequisite = {
+		focus = Medium_sized_transport_aircraft_RD
+	}
+	mutually_exclusive = {
+		focus = give_up_the_inusion_of_developing_large_transport_aircraft
+	}
+	x = 4
+	y = 3
+	relative_position_id = prc70s_prepare_the_war
+	available = {
+		if = {
+			limit = {
+				has_country_leader = {
+					character = PRC_lin_biao
+					ruling_only = yes
+				}
+			}
+			has_country_flag = prc70s_Great_victory
+		}
+		else_if = {
+			limit = {
+				has_country_leader = {
+					character = PRC_mao_zedong
+					ruling_only = yes
+				}
+			}
+			has_completed_focus = a_great_new_victory
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = putting_funds_into_large_transport_aircraft"
+		set_country_flag = PRC_70s_putting_funds_into_large_transport_aircraft_flag
+		unlock_decision_tooltip = PRC_70s_putting_funds_into_large_transport_aircraft_decision
+	}
+}
+shared_focus = {
+	id = PRC_101_Intercept_strategic_bombers
+	icon = GFX_PRC_101_Intercept_strategic_bombers
+	cost = 2
+	prerequisite = {
+		focus = new_AA_missile_experiment
+	}
+	prerequisite = {
+		focus = putting_funds_into_large_transport_aircraft
+	}
+	mutually_exclusive = {
+		focus = PRC_101_Chinas_new_anti_missile_system
+	}
+	x = 4
+	y = 6
+	relative_position_id = prc70s_prepare_the_war
+	available = {
+	}
+	allow_branch = {
+		has_country_leader = {
+		    character = PRC_lin_biao
+		    ruling_only = yes
+	   }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = PRC_101_Intercept_strategic_bombers"
+	}
+}
+shared_focus = {
+	id = give_up_the_inusion_of_developing_large_transport_aircraft
+	icon = GFX_goal_generic_cavalry
+	cost = 2
+	prerequisite = {
+		focus = Medium_sized_transport_aircraft_RD
+	}
+	mutually_exclusive = {
+		focus = putting_funds_into_large_transport_aircraft
+	}
+	x = 6
+	y = 3
+	relative_position_id = prc70s_prepare_the_war
+	available = {
+		if = {
+			limit = {
+				has_country_leader = {
+					character = PRC_lin_biao
+					ruling_only = yes
+				}
+			}
+			has_country_flag = prc70s_Great_victory
+		}
+		else_if = {
+			limit = {
+				has_country_leader = {
+					character = PRC_mao_zedong
+					ruling_only = yes
+				}
+			}
+			has_completed_focus = a_great_new_victory
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = give_up_the_inusion_of_developing_large_transport_aircraft"
+		add_tech_bonus = {
+			bonus = 0.05
+			uses = 1
+			category = transport  
+		}
+	}
+}
+shared_focus = {
+	id = Beyond_the_ionosphere
+	icon = GFX_focus_rocketry
+	cost = 2
+	prerequisite = {
+		focus = prc70s_prepare_the_war
+	}
+	x = 8
+	y = 1
+	relative_position_id = prc70s_prepare_the_war
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = Beyond_the_ionosphere"
+		add_command_power = 10
+		army_experience = 10
+		air_experience = 10
+	}
+}
+shared_focus = {
+	id = PRC_101_continuation_of_project_six_four_zero_ccc
+	icon = GFX_PRC_101_continuation_of_project_six_four_zero_ccc
+	cost = 2
+	prerequisite = {
+		focus = PRC_70s_Air_forced
+	}
+	prerequisite = {
+		focus = Beyond_the_ionosphere
+	}
+	x = 7
+	y = 2
+	relative_position_id = prc70s_prepare_the_war
+	available = {
+	}
+	allow_branch = {
+		has_country_leader = {
+		    character = PRC_lin_biao
+		    ruling_only = yes
+	   }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = PRC_101_continuation_of_project_six_four_zero_ccc"
+	}
+}
+shared_focus = {
+	id = PRC_101_DF_five
+	icon = GFX_PRC_101_DF_five
+	cost = 2
+	prerequisite = {
+		focus = PRC_101_continuation_of_project_six_four_zero_ccc
+	}
+	x = 8
+	y = 3
+	relative_position_id = prc70s_prepare_the_war
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = PRC_101_DF_five"
+	}
+}
+shared_focus = {
+	id = PRC_101_Promote_the_research_and_development_of_MRBM
+	icon = GFX_PRC_101_Promote_the_research_and_development_of_MRBM
+	cost = 2
+	prerequisite = {
+		focus = PRC_101_DF_five
+	}
+	x = 6
+	y = 4
+	relative_position_id = prc70s_prepare_the_war
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = PRC_101_Promote_the_research_and_development_of_MRBM"
+	}
+}
+shared_focus = {
+	id = PRC_101_Improve_Chinas_position_in_the_nuclear_club
+	icon = GFX_PRC_101_Improve_Chinas_position_in_the_nuclear_club
+	cost = 2
+	prerequisite = {
+		focus = PRC_101_Promote_the_research_and_development_of_MRBM
+	}
+	x = 7
+	y = 5
+	relative_position_id = prc70s_prepare_the_war
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = PRC_101_Improve_Chinas_position_in_the_nuclear_club"
+	}
+}
+shared_focus = {
+	id = PRC_101_Ground_to_air_missile_experiment
+	icon = GFX_PRC_101_Ground_to_air_missile_experiment
+	cost = 2
+	prerequisite = {
+		focus = PRC_101_DF_five
+	}
+	x = 8
+	y = 4
+	relative_position_id = prc70s_prepare_the_war
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = PRC_101_Ground_to_air_missile_experiment"
+	}
+}
+shared_focus = {
+	id = PRC_101_Chinas_new_anti_missile_system
+	icon = GFX_PRC_101_Chinas_new_anti_missile_system
+	cost = 2
+	prerequisite = {
+		focus = PRC_101_Improve_Chinas_position_in_the_nuclear_club
+	}
+	prerequisite = {
+		focus = PRC_101_Ground_to_air_missile_experiment
+	}
+	mutually_exclusive = {
+		focus = PRC_101_Intercept_strategic_bombers
+	}
+	x = 8
+	y = 6
+	relative_position_id = prc70s_prepare_the_war
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = PRC_101_Chinas_new_anti_missile_system"
+	}
+}
+shared_focus = {
+	id = PRC_101_Julang_1
+	icon = GFX_PRC_101_Julang_1
+	cost = 2
+	prerequisite = {
+		focus = PRC_101_DF_five
+	}
+	x = 10
+	y = 4
+	relative_position_id = prc70s_prepare_the_war
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = PRC_101_Julang_1"
+	}
+}
+shared_focus = {
+	id = continuation_of_project_six_four_zero_ccc
+	icon = GFX_continuation_of_project_six_four_zero_ccc
+	cost = 2
+	prerequisite = {
+		focus = PRC_70s_Air_forced
+	}
+	prerequisite = {
+		focus = Beyond_the_ionosphere
+	}
+	x = 7
+	y = 2
+	relative_position_id = prc70s_prepare_the_war
+	allow_branch = {
+		has_country_leader = {
+			character = PRC_mao_zedong
+			ruling_only = yes
+		}
+	}
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = continuation_of_project_six_four_zero_ccc"
+		set_country_flag = PRC_70s_continuation_of_project_six_four_zero_ccc_flag
+		unlock_decision_tooltip = PRC_70s_continuation_of_project_six_four_zero_ccc_decision
+	}
+}
+shared_focus = {
+	id = DF_five
+	icon = GFX_goal_generic_cavalry
+	cost = 2
+	prerequisite = {
+		focus = continuation_of_project_six_four_zero_ccc
+	}
+	x = 9
+	y = 3
+	relative_position_id = prc70s_prepare_the_war
+	available = {
+		if = {
+			limit = {
+				has_country_leader = {
+					character = PRC_lin_biao
+					ruling_only = yes
+				}
+			}
+			has_country_flag = prc70s_Great_victory
+		}
+		else_if = {
+			limit = {
+				has_country_leader = {
+					character = PRC_mao_zedong
+					ruling_only = yes
+				}
+			}
+			has_completed_focus = a_great_new_victory
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = continuation_of_project_six_four_zero_ccc"
+		add_to_variable = {
+			currentMoney = -48
+			tooltip = increase_money_tt
+		}
+		add_tech_bonus = {
+			bonus = 0.1
+			uses = 1
+			category = rocketry_missile
+		}
+		add_to_variable = {
+			PRC_STM = 0.6
+			tooltip = PRC_70s_advance_modernization_of_science_and_technology_tt
+		}
+		clamp_variable = {
+			var = PRC_STM
+			max = 100
+			min = 0
+		}
+	}
+}
+shared_focus = {
+	id = prc70s_Ground_to_air_missile_experiment
+	icon = GFX_prc70s_Ground_to_air_missile_experiment
+	x = 9
+	y = 4
+	relative_position_id = prc70s_prepare_the_war
+	cost = 2
+	prerequisite = {
+		focus = DF_five
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = prc70s_Ground_to_air_missile_experiment"
+		add_tech_bonus = {
+			bonus = 0.1
+			uses = 1
+			category = rocketry_atgm
+		}
+	}
+}
+shared_focus = {
+	id = Chinas_new_anti_missile_system
+	icon = GFX_Chinas_new_anti_missile_system
+	cost = 2
+	prerequisite = {
+		focus = prc70s_Ground_to_air_missile_experiment
+	}
+	prerequisite = {
+		focus = continuation_of_project_six_four_zero_ccc
+	}
+	prerequisite = {
+		focus = give_up_the_inusion_of_developing_large_transport_aircraft
+		focus = putting_funds_into_large_transport_aircraft
+	}
+	x = 7
+	y = 5
+	relative_position_id = prc70s_prepare_the_war
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetTag]: id = Chinas_new_anti_missile_system"
+		add_to_variable = {
+			currentMoney = -35
+			tooltip = increase_money_tt
+		}
+		add_tech_bonus = {
+			bonus = 0.1
+			uses = 2
+			category = rocketry
+		}
+		add_to_variable = {
+			PRC_STM = 0.8
+			tooltip = PRC_70s_advance_modernization_of_science_and_technology_tt
+		}
+		clamp_variable = {
+			var = PRC_STM
+			max = 100
+			min = 0
+		}
+	}
+}
+
+shared_focus = {
+	id = prc70s_Space_dream
+	icon = GFX_PRC70s_dFH_one
+	x = 10
+	y = 2
+	relative_position_id = prc70s_prepare_the_war
+	cost = 2
+	prerequisite = {
+		focus = Beyond_the_ionosphere
+	}
+	completion_reward = {
+		add_stability = 0.05
+	}
+}    
+	
+#	focus = {
+#		id = jl_two
+#		icon = GFX_goal_generic_cavalry
+#		cost = 1.5
+#		prerequisite = {
+#			focus = type_zero_five_five_Large_Artillery_Missile_Destroyer
+#			focus = begin_to_research_zero_nine_two_xia_class
+#		}
+#		prerequisite = {
+#			focus = JL_one
+#		}
+#		mutually_exclusive = {
+#			focus = anti_submarine_nuclear_tor_pedoes
+#			focus = anti_submarine_nuclear_tor_pedoes
+#		}
+#		x = 30
+#		y = 16
+#		completion_reward = {
+#			add_tech_bonus = {
+#				bonus = 0.1
+#				uses = 1
+#				category = srbm_equipment
+#			}
+#		}
+#	}
+
+shared_focus = {
+	id = prc70s_Four_three_plan
+	icon = GFX_prc70s_Four_three_plan
+	x = 60
+	y = 0
+	cost = 1.4
+	allow_branch = {
+		always = yes
+	}
+	offset = {
+		x = -15
+		y = 12
+		trigger = {
+			has_country_leader = {
+                name = "LinBiao"
+                ruling_only = yes
+            }	
+		}
+	}
+	prerequisite = {
+		focus = PRC_101_71s_Strengthening_heavy_industrial_base
+		focus = PRC_101_71s_Decentralized_Industrial_Development
+	}
+	available = {
+		date > 1972.1.22
+		available = {
+			if = {
+				limit = {
+					has_country_leader = {
+						character = PRC_lin_biao
+						ruling_only = yes
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = prc70s_Great_victory
+					has_country_flag = prc70s_Great_victory_flag
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_leader = {
+						character = PRC_mao_zedong
+						ruling_only = yes
+					}
+				}
+				has_completed_focus = a_great_new_victory
+			}
+		}
+	}
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetTag]: id = prc70s_Four_three_plan"
+        unlock_decision_category_tooltip = PRC_Invest_to_establish_chemical_fiber_plant_in_Changshou
+    }
+}
+shared_focus = {
+    id = prc70s_Buy_an_off-road_vehicle
+    icon = GFX_prc70s_Buy_an_off-road_vehicle
+    x = 56
+    y = 2
+	cost = 2.4
+    prerequisite = {
+        focus = prc70s_Four_three_plan
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetTag]: id = prc70s_Buy_an_off-road_vehicle"
+		set_variable = { PRC_70s_Buy_an_off_PRC_Off_road_vehicle_development_var = 0 }
+        unlock_decision_tooltip = PRC_70s_Buy_an_off_PRC_Off_road_vehicle_development_decision
+    }
+}
+shared_focus = {
+    id = ipoet_chemical_equipment
+    icon = GFX_ipoet_chemical_equipment
+    cost = 2.4
+    prerequisite = {
+        focus = prc70s_Four_three_plan
+    }
+    x = 57
+    y = 1
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetTag]: id = ipoet_chemical_equipment"
+		set_variable = { PRC_70s_ipoet_chemical_equipment_var = 0 }
+        unlock_decision_tooltip = PRC_70s_ipoet_chemical_equipment_decision
+    }
+}
+shared_focus = {
+    id = purchase_of_military_helicopters
+    icon = GFX_purchase_of_military_helicopters
+    cost = 2.4
+    prerequisite = {
+        focus = prc70s_Four_three_plan
+    }
+    x = 58
+    y = 2
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetTag]: id = purchase_of_military_helicopters"
+		set_variable = { PRC_70s_purchase_of_military_helicopters_var = 0 }
+        unlock_decision_tooltip = PRC_70s_purchase_of_military_helicopters_decision
+    }
+}
+shared_focus = {
+    id = import_advance_industrial
+    icon = GFX_import_advance_industrial
+    cost = 2.4
+    prerequisite = {
+        focus = prc70s_Four_three_plan
+    }
+    x = 59
+    y = 1
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetTag]: id = import_advance_industrial"
+		set_variable = { PRC_70s_import_advance_industrial_var = 0 }
+        unlock_decision_tooltip = PRC_70s_import_advance_industrial_decision
+    }
+}
+shared_focus = {
+    id = expansion_of_ocean_going_fleet
+    icon = GFX_expansion_of_ocean_going_fleet
+    cost = 2.4
+    prerequisite = {
+        focus = prc70s_Four_three_plan
+    }
+    x = 60
+    y = 2
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetTag]: id = expansion_of_ocean_going_fleet"
+		set_variable = { PRC_70s_expansion_of_ocean_going_fleet_var = 0 }
+        unlock_decision_tooltip = PRC_70s_expansion_of_ocean_going_fleet_decision
+    }
+}
+shared_focus = {
+    id = import_power_station_equipment
+    icon = GFX_import_power_station_equipment
+    cost = 2.4
+    prerequisite = {
+        focus = prc70s_Four_three_plan
+    }
+    x = 61
+    y = 1
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetTag]: id = import_power_station_equipment"
+		set_variable = { PRC_70s_import_power_station_equipment_var = 0 }
+        unlock_decision_tooltip = PRC_70s_import_power_station_equipment_decision
+    }
+}
+shared_focus = {
+    id = purchase_of_airners
+    icon = GFX_purchase_of_airners
+    cost = 2.4
+    prerequisite = {
+        focus = prc70s_Four_three_plan
+    }
+    x = 62
+    y = 2
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetTag]: id = purchase_of_airners"
+		set_variable = { PRC_70s_purchase_of_airners_var = 0 }
+        unlock_decision_tooltip = PRC_70s_purchase_of_airners_decision
+    }
+}
+shared_focus = {
+    id = imported_chemical_fiber_and_fertilizer_equipment
+    icon = GFX_imported_chemical_fiber_and_fertilizer_equipment
+    cost = 2.4
+    x = 63
+    y = 1
+    prerequisite = {
+        focus = prc70s_Four_three_plan
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetTag]: id = imported_chemical_fiber_and_fertilizer_equipment"
+		set_variable = { PRC_70s_imported_chemical_fiber_and_fertilizer_equipment_var = 0 }
+        unlock_decision_tooltip = PRC_70s_imported_chemical_fiber_and_fertilizer_equipment_decision
+    }
+}
+shared_focus = {
+    id = prc70s_Improve_residents_lives
+    icon = GFX_prc70s_Improve_residents_lives
+    x = 64
+    y = 2
+	cost = 2.4
+    prerequisite = {
+        focus = prc70s_Four_three_plan
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetTag]: id = prc70s_Improve_residents_lives"
+		set_variable = { PRC_70s_Improve_residents_lives_var = 0 }
+        unlock_decision_tooltip = PRC_70s_Improve_residents_lives_decision
+    }
+}
+
+shared_focus = {
+	id = tangshan_earthquake
+	icon = GFX_PRC_70s_tangshan_earthquake
+	cost = 0.2
+	x = 0
+	y = 16
+	offset = {
+		x = 5
+		y = -14
+		trigger = {
+			has_country_leader = {
+				name = "LinBiao"
+				ruling_only = yes
+			}	
+		}
+	}
+	allow_branch = {
+		has_country_flag = tangshan_earthquake_begin
+	}	
+	available = { always = no }
+	completion_reward = {
+		1556 = {
+			add_dynamic_modifier = {
+				modifier = PRC_tangshan_earthquake_state_modifier
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 10
+			}
+			add_extra_state_shared_building_slots = -25
+			add_manpower = -242769
+		}
+	}
+}
+shared_focus = {
+	id = request_for_international_aid
+	icon = GFX_PRC_70s_request_for_international_aid
+	cost = 1
+	prerequisite = {
+		focus = tangshan_earthquake
+	}
+	mutually_exclusive = {
+		focus = send_relief_to_the_victims_ourselves
+	}
+	x = -2
+	y = 17
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = preconditions_tangshan_aid
+			OR = { 
+				NOT = { has_global_flag = PRC_SOV_split }
+			}
+		}
+	}
+	completion_reward = {
+		1556 = {
+			add_extra_state_shared_building_slots = 7
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+shared_focus = {
+	id = send_relief_to_the_victims_ourselves
+	icon = GFX_PRC_70s_send_relief_to_the_victims_ourselves
+	cost = 1
+	prerequisite = {
+		focus = tangshan_earthquake
+	}
+	mutually_exclusive = {
+		focus = request_for_international_aid
+	}
+	x = 2
+	y = 17
+	completion_reward = {
+		1556 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+		country_event = {
+			id = prc70s.76
+		}
+	}
+}
+shared_focus = {
+	id = send_PLA_troops_for_earthquake_relief
+	icon = GFX_PRC_70s_PLA_troops_for_earthquake_relief
+	cost = 1
+	prerequisite = {
+		focus = tangshan_earthquake
+	}
+	x = 0
+	y = 18
+	completion_reward = {
+		unlock_decision_tooltip = send_PLA_troops_for_earthquake_relief_decision
+	}
+}
+shared_focus = {
+	id = reconstruction_of_tangshan
+	icon = GFX_PRC_70s_reconstruction_of_tangshan
+	cost = 1
+	prerequisite = {
+		focus = send_PLA_troops_for_earthquake_relief
+	}
+	prerequisite = {
+		focus = request_for_international_aid
+		focus = send_relief_to_the_victims_ourselves
+	}
+	x = 0
+	y = 19
+	completion_reward = {
+		1556 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = PRC_tangshan_earthquake_state_modifier
+			}
+		}
+	}
+}
+shared_focus = {
+	id = reconstruction_of_the_beijing_shanhaiguan_rairoad
+	icon = GFX_PRC_70s_reconstruction_of_the_beijing_shanhaiguan_rairoad
+	cost = 1
+	prerequisite = {
+		focus = reconstruction_of_tangshan
+	}
+	x = 0
+	y = 20 
+	completion_reward = {
+		build_railway = {
+			path = { 9843 6969 900 3830 11886 }
+		}
+	}
+}
+
+
+

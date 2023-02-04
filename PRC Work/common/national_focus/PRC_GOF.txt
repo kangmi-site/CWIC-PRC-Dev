@@ -1,0 +1,4434 @@
+focus_tree = {
+	id = PRC_GOF_J
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+		tag = PRC
+		}
+	}
+	###新危机###
+	focus = {
+		id = PRC_GOF_J_Agricultural_crisis
+		icon = GFX_PRC_GOF_J_h_Agricultural_crisis
+		cost = 1
+		x = 30
+		y = 16
+		offset = {
+			x = -10
+			y = -15
+			trigger = {
+				has_country_leader = {
+					name = "WangHongwen"
+					ruling_only = yes
+				}
+			}
+		}
+		allow_branch = {
+			has_country_flag = gof_harm_begin
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Promote_agricultural_mechanization
+		icon = GFX_PRC_GOF_J_Promote_agricultural_mechanization
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Agricultural_crisis
+		}
+		x = 2
+		y = 1
+		relative_position_id = PRC_GOF_J_Agricultural_crisis
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Increase_tractor_output
+		icon = GFX_PRC_GOF_J_Increase_tractor_output
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Promote_agricultural_mechanization
+		}
+		x = 2
+		y = 2
+		relative_position_id = PRC_GOF_J_Agricultural_crisis
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_adaptation_to_the_ground
+		icon = GFX_PRC_GOF_J_adaptation_to_the_ground
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Increase_tractor_output
+		}
+		x = 1
+		y = 3
+		relative_position_id = PRC_GOF_J_Agricultural_crisis
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Dispatch_investigation_mission
+		icon = GFX_PRC_GOF_J_Dispatch_investigation_mission
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Increase_tractor_output
+		}
+		x = 3
+		y = 3
+		relative_position_id = PRC_GOF_J_Agricultural_crisis
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Reasonable_planning_of_funds
+		icon = GFX_PRC_GOF_J_Reasonable_planning_of_funds
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Dispatch_investigation_mission
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_adaptation_to_the_ground
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_According_to_heat_distribution
+			focus = PRC_GOF_J_Retain_additional_output
+		}
+		x = 0
+		y = 4
+		relative_position_id = PRC_GOF_J_Agricultural_crisis
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Improved_mechanical_properties
+		icon = GFX_PRC_GOF_J_Improved_mechanical_properties
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Dispatch_investigation_mission
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_adaptation_to_the_ground
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_According_to_heat_distribution
+			focus = PRC_GOF_J_Retain_additional_output
+		}
+		x = 2
+		y = 4
+		relative_position_id = PRC_GOF_J_Agricultural_crisis
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_High-yield_crop_planting
+		icon = GFX_PRC_GOF_J_High-yield_crop_planting
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Dispatch_investigation_mission
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_adaptation_to_the_ground
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_According_to_heat_distribution
+			focus = PRC_GOF_J_Retain_additional_output
+		}
+		x = 4
+		y = 4
+		relative_position_id = PRC_GOF_J_Agricultural_crisis
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Construction_high_standard_agricultural_warehouse
+		icon = GFX_PRC_GOF_J_Construction_high_standard_agricultural_warehouse
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_High-yield_crop_planting
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Improved_mechanical_properties
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Reasonable_planning_of_funds
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Support_communities_in_need
+		}
+		x = -1
+		y = 5
+		relative_position_id = PRC_GOF_J_Agricultural_crisis
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_New_agricultural_machinery
+		icon = GFX_PRC_GOF_J_New_agricultural_machinery
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_High-yield_crop_planting
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Improved_mechanical_properties
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Reasonable_planning_of_funds
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Support_communities_in_need
+		}
+		x = 1
+		y = 5
+		relative_position_id = PRC_GOF_J_Agricultural_crisis
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Large-scale_fertilizer_use
+		icon = GFX_PRC_GOF_J_Large-scale_fertilizer_use
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_High-yield_crop_planting
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Improved_mechanical_properties
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Reasonable_planning_of_funds
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Support_communities_in_need
+		}
+		x = 3
+		y = 5
+		relative_position_id = PRC_GOF_J_Agricultural_crisis
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Imported_agricultural_products
+		icon = GFX_PRC_GOF_J_Imported_agricultural_products
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_High-yield_crop_planting
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Improved_mechanical_properties
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Reasonable_planning_of_funds
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Support_communities_in_need
+		}
+		x = 5
+		y = 5
+		relative_position_id = PRC_GOF_J_Agricultural_crisis
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Reform_the_commune_system
+		icon = GFX_PRC_GOF_J_Reform_the_commune_system
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Agricultural_crisis
+		}
+		x = -2
+		y = 1
+		relative_position_id = PRC_GOF_J_Agricultural_crisis
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Everyone_is_responsible
+		icon = GFX_PRC_GOF_J_PRC_GOF_J_Everyone_is_responsible
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Reform_the_commune_system
+		}
+		x = -2
+		y = 2
+		relative_position_id = PRC_GOF_J_Agricultural_crisis
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Retain_additional_output
+		icon = GFX_PRC_GOF_J_Retain_additional_output
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Everyone_is_responsible
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_According_to_heat_distribution
+		}
+		x = -3
+		y = 3
+		relative_position_id = PRC_GOF_J_Agricultural_crisis
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_According_to_heat_distribution
+		icon = GFX_PRC_GOF_J_According_to_heat_distribution
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Everyone_is_responsible
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_Retain_additional_output
+		}
+		x = -1
+		y = 3
+		relative_position_id = PRC_GOF_J_Agricultural_crisis
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Relocate_poor_areas
+		icon = GFX_PRC_GOF_J_PRC_GOF_J_Relocate_poor_areas
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Dispatch_investigation_mission
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_adaptation_to_the_ground
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_According_to_heat_distribution
+			focus = PRC_GOF_J_Retain_additional_output
+		}
+		x = -4
+		y = 4
+		relative_position_id = PRC_GOF_J_Agricultural_crisis
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Give_priority_to_high-yield_agriculture
+		icon = GFX_PRC_GOF_J_Give_priority_to_high-yield_agriculture
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Relocate_poor_areas
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_Balance_local_level
+		}
+		x = -5
+		y = 5
+		relative_position_id = PRC_GOF_J_Agricultural_crisis
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Balance_local_level
+		icon = GFX_PRC_GOF_J_Balance_local_level
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Relocate_poor_areas
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_Give_priority_to_high-yield_agriculture
+		}
+		x = -3
+		y = 5
+		relative_position_id = PRC_GOF_J_Agricultural_crisis
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Support_communities_in_need
+		icon = GFX_PRC_GOF_J_Support_communities_in_need
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Dispatch_investigation_mission
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_adaptation_to_the_ground
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_According_to_heat_distribution
+			focus = PRC_GOF_J_Retain_additional_output
+		}
+		x = -2
+		y = 4
+		relative_position_id = PRC_GOF_J_Agricultural_crisis
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_harm_of_end
+		icon = GFX_PRC_GOF_J_harm_of_end
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Construction_high_standard_agricultural_warehouse
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Imported_agricultural_products
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Large-scale_fertilizer_use
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_New_agricultural_machinery
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Balance_local_level
+			focus = PRC_GOF_J_Give_priority_to_high-yield_agriculture
+		}
+		x = 0
+		y = 6
+		relative_position_id = PRC_GOF_J_Agricultural_crisis
+		completion_reward = {
+			set_country_flag = gof_harm_end
+		}
+	}
+	###边疆###
+	focus = {
+		id = PRC_GOF_J_Restructuring_third_line
+		icon = GFX_PRC_GOF_J_Restructuring_third_line
+		cost = 1
+		x = 30
+		y = 1
+		allow_branch = {
+			has_country_leader = {
+				name = "JiangQing"
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+			add_ideas = three_again
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Connect_Northwest
+		icon = GFX_PRC_GOF_J_Connect_Northwest
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Restructuring_third_line
+		}
+		x = -4
+		y = 1
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Develop_Xinjiang_Oilfield
+		icon = GFX_PRC_GOF_J_Develop_Xinjiang_Oilfield
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Connect_Northwest
+		}
+		x = -6
+		y = 2
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Expansion_refinery
+		icon = GFX_PRC_GOF_J_Expansion_refinery
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Develop_Xinjiang_Oilfield
+		}
+		x = -7
+		y = 4
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Transform_the_desert
+		icon = GFX_PRC_GOF_J_Transform_the_desert
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Connect_Northwest
+		}
+		x = -4
+		y = 2
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Policy_of_grazing_withdrawal
+		icon = GFX_PRC_GOF_J_Policy_of_grazing_withdrawal
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Transform_the_desert
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_Regulate_grassland
+		}
+		x = -3
+		y = 3
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Regulate_grassland
+		icon = GFX_PRC_GOF_J_Regulate_grassland
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Transform_the_desert
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_Policy_of_grazing_withdrawal
+		}
+		x = -5
+		y = 3
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Expand_processing_industry_of_meet
+		icon = GFX_PRC_GOF_J_Expand_processing_industry_of_meet
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Regulate_grassland
+			focus = PRC_GOF_J_Policy_of_grazing_withdrawal
+		}
+		x = -4
+		y = 4
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Deploy_wind_power
+		icon = GFX_PRC_GOF_J_Deploy_wind_power
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Connect_Northwest
+		}
+		x = -2
+		y = 2
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Develo_renewable_energy
+		icon = GFX_PRC_GOF_J_PRC_GOF_J_Develo_renewable_energy
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Deploy_wind_power
+		}
+		x = -1
+		y = 4
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Promote_industrialization_in_northwest
+		icon = GFX_PRC_GOF_J_Promote_industrialization_in_northwest
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Develo_renewable_energy
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Expand_processing_industry_of_meet
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Expansion_refinery
+		}
+		x = -4
+		y = 5
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Connect_Sorthwest
+		icon = GFX_PRC_GOF_J_Connect_Sorthwest
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Restructuring_third_line
+		}
+		x = 4
+		y = 1
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Develop_ladder_power
+		icon = GFX_PRC_GOF_J_Develop_ladder_power
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Connect_Sorthwest
+		}
+		x = 2
+		y = 2
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Dry_heat_power_generation
+		icon = GFX_PRC_GOF_J_Dry_heat_power_generation
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Develop_ladder_power
+		}
+		x = 1
+		y = 4
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Combat_rocky_desertification
+		icon = GFX_PRC_GOF_J_Combat_rocky_desertification
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Connect_Sorthwest
+		}
+		x = 4
+		y = 2
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Policy_of_returning_farmland
+		icon = GFX_PRC_GOF_J_Policy_of_returning_farmland
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Combat_rocky_desertification
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_Regulate_land
+		}
+		x = 5
+		y = 3
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Regulate_land
+		icon = GFX_PRC_GOF_J_Regulate_land
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Combat_rocky_desertification
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_Policy_of_returning_farmland
+		}
+		x = 3
+		y = 3
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Expansion_geothermal_power_generation
+		icon = GFX_PRC_GOF_J_Expand_processing_industry_of_meet
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Regulate_land
+			focus = PRC_GOF_J_Policy_of_returning_farmland
+		}
+		x = 4
+		y = 4
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Development_Qaidam
+		icon = GFX_PRC_GOF_J_Development_Qaidam
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Connect_Sorthwest
+		}
+		x = 6
+		y = 2
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Solve_water_problems
+		icon = GFX_PRC_GOF_J_Solve_water_problems
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Development_Qaidam
+		}
+		x = 7
+		y = 4
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Strengthen_contacts
+		icon = GFX_PRC_GOF_J_Strengthen_contacts
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Expansion_geothermal_power_generation
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Solve_water_problems
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Dry_heat_power_generation
+		}
+		x = 4
+		y = 5
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Solve_border_problems
+		icon = GFX_PRC_GOF_J_Solve_border_problems
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Strengthen_contacts
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Promote_industrialization_in_northwest
+		}
+		x = 0
+		y = 6
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Eliminate_fear
+		icon = GFX_PRC_GOF_J_Eliminate_fear
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Solve_border_problems
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_Prevention_of_attacks
+		}
+		x = -3
+		y = 7
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Prevention_of_attacks
+		icon = GFX_PRC_GOF_J_Prevention_of_attacks
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Solve_border_problems
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_Eliminate_fear
+		}
+		x = -1
+		y = 7
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Consultation_with_progressives
+		icon = GFX_PRC_GOF_J_Consultation_with_progressives
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Eliminate_fear
+			focus = PRC_GOF_J_Prevention_of_attacks
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_Control_religious_leaders
+		}
+		x = -3
+		y = 8
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Control_religious_leaders
+		icon = GFX_PRC_GOF_J_Control_religious_leaders
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Eliminate_fear
+			focus = PRC_GOF_J_Prevention_of_attacks
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_Consultation_with_progressives
+		}
+		x = -1
+		y = 8
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Destroy_backward_culture
+		icon = GFX_PRC_GOF_J_Eliminate_fear
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Solve_border_problems
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_Revise_doctrine
+		}
+		x = 1
+		y = 7
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Revise_doctrine
+		icon = GFX_PRC_GOF_J_Prevention_of_attacks
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Solve_border_problems
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_Destroy_backward_culture
+		}
+		x = 3
+		y = 7
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Cancel_ethnic_division
+		icon = GFX_PRC_GOF_J_Cancel_ethnic_division
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Revise_doctrine
+			focus = PRC_GOF_J_Destroy_backward_culture
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_Promote_gathering_of_residents
+		}
+		x = 1
+		y = 8
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Promote_gathering_of_residents
+		icon = GFX_PRC_GOF_J_Promote_gathering_of_residents
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Revise_doctrine
+			focus = PRC_GOF_J_Destroy_backward_culture
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_Cancel_ethnic_division
+		}
+		x = 3
+		y = 8
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Frontier_Cultural_Revolution
+		icon = GFX_PRC_GOF_J_Frontier_Cultural_Revolution
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Consultation_with_progressives
+			focus = PRC_GOF_J_Control_religious_leaders
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Cancel_ethnic_division
+			focus = PRC_GOF_J_Promote_gathering_of_residents
+		}
+		x = 0
+		y = 9
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Islamic_crisis
+		icon = GFX_PRC_GOF_J_Islamic_crisis
+		cost = 3
+		allow_branch = {
+			has_country_flag = PRC_GOF_J_Islamic_crisis_begin
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Frontier_Cultural_Revolution
+		}
+		x = -3
+		y = 10
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Block_access
+		icon = GFX_PRC_GOF_J_Block_access
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Islamic_crisis
+		}
+		x = -5
+		y = 11
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Organize_workers_fight_against_atrocities
+		icon = GFX_PRC_GOF_J_Organize_workers_fight_against_atrocities
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Islamic_crisis
+		}
+		x = -3
+		y = 11
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Dispatch_heavy_fire
+		icon = GFX_PRC_GOF_J_Dispatch_heavy_fire
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Islamic_crisis
+		}
+		x = -1
+		y = 11
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Crisis_abatement
+		icon = GFX_PRC_GOF_J_Crisis_abatement
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Organize_workers_fight_against_atrocities
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Block_access
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Dispatch_heavy_fire
+		}
+		x = -3
+		y = 12
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Crushing_Tantra
+		icon = GFX_PRC_GOF_J_Crushing_Tantra
+		cost = 3
+		allow_branch = {
+			has_country_flag = PRC_GOF_J_Crushing_Tantra_begin
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Frontier_Cultural_Revolution
+		}
+		x = 3
+		y = 10
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Dispatch_airborne_troops
+		icon = GFX_PRC_GOF_J_Dispatch_airborne_troops
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Crushing_Tantra
+		}
+		x = 1
+		y = 11
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Air_Force_Patrol
+		icon = GFX_PRC_GOF_J_Air_Force_Patrol
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Crushing_Tantra
+		}
+		x = 3
+		y = 11
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Enhance_deterrence
+		icon = GFX_PRC_GOF_J_Enhance_deterrence
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Crushing_Tantra
+		}
+		x = 5
+		y = 11
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Resolving_the_Tibetan_Rebellion
+		icon = GFX_PRC_GOF_J_Resolving_the_Tibetan_Rebellion
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Enhance_deterrence
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Air_Force_Patrol
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Dispatch_airborne_troops
+		}
+		x = 3
+		y = 12
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Active_atheism_policy
+		icon = GFX_PRC_GOF_J_Active_atheism_policy
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Resolving_the_Tibetan_Rebellion
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Crisis_abatement
+		}
+		x = 0
+		y = 13
+		relative_position_id = PRC_GOF_J_Restructuring_third_line
+		completion_reward = {
+			
+		}
+	}
+	##cr-nor##
+	focus = {
+		id = PRC_GOF_J_Normalization_the_Cultural_Revolution
+		icon = GFX_PRC_GOF_J_Normalization_the_Cultural_Revolution
+		cost = 1
+		x = 8
+		y = 20
+		allow_branch = {
+			has_completed_focus = PRC_GOF_J_The_Victory_Conference
+			has_country_leader = {
+				name = "JiangQing"
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+			add_political_power = -50
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Trade_union_issues
+		icon = GFX_PRC_GOF_J_Trade_union_issues
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Normalization_the_Cultural_Revolution
+		}
+		x = -5
+		y = 1
+		relative_position_id = PRC_GOF_J_Normalization_the_Cultural_Revolution
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Raise_wages
+		icon = GFX_PRC_GOF_J_Raise_wages
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Trade_union_issues
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_Create_welfare_system
+		}
+		x = -6
+		y = 2
+		relative_position_id = PRC_GOF_J_Normalization_the_Cultural_Revolution
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Create_welfare_system
+		icon = GFX_PRC_GOF_J_Create_welfare_system
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Trade_union_issues
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_Raise_wages
+		}
+		x = -4
+		y = 2
+		relative_position_id = PRC_GOF_J_Normalization_the_Cultural_Revolution
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Local_self-built_labor_union
+		icon = GFX_PRC_GOF_J_Local_self-built_labor_union
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Create_welfare_system
+			focus = PRC_GOF_J_Raise_wages
+		}
+		x = -7
+		y = 3
+		relative_position_id = PRC_GOF_J_Normalization_the_Cultural_Revolution
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Set_function
+		icon = GFX_PRC_GOF_J_Set_function
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Create_welfare_system
+			focus = PRC_GOF_J_Raise_wages
+		}
+		x = -5
+		y = 3
+		relative_position_id = PRC_GOF_J_Normalization_the_Cultural_Revolution
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Supervision_responsibilities
+		icon = GFX_PRC_GOF_J_Supervision_responsibilities
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Create_welfare_system
+			focus = PRC_GOF_J_Raise_wages
+		}
+		x = -3
+		y = 3
+		relative_position_id = PRC_GOF_J_Normalization_the_Cultural_Revolution
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Shorten_working_experience
+		icon = GFX_PRC_GOF_J_Shorten_working_experience
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Local_self-built_labor_union
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Set_function
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Supervision_responsibilities
+		}
+		x = -5
+		y = 4
+		relative_position_id = PRC_GOF_J_Normalization_the_Cultural_Revolution
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_New_society
+		icon = GFX_PRC_GOF_J_New_society
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Normalization_the_Cultural_Revolution
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_GOF_J_Normalization_the_Cultural_Revolution
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Consider_the_examination_system
+		icon = GFX_PRC_GOF_J_Consider_the_examination_system
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_New_society
+		}
+		x = 0
+		y = 2
+		relative_position_id = PRC_GOF_J_Normalization_the_Cultural_Revolution
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Stay_away_from_politics
+		icon = GFX_PRC_GOF_J_Stay_away_from_politics
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Consider_the_examination_system
+		}
+		x = -1
+		y = 3
+		relative_position_id = PRC_GOF_J_Normalization_the_Cultural_Revolution
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_A_fairer_opportunity
+		icon = GFX_PRC_GOF_J_A_fairer_opportunity
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Consider_the_examination_system
+		}
+		x = 1
+		y = 3
+		relative_position_id = PRC_GOF_J_Normalization_the_Cultural_Revolution
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Withdraw_the_propaganda_team
+		icon = GFX_PRC_GOF_J_Withdraw_the_propaganda_team
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_A_fairer_opportunity
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Stay_away_from_politics
+		}
+		x = -2
+		y = 4
+		relative_position_id = PRC_GOF_J_Normalization_the_Cultural_Revolution
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Establishment_of_college_preparatory_courses
+		icon = GFX_PRC_GOF_J_Establishment_of_college_preparatory_courses
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_A_fairer_opportunity
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Stay_away_from_politics
+		}
+		x = 0
+		y = 4
+		relative_position_id = PRC_GOF_J_Normalization_the_Cultural_Revolution
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Reorganize_the_Communist_Youth_League
+		icon = GFX_PRC_GOF_J_Reorganize_the_Communist_Youth_League
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_A_fairer_opportunity
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Stay_away_from_politics
+		}
+		x = 2
+		y = 4
+		relative_position_id = PRC_GOF_J_Normalization_the_Cultural_Revolution
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Care_worker_farmer
+		icon = GFX_PRC_GOF_J_Care_worker_farmer
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Normalization_the_Cultural_Revolution
+		}
+		x = 5
+		y = 1
+		relative_position_id = PRC_GOF_J_Normalization_the_Cultural_Revolution
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Renovation_old_urban_areas
+		icon = GFX_PRC_GOF_J_Renovation_old_urban_areas
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Care_worker_farmer
+		}
+		x = 4
+		y = 2
+		relative_position_id = PRC_GOF_J_Normalization_the_Cultural_Revolution
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Improved_live
+		icon = GFX_PRC_GOF_J_Improved_live
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Care_worker_farmer
+		}
+		x = 6
+		y = 2
+		relative_position_id = PRC_GOF_J_Normalization_the_Cultural_Revolution
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Pay_attention_to_texture
+		icon = GFX_PRC_GOF_J_Pay_attention_to_texture
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Improved_live
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Renovation_old_urban_areas
+		}
+		x = 3
+		y = 3
+		relative_position_id = PRC_GOF_J_Normalization_the_Cultural_Revolution
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Improve_quality
+		icon = GFX_PRC_GOF_J_Improve_quality
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Improved_live
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Renovation_old_urban_areas
+		}
+		x = 5
+		y = 3
+		relative_position_id = PRC_GOF_J_Normalization_the_Cultural_Revolution
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Investigate_living_conditions
+		icon = GFX_PRC_GOF_J_Investigate_living_conditions
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Improved_live
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Renovation_old_urban_areas
+		}
+		x = 7
+		y = 3
+		relative_position_id = PRC_GOF_J_Normalization_the_Cultural_Revolution
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Decentralized_building_planning_department
+		icon = GFX_PRC_GOF_J_Decentralized_building_planning_department
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Investigate_living_conditions
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Improve_quality
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Pay_attention_to_texture
+		}
+		x = 5
+		y = 4
+		relative_position_id = PRC_GOF_J_Normalization_the_Cultural_Revolution
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Make_people_accpet_revolution
+		icon = GFX_PRC_GOF_J_Make_people_accpet_revolution
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Decentralized_building_planning_department
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Shorten_working_experience
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Establishment_of_college_preparatory_courses
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Reorganize_the_Communist_Youth_League
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Withdraw_the_propaganda_team
+		}
+		x = 0
+		y = 5
+		relative_position_id = PRC_GOF_J_Normalization_the_Cultural_Revolution
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+		}
+	}
+	##75##
+	focus = {
+		id = PRC_GOF_J_seven_five
+		icon = GFX_PRC_GOF_J_seven_five
+		cost = 1
+		x = 8
+		y = 27
+		allow_branch = {
+			has_completed_focus = PRC_GOF_J_Make_people_accpet_revolution
+			date > 1982.9
+			has_country_leader = {
+				name = "JiangQing"
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Four_dec
+		icon = GFX_PRC_GOF_J_Four_dec
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_seven_five
+		}
+		x = -2
+		y = 1
+		relative_position_id = PRC_GOF_J_seven_five
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Practice_Paris_Commune
+		icon = GFX_PRC_GOF_J_Practice_Paris_Commune
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_seven_five
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_GOF_J_seven_five
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_National_Anthem
+		icon = GFX_PRC_GOF_J_National_Anthem
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_seven_five
+		}
+		x = 2
+		y = 1
+		relative_position_id = PRC_GOF_J_seven_five
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Implementation_in_advanced_regions
+		icon = GFX_PRC_GOF_J_Implementation_in_advanced_regions
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Four_dec
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Practice_Paris_Commune
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_National_Anthem
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_Paris_Commune
+		}
+		x = -1
+		y = 2
+		relative_position_id = PRC_GOF_J_seven_five
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Paris_Commune
+		icon = GFX_PRC_GOF_J_Paris_Commune
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Four_dec
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Practice_Paris_Commune
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_National_Anthem
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_Implementation_in_advanced_regions
+		}
+		x = 1
+		y = 2
+		relative_position_id = PRC_GOF_J_seven_five
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Li_yizhe
+		icon = GFX_PRC_GOF_J_Li_yizhe
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Implementation_in_advanced_regions
+			focus = PRC_GOF_J_Paris_Commune
+		}
+		x = -2
+		y = 3
+		relative_position_id = PRC_GOF_J_seven_five
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Normalize_social_life
+		icon = GFX_PRC_GOF_J_Normalize_social_life
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Implementation_in_advanced_regions
+			focus = PRC_GOF_J_Paris_Commune
+		}
+		x = 0
+		y = 3
+		relative_position_id = PRC_GOF_J_seven_five
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Regularization_of_Red_Guards
+		icon = GFX_PRC_GOF_J_Regularization_of_Red_Guards
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Implementation_in_advanced_regions
+			focus = PRC_GOF_J_Paris_Commune
+		}
+		x = 2
+		y = 3
+		relative_position_id = PRC_GOF_J_seven_five
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Wang_Hongweng
+		icon = GFX_PRC_GOF_J_Wang_Hongweng
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Li_yizhe
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Regularization_of_Red_Guards
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Normalize_social_life
+		}
+		x = 0
+		y = 4
+		relative_position_id = PRC_GOF_J_seven_five
+		completion_reward = {
+			
+		}
+	}
+	###GPCR###
+	focus = {
+		id = PRC_GOF_J_Great_people_cultral_revolution_again
+		icon = GFX_PRC_GOF_J_Great_people_cultral_revolution_again
+		cost = 3
+		x = 8
+		y = 1
+		completion_reward = { }
+		allow_branch = {
+			has_country_leader = {
+				name = "JiangQing"
+				ruling_only = yes
+			}
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Master_public_opinion
+		icon = GFX_PRC_GOF_J_Master_public_opinion
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Great_people_cultral_revolution_again
+		}
+		x = -6
+		y = 1
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Accelerate_film_production
+		icon = GFX_PRC_GOF_J_Accelerate_film_production
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Master_public_opinion
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_Use_exhaustion
+		}
+		x = -7
+		y = 2
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_Use_exhaustion
+		icon = GFX_PRC_GOF_Use_exhaustion
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Master_public_opinion
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_Accelerate_film_production
+		}
+		x = -5
+		y = 2
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Truth_of_fourfive
+		icon = GFX_PRC_GOF_J_Truth_of_fourfive
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Accelerate_film_production
+			focus = PRC_GOF_Use_exhaustion
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_Name_of_mao
+		}
+		x = -7
+		y = 3
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_Name_of_mao
+		icon = GFX_PRC_GOF_Name_of_mao
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Accelerate_film_production
+			focus = PRC_GOF_Use_exhaustion
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_Truth_of_fourfive
+		}
+		x = -5
+		y = 3
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Expose_corruption
+		icon = GFX_PRC_GOF_J_Expose_corruption
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_Name_of_mao
+			focus = PRC_GOF_J_Truth_of_fourfive
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_Check_the_government
+		}
+		x = -7
+		y = 4
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_Check_the_government
+		icon = GFX_PRC_GOF_Check_the_government
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_Name_of_mao
+			focus = PRC_GOF_J_Truth_of_fourfive
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_Expose_corruption
+		}
+		x = -5
+		y = 4
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Appeal_worker_farmer
+		icon = GFX_PRC_GOF_J_Appeal_worker_farmer
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_Check_the_government
+			focus = PRC_GOF_J_Expose_corruption
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_Appeal_yeoman
+		}
+		x = -7
+		y = 5
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Appeal_yeoman
+		icon = GFX_PRC_GOF_J_Appeal_yeoman
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_Check_the_government
+			focus = PRC_GOF_J_Expose_corruption
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_Appeal_worker_farmer
+		}
+		x = -5
+		y = 5
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_propaganda_machine
+		icon = GFX_PRC_GOF_J_propaganda_machine
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Appeal_yeoman
+			focus = PRC_GOF_J_Appeal_worker_farmer
+		}
+		x = -6
+		y = 6
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Solve_problems
+		icon = GFX_PRC_GOF_J_Solve_problems
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Great_people_cultral_revolution_again
+		}
+		x = 6
+		y = 1
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Deng_real
+		icon = GFX_PRC_GOF_J_Deng_real
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Solve_problems
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_Deng_no_problem
+		}
+		x = 5
+		y = 2
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_Deng_no_problem
+		icon = GFX_PRC_GOF_Deng_no_problem
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Solve_problems
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_Deng_real
+		}
+		x = 7
+		y = 2
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Lin_bad
+		icon = GFX_PRC_GOF_J_Lin_bad
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_Deng_no_problem
+			focus = PRC_GOF_J_Deng_real
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_Lin_good
+		}
+		x = 5
+		y = 3
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Lin_good
+		icon = GFX_PRC_GOF_J_Lin_good
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_Deng_no_problem
+			focus = PRC_GOF_J_Deng_real
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_Lin_bad
+		}
+		x = 7
+		y = 3
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Zhou_bad
+		icon = GFX_PRC_GOF_J_Zhou_bad
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Lin_bad
+			focus = PRC_GOF_J_Lin_good
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_Zhou_good
+		}
+		x = 5
+		y = 4
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Zhou_good
+		icon = GFX_PRC_GOF_J_Zhou_good
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Lin_bad
+			focus = PRC_GOF_J_Lin_good
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_Zhou_bad
+		}
+		x = 7
+		y = 4
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Utilisation_of_economism
+		icon = GFX_PRC_GOF_J_Appeal_worker_farmer
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Zhou_bad
+			focus = PRC_GOF_J_Zhou_good
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_None_of_economism
+		}
+		x = 5
+		y = 5
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_None_of_economism
+		icon = GFX_PRC_GOF_J_Appeal_yeoman
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Zhou_bad
+			focus = PRC_GOF_J_Zhou_good
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_Utilisation_of_economism
+		}
+		x = 7
+		y = 5
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Change_goverment
+		icon = GFX_PRC_GOF_J_Change_goverment
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_None_of_economism
+			focus = PRC_GOF_J_Utilisation_of_economism
+		}
+		x = 6
+		y = 6
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Integrating_forces
+		icon = GFX_PRC_GOF_J_Integrating_forces
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Great_people_cultral_revolution_again
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Sorting_out_military_affairs
+		icon = GFX_PRC_GOF_J_Sorting_out_military_affairs
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Integrating_forces
+		}
+		x = -2
+		y = 2
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Shanghai_Militia
+		icon = GFX_PRC_GOF_J_Shanghai_Militia
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Sorting_out_military_affairs
+		}
+		x = -3
+		y = 3
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Militia_up
+		icon = GFX_PRC_GOF_J_Militia_up
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Sorting_out_military_affairs
+		}
+		x = -1
+		y = 3
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_pay_of_armyman_age
+		icon = GFX_PRC_GOF_J_pay_of_armyman_age
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Militia_up
+			focus = PRC_GOF_J_Shanghai_Militia
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_pay_of_armyman_position
+		}
+		x = -3
+		y = 4
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_pay_of_armyman_position
+		icon = GFX_PRC_GOF_J_pay_of_armyman_position
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Militia_up
+			focus = PRC_GOF_J_Shanghai_Militia
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_pay_of_armyman_age
+		}
+		x = -1
+		y = 4
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Friend_in_PLA
+		icon = GFX_PRC_GOF_J_Friend_in_PLA
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Integrating_forces
+		}
+		x = 2
+		y = 2
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Qiqiangpai
+		icon = GFX_PRC_GOF_J_Qiqiangpai
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Friend_in_PLA
+		}
+		x = 1
+		y = 3
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_Zaofanpai
+		icon = GFX_PRC_GOF_Zaofanpai
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Friend_in_PLA
+		}
+		x = 3
+		y = 3
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_zaofanpai_connect
+		icon = GFX_PRC_GOF_J_zaofanpai_connect
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_Zaofanpai
+			focus = PRC_GOF_J_Qiqiangpai
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_zaofanpai_divid
+		}
+		x = 1
+		y = 4
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_zaofanpai_divid
+		icon = GFX_PRC_GOF_J_zaofanpai_divid
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_Zaofanpai
+			focus = PRC_GOF_J_Qiqiangpai
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_zaofanpai_connect
+		}
+		x = 3
+		y = 4
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Arising_of_views_FREE
+		icon = GFX_PRC_GOF_J_Arising_of_views_FREE
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_zaofanpai_divid
+			focus = PRC_GOF_J_zaofanpai_connect
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_pay_of_armyman_age
+			focus = PRC_GOF_J_pay_of_armyman_position
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_Arising_of_views_UNFREE
+		}
+		x = 1
+		y = 5
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Arising_of_views_UNFREE
+		icon = GFX_PRC_GOF_J_Arising_of_views_UNFREE
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_zaofanpai_divid
+			focus = PRC_GOF_J_zaofanpai_connect
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_pay_of_armyman_age
+			focus = PRC_GOF_J_pay_of_armyman_position
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_J_Arising_of_views_FREE
+		}
+		x = 3
+		y = 5
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Replacement_force
+		icon = GFX_PRC_GOF_J_Replacement_force
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_zaofanpai_divid
+			focus = PRC_GOF_J_zaofanpai_connect
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_pay_of_armyman_age
+			focus = PRC_GOF_J_pay_of_armyman_position
+		}
+		x = -3
+		y = 5
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Increase_officers
+		icon = GFX_PRC_GOF_J_Increase_officers
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_zaofanpai_divid
+			focus = PRC_GOF_J_zaofanpai_connect
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_pay_of_armyman_age
+			focus = PRC_GOF_J_pay_of_armyman_position
+		}
+		x = -1
+		y = 5
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Establish_general_headquarters
+		icon = GFX_PRC_GOF_J_Establish_general_headquarters
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Arising_of_views_FREE
+			focus = PRC_GOF_J_Arising_of_views_UNFREE
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Replacement_force
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Increase_officers
+		}
+		x = 0
+		y = 6
+		relative_position_id = PRC_GOF_J_Great_people_cultral_revolution_again
+		completion_reward = {
+			
+		}
+	}
+#####---26
+	focus = {
+		id = PRC_GOF_J_Nail_the_coffin_lid_of_the_capitalist_walkers
+		icon
+		cost = 3
+		allow_branch = {
+			has_country_flag = PRC_GOF_J_has_NCLCW
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Establish_general_headquarters
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Change_goverment
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_propaganda_machine
+		}
+		relative_position_id = PRC_GOF_J_Establish_general_headquarters
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Filling_officer_system
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Nail_the_coffin_lid_of_the_capitalist_walkers
+		}
+		relative_position_id = PRC_GOF_J_Nail_the_coffin_lid_of_the_capitalist_walkers
+		x = -2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Dismantling_the_military_establishment
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Filling_officer_system
+		}
+		relative_position_id = PRC_GOF_J_Filling_officer_system
+		x = -2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Precapture_of_possible_insurgents
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Filling_officer_system
+		}
+		relative_position_id = PRC_GOF_J_Filling_officer_system
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Promoting_Civilian_Military_Service_Reform
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Dismantling_the_military_establishment
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Precapture_of_possible_insurgents
+		}
+		relative_position_id = PRC_GOF_J_Precapture_of_possible_insurgents
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Mobilizing_militia_to_besiege_the_detachment
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Nail_the_coffin_lid_of_the_capitalist_walkers
+		}
+		relative_position_id = PRC_GOF_J_Nail_the_coffin_lid_of_the_capitalist_walkers
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Strengthen_the_control_area_publicity
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Mobilizing_militia_to_besiege_the_detachment
+		}
+		relative_position_id = PRC_GOF_J_Mobilizing_militia_to_besiege_the_detachment
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Catching_extremists
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Strengthen_the_control_area_publicity
+		}
+		relative_position_id = PRC_GOF_J_Strengthen_the_control_area_publicity
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Resolving_local_disturbances
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Nail_the_coffin_lid_of_the_capitalist_walkers
+		}
+		relative_position_id = PRC_GOF_J_Nail_the_coffin_lid_of_the_capitalist_walkers
+		x = 2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Vindication_of_unjust_and_false_cases
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Resolving_local_disturbances
+		}
+		relative_position_id = PRC_GOF_J_Resolving_local_disturbances
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Delineation_of_anti_party_groups
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Resolving_local_disturbances
+		}
+		relative_position_id = PRC_GOF_J_Resolving_local_disturbances
+		x = 2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Reducing_the_wage_scale_gap
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Vindication_of_unjust_and_false_cases
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Delineation_of_anti_party_groups
+		}
+		relative_position_id = PRC_GOF_J_Vindication_of_unjust_and_false_cases
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Exclusion_of_the_military_from_the_Revolutionary_Committee
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Promoting_Civilian_Military_Service_Reform
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Catching_extremists
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Reducing_the_wage_scale_gap
+		}
+		relative_position_id = PRC_GOF_J_Catching_extremists
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Maintaining_the_status_quo_in_border_areas
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Exclusion_of_the_military_from_the_Revolutionary_Committee
+		}
+		relative_position_id = PRC_GOF_J_Exclusion_of_the_military_from_the_Revolutionary_Committee
+		x = -2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Promoting_the_transfer_of_career_soldiers_from_the_mainland
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Exclusion_of_the_military_from_the_Revolutionary_Committee
+		}
+		relative_position_id = PRC_GOF_J_Exclusion_of_the_military_from_the_Revolutionary_Committee
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Strengthening_the_role_of_the_Workers_and_Peasants_and_Soldiers_Representative_Conference
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Exclusion_of_the_military_from_the_Revolutionary_Committee
+		}
+		relative_position_id = PRC_GOF_J_Exclusion_of_the_military_from_the_Revolutionary_Committee
+		x = 2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_The_dust_settles
+		icon
+		cost = 3
+		allow_branch = {
+			has_country_flag = PRC_GOF_J_has_TDS
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Maintaining_the_status_quo_in_border_areas
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Promoting_the_transfer_of_career_soldiers_from_the_mainland
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Strengthening_the_role_of_the_Workers_and_Peasants_and_Soldiers_Representative_Conference
+		}
+		relative_position_id = PRC_GOF_J_Promoting_the_transfer_of_career_soldiers_from_the_mainland
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Solving_the_employment_problem_of_graduated_people
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_The_dust_settles
+		}
+		relative_position_id = PRC_GOF_J_The_dust_settles
+		x = -2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Clearance_of_social_criminals
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_The_dust_settles
+		}
+		relative_position_id = PRC_GOF_J_The_dust_settles
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_National_Infrastructure_Construction_Campaign
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_The_dust_settles
+		}
+		relative_position_id = PRC_GOF_J_The_dust_settles
+		x = 2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Worker_Skills_Training_Center
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Solving_the_employment_problem_of_graduated_people
+		}
+		relative_position_id = PRC_GOF_J_National_Infrastructure_Construction_Campaign
+		x = -6
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Expanding_the_Workforce
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Solving_the_employment_problem_of_graduated_people
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_National_Infrastructure_Construction_Campaign
+		}
+		relative_position_id = PRC_GOF_J_National_Infrastructure_Construction_Campaign
+		x = -4
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Arresting_the_children_of_high_cadres
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Clearance_of_social_criminals
+		}
+		relative_position_id = PRC_GOF_J_National_Infrastructure_Construction_Campaign
+		x = -2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Rectification_of_industrial_enterprises
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Solving_the_employment_problem_of_graduated_people
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_National_Infrastructure_Construction_Campaign
+		}
+		relative_position_id = PRC_GOF_J_National_Infrastructure_Construction_Campaign
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Maintaining_the_independence_of_the_research_department
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_National_Infrastructure_Construction_Campaign
+		}
+		relative_position_id = PRC_GOF_J_National_Infrastructure_Construction_Campaign
+		x = 2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Reducing_the_power_of_plant_managers
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Worker_Skills_Training_Center
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Expanding_the_Workforce
+		}
+		relative_position_id = PRC_GOF_J_Worker_Skills_Training_Center
+		x = 1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Determine_the_duration_and_duties_of_militia_service
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Expanding_the_Workforce
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Arresting_the_children_of_high_cadres
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Rectification_of_industrial_enterprises
+		}
+		relative_position_id = PRC_GOF_J_Worker_Skills_Training_Center
+		x = 4
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Large_transport_aircraft_manufacturing_movement
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Rectification_of_industrial_enterprises
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Maintaining_the_independence_of_the_research_department
+		}
+		relative_position_id = PRC_GOF_J_Worker_Skills_Training_Center
+		x = 7
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_The_Victory_Conference
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Reducing_the_power_of_plant_managers
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Determine_the_duration_and_duties_of_militia_service
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Large_transport_aircraft_manufacturing_movement
+		}
+		relative_position_id = PRC_GOF_J_Large_transport_aircraft_manufacturing_movement
+		x = -3
+		y = 1
+		completion_reward = {
+
+		}
+	}
+#####---55
+#####55计划
+	focus = {
+		id = PRC_GOF_J_Fifth_Five_Year_Plan
+		icon
+		cost = 3
+		x = 50
+		y = 1
+		allow_branch = {
+			has_country_leader = {
+				name = "JiangQing"
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Bridging_the_urban_rural_divide
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Fifth_Five_Year_Plan
+		}
+		relative_position_id = PRC_GOF_J_Fifth_Five_Year_Plan
+		x = -2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Upgrading_the_scale_of_industrial_machinery
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Fifth_Five_Year_Plan
+		}
+		relative_position_id = PRC_GOF_J_Fifth_Five_Year_Plan
+		x = 2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Permanent_Volunteer_Labor_Team
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Bridging_the_urban_rural_divide
+		}
+		relative_position_id = PRC_GOF_J_Bridging_the_urban_rural_divide
+		x = -2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Expansion_of_rural_water_facilities
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Permanent_Volunteer_Labor_Team
+		}
+		relative_position_id = PRC_GOF_J_Permanent_Volunteer_Labor_Team
+		x = -1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Early_examination_of_the_Yangtze_River_Water_Energy_Utilization_Project
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Expansion_of_rural_water_facilities
+		}
+		relative_position_id = PRC_GOF_J_Expansion_of_rural_water_facilities
+		x = -1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Development_of_social_team_enterprises
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Bridging_the_urban_rural_divide
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Upgrading_the_scale_of_industrial_machinery
+		}
+		relative_position_id = PRC_GOF_J_Bridging_the_urban_rural_divide
+		x = 2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Development_of_rural_side_businesses
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Permanent_Volunteer_Labor_Team
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Development_of_social_team_enterprises
+		}
+		relative_position_id = PRC_GOF_J_Development_of_social_team_enterprises
+		x = -2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Transforming_the_Loess_Plateau
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Development_of_rural_side_businesses
+		}
+		relative_position_id = PRC_GOF_J_Development_of_rural_side_businesses
+		x = -1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Concurrent_development_of_animal_husbandry
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Development_of_rural_side_businesses
+		}
+		relative_position_id = PRC_GOF_J_Development_of_rural_side_businesses
+		x = 1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Promotion_of_mobile_ranching
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Transforming_the_Loess_Plateau
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Concurrent_development_of_animal_husbandry
+		}
+		relative_position_id = PRC_GOF_J_Transforming_the_Loess_Plateau
+		x = 1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Expanding_the_ocean_going_fishing_fleet
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Upgrading_the_scale_of_industrial_machinery
+		}
+		relative_position_id = PRC_GOF_J_Bridging_the_urban_rural_divide
+		x = 6
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Promote_the_transformation_of_farmers_into_agricultural_workers
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Expanding_the_ocean_going_fishing_fleet
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Permanent_Volunteer_Labor_Team
+		}
+		relative_position_id = PRC_GOF_J_Expanding_the_ocean_going_fishing_fleet
+		x = -2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Improve_rural_infrastructure
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Promote_the_transformation_of_farmers_into_agricultural_workers
+		}
+		relative_position_id = PRC_GOF_J_Promote_the_transformation_of_farmers_into_agricultural_workers
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Decentralized_Industrial_Development
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Expanding_the_ocean_going_fishing_fleet
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Development_of_social_team_enterprises
+		}
+		relative_position_id = PRC_GOF_J_Expanding_the_ocean_going_fishing_fleet
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Provide_scientific_guidance_for_five_small_industries
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Decentralized_Industrial_Development
+		}
+		relative_position_id = PRC_GOF_J_Decentralized_Industrial_Development
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Improving_the_efficiency_of_the_Northeast_Industrial_Base
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Expanding_the_ocean_going_fishing_fleet
+		}
+		relative_position_id = PRC_GOF_J_Expanding_the_ocean_going_fishing_fleet
+		x = 2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Bohai_Bay_integrated_industrial_development
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Improving_the_efficiency_of_the_Northeast_Industrial_Base
+		}
+		relative_position_id = PRC_GOF_J_Improving_the_efficiency_of_the_Northeast_Industrial_Base
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Reduce_damage_to_wetlands
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Improve_rural_infrastructure
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Provide_scientific_guidance_for_five_small_industries
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Bohai_Bay_integrated_industrial_development
+		}
+		relative_position_id = PRC_GOF_J_Bohai_Bay_integrated_industrial_development
+		x = -2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Regulating_the_Yellow_River
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Promotion_of_mobile_ranching
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Reduce_damage_to_wetlands
+		}
+		relative_position_id = PRC_GOF_J_Reduce_damage_to_wetlands
+		x = -3
+		y = 1
+		completion_reward = {
+			set_country_flag = PRC_GOF_J_Fifth_Five_Year_Plan_completed
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Sixth_Five_Year_Plan
+		icon
+		cost = 3
+		x = 50
+		y = 9
+		offset = {
+			trigger = {
+				has_country_leader = {
+					name = "WangHongwen"
+					ruling_only = yes
+				}
+			}
+			x = -12
+			y = -8
+		}
+		allow_branch = {
+			or = {
+				has_country_leader = {
+					name = "JiangQing"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "WangHongwen"
+					ruling_only = yes
+				}
+			}
+			has_country_flag = PRC_GOF_J_Fifth_Five_Year_Plan_completed
+			date > 1981.1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Returning_electronics_industry_talent
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Sixth_Five_Year_Plan
+		}
+		relative_position_id = PRC_GOF_J_Sixth_Five_Year_Plan
+		x = -4
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Yangtze_River_Delta_IC_Center
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Returning_electronics_industry_talent
+		}
+		relative_position_id = PRC_GOF_J_Returning_electronics_industry_talent
+		x = -2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Modular_ship_production
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Yangtze_River_Delta_IC_Center
+		}
+		relative_position_id = PRC_GOF_J_Yangtze_River_Delta_IC_Center
+		x = 0
+		y = 4
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Automated_Plant_Management_System
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Yangtze_River_Delta_IC_Center
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Lower_prices_for_consumer_electronics
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Returning_electronics_industry_talent
+		}
+		relative_position_id = PRC_GOF_J_Yangtze_River_Delta_IC_Center
+		x = 2
+		y = 2
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Lower_prices_for_consumer_electronics
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Returning_electronics_industry_talent
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Breaking_down_barriers_in_the_electronics_industry
+		}
+		relative_position_id = PRC_GOF_J_Returning_electronics_industry_talent
+		x = 2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Electronic_machine_tool_facilities
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Lower_prices_for_consumer_electronics
+		}
+		relative_position_id = PRC_GOF_J_Lower_prices_for_consumer_electronics
+		x = 0
+		y = 4
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Over_the_horizon_radar_breakthrough
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Modular_ship_production
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Automated_Plant_Management_System
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Electronic_machine_tool_facilities
+		}
+		relative_position_id = PRC_GOF_J_Modular_ship_production
+		x = 2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Breaking_down_barriers_in_the_electronics_industry
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Sixth_Five_Year_Plan
+		}
+		relative_position_id = PRC_GOF_J_Sixth_Five_Year_Plan
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Mass_production_of_color_TV_sets
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Breaking_down_barriers_in_the_electronics_industry
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Lower_prices_for_consumer_electronics
+		}
+		relative_position_id = PRC_GOF_J_Development_of_generic_pharmaceutical_industry
+		x = -2
+		y = 2
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Construction_of_military_long_wave_communication_network
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Mass_production_of_color_TV_sets
+		}
+		relative_position_id = PRC_GOF_J_Mass_production_of_color_TV_sets
+		x = 0
+		y = 3
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Development_of_generic_pharmaceutical_industry
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Breaking_down_barriers_in_the_electronics_industry
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_National_HF_communication_network
+		}
+		relative_position_id = PRC_GOF_J_Breaking_down_barriers_in_the_electronics_industry
+		x = 2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Construction_of_Xichang_Satellite_Base
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Development_of_generic_pharmaceutical_industry
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Yangtze_River_Delta_IC_Center
+		}
+		relative_position_id = PRC_GOF_J_Development_of_generic_pharmaceutical_industry
+		x = 0
+		y = 4
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_National_HF_communication_network
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Sixth_Five_Year_Plan
+		}
+		relative_position_id = PRC_GOF_J_Sixth_Five_Year_Plan
+		x = 4
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_SCP_DOS
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_National_HF_communication_network
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Yangtze_River_Delta_IC_Center
+		}
+		relative_position_id = PRC_GOF_J_National_HF_communication_network
+		x = 0
+		y = 3
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Development_of_industrial_and_agricultural_health_care_system
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_National_HF_communication_network
+		}
+		prerequisite = {
+
+		}
+		relative_position_id = PRC_GOF_J_SCP_DOS
+		x = 2
+		y = -2
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Expansion_of_the_communal_sports_site
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Development_of_industrial_and_agricultural_health_care_system
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Development_of_generic_pharmaceutical_industry
+		}
+		relative_position_id = PRC_GOF_J_Development_of_industrial_and_agricultural_health_care_system
+		x = 0
+		y = 4
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_oneG_communication_network
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Construction_of_Xichang_Satellite_Base
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_SCP_DOS
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Expansion_of_the_communal_sports_site
+		}
+		relative_position_id = PRC_GOF_J_Expansion_of_the_communal_sports_site
+		x = -2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_J_Visual_Operating_System
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_J_Over_the_horizon_radar_breakthrough
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_Construction_of_military_long_wave_communication_network
+		}
+		prerequisite = {
+			focus = PRC_GOF_J_oneG_communication_network
+		}
+		relative_position_id = PRC_GOF_J_oneG_communication_network
+		x = -4
+		y = 1
+		completion_reward = {
+			set_country_flag = PRC_GOF_J_Sixth_Five_Year_Plan_completed
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Average_commune_officials_and_workers_wages
+		icon
+		cost = 3
+		x = 6
+		y = 1
+		allow_branch = {
+			has_country_leader = {
+				name = "WangHongwen"
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_The_masses_can_replace_commune_leaders_at_any_time
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Average_commune_officials_and_workers_wages
+		}
+		relative_position_id = PRC_GOF_W_Average_commune_officials_and_workers_wages
+		x = -3
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Abolishing_the_anachronistic_revolutionary_committee
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_The_masses_can_replace_commune_leaders_at_any_time
+		}
+		relative_position_id = PRC_GOF_W_The_masses_can_replace_commune_leaders_at_any_time
+		x = -1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Promoting_the_autonomy_of_rural_communes
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Abolishing_the_anachronistic_revolutionary_committee
+		}
+		relative_position_id = PRC_GOF_W_Abolishing_the_anachronistic_revolutionary_committee
+		x = -1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Election_of_court_judges
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Abolishing_the_anachronistic_revolutionary_committee
+		}
+		relative_position_id = PRC_GOF_W_Abolishing_the_anachronistic_revolutionary_committee
+		x = 1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_The_New_Life_of_Shanghai_People_s_Commune
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Promoting_the_autonomy_of_rural_communes
+			focus = PRC_GOF_W_Election_of_court_judges
+		}
+		relative_position_id = PRC_GOF_W_Election_of_court_judges
+		x = -1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Abolition_of_population_movement_restrictions
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Election_of_court_judges
+		}
+		relative_position_id = PRC_GOF_W_Election_of_court_judges
+		x = 1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Progressive_implementation_of_administrative_transformation
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_The_New_Life_of_Shanghai_People_s_Commune
+		}
+		relative_position_id = PRC_GOF_W_The_New_Life_of_Shanghai_People_s_Commune
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = PRC_GOF_W_Thunderbolt_execution
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Thunderbolt_execution
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_The_New_Life_of_Shanghai_People_s_Commune
+		}
+		relative_position_id = PRC_GOF_W_The_New_Life_of_Shanghai_People_s_Commune
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = PRC_GOF_W_Progressive_implementation_of_administrative_transformation
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Three_representative_councils_oversee_the_operation_of_the_commune
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Average_commune_officials_and_workers_wages
+		}
+		relative_position_id = PRC_GOF_W_Average_commune_officials_and_workers_wages
+		x = -1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_The_natural_boundaries_of_the_commune
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Average_commune_officials_and_workers_wages
+		}
+		relative_position_id = PRC_GOF_W_Average_commune_officials_and_workers_wages
+		x = 1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Guarantee_freedom_of_the_press
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Three_representative_councils_oversee_the_operation_of_the_commune
+		}
+		prerequisite = {
+			focus = PRC_GOF_W_The_natural_boundaries_of_the_commune
+		}
+		relative_position_id = PRC_GOF_W_Three_representative_councils_oversee_the_operation_of_the_commune
+		x = -1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Special_internal_supply_of_movies_is_no_longer_special_supply
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Three_representative_councils_oversee_the_operation_of_the_commune
+		}
+		prerequisite = {
+			focus = PRC_GOF_W_The_natural_boundaries_of_the_commune
+		}
+		relative_position_id = PRC_GOF_W_The_natural_boundaries_of_the_commune
+		x = -1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Collation_of_Maoist_doctrine
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Guarantee_freedom_of_the_press
+		}
+		prerequisite = {
+			focus = PRC_GOF_W_Special_internal_supply_of_movies_is_no_longer_special_supply
+		}
+		relative_position_id = PRC_GOF_W_Special_internal_supply_of_movies_is_no_longer_special_supply
+		x = -1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Connecting_central_and_local_rebel_groups
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Average_commune_officials_and_workers_wages
+		}
+		relative_position_id = PRC_GOF_W_Average_commune_officials_and_workers_wages
+		x = 3
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Release_of_literary_and_artistic_works_censorship
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Connecting_central_and_local_rebel_groups
+		}
+		relative_position_id = PRC_GOF_W_Connecting_central_and_local_rebel_groups
+		x = -1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Implementation_of_freedom_of_association
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Connecting_central_and_local_rebel_groups
+		}
+		relative_position_id = PRC_GOF_W_Connecting_central_and_local_rebel_groups
+		x = 1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Introduction_of_foreign_literature
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Release_of_literary_and_artistic_works_censorship
+		}
+		prerequisite = {
+			focus = PRC_GOF_W_Implementation_of_freedom_of_association
+		}
+		relative_position_id = PRC_GOF_W_Release_of_literary_and_artistic_works_censorship
+		x = -1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Building_modern_citizenship
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Release_of_literary_and_artistic_works_censorship
+		}
+		prerequisite = {
+			focus = PRC_GOF_W_Implementation_of_freedom_of_association
+		}
+		relative_position_id = PRC_GOF_W_Implementation_of_freedom_of_association
+		x = -1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Promoting_the_development_of_the_theory_of_continuing_revolution
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Collation_of_Maoist_doctrine
+		}
+		prerequisite = {
+			focus = PRC_GOF_W_Introduction_of_foreign_literature
+		}
+		prerequisite = {
+			focus = PRC_GOF_W_Building_modern_citizenship
+		}
+		relative_position_id = PRC_GOF_W_Building_modern_citizenship
+		x = -3
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Promote_creative_freedom
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Collation_of_Maoist_doctrine
+		}
+		prerequisite = {
+			focus = PRC_GOF_W_Introduction_of_foreign_literature
+		}
+		prerequisite = {
+			focus = PRC_GOF_W_Building_modern_citizenship
+		}
+		relative_position_id = PRC_GOF_W_Building_modern_citizenship
+		x = -1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_International_leftist_activists_invited_to_hold_the_first_World_Marxist_Symposium_in_Shanghai
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Promote_creative_freedom
+		}
+		relative_position_id = PRC_GOF_W_Promote_creative_freedom
+		x = -1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_The_four_freedoms_that_are_truly_implemented
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_International_leftist_activists_invited_to_hold_the_first_World_Marxist_Symposium_in_Shanghai
+		}
+		prerequisite = {
+			focus = PRC_GOF_W_Progressive_implementation_of_administrative_transformation
+			focus = PRC_GOF_W_Thunderbolt_execution
+		}
+		relative_position_id = PRC_GOF_W_International_leftist_activists_invited_to_hold_the_first_World_Marxist_Symposium_in_Shanghai
+		x = -2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Reforming_the_Standing_Army_System
+		icon
+		cost = 3
+		x = 7
+		y = 10
+		allow_branch = {
+			has_country_leader = {
+				name = "WangHongwen"
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Lowering_the_military_retirement_age
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Reforming_the_Standing_Army_System
+		}
+		relative_position_id = PRC_GOF_W_Reforming_the_Standing_Army_System
+		x = -1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Cut_off_the_wings_of_the_old_manager
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Reforming_the_Standing_Army_System
+		}
+		relative_position_id = PRC_GOF_W_Reforming_the_Standing_Army_System
+		x = 1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Replace_some_conscripts_with_local_militia
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Lowering_the_military_retirement_age
+		}
+		relative_position_id = PRC_GOF_W_Lowering_the_military_retirement_age
+		x = -1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Improving_military_benefits
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Lowering_the_military_retirement_age
+		}
+		prerequisite = {
+			focus = PRC_GOF_W_Cut_off_the_wings_of_the_old_manager
+		}
+		relative_position_id = PRC_GOF_W_Cut_off_the_wings_of_the_old_manager
+		x = -1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Considering_the_institution_of_the_National_Army_of_the_Paris_Commune
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Replace_some_conscripts_with_local_militia
+		}
+		prerequisite = {
+			focus = PRC_GOF_W_Improving_military_benefits
+		}
+		relative_position_id = PRC_GOF_W_Replace_some_conscripts_with_local_militia
+		x = -3
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Reestablishment_of_the_Soldiers_Committee
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Replace_some_conscripts_with_local_militia
+		}
+		prerequisite = {
+			focus = PRC_GOF_W_Improving_military_benefits
+		}
+		relative_position_id = PRC_GOF_W_Considering_the_institution_of_the_National_Army_of_the_Paris_Commune
+		x = 2
+		y = 0
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Streamlining_the_military_organization
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Replace_some_conscripts_with_local_militia
+		}
+		prerequisite = {
+			focus = PRC_GOF_W_Improving_military_benefits
+		}
+		relative_position_id = PRC_GOF_W_Reestablishment_of_the_Soldiers_Committee
+		x = 2
+		y = 0
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Restructuring_of_elite_units_into_contract_soldiers
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Considering_the_institution_of_the_National_Army_of_the_Paris_Commune
+		}
+		relative_position_id = PRC_GOF_W_Considering_the_institution_of_the_National_Army_of_the_Paris_Commune
+		x = -1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Development_of_flat_command_structure
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Considering_the_institution_of_the_National_Army_of_the_Paris_Commune
+		}
+		prerequisite = {
+			focus = PRC_GOF_W_Reestablishment_of_the_Soldiers_Committee
+		}
+		relative_position_id = PRC_GOF_W_Restructuring_of_elite_units_into_contract_soldiers
+		x = 2
+		y = 0
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Building_a_Decentralized_Military_System
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Reestablishment_of_the_Soldiers_Committee
+		}
+		prerequisite = {
+			focus = PRC_GOF_W_Streamlining_the_military_organization
+		}
+		relative_position_id = PRC_GOF_W_Development_of_flat_command_structure
+		x = 2
+		y = 0
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Allocation_of_troop_enterprises_to_local
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Restructuring_of_elite_units_into_contract_soldiers
+		}
+		prerequisite = {
+			focus = PRC_GOF_W_Development_of_flat_command_structure
+		}
+		relative_position_id = PRC_GOF_W_Building_a_Decentralized_Military_System
+		x = -3
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Improving_militia_equipment
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Development_of_flat_command_structure
+		}
+		prerequisite = {
+			focus = PRC_GOF_W_Building_a_Decentralized_Military_System
+		}
+		relative_position_id = PRC_GOF_W_Allocation_of_troop_enterprises_to_local
+		x = 2
+		y = 0
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Reforming_the_militia_mobilization_system
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Building_a_Decentralized_Military_System
+		}
+		relative_position_id = PRC_GOF_W_Improving_militia_equipment
+		x = 2
+		y = 0
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Disbanding_the_Conventional_Army
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Allocation_of_troop_enterprises_to_local
+		}
+		prerequisite = {
+			focus = PRC_GOF_W_Improving_militia_equipment
+		}
+		prerequisite = {
+			focus = PRC_GOF_W_Reforming_the_militia_mobilization_system
+		}
+		relative_position_id = PRC_GOF_W_Reforming_the_militia_mobilization_system
+		x = -2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Enhancing_Nuclear_Deterrence_Capabilities
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Improving_military_benefits
+		}
+		relative_position_id = PRC_GOF_W_Improving_military_benefits
+		x = 1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Strategic_nuclear_submarine_project_launched
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Enhancing_Nuclear_Deterrence_Capabilities
+		}
+		relative_position_id = PRC_GOF_W_Enhancing_Nuclear_Deterrence_Capabilities
+		x = -1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Promoting_the_service_of_Dongfeng_Five
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Enhancing_Nuclear_Deterrence_Capabilities
+		}
+		relative_position_id = PRC_GOF_W_Enhancing_Nuclear_Deterrence_Capabilities
+		x = 1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Standardized_military_production
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Cut_off_the_wings_of_the_old_manager
+		}
+		relative_position_id = PRC_GOF_W_Cut_off_the_wings_of_the_old_manager
+		x = 1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Curb_the_overheating_of_production_in_the_military_industry
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Standardized_military_production
+		}
+		relative_position_id = PRC_GOF_W_Standardized_military_production
+		x = 5
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Obtaining_weapons_samples_from_our_friends
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Curb_the_overheating_of_production_in_the_military_industry
+		}
+		relative_position_id = PRC_GOF_W_Curb_the_overheating_of_production_in_the_military_industry
+		x = -3
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Continue_the_four_guns_and_one_instrument_project
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Obtaining_weapons_samples_from_our_friends
+		}
+		relative_position_id = PRC_GOF_W_Obtaining_weapons_samples_from_our_friends
+		x = -3
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Improve_the_overall_performance_of_the_tank
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Obtaining_weapons_samples_from_our_friends
+		}
+		relative_position_id = PRC_GOF_W_Obtaining_weapons_samples_from_our_friends
+		x = -1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Upgrade_close_range_air_defense
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Continue_the_four_guns_and_one_instrument_project
+		}
+		prerequisite = {
+			focus = PRC_GOF_W_Improve_the_overall_performance_of_the_tank
+		}
+		relative_position_id = PRC_GOF_W_Improve_the_overall_performance_of_the_tank
+		x = -1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_New_assault_gun_experiment
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Continue_the_four_guns_and_one_instrument_project
+		}
+		prerequisite = {
+			focus = PRC_GOF_W_Improve_the_overall_performance_of_the_tank
+		}
+		relative_position_id = PRC_GOF_W_Continue_the_four_guns_and_one_instrument_project
+		x = -1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Type_Three_Zero_Two_Anti_Tank_Missile
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_New_assault_gun_experiment
+		}
+		relative_position_id = PRC_GOF_W_New_assault_gun_experiment
+		x = -1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Missile_Tank_Destroyer
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Type_Three_Zero_Two_Anti_Tank_Missile
+		}
+		prerequisite = {
+			focus = PRC_GOF_W_New_assault_gun_experiment
+		}
+		relative_position_id = PRC_GOF_W_New_assault_gun_experiment
+		x = 0
+		y = 2
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Reverse_Research_MiG_Twenty_Three
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Obtaining_weapons_samples_from_our_friends
+		}
+		relative_position_id = PRC_GOF_W_Obtaining_weapons_samples_from_our_friends
+		x = 1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Upgrade_Q_Five_platform
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Reverse_Research_MiG_Twenty_Three
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_W_Investing_in_Q_Six
+		}
+		relative_position_id = PRC_GOF_W_Reverse_Research_MiG_Twenty_Three
+		x = -1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Investing_in_Q_Six
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Reverse_Research_MiG_Twenty_Three
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_W_Upgrade_Q_Five_platform
+		}
+		relative_position_id = PRC_GOF_W_Reverse_Research_MiG_Twenty_Three
+		x = 1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Solve_the_J_Nine_engine_problem
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Upgrade_Q_Five_platform
+			focus = PRC_GOF_W_Investing_in_Q_Six
+		}
+		relative_position_id = PRC_GOF_W_Investing_in_Q_Six
+		x = -4
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_H_Six_I
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Upgrade_Q_Five_platform
+			focus = PRC_GOF_W_Investing_in_Q_Six
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_W_Give_up_the_illusion_of_a_new_bomber
+		}
+		relative_position_id = PRC_GOF_W_Investing_in_Q_Six
+		x = -2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Give_up_the_illusion_of_a_new_bomber
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Upgrade_Q_Five_platform
+			focus = PRC_GOF_W_Investing_in_Q_Six
+		}
+		mutually_exclusive = {
+			focus = PRC_GOF_W_H_Six_I
+		}
+		relative_position_id = PRC_GOF_W_Investing_in_Q_Six
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Improve_J_Eight_night_combat_capability
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Upgrade_Q_Five_platform
+			focus = PRC_GOF_W_Investing_in_Q_Six
+		}
+		relative_position_id = PRC_GOF_W_Investing_in_Q_Six
+		x = 2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Improved_aircraft_control_performance
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Solve_the_J_Nine_engine_problem
+		}
+		prerequisite = {
+			focus = PRC_GOF_W_H_Six_I
+			focus = PRC_GOF_W_Give_up_the_illusion_of_a_new_bomber
+		}
+		relative_position_id = PRC_GOF_W_Improve_J_Eight_night_combat_capability
+		x = -4
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Continue_the_Water_Boom_Five_project
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Improve_J_Eight_night_combat_capability
+		}
+		prerequisite = {
+			focus = PRC_GOF_W_H_Six_I
+			focus = PRC_GOF_W_Give_up_the_illusion_of_a_new_bomber
+		}
+		relative_position_id = PRC_GOF_W_Improved_aircraft_control_performance
+		x = 2
+		y = 0
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Advancing_research_on_new_air_to_air_missiles
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Improved_aircraft_control_performance
+		}
+		prerequisite = {
+			focus = PRC_GOF_W_Continue_the_Water_Boom_Five_project
+		}
+		relative_position_id = PRC_GOF_W_Continue_the_Water_Boom_Five_project
+		x = -1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Expanding_Arms_Exports
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Curb_the_overheating_of_production_in_the_military_industry
+		}
+		relative_position_id = PRC_GOF_W_Curb_the_overheating_of_production_in_the_military_industry
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Expansion_of_shipbuilding_industry
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Curb_the_overheating_of_production_in_the_military_industry
+		}
+		relative_position_id = PRC_GOF_W_Curb_the_overheating_of_production_in_the_military_industry
+		x = 3
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Accelerate_the_practicalization_of_Six_Four_Zero_projects
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Expansion_of_shipbuilding_industry
+		}
+		relative_position_id = PRC_GOF_W_Expansion_of_shipbuilding_industry
+		x = -2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Finalized_Z_Seven_helicopter
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Expansion_of_shipbuilding_industry
+		}
+		relative_position_id = PRC_GOF_W_Expansion_of_shipbuilding_industry
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Continued_research_on_Red_Flag_air_defense_missiles
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Expansion_of_shipbuilding_industry
+		}
+		relative_position_id = PRC_GOF_W_Expansion_of_shipbuilding_industry
+		x = 2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_New_Aircraft_Carrier_Project
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Accelerate_the_practicalization_of_Six_Four_Zero_projects
+		}
+		prerequisite = {
+			focus = PRC_GOF_W_Finalized_Z_Seven_helicopter
+		}
+		relative_position_id = PRC_GOF_W_Finalized_Z_Seven_helicopter
+		x = -1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Imitation_Mil_Twenty_Six_helicopter
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_Finalized_Z_Seven_helicopter
+		}
+		prerequisite = {
+			focus = PRC_GOF_W_Continued_research_on_Red_Flag_air_defense_missiles
+		}
+		relative_position_id = PRC_GOF_W_Continued_research_on_Red_Flag_air_defense_missiles
+		x = -1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRC_GOF_W_Change_the_J_Twelve_to_a_shipboard_aircraft
+		icon
+		cost = 3
+		prerequisite = {
+			focus = PRC_GOF_W_New_Aircraft_Carrier_Project
+		}
+		prerequisite = {
+			focus = PRC_GOF_W_Imitation_Mil_Twenty_Six_helicopter
+		}
+		relative_position_id = PRC_GOF_W_Imitation_Mil_Twenty_Six_helicopter
+		x = -1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+}
