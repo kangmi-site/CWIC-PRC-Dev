@@ -1,0 +1,107 @@
+leader_traits = {
+
+    Mao_s_close_comrade = {
+        random = no
+        
+        political_power_gain = 0.5
+		conscription = 0.05
+		industrial_capacity_factory = 0.1
+        army_morale_factor = 0.1
+        army_org_factor = 0.1
+
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+    PRC_101_New_helmsman = {
+        random = no
+        
+        political_power_gain = 1
+        army_morale_factor = 0.2
+        army_org_factor = 0.2
+        max_planning_factor = 0.15
+        org_loss_when_moving = -0.05
+		stability_factor = -0.1
+
+
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+    A_good_student_of_Chairman_Mao = {
+        random = no
+        
+        trade_opinion_factor = 0.05
+		opinion_gain_monthly_factor = 0.1
+		send_volunteer_size = 3
+		political_power_gain = 0.5
+		conscription = 0.05
+		industrial_capacity_factory = 0.1
+		production_speed_industrial_complex_factor = 0.125
+
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+    PRC_101_The_paralyzed_leader_of_the_country = {
+        random = no
+
+        stability_factor = -0.5
+		political_power_gain = -0.5
+        mobilization_laws_cost_factor = 1.5
+        trade_laws_cost_factor = 1.5
+        economy_cost_factor = 1.5
+
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+    PRC_101_At_least_a_qualified_politician = {
+        random = no
+
+        stability_factor = 0.1
+		political_power_gain = 0.1
+
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+    PRC_101_At_least_a_qualified_general = {
+        random = no
+        
+        army_morale_factor = 0.1
+        army_org_factor = 0.1
+        max_planning_factor = 0.05
+
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+    PRC_101_At_least_a_qualified_manager = {
+        random = no
+        
+        industrial_capacity_factory = 0.05
+		production_speed_industrial_complex_factor = 0.05
+
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+    PRC_101_At_least_a_qualified_speaker = {
+        random = no
+        
+        war_support_factor = 0.1
+        stability_weekly = 0.001
+
+        ai_will_do = {
+            factor = 0
+        }
+    }
+}
