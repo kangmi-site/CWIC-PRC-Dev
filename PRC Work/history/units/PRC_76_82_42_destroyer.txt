@@ -1,0 +1,14 @@
+﻿units = {
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Purchase 42 destroyers and return fleet"			
+		naval_base = 10000
+		task_force = {
+			name = "Purchase 42 destroyers and return fleet"
+			location = 10000
+			ship = { name = "Hohhot" definition = screen_hull_heavy equipment = { screen_hull_heavy_2 = { amount = 1 owner = PRC version_name = "Type 42 destroyer" } } }
+			ship = { name = "Shijiazhuang" definition = screen_hull_heavy equipment = { screen_hull_heavy_2 = { amount = 1 owner = PRC version_name = "Type 42 destroyer" } } }
+			ship = { name = "Taiyuan" definition = screen_hull_heavy equipment = { screen_hull_heavy_2 = { amount = 1 owner = PRC version_name = "Type 42 destroyer" } } }
+		}
+	}
+}

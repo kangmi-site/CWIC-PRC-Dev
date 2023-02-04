@@ -1,0 +1,13 @@
+﻿units = {
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Purchase Invincible Aircraft Carrier and Return to China Fleet"			
+		naval_base = 1150
+		task_force = {
+			name = "Purchase Invincible Aircraft Carrier and Return to China Fleet"
+			location = 1150
+			ship = { name = "Liaoning" definition = carrier_hull_light equipment = { carrier_hull_light_2 = { amount = 1 owner = PRC version_name = "Invincible class aircraft carrier" } } }
+			#The built fleet will flash back after clicking on the map
+		}
+	}
+}
