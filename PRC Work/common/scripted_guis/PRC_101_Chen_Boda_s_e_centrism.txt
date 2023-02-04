@@ -1,0 +1,23 @@
+scripted_gui = {
+
+	PRC_101_Chen_Boda_s_e_centrism = {
+		context_type = decision_category
+		window_name = "PRC_101_Chen_Boda_s_e_centrism"
+
+		visible = {
+		}
+
+		triggers = {
+		}
+
+		effects = {
+		}
+
+		properties = {
+			PRC_101_Chen_Boda_s_e_centrism_pb = {
+				frame = PRC_101_Chen_Boda_s_e_centrism_modifiers_var_display
+			}
+		}
+	}
+
+}

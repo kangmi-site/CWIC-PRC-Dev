@@ -1,0 +1,683 @@
+scripted_gui = {
+	
+	PRC_GPCR_gui_open = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "PRC_GPCR_gui_open_windows"
+		visible = {
+			has_global_flag = PRC_GPCR_flag
+			tag = PRC
+		}
+		triggers = {
+		}
+		
+		effects = {
+			PRC_GPCR_gui_open_button_click = {
+				if = {
+					limit = { 
+						NOT = { has_variable = PRC_GPCR_gui_visible }
+					}
+					set_variable = { PRC_GPCR_gui_visible = 1 }
+				}
+			}
+		}
+		ai_enabled = {
+            always = yes
+        }
+
+        #ai_test_parent = parent
+        
+        ai_test_interval = 672
+        #ai_test_variance = 0.2
+        #ai_test_scopes = scopes
+        
+        ai_check = {
+			OR = {
+                check_variable = {
+				    var = GPCR_monthly_available_support_times
+				    value = 4
+				    compare = less_than
+			    }
+				any_owned_state = {
+					limit = {
+						has_variable = GPCR_province_zaozao_power_var
+					}
+					check_variable = {
+						var = GPCR_province_unrest_gui_var
+						value = 75
+						compare = greater_than
+					}
+				}
+		    }
+        }
+        
+        #ai_check_scope = {
+        #    <triggers>
+        #}
+        
+        ai_max_weight_taken_per_test = 1
+        
+        ai_weights = {
+			PRC_GPCR_gui_open_button_click = {
+				ai_will_do = {
+                    base = 50
+                    modifier = {
+                        factor = 0
+                        check_variable = { 
+							var = GPCR_monthly_available_support_times 
+							value = 0 
+							compare = equals
+						}
+                    }
+                }
+			}
+        }
+	}
+	
+	PRC_GPCR_gui = {
+		context_type = player_context
+		window_name = "PRC_GPCR_gui_windows"
+		visible = {
+			has_global_flag = PRC_GPCR_flag
+			has_variable = PRC_GPCR_gui_visible
+			tag = PRC
+		}
+		properties = {
+			GPCR_map_Heilongjiang = {
+			    frame = 714.prc_change_of_administrative_division
+			}
+			GPCR_map_Jilin = {
+			    frame = 328.prc_change_of_administrative_division
+			}
+			GPCR_map_Liaoning = {
+			    frame = 716.prc_change_of_administrative_division
+			}
+			GPCR_map_Inner_Mongolia = {
+			    frame = 621.prc_change_of_administrative_division
+			}
+			GPCR_map_Ningxia = {
+                frame = 616.prc_change_of_administrative_division
+			}
+			GPCR_map_Gansu = {
+                frame = 283.prc_change_of_administrative_division
+			}
+
+			GPCR_map_Beijing = {
+                frame = 608.prc_change_of_administrative_division
+			}
+			GPCR_map_Tianjin = {
+                frame = 609.prc_change_of_administrative_division
+			}
+			GPCR_map_Hebei = {
+                frame = 614.prc_change_of_administrative_division
+			}
+			GPCR_map_Shanxi = {
+                frame = 615.prc_change_of_administrative_division
+			}
+			GPCR_map_Shannxi = {
+                frame = 622.prc_change_of_administrative_division
+			}
+			GPCR_map_Qinghai = {
+                frame = 604.prc_change_of_administrative_division
+			}
+            GPCR_map_Henan = {
+                frame = 607.prc_change_of_administrative_division
+			}
+			GPCR_map_Hubei = {
+                frame = 620.prc_change_of_administrative_division
+			}
+			GPCR_map_Hunan = {
+                frame = 602.prc_change_of_administrative_division
+			}
+			GPCR_map_Jiangxi = {
+                frame = 600.prc_change_of_administrative_division
+			}
+			GPCR_map_Shandong = {
+                frame = 597.prc_change_of_administrative_division
+			}
+			GPCR_map_Anhui = {
+                frame = 606.prc_change_of_administrative_division
+			}
+            
+			GPCR_map_Jiangsu = {
+                frame = 598.prc_change_of_administrative_division
+			}
+			GPCR_map_Shanghai = {
+                frame = 613.prc_change_of_administrative_division
+			}
+			GPCR_map_Zhejiang = {
+                frame = 596.prc_change_of_administrative_division
+			}
+			GPCR_map_Fujian = {
+                frame = 595.prc_change_of_administrative_division
+			}
+			GPCR_map_Sichuan = {
+                frame = 605.prc_change_of_administrative_division
+			}
+			GPCR_map_Guizhou = {
+                frame = 603.prc_change_of_administrative_division
+			}
+			GPCR_map_Yunnan = {
+                frame = 325.prc_change_of_administrative_division
+			}
+			GPCR_map_Guangxi = {
+                frame = 594.prc_change_of_administrative_division
+			}
+			GPCR_map_Guangdong = {
+                frame = 1569.prc_change_of_administrative_division
+			}
+			
+			GPCR_map_Sinkiang_0 = {
+                frame = 617.prc_change_of_administrative_division
+			}
+			GPCR_map_Sinkiang_1 = {
+                frame = 617.prc_change_of_administrative_division
+			}
+			GPCR_map_Sinkiang_2 = {
+                frame = 617.prc_change_of_administrative_division
+			}
+			GPCR_map_Sinkiang = {
+                frame = 617.prc_change_of_administrative_division
+			}
+			GPCR_map_Tibet_0 = {
+                frame = 1549.prc_change_of_administrative_division
+			}
+			GPCR_map_Tibet = {
+                frame = 1549.prc_change_of_administrative_division
+			}
+			GPCR_map_Tibet_1 = {
+                frame = 1549.prc_change_of_administrative_division
+			}
+			GPCR_map_Tibet_2 = {
+                frame = 1549.prc_change_of_administrative_division
+			}
+			GPCR_map_Tibet_3 = {
+                frame = 1549.prc_change_of_administrative_division
+			}
+			GPCR_map_Tibet_4 = {
+                frame = 1549.prc_change_of_administrative_division
+			}
+			
+			GPCR_province_unrest_progress_bar = {
+			    frame = GPCR_province_unrest_gui_var
+			}
+			GPCR_Military_administered_provinces = {
+				frame = prc_province_var
+			}
+			GPCR_province_zaozao_VS_laobao_pie = {
+				frame = GPCR_province_zaozao_VS_laobao_var
+			}
+			GPCR_province_PLA_tendency_pointer = {
+				frame = GPCR_province_PLA_tendency_pointer_frame
+			}
+		}
+		triggers = {
+			GPCR_map_Inner_Mongolia_lost_visible = {
+				country_exists = MEN
+			}
+			GPCR_map_Inner_Mongolia_visible = {
+                NOT = { country_exists = MEN }
+			}
+			GPCR_map_Sinkiang_0_visible = {
+				NOT = { owns_state = 1132 }
+				NOT = { owns_state = 873 }
+			}
+			GPCR_map_Sinkiang_1_visible = {
+				NOT = { owns_state = 1132 }
+				owns_state = 873
+			}
+			GPCR_map_Sinkiang_2_visible = {
+				owns_state = 1132
+				NOT = { owns_state = 873 }
+			}
+			GPCR_map_Sinkiang_visible = {
+				owns_state = 1132
+				owns_state = 873
+			}
+			GPCR_map_Tibet_0_visible = {
+				NOT = { owns_state = 873 }
+				NOT = { owns_state = 868 }
+			}
+			GPCR_map_Tibet_visible = {
+				owns_state = 873
+				NOT = { owns_state = 1335 }
+				NOT = { owns_state = 868 }
+			}
+			GPCR_map_Tibet_1_visible = {
+				NOT = { owns_state = 873 }
+				owns_state = 868
+			}
+			GPCR_map_Tibet_2_visible = {
+				owns_state = 873
+				NOT = { owns_state = 1335 }
+				owns_state = 868
+			}
+			GPCR_map_Tibet_3_visible = {
+				owns_state = 873
+				owns_state = 1335
+				owns_state = 868
+			}
+			GPCR_map_Tibet_4_visible = {
+				owns_state = 873
+				owns_state = 1335
+				NOT = { owns_state = 868 }
+			}
+			GPCR_map_Trans_Karakoram_visible = {
+                NOT = { owns_state = 1132 }
+			}
+			GPCR_map_Aksai_Chin_visible = {
+                NOT = { owns_state = 873 }
+			}
+			GPCR_map_Demchok_visible = {
+                NOT = { owns_state = 1224 }
+			}
+			GPCR_map_Inner_Mongolia_0_visible = {
+				has_country_flag = PRC_Inner_Mongolia_69-79_administrative_division
+			}
+			GPCR_map_Inner_Mongolia_1_visible = {
+                NOT = { has_country_flag = PRC_Inner_Mongolia_69-79_administrative_division }
+			}
+			GPCR_map_bg_3_visible = {
+                NOT = { owns_state = 873 }
+			}
+			GPCR_map_bg_4_visible = {
+                owns_state = 873
+				NOT = { owns_state = 1335 }
+			}
+			GPCR_map_bg_5_visible = {
+				owns_state = 873
+				owns_state = 1335
+			}
+			GPCR_map_bg_6_visible = {
+                NOT = { owns_state = 868 }
+			}
+			GPCR_map_bg_7_visible = {
+                owns_state = 868
+			}
+			GPCR_map_Taiwan_blue_visible = {
+				CHI = { exists = yes }
+			}
+			GPCR_map_Taiwan_red_visible = {
+				CHI = { exists = no }
+			}
+			GPCR_province_support_zaozao_click_enabled = {
+				PRC_GPCR_ui_support_faction_button_trigger = yes
+			}
+			GPCR_province_support_laobao_click_enabled = {
+                PRC_GPCR_ui_support_faction_button_trigger = yes
+			}
+			GPCR_Military_administered_provinces_click_enabled = {
+                PRC_GPCR_Military_administered_button_trigger = yes
+			}
+			GPCR_Military_administered_button_click_enabled = {
+				check_variable = {
+					var = GPCR_province_unrest_gui_var
+					value = 75
+					compare = greater_than
+				}
+                PRC_GPCR_Military_administered_button_trigger = yes
+			}
+		}
+		
+		effects = {
+			PRC_GPCR_gui_close_button_click = {
+                clear_variable = PRC_GPCR_gui_visible
+			}
+			GPCR_map_Heilongjiang_click = {
+				if = { 
+					limit = { 
+						OR = {
+							check_variable = {
+								var = 714.prc_change_of_administrative_division
+								value = 1
+								compare = equals
+							}
+							check_variable = {
+								var = 714.prc_change_of_administrative_division
+								value = 13
+								compare = equals
+							}
+							check_variable = {
+								var = 714.prc_change_of_administrative_division
+								value = 25
+								compare = equals
+							}
+						}
+				    }
+					set_variable = { prc_province_var = 1 }
+			    }
+				else = {
+				    set_variable = { prc_province_var = 33 }
+			    }
+				PRC_GPCR_ui_update = yes
+			}
+			GPCR_map_Jilin_click = {
+				if = { 
+					limit = { 
+				        OR = {
+							check_variable = {
+								var = 328.prc_change_of_administrative_division
+								value = 2
+								compare = equals
+							}
+							check_variable = {
+								var = 714.prc_change_of_administrative_division
+								value = 14
+								compare = equals
+							}
+							check_variable = {
+								var = 714.prc_change_of_administrative_division
+								value = 26
+								compare = equals
+							}
+						}
+				    }
+					set_variable = { prc_province_var = 2 }
+			    }
+				else = {
+				    set_variable = { prc_province_var = 32 }
+			    }
+				PRC_GPCR_ui_update = yes
+			}
+			GPCR_map_Liaoning_click = {
+				if = { 
+					limit = { 
+				        OR = {
+							check_variable = {
+								var = 716.prc_change_of_administrative_division
+								value = 3
+								compare = equals
+							}
+							check_variable = {
+								var = 716.prc_change_of_administrative_division
+								value = 15
+								compare = equals
+							}
+							check_variable = {
+								var = 716.prc_change_of_administrative_division
+								value = 27
+								compare = equals
+							}
+						}
+				    }
+					set_variable = { prc_province_var = 3 }
+			    }
+				else = {
+				    set_variable = { prc_province_var = 31 }
+			    }
+				PRC_GPCR_ui_update = yes
+			}
+			GPCR_map_Inner_Mongolia_click = {
+				if = { 
+					limit = { 
+				        OR = {
+							check_variable = {
+								var = 716.prc_change_of_administrative_division
+								value = 4
+								compare = equals
+							}
+							check_variable = {
+								var = 716.prc_change_of_administrative_division
+								value = 16
+								compare = equals
+							}
+							check_variable = {
+								var = 716.prc_change_of_administrative_division
+								value = 28
+								compare = equals
+							}
+						}
+				    }
+					set_variable = { prc_province_var = 4 }
+			    }
+				else = {
+				    set_variable = { prc_province_var = 30 }
+			    }
+				PRC_GPCR_ui_update = yes
+			}
+			GPCR_map_Beijing_click = {
+				set_variable = { prc_province_var = 5 }
+				PRC_GPCR_ui_update = yes
+			}
+			GPCR_map_Tianjin_click = {
+				set_variable = { prc_province_var = 6 }
+				PRC_GPCR_ui_update = yes
+			}
+			GPCR_map_Hebei_click = {
+				set_variable = { prc_province_var = 7 }
+				PRC_GPCR_ui_update = yes
+			}
+			GPCR_map_Shanxi_click = {
+				set_variable = { prc_province_var = 8 }
+				PRC_GPCR_ui_update = yes
+			}
+			GPCR_map_Shannxi_click = {
+				set_variable = { prc_province_var = 9 }
+				PRC_GPCR_ui_update = yes
+			}
+			GPCR_map_Ningxia_click = {
+				if = { 
+					limit = { 
+				        OR = {
+							check_variable = {
+								var = 616.prc_change_of_administrative_division
+								value = 5
+								compare = equals
+							}
+							check_variable = {
+								var = 616.prc_change_of_administrative_division
+								value = 17
+								compare = equals
+							}
+							check_variable = {
+								var = 616.prc_change_of_administrative_division
+								value = 29
+								compare = equals
+							}
+						}
+				    }
+					set_variable = { prc_province_var = 10 }
+			    }
+				else = {
+				    set_variable = { prc_province_var = 34 }
+			    }
+				PRC_GPCR_ui_update = yes
+			}
+			GPCR_map_Gansu_click = {
+				if = { 
+					OR = {
+						check_variable = {
+							var = 283.prc_change_of_administrative_division
+							value = 6
+							compare = equals
+						}
+						check_variable = {
+							var = 283.prc_change_of_administrative_division
+							value = 18
+							compare = equals
+						}
+						check_variable = {
+							var = 283.prc_change_of_administrative_division
+							value = 30
+							compare = equals
+						}
+					}
+					set_variable = { prc_province_var = 11 }
+			    }
+				else = {
+				    set_variable = { prc_province_var = 35 }
+			    }
+				PRC_GPCR_ui_update = yes
+			}
+			GPCR_map_Qinghai_click = {
+				set_variable = { prc_province_var = 12 }
+				PRC_GPCR_ui_update = yes
+			}
+			GPCR_map_Sinkiang_click = {
+				set_variable = { prc_province_var = 13 }
+				PRC_GPCR_ui_update = yes
+			}
+			GPCR_map_Tibet_0_click = {
+				set_variable = { prc_province_var = 36 }
+				PRC_GPCR_ui_update = yes
+			}
+			GPCR_map_Tibet_click = {
+				set_variable = { prc_province_var = 14 }
+				PRC_GPCR_ui_update = yes
+			}
+			GPCR_map_Henan_click = {
+				set_variable = { prc_province_var = 15 }
+				PRC_GPCR_ui_update = yes
+			}
+			GPCR_map_Hubei_click = {
+				set_variable = { prc_province_var = 16 }
+				PRC_GPCR_ui_update = yes
+			}
+			GPCR_map_Hunan_click = {
+				set_variable = { prc_province_var = 17 }
+				PRC_GPCR_ui_update = yes
+			}
+			GPCR_map_Jiangxi_click = {
+				set_variable = { prc_province_var = 18 }
+				PRC_GPCR_ui_update = yes
+			}
+			GPCR_map_Shandong_click = {
+				set_variable = { prc_province_var = 19 }
+				PRC_GPCR_ui_update = yes
+			}
+			GPCR_map_Anhui_click = {
+				set_variable = { prc_province_var = 20 }
+				PRC_GPCR_ui_update = yes
+			}
+			GPCR_map_Jiangsu_click = {
+				set_variable = { prc_province_var = 21 }
+				PRC_GPCR_ui_update = yes
+			}
+			GPCR_map_Shanghai_click = {
+				set_variable = { prc_province_var = 22 }
+				PRC_GPCR_ui_update = yes
+			}
+			GPCR_map_Zhejiang_click = {
+				set_variable = { prc_province_var = 23 }
+				PRC_GPCR_ui_update = yes
+			}
+			GPCR_map_Fujian_click = {
+				set_variable = { prc_province_var = 24 }
+				PRC_GPCR_ui_update = yes
+			}
+			GPCR_map_Sichuan_click = {
+				set_variable = { prc_province_var = 25 }
+				PRC_GPCR_ui_update = yes
+			}
+			GPCR_map_Guizhou_click = {
+				set_variable = { prc_province_var = 26 }
+				PRC_GPCR_ui_update = yes
+			}
+			GPCR_map_Yunnan_click = {
+				set_variable = { prc_province_var = 27 }
+				PRC_GPCR_ui_update = yes
+			}
+			GPCR_map_Guangxi_click = {
+				set_variable = { prc_province_var = 28 }
+				PRC_GPCR_ui_update = yes
+			}
+			GPCR_map_Guangdong_click = {
+				set_variable = { prc_province_var = 29 }
+				PRC_GPCR_ui_update = yes
+			}
+
+			GPCR_province_support_zaozao_click = {
+				add_political_power = -5
+				PRC_GPCR_ui_support_zaozao_button_effects = yes
+			}
+			GPCR_province_support_laobao_click = {
+				add_political_power = -5
+				PRC_GPCR_ui_support_laobao_button_effects = yes
+			}
+			GPCR_Military_administered_provinces_click = {
+			}
+			GPCR_Military_administered_button_click = {
+				PRC_GPCR_Military_administered_button_effects = yes
+			}
+		}
+        ai_enabled = {
+            always = yes
+        }
+
+        #ai_test_parent = parent
+        
+        ai_test_interval = 672
+        #ai_test_variance = 0.2
+        #ai_test_scopes = scopes
+        
+        ai_check = {
+			OR = {
+                check_variable = {
+				    var = GPCR_monthly_available_support_times
+				    value = 4
+				    compare = less_than
+			    }
+				any_owned_state = {
+					limit = {
+						has_variable = GPCR_province_zaozao_power_var
+					}
+					check_variable = {
+						var = GPCR_province_unrest_gui_var
+						value = 75
+						compare = greater_than
+					}
+				}
+		    }
+        }
+        
+        #ai_check_scope = {
+        #    <triggers>
+        #}
+        
+        ai_max_weight_taken_per_test = 8
+        
+        ai_weights = {
+			PRC_GPCR_gui_close_button_click = {
+				ai_will_do = {
+                    base = 0
+                    modifier = {
+                        add = 20
+                        check_variable = { 
+							var = GPCR_monthly_available_support_times 
+							value = 4
+							compare = equals
+						}
+                    }
+                }
+			}
+            GPCR_province_support_zaozao_click = {
+                ai_will_do = {
+                    base = 20
+                    modifier = {
+                        factor = 0.4
+                        is_historical_focus_on = yes
+                    }
+                }
+            }
+			GPCR_province_support_laobao_click = {
+                ai_will_do = {
+                    base = 20
+                    modifier = {
+                        factor = 0.6
+                        is_historical_focus_on = yes
+                    }
+                }
+            }
+			GPCR_Military_administered_provinces_click = {
+                ai_will_do = {
+                    base = 0
+                }
+            }
+			GPCR_Military_administered_button_click = {
+                ai_will_do = {
+                    base = 1
+                }
+            }
+        }
+	}
+}
