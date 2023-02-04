@@ -1,0 +1,688 @@
+PRC_GPCR_ui_support_faction_button_trigger = {
+    check_variable = { 
+        var = GPCR_monthly_available_support_times
+        value = 4
+        compare = less_than
+    }
+    if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 1
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 33
+					compare = equals
+				}
+			}
+		}
+		714 = { NOT = { has_state_flag = GPCR_has_support_province_faction } }
+	}
+	else_if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 2
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 32
+					compare = equals
+				}
+			}
+		}
+		328 = { NOT = { has_state_flag = GPCR_has_support_province_faction } }
+	}
+	else_if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 3
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 31
+					compare = equals
+				}
+			}
+		}
+		716 = { NOT = { has_state_flag = GPCR_has_support_province_faction } }
+	}
+	else_if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 4
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 30
+					compare = equals
+				}
+			}
+		}
+		621 = { NOT = { has_state_flag = GPCR_has_support_province_faction } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 5
+				compare = equals
+			}
+		}
+		608 = { NOT = { has_state_flag = GPCR_has_support_province_faction } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 6
+				compare = equals
+			}
+		}
+		609 = { NOT = { has_state_flag = GPCR_has_support_province_faction } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 7
+				compare = equals
+			}
+		}
+		614 = { NOT = { has_state_flag = GPCR_has_support_province_faction } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 8
+				compare = equals
+			}
+		}
+		615 = { NOT = { has_state_flag = GPCR_has_support_province_faction } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 9
+				compare = equals
+			}
+		}
+		622 = { NOT = { has_state_flag = GPCR_has_support_province_faction } }
+	}
+	else_if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 10
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 34
+					compare = equals
+				}
+			}
+		}
+		616 = { NOT = { has_state_flag = GPCR_has_support_province_faction } }
+	}
+	else_if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 11
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 35
+					compare = equals
+				}
+			}
+		}
+		283 = { NOT = { has_state_flag = GPCR_has_support_province_faction } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 12
+				compare = equals
+			}
+		}
+		604 = { NOT = { has_state_flag = GPCR_has_support_province_faction } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 13
+				compare = equals
+			}
+		}
+		617 = { NOT = { has_state_flag = GPCR_has_support_province_faction } }
+	}
+	else_if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 14
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 36
+					compare = equals
+				}
+			}
+		}
+		1549 = { NOT = { has_state_flag = GPCR_has_support_province_faction } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 15
+				compare = equals
+			}
+		}
+		607 = { NOT = { has_state_flag = GPCR_has_support_province_faction } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 16
+				compare = equals
+			}
+		}
+		620 = { NOT = { has_state_flag = GPCR_has_support_province_faction } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 17
+				compare = equals
+			}
+		}
+		602 = { NOT = { has_state_flag = GPCR_has_support_province_faction } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 18
+				compare = equals
+			}
+		}
+		600 = { NOT = { has_state_flag = GPCR_has_support_province_faction } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 19
+				compare = equals
+			}
+		}
+		597 = { NOT = { has_state_flag = GPCR_has_support_province_faction } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 20
+				compare = equals
+			}
+		}
+		606 = { NOT = { has_state_flag = GPCR_has_support_province_faction } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 21
+				compare = equals
+			}
+		}
+		598 = { NOT = { has_state_flag = GPCR_has_support_province_faction } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 22
+				compare = equals
+			}
+		}
+		613 = { NOT = { has_state_flag = GPCR_has_support_province_faction } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 23
+				compare = equals
+			}
+		}
+		596 = { NOT = { has_state_flag = GPCR_has_support_province_faction } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 24
+				compare = equals
+			}
+		}
+		595 = { NOT = { has_state_flag = GPCR_has_support_province_faction } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 25
+				compare = equals
+			}
+		}
+		605 = { NOT = { has_state_flag = GPCR_has_support_province_faction } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 26
+				compare = equals
+			}
+		}
+		603 = { NOT = { has_state_flag = GPCR_has_support_province_faction } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 27
+				compare = equals
+			}
+		}
+		325 = { NOT = { has_state_flag = GPCR_has_support_province_faction } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 28
+				compare = equals
+			}
+		}
+		594 = { NOT = { has_state_flag = GPCR_has_support_province_faction } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 29
+				compare = equals
+			}
+		}
+		1569 = { NOT = { has_state_flag = GPCR_has_support_province_faction } }
+	}
+}
+
+PRC_GPCR_Military_administered_button_trigger = {
+	if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 1
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 33
+					compare = equals
+				}
+			}
+		}
+		714 = { NOT = { has_state_flag = PRC_GPCR_state_Military_administered_flag } }
+	}
+	else_if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 2
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 32
+					compare = equals
+				}
+			}
+		}
+		328 = { NOT = { has_state_flag = PRC_GPCR_state_Military_administered_flag } }
+	}
+	else_if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 3
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 31
+					compare = equals
+				}
+			}
+		}
+		716 = { NOT = { has_state_flag = PRC_GPCR_state_Military_administered_flag } }
+	}
+	else_if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 4
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 30
+					compare = equals
+				}
+			}
+		}
+		621 = { NOT = { has_state_flag = PRC_GPCR_state_Military_administered_flag } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 5
+				compare = equals
+			}
+		}
+		608 = { NOT = { has_state_flag = PRC_GPCR_state_Military_administered_flag } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 6
+				compare = equals
+			}
+		}
+		609 = { NOT = { has_state_flag = PRC_GPCR_state_Military_administered_flag } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 7
+				compare = equals
+			}
+		}
+		614 = { NOT = { has_state_flag = PRC_GPCR_state_Military_administered_flag } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 8
+				compare = equals
+			}
+		}
+		615 = { NOT = { has_state_flag = PRC_GPCR_state_Military_administered_flag } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 9
+				compare = equals
+			}
+		}
+		622 = { NOT = { has_state_flag = PRC_GPCR_state_Military_administered_flag } }
+	}
+	else_if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 10
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 34
+					compare = equals
+				}
+			}
+		}
+		616 = { NOT = { has_state_flag = PRC_GPCR_state_Military_administered_flag } }
+	}
+	else_if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 11
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 35
+					compare = equals
+				}
+			}
+		}
+		283 = { NOT = { has_state_flag = PRC_GPCR_state_Military_administered_flag } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 12
+				compare = equals
+			}
+		}
+		604 = { NOT = { has_state_flag = PRC_GPCR_state_Military_administered_flag } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 13
+				compare = equals
+			}
+		}
+		617 = { NOT = { has_state_flag = PRC_GPCR_state_Military_administered_flag } }
+	}
+	else_if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 14
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 36
+					compare = equals
+				}
+			}
+		}
+		1549 = { NOT = { has_state_flag = PRC_GPCR_state_Military_administered_flag } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 15
+				compare = equals
+			}
+		}
+		607 = { NOT = { has_state_flag = PRC_GPCR_state_Military_administered_flag } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 16
+				compare = equals
+			}
+		}
+		620 = { NOT = { has_state_flag = PRC_GPCR_state_Military_administered_flag } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 17
+				compare = equals
+			}
+		}
+		602 = { NOT = { has_state_flag = PRC_GPCR_state_Military_administered_flag } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 18
+				compare = equals
+			}
+		}
+		600 = { NOT = { has_state_flag = PRC_GPCR_state_Military_administered_flag } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 19
+				compare = equals
+			}
+		}
+		597 = { NOT = { has_state_flag = PRC_GPCR_state_Military_administered_flag } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 20
+				compare = equals
+			}
+		}
+		606 = { NOT = { has_state_flag = PRC_GPCR_state_Military_administered_flag } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 21
+				compare = equals
+			}
+		}
+		598 = { NOT = { has_state_flag = PRC_GPCR_state_Military_administered_flag } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 22
+				compare = equals
+			}
+		}
+		613 = { NOT = { has_state_flag = PRC_GPCR_state_Military_administered_flag } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 23
+				compare = equals
+			}
+		}
+		596 = { NOT = { has_state_flag = PRC_GPCR_state_Military_administered_flag } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 24
+				compare = equals
+			}
+		}
+		595 = { NOT = { has_state_flag = PRC_GPCR_state_Military_administered_flag } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 25
+				compare = equals
+			}
+		}
+		605 = { NOT = { has_state_flag = PRC_GPCR_state_Military_administered_flag } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 26
+				compare = equals
+			}
+		}
+		603 = { NOT = { has_state_flag = PRC_GPCR_state_Military_administered_flag } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 27
+				compare = equals
+			}
+		}
+		325 = { NOT = { has_state_flag = PRC_GPCR_state_Military_administered_flag } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 28
+				compare = equals
+			}
+		}
+		594 = { NOT = { has_state_flag = PRC_GPCR_state_Military_administered_flag } }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 29
+				compare = equals
+			}
+		}
+		1569 = { NOT = { has_state_flag = PRC_GPCR_state_Military_administered_flag } }
+	}
+}         
