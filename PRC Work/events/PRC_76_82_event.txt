@@ -1,0 +1,905 @@
+
+add_namespace = PRC_76_82
+
+country_event = {
+	id = PRC_76_82.1 #怀仁堂事件
+	title = PRC_76_82.1.t
+	desc = PRC_76_82.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_76_82.1.a
+		custom_effect_tooltip = PRC_76_82.1_tt
+		set_country_flag = PRC_GOF_has_been_destroyed_flag
+		add_ideas = PRC_76_82_The_residual_influence_of_the_far_left
+		add_popularity = {
+            ideology = trotskyism
+            popularity = 0.075
+        }
+        add_popularity = {
+            ideology = socialist
+            popularity = 0.05
+        }
+		hidden_effect = {
+			add_ideas = PRC_76_82_Split_of_the_party
+		}
+		custom_effect_tooltip = PRC_End_of_GPCR_tt
+        hidden_effect = {
+            clr_global_flag = PRC_GPCR_flag
+            every_owned_state = {
+                clear_variable = GPCR_province_zaozao_power_var
+                clear_variable = GPCR_province_laobao_power_var
+                clear_variable = GPCR_province_PLA_power_var
+                clear_variable = GPCR_province_PLA_tendency_var
+                clear_variable = GPCR_province_PLA_influence_var
+                clear_variable = GPCR_province_unrest_var
+                clear_variable = GPCR_province_zaozao_VS_laobao_influence_var
+                clear_variable = GPCR_province_unrest_monthly_vary_var0
+                clear_variable = GPCR_province_unrest_monthly_vary_var1
+                clear_variable = GPCR_province_unrest_monthly_vary_var2
+                remove_dynamic_modifier = {
+                    modifier = PRC_GPCR_state_modifier1
+                }
+                remove_dynamic_modifier = {
+                    modifier = PRC_GPCR_state_modifier2
+                }
+                remove_dynamic_modifier = {
+                    modifier = PRC_GPCR_state_modifier3
+                }
+            }
+            clear_variable = GPCR_province_zaozao_VS_laobao_var
+            clear_variable = GPCR_province_zaozao_power_gui_var
+            clear_variable = GPCR_province_laobao_power_gui_var
+            clear_variable = GPCR_province_unrest_gui_var
+            clear_variable = GPCR_province_unrest_monthly_vary_gui_var
+            clear_variable = GPCR_province_unrest_monthly_vary_gui_var0
+            clear_variable = GPCR_province_unrest_monthly_vary_gui_var1
+            clear_variable = GPCR_province_unrest_monthly_vary_gui_var2
+            clear_variable = GPCR_province_PLA_power_gui_var
+            clear_variable = GPCR_province_PLA_tendency_gui_var
+            clear_variable = GPCR_province_PLA_influence_gui_var
+            clear_variable = GPCR_province_PLA_tendency_pointer_frame
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_REV5
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_REV4
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_REV3
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_REV2
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_REV1
+			remove_ideas = PRC70s_idea_GPCR_Neutrality
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_CON1
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_CON2
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_CON3
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_CON4
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_CON5
+        }
+	}
+}
+
+country_event = {
+	id = PRC_76_82.2 #丧治委员会
+	title = PRC_76_82.2.t
+	desc = PRC_76_82.2.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_76_82.2.a
+		effect_tooltip = {
+			unlock_national_focus = PRC_76_82_Chairman_Mao_Memorial_Hall
+		}
+		set_country_flag = PRC_76_82_Chairman_Mao_Memorial_Hall_enabled
+	}
+	option = {
+		name = PRC_76_82.2.b
+		effect_tooltip = {
+			unlock_national_focus = PRC_76_82_Monument_to_Chairman_Mao
+		}
+		set_country_flag = PRC_76_82_Monument_to_Chairman_Mao_enabled
+	}
+}
+
+country_event = {
+	id = PRC_76_82.3 #收集罪证
+	title = PRC_76_82.3.t
+	desc = PRC_76_82.3.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_76_82.3.a
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = PRC_76_82_The_residual_influence_of_the_far_left
+				add_idea = PRC_76_82_The_residual_influence_of_the_far_left1
+			}
+		}
+		hidden_effect = {
+			remove_ideas = PRC_76_82_The_residual_influence_of_the_far_left
+			add_timed_idea = {
+                idea = PRC_76_82_The_residual_influence_of_the_far_left1
+                days = 365
+            }
+		}
+	}
+	option = {
+		name = PRC_76_82.3.b
+		hidden_effect = {
+			remove_ideas = PRC_76_82_The_residual_influence_of_the_far_left
+			add_timed_idea = {
+                idea = PRC_76_82_The_residual_influence_of_the_far_left
+                days = 365
+            }
+		}
+	}
+}
+
+country_event = {
+	id = PRC_76_82.4 #毛泽东选集第五卷出版
+	title = PRC_76_82.4.t
+	desc = PRC_76_82.4.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_76_82.4.a
+		add_political_power = 50
+	}
+}
+
+country_event = {
+	id = PRC_76_82.5 #中共十一大开幕
+	title = PRC_76_82.5.t
+	desc = PRC_76_82.5.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.5.a
+		set_country_flag = PRC_76_82_The_Eleventh_National_Congress_of_the_Communist_Party_of_China_show
+		mark_focus_tree_layout_dirty = yes
+		complete_national_focus = PRC_76_82_The_Eleventh_National_Congress_of_the_Communist_Party_of_China
+	}
+}
+
+country_event = {
+	id = PRC_76_82.6 #两个凡是 r
+	title = PRC_76_82.6.t
+	desc = PRC_76_82.6.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.6.a
+		add_to_variable = {
+			CPC_bar_d = 1
+			tooltip = PRC_76_82_qlxt_dxp_2
+		}
+	}
+}
+
+country_event = {
+	id = PRC_76_82.7 #两个凡是 c
+	title = PRC_76_82.7.t
+	desc = PRC_76_82.7.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.7.a
+		add_to_variable = {
+			CPC_bar_c = 1
+			tooltip = PRC_76_82_qlxt_hgf_2
+		}
+	}
+}
+
+country_event = {
+	id = PRC_76_82.8 #重读《人的正确思想是从哪里来的？》
+	title = PRC_76_82.8.t
+	desc = PRC_76_82.8.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.8.a
+		add_to_variable = {
+			CPC_bar_c = 0.5
+			tooltip = PRC_76_82_qlxt_hgf_1
+		}
+	}
+}
+
+country_event = {
+	id = PRC_76_82.9 #实践是检验真理的唯一标准
+	title = PRC_76_82.9.t
+	desc = PRC_76_82.9.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.9.a
+		add_to_variable = {
+			CPC_bar_d = 0.5
+			tooltip = PRC_76_82_qlxt_dxp_1
+		}
+	}
+}
+
+country_event = {
+	id = PRC_76_82.10 #恢复和发扬党的优良作风
+	title = PRC_76_82.10.t
+	desc = PRC_76_82.10.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.10.a
+		add_to_variable = {
+			CPC_bar_d = 1
+			tooltip = PRC_76_82_qlxt_dxp_2
+		}
+	}
+}
+
+country_event = {
+	id = PRC_76_82.11 #审判江青，林彪集团
+	title = PRC_76_82.11.t
+	desc = PRC_76_82.11.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.11.a
+	}
+}
+
+country_event = {
+	id = PRC_76_82.12 #把“四人帮”颠倒了的干部路线是非纠正过来
+	title = PRC_76_82.12.t
+	desc = PRC_76_82.12.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.12.a
+	}
+}
+
+country_event = {
+	id = PRC_76_82.13 #坚持实事求是的革命作风
+	title = PRC_76_82.13.t
+	desc = PRC_76_82.13.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.13.a
+	}
+}
+
+country_event = {
+	id = PRC_76_82.14 #全国科学大会
+	title = PRC_76_82.14.t
+	desc = PRC_76_82.14.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.14.a
+	}
+}
+
+country_event = {
+	id = PRC_76_82.15 #无产阶级专政下的继续革命
+	title = PRC_76_82.15.t
+	desc = PRC_76_82.15.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.15.a
+	}
+}
+
+country_event = {
+	id = PRC_76_82.16 #准确的、完整的毛泽东思想
+	title = PRC_76_82.16.t
+	desc = PRC_76_82.16.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.16.a
+		add_to_variable = {
+			CPC_bar_d = 1
+			tooltip = PRC_76_82_qlxt_dxp_2
+		}
+	}
+}
+
+country_event = {
+	id = PRC_76_82.17 #马克思主义的一个最基本的原则
+	title = PRC_76_82.17.t
+	desc = PRC_76_82.17.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.17.a
+		add_to_variable = {
+			CPC_bar_c = 1
+			tooltip = PRC_76_82_qlxt_hgf_2
+		}
+	}
+}
+
+country_event = {
+	id = PRC_76_82.18 #全军政治工作会议
+	title = PRC_76_82.18.t
+	desc = PRC_76_82.18.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.18.a
+	}
+}
+
+country_event = {
+	id = PRC_76_82.19 #研究党的历史的原则
+	title = PRC_76_82.19.t
+	desc = PRC_76_82.19.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.19.a
+	}
+}
+
+country_event = {
+	id = PRC_76_82.20 #邓小平同王震、邓力群谈话
+	title = PRC_76_82.20.t
+	desc = PRC_76_82.20.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.20.a
+	}
+}
+
+country_event = {
+	id = PRC_76_82.21 #真理标准大讨论
+	title = PRC_76_82.21.t
+	desc = PRC_76_82.21.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.21.a
+		set_country_flag = PRC_76_82_The_Great_Discussion_on_the_Standard_of_Truth_show
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+
+country_event = {
+	id = PRC_76_82.101 #关于1977年高等学校招生考试工作的意见
+	title = PRC_76_82.101.t
+	desc = PRC_76_82.101.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.101.a
+		effect_tooltip = {
+			unlock_national_focus = PRC_76_82_Resumption_of_college_entrance_examinations
+		}
+		set_country_flag = PRC_76_82_Resumption_of_college_entrance_examinations_enabled
+		add_political_power = -25
+	}
+	option = {
+		name = PRC_76_82.101.b
+		effect_tooltip = {
+			unlock_national_focus = PRC_76_82_Continuation_of_the_University_of_Workers_and_Peasants
+		}
+		set_country_flag = PRC_76_82_Continuation_of_the_University_of_Workers_and_Peasants_enabled
+		add_stability = 0.025
+	}
+}
+
+country_event = {
+	id = PRC_76_82.102 #处理知青问题
+	title = PRC_76_82.102.t
+	desc = PRC_76_82.102.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.102.a #忽视抗议，鼓励新知青下乡
+		set_country_flag = PRC_76_82_102_a
+		add_stability = -0.25
+		add_to_variable = {
+			CPC_bar_c = -1.5
+			tooltip = PRC_76_82_qlxt_hgf_6
+		}
+	}
+	option = {
+		name = PRC_76_82.102.b #加速知青返城
+		add_to_variable = {
+			CPC_bar_c = 0.5
+			tooltip = PRC_76_82_qlxt_hgf_1
+		}
+		add_timed_idea = { idea = PRC_76_82_The_dilemma_of_resettlement_of_educated_youth days = 730 }
+	}
+}
+
+country_event = {
+	id = PRC_76_82.103 #云南请愿事件
+	title = PRC_76_82.103.t
+	desc = PRC_76_82.103.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.103.a
+		effect_tooltip = {
+			unlock_national_focus = PRC_76_82_The_problem_of_going_to_the_mountains_and_the_countryside
+		}
+		add_ideas = PRC_76_82_Intellectual_youth_protest
+	}
+}
+
+country_event = {
+	id = PRC_76_82.104 #共青团十届一中全会
+	title = PRC_76_82.104.t
+	desc = PRC_76_82.104.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.104.a
+		add_political_power = 50
+		add_stability = 0.025
+	}
+}
+
+country_event = {
+	id = PRC_76_82.105 #关于工宣队问题的请示报告
+	title = PRC_76_82.105.t
+	desc = PRC_76_82.105.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.105.a
+		effect_tooltip = {
+			unlock_national_focus = PRC_76_82_Maintaining_the_presence_of_the_Workers_Advocacy_Team
+		}
+		set_country_flag = PRC_76_82_Maintaining_the_presence_of_the_Workers_Advocacy_Team_enabled
+	}
+	option = {
+		name = PRC_76_82.105.b
+		effect_tooltip = {
+			unlock_national_focus = PRC_76_82_Removal_of_workers_propaganda_teams_from_schools
+		}
+		set_country_flag = PRC_76_82_Removal_of_workers_propaganda_teams_from_schools_enabled
+	}
+}
+
+country_event = {
+	id = PRC_76_82.201 #十一届三中全会开幕
+	title = PRC_76_82.201.t
+	desc = PRC_76_82.201.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.201.a
+		country_event = {
+			id = PRC_76_82.202
+			days = 5
+		}
+	}
+}
+
+country_event = {
+	id = PRC_76_82.202 #当今革命的纲领是什么
+	title = PRC_76_82.202.t
+	desc = PRC_76_82.202.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.202.a
+		add_to_variable = {
+			CPC_bar_d = 1
+			tooltip = PRC_76_82_qlxt_dxp_2
+		}
+		country_event = {
+			id = PRC_76_82.203
+			days = 5
+		}
+	}
+	option = {
+		name = PRC_76_82.202.b
+		add_to_variable = {
+			CPC_bar_c = 1
+			tooltip = PRC_76_82_qlxt_hgf_2
+		}
+		country_event = {
+			id = PRC_76_82.203
+			days = 5
+		}
+	}
+}
+
+country_event = {
+	id = PRC_76_82.203 #委员中的新面孔
+	title = PRC_76_82.203.t
+	desc = PRC_76_82.203.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.203.a
+		add_to_variable = {
+			CPC_bar_d = 1
+			tooltip = PRC_76_82_qlxt_dxp_2
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					check_variable = { CPC_bar_d > CPC_bar_c }
+				}
+				country_event = {
+					id = PRC_76_82.205
+					days = 5
+				}
+			}
+			else = {
+				country_event = {
+					id = PRC_76_82.206
+					days = 5
+				}
+			}
+		}
+		country_event = {
+			id = PRC_76_82.204
+			days = 10
+		}
+	}
+	option = {
+		name = PRC_76_82.203.b
+		add_to_variable = {
+			CPC_bar_c = 1
+			tooltip = PRC_76_82_qlxt_hgf_2
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					check_variable = { CPC_bar_d > CPC_bar_c }
+				}
+				country_event = {
+					id = PRC_76_82.205
+					days = 5
+				}
+			}
+			else = {
+				country_event = {
+					id = PRC_76_82.206
+					days = 5
+				}
+			}
+		}
+		country_event = {
+			id = PRC_76_82.204
+			days = 10
+		}
+	}
+}
+
+country_event = {
+	id = PRC_76_82.204 #讨论《关于建国以来党的若干历史问题的决议》
+	title = PRC_76_82.204.t
+	desc = PRC_76_82.204.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.204.a
+		country_event = {
+			id = PRC_76_82.207
+			days = 5
+		}
+	}
+}
+
+country_event = {
+	id = PRC_76_82.205 #政府中的顽固派
+	title = PRC_76_82.205.t
+	desc = PRC_76_82.205.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.205.a
+		add_to_variable = {
+			CPC_bar_c = -1
+			tooltip = PRC_76_82_qlxt_hgf_5
+		}
+	}
+}
+
+country_event = {
+	id = PRC_76_82.206 #政府中的走资派
+	title = PRC_76_82.206.t
+	desc = PRC_76_82.206.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.206.a
+		add_to_variable = {
+			CPC_bar_d = -1
+			tooltip = PRC_76_82_qlxt_dxp_5
+		}
+	}
+}
+
+country_event = {
+	id = PRC_76_82.207 #建国以来32年的历史
+	title = PRC_76_82.207.t
+	desc = PRC_76_82.207.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.207.a
+		add_to_variable = {
+			CPC_bar_d = 1
+			tooltip = PRC_76_82_qlxt_dxp_2
+		}
+		country_event = {
+			id = PRC_76_82.208
+			days = 5
+		}
+	}
+	option = {
+		name = PRC_76_82.207.b
+		add_to_variable = {
+			CPC_bar_c = 1
+			tooltip = PRC_76_82_qlxt_hgf_2
+		}
+		country_event = {
+			id = PRC_76_82.208
+			days = 5
+		}
+	}
+}
+
+country_event = {
+	id = PRC_76_82.208 #文化大革命的性质
+	title = PRC_76_82.208.t
+	desc = PRC_76_82.208.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.208.a
+		add_to_variable = {
+			CPC_bar_d = 1
+			tooltip = PRC_76_82_qlxt_dxp_2
+		}
+		country_event = {
+			id = PRC_76_82.209
+			days = 5
+		}
+	}
+	option = {
+		name = PRC_76_82.208.b
+		add_to_variable = {
+			CPC_bar_c = 1
+			tooltip = PRC_76_82_qlxt_hgf_2
+		}
+		country_event = {
+			id = PRC_76_82.209
+			days = 5
+		}
+	}
+}
+
+country_event = {
+	id = PRC_76_82.209 #如何看待毛泽东
+	title = PRC_76_82.209.t
+	desc = PRC_76_82.209.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.209.a
+		add_to_variable = {
+			CPC_bar_d = 1
+			tooltip = PRC_76_82_qlxt_dxp_2
+		}
+		country_event = {
+			id = PRC_76_82.210
+			days = 5
+		}
+	}
+	option = {
+		name = PRC_76_82.209.b
+		add_to_variable = {
+			CPC_bar_c = 1
+			tooltip = PRC_76_82_qlxt_hgf_2
+		}
+		country_event = {
+			id = PRC_76_82.210
+			days = 5
+		}
+	}
+}
+
+country_event = {
+	id = PRC_76_82.210 #如何看待华国锋/邓小平工作
+	title = PRC_76_82.210.t
+	desc = PRC_76_82.210.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.210.a
+		add_to_variable = {
+			CPC_bar_d = 1
+			tooltip = PRC_76_82_qlxt_dxp_2
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					check_variable = { CPC_bar_d > CPC_bar_c }
+				}
+				country_event = {
+					id = PRC_76_82.211
+					days = 5
+				}
+			}
+			else = {
+				country_event = {
+					id = PRC_76_82.212
+					days = 5
+				}
+			}
+		}
+	}
+	option = {
+		name = PRC_76_82.210.b
+		add_to_variable = {
+			CPC_bar_c = 1
+			tooltip = PRC_76_82_qlxt_hgf_2
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					check_variable = { CPC_bar_d > CPC_bar_c }
+				}
+				country_event = {
+					id = PRC_76_82.211
+					days = 5
+				}
+			}
+			else = {
+				country_event = {
+					id = PRC_76_82.212
+					days = 5
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = PRC_76_82.211 #树立改革派的地位
+	title = PRC_76_82.211.t
+	desc = PRC_76_82.211.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.211.a
+		add_popularity = {
+            ideology = socialist
+            popularity = 0.1
+        }
+		create_country_leader = {
+			name = "Deng Xiaoping"
+			desc = "Deng_Xiaoping_desc"
+			picture = "gfx/leaders/Deng_Xiaoping.dds"
+			expire = "1997.2.19"
+			ideology = socialism
+			traits = {
+			}
+		}
+		set_politics = {
+			ruling_party = socialist
+			elections_allowed = no
+			last_election = "1977.8.18"
+			election_frequency = 60
+		}
+		country_event = {
+			id = PRC_76_82.213
+			days = 5
+		}
+	}
+}
+
+country_event = {
+	id = PRC_76_82.212 #向党内的异见分子开火
+	title = PRC_76_82.212.t
+	desc = PRC_76_82.212.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.212.a
+		add_popularity = {
+            ideology = socialist
+            popularity = -0.05
+        }
+		add_popularity = {
+            ideology = trotskyism
+            popularity = 0.1
+        }
+		country_event = {
+			id = PRC_76_82.213
+			days = 5
+		}
+	}
+}
+
+
+country_event = {
+	id = PRC_76_82.213 #通过《关于建国以来党的若干历史问题的决议》
+	title = PRC_76_82.213.t
+	desc = PRC_76_82.213.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC_76_82.213.a
+	}
+}

@@ -1,0 +1,615 @@
+
+add_namespace = PRC_Lin_b1
+
+country_event = {
+	id = PRC_Lin_b1.1 #张、姚、康、王托洛茨基主义集团
+ 	immediate = {log = "[GetDateText]: [Root.GetTag]: id = PRC_Lin_b1.1"}
+	title = PRC_Lin_b1.1.t
+	desc = PRC_Lin_b1.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_Lin_b1.1.a
+		add_to_variable = {
+			CPC_bar_a = -10
+			tooltip = LeftRadical_lose_a_lot_influence_tt
+		}
+		country_event = {
+			id = PRC_Lin_b1.2
+			days = 5
+		}
+	}
+}
+
+country_event = {
+	id = PRC_Lin_b1.2 #刘、邓、习、彭、杨走资派集团
+	title = PRC_Lin_b1.2.t
+	desc = PRC_Lin_b1.2.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_Lin_b1.2.a
+		add_to_variable = {
+			CPC_bar_a = -10
+			tooltip = reformers_lose_a_lot_influence_tt
+		}
+		country_event = {
+			id = PRC_Lin_b1.3
+			days = 5
+		}
+	}
+}
+
+country_event = {
+	id = PRC_Lin_b1.3 #李、汪、陈、徐军事反革命集团
+	title = PRC_Lin_b1.3.t
+	desc = PRC_Lin_b1.3.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_Lin_b1.3.a
+		add_to_variable = {
+			CPC_bar_c = -10
+			tooltip = conservatives_lose_a_lot_influence_tt
+		}
+	}
+}
+
+country_event = {
+	id = PRC_Lin_b1.4 #让叶剑英和平退出军委
+	title = PRC_Lin_b1.4.t
+	desc = PRC_Lin_b1.4.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_Lin_b1.4.a
+	}
+}
+
+country_event = {
+	id = PRC_Lin_b1.5 #任命新元帅
+	title = PRC_Lin_b1.5.t
+	desc = PRC_Lin_b1.5.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_Lin_b1.5.a
+	}
+}
+
+country_event = {
+	id = PRC_Lin_b1.6 #南海主权谈判
+	title = PRC_Lin_b1.6.t
+	desc = PRC_Lin_b1.6.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_Lin_b1.6.a
+		PRC = {
+			country_event = {
+				id = PRC_Lin_b1.7
+				days = 10
+			}
+		}
+	}
+	option = {
+		name = PRC_Lin_b1.6.b
+		PRC = {
+			country_event = {
+				id = PRC_Lin_b1.8
+				days = 10
+			}
+		}
+	}
+}
+
+country_event = {
+	id = PRC_Lin_b1.7 
+	title = PRC_Lin_b1.7.t
+	desc = PRC_Lin_b1.7.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_Lin_b1.7.a
+		VIN = {
+			every_owned_state = {
+				limit = {
+					state = 997
+				}
+				PRC = {
+					transfer_state = PREV
+				}
+				add_core_of = PRC
+			}
+		}
+	}
+}
+
+country_event = {
+	id = PRC_Lin_b1.8 
+	title = PRC_Lin_b1.8.t
+	desc = PRC_Lin_b1.8.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_Lin_b1.8.a
+		VIN = {
+			every_owned_state = {
+				limit = {
+					state = 997
+				}
+				add_core_of = PRC
+			}
+		}
+		PRC = {
+			create_wargoal = {
+				type = take_state
+				target = VIN
+				expire = 0
+				generator = { 997 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = PRC_Lin_b1.9 #任命李雪峰，陈伯达担任副总理
+	title = PRC_Lin_b1.9.t
+	desc = PRC_Lin_b1.9.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_Lin_b1.9.a
+	}
+}
+
+country_event = {
+	id = PRC_Lin_b1.101 #向印度要求拉达克
+	title = PRC_Lin_b1.101.t
+	desc = PRC_Lin_b1.101.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_Lin_b1.101.a
+		PRC = {
+			country_event = {
+				id = PRC_Lin_b1.102
+				days = 10
+			}
+		}
+	}
+	option = {
+		name = PRC_Lin_b1.102.a
+		PRC = {
+			country_event = {
+				id = PRC_Lin_b1.103
+				days = 10
+			}
+		}
+	}
+}
+
+country_event = {
+	id = PRC_Lin_b1.102 
+	title = PRC_Lin_b1.102.t
+	desc = PRC_Lin_b1.102.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_Lin_b1.102.a
+		RAJ = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 873
+						state = 1335
+					}
+				}
+				PRC = {
+					transfer_state = PREV
+				}
+				add_core_of = PRC
+			}
+		}
+	}
+}
+
+country_event = {
+	id = PRC_Lin_b1.103 
+	title = PRC_Lin_b1.103.t
+	desc = PRC_Lin_b1.103.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_Lin_b1.103.a
+		RAJ = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 873
+						state = 1335
+					}
+				}
+				add_core_of = PRC
+			}
+		}
+		PRC = {
+			create_wargoal = {
+				type = take_state
+				target = RAJ
+				expire = 0
+				generator = { 1335 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = PRC_Lin_b1.201
+	title = PRC_Lin_b1.201.t
+	desc = PRC_Lin_b1.201.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_Lin_b1.201.a
+	}
+}
+
+country_event = {
+	id = PRC_Lin_b1.301
+	title = PRC_Lin_b1.301.t
+	desc = PRC_Lin_b1.301.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_Lin_b1.301.a
+		add_to_variable = {
+			CPC_bar_a = -5
+			tooltip = LeftRadical_lose_influence_tt
+		}
+	}
+}
+
+country_event = {
+	id = PRC_Lin_b1.302
+	title = PRC_Lin_b1.302.t
+	desc = PRC_Lin_b1.302.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_Lin_b1.302.a
+		add_to_variable = {
+			CPC_bar_a = -5
+			tooltip = LeftRadical_lose_influence_tt
+		}
+	}
+}
+
+country_event = {
+	id = PRC_Lin_b1.303
+	title = PRC_Lin_b1.303.t
+	desc = PRC_Lin_b1.303.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_Lin_b1.303.a
+		add_to_variable = {
+			CPC_bar_a = -5
+			tooltip = LeftRadical_lose_influence_tt
+		}
+	}
+}
+
+country_event = {
+	id = PRC_Lin_b1.401 #中日海底电缆
+	title = PRC_Lin_b1.401.t
+	desc = PRC_Lin_b1.401.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_Lin_b1.401.a
+		598 = {
+			add_resource = {
+				type = electricity
+				amount = 16
+			}
+		}
+		1603 = {
+			add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = PRC_Lin_b1.501 #中美贸易谈判 - 开始
+	title = PRC_Lin_b1.501.t
+	desc = PRC_Lin_b1.501.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_Lin_b1.501.a
+		country_event = {
+			id = PRC_Lin_b1.502
+			days = 1
+		}
+	}
+}
+
+country_event = {
+	id = PRC_Lin_b1.502 #要求解除对中国的禁运法令
+	title = PRC_Lin_b1.502.t
+	desc = PRC_Lin_b1.502.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_Lin_b1.502.a
+		USA = {
+			country_event = {
+				id = PRC_Lin_b1.503
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = PRC_Lin_b1.503 #要求解除对中国的禁运法令 -usa
+	title = PRC_Lin_b1.503.t
+	desc = PRC_Lin_b1.503.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_Lin_b1.503.a
+		PRC = {
+			country_event = {
+				id = PRC_Lin_b1.504
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = PRC_Lin_b1.503.b
+		PRC = {
+			country_event = {
+				id = PRC_Lin_b1.509
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = PRC_Lin_b1.504 #谈判台湾问题
+	title = PRC_Lin_b1.504.t
+	desc = PRC_Lin_b1.504.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_Lin_b1.504.a
+		USA = {
+			country_event = {
+				id = PRC_Lin_b1.505
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = PRC_Lin_b1.505 #谈判台湾问题 - usa
+	title = PRC_Lin_b1.505.t
+	desc = PRC_Lin_b1.505.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_Lin_b1.505.a
+		PRC = {
+			country_event = {
+				id = PRC_Lin_b1.506
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = PRC_Lin_b1.505.b
+		PRC = {
+			country_event = {
+				id = PRC_Lin_b1.509
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = PRC_Lin_b1.506 #敦促美国从越南退出
+	title = PRC_Lin_b1.506.t
+	desc = PRC_Lin_b1.506.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_Lin_b1.506.a
+		USA = {
+			country_event = {
+				id = PRC_Lin_b1.507
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = PRC_Lin_b1.507 #谈判台湾问题 - usa
+	title = PRC_Lin_b1.507.t
+	desc = PRC_Lin_b1.507.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_Lin_b1.507.a
+		PRC = {
+			country_event = {
+				id = PRC_Lin_b1.508
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = PRC_Lin_b1.507.b
+		PRC = {
+			country_event = {
+				id = PRC_Lin_b1.509
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = PRC_Lin_b1.508 #vic
+	title = PRC_Lin_b1.508.t
+	desc = PRC_Lin_b1.508.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_Lin_b1.508.a
+		add_opinion_modifier = { 
+			target = USA
+			modifier = PRC_USA_trade_improvement
+		}
+		reverse_add_opinion_modifier = {
+			target = USA
+			modifier = PRC_USA_trade_improvement
+		}
+		USA = {
+			diplomatic_relation = {
+				country = CHI
+				relation = guarantee
+				active = no
+			}
+		}
+		VIE = {
+			add_war_support = -0.5
+		}
+	}
+}
+
+country_event = {
+	id = PRC_Lin_b1.509 #fai
+	title = PRC_Lin_b1.509.t
+	desc = PRC_Lin_b1.509.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_Lin_b1.509.a
+	}
+}
+
+country_event = {
+	id = PRC_Lin_b1.601 #法国领导人访华
+	title = PRC_Lin_b1.601.t
+	desc = PRC_Lin_b1.601.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_Lin_b1.601.a
+	}
+}
+
+country_event = {
+	id = PRC_Lin_b1.701 #通过第二次历史决议
+	title = PRC_Lin_b1.701.t
+	desc = PRC_Lin_b1.701.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_Lin_b1.701.a
+	}
+}
+
+country_event = {
+	id = PRC_Lin_b1.702 #日渐虚弱的大元帅
+	title = PRC_Lin_b1.702.t
+	desc = PRC_Lin_b1.702.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_Lin_b1.702.a
+		unlock_decision_category_tooltip = PRC_101_The_weakened_generalissimo
+		set_variable = { PRC_101_health_condition = 0 }
+		set_country_flag = PRC_101_The_weakened_generalissimo_show
+	}
+}
+
+country_event = {
+	id = PRC_Lin_b1.703 #拒绝吃西药
+	title = PRC_Lin_b1.703.t
+	desc = PRC_Lin_b1.703.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_Lin_b1.703.a
+		add_political_power = -45
+		add_days_mission_timeout = {
+			mission = PRC_101_health_worsening_crisis
+			days = 90
+		}
+	}
+	option = {
+		name = PRC_Lin_b1.703.b
+	}
+}
+
+country_event = {
+	id = PRC_Lin_b1.704 #偏执症不相信医生
+	title = PRC_Lin_b1.704.t
+	desc = PRC_Lin_b1.704.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_Lin_b1.704.a
+		add_political_power = -30
+		add_days_mission_timeout = {
+			mission = PRC_101_health_worsening_crisis
+			days = 75
+		}
+	}
+	option = {
+		name = PRC_Lin_b1.704.b
+	}
+}

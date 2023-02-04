@@ -1,0 +1,4804 @@
+add_namespace = prc70s_test
+country_event = {  
+    id = prc70s_test.1
+    title = prc70s_test.1.t
+    desc = prc70s_test.1.d
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = prc70s_test.1.a
+        load_focus_tree = PRC_70s
+    }
+}
+country_event = {  
+    id = prc70s_test.2
+    title = prc70s_test.2.t
+    desc = prc70s_test.2.d
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = prc70s_test.2.a
+        USA = { load_focus_tree = USA_Humphrey_1960 }
+    }
+}
+
+add_namespace = prc70s
+
+#内人党扩大化事件
+country_event = {  
+    id = prc70s.1
+    title = prc70s.1.t
+    desc = prc70s.1.d
+    fire_only_once = yes
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        date > 1969.5.21
+        date < 1969.6.20
+    }
+    option = {
+        name = prc70s.1.a
+        612 = {
+            remove_core_of = PRC
+			add_dynamic_modifier = {
+				modifier = PRC_Inter_Mongolia_turmoil_2
+			}
+		}
+		621 = {
+            remove_core_of = PRC
+			add_dynamic_modifier = {
+				modifier = PRC_Inter_Mongolia_turmoil_2
+			} 
+		}
+		611 = {
+            remove_core_of = PRC
+			add_dynamic_modifier = {
+				modifier = PRC_Inter_Mongolia_turmoil_2
+			}
+		}
+		715 = { 
+            remove_core_of = PRC
+			add_dynamic_modifier = {
+				modifier = PRC_Inter_Mongolia_turmoil_2
+			}
+		}
+        set_country_flag = neirendang_begin
+        mark_focus_tree_layout_dirty = yes
+        complete_national_focus = prc70s_The_Inner_Mongolia_People_s_party_incident_intensified_contradictions
+    }
+}
+country_event = { #派遣空降兵镇压内人党
+    id = prc70s.2
+    title = prc70s.2.t
+    desc = prc70s.2.d
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = prc70s.2.a
+        activate_mission = PRC_70s_Neirendang_mission
+    }
+}
+
+#唐山大地震
+country_event = { 
+    id = prc70s.3
+    title = prc70s.3.t
+    desc = prc70s.3.d
+    fire_only_once = yes
+    trigger = {
+        tag = PRC
+        date > 1976.7.27
+        date < 1976.8.20
+    } 
+    immediate = {
+        hidden_effect = {
+            set_country_flag = tangshan_earthquake_begin
+            mark_focus_tree_layout_dirty = yes
+            complete_national_focus = tangshan_earthquake
+        }
+    }
+    option = {
+        name = prc70s.3.a
+    }
+}
+
+country_event = {    #三国四方领导人会议
+    id = prc70s.4
+    title = prc70s.4.t
+    desc = prc70s.4.d
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = prc70s.4.a
+		add_opinion_modifier = {
+			target = VIE
+			modifier = prc70s_Indochina_People_s_Supreme_Council
+		}
+		add_opinion_modifier = {
+			target = LOS
+			modifier = prc70s_Indochina_People_s_Supreme_Council
+		}
+		add_opinion_modifier = {
+			target = CAM
+			modifier = prc70s_Indochina_People_s_Supreme_Council
+		}
+        VIN = {
+            add_opinion_modifier = {
+                target = PRC
+                modifier = prc70s_Indochina_People_s_Supreme_Council
+            }
+        }
+        LOS = {
+            add_opinion_modifier = {
+                target = PRC
+                modifier = prc70s_Indochina_People_s_Supreme_Council
+            }
+        }
+        CAM = {
+            aadd_opinion_modifier = {
+                target = PRC
+                modifier = prc70s_Indochina_People_s_Supreme_Council
+            }
+        }
+    }
+}
+country_event = {  #第三次印巴战争
+    id = prc70s.5  
+    title = prc70s.5.t  
+    desc = prc70s.5.d  
+    fire_only_once = yes
+    is_triggered_only = no
+    trigger = {
+        PAK = {
+            has_war_with = RAJ
+        }
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        date < 1976.9.9
+    }
+    option = {
+        name = prc70s.5.a  
+        complete_national_focus = the_third_indo_pakistani_war
+    }
+}
+country_event = {
+    id = prc70s.6
+    title = prc70s.6.t
+    desc = prc70s.6.d
+    fire_only_once = yes
+    is_triggered_only = no
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        SIA = {
+            has_government = communism
+        }
+    }
+    option = {
+        name = prc70s.6.a
+        complete_national_focus = the_faliure_of_the_policy_targeting_thailand
+    }
+}
+country_event = {
+    id = prc70s.7
+    title = prc70s.7.t
+    desc = prc70s.7.d
+    fire_only_once = yes
+    is_triggered_only = no
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        country_exists = TTM
+        country_exists = SIA
+    }
+    option = {
+        name = prc70s.7.a
+        complete_national_focus = thailand_civilwar
+    }
+}
+
+
+country_event = { #中国索要达拉克(印度接收事件)
+    id = prc70s.8
+    title = prc70s.8.t
+    desc = prc70s.8.d
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = prc70s.8.a
+		PRC = {
+            country_event = {
+                id = prc70s.9
+                hours = 20
+            }
+		}
+        ai_chance = {
+            base = 0
+        }
+    }
+    option = {
+        name = prc70s.8.b
+        PRC = {
+            country_event = {
+                id = prc70s.10
+                hours = 20
+            }
+        }
+        ai_chance = {
+            base = 10
+        }
+    }
+}
+country_event = { #印度同意归还达拉克
+    id = prc70s.9
+    title = prc70s.9.t
+    desc = prc70s.9.d
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = prc70s.9.a
+        transfer_state = 1244
+        add_state_core = 1335
+		transfer_state = 1335
+        add_state_core = 1343
+		transfer_state = 1343
+        add_state_core = 1346
+		transfer_state = 1346
+    }
+}
+country_event = { #印度拒绝归还达拉克
+    id = prc70s.10
+    title = prc70s.10.t
+    desc = prc70s.10.d
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = prc70s.10.a
+        start_border_war = {
+            change_state_after_war = no
+            attacker = {
+                state = 873
+                num_provinces = 1
+                on_win = prc70.11
+                on_lose = prc70.12
+                on_cancel = prc70.12
+            }
+            defender = {
+                state = 1335
+                num_provinces = 1
+                on_win = prc70.13
+                on_lose = prc70.14
+                on_cancel = prc70.13
+            }
+        }
+    }
+}
+country_event = { #印军撤离达拉克
+    id = prc70.11
+    title = prc70.11.t
+    desc = prc70.11.d
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = prc70.11.a
+        transfer_state = 1244
+        add_state_core = 1335
+		transfer_state = 1335
+        add_state_core = 1343
+		transfer_state = 1343
+        add_state_core = 1346
+		transfer_state = 1346  
+    }
+}
+country_event = { #印军击退了我们的进攻
+    id = prc70.12
+    title = prc70.12.t
+    desc = prc70.12.d
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = prc70.12.a
+        add_stability = -0.025
+        add_war_support = -0.05
+        army_experience = -30
+    }
+}
+country_event = { #解放军被我们成功击退(印度接收事件)
+    id = prc70.13
+    title = prc70.13.t
+    desc = prc70.13.d
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = prc70.13.a
+        add_stability = 0.025
+        add_war_support = 0.025
+        army_experience = 30
+    }
+}
+country_event = { #解放军占领达拉克(印度接收事件)
+    id = prc70.14
+    title = prc70.14.t
+    desc = prc70.14.d
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = prc70.14.a
+        add_stability = -0.05
+        add_war_support = -0.025
+        army_experience = -30
+    }
+}
+
+
+country_event = {  #台湾问题-对台援助问题谈判(美国接收事件)
+    id = prc70s.15
+    title = prc70s.15.t
+    desc = prc70s.15.d
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = prc70s.15.a
+        PRC = {
+            country_event = {
+                id = prc70s.16
+                hours = 6
+            }
+        }
+        ai_chance = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+        }
+    }
+    option = {
+        name = prc70s.15.b
+        PRC = {
+            country_event = {
+                id = prc70s.17
+                hours = 6
+            }
+        }
+        ai_chance = {
+            base = 10
+        }
+    }
+}
+country_event = {  #美国同意结束对台援助
+    id = prc70s.16
+    title = prc70s.16.t
+    desc = prc70s.16.d
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = prc70s.16.a
+        CHI = {
+            add_offsite_building = { 
+                type = arms_factory 
+                level = -1 
+            }
+            add_offsite_building = { 
+                type = industry_complex 
+                level = -1 
+            }
+            random_owned_state = {
+                add_building_construction = {
+                    type = office_park
+                    level = -1
+                    instant_build = yes
+                }
+            }
+            add_opinion_modifier = {
+                target = USA
+                modifier = prc70s_USA_cut_off_aid_to_Taiwan
+            }
+        }
+        USA = {
+            add_opinion_modifier = {
+                target = CHI
+                modifier = prc70s_USA_cut_off_aid_to_Taiwan
+            }
+        }
+        country_event = {
+            id = prc70s.18
+            hours = 6
+        }
+    }
+}
+country_event = {  #美国拒绝结束对台援助
+    id = prc70s.17
+    title = prc70s.17.t
+    desc = prc70s.17.d
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = prc70s.17.a
+    }
+}
+country_event = {  #台湾问题-美台互助条约问题谈判(美国接收事件)
+    id = prc70s.18
+    title = prc70s.18.t
+    desc = prc70s.18.d
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = prc70s.18.a
+        country_event = {
+            id = prc70s.19
+            hours = 6
+        }
+        ai_chance = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+        }
+    }
+    option = {
+        name = prc70s.18.b
+        country_event = {
+            id = prc70s.108
+            hours = 6
+        }
+        ai_chance = {
+            base = 10
+        }
+    }
+}
+country_event = {  #美国同意废除美台互助条约
+    id = prc70s.19
+    title = prc70s.19.t
+    desc = prc70s.19.d
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = prc70s.19.a
+        USA = {
+            diplomatic_relation = {
+                country = CHI
+                relation = guarantee
+                active = no
+            }
+            add_opinion_modifier = {
+                target = CHI
+                modifier = prc70s_USA_end_guarantee_to_Taiwan
+            }
+        }
+        CHI = {
+            add_opinion_modifier = {
+                target = USA
+                modifier = prc70s_USA_end_guarantee_to_Taiwan
+            }
+        }
+        country_event = {
+            id = prc70s.109
+            hours = 6
+        }
+    }
+}
+country_event = {  #美国继续履行美台互助条约
+    id = prc70s.108
+    title = prc70s.108.t
+    desc = prc70s.108.d
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = prc70s.108.a
+    }
+}
+country_event = {  #台湾问题-两岸统一问题谈判(美国接收事件)
+    id = prc70s.109
+    title = prc70s.109.t
+    desc = prc70s.109.d
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = prc70s.109.a
+        country_event = {
+            id = prc70s.110
+            hours = 6
+        }
+        ai_chance = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+        }
+    }
+    option = {
+        name = prc70s.109.b
+        country_event = {
+            id = prc70s.111
+            hours = 6
+        }
+        ai_chance = {
+            base = 10
+        }
+    }
+}
+country_event = {  #美国同意协助我们统一台湾(美国宣布对台封锁禁运)
+    id = prc70s.110
+    title = prc70s.110.t
+    desc = prc70s.110.d
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = prc70s.110.a
+        USA = { 
+            send_embargo = CHI 
+            add_opinion_modifier = {
+                target = CHI
+                modifier = prc70s_USA_send_embargo_target_Taiwan
+            }
+        }
+        CHI = { 
+            add_ideas = PRC70s_idea_USA_blockades_Taiwan 
+            add_opinion_modifier = {
+                target = USA
+                modifier = prc70s_USA_send_embargo_target_Taiwan
+            }
+        }
+    }
+}
+country_event = {  #美国主张维持台海现状
+    id = prc70s.111
+    title = prc70s.111.t
+    desc = prc70s.111.d
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = prc70s.111.a
+    }
+}
+
+#中法200项奇怪事件
+country_event = {
+    id = prc70s.20
+    title = prc70s.20.t
+    desc = prc70s.20.d
+    is_triggered_only = yes
+    fire_only_once = no
+    trigger = {
+        always = no
+    }
+    option = {
+        name = prc70s.20.a
+    }
+}
+country_event = {
+    id = prc70s.21
+    immediate = {log = "[GetDateText]: [Root.GetTag]: id = prc70s.21"}
+    title = prc70s.21.t
+    desc = prc70s.21.d
+    fire_only_once = no
+    is_triggered_only = yes
+    option = {
+        name = prc70s.21.a
+        if = {
+            limit = {
+                has_country_flag = PRC_70s_PRC_FRA_HELP_1
+            }
+            add_days_mission_timeout = {
+                mission = PRC_70s_PRC_FRA_help_timeout_1
+                days = 10
+            }
+        }
+        else if = {
+            limit = {
+                has_country_flag = PRC_70s_PRC_FRA_HELP_2
+            }
+            add_days_mission_timeout = {
+                mission = PRC_70s_PRC_FRA_help_timeout_2
+                days = 10
+            }
+        }
+        else if = {
+            limit = {
+                has_country_flag = PRC_70s_PRC_FRA_HELP_3
+            }
+            add_days_mission_timeout = {
+                mission = PRC_70s_PRC_FRA_help_timeout_3
+                days = 10
+            }
+        }
+        else if = {
+            limit = {
+                has_country_flag = PRC_70s_PRC_FRA_HELP_4
+            }
+            add_days_mission_timeout = {
+                mission = PRC_70s_PRC_FRA_help_timeout_4
+                days = 10
+            }
+        }
+        else if = {
+            limit = {
+                has_country_flag = PRC_70s_PRC_FRA_HELP_5
+            }
+            add_days_mission_timeout = {
+                mission = PRC_70s_PRC_FRA_help_timeout_5
+                days = 10
+            }
+        }
+        else = {
+            add_days_mission_timeout = {
+                mission = PRC_70s_PRC_FRA_help_timeout_6
+                days = 10
+            }
+        }
+    }
+}
+country_event = {
+    id = prc70s.22
+    immediate = {log = "[GetDateText]: [Root.GetTag]: id = prc70s.22"}
+    title = prc70s.22.t
+    desc = prc70s.22.d
+    fire_only_once = no
+    is_triggered_only = yes
+    option = {
+        name = prc70s.22.a
+        if = {
+            limit = {
+                has_country_flag = PRC_70s_PRC_FRA_HELP_1
+            }
+            add_days_mission_timeout = {
+                mission = PRC_70s_PRC_FRA_help_timeout_1
+                days = 15
+            }
+        }
+        else if = {
+            limit = {
+                has_country_flag = PRC_70s_PRC_FRA_HELP_2
+            }
+            add_days_mission_timeout = {
+                mission = PRC_70s_PRC_FRA_help_timeout_2
+                days = 15
+            }
+        }
+        else if = {
+            limit = {
+                has_country_flag = PRC_70s_PRC_FRA_HELP_3
+            }
+            add_days_mission_timeout = {
+                mission = PRC_70s_PRC_FRA_help_timeout_3
+                days = 15
+            }
+        }
+        else if = {
+            limit = {
+                has_country_flag = PRC_70s_PRC_FRA_HELP_4
+            }
+            add_days_mission_timeout = {
+                mission = PRC_70s_PRC_FRA_help_timeout_4
+                days = 15
+            }
+        }
+        else if = {
+            limit = {
+                has_country_flag = PRC_70s_PRC_FRA_HELP_5
+            }
+            add_days_mission_timeout = {
+                mission = PRC_70s_PRC_FRA_help_timeout_5
+                days = 15
+            }
+        }
+        else = {
+            add_days_mission_timeout = {
+                mission = PRC_70s_PRC_FRA_help_timeout_6
+                days = 15
+            }
+        }
+    }
+}
+country_event = {
+    id = prc70s.23
+    immediate = {log = "[GetDateText]: [Root.GetTag]: id = prc70s.23"}
+    title = prc70s.23.t
+    desc = prc70s.23.d
+    fire_only_once = no
+    is_triggered_only = yes
+    option = {
+        name = prc70s.23.a
+        if = {
+            limit = {
+                has_country_flag = PRC_70s_PRC_FRA_HELP_1
+            }
+            add_days_mission_timeout = {
+                mission = PRC_70s_PRC_FRA_help_timeout_1
+                days = 20
+            }
+        }
+        else if = {
+            limit = {
+                has_country_flag = PRC_70s_PRC_FRA_HELP_2
+            }
+            add_days_mission_timeout = {
+                mission = PRC_70s_PRC_FRA_help_timeout_2
+                days = 20
+            }
+        }
+        else if = {
+            limit = {
+                has_country_flag = PRC_70s_PRC_FRA_HELP_3
+            }
+            add_days_mission_timeout = {
+                mission = PRC_70s_PRC_FRA_help_timeout_3
+                days = 20
+            }
+        }
+        else if = {
+            limit = {
+                has_country_flag = PRC_70s_PRC_FRA_HELP_4
+            }
+            add_days_mission_timeout = {
+                mission = PRC_70s_PRC_FRA_help_timeout_4
+                days = 20
+            }
+        }
+        else if = {
+            limit = {
+                has_country_flag = PRC_70s_PRC_FRA_HELP_5
+            }
+            add_days_mission_timeout = {
+                mission = PRC_70s_PRC_FRA_help_timeout_5
+                days = 20
+            }
+        }
+        else = {
+            add_days_mission_timeout = {
+                mission = PRC_70s_PRC_FRA_help_timeout_6
+                days = 20
+            }
+        }
+    }
+}
+country_event = {
+    id = prc70s.24
+    immediate = {log = "[GetDateText]: [Root.GetTag]: id = prc70s.24"}
+    title = prc70s.24.t
+    desc = prc70s.24.d
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = prc70s.24.a
+        if = {
+            limit = {
+                has_country_flag = PRC_70s_PRC_FRA_HELP_1
+            }
+            add_days_mission_timeout = {
+                mission = PRC_70s_PRC_FRA_help_timeout_1
+                days = 20
+            }
+        }
+        else if = {
+            limit = {
+                has_country_flag = PRC_70s_PRC_FRA_HELP_2
+            }
+            add_days_mission_timeout = {
+                mission = PRC_70s_PRC_FRA_help_timeout_2
+                days = 20
+            }
+        }
+        else if = {
+            limit = {
+                has_country_flag = PRC_70s_PRC_FRA_HELP_3
+            }
+            add_days_mission_timeout = {
+                mission = PRC_70s_PRC_FRA_help_timeout_3
+                days = 20
+            }
+        }
+        else if = {
+            limit = {
+                has_country_flag = PRC_70s_PRC_FRA_HELP_4
+            }
+            add_days_mission_timeout = {
+                mission = PRC_70s_PRC_FRA_help_timeout_4
+                days = 20
+            }
+        }
+        else if = {
+            limit = {
+                has_country_flag = PRC_70s_PRC_FRA_HELP_5
+            }
+            add_days_mission_timeout = {
+                mission = PRC_70s_PRC_FRA_help_timeout_5
+                days = 20
+            }
+        }
+        else = {
+            add_days_mission_timeout = {
+                mission = PRC_70s_PRC_FRA_help_timeout_6
+                days = 20
+            }
+        }
+    }
+}
+
+#中共十大
+country_event = {
+    id = prc70s.25
+    immediate = {log = "[GetDateText]: [Root.GetTag]: id = prc70s.25"}
+    title = prc70s.25.t
+    desc = prc70s.25.d
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = prc70s.25.a
+        complete_national_focus = prc_70s_10th_national_congress_of_cpc
+    }
+}
+
+country_event = {    #生产队核算通过后两年效果
+    id = prc70s.26
+    immediate = {log = "[GetDateText]: [Root.GetTag]: id = prc70s.26"}
+    title = prc70s.26.t
+    desc = prc70s.26.d
+    fire_only_once = no
+    is_triggered_only = yes
+    hidden =yes
+    immediate = {
+        add_to_variable = {
+            hesuan_liangshi_chanliang_zengjia_cishu = 1
+        }
+        add_to_variable = {
+            FM_country_resource_rubber = 12
+        }
+        if = {
+            limit = {
+                check_variable = {
+                    var = hesuan_liangshi_chanliang_zengjia_cishu
+                    value = 2
+                    compare = greater_than_or_equals
+                }
+            }
+            clear_variable = hesuan_liangshi_chanliang_zengjia_cishu
+        }
+        else = {
+            country_event = {
+                id = prc70s.26
+                days = 365
+            }
+        }
+    }
+    option = {
+        name = prc70s.26.a
+    }
+}
+
+country_event = {    #军委座谈会
+	id = prc70s.27
+    immediate = {log = "[GetDateText]: [Root.GetTag]: id = prc70s.27"}
+	title = prc70s.27.t
+	desc = prc70s.27.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = prc70s.27.a
+		add_to_variable = {
+			CPC_bar_a = 0.6
+			tooltip = LeftRadical_gain_a_little_influence_tt
+		}
+        clamp_variable = {
+            var = CPC_bar_a
+            max = 100
+            min = 0
+        }
+        add_ideas = PRC70s_idea_army_construction
+	}
+}
+#遇罗克事件
+country_event = {     #遇罗克问题
+	id = prc70s.28
+    immediate = {log = "[GetDateText]: [Root.GetTag]: id = prc70s.28"}
+	title = prc70s.28.t
+	desc = prc70s.28.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = prc70s.28.a
+        country_event = {
+            id = prc70s.29
+            days = 4
+        }
+	}
+    option = {
+		name = prc70s.28.b
+        country_event = {
+            id = prc70s.40
+            days = 4
+        }
+    }
+}
+country_event = {     #细水长流
+	id = prc70s.29
+    immediate = {log = "[GetDateText]: [Root.GetTag]: id = prc70s.29"}
+	title = prc70s.29.t
+	desc = prc70s.29.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = prc70s.29.a
+		add_to_variable = {
+            CPC_bar_a = 1.1
+            tooltip = LeftRadical_gain_influence_tt
+        }
+        clamp_variable = {
+            var = CPC_bar_a
+            max = 100
+            min = 0
+        }
+	}
+}
+country_event = {     #刑事判决书-70刑字第三十号
+	id = prc70s.40
+    immediate = {log = "[GetDateText]: [Root.GetTag]: id = prc70s.40"}
+	title = prc70s.40.t
+	desc = prc70s.40.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = prc70s.40.a
+        add_to_variable = {
+            CPC_bar_c = 1.1
+            tooltip = conservatives_gain_influence_tt
+        }
+        add_to_variable = {
+            CPC_bar_d = 0.6
+            tooltip = reformers_gain_a_little_influence_tt
+        }
+        clamp_variable = {
+            var = CPC_bar_d
+            max = 100
+            min = 0
+        }
+        clamp_variable = {
+            var = CPC_bar_c
+            max = 100
+            min = 0
+        }
+	}
+}
+
+#讨论国家主席废存问题事件事件链
+country_event = {     #国家主席职位撤不撤消捏
+	id = prc70s.30
+    immediate = {log = "[GetDateText]: [Root.GetTag]: id = prc70s.30"}
+	title = prc70s.30.t
+	desc = prc70s.30.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = prc70s.30.a
+		set_country_flag = PRC_abolition_of_the_chairmanship
+        country_event = {
+            id = prc70s.31
+            days = 10
+        }
+        ai_chance = {
+            base = 10
+        }
+	}
+    option = {
+		name = prc70s.30.b
+		set_country_flag = PRC_reletion_of_the_chairmanship
+        country_event = {
+            id = prc70s.31
+            days = 10
+        }
+        ai_chance = {
+            base = 10
+            modifier = {
+                factor = 0	
+                is_historical_focus_on = yes
+            }
+        }
+	}
+}
+country_event = {     #讨论四五计划
+	id = prc70s.31
+    immediate = {log = "[GetDateText]: [Root.GetTag]: id = prc70s.31"}
+	title = prc70s.31.t
+	desc = prc70s.31.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = prc70s.31.a
+		country_event = {
+            id = prc70s.32
+            days = 10
+        }
+    }
+}
+country_event = {     #战备问题赞不赞成捏
+	id = prc70s.32
+    immediate = {log = "[GetDateText]: [Root.GetTag]: id = prc70s.32"}
+	title = prc70s.32.t
+	desc = prc70s.32.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = prc70s.32.a
+		add_to_variable = {
+            CPC_bar_a = 0.6
+            tooltip = LeftRadical_gain_a_little_influence_tt
+        }
+        clamp_variable = {
+            var = CPC_bar_a
+            max = 100
+            min = 0
+        }
+	}
+    option = {
+		name = prc70s.32.b
+		add_to_variable = {
+            CPC_bar_d = 1.1
+            tooltip = reformers_gain_influence_tt
+        }
+        add_to_variable = {
+            CPC_bar_c = 0.6
+            tooltip = conservatives_gain_a_little_influence_tt
+        }
+        clamp_variable = {
+            var = CPC_bar_d
+            max = 100
+            min = 0
+        }
+        clamp_variable = {
+            var = CPC_bar_c
+            max = 100
+            min = 0
+        }
+	}
+}
+country_event = {   #毛大怒,痛斥陈伯达
+	id = prc70s.33
+    immediate = {log = "[GetDateText]: [Root.GetTag]: id = prc70s.33"}
+	title = prc70s.33.t
+	desc = prc70s.33.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = prc70s.33.a
+	}
+}
+country_event = {   #中政局投票未通过，猫脸色阴沉
+	id = prc70s.34
+    immediate = {log = "[GetDateText]: [Root.GetTag]: id = prc70s.34"}
+	title = prc70s.34.t
+	desc = prc70s.34.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = prc70s.34.a
+	}
+}
+country_event = {    #毛主席南巡
+	id = prc70s.35 
+ 	immediate = {log = "[GetDateText]: [Root.GetTag]: id = prc70s.35"}
+	title = prc70s.35.t
+	desc = prc70s.35.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = prc70s.35.a
+        kill_country_leader = yes
+		add_political_power = -400
+		add_stability = -0.3
+        set_politics = {
+            ruling_party = communism 
+            elections_allowed = no
+            last_election = "1971.9.13"
+            election_frequency = 60
+        }
+        add_country_leader_role = {
+            character = PRC_lin_biao
+            promote_leader = yes
+            country_leader = {
+                ideology = marxism_leninism
+                expire = "1980.10.20.1"
+                traits = {  }
+            }
+        }
+        hidden_effect = {
+            set_portraits = { 
+                character = PRC_lin_biao
+                civilian = { large = "gfx/leaders/PRC/LinBiao.dds" }
+                army = { large = "gfx/leaders/PRC/LinBiao.dds" }
+            }
+        }
+        swap_ideas = {
+            remove_idea = PRC70s_idea_Linbiao_action_2
+            add_idea = PRC70s_idea_Linbiao_action_3
+        }
+        set_country_flag = prc70s_linbiao_seizes_power_flag
+        mark_focus_tree_layout_dirty = yes
+        hidden_effect = {
+            clr_global_flag = PRC_GPCR_flag
+            every_owned_state = {
+                clear_variable = GPCR_province_zaozao_power_var
+                clear_variable = GPCR_province_laobao_power_var
+                clear_variable = GPCR_province_PLA_power_var
+                clear_variable = GPCR_province_PLA_tendency_var
+                clear_variable = GPCR_province_PLA_influence_var
+                clear_variable = GPCR_province_unrest_var
+                clear_variable = GPCR_province_zaozao_VS_laobao_influence_var
+                clear_variable = GPCR_province_unrest_monthly_vary_var0
+                clear_variable = GPCR_province_unrest_monthly_vary_var1
+                clear_variable = GPCR_province_unrest_monthly_vary_var2
+                remove_dynamic_modifier = {
+                    modifier = PRC_GPCR_state_modifier1
+                }
+                remove_dynamic_modifier = {
+                    modifier = PRC_GPCR_state_modifier2
+                }
+                remove_dynamic_modifier = {
+                    modifier = PRC_GPCR_state_modifier3
+                }
+            }
+            clear_variable = GPCR_province_zaozao_VS_laobao_var
+            clear_variable = GPCR_province_zaozao_power_gui_var
+            clear_variable = GPCR_province_laobao_power_gui_var
+            clear_variable = GPCR_province_unrest_gui_var
+            clear_variable = GPCR_province_unrest_monthly_vary_gui_var
+            clear_variable = GPCR_province_unrest_monthly_vary_gui_var0
+            clear_variable = GPCR_province_unrest_monthly_vary_gui_var1
+            clear_variable = GPCR_province_unrest_monthly_vary_gui_var2
+            clear_variable = GPCR_province_PLA_power_gui_var
+            clear_variable = GPCR_province_PLA_tendency_gui_var
+            clear_variable = GPCR_province_PLA_influence_gui_var
+            clear_variable = GPCR_province_PLA_tendency_pointer_frame
+            remove_ideas = PRC70s_idea_GPCR_leanings_to_REV5
+            remove_ideas = PRC70s_idea_GPCR_leanings_to_REV4
+            remove_ideas = PRC70s_idea_GPCR_leanings_to_REV3
+            remove_ideas = PRC70s_idea_GPCR_leanings_to_REV2
+            remove_ideas = PRC70s_idea_GPCR_leanings_to_REV1
+            remove_ideas = PRC70s_idea_GPCR_Neutrality
+            remove_ideas = PRC70s_idea_GPCR_leanings_to_CON1
+            remove_ideas = PRC70s_idea_GPCR_leanings_to_CON2
+            remove_ideas = PRC70s_idea_GPCR_leanings_to_CON3
+            remove_ideas = PRC70s_idea_GPCR_leanings_to_CON4
+            remove_ideas = PRC70s_idea_GPCR_leanings_to_CON5
+        }
+        ai_chance = {
+            base = 10
+            modifier = {
+                factor = 0	
+                is_historical_focus_on = yes
+            }
+        }
+        trigger = {
+            has_completed_focus = prc_70s_Three_loyal_to_four_infinite
+            has_completed_focus = establishing_the_enius_theory
+        }
+	}
+	option = {
+		name = prc70s.35.a
+        add_political_power = -300
+		add_stability = -0.25
+		country_event = {
+			id = prc70s.36
+		}
+        ai_chance = {
+            base = 10
+        }
+        trigger = {
+            NOT = {
+                has_completed_focus = prc_70s_Three_loyal_to_four_infinite
+                has_completed_focus = establishing_the_enius_theory
+            }
+        }
+	}
+}
+country_event = {    #林彪坠机
+	id = prc70s.36 
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.36" }
+	title = prc70s.36.t
+	desc = prc70s.36.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+    immediate = {
+        hidden_effect = {
+            retire_character = PRC_lin_biao
+		    retire_character = PRC_Lin_Liguo
+        }
+    }
+	option = {
+		name = prc70s.36.a
+		set_country_flag = linbiao_dead
+        mark_focus_tree_layout_dirty = yes
+        if = {
+            limit = {
+                has_idea = PRC70s_idea_Linbiao_action_2
+            }
+            remove_ideas = PRC70s_idea_Linbiao_action_2
+        }
+        if = {
+            limit = {
+                has_unit_leader = 14514
+            }
+            remove_unit_leader = 14514
+        }
+        if = {
+            limit = {
+                has_unit_leader = 19810
+            }
+            remove_unit_leader = 19810
+        }
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = { has_country_flag = prc_leader_change_1973 }
+                }
+                set_country_flag = prc_leader_change_1973
+                set_portraits = {
+                    character = PRC_mao_zedong
+                    civilian = { large = "GFX_Mao_1973" }
+                }
+            }
+        }
+	}
+}
+
+
+country_event = {    #派谁去联合国演讲呢
+	id = prc70s.37
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.37" }
+	title = prc70s.37.t
+	desc = prc70s.37.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = prc70s.37.a
+		set_country_flag = prc70s_aizi_yanjiang_flag
+        add_to_variable = {
+            CPC_bar_d = 1.1
+            tooltip = reformers_gain_influence_tt
+        }
+        clamp_variable = {
+            var = CPC_bar_d
+            max = 100
+            min = 0
+        }
+        news_event = {
+            id = prc70s_news.1
+            days = 1
+        }
+        ai_chance = {
+            base = 10
+        }
+	}
+    option = {
+		name = prc70s.37.b
+		set_country_flag = prc70s_zhanglaoshi_yanjiang_flag
+        add_to_variable = {
+            CPC_bar_a = 1.1
+            tooltip = LeftRadical_gain_influence_tt
+        }
+        clamp_variable = {
+            var = CPC_bar_a
+            max = 100
+            min = 0
+        }
+        news_event = {
+            id = prc70s_news.1
+            days = 1
+        }
+        ai_chance = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+        }
+	}
+    option = {
+		name = prc70s.37.c
+		set_country_flag = prc70s_huazi_yanjiang_flag
+        add_to_variable = {
+            CPC_bar_c = 1
+            tooltip = conservatives_gain_influence_tt
+        }
+        clamp_variable = {
+            var = CPC_bar_c
+            max = 100
+            min = 0
+        }
+        news_event = {
+            id = prc70s_news.1
+            days = 1
+        }
+        ai_chance = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+        }
+	}
+}
+
+#周恩来逝世----四五事件事件链
+country_event = {    #周恩来逝世
+	id = prc70s.38
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.38" }
+	title = prc70s.38.t
+	desc = prc70s.38.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+    mean_time_to_happen = {
+        days = 4
+    }
+    immediate = {
+        hidden_effect = {
+            country_event = {
+                id = prc70s.50
+                days = 176
+            }
+            country_event = {
+                id = prc70s.61
+                days = 224
+            }
+            country_event = {
+                id = prc70s.39
+                days = 76
+            }
+            country_event = {
+                id = prc70s.41
+                days = 84
+            }
+        }
+    }
+	option = {
+		name = prc70s.38.a
+        set_country_flag = prc70s_suoxiao_guimo_flag
+        hidden_effect = {
+            news_event = {
+                id = prc70s_news.3
+            }
+        }
+        ai_chance = {
+            base = 10
+        }
+	}
+    option = {
+		name = prc70s.38.b
+        set_country_flag = prc70s_kuoda_guimo_flag
+        hidden_effect = {
+            news_event = {
+                id = prc70s_news.3
+            }
+        }
+        ai_chance = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+        }
+	}
+}
+country_event = {    #缩小悼念规模或扩大规模至与周恩来地位相匹配
+	id = prc70s.39
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.39" }
+	title = {
+        text = prc70s.39.t.a
+        trigger = {
+            has_country_flag = prc70s_suoxiao_guimo_flag
+        }
+    }
+    title = {
+        text = prc70s.39.t.b
+        trigger = {
+            has_country_flag = prc70s_kuoda_guimo_flag
+        }
+    }
+    desc = {
+        text = prc70s.39.d.a
+        trigger = {
+            has_country_flag = prc70s_suoxiao_guimo_flag
+        }
+    }
+    desc = {
+        text = prc70s.39.d.b
+        trigger = {
+            has_country_flag = prc70s_kuoda_guimo_flag
+        }
+    }
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+    timeout_days = 6
+	option = {
+		name = prc70s.39.a
+        trigger = {
+            has_country_flag = prc70s_suoxiao_guimo_flag
+        }
+        clr_country_flag = prc70s_suoxiao_guimo_flag
+	}
+    option = {
+		name = prc70s.39.b
+        trigger = {
+            has_country_flag = prc70s_kuoda_guimo_flag
+        }
+        clr_country_flag = prc70s_kuoda_guimo_flag
+	}
+}
+country_event = {    #四五运动
+	id = prc70s.41
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.41" }
+	title = prc70s.41.t
+	desc = prc70s.41.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = prc70s.41.a
+        add_stability = -0.1
+        country_event = {
+            id = prc70s.42
+        }
+        ai_chance = {
+            base = 10
+        }
+	}
+    option = {
+		name = prc70s.41.a
+        add_stability = -0.1
+        country_event = {
+            id = prc70s.43
+        }
+        ai_chance = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+        }
+	}
+}
+country_event = {    #强硬处理
+	id = prc70s.42
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.42" }
+	title = prc70s.42.t
+	desc = prc70s.42.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = prc70s.42.a
+        country_event = {
+            id = prc70s.44
+        }
+	}
+}
+country_event = {    #温和处理
+	id = prc70s.43
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.43" }
+	title = prc70s.43.t
+	desc = prc70s.43.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = prc70s.43.a
+        country_event = {
+            id = prc70s.47
+        }
+	}
+}
+country_event = {    #调集工人民兵镇压
+	id = prc70s.44
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.44" }
+	title = prc70s.44.t
+	desc = prc70s.44.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = prc70s.44.a
+        add_manpower = -10
+        country_event = {
+            id = prc70s.45
+        }
+	}
+}
+country_event = {    #驱散天安门广场上的群众
+	id = prc70s.45
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.45" }
+	title = prc70s.45.t
+	desc = prc70s.45.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = prc70s.45.a
+        add_manpower = -5
+        country_event = {
+            id = prc70s.46
+            days = 2
+        }
+	}
+}
+country_event = {    #四五运动结束(otl)
+	id = prc70s.46
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.46" }
+	title = prc70s.46.t
+	desc = {
+        text = prc70s.46.d.a
+        trigger = {
+            NOT = { has_country_flag = PRC_revoke_appointment_of_Deng_flag }
+        }
+    }
+    desc = {
+        text = prc70s.46.d.b
+        trigger = {
+            NOT = { has_country_flag = PRC_revoke_appointment_of_Deng_flag }
+        }
+    }
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = prc70s.46.a
+        add_stability = 0.06
+        set_country_flag = PRC_70s_Hua_leadership_flag
+        if = {
+            limit = {
+                NOT = { has_completed_focus = criticize_deng_counterattack_the_right_deviationist_reversal_of_verdicts_trend }
+            }
+            complete_national_focus = criticize_deng_counterattack_the_right_deviationist_reversal_of_verdicts_trend
+        }
+        if = {
+            limit = { 
+                NOT = { has_country_flag = PRC_revoke_appointment_of_Deng_flag }
+            }
+            complete_national_focus = Remove_Deng_Xiaoping_from_all_posts_inside_and_outside_the_party
+        }
+	}
+}
+country_event = {    #对群众进行爱国主义演讲
+	id = prc70s.47
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.47" }
+	title = prc70s.47.t
+	desc = prc70s.47.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = prc70s.47.a
+        country_event = {
+            id = prc70s.48
+        }
+	}
+}
+country_event = {    #劝说天安门广场上的群众离开
+	id = prc70s.48
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.48" }
+	title = prc70s.48.t
+	desc = prc70s.48.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = prc70s.48.a
+        add_manpower = -3
+        country_event = {
+            id = prc70s.49
+            days = 2
+        }
+	}
+}
+country_event = {    #四五运动结束(温和)
+	id = prc70s.49
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.49" }
+	title = prc70s.49.t
+	desc = {
+        text = prc70s.49.d.a
+        trigger = {
+            NOT = { has_country_flag = PRC_revoke_appointment_of_Deng_flag }
+        }
+    }
+    desc = {
+        text = prc70s.49.d.b
+        trigger = {
+            NOT = { has_country_flag = PRC_revoke_appointment_of_Deng_flag }
+        }
+    }
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = prc70s.49.a
+        add_stability = 0.05
+        set_country_flag = PRC_70s_Hua_leadership_flag
+        if = {
+            limit = {
+                NOT = { has_completed_focus = criticize_deng_counterattack_the_right_deviationist_reversal_of_verdicts_trend }
+            }
+            complete_national_focus = criticize_deng_counterattack_the_right_deviationist_reversal_of_verdicts_trend
+        }
+        if = {
+            limit = { 
+                NOT = { has_country_flag = PRC_revoke_appointment_of_Deng_flag }
+            }
+            complete_national_focus = Retain_Deng_Xiaoping_as_Vice_Premier
+        }
+	}
+}
+
+#人物离世
+country_event = {    #朱德逝世
+	id = prc70s.50
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.50" }
+	title = prc70s.50.t
+	desc = prc70s.50.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+    immediate = {
+        hidden_effect = {
+            retire_character = PRC_zhu_de
+        }
+    }
+	option = {
+		name = prc70s.50.a
+	}
+}
+country_event = {    #陈毅逝世
+	id = prc70s.51
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.51" }
+	title = prc70s.51.t
+	desc = prc70s.51.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+	fire_only_once = yes
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        date > 1972.1.5
+        date < 1972.1.26
+    }
+    immediate = {
+        hidden_effect = {
+            retire_character = PRC_chen_yi
+        }
+    }
+	option = {
+		name = prc70s.51.a
+	}
+}
+country_event = {    #火葬刘少奇
+	id = prc70s.52
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.52" }
+	title = prc70s.52.t
+	desc = prc70s.52.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+	fire_only_once = yes
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        date > 1969.11.12
+        date < 1969.12.2
+    }
+	option = {
+		name = prc70s.52.a
+	}
+}
+country_event = {    #许光达逝世
+	id = prc70s.53
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.53" }
+	title = prc70s.53.t
+	desc = prc70s.53.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+	fire_only_once = yes
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        date > 1969.6.2
+        date < 1969.6.23
+    }
+    immediate = {
+    }
+	option = {
+		name = prc70s.53.a
+
+	}
+}
+country_event = {    #贺龙逝世
+	id = prc70s.54
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.54" }
+	title = prc70s.54.t
+	desc = prc70s.54.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+	fire_only_once = yes
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        date > 1969.6.9
+        date < 1969.6.30
+    }
+    immediate = {
+        hidden_effect = {
+            retire_character = PRC_he_long
+            country_event = {
+                id = prc70s.77
+                days = 153
+            }
+        }
+    }
+	option = {
+		name = prc70s.54.a
+        custom_effect_tooltip = PRC_70s_pingfan_helong_tt
+	}
+}
+country_event = {    #陶铸去世
+	id = prc70s.55
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.55" }
+	title = prc70s.55.t
+	desc = prc70s.55.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+	fire_only_once = yes
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        date > 1969.11.30
+        date < 1969.12.21
+    }
+	option = {
+		name = prc70s.55.a
+	}
+}
+country_event = {    #王进喜逝世
+	id = prc70s.56
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.56" }
+	title = prc70s.56.t
+	desc = prc70s.56.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+	fire_only_once = yes
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        date > 1970.11.14
+        date < 1970.12.4
+    }
+	option = {
+		name = prc70s.56.a
+	}
+}
+country_event = {    #张志新被杀
+	id = prc70s.57
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.57" }
+	title = prc70s.57.t
+	desc = prc70s.57.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+	fire_only_once = yes
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        date > 1975.4.3
+        date < 1975.4.24
+    }
+	option = {
+		name = prc70s.57.a
+	}
+}
+country_event = {    #董必武逝世
+	id = prc70s.58
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.58" }
+	title = prc70s.58.t
+	desc = prc70s.58.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+	fire_only_once = yes
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        date > 1975.4.1
+        date < 1975.4.22
+    }
+	option = {
+		name = prc70s.58.a
+	}
+}
+
+
+country_event = {    #珠峰海拔高程
+	id = prc70s.59
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.59" }
+	title = prc70s.59.t
+	desc = prc70s.59.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = prc70s.59.a
+	}
+}
+country_event = {    #红旗渠完工
+	id = prc70s.60
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.60" }
+	title = prc70s.60.t
+	desc = prc70s.60.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+	fire_only_once = yes
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        date > 1969.6.30
+        date < 1969.8.1
+    }
+	option = {
+		name = prc70s.60.a
+        607 = {
+            add_building_construction = {
+                type = water_infrastructure
+                level = 1
+                instant_build = yes
+            }
+        }
+	}
+}
+country_event = {    #三颗大毒草
+	id = prc70s.61
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.61" }
+	title = prc70s.61.t
+	desc = prc70s.61.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+    trigger = {
+        NOT = { 
+            has_country_flag = PRC_revoke_appointment_of_Deng_flag
+        }
+        origina_tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        date > 1976.8.22
+        date < 1976.9.12
+    }
+	option = {
+		name = prc70s.61.a
+	}
+}
+country_event = {    #深挖洞,广积粮,不称霸
+	id = prc70s.62
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.62" }
+	title = prc70s.62.t
+	desc = prc70s.62.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+	fire_only_once = yes
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        date > 1972.12.9
+        date < 1972.12.30
+    }
+	option = {
+		name = prc70s.62.a
+	}
+}
+country_event = {    #关于林彪反党集团反革命罪行的审查报告
+	id = prc70s.63
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.63" }
+	title = prc70s.63.t
+	desc = {
+        text = prc70s.63.d.a
+        trigger = {
+            has_country_flag = PRC_Linbiao_is_far_right_flag
+        }
+    }
+    desc = {
+        text = prc70s.63.d.b
+        trigger = {
+            has_country_flag = PRC_Linbiao_is_far_left_flag
+        }
+    }
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+	fire_only_once = yes
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        has_completed_focus = a_great_new_victory
+        date > 1973.8.19
+        date < 1973.9.9
+    }
+	option = {
+		name = prc70s.63.a
+        if = {
+            limit = {
+                has_country_flag = PRC_Linbiao_is_far_right_flag
+            }
+            add_to_variable = {
+                CPC_bar_a = 0.6
+                tooltip = LeftRadical_gain_a_little_influence_tt
+            }
+            add_to_variable = {
+                CPC_bar_d = -0.6
+                tooltip = reformers_lose_a_little_influence_tt
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = PRC_Linbiao_is_far_right_flag
+            }
+            add_to_variable = {
+                CPC_bar_d = 0.6
+                tooltip = reformers_gain_a_little_influence_tt
+            }
+            add_to_variable = {
+                CPC_bar_a = -0.6
+                tooltip = LeftRadical_lose_a_little_influence_tt
+            }
+        }
+        country_event = {
+            id = prc70s.25
+            days = 4
+        }
+	}
+}
+country_event = {    #发现兵马俑
+	id = prc70s.64
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.64" }
+	title = prc70s.64.t
+	desc = prc70s.64.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+	fire_only_once = yes
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        date > 1974.4.25
+        date < 1974.5.16
+    }
+	option = {
+		name = prc70s.64.a
+	}
+}
+country_event = {    #第七次特赦战犯
+	id = prc70s.65
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.65" }
+	title = prc70s.65.t
+	desc = prc70s.65.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+	fire_only_once = yes
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        date > 1975.3.18
+        date < 1975.4.8
+    }
+	option = {
+		name = prc70s.65.a
+	}
+}
+country_event = {    #智取威虎山发布
+	id = prc70s.66
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.66" }
+	title = prc70s.66.t
+	desc = prc70s.66.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+	fire_only_once = yes
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        date > 1970.9.30
+        date < 1970.10.21
+    }
+	option = {
+		name = prc70s.66.a
+	}
+}
+country_event = {    #李德生辞职
+	id = prc70s.67
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.67" }
+	title = prc70s.67.t
+	desc = prc70s.67.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+	fire_only_once = yes
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        date > 1975.1.1
+        date < 1975.1.31
+    }
+	option = {
+		name = prc70s.67.a
+	}
+}
+country_event = {    #坦赞铁路动工
+	id = prc70s.68
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.68" }
+	title = prc70s.68.t
+	desc = prc70s.68.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+	fire_only_once = yes
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        date > 1970.10.25
+        date < 1970.11.15
+        TZN = { is_subject = no }
+        ZAM = { is_subject = no }
+    }
+	option = {
+		name = prc70s.68.a
+        activate_mission =  PRC_70s_Tanzania_Zambia_railway_mission
+	}
+}
+country_event = {    #"1+2"的证明
+	id = prc70s.69
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.69" }
+	title = prc70s.69.t
+	desc = prc70s.69.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+	fire_only_once = yes
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        date > 1973.4.19
+        date < 1973.5.10
+    }
+	option = {
+		name = prc70s.69.a
+	}
+}
+country_event = {    #杂交水稻鉴定会
+	id = prc70s.70
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.70" }
+	title = prc70s.70.t
+	desc = prc70s.70.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+	fire_only_once = yes
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        date > 1975.10.20
+        date < 1975.11.10
+    }
+	option = {
+		name = prc70s.70.a
+	}
+}
+country_event = {    #河南驻马店特大暴雨
+	id = prc70s.71
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.71" }
+	title = prc70s.71.t
+	desc = prc70s.71.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+	fire_only_once = yes
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        date > 1975.8.1
+        date < 1975.8.22
+    }
+	option = {
+		name = prc70s.71.a
+        607 = {
+            damage_building = {
+                type = infrastructure
+                damage = 2
+            }
+        }
+	}
+}
+country_event = {    #睡虎地秦墓竹简
+	id = prc70s.72
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.72" }
+	title = prc70s.72.t
+	desc = prc70s.72.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+	fire_only_once = yes
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        date > 1975.12.9
+        date < 1975.12.30
+    }
+	option = {
+		name = prc70s.72.a
+	}
+}
+country_event = {    #北坡登上珠峰
+	id = prc70s.73
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.73" }
+	title = prc70s.73.t
+	desc = prc70s.73.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+	fire_only_once = yes
+    immediate = {
+        hidden_effect = {
+            country_event = {
+                id = prc70s.59
+                days = 57
+            }
+        }
+    }
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        date > 1975.5.26
+        date < 1975.6.16
+    }
+	option = {
+		name = prc70s.73.a
+        news_event = {
+            id = prc70s_news.6
+            days = 1
+        }
+	}
+}
+country_event = {    #吉林陨石雨
+	id = prc70s.74
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.74" }
+	title = prc70s.74.t
+	desc = prc70s.74.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+	fire_only_once = yes
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        date > 1976.3.7
+        date < 1976.3.28
+    }
+	option = {
+		name = prc70s.74.a
+	}
+}
+country_event = {    #革命典型小靳庄
+	id = prc70s.75
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.75" }
+	title = prc70s.75.t
+	desc = prc70s.75.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+	fire_only_once = yes
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        date > 1974.6.12
+        date < 1974.7.3
+    }
+	option = {
+		name = prc70s.75.a
+	}
+}
+country_event = {    #华国锋访问灾区
+	id = prc70s.76
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.76" }
+	title = prc70s.76.t
+	desc = prc70s.76.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = prc70s.76.a
+	}
+}
+country_event = {    #平反贺龙决议触发隐藏事件
+	id = prc70s.77
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.77" }
+	title = prc70s.77.t
+	desc = prc70s.77.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+    hidden = yes
+    immediate = {
+        set_country_flag = prc70s_pingfan_helong_flag
+    }
+	option = {
+		name = prc70s.77.a
+	}
+}
+country_event = {    #平反贺龙
+	id = prc70s.78
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.78" }
+	title = prc70s.78.t
+	desc = prc70s.78.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = prc70s.78.a
+	}
+}
+country_event = {    #埃德加斯诺再访中国
+	id = prc70s.79
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.79" }
+	title = prc70s.79.t
+	desc = prc70s.79.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+	fire_only_once = yes
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        date > 1970.8.9
+        date < 1971.3.1
+    }
+	option = {
+		name = prc70s.79.a
+        complete_national_focus = a_meet_with_edgar_snow
+	}
+}
+country_event = {    #小球转动大球
+	id = prc70s.80
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.80" }
+	title = prc70s.80.t
+	desc = prc70s.80.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+	fire_only_once = yes
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        date > 1971.4.6
+        date < 1971.4.27
+        USA = {
+            NOT = {
+                has_completed_focus = USA_60s_Outreach_to_Moscow
+            }
+        }
+    }
+	option = {
+		name = prc70s.80.a
+        USA = {
+            country_event = {
+                id = prc70s.81
+                days = 1
+            }
+        }
+	}
+}
+country_event = {    #中国邀请乒乓球队互访(美国接收事件一定同意)
+	id = prc70s.81
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.81" }
+	title = prc70s.81.t
+	desc = prc70s.81.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = prc70s.81.a
+        news_event = {
+            id = prc70s_news.2
+            days = 7
+        }
+	}
+}
+country_event = {    #叶海亚渠道(基辛格秘密访华)
+	id = prc70s.82
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.82" }
+	title = prc70s.82.t
+	desc = prc70s.82.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+	fire_only_once = no
+    trigger = {
+        OR = {
+            original_tag = PRC
+            original_tag = USA
+        }
+        PRC = {
+            has_country_leader = {
+                character = PRC_mao_zedong
+                ruling_only = yes
+            }
+        }
+        date > 1971.7.8
+        date < 1971.7.29
+        USA = {
+            NOT = {
+                has_completed_focus = USA_60s_Outreach_to_Moscow
+            }
+        }
+    }
+    immediate = {
+        if = {
+            limit = {
+                original_tag = USA
+                USA = {
+                    NOT = {
+                        has_completed_focus = USA_60s_Outreach_Beijing
+                    }
+                }
+            }
+            complete_national_focus = USA_60s_Outreach_Beijing
+        }
+    }
+	option = {
+		name = prc70s.82.a
+        if = {
+            limit = {
+                original_tag = PRC
+            }
+            country_event = {
+                id = prc70s.83
+                days = 2
+            }
+        }
+	}
+}
+country_event = {    #邀请美国总统访华
+	id = prc70s.83
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.83" }
+	title = prc70s.83.t
+	desc = prc70s.83.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = prc70s.83.a
+        USA = {
+            country_event = {
+                id = prc70s.84
+                days = 2
+            }
+        }
+	}
+}
+country_event = {    #周恩来的邀请
+	id = prc70s.84
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.84" }
+	title = prc70s.84.t
+	desc = prc70s.84.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = prc70s.84.a
+        PRC = {
+            country_event = {
+                id = prc70s.85
+                days = 1
+            }
+        }
+        set_global_flag = prc70s_accept_Zhous_invitation_flag
+        custom_effect_tooltip = prc70s_accept_Zhous_invitation_tt
+        trigger = {
+            NOT = { has_completed_focus = USA_60s_Outreach_to_Moscow }
+        }
+        ai_chance = {
+            base = 10
+        }
+	}
+    option = {
+		name = prc70s.84.b
+        PRC = {
+            country_event = {
+                id = prc70s.86
+               days = 1
+            }
+        }
+        set_global_flag = prc70s_Uprc70s_USA_rejected_to_visit_China_flag
+        trigger = {
+            NOT = { has_completed_focus = USA_60s_Outreach_to_Beijing }
+        }
+        ai_chance = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+        }
+	}
+}
+country_event = {    #美国总统接受了我们的邀请
+	id = prc70s.85
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.85" }
+	title = prc70s.85.t
+	desc = prc70s.85.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+    option = {
+		name = prc70s.85.a
+        custom_effect_tooltip = prc70s_accept_Zhous_invitation_tt
+	}
+}
+country_event = {    #美国总统拒绝了我们的邀请
+	id = prc70s.86
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.86" }
+	title = prc70s.86.t
+	desc = prc70s.86.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+    option = {
+		name = prc70s.86.a
+	}
+}
+country_event = {    #法国总统蓬皮杜访华
+	id = prc70s.87
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.87" }
+	title = prc70s.87.t
+	desc = prc70s.87.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+	fire_only_once = yes
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        FRA = {
+            has_country_leader = {
+                name = "Georges Pompidou"
+                ruling_only = yes
+            }
+        }
+        date > 1973.9.10
+        date < 1973.10.1
+    }
+    option = {
+		name = prc70s.87.a
+	}
+}
+country_event = {    #"风庆轮"事件
+	id = prc70s.88
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.87" }
+	title = prc70s.88.t
+	desc = prc70s.88.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+	fire_only_once = yes
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        date > 1974.9.29
+        date < 1974.10.20
+    }
+    option = {
+		name = prc70s.88.a
+        country_event = {
+            id = prc70s.101
+            days = 17
+        }
+	}
+}
+country_event = {
+	id = prc70s.111
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.111" }
+	title = prc70s.111.t
+	desc = prc70s.111.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+	fire_only_once = yes
+    hidden = yes
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        has_global_flag = prc70s_accept_Zhous_invitation_flag
+        date > 1972.2.20
+        date < 1972.3.12
+    }
+    option = {
+		name = prc70s.111.a
+        PRC = { country_event = prc70s.89 }
+        USA = { country_event = prc70s.89 }
+	}
+}
+country_event = {    #美国总统访华
+	id = prc70s.89
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.89" }
+	title = prc70s.89.t
+	desc = prc70s.89.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = no
+    option = {
+		name = prc70s.89.a
+        hidden_effect = {
+            if = {
+                limit = { original_tag = PRC }
+                clr_global_flag = prc70s_accept_Zhous_invitation_flag
+                news_event = {
+                    id = prc70s_news.4
+                }
+            }
+        }
+        if = {
+            limit = { original_tag = USA }
+            if = {
+                limit = {
+                    NOT = { has_completed_focus = USA_60s_State_Visit_to_China }
+                }
+                complete_national_focus = USA_60s_State_Visit_to_China
+            }
+            if = {
+                limit = {
+                    NOT = { has_completed_focus = USA_60s_The_Shanghai_Communique }
+                }
+                complete_national_focus = USA_60s_The_Shanghai_Communique
+            }
+        }
+        set_global_flag = prc70s_US_President_visited_China_flag
+	}
+}
+country_event = {    #四人帮的成立
+	id = prc70s.90
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.90" }
+	title = prc70s.90.t
+	desc = prc70s.90.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+    option = {
+		name = prc70s.90.a
+	}
+}
+country_event = {    #批林批孔运动
+	id = prc70s.91
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.91" }
+	title = prc70s.91.t
+	desc = prc70s.91.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+    #trigger = {
+    #    original_tag = PRC
+    #    has_country_leader = {
+    #        character = PRC_mao_zedong
+    #        ruling_only = yes
+    #    }
+    #    date > 1974.01.18
+    #    date < 1974.02.30
+    #}
+	fire_only_once = yes
+    option = {
+		name = prc70s.91.a
+        hidden_effect = {
+            every_owned_state = {
+                limit = {
+                    has_variable = ReligionAtheist
+                }
+                add_to_variable = {
+                    ReligionAtheist = 45
+                }
+                normalize_religion = yes
+            }
+        }
+        custom_effect_tooltip = anti_religion_campaign_TT
+        country_event = {
+            id = prc70s.92
+            days = 6
+        }
+	}
+}
+country_event = {    #评法批儒
+	id = prc70s.92
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.92" }
+	title = prc70s.92.t
+	desc = prc70s.92.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+    option = {
+		name = prc70s.92.a
+        hidden_effect = {
+            every_owned_state = {
+                limit = {
+                    has_variable = ReligionAtheist
+                }
+                add_to_variable = {
+                    ReligionAtheist = 80
+                }
+                normalize_religion = yes
+            }
+        }
+        custom_effect_tooltip = anti_religion_campaign_TT
+        add_to_variable = {
+            CPC_bar_a = 0.6
+            tooltip = LeftRadical_gain_a_little_influence_tt
+        }
+        clamp_variable = {
+            var = CPC_bar_a
+            max = 100
+            min = 0
+        }
+	}
+}
+country_event = {    #反击右倾回潮活动
+	id = prc70s.93
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.93" }
+	title = prc70s.93.t
+	desc = {
+        text = prc70s.93.d.a
+        trigger = {
+            has_country_flag = PRC_Linbiao_is_far_right_flag
+        }
+    }
+    desc = {
+        text = prc70s.93.d.b
+        trigger = {
+            has_country_flag = PRC_Linbiao_is_far_left_flag
+        }
+    }
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+    trigger = {
+        original_tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        date > 1973.10.1
+        date < 1973.10.22
+    }
+	fire_only_once = yes
+    option = {
+		name = prc70s.93.a
+        add_to_variable = {
+            CPC_bar_b = -0.6
+            tooltip = moderate_lose_a_little_influence_tt
+        }
+        add_to_variable = {
+            CPC_bar_d = -1.1
+            tooltip = reformers_lose_a_little_influence_tt
+        }
+        clamp_variable = {
+            var = CPC_bar_b
+            max = 100
+            min = 0
+        }
+        clamp_variable = {
+            var = CPC_bar_d
+            max = 100
+            min = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = prc70s.91
+                days = 109
+            }
+        }
+        trigger = {
+            has_country_flag = PRC_Linbiao_is_far_right_flag
+        }
+	}
+    option = { 
+		name = prc70s.93.b
+        hidden_effect = {
+            country_event = {
+                id = prc70s.91
+                days = 109
+            }
+        }
+        trigger = {
+            has_country_flag = PRC_Linbiao_is_far_left_flag
+        }
+	}
+}
+country_event = {    #白卷英雄
+	id = prc70s.94
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.94" }
+	title = prc70s.94.t
+	desc = prc70s.94.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+	fire_only_once = yes
+    trigger = {
+        original_tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        date > 1973.7.18
+        date < 1973.8.9
+    }
+    option = {
+		name = prc70s.94.a
+	}
+}
+country_event = {    #第二次庐山会议?
+	id = prc70s.95
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.95" }
+	title = prc70s.95.t
+	desc = {
+        text = prc70s.95.d.a
+        trigger = { 
+            NOT = { has_country_flag = prc_fengqinglun_GOF_flag }
+        }
+    }
+    desc = {
+        text = prc70s.95.d.b
+        trigger = { 
+            has_country_flag = prc_fengqinglun_GOF_flag
+        }
+    }
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+    option = {
+		name = prc70s.95.a
+        add_to_variable = {
+            CPC_bar_a = -0.6
+            tooltip = LeftRadical_lose_a_little_influence_tt
+        }
+        clamp_variable = {
+            var = CPC_bar_a
+            max = 100
+            min = 0
+        }
+        trigger = {
+            NOT = {
+                has_country_flag = prc_fengqinglun_GOF_flag
+                has_country_flag = prc_fengqinglun_Deng_flag
+            }
+        }
+	}
+    option = {
+		name = prc70s.95.b
+        custom_effect_tooltip = PRC_revoke_appointment_of_Deng_tt
+        remove_ideas = advisor_deng_xiaoping
+        add_to_variable = {
+            CPC_bar_d = -1.7
+            tooltip = reformers_lose_a_lot_influence_tt
+        }
+        clamp_variable = {
+            var = CPC_bar_d
+            max = 100
+            min = 0
+        }
+        set_country_flag = PRC_revoke_appointment_of_Deng_flag
+        clr_country_flag = prc_fengqinglun_GOF_flag
+        mark_focus_tree_layout_dirty = yes
+        trigger = {
+            has_country_flag = prc_fengqinglun_GOF_flag
+        }
+	}
+    option = {
+		name = prc70s.95.c
+        add_to_variable = {
+            CPC_bar_a = -1.1
+            tooltip = LeftRadical_lose_influence_tt
+        }
+        clamp_variable = {
+            var = CPC_bar_a
+            max = 100
+            min = 0
+        }
+        clr_country_flag = prc_fengqinglun_Deng_flag
+        trigger = {
+            has_country_flag = prc_fengqinglun_Deng_flag
+        }
+	}
+}
+country_event = {    #学习无产阶级专政理论
+	id = prc70s.96
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.96" }
+	title = prc70s.96.t
+	desc = prc70s.96.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        has_global_flag = prc70s_accept_Zhous_invitation_flag
+        date > 1975.2.17
+        date < 1975.3.10
+    }
+	fire_only_once = yes
+    option = {
+		name = prc70s.96.a
+        add_political_power = 20
+        hidden_effect = {
+            country_event = {
+                id = prc70s.97
+                days = 65
+            }
+        }
+	}
+}
+country_event = {    #反对经验主义
+	id = prc70s.97
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.97" }
+	title = prc70s.97.t
+	desc = {
+        text = prc70s.97.d.a
+        trigger = {
+            NOT = { has_country_flag = PRC_revoke_appointment_of_Deng_flag }
+        }
+    }
+    desc = {
+        text = prc70s.97.d.b
+        trigger = {
+            has_country_flag = PRC_revoke_appointment_of_Deng_flag
+        }
+    }
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+    option = {
+		name = prc70s.97.a
+        trigger = {
+            NOT = { has_country_flag = PRC_revoke_appointment_of_Deng_flag }
+        }
+	}
+    option = {
+		name = prc70s.97.b
+        trigger = {
+            has_country_flag = PRC_revoke_appointment_of_Deng_flag
+        }
+	}
+}
+country_event = {    #<论对资产阶级的全面专政>发表
+	id = prc70s.98
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.98" }
+	title = prc70s.98.t
+	desc = prc70s.98.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+	fire_only_once = yes
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        date > 1975.3.31
+        date < 1975.4.20
+    }
+    option = {
+		name = prc70s.98.a
+        add_political_power = 50
+        add_to_variable = {
+            CPC_bar_a = 0.6
+            tooltip = LeftRadical_gain_a_little_influence_tt
+        }
+        clamp_variable = {
+            var = CPC_bar_a
+            max = 100
+            min = 0
+        }
+	}
+}
+country_event = {    #评<水浒>运动
+	id = prc70s.99
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.99" }
+	title = prc70s.99.t
+	desc = prc70s.99.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = no
+	fire_only_once = yes
+    trigger = {
+        tag = PRC
+        has_country_leader = {
+            character = PRC_mao_zedong
+            ruling_only = yes
+        }
+        date > 1975.8.31
+        date < 1975.9.20
+    }
+    option = {
+		name = prc70s.99.a
+        add_to_variable = {
+            CPC_bar_d = -0.6
+            tooltip = reformers_lose_a_little_influence_tt
+        }
+        clamp_variable = {
+            var = CPC_bar_d
+            max = 100
+            min = 0
+        }
+	}
+}
+country_event = {    #毛远新的报告
+	id = prc70s.100
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.100" }
+	title = prc70s.100.t
+	desc = prc70s.100.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+    option = {
+		name = prc70s.100.a
+        add_to_variable = {
+            CPC_bar_a = 0.6
+            tooltip = LeftRadical_gain_a_little_influence_tt
+        }
+        add_to_variable = {
+            CPC_bar_c = 0.6
+            tooltip = conservatives_gain_a_little_influence_tt
+        }
+        add_to_variable = {
+            CPC_bar_b = -0.6
+            tooltip = moderate_lose_a_little_influence_tt
+        }
+        add_to_variable = {
+            CPC_bar_d = -1.1
+            tooltip = conservatives_lose_influence_tt
+        }
+        clamp_variable = {
+            var = CPC_bar_a
+            max = 100
+            min = 0
+        }
+        clamp_variable = {
+            var = CPC_bar_b
+            max = 100
+            min = 0
+        }
+        clamp_variable = {
+            var = CPC_bar_b
+            max = 100
+            min = 0
+        }
+        clamp_variable = {
+            var = CPC_bar_c
+            max = 100
+            min = 0
+        }
+        clamp_variable = {
+            var = CPC_bar_d
+            max = 100
+            min = 0
+        }
+        set_country_flag = PRC_unlock_criticize_Deng_flag
+	}
+}
+country_event = {    #丰庆轮之后
+	id = prc70s.101
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.101" }
+	title = prc70s.101.t
+	desc = prc70s.101.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+    option = {
+		name = prc70s.101.a
+        add_political_power = -25
+        country_event = {
+            id = prc70s.95
+            days = 1
+        }
+        ai_chance = {
+            base = 10
+        } 
+	}
+    option = {
+		name = prc70s.101.b
+        custom_effect_tooltip = PRC_fengqinglun_tt
+        hidden_effect = {
+            random_list = {
+                25 = {
+                    set_country_flag = prc_fengqinglun_GOF_flag
+                    country_event = {
+                        id = prc70s.95
+                        days = 2
+                    }
+                }
+                75 = {
+                    set_country_flag = prc_fengqinglun_Deng_flag
+                    country_event = {
+                        id = prc70s.95
+                        days = 2
+                    }
+                }
+            }
+        }
+        ai_chance = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+        }  
+	}
+}
+country_event = {    #猫死后
+	id = prc70s.102
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.102" }
+	title = prc70s.102.t
+	desc = prc70s.102.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+    timeout_days = 3
+    immediate = {
+        activate_mission = PRC_70s_destroy_GOF_mission
+    }
+    option = {
+		name = prc70s.102.a
+        complete_national_focus = Follow_the_established_policy
+        country_event = {
+            id = prc70s.103
+            hour = 15
+        }
+        ai_chance = {
+            base = 10
+        } 
+	}
+    option = {
+		name = prc70s.102.b
+        complete_national_focus = Follow_the_previous_policy
+        country_event = {
+            id = prc70s.103
+            hour = 15
+        }
+        ai_chance = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+        }  
+	}
+}
+country_event = {    
+	id = prc70s.103
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.103" }
+	title = prc70s.103.t
+	desc = prc70s.103.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+    timeout_days = 3
+    option = {
+		name = prc70s.103.a
+        unlock_national_focus = PRC_76_82_The_race_to_the_finish_line
+        ai_chance = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+        }
+	}
+    option = {
+		name = prc70s.103.b
+        unlock_national_focus = PRC_76_82_Destroying_the_Gang_of_Four
+        ai_chance = {
+            base = 10
+        } 
+	}
+}
+country_event = {    #粉碎GOF   
+	id = prc70s.104
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.104" }
+	title = prc70s.104.t
+	desc = prc70s.104.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+    option = {
+		name = prc70s.104.a
+        add_popularity = {
+            ideology = trotskyism
+            popularity = 0.05
+        }
+        add_popularity = {
+            ideology = socialist
+            popularity = 0.05
+        }
+		set_country_flag = PRC_GOF_has_been_destoryed_flag
+        custom_effect_tooltip = PRC_End_of_GPCR_tt
+        hidden_effect = {
+            clr_global_flag = PRC_GPCR_flag
+            every_owned_state = {
+                clear_variable = GPCR_province_zaozao_power_var
+                clear_variable = GPCR_province_laobao_power_var
+                clear_variable = GPCR_province_PLA_power_var
+                clear_variable = GPCR_province_PLA_tendency_var
+                clear_variable = GPCR_province_PLA_influence_var
+                clear_variable = GPCR_province_unrest_var
+                clear_variable = GPCR_province_zaozao_VS_laobao_influence_var
+                clear_variable = GPCR_province_unrest_monthly_vary_var0
+                clear_variable = GPCR_province_unrest_monthly_vary_var1
+                clear_variable = GPCR_province_unrest_monthly_vary_var2
+                remove_dynamic_modifier = {
+                    modifier = PRC_GPCR_state_modifier1
+                }
+                remove_dynamic_modifier = {
+                    modifier = PRC_GPCR_state_modifier2
+                }
+                remove_dynamic_modifier = {
+                    modifier = PRC_GPCR_state_modifier3
+                }
+            }
+            clear_variable = GPCR_province_zaozao_VS_laobao_var
+            clear_variable = GPCR_province_zaozao_power_gui_var
+            clear_variable = GPCR_province_laobao_power_gui_var
+            clear_variable = GPCR_province_unrest_gui_var
+            clear_variable = GPCR_province_unrest_monthly_vary_gui_var
+            clear_variable = GPCR_province_unrest_monthly_vary_gui_var0
+            clear_variable = GPCR_province_unrest_monthly_vary_gui_var1
+            clear_variable = GPCR_province_unrest_monthly_vary_gui_var2
+            clear_variable = GPCR_province_PLA_power_gui_var
+            clear_variable = GPCR_province_PLA_tendency_gui_var
+            clear_variable = GPCR_province_PLA_influence_gui_var
+            clear_variable = GPCR_province_PLA_tendency_pointer_frame
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_REV5
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_REV4
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_REV3
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_REV2
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_REV1
+			remove_ideas = PRC70s_idea_GPCR_Neutrality
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_CON1
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_CON2
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_CON3
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_CON4
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_CON5
+        }
+	}
+}
+country_event = {    #GOF掌权
+	id = prc70s.105
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.105" }
+	title = prc70s.105.t
+	desc = prc70s.105.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+    option = {
+		name = prc70s.105.a
+        create_country_leader = {
+            name = "Jiang Qing"
+            desc = "Jiang_Qing_desc"
+            picture = "Jiang_Qing.dds"
+            expire = "1985.9.9"
+            ideology = mao_zedong_thought
+            traits = {
+                
+            }
+        }
+        custom_effect_tooltip = PRC_End_of_GPCR_GOF_tt
+        hidden_effect = {
+            clr_global_flag = PRC_GPCR_flag
+            every_owned_state = {
+                clear_variable = GPCR_province_zaozao_power_var
+                clear_variable = GPCR_province_laobao_power_var
+                clear_variable = GPCR_province_PLA_power_var
+                clear_variable = GPCR_province_PLA_tendency_var
+                clear_variable = GPCR_province_PLA_influence_var
+                clear_variable = GPCR_province_unrest_var
+                clear_variable = GPCR_province_zaozao_VS_laobao_influence_var
+                clear_variable = GPCR_province_unrest_monthly_vary_var0
+                clear_variable = GPCR_province_unrest_monthly_vary_var1
+                clear_variable = GPCR_province_unrest_monthly_vary_var2
+                remove_dynamic_modifier = {
+                    modifier = PRC_GPCR_state_modifier1
+                }
+                remove_dynamic_modifier = {
+                    modifier = PRC_GPCR_state_modifier2
+                }
+                remove_dynamic_modifier = {
+                    modifier = PRC_GPCR_state_modifier3
+                }
+            }
+            clear_variable = GPCR_province_zaozao_VS_laobao_var
+            clear_variable = GPCR_province_zaozao_power_gui_var
+            clear_variable = GPCR_province_laobao_power_gui_var
+            clear_variable = GPCR_province_unrest_gui_var
+            clear_variable = GPCR_province_unrest_monthly_vary_gui_var
+            clear_variable = GPCR_province_unrest_monthly_vary_gui_var0
+            clear_variable = GPCR_province_unrest_monthly_vary_gui_var1
+            clear_variable = GPCR_province_unrest_monthly_vary_gui_var2
+            clear_variable = GPCR_province_PLA_power_gui_var
+            clear_variable = GPCR_province_PLA_tendency_gui_var
+            clear_variable = GPCR_province_PLA_influence_gui_var
+            clear_variable = GPCR_province_PLA_tendency_pointer_frame
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_REV5
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_REV4
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_REV3
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_REV2
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_REV1
+			remove_ideas = PRC70s_idea_GPCR_Neutrality
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_CON1
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_CON2
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_CON3
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_CON4
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_CON5
+            load_focus_tree = PRC_GOF_J
+        }
+	}
+}
+country_event = {    #PLA政变1
+	id = prc70s.106
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.106" }
+	title = prc70s.106.t
+	desc = prc70s.106.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+    option = {
+		name = prc70s.106.a
+        set_politics = {
+            ruling_party = neutrality
+            elections_allowed = no
+            last_election = "1976.9.9"
+            election_frequency = 60
+            long_name = PRC_nationalist_party
+            name = PRC_nationalist_party_long
+        }
+		add_country_leader_role = {
+            character = PRC_ye_jianying
+            promote_leader = yes
+            country_leader = {
+                ideology = military_junta
+                expire = "1986.9.9.1"
+                traits = {
+				
+				}
+            }
+        }
+        custom_effect_tooltip = PRC_End_of_GPCR_tt
+        hidden_effect = {
+		    set_portraits = {
+				character = PRC_ye_jianying
+				civilian = { large = "gfx/leaders/PRC/Ye_Jianying.dds" }
+				army = { large = "gfx/leaders/PRC/Ye_Jianying.dds" }
+			}
+            set_cosmetic_tag = PRC_PLA_Govern
+            clr_global_flag = PRC_GPCR_flag
+            every_owned_state = {
+                clear_variable = GPCR_province_zaozao_power_var
+                clear_variable = GPCR_province_laobao_power_var
+                clear_variable = GPCR_province_PLA_power_var
+                clear_variable = GPCR_province_PLA_tendency_var
+                clear_variable = GPCR_province_PLA_influence_var
+                clear_variable = GPCR_province_unrest_var
+                clear_variable = GPCR_province_zaozao_VS_laobao_influence_var
+                clear_variable = GPCR_province_unrest_monthly_vary_var0
+                clear_variable = GPCR_province_unrest_monthly_vary_var1
+                clear_variable = GPCR_province_unrest_monthly_vary_var2
+                remove_dynamic_modifier = {
+                    modifier = PRC_GPCR_state_modifier1
+                }
+                remove_dynamic_modifier = {
+                    modifier = PRC_GPCR_state_modifier2
+                }
+                remove_dynamic_modifier = {
+                    modifier = PRC_GPCR_state_modifier3
+                }
+            }
+            clear_variable = GPCR_province_zaozao_VS_laobao_var
+            clear_variable = GPCR_province_zaozao_power_gui_var
+            clear_variable = GPCR_province_laobao_power_gui_var
+            clear_variable = GPCR_province_unrest_gui_var
+            clear_variable = GPCR_province_unrest_monthly_vary_gui_var
+            clear_variable = GPCR_province_unrest_monthly_vary_gui_var0
+            clear_variable = GPCR_province_unrest_monthly_vary_gui_var1
+            clear_variable = GPCR_province_unrest_monthly_vary_gui_var2
+            clear_variable = GPCR_province_PLA_power_gui_var
+            clear_variable = GPCR_province_PLA_tendency_gui_var
+            clear_variable = GPCR_province_PLA_influence_gui_var
+            clear_variable = GPCR_province_PLA_tendency_pointer_frame
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_REV5
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_REV4
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_REV3
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_REV2
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_REV1
+			remove_ideas = PRC70s_idea_GPCR_Neutrality
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_CON1
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_CON2
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_CON3
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_CON4
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_CON5
+            load_focus_tree = PRC_PLA_Y
+        }
+	}
+}
+country_event = {    #PLA政变2
+	id = prc70s.107
+ 	immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.107" }
+	title = prc70s.107.t
+	desc = prc70s.107.d
+	#picture = GFX_news_event_india_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+    option = {
+		name = prc70s.107.a
+        set_politics = {
+            ruling_party = neutrality
+            elections_allowed = no
+            last_election = "1976.9.9"
+            election_frequency = 60
+            long_name = PRC_nationalist_party
+            name = PRC_nationalist_party_long
+        }
+        add_country_leader_role = {
+            character = PRC_ye_jianying
+            promote_leader = yes
+            country_leader = {
+                ideology = military_junta
+                expire = "1986.9.9.1"
+                traits = {
+				
+				}
+            }
+        }
+        custom_effect_tooltip = PRC_End_of_GPCR_tt
+        hidden_effect = {
+		    set_portraits = {
+				character = PRC_ye_jianying
+				civilian = { large = "gfx/leaders/PRC/Ye_Jianying.dds" }
+				army = { large = "gfx/leaders/PRC/Ye_Jianying.dds" }
+			}
+            set_cosmetic_tag = PRC_PLA_Govern
+            clr_global_flag = PRC_GPCR_flag
+            every_owned_state = {
+                clear_variable = GPCR_province_zaozao_power_var
+                clear_variable = GPCR_province_laobao_power_var
+                clear_variable = GPCR_province_PLA_power_var
+                clear_variable = GPCR_province_PLA_tendency_var
+                clear_variable = GPCR_province_PLA_influence_var
+                clear_variable = GPCR_province_unrest_var
+                clear_variable = GPCR_province_zaozao_VS_laobao_influence_var
+                clear_variable = GPCR_province_unrest_monthly_vary_var0
+                clear_variable = GPCR_province_unrest_monthly_vary_var1
+                clear_variable = GPCR_province_unrest_monthly_vary_var2
+                remove_dynamic_modifier = {
+                    modifier = PRC_GPCR_state_modifier1
+                }
+                remove_dynamic_modifier = {
+                    modifier = PRC_GPCR_state_modifier2
+                }
+                remove_dynamic_modifier = {
+                    modifier = PRC_GPCR_state_modifier3
+                }
+            }
+            clear_variable = GPCR_province_zaozao_VS_laobao_var
+            clear_variable = GPCR_province_zaozao_power_gui_var
+            clear_variable = GPCR_province_laobao_power_gui_var
+            clear_variable = GPCR_province_unrest_gui_var
+            clear_variable = GPCR_province_unrest_monthly_vary_gui_var
+            clear_variable = GPCR_province_unrest_monthly_vary_gui_var0
+            clear_variable = GPCR_province_unrest_monthly_vary_gui_var1
+            clear_variable = GPCR_province_unrest_monthly_vary_gui_var2
+            clear_variable = GPCR_province_PLA_power_gui_var
+            clear_variable = GPCR_province_PLA_tendency_gui_var
+            clear_variable = GPCR_province_PLA_influence_gui_var
+            clear_variable = GPCR_province_PLA_tendency_pointer_frame
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_REV5
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_REV4
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_REV3
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_REV2
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_REV1
+			remove_ideas = PRC70s_idea_GPCR_Neutrality
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_CON1
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_CON2
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_CON3
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_CON4
+			remove_ideas = PRC70s_idea_GPCR_leanings_to_CON5
+            load_focus_tree = PRC_PLA_Y
+        }
+	}
+}
+
+
+country_event = {  #中美贸易谈判
+    id = prc70s.112
+    immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.112" }
+    title = prc70s.112.t
+    desc = prc70s.112.d
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = prc70s.112.a
+        set_global_flag = prc70s_CN_USA_trade_negotiation_cn
+        set_global_flag = prc70s_CN_USA_trade_negotiation_cn_flag
+        country_event = {
+            id = prc70s.113
+            hours = 9
+        }
+        ai_chance = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+        }
+    }
+    option = {
+        name = prc70s.112.b
+        set_global_flag = prc70s_CN_USA_trade_negotiation
+        set_global_flag = prc70s_CN_USA_trade_negotiation_flag
+        country_event = {
+            id = prc70s.113
+            hours = 9
+        }
+        ai_chance = {
+            base = 10
+        }
+    }
+    option = {
+        name = prc70s.112.c
+        set_global_flag = prc70s_CN_USA_trade_negotiation_us
+        set_global_flag = prc70s_CN_USA_trade_negotiation_us_flag
+        country_event = {
+            id = prc70s.113
+            hours = 9
+        }
+        ai_chance = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+        }
+    }
+}
+country_event = {  #来自中方的提议
+    id = prc70s.113
+    immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.113" }
+    title = prc70s.113.t
+    desc = prc70s.113.d
+    fire_only_once = no
+    is_triggered_only = yes
+    option = {
+        name = prc70s.113.a
+        hidden_effect = {
+            if = {
+                limit = {
+                    has_global_flag = prc70s_Uprc70s_USA_rejected_to_visit_China_flag
+                    has_global_flag = prc70s_CN_USA_trade_negotiation_us_flag
+                }
+                random_list = {
+                    0 = {
+                        if = {
+                            limit = {
+                                has_global_flag = prc70s_CN_USA_trade_negotiation_cn_flag
+                            }
+                            clr_global_flag = prc70s_CN_USA_trade_negotiation_cn_flag
+                        }
+                        else_if = {
+                            limit = {
+                                has_global_flag = prc70s_CN_USA_trade_negotiation_flag
+                            }
+                            clr_global_flag = prc70s_CN_USA_trade_negotiation_flag
+                        }
+                        else_if = {
+                            limit = {
+                                has_global_flag = prc70s_CN_USA_trade_negotiation_us_flag
+                            }
+                            clr_global_flag = prc70s_CN_USA_trade_negotiation_us_flag
+                        }
+                        PRC = {
+                            country_event = {
+                                id = prc70s.114
+                                hours = 9
+                            }
+                        }
+                    }
+                    100 = {
+                        country_event = {
+                            id = prc70s.115
+                            hours = 9
+                        }
+                        PRC = {
+                            id = prc70s.115
+                            hours = 9
+                        }
+                    }
+                }
+            }
+            else_if = {
+                limit = {
+                    has_global_flag = prc70s_Uprc70s_USA_rejected_to_visit_China_flag
+                    has_global_flag = prc70s_CN_USA_trade_negotiation_flag
+                }
+                random_list = {
+                    60 = {
+                        if = {
+                            limit = {
+                                has_global_flag = prc70s_CN_USA_trade_negotiation_cn_flag
+                            }
+                            clr_global_flag = prc70s_CN_USA_trade_negotiation_cn_flag
+                        }
+                        else_if = {
+                            limit = {
+                                has_global_flag = prc70s_CN_USA_trade_negotiation_flag
+                            }
+                            clr_global_flag = prc70s_CN_USA_trade_negotiation_flag
+                        }
+                        else_if = {
+                            limit = {
+                                has_global_flag = prc70s_CN_USA_trade_negotiation_us_flag
+                            }
+                            clr_global_flag = prc70s_CN_USA_trade_negotiation_us_flag
+                        }
+                        PRC = {
+                            country_event = {
+                                id = prc70s.114
+                                hours = 9
+                            }
+                        }
+                    }
+                    40 = {
+                        country_event = {
+                            id = prc70s.115
+                            hours = 9
+                        }
+                        PRC = {
+                            id = prc70s.115
+                            hours = 9
+                        }
+                    }
+                }
+            }
+            else_if = {
+                limit = {
+                    has_global_flag = prc70s_Uprc70s_USA_rejected_to_visit_China_flag
+                    has_global_flag = prc70s_CN_USA_trade_negotiation_cn_flag
+                }
+                random_list = {
+                    100 = {
+                        if = {
+                            limit = {
+                                has_global_flag = prc70s_CN_USA_trade_negotiation_cn_flag
+                            }
+                            clr_global_flag = prc70s_CN_USA_trade_negotiation_cn_flag
+                        }
+                        else_if = {
+                            limit = {
+                                has_global_flag = prc70s_CN_USA_trade_negotiation_flag
+                            }
+                            clr_global_flag = prc70s_CN_USA_trade_negotiation_flag
+                        }
+                        else_if = {
+                            limit = {
+                                has_global_flag = prc70s_CN_USA_trade_negotiation_us_flag
+                            }
+                            clr_global_flag = prc70s_CN_USA_trade_negotiation_us_flag
+                        }
+                    }
+                    PRC = {
+                        country_event = {
+                            id = prc70s.114
+                            hours = 9
+                        }
+                    }
+                    0 = {
+                        country_event = {
+                            id = prc70s.115
+                            hours = 9
+                        }
+                        PRC = {
+                            id = prc70s.115
+                            hours = 9
+                        }
+                    }
+                }
+            }
+            else_if = {
+                limit = {
+                    has_global_flag = prc70s_US_President_visited_China_flag
+                    has_global_flag = prc70s_CN_USA_trade_negotiation_us_flag
+                }
+                random_list = {
+                    0 = {
+                        if = {
+                            limit = {
+                                has_global_flag = prc70s_CN_USA_trade_negotiation_cn_flag
+                            }
+                            clr_global_flag = prc70s_CN_USA_trade_negotiation_cn_flag
+                        }
+                        else_if = {
+                            limit = {
+                                has_global_flag = prc70s_CN_USA_trade_negotiation_flag
+                            }
+                            clr_global_flag = prc70s_CN_USA_trade_negotiation_flag
+                        }
+                        else_if = {
+                            limit = {
+                                has_global_flag = prc70s_CN_USA_trade_negotiation_us_flag
+                            }
+                            clr_global_flag = prc70s_CN_USA_trade_negotiation_us_flag
+                        }
+                        PRC = {
+                            country_event = {
+                                id = prc70s.114
+                                hours = 9
+                            }
+                        }
+                    }
+                    100 = {
+                        country_event = {
+                            id = prc70s.115
+                            hours = 9
+                        }
+                        PRC = {
+                            id = prc70s.115
+                            hours = 9
+                        }
+                    }
+                }
+            }
+            else_if = {
+                limit = {
+                    has_global_flag = prc70s_US_President_visited_China_flag
+                    has_global_flag = prc70s_CN_USA_trade_negotiation_flag
+                }
+                random_list = {
+                    0 = {
+                        if = {
+                            limit = {
+                                has_global_flag = prc70s_CN_USA_trade_negotiation_cn_flag
+                            }
+                            clr_global_flag = prc70s_CN_USA_trade_negotiation_cn_flag
+                        }
+                        else_if = {
+                            limit = {
+                                has_global_flag = prc70s_CN_USA_trade_negotiation_flag
+                            }
+                            clr_global_flag = prc70s_CN_USA_trade_negotiation_flag
+                        }
+                        else_if = {
+                            limit = {
+                                has_global_flag = prc70s_CN_USA_trade_negotiation_us_flag
+                            }
+                            clr_global_flag = prc70s_CN_USA_trade_negotiation_us_flag
+                        }
+                        PRC = {
+                            country_event = {
+                                id = prc70s.114
+                                hours = 9
+                            }
+                        }
+                    }
+                    100 = {
+                        country_event = {
+                            id = prc70s.115
+                            hours = 9
+                        }
+                        PRC = {
+                            id = prc70s.115
+                            hours = 9
+                        }
+                    }
+                }
+            }
+            else_if = {
+                limit = {
+                    has_global_flag = prc70s_US_President_visited_China_flag
+                    has_global_flag = prc70s_CN_USA_trade_negotiation_cn_flag
+                }
+                random_list = {
+                    80 = {
+                        if = {
+                            limit = {
+                                has_global_flag = prc70s_CN_USA_trade_negotiation_cn_flag
+                            }
+                            clr_global_flag = prc70s_CN_USA_trade_negotiation_cn_flag
+                        }
+                        else_if = {
+                            limit = {
+                                has_global_flag = prc70s_CN_USA_trade_negotiation_flag
+                            }
+                            clr_global_flag = prc70s_CN_USA_trade_negotiation_flag
+                        }
+                        else_if = {
+                            limit = {
+                                has_global_flag = prc70s_CN_USA_trade_negotiation_us_flag
+                            }
+                            clr_global_flag = prc70s_CN_USA_trade_negotiation_us_flag
+                        }
+                        PRC = {
+                            country_event = {
+                                id = prc70s.114
+                                hours = 9
+                            }
+                        }
+                    }
+                    20 = {
+                        country_event = {
+                            id = prc70s.115
+                            hours = 9
+                        }
+                        PRC = {
+                            id = prc70s.115
+                            hours = 9
+                        }
+                    }
+                }
+            }
+        }
+
+        ai_chance = {
+            base = 10
+            modifier = {
+                factor = 0.6
+                has_global_flag = prc70s_Uprc70s_USA_rejected_to_visit_China_flag
+                has_global_flag = prc70s_CN_USA_trade_negotiation_flag
+            }
+            modifier = {
+                factor = 0
+                has_global_flag = prc70s_Uprc70s_USA_rejected_to_visit_China_flag
+                has_global_flag = prc70s_CN_USA_trade_negotiation_us_flag
+            }
+            modifier = {
+                factor = 0.8
+                has_global_flag = prc70s_US_President_visited_China_flag
+                has_country_flag = prc70s_CN_USA_trade_negotiation_cn_flag
+            }
+            modifier = {
+                factor = 0
+                has_global_flag = prc70s_US_President_visited_China_flag
+                has_country_flag = prc70s_CN_USA_trade_negotiation_flag
+            }
+            modifier = {
+                factor = 0
+                has_global_flag = prc70s_US_President_visited_China_flag
+                has_country_flag = prc70s_CN_USA_trade_negotiation_us_flag
+            }
+        }
+    }
+    option = {
+        name = prc70s.113.b
+        country_event = {
+            id = prc70s.115
+            hours = 9
+        }
+        PRC = {
+            country_event = {
+                id = prc70s.115
+                hours = 9
+            }
+        }
+        ai_chance = {
+            base = 10
+            modifier = {
+                factor = 0
+                has_global_flag = prc70s_Uprc70s_USA_rejected_to_visit_China_flag
+                has_global_flag = prc70s_CN_USA_trade_negotiation_cn_flag
+            }
+            modifier = {
+                factor = 0.4
+                has_global_flag = prc70s_Uprc70s_USA_rejected_to_visit_China_flag
+                has_global_flag = prc70s_CN_USA_trade_negotiation_flag
+            }
+            modifier = {
+                factor = 0.2
+                has_global_flag = prc70s_US_President_visited_China_flag
+                has_country_flag = prc70s_CN_USA_trade_negotiation_cn_flag
+            }
+        }
+    }
+}
+country_event = {  #未达成共识,谈判继续
+    id = prc70s.114
+    immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.114" }
+    title = prc70s.114.t
+    desc = prc70s.114.d
+    fire_only_once = no
+    is_triggered_only = yes
+    option = {
+        name = prc70s.114.a
+        set_global_flag = prc70s_CN_USA_trade_negotiation_cn
+        set_global_flag = prc70s_CN_USA_trade_negotiation_cn_flag
+        country_event = {
+            id = prc70s.113
+            hours = 9
+        }
+        trigger = {
+            NOT = { has_global_flag = prc70s_CN_USA_trade_negotiation_cn }
+        }
+    }
+    option = {
+        name = prc70s.114.b
+        set_global_flag = prc70s_CN_USA_trade_negotiation
+        set_global_flag = prc70s_CN_USA_trade_negotiation_flag
+        country_event = {
+            id = prc70s.113
+            hours = 9
+        }
+        trigger = {
+            NOT = { has_global_flag = prc70s_CN_USA_trade_negotiation }
+        }
+    }
+    option = {
+        name = prc70s.114.c
+        set_global_flag = prc70s_CN_USA_trade_negotiation_us
+        set_global_flag = prc70s_CN_USA_trade_negotiation_us_flag
+        country_event = {
+            id = prc70s.113
+            hours = 9
+        }
+        trigger = {
+            NOT = { has_global_flag = prc70s_CN_USA_trade_negotiation_us }
+        }
+    }
+}
+country_event = {  #中美贸易谈判结束
+    id = prc70s.115
+    title = prc70s.115.t
+    desc = prc70s.115.d
+    fire_only_once = no
+    is_triggered_only = yes
+    option = {
+        name = prc70s.115.a
+        if = {
+            limit = {
+                has_global_flag = prc70s_CN_USA_trade_negotiation_cn_flag
+            }
+            USA = {
+				add_timed_idea = {
+					days = 1460
+					idea = PRC70s_idea_Sino_USA_Economic_and_Trade_Agreement_for_USA_1
+				}
+			}
+			PRC = {
+				add_timed_idea = {
+					days = 1460
+					idea = PRC70s_idea_Sino_USA_Economic_and_Trade_Agreement_for_PRC_1
+				}
+			}
+        }
+        else_if = {
+            limit = {
+                has_global_flag = prc70s_CN_USA_trade_negotiation_flag
+            }
+            USA = {
+				add_timed_idea = {
+					days = 1460
+					idea = PRC70s_idea_Sino_USA_Economic_and_Trade_Agreement_for_USA
+				}
+			}
+			PRC = {
+				add_timed_idea = {
+					days = 1460
+					idea = PRC70s_idea_Sino_USA_Economic_and_Trade_Agreement_for_PRC
+				}
+			}
+        }
+        else_if = {
+            limit = {
+                has_global_flag = prc70s_CN_USA_trade_negotiation_us_flag
+            }
+            USA = {
+				add_timed_idea = {
+					days = 1460
+					idea = PRC70s_idea_Sino_USA_Economic_and_Trade_Agreement_for_USA_2
+				}
+			}
+			PRC = {
+				add_timed_idea = {
+					days = 1460
+					idea = PRC70s_idea_Sino_USA_Economic_and_Trade_Agreement_for_PRC_2
+				}
+			}
+        }
+        clr_global_flag = prc70s_CN_USA_trade_negotiation_cn
+        clr_global_flag = prc70s_CN_USA_trade_negotiation
+        clr_global_flag = prc70s_CN_USA_trade_negotiation_us
+        clr_global_flag = prc70s_CN_USA_trade_negotiation_cn_flag
+        clr_global_flag = prc70s_CN_USA_trade_negotiation_flag
+        clr_global_flag = prc70s_CN_USA_trade_negotiation_us_flag
+        trigger = {
+            original_tag = PRC
+        }
+    }
+    option = {
+        name = prc70s.115.b
+        effect_tooltip = {
+            if = {
+                limit = {
+                    OR = {
+                        has_global_flag = prc70s_CN_USA_trade_negotiation_cn_flag
+                        has_idea = PRC70s_idea_Sino_USA_Economic_and_Trade_Agreement_for_USA_1
+                    }
+                    
+                }
+                USA = {
+                    add_timed_idea = {
+                        days = 1460
+                        idea = PRC70s_idea_Sino_USA_Economic_and_Trade_Agreement_for_USA_1
+                    }
+                }
+                PRC = {
+                    add_timed_idea = {
+                        days = 1460
+                        idea = PRC70s_idea_Sino_USA_Economic_and_Trade_Agreement_for_PRC_1
+                    }
+                }
+            }
+            else_if = {
+                limit = {
+                    OR = {
+                        has_global_flag = prc70s_CN_USA_trade_negotiation_flag
+                        has_idea = PRC70s_idea_Sino_USA_Economic_and_Trade_Agreement_for_USA
+                    }
+                    
+                }
+                USA = {
+                    add_timed_idea = {
+                        days = 1460
+                        idea = PRC70s_idea_Sino_USA_Economic_and_Trade_Agreement_for_USA
+                    }
+                }
+                PRC = {
+                    add_timed_idea = {
+                        days = 1460
+                        idea = PRC70s_idea_Sino_USA_Economic_and_Trade_Agreement_for_PRC
+                    }
+                }
+            }
+            else_if = {
+                limit = {
+                    OR = {
+                        has_global_flag = prc70s_CN_USA_trade_negotiation_us_flag
+                        has_idea = PRC70s_idea_Sino_USA_Economic_and_Trade_Agreement_for_USA_2
+                    }
+                    
+                }
+                USA = {
+                    add_timed_idea = {
+                        days = 1460
+                        idea = PRC70s_idea_Sino_USA_Economic_and_Trade_Agreement_for_USA_2
+                    }
+                }
+                PRC = {
+                    add_timed_idea = {
+                        days = 1460
+                        idea = PRC70s_idea_Sino_USA_Economic_and_Trade_Agreement_for_PRC_2
+                    }
+                }
+            }
+        }
+        trigger = {
+            original_tag = USA
+        }
+    }
+}
+
+
+country_event = {  #中国要求美国解除对中禁运法令
+    id = prc70s.116
+    immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.116" }
+    title = prc70s.116.t
+    desc = prc70s.116.d
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = prc70s.116.a
+        country_event = {
+            id = prc70s.117
+            hours = 17
+        }
+        trigger = {
+            has_global_flag = prc70s_US_President_visited_China_flag
+        }
+        ai_chance = {
+            base = 10
+        }
+    }
+    option = {
+        name = prc70s.116.b
+        country_event = {
+            id = prc70s.118
+            hours = 17
+        }
+        trigger = {
+            has_global_flag = prc70s_Uprc70s_USA_rejected_to_visit_China_flag
+        }
+        ai_chance = {
+            base = 10
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+        }
+    }
+}
+country_event = {  #美国解除对中禁运法令
+    id = prc70s.117
+    immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.117" }
+    title = prc70s.117.t
+    desc = prc70s.117.d
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = prc70s.117.a
+        add_stability = 0.2
+        USA = {
+            break_embargo = PRC
+        }
+    }
+}
+country_event = {  #美国继续对中禁运
+    id = prc70s.118
+    immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.118" }
+    title = prc70s.118.t
+    desc = prc70s.118.d
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = prc70s.118.a
+    }
+}
+country_event = {  #69-76事件计数
+    id = prc70s.119
+    immediate = { log = "[GetDateText]: [Root.GetTag]: id = prc70s.119" }
+    title = prc70s.119.t
+    desc = prc70s.119.d
+    fire_only_once = yes
+    is_triggered_only = no
+    trigger = {
+        always = no
+    }
+    hidden = yes
+    option = {
+        name = prc70s.119.a
+    }
+}
+
+add_namespace = prc70s_news
+news_event = {    #联合国的演讲
+    id = prc70s_news.1
+    #picture = GFX_my_news_event_picture
+    title = {
+        text = prc70s_news.1.t.a
+        trigger = {
+            PRC = { has_country_flag = prc70s_aizi_yanjiang_flag }
+        }
+    }
+    title = {
+        text = prc70s_news.1.t.b
+        trigger = {
+            PRC = { has_country_flag = prc70s_zhanglaoshi_yanjiang_flag }
+        }
+    }
+    title = {
+        text = prc70s_news.1.t.c
+        trigger = {
+            PRC = { has_country_flag = prc70s_huazi_yanjiang_flag }
+        }
+    }
+    desc = {
+        text = prc70s_news.1.d.a
+        trigger = {
+            PRC = { has_country_flag = prc70s_aizi_yanjiang_flag }
+        }
+    }
+    desc = {
+        text = prc70s_news.1.d.b
+        trigger = {
+            PRC = { has_country_flag = prc70s_zhanglaoshi_yanjiang_flag }
+        }
+    }
+    desc = {
+        text = prc70s_news.1.d.c
+        trigger = {
+            PRC = { has_country_flag = prc70s_huazi_yanjiang_flag }
+        }
+    }
+    is_triggered_only = yes
+    fire_only_once = yes
+    major = yes
+    option = {
+        name = prc70s_news.1.a
+        if = {
+            limit = {
+                tag = PRC
+            }
+            clr_country_flag = prc70s_aizi_yanjiang_flag
+            clr_country_flag = prc70s_zhanglaoshi_yanjiang_flag
+            clr_country_flag = prc70s_huazi_yanjiang_flag
+        }
+    }
+}
+news_event = {    #中美乒乓球队互访
+    id = prc70s_news.2
+    #picture = GFX_my_news_event_picture
+    title = prc70s_news.2.t
+    desc = prc70s_news.2.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    major = yes
+    option = {
+        name = prc70s_news.2.a
+    }
+}
+news_event = {    #周恩来逝世
+    id = prc70s_news.3
+    #picture = GFX_my_news_event_picture
+    title = prc70s_news.3.t
+    desc = prc70s_news.3.d
+    is_triggered_only = yes
+    major = yes
+    option = {
+        name = prc70s_news.3.a
+    }
+}
+news_event = {    #美国总统访华
+    id = prc70s_news.4
+    #picture = GFX_my_news_event_picture
+    title = prc70s_news.4.t
+    desc = prc70s_news.4.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    major = yes
+    option = {
+        name = prc70s_news.4.a
+        if = {
+            limit = { tag = PRC }
+            CHI = {
+                add_opinion_modifier = {
+                    target = USA
+                    modifier = prc70s_Break_off_diplomatic_relations_with_Taiwan
+                }
+            }
+            PRC = {
+                add_opinion_modifier = {
+                    target = USA
+                    modifier = prc70s_Break_off_diplomatic_relations_with_Taiwan
+                }
+            }
+        }
+        else = {
+            effect_tooltip = {
+                CHI = {
+                    add_opinion_modifier = {
+                        target = USA
+                        modifier = prc70s_Break_off_diplomatic_relations_with_Taiwan
+                    }
+                }
+                PRC = {
+                    add_opinion_modifier = {
+                        target = USA
+                        modifier = prc70s_Break_off_diplomatic_relations_with_Taiwan
+                    }
+                }
+            }
+        }
+    }
+}
+news_event = {    #法国总统蓬皮杜访华
+    id = prc70s_news.5
+    #picture = GFX_my_news_event_picture
+    title = prc70s_news.5.t
+    desc = prc70s_news.5.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    major = yes
+    option = {
+        name = prc70s_news.5.a
+    }
+}
+news_event = {    #中国1960年登上珠峰得到证实
+    id = prc70s_news.6
+    #picture = GFX_my_news_event_picture
+    title = prc70s_news.6.t
+    desc = prc70s_news.6.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    major = yes
+    option = {
+        name = prc70s_news.6.a
+    }
+}
+
+add_namespace = prc70s_GPCR
+state_event = {
+    id = prc70s_GPCR.1
+    title = prc70s_GPCR.1.t
+    desc = prc70s_GPCR.1.d
+    picture = GFX_prc70s_GPCR_picture
+    is_triggered_only = no
+    trigger = { 
+        ROOT = {
+            OR = {
+                state = 714
+                state = 328
+                state = 716
+                state = 621
+                state = 608
+                state = 609
+                state = 614
+                state = 615
+                state = 622
+                state = 616
+                state = 283
+                state = 604
+                state = 617
+                state = 1549
+                state = 607
+                state = 620
+                state = 602
+                state = 600
+                state = 597
+                state = 606
+                state = 598
+                state = 613
+                state = 596
+                state = 595
+                state = 605
+                state = 603
+                state = 325
+                state = 594
+                state = 1569
+            }
+        }
+        OR = {
+            ROOT = {
+                NOT = {
+                    has_state_flag = PRC_GPCR_state_modifier1_flag
+                    has_state_flag = PRC_GPCR_state_modifier2_flag
+                    has_state_flag = PRC_GPCR_state_Military_administered_flag
+                }
+                check_variable = {
+                    var = GPCR_province_unrest_var
+                    value = 30
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = GPCR_province_unrest_var
+                    value = 53
+                    compare = less_than
+                }
+            }
+            ROOT = {
+                NOT = { has_state_flag = PRC_GPCR_state_Military_administered_flag }
+                has_state_flag = PRC_GPCR_state_modifier1_flag
+                check_variable = {
+                    var = GPCR_province_unrest_var
+                    value = 53
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = GPCR_province_unrest_var
+                    value = 75
+                    compare = less_than
+                }
+            }
+            ROOT = {
+                NOT = { has_state_flag = PRC_GPCR_state_Military_administered_flag }
+                has_state_flag = PRC_GPCR_state_modifier2_flag
+                check_variable = {
+                    var = GPCR_province_unrest_var
+                    value = 75
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+    }
+    fire_only_once = no
+    option = {
+        name = prc70s_GPCR.1.a
+        if = {
+            limit = { FROM = { state = 328 } }
+            328 = { PRC_GPCR_state_modifier_update1 = yes }
+            1325 = { PRC_GPCR_state_modifier_update1 = yes }
+            1326 = { PRC_GPCR_state_modifier_update1 = yes }
+        }
+        else_if = {
+            limit = { FROM = { state = 716 } }
+            716 = { PRC_GPCR_state_modifier_update1 = yes }
+            610 = { PRC_GPCR_state_modifier_update1 = yes }
+        }
+        else_if = {
+            limit = { FROM = { state = 621 } }
+            715 = { PRC_GPCR_state_modifier_update1 = yes }
+            611 = { PRC_GPCR_state_modifier_update1 = yes }
+            621 = { PRC_GPCR_state_modifier_update1 = yes }
+            612 = { PRC_GPCR_state_modifier_update1 = yes }
+        }
+        else_if = {
+            limit = { FROM = { state = 617 } }
+            617 = { PRC_GPCR_state_modifier_update1 = yes }
+            618 = { PRC_GPCR_state_modifier_update1 = yes }
+            287 = { PRC_GPCR_state_modifier_update1 = yes }
+            619 = { PRC_GPCR_state_modifier_update1 = yes }
+        }
+        else_if = {
+            limit = { FROM = { state = 1549 } }
+            322 = { PRC_GPCR_state_modifier_update1 = yes }
+            1361 = { PRC_GPCR_state_modifier_update1 = yes }
+            1548 = { PRC_GPCR_state_modifier_update1 = yes }
+            1549 = { PRC_GPCR_state_modifier_update1 = yes }
+            1359 = { PRC_GPCR_state_modifier_update1 = yes }
+            867 = { PRC_GPCR_state_modifier_update1 = yes }
+        }
+        else_if = {
+            limit = { FROM = { state = 614 } }
+            1556 = { PRC_GPCR_state_modifier_update1 = yes }
+            614 = { PRC_GPCR_state_modifier_update1 = yes }
+            1570 = { PRC_GPCR_state_modifier_update1 = yes }
+        }
+        else_if = {
+            limit = { FROM = { state = 597 } }
+            1580 = { PRC_GPCR_state_modifier_update1 = yes }
+            597 = { PRC_GPCR_state_modifier_update1 = yes }
+            1571 = { PRC_GPCR_state_modifier_update1 = yes }
+        }
+        else_if = {
+            limit = { FROM = { state = 598 } }
+            1572 = { PRC_GPCR_state_modifier_update1 = yes }
+            598 = { PRC_GPCR_state_modifier_update1 = yes }
+            1573 = { PRC_GPCR_state_modifier_update1 = yes }
+        }
+        else_if = {
+            limit = { FROM = { state = 596 } }
+            596 = { PRC_GPCR_state_modifier_update1 = yes }
+            1574 = { PRC_GPCR_state_modifier_update1 = yes }
+            1575 = { PRC_GPCR_state_modifier_update1 = yes }
+        }
+        else_if = {
+            limit = { FROM = { state = 595 } }
+            595 = { PRC_GPCR_state_modifier_update1 = yes }
+            1576 = { PRC_GPCR_state_modifier_update1 = yes }
+            1579 = { PRC_GPCR_state_modifier_update1 = yes }
+        }
+        else_if = {
+            limit = { FROM = { state = 605 } }
+            605 = { PRC_GPCR_state_modifier_update1 = yes }
+            1557 = { PRC_GPCR_state_modifier_update1 = yes }
+            601 = { PRC_GPCR_state_modifier_update1 = yes }
+        }
+        else_if = {
+            limit = { FROM = { state = 594 } }
+            594 = { PRC_GPCR_state_modifier_update1 = yes }
+            1558 = { PRC_GPCR_state_modifier_update1 = yes }
+        }
+        else_if = {
+            limit = { FROM = { state = 1569 } }
+            1569 = { PRC_GPCR_state_modifier_update1 = yes }
+            592 = { PRC_GPCR_state_modifier_update1 = yes }
+            1557 = { PRC_GPCR_state_modifier_update1 = yes }
+            591 = { PRC_GPCR_state_modifier_update1 = yes }
+        }
+        else = {
+            PRC_GPCR_state_modifier_update1 = yes
+        }
+    }
+}
+state_event = {
+    id = prc70s_GPCR.2
+    title = prc70s_GPCR.2.t
+    desc = prc70s_GPCR.2.d
+    picture = GFX_prc70s_GPCR_picture
+    is_triggered_only = no
+    trigger = {
+        ROOT = {
+            NOT = { has_state_flag = PRC_GPCR_state_Military_administered_flag }
+            has_state_flag = PRC_GPCR_state_modifier2_flag
+            check_variable = {
+                var = GPCR_province_unrest_var
+                value = 95
+                compare = less_than_or_equals
+            }
+            OR = {
+                state = 714
+                state = 328
+                state = 716
+                state = 621
+                state = 608
+                state = 609
+                state = 614
+                state = 615
+                state = 622
+                state = 616
+                state = 283
+                state = 604
+                state = 617
+                state = 1549
+                state = 607
+                state = 620
+                state = 602
+                state = 600
+                state = 597
+                state = 606
+                state = 598
+                state = 613
+                state = 596
+                state = 595
+                state = 605
+                state = 603
+                state = 325
+                state = 594
+                state = 1569
+            }
+        }
+    }
+    fire_only_once = no
+    option = {
+        name = prc70s_GPCR.2.a
+        hidden_effect = {
+            FROM = {
+                set_state_flag = PRC_GPCR_state_Military_administered_flag
+                add_to_variable = { GPCR_province_unrest_monthly_vary_var1 = -6 }
+            }
+        }
+        if = {
+            limit = { FROM = { state = 328 } }
+            328 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+            1325 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+            1326 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+        }
+        else_if = {
+            limit = { FROM = { state = 716 } }
+            716 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+            610 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+        }
+        else_if = {
+            limit = { FROM = { state = 621 } }
+            715 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+            611 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+            621 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+            612 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+        }
+        else_if = {
+            limit = { FROM = { state = 617 } }
+            617 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+            618 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+            287 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+            619 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+        }
+        else_if = {
+            limit = { FROM = { state = 1549 } }
+            322 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+            1361 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+            1548 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+            1549 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+            1359 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+            867 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+        }
+        else_if = {
+            limit = { FROM = { state = 614 } }
+            1556 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+            614 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+            1570 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+        }
+        else_if = {
+            limit = { FROM = { state = 597 } }
+            1580 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+            597 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+            1571 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+        }
+        else_if = {
+            limit = { FROM = { state = 598 } }
+            1572 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+            598 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+            1573 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+        }
+        else_if = {
+            limit = { FROM = { state = 596 } }
+            596 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+            1574 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+            1575 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+        }
+        else_if = {
+            limit = { FROM = { state = 595 } }
+            595 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+            1576 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+            1579 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+        }
+        else_if = {
+            limit = { FROM = { state = 605 } }
+            605 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+            1557 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+            601 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+        }
+        else_if = {
+            limit = { FROM = { state = 594 } }
+            594 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+            1558 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+        }
+        else_if = {
+            limit = { FROM = { state = 1569 } }
+            1569 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+            592 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+            1557 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+            591 = { custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt }
+        }
+        else = {
+            FROM = { 
+                custom_effect_tooltip = PRC_GPCR_state_Military_administered_tt
+            }
+        }  
+    }
+}
+state_event = {
+    id = prc70s_GPCR.3
+    title = prc70s_GPCR.3.t
+    desc = prc70s_GPCR.3.d
+    picture = GFX_prc70s_GPCR_picture
+    is_triggered_only = no
+    trigger = { 
+        ROOT = {
+            OR = {
+                state = 714
+                state = 328
+                state = 716
+                state = 621
+                state = 608
+                state = 609
+                state = 614
+                state = 615
+                state = 622
+                state = 616
+                state = 283
+                state = 604
+                state = 617
+                state = 1549
+                state = 607
+                state = 620
+                state = 602
+                state = 600
+                state = 597
+                state = 606
+                state = 598
+                state = 613
+                state = 596
+                state = 595
+                state = 605
+                state = 603
+                state = 325
+                state = 594
+                state = 1569
+            }
+        }
+        OR = {
+            ROOT = {
+                has_state_flag = PRC_GPCR_state_modifier3_flag
+                check_variable = {
+                    var = GPCR_province_unrest_var
+                    value = 53
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = GPCR_province_unrest_var
+                    value = 75
+                    compare = less_than
+                }
+            }
+            ROOT = {
+                has_state_flag = PRC_GPCR_state_modifier2_flag
+                check_variable = {
+                    var = GPCR_province_unrest_var
+                    value = 30
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = GPCR_province_unrest_var
+                    value = 53
+                    compare = less_than
+                }
+            }
+            ROOT = {
+                has_state_flag = PRC_GPCR_state_modifier1_flag
+                check_variable = {
+                    var = GPCR_province_unrest_var
+                    value = 30
+                    compare = less_than
+                }
+            }
+        }
+    }
+    fire_only_once = no
+    option = {
+        name = prc70s_GPCR.3.a
+        FROM = {
+            if = {
+                limit = { FROM = { state = 328 } }
+                328 = { PRC_GPCR_state_modifier_update2 = yes }
+                1325 = { PRC_GPCR_state_modifier_update2 = yes }
+                1326 = { PRC_GPCR_state_modifier_update2 = yes }
+            }
+            else_if = {
+                limit = { FROM = { state = 716 } }
+                716 = { PRC_GPCR_state_modifier_update2 = yes }
+                610 = { PRC_GPCR_state_modifier_update2 = yes }
+            }
+            else_if = {
+                limit = { FROM = { state = 621 } }
+                715 = { PRC_GPCR_state_modifier_update2 = yes }
+                611 = { PRC_GPCR_state_modifier_update2 = yes }
+                621 = { PRC_GPCR_state_modifier_update2 = yes }
+                612 = { PRC_GPCR_state_modifier_update2 = yes }
+            }
+            else_if = {
+                limit = { FROM = { state = 617 } }
+                617 = { PRC_GPCR_state_modifier_update2 = yes }
+                618 = { PRC_GPCR_state_modifier_update2 = yes }
+                287 = { PRC_GPCR_state_modifier_update2 = yes }
+                619 = { PRC_GPCR_state_modifier_update2 = yes }
+            }
+            else_if = {
+                limit = { FROM = { state = 1549 } }
+                322 = { PRC_GPCR_state_modifier_update2 = yes }
+                1361 = { PRC_GPCR_state_modifier_update2 = yes }
+                1548 = { PRC_GPCR_state_modifier_update2 = yes }
+                1549 = { PRC_GPCR_state_modifier_update2 = yes }
+                1359 = { PRC_GPCR_state_modifier_update2 = yes }
+                867 = { PRC_GPCR_state_modifier_update2 = yes }
+            }
+            else_if = {
+                limit = { FROM = { state = 614 } }
+                1556 = { PRC_GPCR_state_modifier_update2 = yes }
+                614 = { PRC_GPCR_state_modifier_update2 = yes }
+                1570 = { PRC_GPCR_state_modifier_update2 = yes }
+            }
+            else_if = {
+                limit = { FROM = { state = 597 } }
+                1580 = { PRC_GPCR_state_modifier_update2 = yes }
+                597 = { PRC_GPCR_state_modifier_update2 = yes }
+                1571 = { PRC_GPCR_state_modifier_update2 = yes }
+            }
+            else_if = {
+                limit = { FROM = { state = 598 } }
+                1572 = { PRC_GPCR_state_modifier_update2 = yes }
+                598 = { PRC_GPCR_state_modifier_update2 = yes }
+                1573 = { PRC_GPCR_state_modifier_update2 = yes }
+            }
+            else_if = {
+                limit = { FROM = { state = 596 } }
+                596 = { PRC_GPCR_state_modifier_update2 = yes }
+                1574 = { PRC_GPCR_state_modifier_update2 = yes }
+                1575 = { PRC_GPCR_state_modifier_update2 = yes }
+            }
+            else_if = {
+                limit = { FROM = { state = 595 } }
+                595 = { PRC_GPCR_state_modifier_update2 = yes }
+                1576 = { PRC_GPCR_state_modifier_update2 = yes }
+                1579 = { PRC_GPCR_state_modifier_update2 = yes }
+            }
+            else_if = {
+                limit = { FROM = { state = 605 } }
+                605 = { PRC_GPCR_state_modifier_update2 = yes }
+                1557 = { PRC_GPCR_state_modifier_update2 = yes }
+                601 = { PRC_GPCR_state_modifier_update2 = yes }
+            }
+            else_if = {
+                limit = { FROM = { state = 594 } }
+                594 = { PRC_GPCR_state_modifier_update2 = yes }
+                1558 = { PRC_GPCR_state_modifier_update2 = yes }
+            }
+            else_if = {
+                limit = { FROM = { state = 1569 } }
+                1569 = { PRC_GPCR_state_modifier_update2 = yes }
+                592 = { PRC_GPCR_state_modifier_update2 = yes }
+                1557 = { PRC_GPCR_state_modifier_update2 = yes }
+                591 = { PRC_GPCR_state_modifier_update2 = yes }
+            }
+            else = {
+                FROM = { 
+                    PRC_GPCR_state_modifier_update2 = yes
+                }
+            }
+        }
+    }
+}

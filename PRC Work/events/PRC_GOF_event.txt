@@ -1,0 +1,532 @@
+#####驱动国策的事件
+add_namespace = prc_gof_J_focus
+#####处理反动派
+add_namespace = prc_gof_J_focus_remove_fandom
+
+
+
+
+
+#####钉死走资派
+country_event = {
+	id = prc_gof_J_focus.1
+	title = prc_gof_J_focus.1.t
+	desc = prc_gof_J_focus.1.d
+	fire_only_once = yes
+	trigger = {
+		AND = {
+			has_completed_focus = PRC_GOF_J_propaganda_machine
+			has_completed_focus = PRC_GOF_J_Establish_general_headquarters
+			has_completed_focus = PRC_GOF_J_Change_goverment
+		}
+	}
+	option = {
+		name = prc_gof_J_focus.1.a
+		set_country_flag = PRC_GOF_J_has_NCLCW
+		complete_national_focus = PRC_GOF_J_Nail_the_coffin_lid_of_the_capitalist_walkers
+	}
+}
+#####尘埃落定
+country_event = {
+	id = prc_gof_J_focus.2
+	title = prc_gof_J_focus.2.t
+	desc = prc_gof_J_focus.2.d
+	fire_only_once = yes
+	trigger = {
+		AND = {
+			has_completed_focus = PRC_GOF_J_propaganda_machine
+			has_completed_focus = PRC_GOF_J_Establish_general_headquarters
+			has_completed_focus = PRC_GOF_J_Change_goverment
+		}
+	}
+	option = {
+		name = prc_gof_J_focus.2.a
+		set_country_flag = PRC_GOF_J_has_TDS
+		complete_national_focus = PRC_GOF_J_The_dust_settles
+	}
+}
+#####伊斯兰危机
+country_event = {
+	id = prc_gof_J_focus.3
+	title = prc_gof_J_focus.3.t
+	desc = prc_gof_J_focus.3.d
+	fire_only_once = yes
+	trigger = {
+		
+	}
+	option = {
+		name = prc_gof_J_focus.3.a
+		set_country_flag = PRC_GOF_J_Islamic_crisis_begin
+		complete_national_focus = PRC_GOF_J_Islamic_crisis
+	}
+}
+#####粉碎密宗
+country_event = {
+	id = prc_gof_J_focus.4
+	title = prc_gof_J_focus.4.t
+	desc = prc_gof_J_focus.4.d
+	fire_only_once = yes
+	trigger = {
+		
+	}
+	option = {
+		name = prc_gof_J_focus.4.a
+		set_country_flag = PRC_GOF_J_Crushing_Tantra_begin
+		complete_national_focus = PRC_GOF_J_Crushing_Tantra
+	}
+}
+#####农业危机
+country_event = {
+	id = prc_gof_J_focus.5
+	title = prc_gof_J_focus.5.t
+	desc = prc_gof_J_focus.5.d
+	fire_only_once = yes
+	trigger = {
+		date > 1981.6.15
+	}
+	option = {
+		name = prc_gof_J_focus.5.a
+		set_country_flag = gof_harm_begin
+		complete_national_focus = PRC_GOF_J_Agricultural_crisis
+	}
+}
+
+
+
+
+
+#####中央文革小组的密会
+country_event = {#####重振无产阶级文化大革命
+	id = prc_gof_J_focus_remove_fandom.1
+	title = prc_gof_J_focus_remove_fandom.1.t
+	desc = prc_gof_J_focus_remove_fandom.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {#####时不我待
+		name = prc_gof_J_focus_remove_fandom.1.a
+
+	}
+}
+#####与老帅们的谈话
+country_event = {#####重振无产阶级文化大革命
+	id = prc_gof_J_focus_remove_fandom.2
+	title = prc_gof_J_focus_remove_fandom.2.t
+	desc = prc_gof_J_focus_remove_fandom.2.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {#####我们无能为力
+		name = prc_gof_J_focus_remove_fandom.2.a
+		
+	}
+}
+#####投资流动电影放映团
+news_event = {#####加快反修电影制作
+	id = prc_gof_J_focus_remove_fandom.3
+	title = prc_gof_J_focus_remove_fandom.3.t
+	desc = prc_gof_J_focus_remove_fandom.3.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = prc_gof_J_focus_remove_fandom.3.a
+
+	}
+}
+#####《反击》第二部上映
+news_event = {
+	id = prc_gof_J_focus_remove_fandom.5
+	title = prc_gof_J_focus_remove_fandom.5.t
+	desc = prc_gof_J_focus_remove_fandom.5.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = prc_gof_J_focus_remove_fandom.5.a
+		
+	}
+}
+#####情报部的周公遗毒
+country_event = {
+	id = prc_gof_J_focus_remove_fandom.6
+	title = prc_gof_J_focus_remove_fandom.6.t
+	desc = prc_gof_J_focus_remove_fandom.6.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = prc_gof_J_focus_remove_fandom.6.a
+		
+	}
+}
+#####军内顽固派的游击队活动
+country_event = {
+	id = prc_gof_J_focus_remove_fandom.7
+	title = prc_gof_J_focus_remove_fandom.7.t
+	desc = prc_gof_J_focus_remove_fandom.7.d
+	fire_only_once = yes
+	option = {
+		name = prc_gof_J_focus_remove_fandom.7.a
+		
+	}
+}
+#####阴影中的团结
+country_event = {
+	id = prc_gof_J_focus_remove_fandom.8
+	title = prc_gof_J_focus_remove_fandom.8.t
+	desc = prc_gof_J_focus_remove_fandom.8.d
+	fire_only_once = yes
+	trigger = {
+
+	}
+	option = {
+		name = prc_gof_J_focus_remove_fandom.8.a
+		
+	}
+}
+#####大别山的异动
+country_event = {
+	id = prc_gof_J_focus_remove_fandom.9
+	title = prc_gof_J_focus_remove_fandom.9.t
+	desc = prc_gof_J_focus_remove_fandom.9.d
+	fire_only_once = yes
+	trigger = {
+
+	}
+	option = {
+		name = prc_gof_J_focus_remove_fandom.9.a
+		
+	}
+}
+#####强5的第一次实战
+country_event = {
+	id = prc_gof_J_focus_remove_fandom.10
+	title = prc_gof_J_focus_remove_fandom.10.t
+	desc = prc_gof_J_focus_remove_fandom.10.d
+	fire_only_once = yes
+	trigger = {
+
+	}
+	option = {
+		name = prc_gof_J_focus_remove_fandom.10.a
+		
+	}
+}
+#####炸死地雷上的两条老狗
+country_event = {
+	id = prc_gof_J_focus_remove_fandom.11
+	title = prc_gof_J_focus_remove_fandom.11.t
+	desc = prc_gof_J_focus_remove_fandom.11.d
+	fire_only_once = yes
+	trigger = {
+
+	}
+	option = {
+		name = prc_gof_J_focus_remove_fandom.11.a
+		
+	}
+}
+#####戳死在陷阱里的两条老狗
+country_event = {
+	id = prc_gof_J_focus_remove_fandom.12
+	title = prc_gof_J_focus_remove_fandom.12.t
+	desc = prc_gof_J_focus_remove_fandom.12.d
+	fire_only_once = yes
+	trigger = {
+
+	}
+	option = {
+		name = prc_gof_J_focus_remove_fandom.12.a
+		
+	}
+}
+#####呛死在山洞里的两条老狗
+country_event = {
+	id = prc_gof_J_focus_remove_fandom.13
+	title = prc_gof_J_focus_remove_fandom.13.t
+	desc = prc_gof_J_focus_remove_fandom.13.d
+	fire_only_once = yes
+	trigger = {
+
+	}
+	option = {
+		name = prc_gof_J_focus_remove_fandom.13.a
+		
+	}
+}
+#####溺死在河里的两条老狗
+country_event = {
+	id = prc_gof_J_focus_remove_fandom.14
+	title = prc_gof_J_focus_remove_fandom.14.t
+	desc = prc_gof_J_focus_remove_fandom.14.d
+	fire_only_once = yes
+	trigger = {
+
+	}
+	option = {
+		name = prc_gof_J_focus_remove_fandom.14.a
+		
+	}
+}
+#####牛棚里的懦夫
+country_event = {
+	id = prc_gof_J_focus_remove_fandom.15
+	title = prc_gof_J_focus_remove_fandom.15.t
+	desc = prc_gof_J_focus_remove_fandom.15.d
+	fire_only_once = yes
+	trigger = {
+
+	}
+	option = {
+		name = prc_gof_J_focus_remove_fandom.15.a
+		
+	}
+}
+#####与马宾的谈话
+country_event = {
+	id = prc_gof_J_focus_remove_fandom.16
+	title = prc_gof_J_focus_remove_fandom.16.t
+	desc = prc_gof_J_focus_remove_fandom.16.d
+	fire_only_once = yes
+	trigger = {
+
+	}
+	option = {
+		name = prc_gof_J_focus_remove_fandom.16.a
+		
+	}
+}
+#####王震的小动作
+country_event = {
+	id = prc_gof_J_focus_remove_fandom.17
+	title = prc_gof_J_focus_remove_fandom.17.t
+	desc = prc_gof_J_focus_remove_fandom.17.d
+	fire_only_once = yes
+	trigger = {
+
+	}
+	option = {
+		name = prc_gof_J_focus_remove_fandom.17.a
+		
+	}
+}
+#####8341部队负隅顽抗
+country_event = {
+	id = prc_gof_J_focus_remove_fandom.18
+	title = prc_gof_J_focus_remove_fandom.18.t
+	desc = prc_gof_J_focus_remove_fandom.18.d
+	fire_only_once = yes
+	trigger = {
+
+	}
+	option = {
+		name = prc_gof_J_focus_remove_fandom.18.a
+		
+	}
+}
+#####激战八宝山公墓
+country_event = {
+	id = prc_gof_J_focus_remove_fandom.19
+	title = prc_gof_J_focus_remove_fandom.19.t
+	desc = prc_gof_J_focus_remove_fandom.19.d
+	fire_only_once = yes
+	trigger = {
+
+	}
+	option = {
+		name = prc_gof_J_focus_remove_fandom.19.a
+		
+	}
+}
+#####华国锋被宣布击毙
+country_event = {
+	id = prc_gof_J_focus_remove_fandom.20
+	title = prc_gof_J_focus_remove_fandom.20.t
+	desc = prc_gof_J_focus_remove_fandom.20.d
+	fire_only_once = yes
+	trigger = {
+
+	}
+	option = {
+		name = prc_gof_J_focus_remove_fandom.20.a
+		
+	}
+}
+#####华国锋举手投降
+country_event = {
+	id = prc_gof_J_focus_remove_fandom.21
+	title = prc_gof_J_focus_remove_fandom.21.t
+	desc = prc_gof_J_focus_remove_fandom.21.d
+	fire_only_once = yes
+	trigger = {
+
+	}
+	option = {
+		name = prc_gof_J_focus_remove_fandom.21.a
+		
+	}
+}
+#####华国锋束手就擒
+country_event = {
+	id = prc_gof_J_focus_remove_fandom.22
+	title = prc_gof_J_focus_remove_fandom.22.t
+	desc = prc_gof_J_focus_remove_fandom.22.d
+	fire_only_once = yes
+	trigger = {
+
+	}
+	option = {
+		name = prc_gof_J_focus_remove_fandom.22.a
+		
+	}
+}
+#####反政变的尾声
+country_event = {
+	id = prc_gof_J_focus_remove_fandom.23
+	title = prc_gof_J_focus_remove_fandom.23.t
+	desc = prc_gof_J_focus_remove_fandom.23.d
+	fire_only_once = yes
+	trigger = {
+
+	}
+	option = {
+		name = prc_gof_J_focus_remove_fandom.23.a
+		
+	}
+}
+#####汪东兴在秦城的第一个早晨
+country_event = {
+	id = prc_gof_J_focus_remove_fandom.24
+	title = prc_gof_J_focus_remove_fandom.24.t
+	desc = prc_gof_J_focus_remove_fandom.24.d
+	fire_only_once = yes
+	trigger = {
+
+	}
+	option = {
+		name = prc_gof_J_focus_remove_fandom.24.a
+		
+	}
+}
+#####“学习与批判”写作组的最新文章
+country_event = {
+	id = prc_gof_J_focus_remove_fandom.25
+	title = prc_gof_J_focus_remove_fandom.25.t
+	desc = prc_gof_J_focus_remove_fandom.25.d
+	fire_only_once = yes
+	trigger = {
+
+	}
+	option = {
+		name = prc_gof_J_focus_remove_fandom.25.a
+		
+	}
+}
+#####出版毛选第五卷
+country_event = {
+	id = prc_gof_J_focus_remove_fandom.26
+	title = prc_gof_J_focus_remove_fandom.26.t
+	desc = prc_gof_J_focus_remove_fandom.26.d
+	fire_only_once = yes
+	trigger = {
+
+	}
+	option = {
+		name = prc_gof_J_focus_remove_fandom.26.a
+		
+	}
+}
+#####毛选第五卷出版
+news_event = {
+	id = prc_gof_J_focus_remove_fandom.27
+	title = prc_gof_J_focus_remove_fandom.27.t
+	desc = prc_gof_J_focus_remove_fandom.27.d
+	fire_only_once = yes
+	trigger = {
+
+	}
+	option = {
+		name = prc_gof_J_focus_remove_fandom.27.a
+		
+	}
+}
+#####《文革和继续革命史》出版
+news_event = {
+	id = prc_gof_J_focus_remove_fandom.28
+	title = prc_gof_J_focus_remove_fandom.28.t
+	desc = prc_gof_J_focus_remove_fandom.28.d
+	fire_only_once = yes
+	trigger = {
+
+	}
+	option = {
+		name = prc_gof_J_focus_remove_fandom.28.a
+		
+	}
+}
+#####《中国革命历程》出版
+news_event = {
+	id = prc_gof_J_focus_remove_fandom.29
+	title = prc_gof_J_focus_remove_fandom.29.t
+	desc = prc_gof_J_focus_remove_fandom.29.d
+	fire_only_once = yes
+	trigger = {
+
+	}
+	option = {
+		name = prc_gof_J_focus_remove_fandom.29.a
+		
+	}
+}
+#####夏尔贝特兰《中国的新风向和政权组织》
+news_event = {
+	id = prc_gof_J_focus_remove_fandom.30
+	title = prc_gof_J_focus_remove_fandom.30.t
+	desc = prc_gof_J_focus_remove_fandom.30.d
+	fire_only_once = yes
+	trigger = {
+
+	}
+	option = {
+		name = prc_gof_J_focus_remove_fandom.30.a
+		
+	}
+}
+#####《张春桥文集》出版
+news_event = {
+	id = prc_gof_J_focus_remove_fandom.31
+	title = prc_gof_J_focus_remove_fandom.31.t
+	desc = prc_gof_J_focus_remove_fandom.31.d
+	fire_only_once = yes
+	trigger = {
+
+	}
+	option = {
+		name = prc_gof_J_focus_remove_fandom.31.a
+		
+	}
+}
+#####《中国社会主义时期各阶级分析》出版
+news_event = {
+	id = prc_gof_J_focus_remove_fandom.32
+	title = prc_gof_J_focus_remove_fandom.32.t
+	desc = prc_gof_J_focus_remove_fandom.32.d
+	fire_only_once = yes
+	trigger = {
+
+	}
+	option = {
+		name = prc_gof_J_focus_remove_fandom.32.a
+		
+	}
+}
+#####郭沫若新诗发表
+news_event = {
+	id = prc_gof_J_focus_remove_fandom.33
+	title = prc_gof_J_focus_remove_fandom.33.t
+	desc = prc_gof_J_focus_remove_fandom.33.d
+	fire_only_once = yes
+	trigger = {
+
+	}
+	option = {
+		name = prc_gof_J_focus_remove_fandom.33.a
+		
+	}
+}

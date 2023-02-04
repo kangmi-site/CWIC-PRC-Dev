@@ -1,0 +1,2545 @@
+add_namespace = prc_sihai
+add_namespace = prc_7000
+################add_namespace = prc_HMT
+add_namespace = prc_glf
+add_namespace = prc_cr
+add_namespace = prc_hwl
+add_namespace = prc_60s_720
+add_namespace = prc_60s_war
+add_namespace = prc_war_Jumbo_Island
+add_namespace = prc_maoxuan
+add_namespace = prc_60s_news
+add_namespace = prc_60s_events
+add_namespace = prc_60s_die
+add_namespace = prc_60s_East_64
+
+add_namespace = prc_60s_720
+###除四害事件链###
+news_event = { #除四害，讲卫生
+	id = prc_sihai.1
+	title = prc_sihai.1.t
+	desc = prc_sihai.1.d
+	trigger = {
+		date > 1958.02.12
+		tag = PRC
+	}
+	fire_only_once = yes
+	major = no
+	option = {
+		name = prc_sihai.1.a
+	}
+}
+country_event = { #为麻雀往开一面
+	id = prc_sihai.2 
+	title = prc_sihai.2.t
+	desc = prc_sihai.2.d
+	trigger = {
+		has_idea = PRC_four_evils_2
+	}
+	fire_only_once = yes
+	option = {
+		name = prc_sihai.2.a #麻雀现在成了大问题，还是要除
+		add_political_power = -50
+		add_stability = -0.01
+	}
+	option = {
+		name = prc_sihai.2.b #麻雀不要打了，代之以臭虫
+		add_political_power = -100
+		add_stability = -0.05
+	}
+}
+news_event = { #除四害取得阶段性胜利
+	id = prc_sihai.3 
+	title = prc_sihai.3.t
+	desc = prc_sihai.3.d
+	trigger = {
+		has_idea = PRC_defeat_four_evils
+		tag = PRC
+	}
+	fire_only_once = yes
+	major = no
+	option = {
+		name = prc_sihai.3.a #这是社会主义事业的又一大胜利
+		add_political_power = 100
+		add_stability = 0.1
+	}
+}
+###七千人大会###
+country_event = { #七千人大会
+	id = prc_7000.1
+	title = prc_7000.1.t
+	desc = prc_7000.1.d
+	trigger = {
+		date > 1962.01.11
+		has_completed_focus = PRC_60s_Recover_form_Great_leap_forward
+		tag = PRC
+	}
+	fire_only_once = yes
+	option = {
+		name = prc_7000.1.a #执行错误
+		add_political_power = 10
+		add_to_variable = { zuoyouzhi = -5}
+		PRC_60S_ZY_DOWN = yes
+		FROM = {
+			country_event = {
+				id = prc_7000.2
+				random_days = 7
+			}
+		}
+	}
+	option = {
+		name = prc_7000.1.b #路线错误
+		add_political_power = 10
+		add_to_variable = { zuoyouzhi = 5}
+		PRC_60S_ZY_UP = yes
+		FROM = {
+			country_event = {
+				id = prc_7000.3
+				random_days = 7
+			}
+		}
+	}
+}
+
+
+
+country_event = { #执行错误
+	id = prc_7000.2
+	title = prc_7000.2.t
+	desc = prc_7000.2.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = prc_7000.2.a # 肯定三面红旗
+		add_political_power = 10
+		add_to_variable = { zuoyouzhi = -5}
+		PRC_60S_ZY_DOWN = yes
+		FROM = {
+			country_event = {
+				id = prc_7000.4
+				random_days = 7
+			}
+		}
+	}
+	option = {
+		name = prc_7000.2.b # 否定三面红旗
+		add_political_power = 10
+		add_to_variable = { zuoyouzhi = 5}
+		PRC_60S_ZY_UP = yes
+		FROM = {
+			country_event = {
+				id = prc_7000.5
+				random_days = 7
+			}
+		}
+	}
+}
+country_event = { #路线错误
+	id = prc_7000.3
+	title = prc_7000.3.t
+	desc = prc_7000.3.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = prc_7000.3.a # 肯定三面红旗
+		add_political_power = 10
+		add_to_variable = { zuoyouzhi = -5}
+		PRC_60S_ZY_DOWN = yes
+		FROM = {
+			country_event = {
+				id = prc_7000.4
+				random_days = 7
+			}
+		}
+	}
+	option = {
+		name = prc_7000.3.b # 否定三面红旗
+		add_political_power = 10
+		add_to_variable = { zuoyouzhi = 5}
+		PRC_60S_ZY_UP = yes
+		FROM = {
+			country_event = {
+				id = prc_7000.5
+				random_days = 7
+			}
+		}
+	}
+}
+
+
+
+country_event = { #肯定三面红旗
+	id = prc_7000.4
+	title = prc_7000.4.t
+	desc = prc_7000.4.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = prc_7000.4.a # 出气会
+		add_political_power = 100
+		FROM = {
+			country_event = {
+				id = prc_7000.6
+				random_days = 7
+			}
+		}
+	}
+}
+country_event = { #否定三面红旗
+	id = prc_7000.5
+	title = prc_7000.5.t
+	desc = prc_7000.5.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = prc_7000.5.a # 出气会
+		add_political_power = 100
+		FROM = {
+			country_event = {
+				id = prc_7000.6
+				random_days = 7
+			}
+		}
+	}
+}
+
+
+
+country_event = { #出气会
+	id = prc_7000.6
+	title = prc_7000.6.t
+	desc = prc_7000.6.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = prc_7000.6.a #肯定林彪
+		add_political_power = 10
+		add_to_variable = { zuoyouzhi = -5}
+		PRC_60S_ZY_DOWN = yes
+		FROM = {
+			country_event = {
+				id = prc_7000.7
+				random_days = 7
+			}
+		}
+	}
+	option = {
+		name = prc_7000.6.b #否定林彪
+		add_political_power = 10
+		add_to_variable = { zuoyouzhi = 5}
+		PRC_60S_ZY_UP = yes
+		FROM = {
+			country_event = {
+				id = prc_7000.8
+				random_days = 7
+			}
+		}
+	}
+}
+
+
+
+country_event = { #肯定林彪
+	id = prc_7000.7
+	title = prc_7000.7.t
+	desc = prc_7000.7.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = prc_7000.7.a # 集体批评
+		add_political_power = 10
+		add_to_variable = { zuoyouzhi = -5}
+		PRC_60S_ZY_DOWN = yes
+		FROM = {
+			country_event = {
+				id = prc_7000.9
+				random_days = 7
+			}
+		}
+	}
+	option = {
+		name = prc_7000.7.b # 毛的责任
+		add_political_power = 10
+		add_to_variable = { zuoyouzhi = 5}
+		PRC_60S_ZY_UP = yes
+		FROM = {
+			country_event = {
+				id = prc_7000.10
+				random_days = 7
+			}
+		}
+	}
+}
+country_event = { #否定林彪
+	id = prc_7000.8
+	title = prc_7000.8.t
+	desc = prc_7000.8.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = prc_7000.8.a # 集体批评
+		add_political_power = 10
+		add_to_variable = { zuoyouzhi = -5}
+		PRC_60S_ZY_DOWN = yes
+		FROM = {
+			country_event = {
+				id = prc_7000.9
+				random_days = 7
+			}
+		}
+	}
+	option = {
+		name = prc_7000.8.b # 毛的责任
+		add_political_power = 10
+		add_to_variable = { zuoyouzhi = 5}
+		PRC_60S_ZY_UP = yes
+		FROM = {
+			country_event = {
+				id = prc_7000.10
+				random_days = 7
+			}
+		}
+	}
+}
+
+
+
+country_event = { #集体批评
+	id = prc_7000.9
+	title = prc_7000.9.t
+	desc = prc_7000.9.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = prc_7000.9.a # 调整经济
+		add_political_power = -300
+		add_to_variable = { zuoyouzhi = -5}
+		PRC_60S_ZY_UP = yes
+		FROM = {
+			country_event = {
+				id = prc_7000.11
+				random_days = 7
+			}
+		}
+	}
+	option = {
+		name = prc_7000.9.b # 黑暗风
+		add_political_power = -50
+		add_to_variable = { zuoyouzhi = 5}
+		PRC_60S_ZY_DOWN = yes
+		FROM = {
+			country_event = {
+				id = prc_7000.12
+				random_days = 7
+			}
+		}
+	}
+}
+country_event = { #毛的责任
+	id = prc_7000.10
+	title = prc_7000.10.t
+	desc = prc_7000.10.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = prc_7000.10.a # 调整经济
+		add_political_power = -300
+		add_to_variable = { zuoyouzhi = -5}
+		PRC_60S_ZY_UP = yes
+		FROM = {
+			country_event = {
+				id = prc_7000.11
+				random_days = 7
+			}
+		}
+	}
+	option = {
+		name = prc_7000.10.b # 黑暗风
+		add_political_power = -50
+		add_to_variable = { zuoyouzhi = 5}
+		PRC_60S_ZY_DOWN = yes
+		FROM = {
+			country_event = {
+				id = prc_7000.12
+				random_days = 7
+			}
+		}
+	}
+}
+
+
+
+country_event = { #调整经济
+	id = prc_7000.11
+	title = prc_7000.11.t
+	desc = prc_7000.11.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = prc_7000.11.a
+		add_timed_idea = {
+			idea = PRC_7000_1
+			days = 720d
+		}
+		FROM = {
+			country_event = {
+				id = prc_7000.13
+				random_days = 7
+			}
+		}
+	}
+}
+country_event = { #黑暗风
+	id = prc_7000.12
+	title = prc_7000.12.t
+	desc = prc_7000.12.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = prc_7000.12.a
+		add_stability = -0.1
+		FROM = {
+			country_event = {
+				id = prc_7000.13
+				random_days = 7
+			}
+		}
+	}
+}
+
+
+
+country_event = { #猫猫退居二线
+	id = prc_7000.13
+	title = prc_7000.13.t
+	desc = prc_7000.13.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = prc_7000.13.a #呜呜
+		add_political_power = -50
+		clr_country_flag = prc70007
+	}
+}
+
+
+
+###HMT###
+country_event = { #一纲四目
+	id = prc_HMT.1
+	title = prc_HMT.1.t
+	desc = prc_HMT.1.d
+	trigger = {
+		tag = PRC
+		has_completed_focus = PRC_60s_Taiwan_secreatly
+	}
+	fire_only_once = yes
+	option = {
+		name = prc_HMT.1.a
+		FROM ={
+			country_event = {
+				id = prc_HMT.2
+			}
+		}
+	}
+}
+country_event = { #军队问题
+	id = prc_HMT.2
+	title = prc_HMT.2.t
+	desc = prc_HMT.2.d
+	fire_only_once = yes
+	option = {
+		name = prc_HMT.2.a 
+		FROM ={
+			country_event = {
+				id = prc_HMT.3
+			}
+		}
+	}
+}
+country_event = { #政府组织问题
+	id = prc_HMT.3
+	title = prc_HMT.3.t
+	desc = prc_HMT.3.d
+	fire_only_once = yes
+	option = {
+		name = prc_HMT.3.a 
+		FROM = {
+			country_event = {
+				id = prc_HMT.4
+			}
+		}
+	}
+}
+country_event = { #经济援助问题
+	id = prc_HMT.4
+	title = prc_HMT.4.t
+	desc = prc_HMT.4.d
+	fire_only_once = yes
+	option = {
+		name = prc_HMT.4.a 
+	}
+}
+country_event = { #反对港英当局迫害斗争大会
+	id = prc_HMT.5
+	title = prc_HMT.5.t
+	desc = prc_HMT.5.d
+	trigger = {
+		tag = PRC
+		date > 1967.05.15
+	}
+	fire_only_once = yes
+	option = {
+		name = prc_HMT.5.a 
+		FROM = {
+			country_event = {
+				id = prc_HMT.6
+				random_days = 99
+			}
+		}
+	}
+	option = {
+		name = prc_HMT.5.b
+		FROM = {
+			country_event = {
+				id = prc_HMT.7
+				random_days = 99
+			}
+		}
+		custom_effect_tooltip = "WIP"
+	}
+}
+country_event = { #火烧英国代办处
+	id = prc_HMT.6
+	title = prc_HMT.6.t
+	desc = prc_HMT.6.d
+	trigger = {
+		tag = PRC
+	}
+	fire_only_once = yes
+	option = {
+		name = prc_HMT.6.a 
+	}
+}
+country_event = { #RG控制香港
+	id = prc_HMT.7
+	title = prc_HMT.7.t
+	desc = prc_HMT.7.d
+	trigger = {
+		tag = PRC
+	}
+	fire_only_once = yes
+	option = {
+		name = prc_HMT.7.a 
+	}
+}
+###glf###
+country_event = { #信阳事件
+	id = prc_glf.1
+	title = prc_glf.1.t
+	desc = prc_glf.1.d
+	trigger = {
+		date > 1960.10.24
+		has_completed_focus = PRC_60s_Recover_form_Great_leap_forward
+		tag = PRC
+	}
+	fire_only_once = yes
+	option = {
+		name = prc_glf.1.a 
+		FROM = {
+			country_event = {
+				id = prc_glf.2
+				random_days = 68
+			}
+		}
+	}
+}
+country_event = { #关于整风整社运动和生产救灾工作情况的报告
+	id = prc_glf.2
+	title = prc_glf.2.t
+	desc = prc_glf.2.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = prc_glf.2.a 
+		FROM ={
+			country_event = {
+				id = prc_glf.3
+			}
+		}
+	}
+	option = {
+		name = prc_glf.2.b 
+		FROM = {
+			country_event = {
+				id = prc_glf.4
+			}
+		}
+	}
+}
+country_event = { #全都是反动派干得
+	id = prc_glf.3
+	title = prc_glf.3.t
+	desc = prc_glf.3.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = prc_glf.3.a 
+	}
+}
+country_event = { #反思问题
+	id = prc_glf.4
+	title = prc_glf.4.t
+	desc = prc_glf.4.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = prc_glf.4.a 
+	}
+}
+###CR###
+country_event = { #CR!!!1966.5.16
+	id = prc_cr.1
+	title = prc_cr.1.t
+	desc = prc_cr.1.d
+	trigger = {
+		has_completed_focus = PRC_60s_Five_One_Six
+		tag = PRC
+	}
+	fire_only_once = yes
+	option = {
+		name = prc_cr.1.a #cr!!
+		add_political_power = -100
+		add_stability = -0.01
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = prc_cr.6
+					random_days = 228
+				}
+			}
+		}
+	}
+}
+country_event = { #五十天专政
+	id = prc_cr.2
+	title = prc_cr.2.t
+	desc = prc_cr.2.d
+	fire_only_once = yes
+	trigger = {
+		has_completed_focus = PRC_60s_dispatch_working_group
+	}
+	option = {
+		name = prc_cr.2.a #cr!!
+		FROM = {
+			country_event = {
+				id = prc_hwl.1
+				random_days = 24
+			}
+		}
+		hidden_effect = {
+			add_to_variable = {
+				608.GPCR_province_zaozao_power_var = 5
+			}
+			add_to_variable = {
+				608.GPCR_province_laobao_power_var = -5
+			}
+		}
+	}
+}
+country_event = { #大串联1966.8.18
+	id = prc_cr.3
+	title = prc_cr.3.t
+	desc = prc_cr.3.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = prc_cr.3.a #cr!!
+		set_temp_variable = {
+			prc60s_dcl_1 = 1
+		}
+		while_loop_effect = {
+			limit = {
+				check_variable = {
+					prc60s_dcl_1 < 6
+				}
+			}
+			random_owned_state = {
+				limit = {
+					NOT = {
+						has_country_flag = prc_60s_dcl_1
+					}
+					has_variable = GPCR_province_laobao_power_var
+				}
+				add_to_variable = {
+					GPCR_province_laobao_power_var = -3
+				}
+				add_to_variable = {
+					GPCR_province_zaozao_power_var = 3
+				}
+				set_country_flag = prc_60s_dcl_1
+			}
+			add_to_temp_variable = {
+				prc60s_dcl_1 = 1
+			}
+		}
+		set_temp_variable = {
+			prc60s_dcl_1 = 1
+		}
+		while_loop_effect = {
+			limit = {
+				check_variable = {
+					prc60s_dcl_1 < 4
+				}
+				
+			}
+			random_owned_state = {
+				limit = {
+					NOT = {
+						has_country_flag = prc_60s_dcl_1
+					}
+					has_variable = GPCR_province_laobao_power_var
+				}
+				add_to_variable = {
+					GPCR_province_laobao_power_var = 1
+				}
+				add_to_variable = {
+					GPCR_province_zaozao_power_var = -1
+				}
+				set_country_flag = prc_60s_dcl_1
+			}
+			add_to_temp_variable = {
+				prc60s_dcl_1 = 1
+			}
+		}
+	}
+}
+country_event = { #清华百日wd1968.7.27
+	id = prc_cr.4
+	title = prc_cr.4.t
+	desc = prc_cr.4.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = prc_cr.4.a
+		add_stability = -0.03
+		hidden_effect = {
+			add_to_variable = {
+				608.GPCR_province_unrest_var = 5
+			}
+			add_to_variable = {
+				608.GPCR_province_laobao_power_var = -1
+			}
+			add_to_variable = {
+				608.GPCR_province_zaozao_power_var = 1
+			}
+		}
+	}
+}
+country_event = { #重庆wd1967.7.25
+	id = prc_cr.5
+	title = prc_cr.5.t
+	desc = prc_cr.5.d
+	trigger = {
+		has_completed_focus = PRC_60s_Wen_attacking_Wuwei
+		tag = PRC
+		check_variable = {
+			650.GPCR_province_unrest_var > 53
+		}
+	}
+	fire_only_once = yes
+	option = {
+		name = prc_cr.5.a
+		add_stability = -0.03
+		hidden_effect = {
+			add_to_variable = {
+				605.GPCR_province_laobao_power_var = -1
+			}
+			add_to_variable = {
+				605.GPCR_province_zaozao_power_var = 1
+			}
+		}
+	}
+}
+country_event = { #康平路事件1966.12.30
+	id = prc_cr.6
+	title = prc_cr.6.t
+	desc = prc_cr.6.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = prc_cr.6.a
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = prc_cr.11
+					random_days = 12
+				}
+			}
+			add_to_variable = {
+				add_to_variable = {
+					613.GPCR_province_zaozao_power_var = 5
+				}
+				add_to_variable = {
+					613.GPCR_province_laobao_power_var = -5
+				}
+			}
+		}
+	}
+}
+country_event = { #让lmao思想宣传队入驻清华1968.7.26
+	id = prc_cr.7
+	title = prc_cr.7.t
+	desc = prc_cr.7.d
+	trigger = {
+		has_completed_focus = PRC_60s_Dispatch_the_PLA_to_stabilize_the_situation
+		tag = PRC
+		date > 1968.07.26
+	}
+	fire_only_once = yes
+	option = {
+		name = prc_cr.7.a
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = prc_cr.4
+					random_days = 1
+				}
+			}
+			add_to_variable = {
+				608.GPCR_province_unrest_var = -3
+			}
+			add_to_variable = {
+				608.GPCR_province_laobao_power_var = 3
+			}
+			add_to_variable = {
+				608.GPCR_province_zaozao_power_var = -3
+			}
+		}
+	}
+}
+country_event = { #批判《论康米的修养》1967.5.4
+	id = prc_cr.8
+	title = prc_cr.8.t
+	desc = prc_cr.8.d
+	trigger = {
+		has_completed_focus = PRC_60s_Red_Book
+		tag = PRC
+	}
+	fire_only_once = yes
+	option = {
+		name = prc_cr.8.a
+		set_temp_variable = {
+			prc60s_xiuyang = 1
+		}
+		while_loop_effect = {
+			limit = {
+				check_variable = {
+					prc60s_xiuyang < 4
+				}
+				
+			}
+			random_owned_state = {
+				limit = {
+					NOT = {
+						has_country_flag = prc_60s_xiuyang
+					}
+					has_variable = GPCR_province_laobao_power_var
+				}
+				add_to_variable = {
+					GPCR_province_laobao_power_var = -2
+				}
+				add_to_variable = {
+					GPCR_province_zaozao_power_var = 2
+				}
+				set_country_flag = prc_60s_xiuyang
+			}
+			add_to_temp_variable = {
+				prc60s_xiuyang = 1
+			}
+		}
+	}
+}
+country_event = { #六十一人叛徒集团案1967.3.16
+	id = prc_cr.9
+	title = prc_cr.9.t
+	desc = prc_cr.9.d
+	trigger = {
+		has_completed_focus = PRC_60s_Decision_on_the_Cultural_Revolution
+		date > 1967.03.16
+		tag = PRC
+	}
+	fire_only_once = yes
+	option = {
+		name = prc_cr.9.a
+		set_temp_variable = {
+			prc60s_61pantu = 1
+		}
+		while_loop_effect = {
+			limit = {
+				check_variable = {
+					prc60s_61pantu < 4
+				}
+				
+			}
+			random_owned_state = {
+				limit = {
+					NOT = {
+						has_country_flag = prc_60s_61pantu
+					}
+					has_variable = GPCR_province_laobao_power_var
+				}
+				add_to_variable = {
+					GPCR_province_laobao_power_var = -3
+				}
+				add_to_variable = {
+					GPCR_province_zaozao_power_var = 3
+				}
+				set_country_flag = prc_60s_61pantu
+			}
+			add_to_temp_variable = {
+				prc60s_61pantu = 1
+			}
+		}
+	}
+}
+country_event = { #赵建民云南特务案1968.1.21
+	id = prc_cr.10
+	title = prc_cr.10.t
+	desc = prc_cr.10.d
+	trigger = {
+		check_variable = {
+			325.GPCR_province_unrest_var > 75
+		}
+		tag = PRC
+	}
+	fire_only_once = yes
+	option = {
+		name = prc_cr.10.a
+		hidden_effect = {
+			add_to_variable = {
+				325.GPCR_province_zaozao_power_var = -15
+			}
+			add_to_variable = {
+				325.GPCR_province_laobao_power_var = 15
+			}
+		}
+	}
+}
+country_event = { #一月风暴1967.1.11
+	id = prc_cr.11
+	title = prc_cr.11.t
+	desc = prc_cr.11.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = prc_cr.11.a
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = prc_cr.19
+					random_days = 31
+				}
+			}
+			set_country_flag = prc_60s_January_Storm
+			set_variable = {
+				613.GPCR_province_zaozao_power_var = 180
+			}
+			set_variable = {
+				613.GPCR_province_laobao_power_var = 20
+			}
+			complete_national_focus = {
+				id = PRC_60s_The_fullence_of_January_storm
+			}
+		}
+	}
+}
+country_event = { #“三家村”黑话1966.5.10
+	id = prc_cr.12
+	title = prc_cr.12.t
+	desc = prc_cr.12.d
+	trigger = {
+		date > 1966.05.10
+		tag = PRC
+	}
+	fire_only_once = yes
+	option = {
+		name = prc_cr.12.a
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = prc_cr.3
+					random_days = 100
+				}
+			}
+		}
+		set_temp_variable = {
+			prc60s_heihua = 1
+		}
+		while_loop_effect = {
+			limit = {
+				check_variable = {
+					prc60s_heihua < 4
+				}
+				
+			}
+			random_owned_state = {
+				limit = {
+					NOT = {
+						has_country_flag = prc_60s_heihua
+					}
+					has_variable = GPCR_province_laobao_power_var
+				}
+				add_to_variable = {
+					GPCR_province_laobao_power_var = -1
+				}
+				add_to_variable = {
+					GPCR_province_zaozao_power_var = 1
+				}
+				set_country_flag = prc_60s_heihua
+			}
+			add_to_temp_variable = {
+				prc60s_heihua = 1
+			}
+		}
+	}
+}
+country_event = { #内人党事件
+	id = prc_cr.13
+	title = prc_cr.13.t
+	desc = prc_cr.13.d
+	trigger = {
+		tag = PRC
+		check_variable = {
+			621.GPCR_province_unrest_var > 80
+		}
+		
+	}
+	fire_only_once = yes
+	option = {
+		name = prc_cr.13.a
+		hidden_effect = {
+			add_to_variable = {
+				621.GPCR_province_unrest_monthly_vary_var2 = 5
+			}
+		}
+	}
+}
+country_event = { #“破四旧”1966.8.18
+	id = prc_cr.14
+	title = prc_cr.14.t
+	desc = prc_cr.14.d
+	trigger = {
+		has_completed_focus = PRC_60s_Decision_on_the_Cultural_Revolution
+		tag = PRC
+		date > 1966.08.18
+	}
+	fire_only_once = yes
+	option = {
+		name = prc_cr.14.a
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = prc_cr.15
+					random_days = 5
+				}
+			}
+			set_temp_variable = {
+				prc60s_psj = 1
+			}
+			while_loop_effect = {
+				limit = {
+					check_variable = {
+						prc60s_psj < 4
+					}
+					
+				}
+				random_owned_state = {
+					limit = {
+						NOT = {
+							has_country_flag = prc_60s_psj
+						}
+						has_variable = GPCR_province_laobao_power_var
+					}
+					add_to_variable = {
+						GPCR_province_laobao_power_var = -2
+					}
+					add_to_variable = {
+						GPCR_province_zaozao_power_var = 2
+					}
+					set_country_flag = prc_60s_psj
+				}
+				add_to_temp_variable = {
+					prc60s_psj = 1
+				}
+			}
+		}
+	}
+}
+country_event = { #对寺庙的破坏1966.8.23
+	id = prc_cr.15
+	title = prc_cr.15.t
+	desc = prc_cr.15.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = prc_cr.15.a
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = prc_cr.16
+					random_days = 5
+				}
+			}
+			add_to_variable = {
+				621.GPCR_province_laobao_power_var = -3
+			}
+			add_to_variable = {
+				621.GPCR_province_zaozao_power_var = 3
+			}
+			add_to_variable = {
+				616.GPCR_province_laobao_power_var = -3
+			}
+			add_to_variable = {
+				616.GPCR_province_zaozao_power_var = 3
+			}
+			add_to_variable = {
+				283.GPCR_province_laobao_power_var = -3
+			}
+			add_to_variable = {
+				283.GPCR_province_zaozao_power_var = 3
+			}
+			add_to_variable = {
+				604.GPCR_province_laobao_power_var = -3
+			}
+			add_to_variable = {
+				604.GPCR_province_zaozao_power_var = 3
+			}
+			add_to_variable = {
+				617.GPCR_province_laobao_power_var = -3
+			}
+			add_to_variable = {
+				617.GPCR_province_zaozao_power_var = 3
+			}
+			add_to_variable = {
+				1549.GPCR_province_laobao_power_var = -3
+			}
+			add_to_variable = {
+				1549.GPCR_province_zaozao_power_var = 3
+			}
+		}
+	}
+}
+country_event = { #逮捕十世班禅1966.8
+	id = prc_cr.16
+	title = prc_cr.16.t
+	desc = prc_cr.16.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = prc_cr.16.a
+		add_to_variable = {
+			1549.GPCR_province_laobao_power_var = -3
+		}
+		add_to_variable = {
+			1549.GPCR_province_zaozao_power_var = 3
+		}
+	}
+}
+country_event = { #伍豪等脱离共产党启事1967.5
+	id = prc_cr.17
+	title = prc_cr.17.t
+	desc = prc_cr.17.d
+	trigger = {
+		has_completed_focus = PRC_60s_Decision_on_the_Cultural_Revolution
+		date > 1967.05.25
+		tag = PRC
+	}
+	fire_only_once = yes
+	option = {
+		name = prc_cr.17.a
+		hidden_effect = {
+			set_temp_variable = {
+				prc60s_wuhao = 1
+			}
+			while_loop_effect = {
+				limit = {
+					check_variable = {
+						prc60s_wuhao < 6
+					}
+					
+				}
+				random_owned_state = {
+					limit = {
+						NOT = {
+							has_country_flag = prc_60s_wuhao
+						}
+						has_variable = GPCR_province_laobao_power_var
+					}
+					add_to_variable = {
+						GPCR_province_laobao_power_var = 5
+					}
+					add_to_variable = {
+						GPCR_province_zaozao_power_var = -5
+					}
+					set_country_flag = prc_60s_wuhao
+				}
+				add_to_temp_variable = {
+					prc60s_wuhao = 1
+				}
+			}
+		}
+	}
+}
+country_event = { #开除烧鸡1968.10.13
+	id = prc_cr.18
+	title = prc_cr.18.t
+	desc = prc_cr.18.d
+	trigger = {
+		has_completed_focus = PRC_60s_Decision_on_the_Cultural_Revolution
+		date > 1968.10.13
+		tag = PRC
+	}
+	fire_only_once = yes
+	option = {
+		name = prc_cr.18.a
+		hidden_effect = {
+			set_temp_variable = {
+				prc60s_shaoji = 1
+			}
+			while_loop_effect = {
+				limit = {
+					check_variable = {
+						prc60s_shaoji < 4
+					}
+					
+				}
+				random_owned_state = {
+					limit = {
+						NOT = {
+							has_country_flag = prc_60s_fride_chicken
+						}
+						has_variable = GPCR_province_laobao_power_var
+					}
+					add_to_variable = {
+						GPCR_province_laobao_power_var = -3
+					}
+					add_to_variable = {
+						GPCR_province_zaozao_power_var = 3
+					}
+					set_country_flag = prc_60s_fride_chicken
+				}
+				add_to_temp_variable = {
+					prc60s_shaoji = 1
+				}
+			}
+		}
+	}
+}
+country_event = { #二月逆流1967.2.11
+	id = prc_cr.19
+	title = prc_cr.19.t
+	desc = prc_cr.19.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = prc_cr.19.a
+		hidden_effect = {
+			set_country_flag = prc_60s_February_Counterflow
+			complete_national_focus = PRC_60s_January_storm
+			complete_national_focus = PRC_60s_Coping_with_uncontrolled_situations
+		}
+	}
+}
+###hwl###
+country_event = { #打倒黑五类1966.7.29
+	id = prc_hwl.1
+	title = prc_hwl.1.t
+	desc = prc_hwl.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = prc_hwl.1.a 
+		FROM = {
+			country_event = {
+				id = prc_hwl.2
+				random_days = 5
+			}
+		}
+		hidden_effect = {
+			set_temp_variable = {
+				prc60s_cnm_gaoganzidi = 1
+			}
+			while_loop_effect = {
+				limit = {
+					check_variable = {
+						prc60s_cnm_gaoganzidi < 11
+					}
+					
+				}
+				random_owned_state = {
+					limit = {
+						NOT = {
+							has_country_flag = prc_60s_hwl
+						}
+						has_variable = GPCR_province_laobao_power_var
+					}
+					add_to_variable = {
+						GPCR_province_zaozao_power_var = 3
+					}
+					add_to_variable = {
+						GPCR_province_laobao_power_var = -3
+					}
+					set_country_flag = prc_60s_hwl
+				}
+				add_to_temp_variable = {
+					prc60s_cnm_gaoganzidi = 1
+				}
+			}
+		}
+	}
+}
+country_event = { #红八月1966.8.3
+	id = prc_hwl.2
+	title = prc_hwl.2.t
+	desc = prc_hwl.2.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = prc_hwl.2.a 
+		FROM = {
+			country_event = {
+				id = prc_hwl.3
+				random_days = 124
+			}
+		}
+		hidden_effect = {
+			add_to_variable = {
+				608.GPCR_province_zaozao_power_var = 5
+			}
+			add_to_variable = {
+				608.GPCR_province_laobao_power_var = -5
+			}
+			set_temp_variable = {
+				prc60s_cnm_gaoganzidi = 1
+			}
+			while_loop_effect = {
+				limit = {
+					check_variable = {
+						prc60s_cnm_gaoganzidi < 5
+					}
+					
+				}
+				random_owned_state = {
+					limit = {
+						NOT = {
+							has_country_flag = prc_60s_hby
+						}
+						has_variable = GPCR_province_laobao_power_var
+					}
+					add_to_variable = {
+						GPCR_province_zaozao_power_var = 3
+					}
+					add_to_variable = {
+						GPCR_province_laobao_power_var = -3
+					}
+					set_country_flag = prc_60s_hby
+				}
+				add_to_temp_variable = {
+					prc60s_cnm_gaoganzidi = 1
+				}
+			}
+		}
+	}
+}
+country_event = { #西纠联动1966.12.5
+	id = prc_hwl.3
+	title = prc_hwl.3.t
+	desc = prc_hwl.3.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = prc_hwl.3.a 
+		FROM = {
+			country_event = {
+				id = prc_hwl.4
+				random_days = 57
+			}
+		}
+		hidden_effect = {
+			add_to_variable = {
+				608.GPCR_province_zaozao_power_var = -5
+			}
+			add_to_variable = {
+				608.GPCR_province_laobao_power_var = 5
+			}
+		}
+	}
+}
+country_event = { #首都三司控诉联动1967.1.31
+	id = prc_hwl.4
+	title = prc_hwl.4.t
+	desc = prc_hwl.4.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = prc_hwl.4.a 
+		FROM = {
+			country_event = {
+				id = prc_hwl.5
+				random_days = 118
+			}
+		}
+		hidden_effect = {
+			add_to_variable = {
+				CPC_bar_a = 1.1
+			}
+			add_to_variable = {
+				608.GPCR_province_zaozao_power_var = 3
+			}
+			add_to_variable = {
+				608.GPCR_province_laobao_power_var = -3
+			}
+		}
+	}
+}
+country_event = { #联动罪行展览会与联动解散1967.5.29
+	id = prc_hwl.5
+	title = prc_hwl.5.t
+	desc = prc_hwl.5.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = prc_hwl.5.a 
+		hidden_effect = {
+			add_to_variable = {
+				CPC_bar_c = -1.1
+			}
+			add_to_variable = {
+				608.GPCR_province_zaozao_power_var = 3
+			}
+			add_to_variable = {
+				608.GPCR_province_laobao_power_var = -3
+			}
+		}
+	}
+}
+###events###
+country_event = { #夹边沟惨案
+	id = prc_60s_events.1
+	title = prc_60s_events.1.t
+	desc = prc_60s_events.1.d
+	trigger = {
+		date > 1965.09.17
+		tag = PRC
+	}
+	fire_only_once = yes
+	option = {
+		name = prc_60s_events.1.a 
+	}
+}
+country_event = { #猫论
+	id = prc_60s_events.2
+	title = prc_60s_events.2.t
+	desc = prc_60s_events.2.d
+	trigger = {
+		tag = PRC
+		date > 1962.07.02
+	}
+	fire_only_once = yes
+	option = {
+		name = prc_60s_events.2.a 
+	}
+}
+country_event = { #罗瑞卿出局
+	id = prc_60s_events.3
+	title = prc_60s_events.3.t
+	desc = prc_60s_events.3.d
+	trigger = {
+		tag = PRC
+		date > 1965.12.08
+	}
+	fire_only_once = yes
+	option = {
+		name = prc_60s_events.3.a 
+	}
+}
+country_event = { #易塔事件
+	id = prc_60s_events.4
+	title = prc_60s_events.4.t
+	desc = prc_60s_events.4.d
+	trigger = {
+		tag = PRC
+		date > 1962.05.29
+	}
+	fire_only_once = yes
+	option = {
+		name = prc_60s_events.4.a 
+	}
+}
+country_event = { #苏联专家撤走
+	id = prc_60s_events.5
+	title = prc_60s_events.5.t
+	desc = prc_60s_events.5.d
+	trigger = {
+		tag = PRC
+		date > 1960.07.16
+	}
+	fire_only_once = yes
+	option = {
+		name = prc_60s_events.5.a 
+	}
+}
+country_event = { #贺龙事件
+	id = prc_60s_events.6
+	title = prc_60s_events.6.t
+	desc = prc_60s_events.6.d
+	trigger = {
+		tag = PRC
+		date > 1969.06.09
+	}
+	fire_only_once = yes
+	option = {
+		name = prc_60s_events.6.a 
+	}
+}
+country_event = { #铁列克提事件
+	id = prc_60s_events.7
+	title = prc_60s_events.7.t
+	desc = prc_60s_events.7.d
+	trigger = {
+		tag = PRC
+		date > 1969.08.13
+	}
+	fire_only_once = yes
+	option = {
+		name = prc_60s_events.7.a 
+		add_stability = -0.05
+		add_war_support = 0.05
+	}
+}
+country_event = { #缅甸排华事件！
+	id = prc_60s_events.8
+	title = prc_60s_events.8.t
+	desc = prc_60s_events.8.d
+	trigger = {
+		tag = PRC
+		date > 1967.6.27
+	}
+	fire_only_once = yes
+	option = {
+		name = prc_60s_events.8.a 
+	}
+}
+country_event = { #杨、余、傅事件
+	id = prc_60s_events.9
+	title = prc_60s_events.9.t
+	desc = prc_60s_events.9.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = prc_60s_events.9.a
+		hidden_effect = {
+			set_temp_variable = {
+				prc60s_720_cnm_chen = 1
+			}
+			while_loop_effect = {
+				limit = {
+					check_variable = {
+						prc60s_720_cnm_chen < 4
+					}
+					
+				}
+				random_owned_state = {
+					limit = {
+						NOT = {
+							has_country_flag = prc_60s_720_7
+						}
+						check_variable = {
+							GPCR_province_PLA_tendency_var < -5
+						}
+						has_variable = GPCR_province_laobao_power_var
+					}
+					add_to_variable = {
+						GPCR_province_PLA_power_var = -3
+					}
+					set_country_flag = prc_60s_720_7
+				}
+				add_to_temp_variable = {
+					prc60s_720_cnm_chen = 1
+				}
+			}
+		}
+		
+	}
+}
+
+
+
+
+
+
+###720###
+country_event = { #武汉七二零事件
+	id = prc_60s_720.1
+	title = prc_60s_720.1.t
+	desc = prc_60s_720.1.d
+	trigger = {
+		tag = PRC
+		has_global_flag = PRC_GPCR_flag
+		check_variable = {
+			620.GPCR_province_unrest_var > 53
+		}
+	}
+	fire_only_once = yes
+	option = {
+		name = prc_60s_720.1.a
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = prc_60s_720.2
+					random_days = 7
+				}
+			}
+		}
+	}
+}
+country_event = { #镇压d内一小撮
+	id = prc_60s_720.2
+	title = prc_60s_720.2.t
+	desc = prc_60s_720.2.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = prc_60s_720.2.a
+		hidden_effect = {
+			add_to_variable = {
+				CPC_bar_b = -1.6
+			}
+			add_to_variable = {
+				CPC_bar_c = -3.2
+			}
+			add_to_variable = {
+				CPC_bar_d = -1.1
+			}
+			set_temp_variable = {
+				prc60s_720_cnm_chen = 1
+			}
+			while_loop_effect = {
+				limit = {
+					check_variable = {
+						prc60s_720_cnm_chen < 4
+					}
+					
+				}
+				random_owned_state = {
+					limit = {
+						NOT = {
+							has_country_flag = prc_60s_720_2
+						}
+						has_variable = GPCR_province_laobao_power_var
+						check_variable = {
+							GPCR_province_laobao_power_var > 50
+						}
+					}
+					add_to_variable = {
+						GPCR_province_laobao_power_var = -3
+					}
+					add_to_variable = {
+						GPCR_province_zaozao_power_var = 3
+					}
+					set_country_flag = prc_60s_720_2
+				}
+				add_to_temp_variable = {
+					prc60s_720_cnm_chen = 1
+				}
+			}
+			FROM = {
+				country_event = {
+					id = prc_60s_720.3
+					random_days = 7
+				}
+			}
+		}
+	}
+}
+country_event = { #镇压军内一小撮
+	id = prc_60s_720.3
+	title = prc_60s_720.3.t
+	desc = prc_60s_720.3.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = prc_60s_720.3.a
+		hidden_effect = {
+			set_temp_variable = {
+				prc60s_720_cnm_chen = 1
+			}
+			while_loop_effect = {
+				limit = {
+					check_variable = {
+						prc60s_720_cnm_chen < 4
+					}
+					
+				}
+				random_owned_state = {
+					limit = {
+						NOT = {
+							has_country_flag = prc_60s_720_3
+						}
+						has_variable = GPCR_province_PLA_power_var
+						has_variable = GPCR_province_PLA_tendency_var
+						check_variable = {
+							GPCR_province_PLA_tendency_var > 5
+						}
+					}
+					add_to_variable = {
+						GPCR_province_PLA_power_var = -3
+					}
+					set_country_flag = prc_60s_720_3
+				}
+				add_to_temp_variable = {
+					prc60s_720_cnm_chen = 1
+				}
+			}
+			FROM = {
+				country_event = {
+					id = prc_60s_720.4
+					random_days = 7
+				}
+			}
+		}
+	}
+}
+country_event = { #army内的蠢蠢欲动
+	id = prc_60s_720.4
+	title = prc_60s_720.4.t
+	desc = prc_60s_720.4.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = prc_60s_720.4.a
+		hidden_effect = {
+			set_temp_variable = {
+				prc60s_720_cnm_chen = 1
+			}
+			while_loop_effect = {
+				limit = {
+					check_variable = {
+						prc60s_720_cnm_chen < 4
+					}
+					
+				}
+				random_owned_state = {
+					limit = {
+						NOT = {
+							has_country_flag = prc_60s_720_4
+						}
+						has_variable = GPCR_province_laobao_power_var
+						add_to_variable = {
+							GPCR_province_unrest_var = 3
+						}
+						set_country_flag = prc_60s_720_4
+					}
+				}
+				add_to_temp_variable = {
+					prc60s_720_cnm_chen = 1
+				}
+			}
+		}
+		FROM = {
+			country_event = {
+				id = prc_60s_720.5
+			}
+		}
+	}
+	option = {
+		name = prc_60s_720.4.b
+		hidden_effect = {
+			set_temp_variable = {
+				prc60s_720_cnm_chen = 1
+			}
+			while_loop_effect = {
+				limit = {
+					check_variable = {
+						prc60s_720_cnm_chen < 4
+					}
+					
+				}
+				random_owned_state = {
+					limit = {
+						NOT = {
+							has_country_flag = prc_60s_720_4
+						}
+						has_variable = GPCR_province_laobao_power_var
+						add_to_variable = {
+							GPCR_province_unrest_var = 3
+						}
+						set_country_flag = prc_60s_720_4
+					}
+				}
+				add_to_temp_variable = {
+					prc60s_720_cnm_chen = 1
+				}
+			}
+		}
+		FROM = {
+			country_event = {
+				id = prc_60s_720.6
+			}
+		}
+	}
+}
+country_event = { #保持rev热情
+	id = prc_60s_720.5
+	title = prc_60s_720.5.t
+	desc = prc_60s_720.5.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = prc_60s_720.5.a
+		hidden_effect = {
+			add_to_variable = {
+				CPC_bar_a = 1.6
+			}
+		}
+	}
+}
+country_event = { #处理cr三干将
+	id = prc_60s_720.6
+	title = prc_60s_720.6.t
+	desc = prc_60s_720.6.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = prc_60s_720.6.a
+		hidden_effect = {
+			add_to_variable = {
+				CPC_bar_a = -3.2
+			}
+			FROM = {
+				country_event = {
+					id = prc_60s_events.9
+				}
+			}
+		}
+	}
+}
+
+
+
+###war###
+country_event = { #1962中印冲突
+	id = prc_60s_war.1
+	title = prc_war.1.t
+	desc = prc_war.1.d
+	trigger = {
+		tag = PRC
+		has_completed_focus = PRC_60s_Liberate_the_Indian_people
+		date > 1962.10.17
+	}
+	fire_only_once = yes
+	option = {
+		name = prc_war.1.a 
+		set_country_flag = PRC_60s_china_india_62war_has_begin
+		complete_national_focus = PRC_60s_C-I_62
+		start_border_war = {
+			change_state_after_war = no
+			attacker = {
+				state = 1361
+				num_provinces = 2
+				on_win = prc_60s_war.3
+				on_lose = prc_60s_war.4
+				on_cancel = prc_60s_war.3
+			}		
+			defender = {
+				state = 873
+				num_provinces = 2
+				on_win = prc_60s_war.6
+				on_lose = prc_60s_war.5
+				on_cancel = prc_60s_war.5
+			}
+			if = {
+				limit = {
+					PRC = {
+						is_ai = yes
+					}
+				}
+				set_border_war_data = {
+					attacker = 1361
+					defender = 873
+					attacker_modifier = 10
+					combat_width = 200
+				}
+			}
+			else_if = {
+				limit = {
+					is_historical_focus_on = yes
+				}
+				set_border_war_data = {
+					attacker = 1361
+					defender = 873
+					attacker_modifier = 10
+					combat_width = 200
+				}
+			}
+		}
+	}
+}
+country_event = { #1962冲突-中国胜利1-对中
+	id = prc_60s_war.2
+	title = prc_war.2.t
+	desc = prc_war.2.d
+	fire_only_once = yes
+	option = {
+		name = prc_war.2.a 
+		complete_national_focus = PRC_60s_C-I_62_smaller
+		complete_national_focus = PRC_60s_C-I_62_95_2
+		873 = {
+			set_state_owner = PRC
+		}
+		1341 = {
+			set_state_owner = PRC
+		}
+		1342 = {
+			set_state_owner = PRC
+		}
+		1244 = {
+			set_state_owner = PRC
+		}
+	}
+	option = {
+		name = prc_war.2.b
+		complete_national_focus = PRC_60s_C-I_62_bigger
+		873 = {
+			set_state_owner = PRC
+		}
+		1341 = {
+			set_state_owner = PRC
+		}
+		1342 = {
+			set_state_owner = PRC
+		}
+		1244 = {
+			set_state_owner = PRC
+		}
+		custom_effect_tooltip = "WIP"
+	}
+}
+
+
+#country_event = { #62冲突扩大化
+#	custom_effect_tooltip = "WIP"
+#}
+
+
+country_event = { #1962冲突-中国失败1-对中
+	id = prc_60s_war.3
+	title = prc_war.3.t
+	desc = prc_war.3.d
+	fire_only_once = yes
+	option = {
+		name = prc_war.3.a 
+		complete_national_focus = PRC_60s_C-I_62_smaller
+		complete_national_focus = PRC_60s_C-I_62_95_1
+	}
+}
+country_event = { #1962冲突-中国胜利1-对印
+	id = prc_60s_war.4
+	title = prc_war.4.t
+	desc = prc_war.4.d
+	fire_only_once = yes
+	option = {
+		name = prc_war.4.a 
+	}
+}
+country_event = { #1962冲突-中国失败1-对印
+	id = prc_60s_war.5
+	title = prc_war.5.t
+	desc = prc_war.5.d
+	fire_only_once = yes
+	option = {
+		name = prc_war.5.a 
+	}
+}
+country_event = { #1967中印冲突
+	id = prc_60s_war.6
+	title = prc_war.6.t
+	desc = prc_war.6.d
+	trigger = {
+		tag = PRC
+		has_completed_focus = PRC_60s_C-I_62_smaller
+		date > 1967.09.11
+	}
+	fire_only_once = yes
+	option = {
+		name = prc_war.6.a 
+		set_country_flag = PRC_60s_china_india_67war_has_begin
+		complete_national_focus = PRC_60s_C-I_67
+		start_border_war = {
+			change_state_after_war = no
+			attacker = {
+				state = 868
+				num_provinces = 1
+				on_win = prc_60s_war.10
+				on_lose = prc_60s_war.9
+				on_cancel = prc_60s_war.9
+			}		
+			defender = {
+				state = 1548
+				num_provinces = 2
+				on_win = prc_60s_war.7
+				on_lose = prc_60s_war.8
+				on_cancel = prc_60s_war.7
+			}
+			if = {
+				limit = {
+					PRC = {
+						is_ai = yes
+					}
+				}
+				set_border_war_data = {
+					attacker = 868
+					defender = 1548
+					defender_modifier = 10
+					combat_width = 200
+				}
+			}
+			else_if = {
+				limit = {
+					is_historical_focus_on = yes
+				}
+				set_border_war_data = {
+					attacker = 868
+					defender = 1548
+					defender_modifier = 10
+					combat_width = 200
+				}
+			}
+		}
+	}
+}
+country_event = { #1967冲突-中国胜利1-对中
+	id = prc_60s_war.7
+	title = prc_war.7.t
+	desc = prc_war.7.d
+	fire_only_once = yes
+	option = {
+		name = prc_war.7.a 
+		complete_national_focus = PRC_60s_C-I_67_bigger
+		complete_national_focus = PRC_60s_C-I_67_xijing_1
+	}
+	option = {
+		name = prc_war.7.b
+		complete_national_focus = PRC_60s_C-I_67_bigger
+		complete_national_focus = PRC_60s_C-I_67_xijing_2
+	}
+}
+country_event = { #1967冲突-中国失败1-对中
+	id = prc_60s_war.8
+	title = prc_war.8.t
+	desc = prc_war.8.d
+	fire_only_once = yes
+	option = {
+		name = prc_war.8.a 
+		complete_national_focus = PRC_60s_C-I_67_smaller
+	}
+}
+country_event = { #1967冲突-中国胜利1-对印
+	id = prc_60s_war.9
+	title = prc_war.9.t
+	desc = prc_war.9.d
+	fire_only_once = yes
+	option = {
+		name = prc_war.9.a 
+	}
+}
+country_event = { #1967冲突-中国失败1-对印
+	id = prc_60s_war.10
+	title = prc_war.10.t
+	desc = prc_war.10.d
+	fire_only_once = yes
+	option = {
+		name = prc_war.10.a 
+	}
+}
+
+
+
+
+
+###珍宝岛事件###
+country_event = { #珍宝岛事件中国开头提示
+	id = prc_war_Jumbo_Island.1
+	title = prc_war_Jumbo_Island.1.t
+	desc = prc_war_Jumbo_Island.1.d
+	trigger = {
+		tag = PRC
+		date > 1969.03.02
+		has_completed_focus = PRC_60s_Oppose_revisionist_policies
+	}
+	fire_only_once = yes
+	option = {
+		name = prc_war_Jumbo_Island.1.a 
+		set_country_flag = PRC_60s_chanpoisland_war_has_begin
+		complete_national_focus = PRC_60s_C-S_Z
+		start_border_war = {
+			change_state_after_war = no
+			attacker = {
+				state = 408
+				num_provinces = 3
+				on_win = prc_war_Jumbo_Island.5
+				on_lose = prc_war_Jumbo_Island.4
+				on_cancel = prc_war_Jumbo_Island.5
+			}		
+			defender = {
+				state = 714
+				num_provinces = 3
+				on_win = prc_war_Jumbo_Island.2
+				on_lose = prc_war_Jumbo_Island.3
+				on_cancel = prc_war_Jumbo_Island.2
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				if = {
+					limit = {
+						NOT = {
+							tag = SOV
+							tag = PRC
+						}
+					}
+					news_event = prc_war_Jumbo_Island.6
+				}
+			}
+		}
+	}
+}
+news_event = {#中国-中国胜利
+	id = prc_war_Jumbo_Island.2
+	title = prc_war_Jumbo_Island.2.t
+	desc = prc_war_Jumbo_Island.2.d
+	fire_only_once = yes
+	option = {
+		name = prc_war_Jumbo_Island.2.a
+	}
+}
+news_event = {#中国-中国失败
+	id = prc_war_Jumbo_Island.3
+	title = prc_war_Jumbo_Island.3.t
+	desc = prc_war_Jumbo_Island.3.d
+	fire_only_once = yes
+	option = {
+		name = prc_war_Jumbo_Island.3.a
+		add_stability = -0.05
+		set_country_flag = PRC_60s_china_lose_the_chanpoisland
+	}
+}
+news_event = {#苏联-中国胜利
+	id = prc_war_Jumbo_Island.4
+	title = prc_war_Jumbo_Island.4.t
+	desc = prc_war_Jumbo_Island.4.d
+	fire_only_once = yes
+	option = {
+		name = prc_war_Jumbo_Island.4.a
+		add_stability = -0.05
+	}
+}
+news_event = {#苏联-中国失败
+	id = prc_war_Jumbo_Island.5
+	title = prc_war_Jumbo_Island.5.t
+	desc = prc_war_Jumbo_Island.5.d
+	fire_only_once = yes
+	option = {
+		name = prc_war_Jumbo_Island.5.a
+		add_stability = 0.05
+	}
+}
+news_event = {#世界新闻
+	id = prc_war_Jumbo_Island.6
+	title = prc_war_Jumbo_Island.6.t
+	desc = prc_war_Jumbo_Island.6.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = prc_war_Jumbo_Island.6.a
+	}
+	option = {
+		name = prc_war_Jumbo_Island.6.b
+	}
+	option = {
+		name = prc_war_Jumbo_Island.6.c
+	}
+}
+
+
+
+
+###news###
+news_event = { #毛选第四卷出版
+	id = prc_maoxuan.1
+	title = prc_maoxuan.1.t
+	desc = prc_maoxuan.1.d
+	trigger = {
+		date > 1960.09.30
+		tag = PRC
+	}
+	fire_only_once = yes
+	major = no
+	option = {
+		name = prc_maoxuan.1.a
+		add_political_power = 50
+	}
+}
+news_event = { #大闹天宫
+	id = prc_60s_news.1
+	title = prc_60s_news.1.t
+	desc = prc_60s_news.1.d
+	trigger = {
+		date > 1964.07.25
+		tag = PRC
+	}
+	fire_only_once = yes
+	major = no
+	option = {
+		name = prc_60s_news.1.a
+		add_political_power = 10
+	}
+}
+news_event = { #女子登山世界纪录
+	id = prc_60s_news.2
+	title = prc_60s_news.2.t
+	desc = prc_60s_news.2.d
+	trigger = {
+		date > 1961.06.12
+		tag = PRC
+	}
+	fire_only_once = yes
+	major = no
+	option = {
+		name = prc_60s_news.2.a
+		add_political_power = 100
+	}
+}
+news_event = { #人工合成结晶牛胰岛素
+	id = prc_60s_news.3
+	title = prc_60s_news.3.t
+	desc = prc_60s_news.3.d
+	trigger = {
+		tag = PRC
+		date > 1965.09.17
+	}
+	fire_only_once = yes
+	major = no
+	option = {
+		name = prc_60s_news.3.a
+		add_political_power = 100
+	}
+}
+news_event = { #发现大庆油田，年产388.73万吨原油/巴库1945年是2215万吨
+	id = prc_60s_news.4
+	title = prc_60s_news.4.t
+	desc = prc_60s_news.4.d
+	trigger = {
+		tag = PRC
+		date > 1959.08.23
+	}
+	fire_only_once = yes
+	major = no
+	option = {
+		name = prc_60s_news.4.a
+		714 = {
+			add_resource = {
+    		type = oil
+    		amount = 22
+			}
+		}
+	}
+}
+news_event = { #大寨村
+	id = prc_60s_news.5
+	title = prc_60s_news.5.t
+	desc = prc_60s_news.5.d
+	trigger = {
+		tag = PRC
+		date > 1964.02.10
+	}
+	fire_only_once = yes
+	major = no
+	option = {
+		name = prc_60s_news.5.a
+		615 = {
+			add_building_construction = {
+				type = agri_industrial_complex
+				level = 1
+			}
+		}
+	}
+}
+news_event = { #李宗仁归国
+	id = prc_60s_news.6
+	title = prc_60s_news.6.t
+	desc = prc_60s_news.6.d
+	trigger = {
+		tag = PRC
+		date > 1965.07.18
+	}
+	fire_only_once = yes
+	major = no
+	option = {
+		name = prc_60s_news.6.a
+	}
+}
+news_event = { #莫斯科声明
+	id = prc_60s_news.7
+	title = prc_60s_news.7.t
+	desc = prc_60s_news.7.d
+	trigger = {
+		tag = PRC
+		date > 1960.11.10
+	}
+	fire_only_once = yes
+	major = no
+	option = {
+		name = prc_60s_news.7.a
+	}
+}
+news_event = { #邢台地震
+	id = prc_60s_news.8
+	title = prc_60s_news.8.t
+	desc = prc_60s_news.8.d
+	trigger = {
+		tag = PRC
+		date > 1966.03.08
+	}
+	fire_only_once = yes
+	major = no
+	option = {
+		name = prc_60s_news.8.a
+		614 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}
+	}
+}
+news_event = { #学习焦裕禄
+	id = prc_60s_news.9
+	title = prc_60s_news.9.t
+	desc = prc_60s_news.9.d
+	trigger = {
+		tag = PRC
+		date > 1964.05.14
+	}
+	fire_only_once = yes
+	major = no
+	option = {
+		name = prc_60s_news.9.a
+	}
+}
+news_event = { #红旗渠竣工
+	id = prc_60s_news.10
+	title = prc_60s_news.10.t
+	desc = prc_60s_news.10.d
+	trigger = {
+		tag = PRC
+		date > 1969.07.06
+	}
+	fire_only_once = yes
+	major = no
+	option = {
+		name = prc_60s_news.10.a
+		615 = {
+			add_building_construction = {
+				type = water_infrastructure
+				level = 1
+			}
+		}
+	}
+}
+news_event = { #中法建交
+	id = prc_60s_news.11
+	title = prc_60s_news.11.t
+	desc = prc_60s_news.11.d
+	trigger = {
+		tag = PRC
+		date > 1964.01.27
+	}
+	fire_only_once = yes
+	major = no
+	option = {
+		name = prc_60s_news.11.a
+	}
+}
+news_event = { #布加勒斯特会议
+	id = prc_60s_news.12
+	title = prc_60s_news.12.t
+	desc = prc_60s_news.12.d
+	trigger = {
+		tag = PRC
+		date > 1960.06.26
+	}
+	fire_only_once = yes
+	major = no
+	option = {
+		name = prc_60s_news.12.a
+	}
+}
+news_event = { #发表九评
+	id = prc_60s_news.13
+	title = prc_60s_news.13.t
+	desc = prc_60s_news.13.d
+	trigger = {
+		tag = PRC
+		date > 1964.11.21
+	}
+	fire_only_once = yes
+	major = no
+	option = {
+		name = prc_60s_news.13.a
+	}
+}
+news_event = { #学习雷锋
+	id = prc_60s_news.14
+	title = prc_60s_news.14.t
+	desc = prc_60s_news.14.d
+	trigger = {
+		tag = PRC
+		date > 1963.03.05
+	}
+	fire_only_once = yes
+	major = no
+	option = {
+		name = prc_60s_news.14.a
+		add_manpower = -1
+	}
+}
+news_event = { #红旗渠初步竣工
+	id = prc_60s_news.15
+	title = prc_60s_news.15.t
+	desc = prc_60s_news.15.d
+	trigger = {
+		tag = PRC
+		date > 1964.11.20
+	}
+	fire_only_once = yes
+	major = no
+	option = {
+		name = prc_60s_news.15.a
+		615 = {
+			add_building_construction = {
+				type = water_infrastructure
+				level = 1
+			}
+		}
+	}
+}
+news_event = { #北坡登上珠峰
+	id = prc_60s_news.16
+	title = prc_60s_news.16.t
+	desc = prc_60s_news.16.d
+	trigger = {
+		tag = PRC
+		date > 1960.05.25
+	}
+	fire_only_once = yes
+	major = no
+	option = {
+		name = prc_60s_news.16.a
+		add_stability = 0.01
+	}
+}
+news_event = { #陈景润1+2
+	id = prc_60s_news.17
+	title = prc_60s_news.17.t
+	desc = prc_60s_news.17.d
+	trigger = {
+		tag = PRC
+		date > 1966.05.15
+	}
+	fire_only_once = yes
+	major = no
+	option = {
+		name = prc_60s_news.17.a
+		add_stability = 0.01
+	}
+}
+news_event = { #坦赞铁路
+	id = prc_60s_news.18
+	title = prc_60s_news.18.t
+	desc = prc_60s_news.18.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = no
+	option = {
+		name = prc_60s_news.18.a
+	}
+}
+###die###
+news_event = { #罗荣桓
+	id = prc_60s_die.1
+	title = prc_60s_die.1.t
+	desc = prc_60s_die.1.d
+	trigger = {
+		date > 1963.12.16
+		tag = PRC
+	}
+	fire_only_once = yes
+	major = no
+	option = {
+		name = prc_60s_die.1.a
+		add_manpower = -1
+		remove_unit_leader = 114
+	}
+}
+news_event = { #乒坛三杰
+	id = prc_60s_die.2
+	title = prc_60s_die.2.t
+	desc = prc_60s_die.2.d
+	trigger = {
+		date > 1968.06.21
+		tag = PRC
+		has_completed_focus = PRC_60s_Clear_the_ranks
+	}
+	fire_only_once = yes
+	major = no
+	option = {
+		name = prc_60s_die.2.a
+		add_manpower = -3
+		add_to_variable = {
+			CPC_bar_a = -1
+		}
+		custom_effect_tooltip = PRC_60s_The_revolutionaries_have_been_vilified_tt
+	}
+}
+news_event = { #烧鸡
+	id = prc_60s_die.3
+	title = prc_60s_die.3.t
+	desc = prc_60s_die.3.d
+	trigger = {
+		date > 1969.11.12
+		tag = PRC
+		has_completed_focus = PRC_60s_Decision_on_the_Cultural_Revolution
+	}
+	fire_only_once = yes
+	major = no
+	option = {
+		name = prc_60s_die.3.a
+		add_manpower = -1
+	}
+}
+
+
+
+###东方64###
+news_event = {#东方64军演
+	id = prc_60s_East_64.1
+	title = prc_60s_East_64.1.t
+	desc = prc_60s_East_64.1.d
+	is_triggered_only = yes
+	option = {
+		name = prc_60s_East_64.1.a
+		
+	}
+}
