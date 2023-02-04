@@ -1,0 +1,15 @@
+PRC_TR_categories = {
+	icon = GFX_PRC_politic_decision_1
+	visible = {
+		tag = PRC
+		has_completed_focus = PRC_60s_Three_line
+	}
+}
+PRC_70s_continue_third_line_construction_project_category = {
+    priority = 100
+	allowed = { tag = PRC }
+	visible = {
+        has_country_flag = continue_third_line_construction
+		date < 1983.12.1
+    }
+}

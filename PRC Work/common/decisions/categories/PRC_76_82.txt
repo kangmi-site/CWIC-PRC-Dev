@@ -1,0 +1,7 @@
+PRC_military_decisions = {
+	
+	allowed = { tag = PRC }
+	icon = GFX_PRC_politic_decision_6
+	visible = {
+	}
+}
