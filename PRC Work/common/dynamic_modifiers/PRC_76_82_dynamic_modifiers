@@ -1,0 +1,16 @@
+PRC_76_82_Hua_Guofeng_s_reform = {
+	icon = "GFX_modifiers_CHI_old_society_icon"
+
+	research_speed_factor = PRC_76_82_Hua_Guofeng_s_reform_var1
+	political_power_gain = PRC_76_82_Hua_Guofeng_s_reform_var2
+	master_ideology_drift = PRC_76_82_Hua_Guofeng_s_reform_var3
+	stability_factor = PRC_76_82_Hua_Guofeng_s_reform_var4
+	PRC_76_82_Universal_premium_on_compulsory_education = PRC_76_82_Hua_Guofeng_s_reform_var5
+	consumer_goods_factor = PRC_76_82_Hua_Guofeng_s_reform_var6
+	monthly_population = PRC_76_82_Hua_Guofeng_s_reform_var7
+	production_speed_office_park_factor = PRC_76_82_Hua_Guofeng_s_reform_var8
+	production_speed_infrastructure_factor = PRC_76_82_Hua_Guofeng_s_reform_var9
+	drift_defence_factor = PRC_76_82_Hua_Guofeng_s_reform_var10
+	political_power_factor = PRC_76_82_Hua_Guofeng_s_reform_var11
+
+}
