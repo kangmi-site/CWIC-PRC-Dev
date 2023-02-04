@@ -1,0 +1,342 @@
+CHI_old_society = {
+	enable = {  }
+
+	icon = GFX_modifiers_CHI_old_society_icon
+	
+	monthly_population = 0.1
+	local_building_slots_factor = -0.5
+	state_production_speed_buildings_factor = -0.99
+	state_production_speed_industrial_complex_factor = -0.75
+	state_production_speed_agri_industrial_complex_factor = 1.25
+
+}
+CHI_very_backward_area = {
+	enable = {  }
+
+	icon = GFX_modifiers_CHI_old_society_icon
+	
+	monthly_population = 0.08
+	local_building_slots_factor = -0.4
+	state_production_speed_buildings_factor = -0.75
+	state_production_speed_industrial_complex_factor = -0.5
+	state_production_speed_agri_industrial_complex_factor = 1
+
+}
+CHI_backward_area = {
+	enable = {  }
+
+	icon = GFX_modifiers_CHI_old_society_icon
+	
+	monthly_population = 0.06
+	local_building_slots_factor = -0.3
+	state_production_speed_buildings_factor = -0.5
+	state_production_speed_industrial_complex_factor = -0.25
+	state_production_speed_agri_industrial_complex_factor = 0.75
+
+}
+CHI_subindustrial_area = {
+	enable = {  }
+
+	icon = GFX_modifiers_CHI_old_society_icon
+	
+	monthly_population = 0.05
+	local_building_slots_factor = -0.2
+	state_production_speed_buildings_factor = -0.25
+	state_production_speed_agri_industrial_complex_factor = -0.25
+
+}
+CHI_industrialized_area = {
+	enable = {  }
+
+	icon = GFX_modifiers_CHI_old_society_icon
+	
+	monthly_population = -0.01
+	local_building_slots_factor = 0.05
+	state_production_speed_buildings_factor = 0.01
+	state_production_speed_industrial_complex_factor = 0.1
+	state_production_speed_state_infrastructure_factor = 0.1
+	state_production_speed_infrastructure_factor = 0.05
+	state_production_speed_agri_industrial_complex_factor = -0.3
+
+}
+CHI_developed_regions = {
+	enable = {  }
+
+	icon = GFX_modifiers_CHI_old_society_icon
+	
+	monthly_population = -0.05
+	local_building_slots_factor = 0.1
+	state_production_speed_buildings_factor = 0.1
+	state_production_speed_industrial_complex_factor = 0.20
+	state_production_speed_state_infrastructure_factor = 0.15
+	state_production_speed_infrastructure_factor = 0.1
+	state_production_speed_agri_industrial_complex_factor = -0.4
+
+}
+CHI_investment_industry = {
+	enable = {  }
+
+	icon = GFX_modifiers_CHI_old_society_icon
+	
+	local_building_slots_factor = 0.05
+	state_production_speed_buildings_factor = 0.01
+	state_production_speed_industrial_complex_factor = 0.1
+	state_production_speed_state_infrastructure_factor = 0.1
+	state_production_speed_infrastructure_factor = 0.05
+
+}
+CHI_super_strategic_city = {
+	enable = {  }
+
+	icon = GFX_modifiers_CHI_old_society_icon
+	
+	monthly_population = 10
+	local_building_slots_factor = 10
+	state_production_speed_buildings_factor = 10
+	state_production_speed_industrial_complex_factor = 10
+	state_production_speed_state_infrastructure_factor = 10
+	state_production_speed_infrastructure_factor = 10
+	state_production_speed_agri_industrial_complex_factor = 10
+}
+PRC_pla_power_buff = {
+	enable = {  }
+
+	icon = GFX_idea_intra_party_opposition_1
+
+	stability_factor = 114514
+	army_core_attack_factor = 114514
+	army_core_defence_factor = 114514
+	political_power_factor = 114514
+}
+PRC_con_power_buff = {
+	enable = {  }
+
+	icon = GFX_idea_intra_party_opposition_1
+
+	stability_factor = PRC_con_power_buff
+	political_power_factor = PRC_con_power_buff
+	drift_defence_factor = PRC_con_power_buff
+	state_production_speed_buildings_factor = PRC_con_power_debuff
+}
+PRC_ref_power_buff = {
+	enable = {  }
+
+	icon = GFX_idea_intra_party_opposition_1
+
+	stability_factor = PRC_ref_power_debuff
+	political_power_factor = PRC_ref_power_debuff
+	drift_defence_factor = PRC_ref_power_debuff
+	state_production_speed_buildings_factor = PRC_ref_power_buff
+	research_speed_factor = PRC_ref_power_buff
+	production_factory_start_efficiency_factor = PRC_ref_power_buff
+}
+PRC_lib_power_buff = {
+	enable = {  }
+
+	icon = GFX_idea_intra_party_opposition_1
+
+	stability_factor = PRC_lib_power_debuff
+	political_power_factor = PRC_lib_power_debuff
+	drift_defence_factor = PRC_lib_power_debuff
+	state_production_speed_buildings_factor = PRC_lib_power_buff
+	research_speed_factor = PRC_lib_power_buff
+	production_factory_start_efficiency_factor = PRC_lib_power_buff
+	trade_opinion_factor = PRC_lib_power_buff
+}
+PRC_jq_power_buff = {
+	enable = {  }
+
+	icon = GFX_idea_intra_party_opposition_1
+
+	stability_factor = PRC_jq_power_debuff
+	consumer_goods_factor = PRC_jq_power_debuff
+	army_org_regain = PRC_jq_power_debuff
+	research_speed_factor = PRC_jq_power_debuff
+}
+PRC_lb_power_buff = {
+	enable = {  }
+
+	icon = GFX_idea_intra_party_opposition_1
+
+	stability_factor = PRC_lb_power_debuff
+	consumer_goods_factor = PRC_lb_power_buff
+	army_org_regain = PRC_lb_power_buff
+	political_power_factor = PRC_lb_power_buff
+}
+CPC_cabinet_dynamic_modifier = {
+	
+	enable = {  }
+
+	icon = GFX_idea_intra_party_opposition_1	
+
+	political_power_gain = cpc_political_power_gain
+	#political_power_gain = 1
+    #local_building_slots_factor = cpc_local_building_slots_factor
+	stability_factor = cpc_stability_factor
+	war_stability_factor = cpc_war_stability_factor
+	communism_drift = cpc_communism_drift
+	opinion_gain_monthly_factor = cpc_opinion_gain_monthly_factor
+	faction_trade_opinion_factor = cpc_faction_trade_opinion_factor
+	industry_free_repair_factor = cpc_industry_free_repair_factor
+	production_factory_start_efficiency_factor = cpc_production_factory_start_efficiency_factor
+	production_factory_max_efficiency_factor = cpc_production_factory_max_efficiency_factor
+	consumer_goods_factor = cpc_consumer_goods_factor
+	defense_impact_on_blueprint_stealing = cpc_defense_impact_on_blueprint_stealing
+	enemy_operative_intel_extraction_rate = cpc_enemy_operative_intel_extraction_rate
+	political_power_factor = cpc_political_power_factor
+	production_speed_buildings_factor = cpc_production_speed_buildings_factor
+	own_operative_capture_chance_factor = cpc_own_operative_capture_chance_factor
+	army_defence_factor = cpc_army_defence_factor
+	army_attack_factor = cpc_army_attack_factor
+	
+}
+CPC_investment_state = {
+	enable = {  }
+
+	icon = GFX_modifiers_CHI_old_society_icon
+	
+	#local_building_slots_factor = 0.05
+	state_production_speed_buildings_factor = 0.01
+	state_production_speed_industrial_complex_factor = 0.1
+	state_production_speed_state_infrastructure_factor = 0.1
+	state_production_speed_infrastructure_factor = 0.05
+
+}
+PRC_Great_Leap_Foward_dynamic = {
+	enable = {  }
+
+	icon = GFX_PRC_politic_decision_1
+	
+	civilian_factory_use = PRC.glf_factory_use
+	production_factory_start_efficiency_factor = PRC.glf_production_eff
+	research_speed_factor = PRC.glf_tech_speed
+	country_resource_rubber = PRC.glf_scissors
+}
+PRC_Rural_modernization_dynamic = {
+	enable = {  }
+
+	icon = GFX_PRC_politic_decision_1
+	
+	state_resource_rubber = state_food_modifier
+	#local_resources = state_food_modifier
+	local_building_slots_factor = state_buildings_modifier
+	monthly_population = glf_famine
+}
+PRC_The_peoples_government = {
+	enable = {  }
+
+	icon = GFX_idea_intra_party_opposition_1
+
+	stability_factor = PRC.gov_efficiency
+	agency_upgrade_time = PRC.gov_efficiency
+	production_factory_max_efficiency_factor = PRC.gov_efficiency
+
+	political_power_cost = PRC.gov_redundant
+	production_factory_efficiency_gain_factor = PRC.gov_redundant
+}
+
+PRC_Inter_Mongolia_turmoil_1 = {  #内人党事件地区修正1
+	enable = {  }
+
+	icon = GFX_idea_intra_party_opposition_1	
+
+	resistance_decay = -0.1
+	resistance_growth = 0.1
+	resistance_target = 0.2
+}
+PRC_Inter_Mongolia_turmoil_2 = {  #内人党事件地区修正2
+	enable = {  }
+
+	icon = GFX_idea_intra_party_opposition_1	
+
+	resistance_decay = -0.25
+	resistance_growth = 0.2
+	resistance_target = 0.4
+}
+PRC_Inter_Mongolia_turmoil_3 = {  #内人党事件地区修正3
+	enable = {  }
+
+	icon = GFX_idea_intra_party_opposition_1	
+
+	resistance_decay = -0.4
+	resistance_growth = 0.3
+	resistance_target = 0.6
+}
+PRC_tangshan_earthquake_state_modifier = {  #唐山大地震地区修正
+	enable = {  }
+
+	icon = GFX_idea_intra_party_opposition_1	
+
+	state_production_speed_buildings_factor = -0.5
+	state_repair_speed_buildings_factor = -0.8
+	army_speed_factor_for_controller = -0.6
+}
+PRC_Chongqing_state_modifier = {  #重庆
+	enable = {  }
+
+	icon = GFX_idea_intra_party_opposition_1	
+    
+	local_org_regain = 0.3
+	local_supplies = 0.3
+}
+
+PRC_GPCR_state_modifier1 = {  
+	enable = {  }
+
+	icon = GFX_idea_intra_party_opposition_1	
+    
+	local_factory_sabotage = 0.1
+	local_factories = -0.065
+	state_resources_factor = -0.02
+	state_production_speed_buildings_factor = -0.1
+	local_manpower = -0.05
+}
+PRC_GPCR_state_modifier2 = {  
+	enable = {  }
+
+	icon = GFX_idea_intra_party_opposition_1	
+    
+	local_factory_sabotage = 0.15
+	local_factories = -0.135
+	state_resources_factor = -0.05
+	state_production_speed_buildings_factor = -0.225
+	local_manpower = -0.1
+}
+PRC_GPCR_state_modifier3 = {  
+	enable = {  }
+
+	icon = GFX_idea_intra_party_opposition_1	
+    
+	local_factory_sabotage = 0.25
+	local_factories = -0.2
+	state_resources_factor = -0.1
+	state_production_speed_buildings_factor = -0.35
+	local_manpower = -0.15
+}
+
+Recover_from_Geat_Leap_Forward = {
+	enable = {  }
+
+	icon = GFX_PRC_politic_decision_1
+
+	local_building_slots_factor = rfglf1
+	stability_factor = rfglf2
+	local_resources_factor = rfglf9
+	civilian_factory_use = rfglf7
+	consumer_goods_factor = rfglf6
+	production_speed_infrastructure_factor = rfglf10
+	political_power_factor = rfglf5
+	industrial_capacity_factory = rfglf8
+	monthly_population = rfglf3
+
+}
+
+XinanRiver_Hydropower_Station = {
+	enable = {  }
+
+	icon = GFX_PRC_politic_decision_1
+
+	local_building_slots_factor = 0.15
+	local_resources_factor = 0.05
+	production_speed_infrastructure_factor = 0.1
+}

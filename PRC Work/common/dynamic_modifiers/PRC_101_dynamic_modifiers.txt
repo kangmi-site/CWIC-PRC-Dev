@@ -1,0 +1,16 @@
+PRC_101_Northeast_industrial_zone = {
+
+	local_building_slots_factor = 0.15
+	state_production_speed_buildings_factor = 0.15
+	local_resources_factor = 0.1
+	local_manpower = -0.25
+}
+
+PRC_101_Chen_Boda_s_e_centrism_modifiers = {
+	electricity_consumption_need = PRC_101_Chen_Boda_s_e_centrism_modifiers_var1
+	agricultural_complex_production_bonus = PRC_101_Chen_Boda_s_e_centrism_modifiers_var1
+	office_park_income_adjustment = PRC_101_Chen_Boda_s_e_centrism_modifiers_var1
+	production_speed_buildings_factor = PRC_101_Chen_Boda_s_e_centrism_modifiers_var2
+	production_factory_max_efficiency_factor = PRC_101_Chen_Boda_s_e_centrism_modifiers_var2
+	production_factory_efficiency_gain_factor = PRC_101_Chen_Boda_s_e_centrism_modifiers_var2
+}
