@@ -1,0 +1,275 @@
+PRC_LinBiao_Intra_party_opposition_swap = {
+    if = {
+        limit = {
+            has_idea = PRC_101_Intra_party_opposition1
+        }
+        swap_ideas = {
+            remove_idea = PRC_101_Intra_party_opposition1
+            add_idea = PRC_101_Intra_party_opposition2
+        }
+    }
+    else_if = {
+        limit = {
+            has_idea = PRC_101_Intra_party_opposition2
+        }
+        swap_ideas = {
+            remove_idea = PRC_101_Intra_party_opposition2
+            add_idea = PRC_101_Intra_party_opposition3
+        }
+    }
+    else_if = {
+        limit = {
+            has_idea = PRC_101_Intra_party_opposition3
+        }
+        swap_ideas = {
+            remove_idea = PRC_101_Intra_party_opposition3
+            add_idea = PRC_101_Intra_party_opposition4
+        }
+    }
+    else_if = {
+        limit = {
+            has_idea = PRC_101_Intra_party_opposition4
+        }
+        remove_ideas = PRC_101_Intra_party_opposition4
+    }
+}
+
+PRC_LinBiao_Military_opposition_swap = {
+    if = {
+        limit = {
+            has_idea = PRC_101_Military_opposition1
+        }
+        swap_ideas = {
+            remove_idea = PRC_101_Military_opposition1
+            add_idea = PRC_101_Military_opposition2
+        }
+    }
+    else_if = {
+        limit = {
+            has_idea = PRC_101_Military_opposition2
+        }
+        swap_ideas = {
+            remove_idea = PRC_101_Military_opposition2
+            add_idea = PRC_101_Military_opposition3
+        }
+    }
+    else_if = {
+        limit = {
+            has_idea = PRC_101_Military_opposition3
+        }
+        swap_ideas = {
+            remove_idea = PRC_101_Military_opposition3
+            add_idea = PRC_101_Military_opposition4
+        }
+    }
+    else_if = {
+        limit = {
+            has_idea = PRC_101_Military_opposition4
+        }
+        remove_ideas = PRC_101_Military_opposition4
+    }
+}
+
+PRC_LinBiao_spend_money_tt = {
+    subtract_from_variable = {
+        currentMoney = temp_x
+    }
+    custom_effect_tooltip = PRC_LinBiao_spend_money_tt
+}
+
+PRC_LinBiao_gain_money_tt = {
+    add_to_variable = {
+        currentMoney = temp_x
+    }
+    custom_effect_tooltip = PRC_LinBiao_gain_money_tt
+}
+
+PRC_LinBiao_Normalizing_the_Cultural_Revolution_swap = {
+    if = {
+        limit = {
+            has_idea = PRC_101_Normalizing_the_Cultural_Revolution
+        }
+        swap_ideas = {
+            remove_idea = PRC_101_Normalizing_the_Cultural_Revolution
+            add_idea = PRC_101_Normalizing_the_Cultural_Revolution2
+        }
+    }
+    else_if = {
+        limit = {
+            has_idea = PRC_101_Normalizing_the_Cultural_Revolution2
+        }
+        swap_ideas = {
+            remove_idea = PRC_101_Normalizing_the_Cultural_Revolution2
+            add_idea = PRC_101_Normalizing_the_Cultural_Revolution3
+        }
+    }
+    else_if = {
+        limit = {
+            has_idea = PRC_101_Normalizing_the_Cultural_Revolution3
+        }
+        swap_ideas = {
+            remove_idea = PRC_101_Normalizing_the_Cultural_Revolution3
+            add_idea = PRC_101_Normalizing_the_Cultural_Revolution4
+        }
+    }
+    else_if = {
+        limit = {
+            has_idea = PRC_101_Normalizing_the_Cultural_Revolution4
+        }
+        swap_ideas = {
+            remove_idea = PRC_101_Normalizing_the_Cultural_Revolution4
+            add_idea = PRC_101_Normalizing_the_Cultural_Revolution5
+        }
+    }
+    else_if = {
+        limit = {
+            has_idea = PRC_101_Normalizing_the_Cultural_Revolution5
+        }
+        remove_ideas = PRC_101_Normalizing_the_Cultural_Revolution5
+    }
+}
+
+PRC_LinBiao_diplomacy_balance_change_sov = {
+    if = {
+        limit = {
+            has_idea = PRC_101_diplomacy_balance_sov_2
+        }
+        swap_ideas = {
+            remove_idea = PRC_101_diplomacy_balance_sov_2
+            add_idea = PRC_101_diplomacy_balance_sov_1
+        }
+    }
+    else_if = {
+        limit = {
+            has_idea = PRC_101_diplomacy_balance_sov_3
+        }
+        swap_ideas = {
+            remove_idea = PRC_101_diplomacy_balance_sov_3
+            add_idea = PRC_101_diplomacy_balance_sov_2
+        }
+    }
+    else_if = {
+        limit = {
+            has_idea = PRC_101_diplomacy_balance_center
+        }
+        swap_ideas = {
+            remove_idea = PRC_101_diplomacy_balance_center
+            add_idea = PRC_101_diplomacy_balance_sov_3
+        }
+    }
+    else_if = {
+        limit = {
+            has_idea = PRC_101_diplomacy_balance_usa_3
+        }
+        swap_ideas = {
+            remove_idea = PRC_101_diplomacy_balance_usa_3
+            add_idea = PRC_101_diplomacy_balance_center
+        }
+    }
+    else_if = {
+        limit = {
+            has_idea = PRC_101_diplomacy_balance_usa_2
+        }
+        swap_ideas = {
+            remove_idea = PRC_101_diplomacy_balance_usa_2
+            add_idea = PRC_101_diplomacy_balance_usa_3
+        }
+    }
+    else_if = {
+        limit = {
+            has_idea = PRC_101_diplomacy_balance_usa_1
+        }
+        swap_ideas = {
+            remove_idea = PRC_101_diplomacy_balance_usa_1
+            add_idea = PRC_101_diplomacy_balance_usa_2
+        }
+    }
+}
+
+PRC_LinBiao_diplomacy_balance_change_usa = {
+    if = {
+        limit = {
+            has_idea = PRC_101_diplomacy_balance_usa_2
+        }
+        swap_ideas = {
+            remove_idea = PRC_101_diplomacy_balance_usa_2
+            add_idea = PRC_101_diplomacy_balance_usa_1
+        }
+    }
+    else_if = {
+        limit = {
+            has_idea = PRC_101_diplomacy_balance_usa_3
+        }
+        swap_ideas = {
+            remove_idea = PRC_101_diplomacy_balance_usa_3
+            add_idea = PRC_101_diplomacy_balance_usa_2
+        }
+    }
+    else_if = {
+        limit = {
+            has_idea = PRC_101_diplomacy_balance_center
+        }
+        swap_ideas = {
+            remove_idea = PRC_101_diplomacy_balance_center
+            add_idea = PRC_101_diplomacy_balance_usa_3
+        }
+    }
+    else_if = {
+        limit = {
+            has_idea = PRC_101_diplomacy_balance_sov_3
+        }
+        swap_ideas = {
+            remove_idea = PRC_101_diplomacy_balance_sov_3
+            add_idea = PRC_101_diplomacy_balance_center
+        }
+    }
+    else_if = {
+        limit = {
+            has_idea = PRC_101_diplomacy_balance_sov_2
+        }
+        swap_ideas = {
+            remove_idea = PRC_101_diplomacy_balance_sov_2
+            add_idea = PRC_101_diplomacy_balance_sov_3
+        }
+    }
+    else_if = {
+        limit = {
+            has_idea = PRC_101_diplomacy_balance_sov_1
+        }
+        swap_ideas = {
+            remove_idea = PRC_101_diplomacy_balance_sov_1
+            add_idea = PRC_101_diplomacy_balance_sov_2
+        }
+    }
+}
+
+#############
+PRC_101_Chen_Boda_s_e_centrism_startup = {
+    set_variable = { PRC_101_Chen_Boda_s_e_centrism_modifiers_var = 0 }
+    set_variable = { PRC_101_Chen_Boda_s_e_centrism_modifiers_var1 = 0 }
+    set_variable = { PRC_101_Chen_Boda_s_e_centrism_modifiers_var2 = 0 }
+
+    add_dynamic_modifier = { modifier = PRC_101_Chen_Boda_s_e_centrism_modifiers }
+
+    set_variable = { PRC_101_Chen_Boda_s_e_centrism_modifiers_var_display = 0 }
+}
+
+PRC_101_Chen_Boda_s_e_centrism_weekly_var_change = {
+    add_to_variable = { PRC_101_Chen_Boda_s_e_centrism_modifiers_var = modifier@PRC_101_Chen_Boda_s_e_centrism_var_gain_weekly }
+    clamp_variable = {
+        var = PRC_101_Chen_Boda_s_e_centrism_modifiers_var
+        min = 0
+        max = 1
+    }
+
+    set_variable = { PRC_101_Chen_Boda_s_e_centrism_modifiers_var1 = 0.2 }
+    set_variable = { PRC_101_Chen_Boda_s_e_centrism_modifiers_var2 = 0.15 }
+
+    multiply_variable = { PRC_101_Chen_Boda_s_e_centrism_modifiers_var1 = PRC_101_Chen_Boda_s_e_centrism_modifiers_var }
+    multiply_variable = { PRC_101_Chen_Boda_s_e_centrism_modifiers_var2 = PRC_101_Chen_Boda_s_e_centrism_modifiers_var }
+
+    set_variable = { PRC_101_Chen_Boda_s_e_centrism_modifiers_var_display = PRC_101_Chen_Boda_s_e_centrism_modifiers_var }
+    multiply_variable = { PRC_101_Chen_Boda_s_e_centrism_modifiers_var_display = 100 }
+    round_variable = PRC_101_Chen_Boda_s_e_centrism_modifiers_var_display
+
+}

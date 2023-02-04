@@ -1,0 +1,50 @@
+PRC_76_82_spend_Foreign_exchange = {
+    custom_effect_tooltip = PRC_76_82_spend_Foreign_exchange
+
+    if = {
+        limit = {
+            check_variable = { temp_x > PRC_76_82_Foreign_exchange }
+        }
+        subtract_from_temp_variable = { temp_x = PRC_76_82_Foreign_exchange }
+        set_variable = { PRC_76_82_Foreign_exchange = 0 }
+        add_to_variable = { PRC_76_82_Foreign_debt = temp_x }
+    }
+    else = {
+        subtract_from_temp_variable = { PRC_76_82_Foreign_exchange = temp_x }
+    }
+
+}
+
+PRC_76_82_Foreign_Leapfrog_spend_else = {
+    subtract_from_variable = {
+        currentMoney = temp_x
+    }
+    custom_effect_tooltip = PRC_76_82_Foreign_Leapfrog_spend_else
+}
+
+PRC_76_82_spend_money_tt = {
+    subtract_from_variable = {
+        currentMoney = temp_x
+    }
+    custom_effect_tooltip = PRC_76_82_spend_money_tt
+}
+
+PRC_76_82_get_Foreign_exchange_tt = {
+    custom_effect_tooltip = PRC_76_82_get_Foreign_exchange_tt
+    if = {
+        limit = {
+            check_variable = {
+                temp_x < PRC_76_82_Foreign_debt
+            }
+        }
+        subtract_from_variable = {
+            PRC_76_82_Foreign_debt = temp_x
+        }
+    }
+    else = {
+        subtract_from_temp_variable = {
+            temp_x = PRC_76_82_Foreign_debt
+        }
+        add_to_variable = { PRC_76_82_Foreign_exchange = temp_x }
+    }
+}

@@ -1,0 +1,3120 @@
+PRC_GPCR_begins = {
+	set_global_flag = PRC_GPCR_flag
+
+	set_variable = { 714.prc_change_of_administrative_division = 1 }
+	set_variable = { 328.prc_change_of_administrative_division = 2 }
+	set_variable = { 716.prc_change_of_administrative_division = 3 }
+	set_variable = { 621.prc_change_of_administrative_division = 4 }
+	set_variable = { 616.prc_change_of_administrative_division = 5 }
+    set_variable = { 283.prc_change_of_administrative_division = 6 }
+
+	set_variable = { 608.prc_change_of_administrative_division = 1 }
+	set_variable = { 609.prc_change_of_administrative_division = 2 }
+	set_variable = { 614.prc_change_of_administrative_division = 3 }
+	set_variable = { 615.prc_change_of_administrative_division = 4 }
+	set_variable = { 622.prc_change_of_administrative_division = 5 }
+	set_variable = { 604.prc_change_of_administrative_division = 6 }
+	set_variable = { 607.prc_change_of_administrative_division = 7 }
+	set_variable = { 620.prc_change_of_administrative_division = 8 }
+	set_variable = { 602.prc_change_of_administrative_division = 9 }
+	set_variable = { 600.prc_change_of_administrative_division = 10 }
+	set_variable = { 597.prc_change_of_administrative_division = 11 }
+	set_variable = { 606.prc_change_of_administrative_division = 12 }
+
+	set_variable = { 598.prc_change_of_administrative_division = 1 }
+	set_variable = { 613.prc_change_of_administrative_division = 2 }
+	set_variable = { 596.prc_change_of_administrative_division = 3 }
+	set_variable = { 595.prc_change_of_administrative_division = 4 }
+	set_variable = { 605.prc_change_of_administrative_division = 5 }
+	set_variable = { 603.prc_change_of_administrative_division = 6 }
+	set_variable = { 325.prc_change_of_administrative_division = 7 }
+	set_variable = { 594.prc_change_of_administrative_division = 8 }
+	set_variable = { 1569.prc_change_of_administrative_division = 9 }
+
+	set_variable = { 617.prc_change_of_administrative_division = 1 }
+	set_variable = { 1549.prc_change_of_administrative_division = 1 }
+
+	set_variable = { 714.GPCR_province_zaozao_power_var = 117 }
+	set_variable = { 328.GPCR_province_zaozao_power_var = 58 }
+	set_variable = { 716.GPCR_province_zaozao_power_var = 86 }
+	set_variable = { 621.GPCR_province_zaozao_power_var = 72 }
+	set_variable = { 608.GPCR_province_zaozao_power_var = 76 }
+	set_variable = { 609.GPCR_province_zaozao_power_var = 37 }
+	set_variable = { 614.GPCR_province_zaozao_power_var = 62 }
+	set_variable = { 615.GPCR_province_zaozao_power_var = 73 }
+	set_variable = { 622.GPCR_province_zaozao_power_var = 56 }
+	set_variable = { 616.GPCR_province_zaozao_power_var = 57 }
+    set_variable = { 283.GPCR_province_zaozao_power_var = 62 }
+	set_variable = { 604.GPCR_province_zaozao_power_var = 50 }
+	set_variable = { 617.GPCR_province_zaozao_power_var = 56 }
+	set_variable = { 1549.GPCR_province_zaozao_power_var = 55 }
+	set_variable = { 607.GPCR_province_zaozao_power_var = 46 }
+	set_variable = { 620.GPCR_province_zaozao_power_var = 51 }
+	set_variable = { 602.GPCR_province_zaozao_power_var = 60 }
+	set_variable = { 600.GPCR_province_zaozao_power_var = 52 }
+	set_variable = { 597.GPCR_province_zaozao_power_var = 103 }
+	set_variable = { 606.GPCR_province_zaozao_power_var = 58 }
+	set_variable = { 598.GPCR_province_zaozao_power_var = 65 }
+	set_variable = { 613.GPCR_province_zaozao_power_var = 134 }
+	set_variable = { 596.GPCR_province_zaozao_power_var = 45 }
+	set_variable = { 595.GPCR_province_zaozao_power_var = 50 }
+	set_variable = { 605.GPCR_province_zaozao_power_var = 83 }
+	set_variable = { 603.GPCR_province_zaozao_power_var = 58 }
+	set_variable = { 325.GPCR_province_zaozao_power_var = 78 }
+	set_variable = { 594.GPCR_province_zaozao_power_var = 67 }
+	set_variable = { 1569.GPCR_province_zaozao_power_var = 66 }
+					
+	set_variable = { 714.GPCR_province_laobao_power_var = 23 }
+	set_variable = { 328.GPCR_province_laobao_power_var = 82 }
+	set_variable = { 716.GPCR_province_laobao_power_var = 54 }
+	set_variable = { 621.GPCR_province_laobao_power_var = 48 }
+	set_variable = { 608.GPCR_province_laobao_power_var = 124 }
+	set_variable = { 609.GPCR_province_laobao_power_var = 63 }
+	set_variable = { 614.GPCR_province_laobao_power_var = 68 }
+	set_variable = { 615.GPCR_province_laobao_power_var = 47 }
+	set_variable = { 622.GPCR_province_laobao_power_var = 44 }
+	set_variable = { 616.GPCR_province_laobao_power_var = 43 }
+    set_variable = { 283.GPCR_province_laobao_power_var = 38 }
+	set_variable = { 604.GPCR_province_laobao_power_var = 50 }
+	set_variable = { 617.GPCR_province_laobao_power_var = 32 }
+	set_variable = { 1549.GPCR_province_laobao_power_var = 35 }
+	set_variable = { 607.GPCR_province_laobao_power_var = 84 }
+	set_variable = { 620.GPCR_province_laobao_power_var = 79 }
+	set_variable = { 602.GPCR_province_laobao_power_var = 70 }
+	set_variable = { 600.GPCR_province_laobao_power_var = 68 }
+	set_variable = { 597.GPCR_province_laobao_power_var = 27 }
+	set_variable = { 606.GPCR_province_laobao_power_var = 72 }
+	set_variable = { 598.GPCR_province_laobao_power_var = 65 }
+	set_variable = { 613.GPCR_province_laobao_power_var = 66 }
+	set_variable = { 596.GPCR_province_laobao_power_var = 75 }
+	set_variable = { 595.GPCR_province_laobao_power_var = 70 }
+	set_variable = { 605.GPCR_province_laobao_power_var = 37 }
+	set_variable = { 603.GPCR_province_laobao_power_var = 42 }
+	set_variable = { 325.GPCR_province_laobao_power_var = 42 }
+	set_variable = { 594.GPCR_province_laobao_power_var = 63 }
+	set_variable = { 1569.GPCR_province_laobao_power_var = 64 }
+
+	set_variable = { 714.GPCR_province_PLA_power_var = 85 }
+	set_variable = { 328.GPCR_province_PLA_power_var = 50 }
+	set_variable = { 716.GPCR_province_PLA_power_var = 70 }
+	set_variable = { 621.GPCR_province_PLA_power_var = 50 }
+	set_variable = { 608.GPCR_province_PLA_power_var = 70 }
+	set_variable = { 609.GPCR_province_PLA_power_var = 30 }
+	set_variable = { 614.GPCR_province_PLA_power_var = 50 }
+	set_variable = { 615.GPCR_province_PLA_power_var = 50 }
+	set_variable = { 622.GPCR_province_PLA_power_var = 70 }
+	set_variable = { 616.GPCR_province_PLA_power_var = 70 }
+    set_variable = { 283.GPCR_province_PLA_power_var = 30 }
+	set_variable = { 604.GPCR_province_PLA_power_var = 85 }
+	set_variable = { 617.GPCR_province_PLA_power_var = 70 }
+    set_variable = { 1549.GPCR_province_PLA_power_var = 50 }
+	set_variable = { 607.GPCR_province_PLA_power_var = 50 }
+	set_variable = { 620.GPCR_province_PLA_power_var = 70 }
+	set_variable = { 602.GPCR_province_PLA_power_var = 30 }
+	set_variable = { 600.GPCR_province_PLA_power_var = 30 }
+	set_variable = { 597.GPCR_province_PLA_power_var = 70 }
+	set_variable = { 606.GPCR_province_PLA_power_var = 50 }
+	set_variable = { 598.GPCR_province_PLA_power_var = 50 }
+	set_variable = { 613.GPCR_province_PLA_power_var = 21 }
+	set_variable = { 596.GPCR_province_PLA_power_var = 50 }
+	set_variable = { 595.GPCR_province_PLA_power_var = 70 }
+	set_variable = { 605.GPCR_province_PLA_power_var = 30 }
+	set_variable = { 603.GPCR_province_PLA_power_var = 70 }
+	set_variable = { 325.GPCR_province_PLA_power_var = 70 }
+	set_variable = { 594.GPCR_province_PLA_power_var = 70 }
+	set_variable = { 1569.GPCR_province_PLA_power_var = 70 }
+
+	set_variable = { 714.GPCR_province_PLA_tendency_var = -40 }
+	set_variable = { 328.GPCR_province_PLA_tendency_var = 15 }
+	set_variable = { 716.GPCR_province_PLA_tendency_var = -24 }
+	set_variable = { 621.GPCR_province_PLA_tendency_var = 24 }
+	set_variable = { 608.GPCR_province_PLA_tendency_var = -23 }
+	set_variable = { 609.GPCR_province_PLA_tendency_var = 24 }
+	set_variable = { 614.GPCR_province_PLA_tendency_var = 24 }
+	set_variable = { 615.GPCR_province_PLA_tendency_var = 24 }
+	set_variable = { 622.GPCR_province_PLA_tendency_var = -24 }
+	set_variable = { 616.GPCR_province_PLA_tendency_var = -24 }
+    set_variable = { 283.GPCR_province_PLA_tendency_var = 24 }
+	set_variable = { 604.GPCR_province_PLA_tendency_var = 24 }
+	set_variable = { 617.GPCR_province_PLA_tendency_var = 24 }
+    set_variable = { 1549.GPCR_province_PLA_tendency_var = 24 }
+	set_variable = { 607.GPCR_province_PLA_tendency_var = 24 }
+	set_variable = { 620.GPCR_province_PLA_tendency_var = 24 }
+	set_variable = { 602.GPCR_province_PLA_tendency_var = 24 }
+	set_variable = { 600.GPCR_province_PLA_tendency_var = 24 }
+	set_variable = { 597.GPCR_province_PLA_tendency_var = -38 }
+	set_variable = { 606.GPCR_province_PLA_tendency_var = 24 }
+	set_variable = { 598.GPCR_province_PLA_tendency_var = 0 }
+	set_variable = { 613.GPCR_province_PLA_tendency_var = 11 }
+	set_variable = { 596.GPCR_province_PLA_tendency_var = 24 }
+	set_variable = { 595.GPCR_province_PLA_tendency_var = 24 }
+	set_variable = { 605.GPCR_province_PLA_tendency_var = 24 }
+	set_variable = { 603.GPCR_province_PLA_tendency_var = -24 }
+	set_variable = { 325.GPCR_province_PLA_tendency_var = -24 }
+	set_variable = { 594.GPCR_province_PLA_tendency_var = 7 }
+	set_variable = { 1569.GPCR_province_PLA_tendency_var = 24 }
+
+    set_variable = { 714.GPCR_province_unrest_var = 7 }
+	set_variable = { 328.GPCR_province_unrest_var = 19 }
+	set_variable = { 716.GPCR_province_unrest_var = 15 }
+	set_variable = { 621.GPCR_province_unrest_var = 57 }
+	set_variable = { 608.GPCR_province_unrest_var = 16 }
+	set_variable = { 609.GPCR_province_unrest_var = 16 }
+	set_variable = { 614.GPCR_province_unrest_var = 36 }
+	set_variable = { 615.GPCR_province_unrest_var = 20 }
+	set_variable = { 622.GPCR_province_unrest_var = 18 }
+	set_variable = { 616.GPCR_province_unrest_var = 18 }
+    set_variable = { 283.GPCR_province_unrest_var = 34 }
+	set_variable = { 604.GPCR_province_unrest_var = 31 }
+	set_variable = { 617.GPCR_province_unrest_var = 17 }
+	set_variable = { 1549.GPCR_province_unrest_var = 23 }
+	set_variable = { 607.GPCR_province_unrest_var = 16 }
+	set_variable = { 620.GPCR_province_unrest_var = 33 }
+	set_variable = { 602.GPCR_province_unrest_var = 25 }
+	set_variable = { 600.GPCR_province_unrest_var = 38 }
+	set_variable = { 597.GPCR_province_unrest_var = 12 }
+	set_variable = { 606.GPCR_province_unrest_var = 22 }
+	set_variable = { 598.GPCR_province_unrest_var = 20 }
+	set_variable = { 613.GPCR_province_unrest_var = 26 }
+	set_variable = { 596.GPCR_province_unrest_var = 53 }
+	set_variable = { 595.GPCR_province_unrest_var = 31 }
+	set_variable = { 605.GPCR_province_unrest_var = 37 }
+	set_variable = { 603.GPCR_province_unrest_var = 19 }
+	set_variable = { 325.GPCR_province_unrest_var = 35 }
+	set_variable = { 594.GPCR_province_unrest_var = 15 }
+	set_variable = { 1569.GPCR_province_unrest_var = 13 }
+
+	set_variable = { 714.GPCR_province_zaozao_VS_laobao_influence_var = 1 }
+    set_variable = { 328.GPCR_province_zaozao_VS_laobao_influence_var = 1 }
+    set_variable = { 716.GPCR_province_zaozao_VS_laobao_influence_var = 1 }
+    set_variable = { 621.GPCR_province_zaozao_VS_laobao_influence_var = 1 }
+    set_variable = { 608.GPCR_province_zaozao_VS_laobao_influence_var = 1 }
+    set_variable = { 609.GPCR_province_zaozao_VS_laobao_influence_var = 1 }
+    set_variable = { 614.GPCR_province_zaozao_VS_laobao_influence_var = 1 }
+    set_variable = { 615.GPCR_province_zaozao_VS_laobao_influence_var = 1 }
+    set_variable = { 622.GPCR_province_zaozao_VS_laobao_influence_var = 1 }
+    set_variable = { 616.GPCR_province_zaozao_VS_laobao_influence_var = 1 }
+    set_variable = { 283.GPCR_province_zaozao_VS_laobao_influence_var = 1 }
+    set_variable = { 604.GPCR_province_zaozao_VS_laobao_influence_var = 1 }
+    set_variable = { 617.GPCR_province_zaozao_VS_laobao_influence_var = 1 }
+    set_variable = { 1549.GPCR_province_zaozao_VS_laobao_influence_var = 1 }
+    set_variable = { 607.GPCR_province_zaozao_VS_laobao_influence_var = 1 }
+    set_variable = { 620.GPCR_province_zaozao_VS_laobao_influence_var = 1 }
+    set_variable = { 602.GPCR_province_zaozao_VS_laobao_influence_var = 1 }
+    set_variable = { 600.GPCR_province_zaozao_VS_laobao_influence_var = 1 }
+    set_variable = { 597.GPCR_province_zaozao_VS_laobao_influence_var = 1 }
+    set_variable = { 606.GPCR_province_zaozao_VS_laobao_influence_var = 1 }
+    set_variable = { 598.GPCR_province_zaozao_VS_laobao_influence_var = 1 }
+    set_variable = { 613.GPCR_province_zaozao_VS_laobao_influence_var = 1 }
+    set_variable = { 596.GPCR_province_zaozao_VS_laobao_influence_var = 1 }
+    set_variable = { 595.GPCR_province_zaozao_VS_laobao_influence_var = 1 }
+    set_variable = { 605.GPCR_province_zaozao_VS_laobao_influence_var = 1 }
+    set_variable = { 603.GPCR_province_zaozao_VS_laobao_influence_var = 1 }
+    set_variable = { 325.GPCR_province_zaozao_VS_laobao_influence_var = 1 }
+    set_variable = { 594.GPCR_province_zaozao_VS_laobao_influence_var = 1 }
+    set_variable = { 1569.GPCR_province_zaozao_VS_laobao_influence_var = 1 }
+
+	set_variable = { prc_province_var = 5 }
+	PRC_GPCR_province_variable_update = yes
+	PRC_GPCR_ui_update = yes
+	PRC_GPCR_national_spirit_update = yes
+}
+
+PRC_GPCR_ui_update = {
+	hidden_effect = {
+		if = {
+			limit = { 
+				OR = {
+					check_variable = {
+						var = prc_province_var
+						value = 1
+						compare = equals
+					}
+					check_variable = {
+						var = prc_province_var
+						value = 33
+						compare = equals
+					}
+				}
+			}
+			set_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 714.GPCR_province_zaozao_power_var }
+			set_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var = 714.GPCR_province_zaozao_power_var }
+			add_to_temp_variable = {  GPCR_province_zaozao_and_laobao_temp_var  = 714.GPCR_province_laobao_power_var }
+			divide_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var =  GPCR_province_zaozao_and_laobao_temp_var  }
+			multiply_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 100 }
+			set_variable = { GPCR_province_zaozao_VS_laobao_var = GPCR_province_zaozao_VS_laobao_temp_var }
+			set_variable = { GPCR_province_zaozao_power_gui_var = 714.GPCR_province_zaozao_power_var }
+			set_variable = { GPCR_province_laobao_power_gui_var = 714.GPCR_province_laobao_power_var }
+	
+			set_variable = { GPCR_province_unrest_gui_var = 714.GPCR_province_unrest_var }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var = 714.GPCR_province_unrest_monthly_vary_var0 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 714.GPCR_province_unrest_monthly_vary_var1 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 714.GPCR_province_unrest_monthly_vary_var2 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var0 = 714.GPCR_province_unrest_monthly_vary_var0 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var1 = 714.GPCR_province_unrest_monthly_vary_var1 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var2 = 714.GPCR_province_unrest_monthly_vary_var2 }
+	
+			set_variable = { GPCR_province_PLA_power_gui_var = 714.GPCR_province_PLA_power_var }
+			set_variable = { GPCR_province_PLA_tendency_gui_var = 714.GPCR_province_PLA_tendency_var }
+			set_variable = { GPCR_province_PLA_influence_gui_var = 714.GPCR_province_PLA_influence_var }
+		}
+		else_if = {
+			limit = { 
+				OR = {
+					check_variable = {
+						var = prc_province_var
+						value = 2
+						compare = equals
+					}
+					check_variable = {
+						var = prc_province_var
+						value = 32
+						compare = equals
+					}
+				}
+			}
+			set_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 328.GPCR_province_zaozao_power_var }
+			set_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var = 328.GPCR_province_zaozao_power_var }
+			add_to_temp_variable = {  GPCR_province_zaozao_and_laobao_temp_var  = 328.GPCR_province_laobao_power_var }
+			set_variable = { GPCR_province_zaozao_power_gui_var = 328.GPCR_province_zaozao_power_var }
+			set_variable = { GPCR_province_laobao_power_gui_var = 328.GPCR_province_laobao_power_var }
+	
+			set_variable = { GPCR_province_unrest_gui_var = 328.GPCR_province_unrest_var }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var = 328.GPCR_province_unrest_monthly_vary_var0 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 328.GPCR_province_unrest_monthly_vary_var1 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 328.GPCR_province_unrest_monthly_vary_var2 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var0 = 328.GPCR_province_unrest_monthly_vary_var0 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var1 = 328.GPCR_province_unrest_monthly_vary_var1 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var2 = 328.GPCR_province_unrest_monthly_vary_var2 }
+	
+			set_variable = { GPCR_province_PLA_power_gui_var = 328.GPCR_province_PLA_power_var }
+			set_variable = { GPCR_province_PLA_tendency_gui_var = 328.GPCR_province_PLA_tendency_var }
+			set_variable = { GPCR_province_PLA_influence_gui_var = 328.GPCR_province_PLA_influence_var }
+		}
+		else_if = {
+			limit = { 
+				OR = {
+					check_variable = {
+						var = prc_province_var
+						value = 3
+						compare = equals
+					}
+					check_variable = {
+						var = prc_province_var
+						value = 31
+						compare = equals
+					}
+				}
+			}
+			set_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 716.GPCR_province_zaozao_power_var }
+			set_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var = 716.GPCR_province_zaozao_power_var }
+			add_to_temp_variable = {  GPCR_province_zaozao_and_laobao_temp_var  = 716.GPCR_province_laobao_power_var }
+			set_variable = { GPCR_province_zaozao_power_gui_var = 716.GPCR_province_zaozao_power_var }
+			set_variable = { GPCR_province_laobao_power_gui_var = 716.GPCR_province_laobao_power_var }
+	
+			set_variable = { GPCR_province_unrest_gui_var = 716.GPCR_province_unrest_var }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var = 716.GPCR_province_unrest_monthly_vary_var0 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 716.GPCR_province_unrest_monthly_vary_var1 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 716.GPCR_province_unrest_monthly_vary_var2 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var0 = 716.GPCR_province_unrest_monthly_vary_var0 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var1 = 716.GPCR_province_unrest_monthly_vary_var1 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var2 = 716.GPCR_province_unrest_monthly_vary_var2 }
+	
+			set_variable = { GPCR_province_PLA_power_gui_var = 716.GPCR_province_PLA_power_var }
+			set_variable = { GPCR_province_PLA_tendency_gui_var = 716.GPCR_province_PLA_tendency_var }
+			set_variable = { GPCR_province_PLA_influence_gui_var = 716.GPCR_province_PLA_influence_var }
+		}
+		else_if = {
+			limit = { 
+				OR = {
+					check_variable = {
+						var = prc_province_var
+						value = 4
+						compare = equals
+					}
+					check_variable = {
+						var = prc_province_var
+						value = 30
+						compare = equals
+					}
+				}
+			}
+			set_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 621.GPCR_province_zaozao_power_var }
+			set_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var = 621.GPCR_province_zaozao_power_var }
+			add_to_temp_variable = {  GPCR_province_zaozao_and_laobao_temp_var  = 621.GPCR_province_laobao_power_var }
+			set_variable = { GPCR_province_zaozao_power_gui_var = 621.GPCR_province_zaozao_power_var }
+			set_variable = { GPCR_province_laobao_power_gui_var = 621.GPCR_province_laobao_power_var }
+	
+			set_variable = { GPCR_province_unrest_gui_var = 621.GPCR_province_unrest_var }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var = 621.GPCR_province_unrest_monthly_vary_var0 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 621.GPCR_province_unrest_monthly_vary_var1 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 621.GPCR_province_unrest_monthly_vary_var2 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var0 = 621.GPCR_province_unrest_monthly_vary_var0 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var1 = 621.GPCR_province_unrest_monthly_vary_var1 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var2 = 621.GPCR_province_unrest_monthly_vary_var2 }
+	
+			set_variable = { GPCR_province_PLA_power_gui_var = 621.GPCR_province_PLA_power_var }
+			set_variable = { GPCR_province_PLA_tendency_gui_var = 621.GPCR_province_PLA_tendency_var }
+			set_variable = { GPCR_province_PLA_influence_gui_var = 621.GPCR_province_PLA_influence_var }
+		}
+		else_if = {
+			limit = { 
+				check_variable = {
+					var = prc_province_var
+					value = 5
+					compare = equals
+				}
+			}
+			set_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 608.GPCR_province_zaozao_power_var }
+			set_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var = 608.GPCR_province_zaozao_power_var }
+			add_to_temp_variable = {  GPCR_province_zaozao_and_laobao_temp_var  = 608.GPCR_province_laobao_power_var }
+			set_variable = { GPCR_province_zaozao_power_gui_var = 608.GPCR_province_zaozao_power_var }
+			set_variable = { GPCR_province_laobao_power_gui_var = 608.GPCR_province_laobao_power_var }
+	
+			set_variable = { GPCR_province_unrest_gui_var = 608.GPCR_province_unrest_var }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var = 608.GPCR_province_unrest_monthly_vary_var0 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 608.GPCR_province_unrest_monthly_vary_var1 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 608.GPCR_province_unrest_monthly_vary_var2 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var0 = 608.GPCR_province_unrest_monthly_vary_var0 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var1 = 608.GPCR_province_unrest_monthly_vary_var1 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var2 = 608.GPCR_province_unrest_monthly_vary_var2 }
+	
+			set_variable = { GPCR_province_PLA_power_gui_var = 608.GPCR_province_PLA_power_var }
+			set_variable = { GPCR_province_PLA_tendency_gui_var = 608.GPCR_province_PLA_tendency_var }
+			set_variable = { GPCR_province_PLA_influence_gui_var = 608.GPCR_province_PLA_influence_var }
+		}
+		else_if = {
+			limit = { 
+				check_variable = {
+					var = prc_province_var
+					value = 6
+					compare = equals
+				}
+			}
+			set_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 609.GPCR_province_zaozao_power_var }
+			set_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var = 609.GPCR_province_zaozao_power_var }
+			add_to_temp_variable = {  GPCR_province_zaozao_and_laobao_temp_var  = 609.GPCR_province_laobao_power_var }
+			set_variable = { GPCR_province_zaozao_power_gui_var = 609.GPCR_province_zaozao_power_var }
+			set_variable = { GPCR_province_laobao_power_gui_var = 609.GPCR_province_laobao_power_var }
+	
+			set_variable = { GPCR_province_unrest_gui_var = 609.GPCR_province_unrest_var }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var = 609.GPCR_province_unrest_monthly_vary_var0 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 609.GPCR_province_unrest_monthly_vary_var1 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 609.GPCR_province_unrest_monthly_vary_var2 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var0 = 609.GPCR_province_unrest_monthly_vary_var0 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var1 = 609.GPCR_province_unrest_monthly_vary_var1 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var2 = 609.GPCR_province_unrest_monthly_vary_var2 }
+	
+			set_variable = { GPCR_province_PLA_power_gui_var = 609.GPCR_province_PLA_power_var }
+			set_variable = { GPCR_province_PLA_tendency_gui_var = 609.GPCR_province_PLA_tendency_var }
+			set_variable = { GPCR_province_PLA_influence_gui_var = 609.GPCR_province_PLA_influence_var }
+		}
+		else_if = {
+			limit = { 
+				check_variable = {
+					var = prc_province_var
+					value = 7
+					compare = equals
+				}
+			}
+			set_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 614.GPCR_province_zaozao_power_var }
+			set_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var = 614.GPCR_province_zaozao_power_var }
+			add_to_temp_variable = {  GPCR_province_zaozao_and_laobao_temp_var  = 614.GPCR_province_laobao_power_var }
+			set_variable = { GPCR_province_zaozao_power_gui_var = 614.GPCR_province_zaozao_power_var }
+			set_variable = { GPCR_province_laobao_power_gui_var = 614.GPCR_province_laobao_power_var }
+	
+			set_variable = { GPCR_province_unrest_gui_var = 614.GPCR_province_unrest_var }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var = 614.GPCR_province_unrest_monthly_vary_var0 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 614.GPCR_province_unrest_monthly_vary_var1 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 614.GPCR_province_unrest_monthly_vary_var2 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var0 = 614.GPCR_province_unrest_monthly_vary_var0 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var1 = 614.GPCR_province_unrest_monthly_vary_var1 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var2 = 614.GPCR_province_unrest_monthly_vary_var2 }
+	
+			set_variable = { GPCR_province_PLA_power_gui_var = 614.GPCR_province_PLA_power_var }
+			set_variable = { GPCR_province_PLA_tendency_gui_var = 614.GPCR_province_PLA_tendency_var }
+			set_variable = { GPCR_province_PLA_influence_gui_var = 614.GPCR_province_PLA_influence_var }
+		}
+		else_if = {
+			limit = { 
+				check_variable = {
+					var = prc_province_var
+					value = 8
+					compare = equals
+				}
+			}
+			set_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 615.GPCR_province_zaozao_power_var }
+			set_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var = 615.GPCR_province_zaozao_power_var }
+			add_to_temp_variable = {  GPCR_province_zaozao_and_laobao_temp_var  = 615.GPCR_province_laobao_power_var }
+			set_variable = { GPCR_province_zaozao_power_gui_var = 615.GPCR_province_zaozao_power_var }
+			set_variable = { GPCR_province_laobao_power_gui_var = 615.GPCR_province_laobao_power_var }
+	
+			set_variable = { GPCR_province_unrest_gui_var = 615.GPCR_province_unrest_var }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var = 615.GPCR_province_unrest_monthly_vary_var0 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 615.GPCR_province_unrest_monthly_vary_var1 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 615.GPCR_province_unrest_monthly_vary_var2 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var0 = 615.GPCR_province_unrest_monthly_vary_var0 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var1 = 615.GPCR_province_unrest_monthly_vary_var1 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var2 = 615.GPCR_province_unrest_monthly_vary_var2 }
+	
+			set_variable = { GPCR_province_PLA_power_gui_var = 615.GPCR_province_PLA_power_var }
+			set_variable = { GPCR_province_PLA_tendency_gui_var = 615.GPCR_province_PLA_tendency_var }
+			set_variable = { GPCR_province_PLA_influence_gui_var = 615.GPCR_province_PLA_influence_var }
+		}
+		else_if = {
+			limit = { 
+				check_variable = {
+					var = prc_province_var
+					value = 9
+					compare = equals
+				}
+			}
+			set_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 622.GPCR_province_zaozao_power_var }
+			set_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var = 622.GPCR_province_zaozao_power_var }
+			add_to_temp_variable = {  GPCR_province_zaozao_and_laobao_temp_var  = 622.GPCR_province_laobao_power_var }
+			set_variable = { GPCR_province_zaozao_power_gui_var = 622.GPCR_province_zaozao_power_var }
+			set_variable = { GPCR_province_laobao_power_gui_var = 622.GPCR_province_laobao_power_var }
+	
+			set_variable = { GPCR_province_unrest_gui_var = 622.GPCR_province_unrest_var }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var = 622.GPCR_province_unrest_monthly_vary_var0 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 622.GPCR_province_unrest_monthly_vary_var1 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 622.GPCR_province_unrest_monthly_vary_var2 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var0 = 622.GPCR_province_unrest_monthly_vary_var0 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var1 = 622.GPCR_province_unrest_monthly_vary_var1 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var2 = 622.GPCR_province_unrest_monthly_vary_var2 }
+	
+			set_variable = { GPCR_province_PLA_power_gui_var = 622.GPCR_province_PLA_power_var }
+			set_variable = { GPCR_province_PLA_tendency_gui_var = 622.GPCR_province_PLA_tendency_var }
+			set_variable = { GPCR_province_PLA_influence_gui_var = 622.GPCR_province_PLA_influence_var }
+		}
+		else_if = {
+			limit = { 
+				OR = {
+					check_variable = {
+						var = prc_province_var
+						value = 10
+						compare = equals
+					}
+					check_variable = {
+						var = prc_province_var
+						value = 34
+						compare = equals
+					}
+				}
+			}
+			set_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 616.GPCR_province_zaozao_power_var }
+			set_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var = 616.GPCR_province_zaozao_power_var }
+			add_to_temp_variable = {  GPCR_province_zaozao_and_laobao_temp_var  = 616.GPCR_province_laobao_power_var }
+			set_variable = { GPCR_province_zaozao_power_gui_var = 616.GPCR_province_zaozao_power_var }
+			set_variable = { GPCR_province_laobao_power_gui_var = 616.GPCR_province_laobao_power_var }
+	
+			set_variable = { GPCR_province_unrest_gui_var = 616.GPCR_province_unrest_var }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var = 616.GPCR_province_unrest_monthly_vary_var0 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 616.GPCR_province_unrest_monthly_vary_var1 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 616.GPCR_province_unrest_monthly_vary_var2 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var0 = 616.GPCR_province_unrest_monthly_vary_var0 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var1 = 616.GPCR_province_unrest_monthly_vary_var1 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var2 = 616.GPCR_province_unrest_monthly_vary_var2 }
+	
+			set_variable = { GPCR_province_PLA_power_gui_var = 616.GPCR_province_PLA_power_var }
+			set_variable = { GPCR_province_PLA_tendency_gui_var = 616.GPCR_province_PLA_tendency_var }
+			set_variable = { GPCR_province_PLA_influence_gui_var = 616.GPCR_province_PLA_influence_var }
+		}
+		else_if = {
+			limit = { 
+				OR = {
+					check_variable = {
+						var = prc_province_var
+						value = 11
+						compare = equals
+					}
+					check_variable = {
+						var = prc_province_var
+						value = 35
+						compare = equals
+					}
+				}
+			}
+			set_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 283.GPCR_province_zaozao_power_var }
+			set_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var = 283.GPCR_province_zaozao_power_var }
+			add_to_temp_variable = {  GPCR_province_zaozao_and_laobao_temp_var  = 283.GPCR_province_laobao_power_var }
+			set_variable = { GPCR_province_zaozao_power_gui_var = 283.GPCR_province_zaozao_power_var }
+			set_variable = { GPCR_province_laobao_power_gui_var = 283.GPCR_province_laobao_power_var }
+	
+			set_variable = { GPCR_province_unrest_gui_var = 283.GPCR_province_unrest_var }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var = 283.GPCR_province_unrest_monthly_vary_var0 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 283.GPCR_province_unrest_monthly_vary_var1 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 283.GPCR_province_unrest_monthly_vary_var2 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var0 = 283.GPCR_province_unrest_monthly_vary_var0 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var1 = 283.GPCR_province_unrest_monthly_vary_var1 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var2 = 283.GPCR_province_unrest_monthly_vary_var2 }
+	
+			set_variable = { GPCR_province_PLA_power_gui_var = 283.GPCR_province_PLA_power_var }
+			set_variable = { GPCR_province_PLA_tendency_gui_var = 283.GPCR_province_PLA_tendency_var }
+			set_variable = { GPCR_province_PLA_influence_gui_var = 283.GPCR_province_PLA_influence_var }
+		}
+		else_if = {
+			limit = { 
+				check_variable = {
+					var = prc_province_var
+					value = 12
+					compare = equals
+				}
+			}
+			set_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 604.GPCR_province_zaozao_power_var }
+			set_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var = 604.GPCR_province_zaozao_power_var }
+			add_to_temp_variable = {  GPCR_province_zaozao_and_laobao_temp_var  = 604.GPCR_province_laobao_power_var }
+			set_variable = { GPCR_province_zaozao_power_gui_var = 604.GPCR_province_zaozao_power_var }
+			set_variable = { GPCR_province_laobao_power_gui_var = 604.GPCR_province_laobao_power_var }
+	
+			set_variable = { GPCR_province_unrest_gui_var = 604.GPCR_province_unrest_var }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var = 604.GPCR_province_unrest_monthly_vary_var0 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 604.GPCR_province_unrest_monthly_vary_var1 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 604.GPCR_province_unrest_monthly_vary_var2 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var0 = 604.GPCR_province_unrest_monthly_vary_var0 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var1 = 604.GPCR_province_unrest_monthly_vary_var1 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var2 = 604.GPCR_province_unrest_monthly_vary_var2 }
+	
+			set_variable = { GPCR_province_PLA_power_gui_var = 604.GPCR_province_PLA_power_var }
+			set_variable = { GPCR_province_PLA_tendency_gui_var = 604.GPCR_province_PLA_tendency_var }
+			set_variable = { GPCR_province_PLA_influence_gui_var = 604.GPCR_province_PLA_influence_var }
+		}
+		else_if = {
+			limit = { 
+				check_variable = {
+					var = prc_province_var
+					value = 13
+					compare = equals
+				}
+			}
+			set_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 617.GPCR_province_zaozao_power_var }
+			set_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var = 617.GPCR_province_zaozao_power_var }
+			add_to_temp_variable = {  GPCR_province_zaozao_and_laobao_temp_var  = 617.GPCR_province_laobao_power_var }
+			set_variable = { GPCR_province_zaozao_power_gui_var = 617.GPCR_province_zaozao_power_var }
+			set_variable = { GPCR_province_laobao_power_gui_var = 617.GPCR_province_laobao_power_var }
+	
+			set_variable = { GPCR_province_unrest_gui_var = 617.GPCR_province_unrest_var }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var = 617.GPCR_province_unrest_monthly_vary_var0 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 617.GPCR_province_unrest_monthly_vary_var1 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 617.GPCR_province_unrest_monthly_vary_var2 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var0 = 617.GPCR_province_unrest_monthly_vary_var0 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var1 = 617.GPCR_province_unrest_monthly_vary_var1 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var2 = 617.GPCR_province_unrest_monthly_vary_var2 }
+	
+			set_variable = { GPCR_province_PLA_power_gui_var = 617.GPCR_province_PLA_power_var }
+			set_variable = { GPCR_province_PLA_tendency_gui_var = 617.GPCR_province_PLA_tendency_var }
+			set_variable = { GPCR_province_PLA_influence_gui_var = 617.GPCR_province_PLA_influence_var }
+		}
+		else_if = {
+			limit = { 
+				OR = {
+					check_variable = {
+						var = prc_province_var
+						value = 14
+						compare = equals
+					}
+					check_variable = {
+						var = prc_province_var
+						value = 36
+						compare = equals
+					}
+				}
+			}
+			set_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 1549.GPCR_province_zaozao_power_var }
+			set_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var = 1549.GPCR_province_zaozao_power_var }
+			add_to_temp_variable = {  GPCR_province_zaozao_and_laobao_temp_var  = 1549.GPCR_province_laobao_power_var }
+			set_variable = { GPCR_province_zaozao_power_gui_var = 1549.GPCR_province_zaozao_power_var }
+			set_variable = { GPCR_province_laobao_power_gui_var = 1549.GPCR_province_laobao_power_var }
+	
+			set_variable = { GPCR_province_unrest_gui_var = 1549.GPCR_province_unrest_var }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var = 1549.GPCR_province_unrest_monthly_vary_var0 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 1549.GPCR_province_unrest_monthly_vary_var1 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 1549.GPCR_province_unrest_monthly_vary_var2 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var0 = 1549.GPCR_province_unrest_monthly_vary_var0 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var1 = 1549.GPCR_province_unrest_monthly_vary_var1 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var2 = 1549.GPCR_province_unrest_monthly_vary_var2 }
+	
+			set_variable = { GPCR_province_PLA_power_gui_var = 1549.GPCR_province_PLA_power_var }
+			set_variable = { GPCR_province_PLA_tendency_gui_var = 1549.GPCR_province_PLA_tendency_var }
+			set_variable = { GPCR_province_PLA_influence_gui_var = 1549.GPCR_province_PLA_influence_var }
+		}
+		else_if = {
+			limit = { 
+				check_variable = {
+					var = prc_province_var
+					value = 15
+					compare = equals
+				}
+			}
+			set_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 607.GPCR_province_zaozao_power_var }
+			set_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var = 607.GPCR_province_zaozao_power_var }
+			add_to_temp_variable = {  GPCR_province_zaozao_and_laobao_temp_var  = 607.GPCR_province_laobao_power_var }
+			set_variable = { GPCR_province_zaozao_power_gui_var = 607.GPCR_province_zaozao_power_var }
+			set_variable = { GPCR_province_laobao_power_gui_var = 607.GPCR_province_laobao_power_var }
+	
+			set_variable = { GPCR_province_unrest_gui_var = 607.GPCR_province_unrest_var }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var = 607.GPCR_province_unrest_monthly_vary_var0 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 607.GPCR_province_unrest_monthly_vary_var1 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 607.GPCR_province_unrest_monthly_vary_var2 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var0 = 607.GPCR_province_unrest_monthly_vary_var0 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var1 = 607.GPCR_province_unrest_monthly_vary_var1 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var2 = 607.GPCR_province_unrest_monthly_vary_var2 }
+	
+			set_variable = { GPCR_province_PLA_power_gui_var = 607.GPCR_province_PLA_power_var }
+			set_variable = { GPCR_province_PLA_tendency_gui_var = 607.GPCR_province_PLA_tendency_var }
+			set_variable = { GPCR_province_PLA_influence_gui_var = 607.GPCR_province_PLA_influence_var }
+		}
+		else_if = {
+			limit = { 
+				check_variable = {
+					var = prc_province_var
+					value = 16
+					compare = equals
+				}
+			}
+			set_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 620.GPCR_province_zaozao_power_var }
+			set_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var = 620.GPCR_province_zaozao_power_var }
+			add_to_temp_variable = {  GPCR_province_zaozao_and_laobao_temp_var  = 620.GPCR_province_laobao_power_var }
+			set_variable = { GPCR_province_zaozao_power_gui_var = 620.GPCR_province_zaozao_power_var }
+			set_variable = { GPCR_province_laobao_power_gui_var = 620.GPCR_province_laobao_power_var }
+	
+			set_variable = { GPCR_province_unrest_gui_var = 620.GPCR_province_unrest_var }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var = 620.GPCR_province_unrest_monthly_vary_var0 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 620.GPCR_province_unrest_monthly_vary_var1 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 620.GPCR_province_unrest_monthly_vary_var2 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var0 = 620.GPCR_province_unrest_monthly_vary_var0 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var1 = 620.GPCR_province_unrest_monthly_vary_var1 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var2 = 620.GPCR_province_unrest_monthly_vary_var2 }
+	
+			set_variable = { GPCR_province_PLA_power_gui_var = 620.GPCR_province_PLA_power_var }
+			set_variable = { GPCR_province_PLA_tendency_gui_var = 620.GPCR_province_PLA_tendency_var }
+			set_variable = { GPCR_province_PLA_influence_gui_var = 620.GPCR_province_PLA_influence_var }
+		}
+		else_if = {
+			limit = { 
+				check_variable = {
+					var = prc_province_var
+					value = 17
+					compare = equals
+				}
+			}
+			set_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 602.GPCR_province_zaozao_power_var }
+			set_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var = 602.GPCR_province_zaozao_power_var }
+			add_to_temp_variable = {  GPCR_province_zaozao_and_laobao_temp_var  = 602.GPCR_province_laobao_power_var }
+			set_variable = { GPCR_province_zaozao_power_gui_var = 602.GPCR_province_zaozao_power_var }
+			set_variable = { GPCR_province_laobao_power_gui_var = 602.GPCR_province_laobao_power_var }
+	
+			set_variable = { GPCR_province_unrest_gui_var = 602.GPCR_province_unrest_var }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var = 602.GPCR_province_unrest_monthly_vary_var0 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 602.GPCR_province_unrest_monthly_vary_var1 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 602.GPCR_province_unrest_monthly_vary_var2 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var0 = 602.GPCR_province_unrest_monthly_vary_var0 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var1 = 602.GPCR_province_unrest_monthly_vary_var1 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var2 = 602.GPCR_province_unrest_monthly_vary_var2 }
+	
+			set_variable = { GPCR_province_PLA_power_gui_var = 602.GPCR_province_PLA_power_var }
+			set_variable = { GPCR_province_PLA_tendency_gui_var = 602.GPCR_province_PLA_tendency_var }
+			set_variable = { GPCR_province_PLA_influence_gui_var = 602.GPCR_province_PLA_influence_var }
+		}
+		else_if = {
+			limit = { 
+				check_variable = {
+					var = prc_province_var
+					value = 18
+					compare = equals
+				}
+			}
+			set_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 600.GPCR_province_zaozao_power_var }
+			set_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var = 600.GPCR_province_zaozao_power_var }
+			add_to_temp_variable = {  GPCR_province_zaozao_and_laobao_temp_var  = 600.GPCR_province_laobao_power_var }
+			set_variable = { GPCR_province_zaozao_power_gui_var = 600.GPCR_province_zaozao_power_var }
+			set_variable = { GPCR_province_laobao_power_gui_var = 600.GPCR_province_laobao_power_var }
+	
+			set_variable = { GPCR_province_unrest_gui_var = 600.GPCR_province_unrest_var }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var = 600.GPCR_province_unrest_monthly_vary_var0 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 600.GPCR_province_unrest_monthly_vary_var1 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 600.GPCR_province_unrest_monthly_vary_var2 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var0 = 600.GPCR_province_unrest_monthly_vary_var0 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var1 = 600.GPCR_province_unrest_monthly_vary_var1 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var2 = 600.GPCR_province_unrest_monthly_vary_var2 }
+	
+			set_variable = { GPCR_province_PLA_power_gui_var = 600.GPCR_province_PLA_power_var }
+			set_variable = { GPCR_province_PLA_tendency_gui_var = 600.GPCR_province_PLA_tendency_var }
+			set_variable = { GPCR_province_PLA_influence_gui_var = 600.GPCR_province_PLA_influence_var }
+		}
+		else_if = {
+			limit = { 
+				check_variable = {
+					var = prc_province_var
+					value = 19
+					compare = equals
+				}
+			}
+			set_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 597.GPCR_province_zaozao_power_var }
+			set_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var = 597.GPCR_province_zaozao_power_var }
+			add_to_temp_variable = {  GPCR_province_zaozao_and_laobao_temp_var  = 597.GPCR_province_laobao_power_var }
+			set_variable = { GPCR_province_zaozao_power_gui_var = 597.GPCR_province_zaozao_power_var }
+			set_variable = { GPCR_province_laobao_power_gui_var = 597.GPCR_province_laobao_power_var }
+	
+			set_variable = { GPCR_province_unrest_gui_var = 597.GPCR_province_unrest_var }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var = 597.GPCR_province_unrest_monthly_vary_var0 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 597.GPCR_province_unrest_monthly_vary_var1 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 597.GPCR_province_unrest_monthly_vary_var2 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var0 = 597.GPCR_province_unrest_monthly_vary_var0 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var1 = 597.GPCR_province_unrest_monthly_vary_var1 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var2 = 597.GPCR_province_unrest_monthly_vary_var2 }
+	
+			set_variable = { GPCR_province_PLA_power_gui_var = 597.GPCR_province_PLA_power_var }
+			set_variable = { GPCR_province_PLA_tendency_gui_var = 597.GPCR_province_PLA_tendency_var }
+			set_variable = { GPCR_province_PLA_influence_gui_var = 597.GPCR_province_PLA_influence_var }
+		}
+		else_if = {
+			limit = { 
+				check_variable = {
+					var = prc_province_var
+					value = 20
+					compare = equals
+				}
+			}
+			set_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 606.GPCR_province_zaozao_power_var }
+			set_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var = 606.GPCR_province_zaozao_power_var }
+			add_to_temp_variable = {  GPCR_province_zaozao_and_laobao_temp_var  = 606.GPCR_province_laobao_power_var }
+			set_variable = { GPCR_province_zaozao_power_gui_var = 606.GPCR_province_zaozao_power_var }
+			set_variable = { GPCR_province_laobao_power_gui_var = 606.GPCR_province_laobao_power_var }
+	
+			set_variable = { GPCR_province_unrest_gui_var = 606.GPCR_province_unrest_var }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var = 606.GPCR_province_unrest_monthly_vary_var0 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 606.GPCR_province_unrest_monthly_vary_var1 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 606.GPCR_province_unrest_monthly_vary_var2 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var0 = 606.GPCR_province_unrest_monthly_vary_var0 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var1 = 606.GPCR_province_unrest_monthly_vary_var1 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var2 = 606.GPCR_province_unrest_monthly_vary_var2 }
+	
+			set_variable = { GPCR_province_PLA_power_gui_var = 606.GPCR_province_PLA_power_var }
+			set_variable = { GPCR_province_PLA_tendency_gui_var = 606.GPCR_province_PLA_tendency_var }
+			set_variable = { GPCR_province_PLA_influence_gui_var = 606.GPCR_province_PLA_influence_var }
+		}
+		else_if = {
+			limit = { 
+				check_variable = {
+					var = prc_province_var
+					value = 21
+					compare = equals
+				}
+			}
+			set_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 598.GPCR_province_zaozao_power_var }
+			set_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var = 598.GPCR_province_zaozao_power_var }
+			add_to_temp_variable = {  GPCR_province_zaozao_and_laobao_temp_var  = 598.GPCR_province_laobao_power_var }
+			set_variable = { GPCR_province_zaozao_power_gui_var = 598.GPCR_province_zaozao_power_var }
+			set_variable = { GPCR_province_laobao_power_gui_var = 598.GPCR_province_laobao_power_var }
+	
+			set_variable = { GPCR_province_unrest_gui_var = 598.GPCR_province_unrest_var }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var = 598.GPCR_province_unrest_monthly_vary_var0 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 598.GPCR_province_unrest_monthly_vary_var1 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 598.GPCR_province_unrest_monthly_vary_var2 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var0 = 598.GPCR_province_unrest_monthly_vary_var0 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var1 = 598.GPCR_province_unrest_monthly_vary_var1 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var2 = 598.GPCR_province_unrest_monthly_vary_var2 }
+	
+			set_variable = { GPCR_province_PLA_power_gui_var = 598.GPCR_province_PLA_power_var }
+			set_variable = { GPCR_province_PLA_tendency_gui_var = 598.GPCR_province_PLA_tendency_var }
+			set_variable = { GPCR_province_PLA_influence_gui_var = 598.GPCR_province_PLA_influence_var }
+		}
+		else_if = {
+			limit = { 
+				check_variable = {
+					var = prc_province_var
+					value = 22
+					compare = equals
+				}
+			}
+			set_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 613.GPCR_province_zaozao_power_var }
+			set_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var = 613.GPCR_province_zaozao_power_var }
+			add_to_temp_variable = {  GPCR_province_zaozao_and_laobao_temp_var  = 613.GPCR_province_laobao_power_var }
+			set_variable = { GPCR_province_zaozao_power_gui_var = 613.GPCR_province_zaozao_power_var }
+			set_variable = { GPCR_province_laobao_power_gui_var = 613.GPCR_province_laobao_power_var }
+	
+			set_variable = { GPCR_province_unrest_gui_var = 613.GPCR_province_unrest_var }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var = 613.GPCR_province_unrest_monthly_vary_var0 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 613.GPCR_province_unrest_monthly_vary_var1 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 613.GPCR_province_unrest_monthly_vary_var2 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var0 = 613.GPCR_province_unrest_monthly_vary_var0 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var1 = 613.GPCR_province_unrest_monthly_vary_var1 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var2 = 613.GPCR_province_unrest_monthly_vary_var2 }
+	
+			set_variable = { GPCR_province_PLA_power_gui_var = 613.GPCR_province_PLA_power_var }
+			set_variable = { GPCR_province_PLA_tendency_gui_var = 613.GPCR_province_PLA_tendency_var }
+			set_variable = { GPCR_province_PLA_influence_gui_var = 613.GPCR_province_PLA_influence_var }
+		}
+		else_if = {
+			limit = { 
+				check_variable = {
+					var = prc_province_var
+					value = 23
+					compare = equals
+				}
+			}
+			set_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 596.GPCR_province_zaozao_power_var }
+			set_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var = 596.GPCR_province_zaozao_power_var }
+			add_to_temp_variable = {  GPCR_province_zaozao_and_laobao_temp_var  = 596.GPCR_province_laobao_power_var }
+			set_variable = { GPCR_province_zaozao_power_gui_var = 596.GPCR_province_zaozao_power_var }
+			set_variable = { GPCR_province_laobao_power_gui_var = 596.GPCR_province_laobao_power_var }
+	
+			set_variable = { GPCR_province_unrest_gui_var = 596.GPCR_province_unrest_var }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var = 596.GPCR_province_unrest_monthly_vary_var0 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 596.GPCR_province_unrest_monthly_vary_var1 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 596.GPCR_province_unrest_monthly_vary_var2 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var0 = 596.GPCR_province_unrest_monthly_vary_var0 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var1 = 596.GPCR_province_unrest_monthly_vary_var1 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var2 = 596.GPCR_province_unrest_monthly_vary_var2 }
+	
+			set_variable = { GPCR_province_PLA_power_gui_var = 596.GPCR_province_PLA_power_var }
+			set_variable = { GPCR_province_PLA_tendency_gui_var = 596.GPCR_province_PLA_tendency_var }
+			set_variable = { GPCR_province_PLA_influence_gui_var = 596.GPCR_province_PLA_influence_var }
+		}
+		else_if = {
+			limit = { 
+				check_variable = {
+					var = prc_province_var
+					value = 24
+					compare = equals
+				}
+			}
+			set_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 595.GPCR_province_zaozao_power_var }
+			set_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var = 595.GPCR_province_zaozao_power_var }
+			add_to_temp_variable = {  GPCR_province_zaozao_and_laobao_temp_var  = 595.GPCR_province_laobao_power_var }
+			set_variable = { GPCR_province_zaozao_power_gui_var = 595.GPCR_province_zaozao_power_var }
+			set_variable = { GPCR_province_laobao_power_gui_var = 595.GPCR_province_laobao_power_var }
+	
+			set_variable = { GPCR_province_unrest_gui_var = 595.GPCR_province_unrest_var }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var = 595.GPCR_province_unrest_monthly_vary_var0 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 595.GPCR_province_unrest_monthly_vary_var1 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 595.GPCR_province_unrest_monthly_vary_var2 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var0 = 595.GPCR_province_unrest_monthly_vary_var0 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var1 = 595.GPCR_province_unrest_monthly_vary_var1 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var2 = 595.GPCR_province_unrest_monthly_vary_var2 }
+	
+			set_variable = { GPCR_province_PLA_power_gui_var = 595.GPCR_province_PLA_power_var }
+			set_variable = { GPCR_province_PLA_tendency_gui_var = 595.GPCR_province_PLA_tendency_var }
+			set_variable = { GPCR_province_PLA_influence_gui_var = 595.GPCR_province_PLA_influence_var }
+		}
+		else_if = {
+			limit = { 
+				check_variable = {
+					var = prc_province_var
+					value = 25
+					compare = equals
+				}
+			}
+			set_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 605.GPCR_province_zaozao_power_var }
+			set_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var = 605.GPCR_province_zaozao_power_var }
+			add_to_temp_variable = {  GPCR_province_zaozao_and_laobao_temp_var  = 605.GPCR_province_laobao_power_var }
+			set_variable = { GPCR_province_zaozao_power_gui_var = 605.GPCR_province_zaozao_power_var }
+			set_variable = { GPCR_province_laobao_power_gui_var = 605.GPCR_province_laobao_power_var }
+	
+			set_variable = { GPCR_province_unrest_gui_var = 605.GPCR_province_unrest_var }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var = 605.GPCR_province_unrest_monthly_vary_var0 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 605.GPCR_province_unrest_monthly_vary_var1 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 605.GPCR_province_unrest_monthly_vary_var2 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var0 = 605.GPCR_province_unrest_monthly_vary_var0 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var1 = 605.GPCR_province_unrest_monthly_vary_var1 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var2 = 605.GPCR_province_unrest_monthly_vary_var2 }
+	
+			set_variable = { GPCR_province_PLA_power_gui_var = 605.GPCR_province_PLA_power_var }
+			set_variable = { GPCR_province_PLA_tendency_gui_var = 605.GPCR_province_PLA_tendency_var }
+			set_variable = { GPCR_province_PLA_influence_gui_var = 605.GPCR_province_PLA_influence_var }
+		}
+		else_if = {
+			limit = { 
+				check_variable = {
+					var = prc_province_var
+					value = 26
+					compare = equals
+				}
+			}
+			set_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 603.GPCR_province_zaozao_power_var }
+			set_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var = 603.GPCR_province_zaozao_power_var }
+			add_to_temp_variable = {  GPCR_province_zaozao_and_laobao_temp_var  = 603.GPCR_province_laobao_power_var }
+			set_variable = { GPCR_province_zaozao_power_gui_var = 603.GPCR_province_zaozao_power_var }
+			set_variable = { GPCR_province_laobao_power_gui_var = 603.GPCR_province_laobao_power_var }
+	
+			set_variable = { GPCR_province_unrest_gui_var = 603.GPCR_province_unrest_var }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var = 603.GPCR_province_unrest_monthly_vary_var0 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 603.GPCR_province_unrest_monthly_vary_var1 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 603.GPCR_province_unrest_monthly_vary_var2 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var0 = 603.GPCR_province_unrest_monthly_vary_var0 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var1 = 603.GPCR_province_unrest_monthly_vary_var1 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var2 = 603.GPCR_province_unrest_monthly_vary_var2 }
+	
+			set_variable = { GPCR_province_PLA_power_gui_var = 603.GPCR_province_PLA_power_var }
+			set_variable = { GPCR_province_PLA_tendency_gui_var = 603.GPCR_province_PLA_tendency_var }
+			set_variable = { GPCR_province_PLA_influence_gui_var = 603.GPCR_province_PLA_influence_var }
+		}
+		else_if = {
+			limit = { 
+				check_variable = {
+					var = prc_province_var
+					value = 27
+					compare = equals
+				}
+			}
+			set_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 325.GPCR_province_zaozao_power_var }
+			set_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var = 325.GPCR_province_zaozao_power_var }
+			add_to_temp_variable = {  GPCR_province_zaozao_and_laobao_temp_var  = 325.GPCR_province_laobao_power_var }
+			set_variable = { GPCR_province_zaozao_power_gui_var = 325.GPCR_province_zaozao_power_var }
+			set_variable = { GPCR_province_laobao_power_gui_var = 325.GPCR_province_laobao_power_var }
+	
+			set_variable = { GPCR_province_unrest_gui_var = 325.GPCR_province_unrest_var }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var = 325.GPCR_province_unrest_monthly_vary_var0 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 325.GPCR_province_unrest_monthly_vary_var1 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 325.GPCR_province_unrest_monthly_vary_var2 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var0 = 325.GPCR_province_unrest_monthly_vary_var0 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var1 = 325.GPCR_province_unrest_monthly_vary_var1 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var2 = 325.GPCR_province_unrest_monthly_vary_var2 }
+	
+			set_variable = { GPCR_province_PLA_power_gui_var = 325.GPCR_province_PLA_power_var }
+			set_variable = { GPCR_province_PLA_tendency_gui_var = 325.GPCR_province_PLA_tendency_var }
+			set_variable = { GPCR_province_PLA_influence_gui_var = 325.GPCR_province_PLA_influence_var }
+		}
+		else_if = {
+			limit = { 
+				check_variable = {
+					var = prc_province_var
+					value = 28
+					compare = equals
+				}
+			}
+			set_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 594.GPCR_province_zaozao_power_var }
+			set_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var = 594.GPCR_province_zaozao_power_var }
+			add_to_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var  = 594.GPCR_province_laobao_power_var }
+			set_variable = { GPCR_province_zaozao_power_gui_var = 594.GPCR_province_zaozao_power_var }
+			set_variable = { GPCR_province_laobao_power_gui_var = 594.GPCR_province_laobao_power_var }
+	
+			set_variable = { GPCR_province_unrest_gui_var = 594.GPCR_province_unrest_var }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var = 594.GPCR_province_unrest_monthly_vary_var0 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 594.GPCR_province_unrest_monthly_vary_var1 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 594.GPCR_province_unrest_monthly_vary_var2 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var0 = 594.GPCR_province_unrest_monthly_vary_var0 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var1 = 594.GPCR_province_unrest_monthly_vary_var1 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var2 = 594.GPCR_province_unrest_monthly_vary_var2 }
+	
+			set_variable = { GPCR_province_PLA_power_gui_var = 594.GPCR_province_PLA_power_var }
+			set_variable = { GPCR_province_PLA_tendency_gui_var = 594.GPCR_province_PLA_tendency_var }
+			set_variable = { GPCR_province_PLA_influence_gui_var = 594.GPCR_province_PLA_influence_var }
+		}
+		else_if = {
+			limit = { 
+				check_variable = {
+					var = prc_province_var
+					value = 29
+					compare = equals
+				}
+			}
+			set_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 1569.GPCR_province_zaozao_power_var }
+			set_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var = 1569.GPCR_province_zaozao_power_var }
+			add_to_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var  = 1569.GPCR_province_laobao_power_var }
+			set_variable = { GPCR_province_zaozao_power_gui_var = 1569.GPCR_province_zaozao_power_var }
+			set_variable = { GPCR_province_laobao_power_gui_var = 1569.GPCR_province_laobao_power_var }
+	
+			set_variable = { GPCR_province_unrest_gui_var = 1569.GPCR_province_unrest_var }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var = 1569.GPCR_province_unrest_monthly_vary_var0 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 1569.GPCR_province_unrest_monthly_vary_var1 }
+			add_to_variable = { GPCR_province_unrest_monthly_vary_gui_var = 1569.GPCR_province_unrest_monthly_vary_var2 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var0 = 1569.GPCR_province_unrest_monthly_vary_var0 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var1 = 1569.GPCR_province_unrest_monthly_vary_var1 }
+			set_variable = { GPCR_province_unrest_monthly_vary_gui_var2 = 1569.GPCR_province_unrest_monthly_vary_var2 }
+	
+			set_variable = { GPCR_province_PLA_power_gui_var = 1569.GPCR_province_PLA_power_var }
+			set_variable = { GPCR_province_PLA_tendency_gui_var = 1569.GPCR_province_PLA_tendency_var }
+			set_variable = { GPCR_province_PLA_influence_gui_var = 1569.GPCR_province_PLA_influence_var }
+		}
+	
+		divide_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var =  GPCR_province_zaozao_and_laobao_temp_var }
+		multiply_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 100 }
+		set_variable = { GPCR_province_zaozao_VS_laobao_var = GPCR_province_zaozao_VS_laobao_temp_var }
+		
+		if = {
+			limit = {
+				check_variable = {
+					var = GPCR_province_PLA_tendency_gui_var
+					value = -45
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = GPCR_province_PLA_tendency_gui_var
+					value = -35
+					compare = less_than_or_equals
+				}
+			}
+			set_variable = { GPCR_province_PLA_tendency_pointer_frame = 1 }
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = GPCR_province_PLA_tendency_gui_var
+					value = -35
+					compare = greater_than
+				}
+				check_variable = {
+					var = GPCR_province_PLA_tendency_gui_var
+					value = -25
+					compare = less_than_or_equals
+				}
+			}
+			set_variable = { GPCR_province_PLA_tendency_pointer_frame = 2 }
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = GPCR_province_PLA_tendency_gui_var
+					value = -25
+					compare = greater_than
+				}
+				check_variable = {
+					var = GPCR_province_PLA_tendency_gui_var
+					value = -15
+					compare = less_than_or_equals
+				}
+			}
+			set_variable = { GPCR_province_PLA_tendency_pointer_frame = 3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = GPCR_province_PLA_tendency_gui_var
+					value = -15
+					compare = greater_than
+				}
+				check_variable = {
+					var = GPCR_province_PLA_tendency_gui_var
+					value = -5
+					compare = less_than_or_equals
+				}
+			}
+			set_variable = { GPCR_province_PLA_tendency_pointer_frame = 4 }
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = GPCR_province_PLA_tendency_gui_var
+					value = -5
+					compare = greater_than
+				}
+				check_variable = {
+					var = GPCR_province_PLA_tendency_gui_var
+					value = 5
+					compare = less_than_or_equals
+				}
+			}
+			set_variable = { GPCR_province_PLA_tendency_pointer_frame = 5 }
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = GPCR_province_PLA_tendency_gui_var
+					value = 5
+					compare = greater_than
+				}
+				check_variable = {
+					var = GPCR_province_PLA_tendency_gui_var
+					value = 15
+					compare = less_than_or_equals
+				}
+			}
+			set_variable = { GPCR_province_PLA_tendency_pointer_frame = 6 }
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = GPCR_province_PLA_tendency_gui_var
+					value = 15
+					compare = greater_than
+				}
+				check_variable = {
+					var = GPCR_province_PLA_tendency_gui_var
+					value = 25
+					compare = less_than_or_equals
+				}
+			}
+			set_variable = { GPCR_province_PLA_tendency_pointer_frame = 7 }
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = GPCR_province_PLA_tendency_gui_var
+					value = 25
+					compare = greater_than
+				}
+				check_variable = {
+					var = GPCR_province_PLA_tendency_gui_var
+					value = 35
+					compare = less_than_or_equals
+				}
+			}
+			set_variable = { GPCR_province_PLA_tendency_pointer_frame = 8 }
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = GPCR_province_PLA_tendency_gui_var
+					value = 35
+					compare = greater_than
+				}
+				check_variable = {
+					var = GPCR_province_PLA_tendency_gui_var
+					value = 45
+					compare = less_than_or_equals
+				}
+			}
+			set_variable = { GPCR_province_PLA_tendency_pointer_frame = 9 }
+		}
+	}
+}
+
+PRC_GPCR_province_variable_update = {
+	hidden_effect = {
+		every_owned_state = {
+			limit = {
+				OR = {
+					state = 608
+					state = 613
+				}
+			}
+			clamp_variable = {  
+				var = GPCR_province_zaozao_power_var
+				max = 200
+				min = 0
+			}
+			clamp_variable = {  
+				var = GPCR_province_laobao_power_var
+				max = 200
+				min = 0
+			}
+		}
+		every_owned_state = {
+			limit = {
+				OR = {
+					state = 714
+					state = 328
+					state = 716
+				}
+			}
+			clamp_variable = {  
+				var = GPCR_province_zaozao_power_var
+				max = 140
+				min = 0
+			}
+			clamp_variable = {  
+				var = GPCR_province_laobao_power_var
+				max = 140
+				min = 0
+			}
+		}
+		every_owned_state = {
+			limit = {
+				OR = {
+					state = 596
+					state = 595
+					state = 594
+					state = 1569
+					state = 607
+					state = 598
+					state = 597
+					state = 620
+					state = 602
+					state = 614
+					state = 606
+				}
+			}
+			clamp_variable = {  
+				var = GPCR_province_zaozao_power_var
+				max = 130
+				min = 0
+			}
+			clamp_variable = {  
+				var = GPCR_province_laobao_power_var
+				max = 130
+				min = 0
+			}
+		}
+		every_owned_state = {
+			limit = {
+				OR = {
+					state = 615
+					state = 325
+					state = 621
+					state = 600
+					state = 605
+				}
+			}
+			clamp_variable = {  
+				var = GPCR_province_zaozao_power_var
+				max = 120
+				min = 0
+			}
+			clamp_variable = {  
+				var = GPCR_province_laobao_power_var
+				max = 120
+				min = 0
+			}
+		}
+		every_owned_state = {
+			limit = {
+				OR = {
+					state = 609
+					state = 603
+					state = 616
+					state = 604
+					state = 283
+					state = 622
+				}
+			}
+			clamp_variable = {  
+				var = GPCR_province_zaozao_power_var
+				max = 100
+				min = 0
+			}
+			clamp_variable = {  
+				var = GPCR_province_laobao_power_var
+				max = 100
+				min = 0
+			}
+		}
+		every_owned_state = {
+			limit = {
+				OR = {
+					state = 617
+					state = 1549
+				}
+			}
+			clamp_variable = {  
+				var = GPCR_province_zaozao_power_var
+				max = 90
+				min = 0
+			}
+			clamp_variable = {  
+				var = GPCR_province_laobao_power_var
+				max = 90
+				min = 0
+			}
+		}
+		every_owned_state = {
+			limit = {
+				has_variable = GPCR_province_zaozao_power_var
+			}
+	
+			clamp_variable = {
+				var = GPCR_province_unrest_var
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = GPCR_province_PLA_power_var
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = GPCR_province_PLA_tendency_var
+				min = -45
+				max = 45
+			}
+			clamp_variable = {
+				var = GPCR_province_unrest_monthly_vary_var2
+				min = -2
+				max = 2
+			}
+			clamp_variable = {
+				var = GPCR_province_zaozao_VS_laobao_influence_var
+				min = 0.6
+				max = 1.4
+			}
+		}
+		every_owned_state = {
+			limit = {
+				NOT = {
+					state = 617
+					state = 1549
+				}
+				has_variable = GPCR_province_zaozao_power_var
+			}
+			set_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = GPCR_province_zaozao_power_var }
+			set_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var = GPCR_province_zaozao_power_var }
+			add_to_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var  = GPCR_province_laobao_power_var }
+			divide_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var =  GPCR_province_zaozao_and_laobao_temp_var }
+			multiply_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 100 }
+			if = {
+				limit = {
+					check_variable = {
+						var = GPCR_province_zaozao_VS_laobao_temp_var
+						value = 46
+						compare = less_than_or_equals
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = prc_change_of_administrative_division
+							value = 12
+							compare = greater_than
+						}
+						check_variable = {
+							var = prc_change_of_administrative_division
+							value = 24
+							compare = less_than_or_than
+						}
+					}
+					add_to_variable = { prc_change_of_administrative_division = 12 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							var = prc_change_of_administrative_division
+							value = 12
+							compare = less_than_or_equals
+						}
+					}
+					add_to_variable = { prc_change_of_administrative_division = 24 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						var = GPCR_province_zaozao_VS_laobao_temp_var
+						value = 46
+						compare = greater_than
+					}
+					check_variable = {
+						var = GPCR_province_zaozao_VS_laobao_temp_var
+						value = 54
+						compare = less_than
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = prc_change_of_administrative_division
+							value = 12
+							compare = less_than_or_equals
+						}
+					}
+					add_to_variable = { prc_change_of_administrative_division = 12 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							var = prc_change_of_administrative_division
+							value = 24
+							compare = greater_than
+						}
+					}
+					add_to_variable = { prc_change_of_administrative_division = -12 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						var = GPCR_province_zaozao_VS_laobao_temp_var
+						value = 54
+						compare = greater_than_or_equals
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = prc_change_of_administrative_division
+							value = 12
+							compare = greater_than
+						}
+						check_variable = {
+							var = prc_change_of_administrative_division
+							value = 24
+							compare = less_than_or_equals
+						}
+					}
+					add_to_variable = { prc_change_of_administrative_division = -12 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							var = prc_change_of_administrative_division
+							value = 24
+							compare = greater_than
+						}
+					}
+					add_to_variable = { prc_change_of_administrative_division = -24 }
+				}
+			}
+		}
+		every_owned_state = {
+			limit = {
+				OR = {
+					state = 617
+					state = 1549
+				}
+				has_variable = GPCR_province_zaozao_power_var
+			}
+			set_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = GPCR_province_zaozao_power_var }
+			set_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var = GPCR_province_zaozao_power_var }
+			add_to_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var  = GPCR_province_laobao_power_var }
+			divide_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var =  GPCR_province_zaozao_and_laobao_temp_var }
+			multiply_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 100 }
+			if = {
+				limit = {
+					check_variable = {
+						var = GPCR_province_zaozao_VS_laobao_temp_var
+						value = 46
+						compare = less_than_or_equals
+					}
+				}
+				set_variable = { prc_change_of_administrative_division = 3 }
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						var = GPCR_province_zaozao_VS_laobao_temp_var
+						value = 46
+						compare = greater_than
+					}
+					check_variable = {
+						var = GPCR_province_zaozao_VS_laobao_temp_var
+						value = 54
+						compare = less_than
+					}
+				}
+				set_variable = { prc_change_of_administrative_division = 2 }
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						var = GPCR_province_zaozao_VS_laobao_temp_var
+						value = 54
+						compare = greater_than_or_equals
+					}
+				}
+				set_variable = { prc_change_of_administrative_division = 1 }
+			}
+		}
+		every_owned_state = {
+			limit = {
+				has_variable = GPCR_province_zaozao_power_var
+			}
+			set_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = GPCR_province_zaozao_power_var }
+			set_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var = GPCR_province_zaozao_power_var }
+			add_to_temp_variable = { GPCR_province_zaozao_and_laobao_temp_var  = GPCR_province_laobao_power_var }
+			divide_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var =  GPCR_province_zaozao_and_laobao_temp_var }
+			multiply_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 100 }
+			if = {
+				limit = {
+					check_variable = {
+						var = GPCR_province_zaozao_VS_laobao_temp_var
+						value = 50
+						compare = greater_than
+					}
+					check_variable = {
+						var = GPCR_province_zaozao_VS_laobao_temp_var
+						value = 90
+						compare = less_than
+					}
+				}
+				add_to_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = -90 }
+				multiply_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = -1 }
+				divide_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 40 }
+				multiply_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 2 }
+				set_variable = { GPCR_province_unrest_monthly_vary_var0 = GPCR_province_zaozao_VS_laobao_temp_var }
+				multiply_variable = { GPCR_province_unrest_monthly_vary_var0 = GPCR_province_zaozao_VS_laobao_influence_var }
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						var = GPCR_province_zaozao_VS_laobao_temp_var
+						value = 10
+						compare = greater_than
+					}    
+					check_variable = {
+						var = GPCR_province_zaozao_VS_laobao_temp_var
+						value = 50
+						compare = less_than_or_equals
+					}
+				}
+				add_to_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = -10 }
+				divide_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 40 }
+				multiply_temp_variable = { GPCR_province_zaozao_VS_laobao_temp_var = 2 }
+				set_variable = { GPCR_province_unrest_monthly_vary_var0 = GPCR_province_zaozao_VS_laobao_temp_var }
+				multiply_variable = { GPCR_province_unrest_monthly_vary_var0 = GPCR_province_zaozao_VS_laobao_influence_var }
+			}
+			else = {
+				set_variable = { GPCR_province_unrest_monthly_vary_var0 = 0 }
+			}  
+			
+			set_temp_variable = { GPCR_province_PLA_influence_temp_var = GPCR_province_PLA_tendency_var }
+			if = {
+				limit = {
+					check_variable = {
+						var = GPCR_province_PLA_influence_temp_var
+						value = -5
+						compare = less_than
+					}
+				}
+				multiply_temp_variable = { GPCR_province_PLA_influence_temp_var = -1 }
+				add_to_temp_variable = { GPCR_province_PLA_influence_temp_var = -5 }
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						var = GPCR_province_PLA_influence_temp_var
+						value = 5
+						compare = greater_than
+					}
+				}
+				add_to_temp_variable = { GPCR_province_PLA_influence_temp_var = -5 }
+			}
+			else = {
+				set_variable = { GPCR_province_PLA_influence_temp_var = 0 }
+			}
+			divide_temp_variable = { GPCR_province_PLA_influence_temp_var = 40 }
+			multiply_temp_variable = { GPCR_province_PLA_influence_temp_var = 1.6 }
+			set_temp_variable = { GPCR_province_PLA_influence_modifier_var0 = GPCR_province_PLA_power_var }
+			divide_temp_variable = { GPCR_province_PLA_influence_modifier_var0 = 100 }
+			multiply_temp_variable = { GPCR_province_PLA_influence_temp_var = GPCR_province_PLA_influence_modifier_var0 }
+			set_variable = { GPCR_province_PLA_influence_var = GPCR_province_PLA_influence_temp_var }
+		}
+    }
+}
+
+PRC_GPCR_national_spirit_update = {
+	hidden_effect = {
+		remove_ideas = PRC70s_idea_GPCR_leanings_to_REV4
+		remove_ideas = PRC70s_idea_GPCR_leanings_to_REV3
+		remove_ideas = PRC70s_idea_GPCR_leanings_to_REV2
+		remove_ideas = PRC70s_idea_GPCR_leanings_to_REV1
+		remove_ideas = PRC70s_idea_GPCR_Neutrality
+		remove_ideas = PRC70s_idea_GPCR_leanings_to_CON1
+		remove_ideas = PRC70s_idea_GPCR_leanings_to_CON2
+		remove_ideas = PRC70s_idea_GPCR_leanings_to_CON3
+		remove_ideas = PRC70s_idea_GPCR_leanings_to_CON4
+	
+		set_temp_variable = { PRC_GPCR_leanings_var1 = 714.GPCR_province_zaozao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var1 = 328.GPCR_province_zaozao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var1 = 716.GPCR_province_zaozao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var1 = 621.GPCR_province_zaozao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var1 = 608.GPCR_province_zaozao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var1 = 609.GPCR_province_zaozao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var1 = 614.GPCR_province_zaozao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var1 = 615.GPCR_province_zaozao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var1 = 622.GPCR_province_zaozao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var1 = 616.GPCR_province_zaozao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var1 = 283.GPCR_province_zaozao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var1 = 604.GPCR_province_zaozao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var1 = 617.GPCR_province_zaozao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var1 = 1549.GPCR_province_zaozao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var1 = 607.GPCR_province_zaozao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var1 = 620.GPCR_province_zaozao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var1 = 602.GPCR_province_zaozao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var1 = 600.GPCR_province_zaozao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var1 = 597.GPCR_province_zaozao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var1 = 606.GPCR_province_zaozao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var1 = 598.GPCR_province_zaozao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var1 = 613.GPCR_province_zaozao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var1 = 596.GPCR_province_zaozao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var1 = 595.GPCR_province_zaozao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var1 = 605.GPCR_province_zaozao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var1 = 603.GPCR_province_zaozao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var1 = 325.GPCR_province_zaozao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var1 = 594.GPCR_province_zaozao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var1 = 1569.GPCR_province_zaozao_power_var }
+	
+		set_temp_variable = { PRC_GPCR_leanings_var2 = PRC_GPCR_leanings_var1 }
+		
+		add_to_temp_variable = { PRC_GPCR_leanings_var2 = 714.GPCR_province_laobao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var2 = 328.GPCR_province_laobao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var2 = 716.GPCR_province_laobao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var2 = 621.GPCR_province_laobao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var2 = 608.GPCR_province_laobao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var2 = 609.GPCR_province_laobao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var2 = 614.GPCR_province_laobao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var2 = 615.GPCR_province_laobao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var2 = 622.GPCR_province_laobao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var2 = 616.GPCR_province_laobao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var2 = 283.GPCR_province_laobao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var2 = 604.GPCR_province_laobao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var2 = 617.GPCR_province_laobao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var2 = 1549.GPCR_province_laobao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var2 = 607.GPCR_province_laobao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var2 = 620.GPCR_province_laobao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var2 = 602.GPCR_province_laobao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var2 = 600.GPCR_province_laobao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var2 = 597.GPCR_province_laobao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var2 = 606.GPCR_province_laobao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var2 = 598.GPCR_province_laobao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var2 = 613.GPCR_province_laobao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var2 = 596.GPCR_province_laobao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var2 = 595.GPCR_province_laobao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var2 = 605.GPCR_province_laobao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var2 = 603.GPCR_province_laobao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var2 = 325.GPCR_province_laobao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var2 = 594.GPCR_province_laobao_power_var }
+		add_to_temp_variable = { PRC_GPCR_leanings_var2 = 1569.GPCR_province_laobao_power_var }
+	
+		divide_temp_variable = { PRC_GPCR_leanings_var1 = PRC_GPCR_leanings_var2 }
+		
+		if = {
+			limit = {
+				check_variable = {
+					var = PRC_GPCR_leanings_var1
+					value = 0
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = PRC_GPCR_leanings_var1
+					value = 0.11
+					compare = less_than
+				}
+			}
+			add_ideas = PRC70s_idea_GPCR_leanings_to_CON4
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = PRC_GPCR_leanings_var1
+					value = 0.11
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = PRC_GPCR_leanings_var1
+					value = 0.22
+					compare = less_than
+				}
+			}
+			add_ideas = PRC70s_idea_GPCR_leanings_to_CON3
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = PRC_GPCR_leanings_var1
+					value = 0.22
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = PRC_GPCR_leanings_var1
+					value = 0.33
+					compare = less_than
+				}
+			}
+			add_ideas = PRC70s_idea_GPCR_leanings_to_CON2
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = PRC_GPCR_leanings_var1
+					value = 0.33
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = PRC_GPCR_leanings_var1
+					value = 0.44
+					compare = less_than
+				}
+			}
+			add_ideas = PRC70s_idea_GPCR_leanings_to_CON1
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = PRC_GPCR_leanings_var1
+					value = 0.44
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = PRC_GPCR_leanings_var1
+					value = 0.56
+					compare = less_than_or_equals
+				}
+			}
+			add_ideas = PRC70s_idea_GPCR_Neutrality
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = PRC_GPCR_leanings_var1
+					value = 0.56
+					compare = greater_than
+				}
+				check_variable = {
+					var = PRC_GPCR_leanings_var1
+					value = 0.67
+					compare = less_than_or_equals
+				}
+			}
+			add_ideas = PRC70s_idea_GPCR_leanings_to_CON1
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = PRC_GPCR_leanings_var1
+					value = 0.56
+					compare = greater_than
+				}
+				check_variable = {
+					var = PRC_GPCR_leanings_var1
+					value = 0.67
+					compare = less_than_or_equals
+				}
+			}
+			add_ideas = PRC70s_idea_GPCR_leanings_to_REV1
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = PRC_GPCR_leanings_var1
+					value = 0.67
+					compare = greater_than
+				}
+				check_variable = {
+					var = PRC_GPCR_leanings_var1
+					value = 0.78
+					compare = less_than_or_equals
+				}
+			}
+			add_ideas = PRC70s_idea_GPCR_leanings_to_REV2
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = PRC_GPCR_leanings_var1
+					value = 0.78
+					compare = greater_than
+				}
+				check_variable = {
+					var = PRC_GPCR_leanings_var1
+					value = 0.89
+					compare = less_than_or_equals
+				}
+			}
+			add_ideas = PRC70s_idea_GPCR_leanings_to_REV3
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = PRC_GPCR_leanings_var1
+					value = 0.89
+					compare = greater_than
+				}
+				check_variable = {
+					var = PRC_GPCR_leanings_var1
+					value = 1
+					compare = less_than_or_equals
+				}
+			}
+			add_ideas = PRC70s_idea_GPCR_leanings_to_REV4
+		}
+	}
+}
+
+PRC_GPCR_ui_support_zaozao_button_effects = {
+	if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 1
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 33
+					compare = equals
+				}
+			}
+		}
+		add_to_variable = { 714.GPCR_province_zaozao_power_var = 1 }
+		add_to_variable = { 714.GPCR_province_laobao_power_var = -1 }
+		714 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 2
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 32
+					compare = equals
+				}
+			}
+		}
+		add_to_variable = { 328.GPCR_province_zaozao_power_var = 1 }
+		add_to_variable = { 328.GPCR_province_laobao_power_var = -1 }
+		328 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 3
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 31
+					compare = equals
+				}
+			}
+		}
+		add_to_variable = { 716.GPCR_province_zaozao_power_var = 1 }
+		add_to_variable = { 716.GPCR_province_laobao_power_var = -1 }
+		716 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 4
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 30
+					compare = equals
+				}
+			}
+		}
+		add_to_variable = { 621.GPCR_province_zaozao_power_var = 1 }
+		add_to_variable = { 621.GPCR_province_laobao_power_var = -1 }
+		621 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 5
+				compare = equals
+			}
+		}
+		add_to_variable = { 608.GPCR_province_zaozao_power_var = 1 }
+		add_to_variable = { 608.GPCR_province_laobao_power_var = -1 }
+		608 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 6
+				compare = equals
+			}
+		}
+		add_to_variable = { 609.GPCR_province_zaozao_power_var = 1 }
+		add_to_variable = { 609.GPCR_province_laobao_power_var = -1 }
+		609 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 7
+				compare = equals
+			}
+		}
+		add_to_variable = { 614.GPCR_province_zaozao_power_var = 1 }
+		add_to_variable = { 614.GPCR_province_laobao_power_var = -1 }
+		614 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 8
+				compare = equals
+			}
+		}
+		add_to_variable = { 615.GPCR_province_zaozao_power_var = 1 }
+		add_to_variable = { 615.GPCR_province_laobao_power_var = -1 }
+		615 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 9
+				compare = equals
+			}
+		}
+		add_to_variable = { 622.GPCR_province_zaozao_power_var = 1 }
+		add_to_variable = { 622.GPCR_province_laobao_power_var = -1 }
+		622 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 10
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 34
+					compare = equals
+				}
+			}
+		}
+		add_to_variable = { 616.GPCR_province_zaozao_power_var = 1 }
+		add_to_variable = { 616.GPCR_province_laobao_power_var = -1 }
+		616 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 11
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 35
+					compare = equals
+				}
+			}
+		}
+		add_to_variable = { 283.GPCR_province_zaozao_power_var = 1 }
+		add_to_variable = { 283.GPCR_province_laobao_power_var = -1 }
+		283 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 12
+				compare = equals
+			}
+		}
+		add_to_variable = { 604.GPCR_province_zaozao_power_var = 1 }
+		add_to_variable = { 604.GPCR_province_laobao_power_var = -1 }
+		604 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 13
+				compare = equals
+			}
+		}
+		add_to_variable = { 617.GPCR_province_zaozao_power_var = 1 }
+		add_to_variable = { 617.GPCR_province_laobao_power_var = -1 }
+		617 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 14
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 36
+					compare = equals
+				}
+			}
+		}
+		add_to_variable = { 1549.GPCR_province_zaozao_power_var = 1 }
+		add_to_variable = { 1549.GPCR_province_laobao_power_var = -1 }
+		1549 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 15
+				compare = equals
+			}
+		}
+		add_to_variable = { 607.GPCR_province_zaozao_power_var = 1 }
+		add_to_variable = { 607.GPCR_province_laobao_power_var = -1 }
+		607 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 16
+				compare = equals
+			}
+		}
+		add_to_variable = { 620.GPCR_province_zaozao_power_var = 1 }
+		add_to_variable = { 620.GPCR_province_laobao_power_var = -1 }
+		620 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 17
+				compare = equals
+			}
+		}
+		add_to_variable = { 602.GPCR_province_zaozao_power_var = 1 }
+		add_to_variable = { 602.GPCR_province_laobao_power_var = -1 }
+		602 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 18
+				compare = equals
+			}
+		}
+		add_to_variable = { 600.GPCR_province_zaozao_power_var = 1 }
+		add_to_variable = { 600.GPCR_province_laobao_power_var = -1 }
+		600 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 19
+				compare = equals
+			}
+		}
+		add_to_variable = { 597.GPCR_province_zaozao_power_var = 1 }
+		add_to_variable = { 597.GPCR_province_laobao_power_var = -1 }
+		597 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 20
+				compare = equals
+			}
+		}
+		add_to_variable = { 606.GPCR_province_zaozao_power_var = 1 }
+		add_to_variable = { 606.GPCR_province_laobao_power_var = -1 }
+		606 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 21
+				compare = equals
+			}
+		}
+		add_to_variable = { 598.GPCR_province_zaozao_power_var = 1 }
+		add_to_variable = { 598.GPCR_province_laobao_power_var = -1 }
+		598 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 22
+				compare = equals
+			}
+		}
+		add_to_variable = { 613.GPCR_province_zaozao_power_var = 1 }
+		add_to_variable = { 613.GPCR_province_laobao_power_var = -1 }
+		613 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 23
+				compare = equals
+			}
+		}
+		add_to_variable = { 596.GPCR_province_zaozao_power_var = 1 }
+		add_to_variable = { 596.GPCR_province_laobao_power_var = -1 }
+		596 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 24
+				compare = equals
+			}
+		}
+		add_to_variable = { 595.GPCR_province_zaozao_power_var = 1 }
+		add_to_variable = { 595.GPCR_province_laobao_power_var = -1 }
+		595 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 25
+				compare = equals
+			}
+		}
+		add_to_variable = { 605.GPCR_province_zaozao_power_var = 1 }
+		add_to_variable = { 605.GPCR_province_laobao_power_var = -1 }
+		605 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 26
+				compare = equals
+			}
+		}
+		add_to_variable = { 603.GPCR_province_zaozao_power_var = 1 }
+		add_to_variable = { 603.GPCR_province_laobao_power_var = -1 }
+		603 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 27
+				compare = equals
+			}
+		}
+		add_to_variable = { 325.GPCR_province_zaozao_power_var = 1 }
+		add_to_variable = { 325.GPCR_province_laobao_power_var = -1 }
+		325 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 28
+				compare = equals
+			}
+		}
+		add_to_variable = { 594.GPCR_province_zaozao_power_var = 1 }
+		add_to_variable = { 594.GPCR_province_laobao_power_var = -1 }
+		594 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 29
+				compare = equals
+			}
+		}
+		add_to_variable = { 1569.GPCR_province_zaozao_power_var = 1 }
+		add_to_variable = { 1569.GPCR_province_laobao_power_var = -1 }
+		1569 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	if = {
+		limit = {
+		    NOT = {  
+			    has_variable = GPCR_monthly_available_support_times
+		    }
+	    }
+		set_variable = { GPCR_monthly_available_support_times = 1 }
+	}
+	else = { 
+		add_to_variable = { GPCR_monthly_available_support_times = 1 }
+	}
+	PRC_GPCR_province_variable_update = yes
+	PRC_GPCR_ui_update = yes
+}
+PRC_GPCR_ui_support_laobao_button_effects = {
+	if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 1
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 33
+					compare = equals
+				}
+			}
+		}
+		add_to_variable = { 714.GPCR_province_laobao_power_var = 1 }
+		add_to_variable = { 714.GPCR_province_zaozao_power_var = -1 }
+		714 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 2
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 32
+					compare = equals
+				}
+			}
+		}
+		add_to_variable = { 328.GPCR_province_laobao_power_var = 1 }
+		add_to_variable = { 328.GPCR_province_zaozao_power_var = -1 }
+		328 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 3
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 31
+					compare = equals
+				}
+			}
+		}
+		add_to_variable = { 716.GPCR_province_laobao_power_var = 1 }
+		add_to_variable = { 716.GPCR_province_zaozao_power_var = -1 }
+		716 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 4
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 30
+					compare = equals
+				}
+			}
+		}
+		add_to_variable = { 621.GPCR_province_laobao_power_var = 1 }
+		add_to_variable = { 621.GPCR_province_zaozao_power_var = -1 }
+		621 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 5
+				compare = equals
+			}
+		}
+		add_to_variable = { 608.GPCR_province_laobao_power_var = 1 }
+		add_to_variable = { 608.GPCR_province_zaozao_power_var = -1 }
+		608 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 6
+				compare = equals
+			}
+		}
+		add_to_variable = { 609.GPCR_province_laobao_power_var = 1 }
+		add_to_variable = { 609.GPCR_province_zaozao_power_var = -1 }
+		609 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 7
+				compare = equals
+			}
+		}
+		add_to_variable = { 614.GPCR_province_laobao_power_var = 1 }
+		add_to_variable = { 614.GPCR_province_zaozao_power_var = -1 }
+		614 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 8
+				compare = equals
+			}
+		}
+		add_to_variable = { 615.GPCR_province_laobao_power_var = 1 }
+		add_to_variable = { 615.GPCR_province_zaozao_power_var = -1 }
+		615 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 9
+				compare = equals
+			}
+		}
+		add_to_variable = { 622.GPCR_province_laobao_power_var = 1 }
+		add_to_variable = { 622.GPCR_province_zaozao_power_var = -1 }
+		622 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 10
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 34
+					compare = equals
+				}
+			}
+		}
+		add_to_variable = { 616.GPCR_province_laobao_power_var = 1 }
+		add_to_variable = { 616.GPCR_province_zaozao_power_var = -1 }
+		616 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 11
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 35
+					compare = equals
+				}
+			}
+		}
+		add_to_variable = { 283.GPCR_province_laobao_power_var = 1 }
+		add_to_variable = { 283.GPCR_province_zaozao_power_var = -1 }
+		283 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 12
+				compare = equals
+			}
+		}
+		add_to_variable = { 604.GPCR_province_laobao_power_var = 1 }
+		add_to_variable = { 604.GPCR_province_zaozao_power_var = -1 }
+		604 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 13
+				compare = equals
+			}
+		}
+		add_to_variable = { 617.GPCR_province_laobao_power_var = 1 }
+		add_to_variable = { 617.GPCR_province_zaozao_power_var = -1 }
+		617 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 14
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 36
+					compare = equals
+				}
+			}
+		}
+		add_to_variable = { 1549.GPCR_province_laobao_power_var = 1 }
+		add_to_variable = { 1549.GPCR_province_zaozao_power_var = -1 }
+		1549 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 15
+				compare = equals
+			}
+		}
+		add_to_variable = { 607.GPCR_province_laobao_power_var = 1 }
+		add_to_variable = { 607.GPCR_province_zaozao_power_var = -1 }
+		607 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 16
+				compare = equals
+			}
+		}
+		add_to_variable = { 620.GPCR_province_laobao_power_var = 1 }
+		add_to_variable = { 620.GPCR_province_zaozao_power_var = -1 }
+		620 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 17
+				compare = equals
+			}
+		}
+		add_to_variable = { 602.GPCR_province_laobao_power_var = 1 }
+		add_to_variable = { 602.GPCR_province_zaozao_power_var = -1 }
+		602 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 18
+				compare = equals
+			}
+		}
+		add_to_variable = { 600.GPCR_province_laobao_power_var = 1 }
+		add_to_variable = { 600.GPCR_province_zaozao_power_var = -1 }
+		600 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 19
+				compare = equals
+			}
+		}
+		add_to_variable = { 597.GPCR_province_laobao_power_var = 1 }
+		add_to_variable = { 597.GPCR_province_zaozao_power_var = -1 }
+		597 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 20
+				compare = equals
+			}
+		}
+		add_to_variable = { 606.GPCR_province_laobao_power_var = 1 }
+		add_to_variable = { 606.GPCR_province_zaozao_power_var = -1 }
+		606 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 21
+				compare = equals
+			}
+		}
+		add_to_variable = { 598.GPCR_province_laobao_power_var = 1 }
+		add_to_variable = { 598.GPCR_province_zaozao_power_var = -1 }
+		598 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 22
+				compare = equals
+			}
+		}
+		add_to_variable = { 613.GPCR_province_laobao_power_var = 1 }
+		add_to_variable = { 613.GPCR_province_zaozao_power_var = -1 }
+		613 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 23
+				compare = equals
+			}
+		}
+		add_to_variable = { 596.GPCR_province_laobao_power_var = 1 }
+		add_to_variable = { 596.GPCR_province_zaozao_power_var = -1 }
+		596 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 24
+				compare = equals
+			}
+		}
+		add_to_variable = { 595.GPCR_province_laobao_power_var = 1 }
+		add_to_variable = { 595.GPCR_province_zaozao_power_var = -1 }
+		595 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 25
+				compare = equals
+			}
+		}
+		add_to_variable = { 605.GPCR_province_laobao_power_var = 1 }
+		add_to_variable = { 605.GPCR_province_zaozao_power_var = -1 }
+		605 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 26
+				compare = equals
+			}
+		}
+		add_to_variable = { 603.GPCR_province_laobao_power_var = 1 }
+		add_to_variable = { 603.GPCR_province_zaozao_power_var = -1 }
+		603 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 27
+				compare = equals
+			}
+		}
+		add_to_variable = { 325.GPCR_province_laobao_power_var = 1 }
+		add_to_variable = { 325.GPCR_province_zaozao_power_var = -1 }
+		325 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 28
+				compare = equals
+			}
+		}
+		add_to_variable = { 594.GPCR_province_laobao_power_var = 1 }
+		add_to_variable = { 594.GPCR_province_zaozao_power_var = -1 }
+		594 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 29
+				compare = equals
+			}
+		}
+		add_to_variable = { 1569.GPCR_province_laobao_power_var = 1 }
+		add_to_variable = { 1569.GPCR_province_zaozao_power_var = -1 }
+		1569 = { set_state_flag = GPCR_has_support_province_faction }
+	}
+	if = {
+		limit = {
+		    NOT = {  
+			    has_variable = GPCR_monthly_available_support_times
+		    }
+	    }
+		set_variable = { GPCR_monthly_available_support_times = 1 }
+	}
+	else = { 
+		add_to_variable = { GPCR_monthly_available_support_times = 1 }
+	}
+	PRC_GPCR_province_variable_update = yes
+	PRC_GPCR_ui_update = yes
+}
+PRC_GPCR_Military_administered_button_effects = {
+	if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 1
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 33
+					compare = equals
+				}
+			}
+		}
+		add_to_variable = { 714.GPCR_province_unrest_monthly_vary_var1 = -6 }
+		add_to_variable = { 714.GPCR_province_unrest_var = -20 }
+		714 = { set_state_flag = PRC_GPCR_state_Military_administered_flag }
+	}
+	else_if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 2
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 32
+					compare = equals
+				}
+			}
+		}
+		add_to_variable = { 328.GPCR_province_unrest_monthly_vary_var1 = -6 }
+		add_to_variable = { 328.GPCR_province_unrest_var = -20 }
+		328 = { set_state_flag = PRC_GPCR_state_Military_administered_flag }
+	}
+	else_if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 3
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 31
+					compare = equals
+				}
+			}
+		}
+		add_to_variable = { 716.GPCR_province_unrest_monthly_vary_var1 = -6 }
+		add_to_variable = { 716.GPCR_province_unrest_var = -20 }
+		716 = { set_state_flag = PRC_GPCR_state_Military_administered_flag }
+	}
+	else_if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 4
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 30
+					compare = equals
+				}
+			}
+		}
+		add_to_variable = { 621.GPCR_province_unrest_monthly_vary_var1 = -6 }
+		add_to_variable = { 621.GPCR_province_unrest_var = -20 }
+		621 = { set_state_flag = PRC_GPCR_state_Military_administered_flag }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 5
+				compare = equals
+			}
+		}
+		add_to_variable = { 608.GPCR_province_unrest_monthly_vary_var1 = -6 }
+		add_to_variable = { 608.GPCR_province_unrest_var = -20 }
+		608 = { set_state_flag = PRC_GPCR_state_Military_administered_flag }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 6
+				compare = equals
+			}
+		}
+		add_to_variable = { 609.GPCR_province_unrest_monthly_vary_var1 = -6 }
+		add_to_variable = { 609.GPCR_province_unrest_var = -20 }
+		609 = { set_state_flag = PRC_GPCR_state_Military_administered_flag }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 7
+				compare = equals
+			}
+		}
+		add_to_variable = { 614.GPCR_province_unrest_monthly_vary_var1 = -6 }
+		add_to_variable = { 614.GPCR_province_unrest_var = -20 }
+		614 = { set_state_flag = PRC_GPCR_state_Military_administered_flag }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 8
+				compare = equals
+			}
+		}
+		add_to_variable = { 615.GPCR_province_unrest_monthly_vary_var1 = -6 }
+		add_to_variable = { 615.GPCR_province_unrest_var = -20 }
+		615 = { set_state_flag = PRC_GPCR_state_Military_administered_flag }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 9
+				compare = equals
+			}
+		}
+		add_to_variable = { 622.GPCR_province_unrest_monthly_vary_var1 = -6 }
+		add_to_variable = { 622.GPCR_province_unrest_var = -20 }
+		622 = { set_state_flag = PRC_GPCR_state_Military_administered_flag }
+	}
+	else_if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 10
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 34
+					compare = equals
+				}
+			}
+		}
+		add_to_variable = { 616.GPCR_province_unrest_monthly_vary_var1 = -6 }
+		add_to_variable = { 616.GPCR_province_unrest_var = -20 }
+		616 = { set_state_flag = PRC_GPCR_state_Military_administered_flag }
+	}
+	else_if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 11
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 35
+					compare = equals
+				}
+			}
+		}
+		add_to_variable = { 283.GPCR_province_unrest_monthly_vary_var1 = -6 }
+		add_to_variable = { 283.GPCR_province_unrest_var = -20 }
+		283 = { set_state_flag = PRC_GPCR_state_Military_administered_flag }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 12
+				compare = equals
+			}
+		}
+		add_to_variable = { 604.GPCR_province_unrest_monthly_vary_var1 = -6 }
+		add_to_variable = { 604.GPCR_province_unrest_var = -20 }
+		604 = { set_state_flag = PRC_GPCR_state_Military_administered_flag }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 13
+				compare = equals
+			}
+		}
+		add_to_variable = { 617.GPCR_province_unrest_monthly_vary_var1 = -6 }
+		add_to_variable = { 617.GPCR_province_unrest_var = -20 }
+		617 = { set_state_flag = PRC_GPCR_state_Military_administered_flag }
+	}
+	else_if = {
+		limit = { 
+			OR = {
+				check_variable = {
+					var = prc_province_var
+					value = 14
+					compare = equals
+				}
+				check_variable = {
+					var = prc_province_var
+					value = 36
+					compare = equals
+				}
+			}
+		}
+		add_to_variable = { 1549.GPCR_province_unrest_monthly_vary_var1 = -6 }
+		add_to_variable = { 1549.GPCR_province_unrest_var = -20 }
+		1549 = { set_state_flag = PRC_GPCR_state_Military_administered_flag }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 15
+				compare = equals
+			}
+		}
+		add_to_variable = { 607.GPCR_province_unrest_monthly_vary_var1 = -6 }
+		add_to_variable = { 607.GPCR_province_unrest_var = -20 }
+		607 = { set_state_flag = PRC_GPCR_state_Military_administered_flag }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 16
+				compare = equals
+			}
+		}
+		add_to_variable = { 620.GPCR_province_unrest_monthly_vary_var1 = -6 }
+		add_to_variable = { 620.GPCR_province_unrest_var = -20 }
+		620 = { set_state_flag = PRC_GPCR_state_Military_administered_flag }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 17
+				compare = equals
+			}
+		}
+		add_to_variable = { 602.GPCR_province_unrest_monthly_vary_var1 = -6 }
+		add_to_variable = { 602.GPCR_province_unrest_var = -20 }
+		602 = { set_state_flag = PRC_GPCR_state_Military_administered_flag }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 18
+				compare = equals
+			}
+		}
+		add_to_variable = { 600.GPCR_province_unrest_monthly_vary_var1 = -6 }
+		add_to_variable = { 600.GPCR_province_unrest_var = -20 }
+		600 = { set_state_flag = PRC_GPCR_state_Military_administered_flag }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 19
+				compare = equals
+			}
+		}
+		add_to_variable = { 597.GPCR_province_unrest_monthly_vary_var1 = -6 }
+		add_to_variable = { 597.GPCR_province_unrest_var = -20 }
+		597 = { set_state_flag = PRC_GPCR_state_Military_administered_flag }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 20
+				compare = equals
+			}
+		}
+		add_to_variable = { 606.GPCR_province_unrest_monthly_vary_var1 = -6 }
+		add_to_variable = { 606.GPCR_province_unrest_var = -20 }
+		606 = { set_state_flag = PRC_GPCR_state_Military_administered_flag }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 21
+				compare = equals
+			}
+		}
+		add_to_variable = { 598.GPCR_province_unrest_monthly_vary_var1 = -6 }
+		add_to_variable = { 598.GPCR_province_unrest_var = -20 }
+		598 = { set_state_flag = PRC_GPCR_state_Military_administered_flag }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 22
+				compare = equals
+			}
+		}
+		add_to_variable = { 613.GPCR_province_unrest_monthly_vary_var1 = -6 }
+		add_to_variable = { 613.GPCR_province_unrest_var = -20 }
+		613 = { set_state_flag = PRC_GPCR_state_Military_administered_flag }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 23
+				compare = equals
+			}
+		}
+		add_to_variable = { 596.GPCR_province_unrest_monthly_vary_var1 = -6 }
+		add_to_variable = { 596.GPCR_province_unrest_var = -20 }
+		596 = { set_state_flag = PRC_GPCR_state_Military_administered_flag }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 24
+				compare = equals
+			}
+		}
+		add_to_variable = { 595.GPCR_province_unrest_monthly_vary_var1 = -6 }
+		add_to_variable = { 595.GPCR_province_unrest_var = -20 }
+		595 = { set_state_flag = PRC_GPCR_state_Military_administered_flag }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 25
+				compare = equals
+			}
+		}
+		add_to_variable = { 605.GPCR_province_unrest_monthly_vary_var1 = -6 }
+		add_to_variable = { 605.GPCR_province_unrest_var = -20 }
+		605 = { set_state_flag = PRC_GPCR_state_Military_administered_flag }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 26
+				compare = equals
+			}
+		}
+		add_to_variable = { 603.GPCR_province_unrest_monthly_vary_var1 = -6 }
+		add_to_variable = { 603.GPCR_province_unrest_var = -20 }
+		603 = { set_state_flag = PRC_GPCR_state_Military_administered_flag }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 27
+				compare = equals
+			}
+		}
+		add_to_variable = { 325.GPCR_province_unrest_monthly_vary_var1 = -6 }
+		add_to_variable = { 325.GPCR_province_unrest_var = -20 }
+		325 = { set_state_flag = PRC_GPCR_state_Military_administered_flag }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 28
+				compare = equals
+			}
+		}
+		add_to_variable = { 594.GPCR_province_unrest_monthly_vary_var1 = -6 }
+		add_to_variable = { 594.GPCR_province_unrest_var = -20 }
+		594 = { set_state_flag = PRC_GPCR_state_Military_administered_flag }
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				var = prc_province_var
+				value = 29
+				compare = equals
+			}
+		}
+		add_to_variable = { 1569.GPCR_province_unrest_monthly_vary_var1 = -6 }
+		add_to_variable = { 1569.GPCR_province_unrest_var = -20 }
+		1569 = { set_state_flag = PRC_GPCR_state_Military_administered_flag }
+	}
+	PRC_GPCR_province_variable_update = yes
+	PRC_GPCR_ui_update = yes
+}
+PRC_GPCR_state_modifier_update1 = {
+	if = {
+		limit = {
+			NOT = {
+				has_state_flag = PRC_GPCR_state_modifier1_flag
+				has_state_flag = PRC_GPCR_state_modifier2_flag
+			}
+		}
+		add_dynamic_modifier = {
+			modifier = PRC_GPCR_state_modifier1
+		}
+		set_state_flag = PRC_GPCR_state_modifier1_flag
+	}
+	else_if = {
+		limit = {
+			has_state_flag = PRC_GPCR_state_modifier1_flag
+		}
+		remove_dynamic_modifier = {
+			modifier = PRC_GPCR_state_modifier1
+		}
+		add_dynamic_modifier = {
+			modifier = PRC_GPCR_state_modifier2
+		}
+		clr_state_flag = PRC_GPCR_state_modifier1_flag
+		set_state_flag = PRC_GPCR_state_modifier2_flag
+	}
+	else_if = {
+		limit = {
+			has_state_flag = PRC_GPCR_state_modifier2_flag
+		}
+		remove_dynamic_modifier = {
+			modifier = PRC_GPCR_state_modifier2
+		}
+		add_dynamic_modifier = {
+			modifier = PRC_GPCR_state_modifier3
+		}
+		clr_state_flag = PRC_GPCR_state_modifier2_flag
+		set_state_flag = PRC_GPCR_state_modifier3_flag
+	}
+}
+PRC_GPCR_state_modifier_update2 = {
+	if = {
+		limit = {
+			FROM = {
+				has_state_flag = PRC_GPCR_state_modifier3_flag
+			}
+		}
+		remove_dynamic_modifier = {
+			modifier = PRC_GPCR_state_modifier3
+		}
+		add_dynamic_modifier = {
+			modifier = PRC_GPCR_state_modifier2
+		}
+		clr_state_flag = PRC_GPCR_state_modifier3_flag
+		set_state_flag = PRC_GPCR_state_modifier2_flag
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				has_state_flag = PRC_GPCR_state_modifier2_flag
+			}
+		}
+		remove_dynamic_modifier = {
+			modifier = PRC_GPCR_state_modifier2
+		}
+		add_dynamic_modifier = {
+			modifier = PRC_GPCR_state_modifier1
+		}
+		clr_state_flag = PRC_GPCR_state_modifier2_flag
+		set_state_flag = PRC_GPCR_state_modifier1_flag
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				has_state_flag = PRC_GPCR_state_modifier1_flag
+			}
+		}
+		remove_dynamic_modifier = {
+			modifier = PRC_GPCR_state_modifier1
+		}
+		clr_state_flag = PRC_GPCR_state_modifier1_flag
+	}
+}
